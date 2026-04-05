@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Washington DC Trip · April 2026</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --navy: #1B3A5C;
+      --gold: #B8860B;
+      --light-navy: #2C4A70;
+      --white: #FFFFFF;
+      --light-gray: #F8F9FA;
+      --dark-gray: #333333;
+      --green: #28A745;
+      --orange: #FF9500;
+      --success-bg: #E8F5E9;
+      --warning-bg: #FFF3E0;
+      --gold-bg: #FFFBF0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--white);
+      color: var(--dark-gray);
+      line-height: 1.6;
+    }
+
+    /* STICKY NAVIGATION */
+    .nav-container {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(to bottom, var(--navy), var(--light-navy));
+      box-shadow: 0 2px 8px rgba(27, 58, 92, 0.15);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+
+    .nav-wrapper::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    .nav-wrapper::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-wrapper::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 3px;
+    }
+
+    .day-tab {
+      flex-shrink: 0;
+      padding: 16px 20px;
+      border: none;
+      background: none;
+      color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .day-tab:hover {
+      color: var(--white);
+      background: rgba(184, 134, 11, 0.1);
+    }
+
+    .day-tab.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+      background: rgba(184, 134, 11, 0.1);
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .day-section {
+      scroll-margin-top: 70px;
+    }
+
+    /* DAY HEADER */
+    .day-header {
+      background: linear-gradient(135deg, var(--navy), var(--light-navy));
+      color: var(--white);
+      padding: 32px 24px;
+      text-align: center;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .day-number {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .day-date {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      opacity: 0.95;
+    }
+
+    .day-subtitle {
+      font-size: 14px;
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    /* SCHEDULE CONTENT */
+    .schedule-container {
+      padding: 24px;
+      background: var(--white);
+    }
+
+    .schedule-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .schedule-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 60px;
+      width: 2px;
+      height: calc(100% + 24px);
+      background: linear-gradient(to bottom, var(--gold), rgba(184, 134, 11, 0.2));
+    }
+
+    .time-badge {
+      flex-shrink: 0;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      min-width: 60px;
+      margin-top: 2px;
+    }
+
+    .activity-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .activity-text {
+      font-size: 15px;
+      color: var(--dark-gray);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .badges-container {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .badge-confirmed {
+      background: var(--success-bg);
+      color: var(--green);
+    }
+
+    .badge-sameday {
+      background: var(--warning-bg);
+      color: var(--orange);
+    }
+
+    .badge-optional {
+      background: var(--gold-bg);
+      color: #D4A500;
+    }
+
+    /* DINING SECTION */
+    .dining-section {
+      background: linear-gradient(to right, rgba(27, 58, 92, 0.05), rgba(184, 134, 11, 0.05));
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      margin-top: 32px;
+      padding: 20px 24px;
+    }
+
+    .dining-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dining-title::before {
+      content: '🍽️';
+      font-size: 18px;
+    }
+
+    .dining-subsection {
+      margin-bottom: 16px;
+    }
+
+    .dining-subsection:last-child {
+      margin-bottom: 0;
+    }
+
+    .dining-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .dining-options {
+      font-size: 14px;
+      color: var(--dark-gray);
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 24px;
+      margin-top: 40px;
+      font-size: 13px;
+      opacity: 0.85;
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+      .day-section {
+        margin: 8px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(27, 58, 92, 0.1);
+      }
+
+      .schedule-container {
+        padding: 32px;
+      }
+
+      .day-header {
+        padding: 40px 32px;
+      }
+    }
+
+    /* UTILITIES */
+    .note {
+      background: rgba(184, 134, 11, 0.08);
+      border-left: 4px solid var(--gold);
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #5A5A5A;
+    }
+
+    .highlight {
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    /* SMOOTH SCROLL */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- STICKY NAVIGATION -->
+  <nav class="nav-container">
+    <div class="nav-wrapper" id="navWrapper">
+      <button class="day-tab active" data-day="1">Day 1</button>
+      <button class="day-tab" data-day="2">Day 2</button>
+      <button class="day-tab" data-day="3">Day 3</button>
+      <button class="day-tab" data-day="4">Day 4</button>
+      <button class="day-tab" data-day="5">Day 5</button>
+      <button class="day-tab" data-day="6">Day 6</button>
+      <button class="day-tab" data-day="7">Day 7</button>
+      <button class="day-tab" data-day="8">Day 8</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- DAY 1 -->
+    <section class="day-section" id="day-1">
+      <div class="day-header">
+        <div class="day-number">Day 1</div>
+        <div class="day-date">Friday, April 10, 2026</div>
+        <div class="day-subtitle">Arrival</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">5:22 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Land at Dulles International Airport (IAD)</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~6:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber XL to Riggs Washington DC, 900 F Street NW</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">40–60 minutes</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~7:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Check in, freshen up, early night</div>
+          </div>
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Dinner</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Options</div>
+            <div class="dining-options">
+              <strong>Room service at Riggs</strong> — convenient after travel<br>
+              <strong>Café Riggs</strong> — downstairs, no reservation needed
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 2 -->
+    <section class="day-section" id="day-2">
+      <div class="day-header">
+        <div class="day-number">Day 2</div>
+        <div class="day-date">Saturday, April 11, 2026</div>
+        <div class="day-subtitle">Big Bus, Monuments & Arlington</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">9:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Walk to Big Bus departure at Willard Hotel</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">1401 Pennsylvania Ave NW, ~10 min walk from Riggs</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">9:30 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Big Bus — full orientation loop with narration</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">60–90 minutes, seated</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~11:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Hop off at Arlington National Cemetery</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Tram ride: Tomb of Unknown Soldier, JFK gravesite, Arlington House (~1 hour)</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">12:15 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber to Lincoln Memorial (~5 min)</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">12:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Monument walk: Lincoln Memorial → Vietnam Veterans Memorial → Korean War Memorial</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~0.4 mi walk</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">1:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Return to Riggs for afternoon rest</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">4:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber to Washington Monument</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Exterior walk, no tickets needed</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">4:20 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Walk to WWII Memorial (~10–12 min)</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~5:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber back to Riggs</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">After Dinner</div>
+          <div class="activity-content">
+            <div class="activity-text">Optional twilight monument walk</div>
+            <div class="badges-container">
+              <span class="badge badge-optional">⚡ Optional</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><strong>Classic loop (~1.2 mi):</strong> Lincoln → Reflecting Pool → Vietnam → Korean → WWII → Washington Monument</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><strong>Short loop (~0.8 mi):</strong> From Riggs area</div>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Weather contingency:</strong> If significant rain, swap with Day 3 (Natural History is indoors)
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Meals</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Lunch</div>
+            <div class="dining-options">
+              <strong>Mitsitam Café</strong> — National Museum of the American Indian<br>
+              <strong>Food trucks on 14th St</strong><br>
+              <strong>Shake Shack</strong>
+            </div>
+          </div>
+          <div class="dining-subsection">
+            <div class="dining-label">Dinner</div>
+            <div class="dining-options">
+              <strong>Carmine's</strong> — Penn Quarter, family-style Italian (recommended)<br>
+              <strong>Backup:</strong> Jaleo (480 7th St NW)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 3 -->
+    <section class="day-section" id="day-3">
+      <div class="day-header">
+        <div class="day-number">Day 3</div>
+        <div class="day-date">Sunday, April 12, 2026</div>
+        <div class="day-subtitle">Natural History & NMAAHC</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">10:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">National Museum of Natural History</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Dinosaurs, Hope Diamond, ocean hall</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~12:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Optional IMAX film</div>
+            <div class="badges-container">
+              <span class="badge badge-optional">⚡ Optional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">1:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">National Museum of African American History & Culture (NMAAHC)</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">0.4 mi from Natural History (walk or 3-min Uber). Plan 2–2.5 hours. Sweet Home Café for snacks.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~4:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Optional American History Museum</div>
+            <div class="badges-container">
+              <span class="badge badge-optional">⚡ Optional</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">2-min walk from NMAAHC, open until 5:30pm. Star-Spangled Banner, Julia Child's kitchen, America on the Move. Skip if spent — Day 7 has a fallback.</div>
+          </div>
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Meals</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Lunch</div>
+            <div class="dining-options">
+              <strong>Atrium Café</strong> — inside Natural History<br>
+              <strong>Mitsitam Café</strong><br>
+              <strong>District Taco</strong>
+            </div>
+          </div>
+          <div class="dining-subsection">
+            <div class="dining-label">Dinner</div>
+            <div class="dining-options">
+              <strong>Founding Farmers</strong> — 1924 Pennsylvania Ave NW, short Uber (~10 min)<br>
+              <strong>Backup:</strong> Clyde's of Gallery Place (707 7th St NW)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 4 -->
+    <section class="day-section" id="day-4">
+      <div class="day-header">
+        <div class="day-number">Day 4</div>
+        <div class="day-date">Monday, April 13, 2026</div>
+        <div class="day-subtitle">Spy Museum & Ford's Theatre</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">9:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">International Spy Museum</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Timed entry confirmed. Plan 3–4 hours.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~1:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Lunch & rest at Riggs</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">2:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Ford's Theatre</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">511 10th St NW, 5-min walk from Riggs. Timed entry confirmed.</div>
+          </div>
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Meals</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Lunch</div>
+            <div class="dining-options">
+              <strong>L'Enfant Plaza Food Court</strong> — Potbelly, Five Guys, Roti, California Tortilla<br>
+              <strong>Cava</strong><br>
+              <strong>The Wharf</strong> (5–10 min Uber)
+            </div>
+          </div>
+          <div class="dining-subsection">
+            <div class="dining-label">Dinner</div>
+            <div class="dining-options">
+              <strong>Matchbox Penn Quarter</strong> — 750 E St NW, 2 blocks from Riggs<br>
+              <strong>Backup:</strong> Hawk 'N' Dove
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 5 -->
+    <section class="day-section" id="day-5">
+      <div class="day-header">
+        <div class="day-number">Day 5</div>
+        <div class="day-date">Tuesday, April 14, 2026</div>
+        <div class="day-subtitle">Air & Space + Afternoon Options</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">10:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">National Air and Space Museum</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Timed entry confirmed. Plan ~2.5 hours. Note: ~half museum open (5 more galleries open July 1).</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~1:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Choose one afternoon option:</div>
+          </div>
+        </div>
+
+        <div style="margin-left: 76px; margin-bottom: 24px;">
+          <div style="background: var(--light-gray); padding: 16px; border-radius: 6px; margin-bottom: 12px;">
+            <div style="font-weight: 600; color: var(--navy); margin-bottom: 8px;">Option A — National Gallery of Art (recommended)</div>
+            <div style="font-size: 14px; color: var(--dark-gray);">Right next to Air & Space, free, flat. East Building: Calder mobile, modern art. West Building: Dutch masters. ~1.5–2 hrs.</div>
+          </div>
+          <div style="background: var(--light-gray); padding: 16px; border-radius: 6px; margin-bottom: 12px;">
+            <div style="font-weight: 600; color: var(--navy); margin-bottom: 8px;">Option B — Bureau of Engraving & Printing</div>
+            <div style="font-size: 14px; color: var(--dark-gray); margin-bottom: 8px;">
+              <span class="badge badge-sameday" style="margin-bottom: 8px; display: inline-block;">📅 Same Day</span>
+            </div>
+            <div style="font-size: 14px; color: var(--dark-gray);">Check etix.com at 8:00am this morning for same-day tickets. Watch money being printed. ~30–45 min.</div>
+          </div>
+          <div style="background: var(--light-gray); padding: 16px; border-radius: 6px;">
+            <div style="font-weight: 600; color: var(--navy); margin-bottom: 8px;">Option C — Rest at Riggs</div>
+            <div style="font-size: 14px; color: var(--dark-gray);">Day 6 is the longest day of the trip.</div>
+          </div>
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Meals</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Lunch</div>
+            <div class="dining-options">
+              <strong>Mitsitam Café</strong> — 10% off with Air & Space pass<br>
+              <strong>Cascade Café</strong> — at National Gallery of Art<br>
+              <strong>Bar Americano</strong> — outside Air & Space
+            </div>
+          </div>
+          <div class="dining-subsection">
+            <div class="dining-label">Dinner</div>
+            <div class="dining-options">
+              <strong>bumblebirds</strong> — 303 Pennsylvania Ave SE, Chef Carla Hall's Southern fried chicken (opened March 2026)<br>
+              <strong>Backup:</strong> Shake Shack
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 6 -->
+    <section class="day-section" id="day-6">
+      <div class="day-header">
+        <div class="day-number">Day 6</div>
+        <div class="day-date">Wednesday, April 15, 2026</div>
+        <div class="day-subtitle">Mount Vernon & Old Town Alexandria</div>
+      </div>
+      <div class="schedule-container">
+        <div class="note">
+          <strong>⚠️ Longest day of the trip — pace yourself!</strong>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">7:15 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber XL from Riggs to Pier 4, The Wharf</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~15 min. Coffee to go.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">8:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Board City Cruises at Pier 4</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">580 Water Street SW</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">8:30 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Depart for Mount Vernon</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Narrated Potomac River cruise (~1.5 hrs)</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~10:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Arrive at Mount Vernon</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Mansion grounds (renovation through June 2026, some interior rooms may be closed), farm animals, gardens, museum</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">12:15 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Lunch at Mount Vernon Inn Restaurant</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Reservation confirmed for party of 5</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~1:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber to Old Town Alexandria</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~15 min, ~$25–30 (skip return boat)</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">2:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Old Town Alexandria exploration</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Torpedo Factory Art Center, King Street, waterfront. Café rest around 3:30pm.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~5:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Optional ice cream on King Street</div>
+            <div class="badges-container">
+              <span class="badge badge-optional">⚡ Optional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">5:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Dinner at Vola's Dockside Grill</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Old Town Alexandria waterfront<br>Backup: Mia's Italian Kitchen</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~7:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber XL back to Riggs</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~20–25 min</div>
+          </div>
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Meals</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Lunch</div>
+            <div class="dining-options">
+              <strong>Mount Vernon Inn</strong> — 12:15pm, confirmed reservation ✅<br>
+              <strong>Executive Orders food truck</strong><br>
+              <strong>Pack a picnic</strong>
+            </div>
+          </div>
+          <div class="dining-subsection">
+            <div class="dining-label">Dinner</div>
+            <div class="dining-options">
+              <strong>Vola's Dockside Grill</strong> — Old Town Alexandria waterfront<br>
+              <strong>Backup:</strong> Mia's Italian Kitchen
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 7 -->
+    <section class="day-section" id="day-7">
+      <div class="day-header">
+        <div class="day-number">Day 7</div>
+        <div class="day-date">Thursday, April 16, 2026</div>
+        <div class="day-subtitle">Capitol Hill & Farewell Dinner</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">8:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Check tours.visitthecapitol.gov/CVC for same-day Capitol tickets</div>
+            <div class="badges-container">
+              <span class="badge badge-sameday">📅 Same Day</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Walk-ins also welcome — arrive at Visitor Center (East Plaza) by 2:30pm</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~8:15 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber to Capitol Hill</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~10 min</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~8:45 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Capitol Building tour</div>
+            <div class="badges-container">
+              <span class="badge badge-sameday">📅 Same Day</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Free, ~45 min guided tour</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~9:45 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Supreme Court — right next door</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Free, no reservation. Must arrive before 3pm.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~10:30 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Library of Congress</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Directly across the street. Free. Open until 8pm on Thursdays. Stunning interior.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~12:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Return to Riggs for afternoon rest</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~12:30 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Optional American History Museum fallback</div>
+            <div class="badges-container">
+              <span class="badge badge-optional">⚡ Optional</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">If skipped Day 3: Uber to Mall (~10 min), visit 12:30–2:00pm, back to Riggs before 5pm. Only if morning felt light.</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">5:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">Old Ebbitt Grill — Farewell Dinner</div>
+            <div class="badges-container">
+              <span class="badge badge-confirmed">✅ Confirmed</span>
+            </div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">675 15th St NW, 150-year DC institution. Done by ~7pm.<br>Backup: Rare Steakhouse (1595 I St NW)</div>
+          </div>
+        </div>
+
+        <div class="dining-section">
+          <div class="dining-title">Meals</div>
+          <div class="dining-subsection">
+            <div class="dining-label">Lunch</div>
+            <div class="dining-options">
+              <strong>Capitol Visitor Center Restaurant</strong><br>
+              <strong>Matchbox Capitol Hill</strong><br>
+              <strong>Ted's Bulletin</strong> (505 8th St SE)
+            </div>
+          </div>
+          <div class="dining-subsection">
+            <div class="dining-label">Dinner</div>
+            <div class="dining-options">
+              <strong>Old Ebbitt Grill</strong> — 675 15th St NW, farewell dinner (confirmed) ✅<br>
+              <strong>Backup:</strong> Rare Steakhouse (1595 I St NW)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 8 -->
+    <section class="day-section" id="day-8">
+      <div class="day-header">
+        <div class="day-number">Day 8</div>
+        <div class="day-date">Friday, April 17, 2026</div>
+        <div class="day-subtitle">Departure</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">9:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Pack up & check out from Riggs Washington DC</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">9:15 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Uber XL to Dulles International Airport (IAD)</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~40 min</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~9:50 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Arrive at IAD</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~3 hours before departure</div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">~10:00 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">Priority Pass Lounge</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">
+              Options: Etihad (Concourse A) | Turkish Airlines (Concourse B) | Chef Geoff's (Concourse C)
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="time-badge">12:40 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">United Airlines UA 1689 — Departs IAD</div>
+            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Safe travels, Poling family!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Poling Family • Washington DC • April 2026</p>
+  </footer>
+
+  <script>
+    // Day tab navigation
+    const navWrapper = document.getElementById('navWrapper');
+    const dayTabs = document.querySelectorAll('.day-tab');
+    const daySections = document.querySelectorAll('.day-section');
+
+    // Smooth scroll to section when tab is clicked
+    dayTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const dayNum = tab.getAttribute('data-day');
+        const section = document.getElementById(`day-${dayNum}`);
+
+        // Remove active class from all tabs
+        dayTabs.forEach(t => t.classList.remove('active'));
+
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Scroll to section
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // Scroll nav to show active tab
+        setTimeout(() => {
+          tab.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      });
+    });
+
+    // Update active tab on scroll
+    const observerOptions = {
+      threshold: 0.3
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const dayNum = entry.target.id.split('-')[1];
+          dayTabs.forEach(tab => tab.classList.remove('active'));
+          const activeTab = document.querySelector(`[data-day="${dayNum}"]`);
+          if (activeTab) {
+            activeTab.classList.add('active');
+            // Auto-scroll nav to active tab
+            activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        }
+      });
+    }, observerOptions);
+
+    daySections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
