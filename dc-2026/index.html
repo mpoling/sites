@@ -90,6 +90,19 @@ body {
   background: rgba(184, 134, 11, 0.1);
 }
 
+.day-tab.today {
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  border-bottom-color: var(--gold);
+  border-radius: 6px 6px 0 0;
+}
+
+.day-tab.today.active {
+  background: var(--gold);
+  color: var(--navy);
+}
+
 /* MAIN CONTENT */
 main {
   max-width: 700px;
@@ -1024,10 +1037,44 @@ html {
   </footer>
 
   <script>
-    // Day tab navigation
-    const navWrapper = document.getElementById('navWrapper');
+    // Trip date mapping: Day 1 = Apr 10, Day 2 = Apr 11, ... Day 8 = Apr 17
+    const tripStartDate = new Date(2026, 3, 10); // Month is 0-indexed: 3 = April
     const dayTabs = document.querySelectorAll('.day-tab');
     const daySections = document.querySelectorAll('.day-section');
+    const navWrapper = document.getElementById('navWrapper');
+
+    // Determine which trip day is "today"
+    function getTodayDayNum() {
+      const now = new Date();
+      // Use Eastern Time approximation: UTC-4 in April (EDT)
+      const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+      const start = new Date(2026, 3, 10); // Apr 10
+      const diffDays = Math.floor((et - start) / (1000 * 60 * 60 * 24));
+      if (diffDays >= 0 && diffDays <= 7) return diffDays + 1; // Day 1–8
+      return null;
+    }
+
+    const todayDayNum = getTodayDayNum();
+
+    // If today is within the trip, restyle that tab and scroll to it
+    if (todayDayNum) {
+      dayTabs.forEach(tab => {
+        const dayNum = parseInt(tab.getAttribute('data-day'));
+        if (dayNum === todayDayNum) {
+          tab.textContent = 'Today';
+          tab.classList.add('today');
+          tab.classList.add('active');
+          // Scroll to today's section on load
+          setTimeout(() => {
+            const section = document.getElementById(`day-${dayNum}`);
+            if (section) section.scrollIntoView({ behavior: 'auto', block: 'start' });
+            tab.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+          }, 100);
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+    }
 
     // Smooth scroll to section when tab is clicked
     dayTabs.forEach(tab => {
@@ -1035,7 +1082,7 @@ html {
         const dayNum = tab.getAttribute('data-day');
         const section = document.getElementById(`day-${dayNum}`);
 
-        // Remove active class from all tabs
+        // Remove active class from all tabs (but keep 'today' class)
         dayTabs.forEach(t => t.classList.remove('active'));
 
         // Add active class to clicked tab
