@@ -90,6 +90,19 @@ body {
   background: rgba(184, 134, 11, 0.1);
 }
 
+.day-tab.today {
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  border-bottom-color: var(--gold);
+}
+
+.day-tab.today.active {
+  background: var(--gold);
+  color: var(--navy);
+  border-bottom-color: var(--white);
+}
+
 /* MAIN CONTENT */
 main {
   max-width: 700px;
@@ -1216,6 +1229,36 @@ html {
     daySections.forEach(section => {
       observer.observe(section);
     });
+
+    // "Today" tab — highlight and auto-scroll to current trip day
+    function getTodayDayNum() {
+      // Trip dates: Day 1 = Apr 10, Day 2 = Apr 11, ... Day 8 = Apr 17
+      const tripStart = new Date('2026-04-10T00:00:00-04:00'); // Eastern Time
+      const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const startDate = new Date(tripStart.getFullYear(), tripStart.getMonth(), tripStart.getDate());
+      const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+      if (diffDays >= 0 && diffDays <= 7) return diffDays + 1; // Days 1–8
+      return null; // Outside trip dates
+    }
+
+    const todayDayNum = getTodayDayNum();
+    if (todayDayNum) {
+      const todayTab = document.querySelector(`[data-day="${todayDayNum}"]`);
+      if (todayTab) {
+        todayTab.textContent = 'Today';
+        todayTab.classList.add('today');
+        // Auto-scroll to today's section on page load
+        setTimeout(() => {
+          todayTab.classList.add('active');
+          todayTab.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          const todaySection = document.getElementById(`day-${todayDayNum}`);
+          if (todaySection) {
+            todaySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 300);
+      }
+    }
   </script>
 
 </body>
