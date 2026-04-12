@@ -14,7 +14,7 @@
   </text>
   <text x="92" y="270" font-size="26" fill="#BF0A30" text-anchor="middle">★</text>
   <text x="420" y="270" font-size="26" fill="#BF0A30" text-anchor="middle">★</text>
-  <text x="256" y="340" text-anchor="middle" font-family="'Courier New', monospace" font-size="230" font-weight="900" fill="#1B3A5C">P</text>
+  <text x="256" y="335" text-anchor="middle" font-family="'Courier New', monospace" font-size="230" font-weight="900" fill="#1B3A5C">P</text>
   <line x1="195" y1="145" x2="317" y2="145" stroke="#BF0A30" stroke-width="4"/>
-  <line x1="195" y1="375" x2="317" y2="375" stroke="#BF0A30" stroke-width="4"/>
+  <line x1="195" y1="365" x2="317" y2="365" stroke="#BF0A30" stroke-width="4"/>
 </svg>
