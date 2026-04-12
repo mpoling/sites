@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#F5F0E8"/>
+
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#1B3A5C" stroke-width="8"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#1B3A5C" stroke-width="3"/>
+
+  <defs>
+    <path id="topArc" d="M 100 260 A 156 156 0 0 1 412 260"/>
+    <path id="bottomArc" d="M 412 272 A 156 156 0 0 1 100 272"/>
+  </defs>
+  <text font-family="'Courier New', monospace" font-size="40" font-weight="700" fill="#1B3A5C" letter-spacing="6">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">WASHINGTON D.C.</textPath>
+  </text>
+
+  <text font-family="'Courier New', monospace" font-size="36" font-weight="700" fill="#1B3A5C" letter-spacing="5">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">APRIL 2026</textPath>
+  </text>
+
+<text x="92" y="270" font-size="26" fill="#BF0A30" text-anchor="middle">★</text>
+<text x="420" y="270" font-size="26" fill="#BF0A30" text-anchor="middle">★</text>
+
+<text x="256" y="310" text-anchor="middle" font-family="'Courier New', monospace" font-size="230" font-weight="900" fill="#1B3A5C">P</text>
+
+  <line x1="195" y1="118" x2="317" y2="118" stroke="#BF0A30" stroke-width="4"/>
+  <line x1="195" y1="400" x2="317" y2="400" stroke="#BF0A30" stroke-width="4"/>
+</svg>
