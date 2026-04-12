@@ -90,19 +90,6 @@ body {
   background: rgba(184, 134, 11, 0.1);
 }
 
-.day-tab.today {
-  background: var(--gold);
-  color: var(--navy);
-  font-weight: 700;
-  border-bottom-color: var(--gold);
-  border-radius: 6px 6px 0 0;
-}
-
-.day-tab.today.active {
-  background: var(--gold);
-  color: var(--navy);
-}
-
 /* MAIN CONTENT */
 main {
   max-width: 700px;
@@ -175,7 +162,7 @@ main {
   font-size: 13px;
   font-weight: 600;
   text-align: center;
-  min-width: 95px;
+  min-width: 60px;
   margin-top: 2px;
 }
 
@@ -336,6 +323,111 @@ a.venue-link:hover {
   color: var(--light-navy);
 }
 
+/* COLLAPSIBLE SECTIONS */
+.collapsible-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(27, 58, 92, 0.06), rgba(184, 134, 11, 0.06));
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s;
+}
+.collapsible-toggle:hover {
+  background: linear-gradient(135deg, rgba(27, 58, 92, 0.1), rgba(184, 134, 11, 0.1));
+}
+.collapsible-toggle .arrow {
+  display: inline-block;
+  transition: transform 0.3s;
+  font-size: 11px;
+}
+.collapsible-toggle.open .arrow {
+  transform: rotate(90deg);
+}
+.collapsible-body {
+  display: none;
+  margin-top: 8px;
+  padding: 14px 16px;
+  background: #FAFBFC;
+  border: 1px solid #E8EBF0;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #444;
+}
+.collapsible-body.open {
+  display: block;
+}
+.collapsible-body .route-step {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #EEF0F4;
+}
+.collapsible-body .route-step:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.route-time {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 12px;
+  min-width: 70px;
+  padding-top: 1px;
+}
+.route-detail {
+  flex: 1;
+}
+.route-detail strong {
+  color: var(--navy);
+}
+.route-detail .route-floor {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.route-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(184, 134, 11, 0.08);
+  border-left: 3px solid var(--gold);
+  border-radius: 3px;
+  font-size: 12px;
+  color: #5A5A5A;
+}
+.route-links {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: rgba(27, 58, 92, 0.04);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.route-links a {
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(27, 58, 92, 0.3);
+}
+.route-links a:hover {
+  border-bottom-color: var(--navy);
+}
+
 /* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
@@ -371,36 +463,12 @@ html {
       </div>
       <div class="schedule-container">
         <div class="schedule-item">
-          <div class="time-badge">6:00 AM</div>
+          <div class="time-badge">5:22 PM</div>
           <div class="activity-content">
-            <div class="activity-text"><a href="https://www.flightaware.com/live/flight/ASA3384" class="venue-link" target="_blank" rel="noopener">Alaska 3384</a> — Depart MRY → SAN</div>
-            <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Operated by SkyWest. ~1h 27m flight. Arrive SAN 7:27am PT.</div>
+            <div class="activity-text"><a href="https://www.flightaware.com/live/flight/ASA506" class="venue-link" target="_blank" rel="noopener">Land at Dulles International Airport (IAD)</a></div>
           </div>
         </div>
 
-
-    <div class="schedule-item">
-      <div class="time-badge">7:27 AM</div>
-      <div class="activity-content">
-        <div class="activity-text">Layover at San Diego (SAN)</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~1h 53m — comfortable connection time</div>
-      </div>
-    </div>
-
-    <div class="schedule-item">
-      <div class="time-badge">9:20 AM</div>
-      <div class="activity-content">
-        <div class="activity-text"><a href="https://www.flightaware.com/live/flight/ASA506" class="venue-link" target="_blank" rel="noopener">Alaska 506</a> — Depart SAN → IAD</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~5h flight. Arrive Dulles 5:22pm ET.</div>
-      </div>
-    </div>
-
-    <div class="schedule-item">
-      <div class="time-badge">5:22 PM</div>
-      <div class="activity-content">
-        <div class="activity-text">Land at Dulles International Airport (IAD)</div>
-      </div>
-    </div>
 
     <div class="schedule-item">
       <div class="time-badge">~6:30 PM</div>
@@ -457,8 +525,8 @@ html {
     <div class="schedule-item">
       <div class="time-badge">11:30 AM</div>
       <div class="activity-content">
-        <div class="activity-text"><a href="https://www.bigbustours.com/en/washington-dc/washington-dc-routes-and-tour-maps" class="venue-link" target="_blank" rel="noopener">Big Bus</a> — full orientation loop, pre-recorded audio commentary via headphones</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Willard Hotel is a mid-route boarding point (~45 min ride to Arlington). 60–90 minutes seated.</div>
+        <div class="activity-text"><a href="https://www.bigbustours.com/en/washington-dc/washington-dc-routes-and-tour-maps" class="venue-link" target="_blank" rel="noopener">Big Bus</a> — full orientation loop with narration</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">60–90 minutes, seated</div>
       </div>
     </div>
 
@@ -504,7 +572,7 @@ html {
         <div class="badges-container">
           <span class="badge badge-confirmed">✅ The Monument Visit</span>
         </div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><strong>This is YOUR monument experience:</strong> April 11 sunset is ~7:37pm, civil twilight ends ~8:05pm. After dinner the monuments are dramatically lit. Seeing them for the first time at night is magical — open 24/7, free.</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><strong>This is YOUR monument experience:</strong> April sunset is ~7:40pm. After dinner the monuments are dramatically lit. Seeing them for the first time at night is magical — open 24/7, free.</div>
         <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><strong>Classic loop (~1.2 mi):</strong> Uber to Lincoln Memorial → Lincoln steps → Reflecting Pool → Vietnam Veterans → Korean War → WWII → Washington Monument (lit). Uber home from Monument area. ~1 hour total. (8:30pm ET = 5:30pm body clock — kids have energy.)</div>
         <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><strong>Short loop (~0.8 mi):</strong> Walk from Riggs to Mall → Washington Monument → WWII Memorial briefly → Uber home. Easy on tired legs.</div>
       </div>
@@ -519,9 +587,9 @@ html {
       <div class="dining-subsection">
         <div class="dining-label">Lunch</div>
         <div class="dining-options">
-          <a href="https://americanindian.si.edu/visit/washington"><strong>Mitsitam Café</strong></a> — National Museum of the American Indian (⚠️ may close as early as 3pm — confirm hours day-of)<br>
+          <a href="https://americanindian.si.edu/visit/washington"><strong>Mitsitam Café</strong></a> — National Museum of the American Indian<br>
           <strong>Food trucks on 14th St NW</strong><br>
-          <a href="https://www.shakeshack.com/"><strong>Shake Shack</strong></a>
+          <a href="https://www.shakeshack.com/location/dc-nats-park-dc/"><strong>Shake Shack</strong></a>
         </div>
       </div>
       <div class="dining-subsection">
@@ -550,7 +618,86 @@ html {
         <div class="badges-container">
           <span class="badge badge-confirmed">✅ Top Priority</span>
         </div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Star-Spangled Banner, Julia Child's kitchen, America on the Move (Jake loves this hall), First Ladies exhibit. Free, no timed-entry. Plan ~2.5 hours.</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Star-Spangled Banner, Lincoln's Top Hat, Dorothy's Ruby Slippers, Entertainment Nation (pop culture), Julia Child's kitchen, America on the Move, First Ladies, Greensboro lunch counter. Free, no timed-entry. Plan ~3 hours.</div>
+
+        <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+          <span class="arrow">▶</span> Museum Route Guide — Top-Down (3rd → 2nd → 1st Floor)
+        </button>
+        <div class="collapsible-body">
+          <div style="margin-bottom: 10px; font-style: italic; color: #666;">Enter via <strong>Mall entrance (Madison Drive)</strong> — puts you on 2nd floor, then head up. Hits all must-sees with zero backtracking.</div>
+
+          <div class="route-step">
+            <div class="route-time">10:00–10:45</div>
+            <div class="route-detail">
+              <span class="route-floor">3F WEST</span>
+              <strong><a href="https://americanhistory.si.edu/explore/exhibitions/entertainment-nation" class="venue-link" target="_blank" rel="noopener">Entertainment Nation</a></strong> (45 min)<br>
+              Pop culture motherlode. Follow the yellow brick road to <strong>Dorothy's Ruby Slippers</strong> in their climate-controlled spotlight case. Also: C-3PO &amp; R2-D2, original Kermit the Frog, Prince's "Yellow Cloud" guitar (playable replica nearby), Muhammad Ali's robe, Mister Rogers' sweater, Handmaid's Tale costume. Immersive video screens &amp; surround sound. Peek at <strong>Lowriding Culture</strong> nearby — the Gypsy Rose lowrider is stunning.
+            </div>
+          </div>
+
+          <div class="route-step">
+            <div class="route-time">10:45–11:15</div>
+            <div class="route-detail">
+              <span class="route-floor">3F CENTER</span>
+              <strong>The American Presidency</strong> (30 min)<br>
+              <strong>Lincoln's Top Hat</strong> is here. Presidential artifacts spanning 250 years, FDR's fireside chat microphone, campaign memorabilia. Jake will love this.
+            </div>
+          </div>
+
+          <div class="route-step">
+            <div class="route-time">11:15–11:30</div>
+            <div class="route-detail">
+              <span class="route-floor">3F CENTER</span>
+              <strong>First Ladies</strong> (15 min)<br>
+              Inaugural gowns — iconic and right next to the Presidency exhibit.
+            </div>
+          </div>
+
+          <div class="route-step">
+            <div class="route-time">11:30–11:45</div>
+            <div class="route-detail">
+              <span class="route-floor">3F EAST</span>
+              <strong>The Price of Freedom</strong> (15 min)<br>
+              Military history from Colonial era to present. The Revolutionary War <strong>gunboat Philadelphia</strong> — an actual warship from 1776.
+            </div>
+          </div>
+
+          <div class="route-step">
+            <div class="route-time">11:45–12:15</div>
+            <div class="route-detail">
+              <span class="route-floor">2F CENTER</span>
+              <strong>Star-Spangled Banner</strong> (30 min)<br>
+              The actual flag from Fort McHenry — 30×34 ft, displayed in a dramatic gallery evoking "the dawn's early light." Emotional centerpiece of the museum.
+            </div>
+          </div>
+
+          <div class="route-step">
+            <div class="route-time">12:15–12:35</div>
+            <div class="route-detail">
+              <span class="route-floor">2F WEST</span>
+              <strong>American Democracy + Greensboro Lunch Counter</strong> (20 min)<br>
+              Jefferson's portable writing desk (Declaration of Independence). The Woolworth's lunch counter from the 1960 sit-ins is in Unity Square nearby.
+            </div>
+          </div>
+
+          <div class="route-step">
+            <div class="route-time">12:35–1:00</div>
+            <div class="route-detail">
+              <span class="route-floor">1F</span>
+              <strong>Julia Child's Kitchen + America on the Move</strong> (25 min)<br>
+              Julia Child's entire kitchen reassembled here. Then America on the Move — trains, cars, transportation history (Jake's pick). Main gift shop also on 1st floor.
+            </div>
+          </div>
+
+          <div class="route-note">
+            <strong>Not open today:</strong> "In Pursuit of Life, Liberty &amp; Happiness" (250th anniversary exhibit, opens May 14) and "¡Puro Ritmo!" salsa exhibit (opens April 18).
+          </div>
+
+          <div class="route-links">
+            📍 <a href="https://americanhistory.si.edu/visit/museum-map" target="_blank" rel="noopener">Interactive Museum Map</a> &nbsp;|&nbsp;
+            🗺️ <a href="https://www.si.edu/content/img/museums/floorplans/nmah.pdf" target="_blank" rel="noopener">Printable Floor Plan (PDF)</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -581,17 +728,16 @@ html {
       <div class="dining-subsection">
         <div class="dining-label">Lunch</div>
         <div class="dining-options">
-          <a href="https://americanhistory.si.edu/visit/dining"><strong>Stars & Stripes Café</strong></a> — inside American History (most convenient, order by 12:45pm)<br>
-          <a href="https://americanindian.si.edu/visit/washington"><strong>Mitsitam Café</strong></a> — 5-min walk east (⚠️ may close as early as 3pm)<br>
-          <strong>District Taco</strong><br>
-          <span style="color: #D32F2F; font-weight: 600;">⚠️ Hard deadline: leave lunch by 1:15pm to reach NMAAHC for 1:30pm passes</span>
+          <a href="https://americanhistory.si.edu/visit/dining"><strong>Stars & Stripes Café</strong></a> — inside American History (most convenient)<br>
+          <a href="https://americanindian.si.edu/visit/washington"><strong>Mitsitam Café</strong></a> — 5-min walk east<br>
+          <strong>District Taco</strong>
         </div>
       </div>
       <div class="dining-subsection">
         <div class="dining-label">Dinner</div>
         <div class="dining-options">
-          <a href="https://www.gordonramsayrestaurants.com/en/us/gordon-ramsay-street-pizza-locations/washington-dc"><strong>Gordon Ramsay Street Pizza</strong></a> — 507 7th St NW, Penn Quarter, short walk from Riggs &nbsp;<span class="badge badge-confirmed">✅ 6:45pm</span><br>
-          <strong>Backup:</strong> <a href="https://hawkndovebardc.com/menu">Hawk 'N' Dove</a>
+          <a href="https://carminesnyc.com/menus/menus-cdc-q420-dining"><strong>Carmine's</strong></a> — 425 7th St NW, Penn Quarter, family-style Italian &nbsp;<span class="badge badge-confirmed">✅ 6:45pm</span><br>
+          <strong>Backup:</strong> <a href="https://cafe.hardrock.com/washington-dc/">Hard Rock Cafe</a> (999 E St NW)
         </div>
       </div>
     </div>
@@ -631,7 +777,7 @@ html {
         <div class="badges-container">
           <span class="badge badge-confirmed">✅ Confirmed</span>
         </div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">511 10th St NW, 5-min walk from Riggs. Tickets purchased.</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">511 10th St NW, 5-min walk from Riggs. Timed entry confirmed.</div>
       </div>
     </div>
 
@@ -643,14 +789,14 @@ html {
           <strong>L'Enfant Plaza Food Court</strong> — Potbelly, Five Guys, Roti, California Tortilla<br>
           <strong>Cava</strong><br>
           <strong>The Wharf</strong> (5–10 min Uber)<br>
-          <span style="color: #B8860B;">⚡ Optional: <a href="https://www.bumblebirdsdc.com" style="color:#B8860B;"><strong>bumblebirds</strong></a> (303 Pennsylvania Ave SE, opens 11am) — if timing allows after Spy Museum (~1:15pm), lunch 1:15–1:45pm, Uber directly to Ford's Theatre for 2pm. If bumblebirds is chosen, skip Riggs rest.</span>
+          <span style="color: #B8860B;">⚡ Optional: <a href="https://www.bumblebirdsdc.com" style="color:#B8860B;"><strong>bumblebirds</strong></a> (303 Pennsylvania Ave SE) — if timing allows after Spy Museum (~1:15pm), lunch 1:15–1:45pm, Uber directly to Ford's Theatre for 2pm. Tight but doable.</span>
         </div>
       </div>
       <div class="dining-subsection">
         <div class="dining-label">Dinner</div>
         <div class="dining-options">
-          <a href="https://www.carminesnyc.com/locations/washington-dc"><strong>Carmine's</strong></a> — 425 7th St NW, Penn Quarter, family-style Italian &nbsp;<span class="badge badge-confirmed">✅ 6:45pm</span><br>
-          <strong>Backup:</strong> <a href="https://cafe.hardrock.com/washington-dc/">Hard Rock Cafe</a> (999 E St NW)
+          <a href="https://www.wearefoundingfarmers.com/founding-farmers-dc-menu/"><strong>Founding Farmers</strong></a> — 1924 Pennsylvania Ave NW, Foggy Bottom &nbsp;<span class="badge badge-confirmed">✅ 6:45pm</span><br>
+          <strong>Backup:</strong> <a href="https://hawkndovebardc.com/menu">Hawk 'N' Dove</a>
         </div>
       </div>
     </div>
@@ -668,11 +814,11 @@ html {
     <div class="schedule-item">
       <div class="time-badge">8:00 AM</div>
       <div class="activity-content">
-        <div class="activity-text">Optional: <a href="https://www.bep.gov/visitor-center-washington-dc" class="venue-link" target="_blank" rel="noopener">Bureau of Engraving & Printing</a> — same-day tickets</div>
+        <div class="activity-text">Optional: <a href="https://www.bumblebirdsdc.com" class="venue-link" target="_blank" rel="noopener">bumblebirds</a> breakfast</div>
         <div class="badges-container">
-          <span class="badge badge-sameday">📅 Same Day</span>
+          <span class="badge badge-optional">⚡ Optional</span>
         </div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">At 8:00am, check <a href="https://www.etix.com/ticket/e/1043305/tour-tickets-washington-bureau-of-engraving-and-printing" target="_blank" rel="noopener" style="color:var(--navy);">etix.com</a> for same-day online tickets (first-come, first-served — sell out fast). One person can do this from the hotel. Alternatively, go in person to BEP Tour Entrance at 301 14th St SW where staff assist with reservations. If you get tickets, tour runs later this afternoon.</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">303 Pennsylvania Ave SE, Capitol Hill. Chef Carla Hall's Southern fried chicken — great for a fun family breakfast. Wrap by 8:45am, Uber to Air & Space (~15 min), arrive by 9:15am ahead of 10am entry. Confirm they open at 8am before going.</div>
       </div>
     </div>
 
@@ -700,7 +846,7 @@ html {
         <div style="font-size: 14px; color: var(--dark-gray); margin-bottom: 8px;">
           <span class="badge badge-sameday" style="margin-bottom: 8px; display: inline-block;">📅 Same Day</span>
         </div>
-        <div style="font-size: 14px; color: var(--dark-gray);">Same-day tickets via <a href="https://www.etix.com/ticket/e/1043305/tour-tickets-washington-bureau-of-engraving-and-printing" target="_blank" rel="noopener" style="color:var(--navy);">etix.com</a> at 8am (online, first-come first-served) or in person at BEP Tour Entrance, 301 14th St SW. Watch money being printed — fascinating for the whole family, especially Jake. ~30–45 min. Pair with NGA Sculpture Garden after for a relaxed walk.</div>
+        <div style="font-size: 14px; color: var(--dark-gray);">Check <a href="https://www.bep.gov/visitor-centers/washington-dc-tour-and-visitor-center" target="_blank" rel="noopener" style="color:var(--navy);">bep.gov</a> at 8:00am this morning for same-day tickets. Watch money being printed — fascinating for the whole family, especially Jake. ~30–45 min. Pair with NGA Sculpture Garden after for a relaxed walk.</div>
       </div>
       <div style="background: var(--light-gray); padding: 16px; border-radius: 6px; margin-bottom: 12px;">
         <div style="font-weight: 600; color: var(--navy); margin-bottom: 8px;"><a href="https://www.nga.gov/visit" class="venue-link" target="_blank" rel="noopener">Option B — National Gallery of Art</a></div>
@@ -717,7 +863,7 @@ html {
       <div class="dining-subsection">
         <div class="dining-label">Lunch</div>
         <div class="dining-options">
-          <a href="https://americanindian.si.edu/visit/washington"><strong>Mitsitam Café</strong></a> — 10% off with Air & Space pass (⚠️ may close as early as 3pm)<br>
+          <a href="https://americanindian.si.edu/visit/washington"><strong>Mitsitam Café</strong></a> — 10% off with Air & Space pass<br>
           <a href="https://www.nga.gov/visit"><strong>Cascade Café</strong></a> — at National Gallery of Art<br>
           <strong>Bar Americano</strong> — outside Air & Space
         </div>
@@ -725,7 +871,7 @@ html {
       <div class="dining-subsection">
         <div class="dining-label">Dinner</div>
         <div class="dining-options">
-          <a href="https://www.mividamexico.com/"><strong>Mi Vida Penn Quarter</strong></a> — 575 7th St NW, modern Mexican, short walk from Riggs &nbsp;<span class="badge badge-confirmed">✅ 6:45pm</span><br>
+          <a href="https://www.matchboxrestaurants.com/menu-penn-quarter"><strong>Matchbox Penn Quarter</strong></a> — 750 E St NW, 2 blocks from Riggs &nbsp;<span class="badge badge-confirmed">✅ 6:45pm</span><br>
           <strong>Backup:</strong> <a href="https://www.shakeshack.com/">Shake Shack</a>
         </div>
       </div>
@@ -776,7 +922,7 @@ html {
       <div class="time-badge">~10:00 AM</div>
       <div class="activity-content">
         <div class="activity-text"><a href="https://www.mountvernon.org/plan-your-visit" class="venue-link" target="_blank" rel="noopener">Arrive at Mount Vernon</a></div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Mansion 1st &amp; 2nd floors fully open (reopened Dec 2025 after $40M restoration — freshly restored Washington Bedchamber). Cellar closed through fall 2026. Farm animals, gardens, museum.</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Mansion grounds (renovation through June 2026, some interior rooms may be closed), farm animals, gardens, museum</div>
       </div>
     </div>
 
@@ -830,7 +976,7 @@ html {
       <div class="time-badge">~7:30 PM</div>
       <div class="activity-content">
         <div class="activity-text">Uber XL back to Riggs</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~30–40 min (allow extra time for Wednesday evening bridge traffic)</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~20–25 min</div>
       </div>
     </div>
 
@@ -905,7 +1051,7 @@ html {
       <div class="time-badge">~10:30 AM</div>
       <div class="activity-content">
         <div class="activity-text"><a href="https://www.loc.gov/visit/" class="venue-link" target="_blank" rel="noopener">Library of Congress</a></div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Directly across the street. Free, no advance reservation needed. Open until 8pm on Thursdays. Stunning interior.</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Directly across the street. Free. Open until 8pm on Thursdays. Stunning interior.</div>
       </div>
     </div>
 
@@ -1003,24 +1149,8 @@ html {
     <div class="schedule-item">
       <div class="time-badge">12:40 PM</div>
       <div class="activity-content">
-        <div class="activity-text"><a href="https://www.flightaware.com/live/flight/UAL1689" class="venue-link" target="_blank" rel="noopener">United 1689</a> — Depart IAD → LAX</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">~5h 52m flight. Arrive LAX ~3:32pm PT.</div>
-      </div>
-    </div>
-
-    <div class="schedule-item">
-      <div class="time-badge">~3:32 PM</div>
-      <div class="activity-content">
-        <div class="activity-text">Layover at Los Angeles (LAX)</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;"><span style="color: #D32F2F; font-weight: 600;">⚠️ ~1h 8m — tight connection.</span> Both flights Terminal 7, no terminal change. Move quickly off the plane. Bags transfer automatically if checked through.</div>
-      </div>
-    </div>
-
-    <div class="schedule-item">
-      <div class="time-badge">4:40 PM</div>
-      <div class="activity-content">
-        <div class="activity-text"><a href="https://www.flightaware.com/live/flight/UAL5613" class="venue-link" target="_blank" rel="noopener">United 5613</a> — Depart LAX → MRY</div>
-        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Operated by SkyWest. ~1h 18m flight. Arrive MRY 5:58pm PT. Home by ~6:30pm.</div>
+        <div class="activity-text"><a href="https://www.flightaware.com/live/flight/UAL1689" class="venue-link" target="_blank" rel="noopener">United Airlines UA 1689</a> — Departs IAD</div>
+        <div class="activity-text" style="font-size: 13px; color: #666; margin-top: 4px;">Safe travels, Poling family!</div>
       </div>
     </div>
   </div>
@@ -1033,48 +1163,13 @@ html {
 
   <footer>
     <p>Poling Family • Washington DC • April 2026</p>
-    <p style="margin-top: 8px; font-size: 11px; opacity: 0.7;">If this page is inaccessible, try <a href="https://mpoling.github.io/sites/dc-2026" style="color: var(--gold);">mpoling.github.io/sites/dc-2026</a></p>
   </footer>
 
   <script>
-    // Trip date mapping: Day 1 = Apr 10, Day 2 = Apr 11, ... Day 8 = Apr 17
-    const tripStartDate = new Date(2026, 3, 10); // Month is 0-indexed: 3 = April
+    // Day tab navigation
+    const navWrapper = document.getElementById('navWrapper');
     const dayTabs = document.querySelectorAll('.day-tab');
     const daySections = document.querySelectorAll('.day-section');
-    const navWrapper = document.getElementById('navWrapper');
-
-    // Determine which trip day is "today"
-    function getTodayDayNum() {
-      const now = new Date();
-      // Use Eastern Time approximation: UTC-4 in April (EDT)
-      const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-      const start = new Date(2026, 3, 10); // Apr 10
-      const diffDays = Math.floor((et - start) / (1000 * 60 * 60 * 24));
-      if (diffDays >= 0 && diffDays <= 7) return diffDays + 1; // Day 1–8
-      return null;
-    }
-
-    const todayDayNum = getTodayDayNum();
-
-    // If today is within the trip, restyle that tab and scroll to it
-    if (todayDayNum) {
-      dayTabs.forEach(tab => {
-        const dayNum = parseInt(tab.getAttribute('data-day'));
-        if (dayNum === todayDayNum) {
-          tab.textContent = 'Today';
-          tab.classList.add('today');
-          tab.classList.add('active');
-          // Scroll to today's section on load
-          setTimeout(() => {
-            const section = document.getElementById(`day-${dayNum}`);
-            if (section) section.scrollIntoView({ behavior: 'auto', block: 'start' });
-            tab.scrollIntoView({ behavior: 'auto', block: 'nearest' });
-          }, 100);
-        } else {
-          tab.classList.remove('active');
-        }
-      });
-    }
 
     // Smooth scroll to section when tab is clicked
     dayTabs.forEach(tab => {
@@ -1082,7 +1177,7 @@ html {
         const dayNum = tab.getAttribute('data-day');
         const section = document.getElementById(`day-${dayNum}`);
 
-        // Remove active class from all tabs (but keep 'today' class)
+        // Remove active class from all tabs
         dayTabs.forEach(t => t.classList.remove('active'));
 
         // Add active class to clicked tab
