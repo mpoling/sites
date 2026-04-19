@@ -2,219 +2,347 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Natalie Nagel Poling — Exploration Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ece5da" />
+  <title>Natalie Nagel Poling — Brand Directions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Figtree:wght@400;500;600&display=swap" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="board board-tabs">
-    <header class="board-header">
-      <p class="eyebrow">Brand exploration</p>
-      <h1>Natalie Nagel Poling</h1>
-      <p class="board-subtitle">Cypress-led tagline directions</p>
-    </header>
 
-    <nav class="tabs" aria-label="Tagline variations">
-      <button class="tab is-active" type="button" data-tab="sea" aria-selected="true">Between the cypress and the sea</button>
-      <button class="tab" type="button" data-tab="cliffs" aria-selected="false">From cottages to cliffs</button>
-      <button class="tab" type="button" data-tab="peninsula" aria-selected="false">The Peninsula, lived well</button>
-    </nav>
+  <header class="masthead">
+    <p class="eyebrow">Brand exploration</p>
+    <h1 class="wordmark">Natalie Nagel Poling</h1>
+    <p class="dek">Three cypress-led tagline directions, set against the Peninsula.</p>
+  </header>
 
-    <section class="tab-panels">
-      <article class="tab-panel is-active" id="panel-sea" data-panel="sea">
-        <article class="panel solo-panel">
-          <div class="panel-inner">
-            <header class="header">
-              <img class="logo" src="cypress-logo.svg" alt="Cypress logo" />
-              <h2 class="title">Between the cypress and the sea</h2>
-              <div class="name-row">
-                <span class="rule"></span>
-                <span class="name">Natalie Nagel Poling</span>
-                <span class="rule"></span>
-              </div>
-            </header>
-            <div class="divider"></div>
-            <section class="mockups">
-              <div class="stack">
-                <div class="navy-back"></div>
-                <div class="card">
-                  <img class="card-logo" src="cypress-logo.svg" alt="Cypress logo" />
-                  <div class="card-title">Between the cypress and the sea</div>
-                  <div class="card-name-row">
-                    <span class="mini-rule"></span>
-                    <span class="card-name">Natalie Nagel Poling</span>
-                    <span class="mini-rule"></span>
-                  </div>
-                </div>
-              </div>
+  <nav class="directions" aria-label="Direction picker">
+    <div class="directions-track" role="tablist">
+      <button class="direction-tab" type="button" role="tab" id="tab-sea"
+              aria-selected="true" aria-controls="panel-sea" data-direction="sea">
+        <span class="num">01</span>
+        <span class="name">Cypress &amp; sea</span>
+      </button>
+      <button class="direction-tab" type="button" role="tab" id="tab-cliffs"
+              aria-selected="false" aria-controls="panel-cliffs" data-direction="cliffs">
+        <span class="num">02</span>
+        <span class="name">Cottages to cliffs</span>
+      </button>
+      <button class="direction-tab" type="button" role="tab" id="tab-peninsula"
+              aria-selected="false" aria-controls="panel-peninsula" data-direction="peninsula">
+        <span class="num">03</span>
+        <span class="name">Peninsula, lived well</span>
+      </button>
+    </div>
+  </nav>
 
-              <div class="sothebys-wrap">
-                <div class="sothebys-base"></div>
-                <div class="sothebys-card">
-                  <div class="sothebys-word">Sotheby's</div>
-                  <div class="sothebys-sub">INTERNATIONAL REALTY</div>
-                  <div class="sothebys-vrule"></div>
-                </div>
-              </div>
+  <main class="stage">
 
-              <div class="phone">
-                <div class="notch"></div>
-                <div class="speaker-dot"></div>
-                <div class="profile">
-                  <div class="avatar"><img src="cypress-logo.svg" alt="Cypress avatar" /></div>
-                  <strong>@njsthebys</strong>
-                  <span class="verify"></span>
-                </div>
-                <div class="post">
-                  <div class="post-header">
-                    <img class="post-logo" src="cypress-logo.svg" alt="Cypress logo" />
-                    <div class="post-title">Between the cypress and the sea</div>
-                    <div class="post-name">Natalie Nagel Poling</div>
-                  </div>
-                  <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene" /></div>
-                </div>
-              </div>
-            </section>
+    <!-- ============== DIRECTION 01 ============== -->
+    <article class="direction" id="panel-sea" role="tabpanel"
+             aria-labelledby="tab-sea" data-direction="sea" data-active="true">
+
+      <section class="hero">
+        <p class="ordinal">Direction One</p>
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <h2 class="tagline">Between the cypress<br />and the sea</h2>
+        <div class="signature">
+          <span class="stroke"></span>
+          <span class="byline">Natalie Nagel Poling</span>
+          <span class="stroke"></span>
+        </div>
+        <p class="voice">
+          <span class="voice-label">Voice</span>
+          Poetic, place-rooted. Leads with landscape.
+        </p>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">Business card</p>
+        <div class="card-assembly">
+          <div class="card card--back" aria-hidden="true"></div>
+          <div class="card card--front">
+            <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+            <p class="card-tagline">Between the cypress and the sea</p>
+            <div class="card-sig">
+              <span class="card-rule"></span>
+              <em>Natalie Nagel Poling</em>
+              <span class="card-rule"></span>
+            </div>
+            <p class="card-affil">Sotheby's International Realty</p>
           </div>
-        </article>
-      </article>
+        </div>
+      </section>
 
-      <article class="tab-panel" id="panel-cliffs" data-panel="cliffs">
-        <article class="panel solo-panel">
-          <div class="panel-inner">
-            <header class="header">
-              <img class="logo" src="cypress-logo.svg" alt="Cypress logo" />
-              <h2 class="title">From cottages to cliffs</h2>
-              <div class="name-row">
-                <span class="rule"></span>
-                <span class="name">Natalie Nagel Poling</span>
-                <span class="rule"></span>
-              </div>
-            </header>
-            <div class="divider"></div>
-            <section class="mockups">
-              <div class="stack">
-                <div class="navy-back"></div>
-                <div class="card">
-                  <img class="card-logo" src="cypress-logo.svg" alt="Cypress logo" />
-                  <div class="card-title">From cottages to cliffs</div>
-                  <div class="card-name-row">
-                    <span class="mini-rule"></span>
-                    <span class="card-name">Natalie Nagel Poling</span>
-                    <span class="mini-rule"></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sothebys-wrap">
-                <div class="sothebys-base"></div>
-                <div class="sothebys-card">
-                  <div class="sothebys-word">Sotheby's</div>
-                  <div class="sothebys-sub">INTERNATIONAL REALTY</div>
-                  <div class="sothebys-vrule"></div>
-                </div>
-              </div>
-
-              <div class="phone">
-                <div class="notch"></div>
-                <div class="speaker-dot"></div>
-                <div class="profile">
-                  <div class="avatar"><img src="cypress-logo.svg" alt="Cypress avatar" /></div>
-                  <strong>@njsthebys</strong>
-                  <span class="verify"></span>
-                </div>
-                <div class="post">
-                  <div class="post-header">
-                    <img class="post-logo" src="cypress-logo.svg" alt="Cypress logo" />
-                    <div class="post-title">From cottages to cliffs</div>
-                    <div class="post-name">Natalie Nagel Poling</div>
-                  </div>
-                  <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene" /></div>
-                </div>
-              </div>
-            </section>
+      <section class="scene">
+        <p class="scene-label">Alongside Sotheby's</p>
+        <div class="lockup">
+          <div class="lockup-half">
+            <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+            <p class="lockup-caption">Natalie</p>
           </div>
-        </article>
-      </article>
-
-      <article class="tab-panel" id="panel-peninsula" data-panel="peninsula">
-        <article class="panel solo-panel">
-          <div class="panel-inner">
-            <header class="header">
-              <img class="logo" src="cypress-logo.svg" alt="Cypress logo" />
-              <h2 class="title">The Peninsula, lived well</h2>
-              <div class="name-row">
-                <span class="rule"></span>
-                <span class="name">Natalie Nagel Poling</span>
-                <span class="rule"></span>
-              </div>
-            </header>
-            <div class="divider"></div>
-            <section class="mockups">
-              <div class="stack">
-                <div class="navy-back"></div>
-                <div class="card">
-                  <img class="card-logo" src="cypress-logo.svg" alt="Cypress logo" />
-                  <div class="card-title">The Peninsula, lived well</div>
-                  <div class="card-name-row">
-                    <span class="mini-rule"></span>
-                    <span class="card-name">Natalie Nagel Poling</span>
-                    <span class="mini-rule"></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sothebys-wrap">
-                <div class="sothebys-base"></div>
-                <div class="sothebys-card">
-                  <div class="sothebys-word">Sotheby's</div>
-                  <div class="sothebys-sub">INTERNATIONAL REALTY</div>
-                  <div class="sothebys-vrule"></div>
-                </div>
-              </div>
-
-              <div class="phone">
-                <div class="notch"></div>
-                <div class="speaker-dot"></div>
-                <div class="profile">
-                  <div class="avatar"><img src="cypress-logo.svg" alt="Cypress avatar" /></div>
-                  <strong>@njsthebys</strong>
-                  <span class="verify"></span>
-                </div>
-                <div class="post">
-                  <div class="post-header">
-                    <img class="post-logo" src="cypress-logo.svg" alt="Cypress logo" />
-                    <div class="post-title">The Peninsula, lived well</div>
-                    <div class="post-name">Natalie Nagel Poling</div>
-                  </div>
-                  <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene" /></div>
-                </div>
-              </div>
-            </section>
+          <span class="lockup-rule" aria-hidden="true"></span>
+          <div class="lockup-half">
+            <p class="lockup-word">Sotheby's</p>
+            <p class="lockup-sub">International Realty</p>
           </div>
+        </div>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">On social</p>
+        <article class="post">
+          <header class="post-head">
+            <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+            <div class="post-meta">
+              <span class="post-handle">
+                natalienagelpoling
+                <span class="verify" aria-hidden="true"></span>
+              </span>
+              <span class="post-place">Monterey · Carmel · Pebble Beach</span>
+            </div>
+          </header>
+          <div class="post-body">
+            <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+            <p class="post-tagline">Between the cypress and the sea</p>
+            <p class="post-byline">— Natalie Nagel Poling —</p>
+            <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
+          </div>
+          <footer class="post-actions" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+          </footer>
         </article>
-      </article>
-    </section>
+      </section>
+
+    </article>
+
+    <!-- ============== DIRECTION 02 ============== -->
+    <article class="direction" id="panel-cliffs" role="tabpanel"
+             aria-labelledby="tab-cliffs" data-direction="cliffs">
+
+      <section class="hero">
+        <p class="ordinal">Direction Two</p>
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <h2 class="tagline">From cottages<br />to cliffs</h2>
+        <div class="signature">
+          <span class="stroke"></span>
+          <span class="byline">Natalie Nagel Poling</span>
+          <span class="stroke"></span>
+        </div>
+        <p class="voice">
+          <span class="voice-label">Voice</span>
+          Versatile, wide-ranging. Signals breadth of practice.
+        </p>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">Business card</p>
+        <div class="card-assembly">
+          <div class="card card--back" aria-hidden="true"></div>
+          <div class="card card--front">
+            <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+            <p class="card-tagline">From cottages to cliffs</p>
+            <div class="card-sig">
+              <span class="card-rule"></span>
+              <em>Natalie Nagel Poling</em>
+              <span class="card-rule"></span>
+            </div>
+            <p class="card-affil">Sotheby's International Realty</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">Alongside Sotheby's</p>
+        <div class="lockup">
+          <div class="lockup-half">
+            <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+            <p class="lockup-caption">Natalie</p>
+          </div>
+          <span class="lockup-rule" aria-hidden="true"></span>
+          <div class="lockup-half">
+            <p class="lockup-word">Sotheby's</p>
+            <p class="lockup-sub">International Realty</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">On social</p>
+        <article class="post">
+          <header class="post-head">
+            <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+            <div class="post-meta">
+              <span class="post-handle">
+                natalienagelpoling
+                <span class="verify" aria-hidden="true"></span>
+              </span>
+              <span class="post-place">Monterey · Carmel · Pebble Beach</span>
+            </div>
+          </header>
+          <div class="post-body">
+            <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+            <p class="post-tagline">From cottages to cliffs</p>
+            <p class="post-byline">— Natalie Nagel Poling —</p>
+            <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
+          </div>
+          <footer class="post-actions" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+          </footer>
+        </article>
+      </section>
+
+    </article>
+
+    <!-- ============== DIRECTION 03 ============== -->
+    <article class="direction" id="panel-peninsula" role="tabpanel"
+             aria-labelledby="tab-peninsula" data-direction="peninsula">
+
+      <section class="hero">
+        <p class="ordinal">Direction Three</p>
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <h2 class="tagline">The Peninsula,<br />lived well</h2>
+        <div class="signature">
+          <span class="stroke"></span>
+          <span class="byline">Natalie Nagel Poling</span>
+          <span class="stroke"></span>
+        </div>
+        <p class="voice">
+          <span class="voice-label">Voice</span>
+          Insider, lifestyle-forward. Positions expertise as belonging.
+        </p>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">Business card</p>
+        <div class="card-assembly">
+          <div class="card card--back" aria-hidden="true"></div>
+          <div class="card card--front">
+            <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+            <p class="card-tagline">The Peninsula, lived well</p>
+            <div class="card-sig">
+              <span class="card-rule"></span>
+              <em>Natalie Nagel Poling</em>
+              <span class="card-rule"></span>
+            </div>
+            <p class="card-affil">Sotheby's International Realty</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">Alongside Sotheby's</p>
+        <div class="lockup">
+          <div class="lockup-half">
+            <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+            <p class="lockup-caption">Natalie</p>
+          </div>
+          <span class="lockup-rule" aria-hidden="true"></span>
+          <div class="lockup-half">
+            <p class="lockup-word">Sotheby's</p>
+            <p class="lockup-sub">International Realty</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene">
+        <p class="scene-label">On social</p>
+        <article class="post">
+          <header class="post-head">
+            <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+            <div class="post-meta">
+              <span class="post-handle">
+                natalienagelpoling
+                <span class="verify" aria-hidden="true"></span>
+              </span>
+              <span class="post-place">Monterey · Carmel · Pebble Beach</span>
+            </div>
+          </header>
+          <div class="post-body">
+            <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+            <p class="post-tagline">The Peninsula, lived well</p>
+            <p class="post-byline">— Natalie Nagel Poling —</p>
+            <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
+          </div>
+          <footer class="post-actions" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+          </footer>
+        </article>
+      </section>
+
+    </article>
+
   </main>
 
+  <footer class="foot">
+    <p>Round one · exploration</p>
+  </footer>
+
   <script>
-    const tabs = document.querySelectorAll('.tab');
-    const panels = document.querySelectorAll('.tab-panel');
+    (function () {
+      const tabs = document.querySelectorAll('.direction-tab');
+      const panels = document.querySelectorAll('.direction');
 
-    function activateTab(key) {
+      function activate(key, { updateHash = true } = {}) {
+        tabs.forEach(t => {
+          const on = t.dataset.direction === key;
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        panels.forEach(p => {
+          if (p.dataset.direction === key) {
+            p.dataset.active = 'true';
+          } else {
+            delete p.dataset.active;
+          }
+        });
+        if (updateHash && location.hash.slice(1) !== key) {
+          history.replaceState(null, '', '#' + key);
+        }
+        // Scroll the just-activated panel's tab into view in the sticky bar
+        const activeTab = document.querySelector(`.direction-tab[data-direction="${key}"]`);
+        if (activeTab) {
+          activeTab.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+        }
+      }
+
       tabs.forEach(tab => {
-        const active = tab.dataset.tab === key;
-        tab.classList.toggle('is-active', active);
-        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+        tab.addEventListener('click', () => activate(tab.dataset.direction));
       });
-      panels.forEach(panel => {
-        panel.classList.toggle('is-active', panel.dataset.panel === key);
-      });
-    }
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => activateTab(tab.dataset.tab));
-    });
+      // Deep link support
+      const initial = location.hash.slice(1);
+      if (initial && document.getElementById('panel-' + initial)) {
+        activate(initial, { updateHash: false });
+      }
+
+      // Keyboard nav between tabs
+      document.querySelector('.directions-track').addEventListener('keydown', (e) => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+        e.preventDefault();
+        const current = document.activeElement;
+        const list = Array.from(tabs);
+        let i = list.indexOf(current);
+        if (i < 0) i = 0;
+        if (e.key === 'ArrowLeft') i = (i - 1 + list.length) % list.length;
+        else if (e.key === 'ArrowRight') i = (i + 1) % list.length;
+        else if (e.key === 'Home') i = 0;
+        else if (e.key === 'End') i = list.length - 1;
+        list[i].focus();
+        activate(list[i].dataset.direction);
+      });
+    })();
   </script>
+
 </body>
 </html>
