@@ -7,14 +7,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="board">
-    <section class="grid">
-      <div class="panel-wrap top">
-        <article class="panel">
+  <main class="board board-tabs">
+    <header class="board-header">
+      <p class="eyebrow">Brand exploration</p>
+      <h1>Natalie Nagel Poling</h1>
+      <p class="board-subtitle">Cypress-led tagline directions</p>
+    </header>
+
+    <nav class="tabs" aria-label="Tagline variations">
+      <button class="tab is-active" type="button" data-tab="sea" aria-selected="true">Between the cypress and the sea</button>
+      <button class="tab" type="button" data-tab="cliffs" aria-selected="false">From cottages to cliffs</button>
+      <button class="tab" type="button" data-tab="peninsula" aria-selected="false">The Peninsula, lived well</button>
+    </nav>
+
+    <section class="tab-panels">
+      <article class="tab-panel is-active" id="panel-sea" data-panel="sea">
+        <article class="panel solo-panel">
           <div class="panel-inner">
             <header class="header">
               <img class="logo" src="cypress-logo.svg" alt="Cypress logo" />
-              <h1 class="title">Between the cypress and the sea</h1>
+              <h2 class="title">Between the cypress and the sea</h2>
               <div class="name-row">
                 <span class="rule"></span>
                 <span class="name">Natalie Nagel Poling</span>
@@ -65,10 +77,10 @@
             </section>
           </div>
         </article>
-      </div>
+      </article>
 
-      <div class="panel-wrap bottom-left">
-        <article class="panel small">
+      <article class="tab-panel" id="panel-cliffs" data-panel="cliffs">
+        <article class="panel solo-panel">
           <div class="panel-inner">
             <header class="header">
               <img class="logo" src="cypress-logo.svg" alt="Cypress logo" />
@@ -123,10 +135,10 @@
             </section>
           </div>
         </article>
-      </div>
+      </article>
 
-      <div class="panel-wrap bottom-right">
-        <article class="panel small">
+      <article class="tab-panel" id="panel-peninsula" data-panel="peninsula">
+        <article class="panel solo-panel">
           <div class="panel-inner">
             <header class="header">
               <img class="logo" src="cypress-logo.svg" alt="Cypress logo" />
@@ -181,8 +193,28 @@
             </section>
           </div>
         </article>
-      </div>
+      </article>
     </section>
   </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function activateTab(key) {
+      tabs.forEach(tab => {
+        const active = tab.dataset.tab === key;
+        tab.classList.toggle('is-active', active);
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach(panel => {
+        panel.classList.toggle('is-active', panel.dataset.panel === key);
+      });
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+    });
+  </script>
 </body>
 </html>
