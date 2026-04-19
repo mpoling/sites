@@ -16,11 +16,17 @@ body {
   color: var(--navy);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .board {
-  width: 1600px;
-  min-height: 1066px;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 32px 28px 40px;
+  padding: clamp(18px, 3vw, 32px) clamp(14px, 2.5vw, 28px) clamp(24px, 3.5vw, 40px);
   background: var(--bg);
 }
 
@@ -45,7 +51,7 @@ body {
 
 .board-header h1 {
   margin: 0;
-  font-size: 34px;
+  font-size: clamp(28px, 4vw, 34px);
   line-height: 1.1;
   font-weight: normal;
 }
@@ -100,7 +106,7 @@ body {
 }
 
 .solo-panel {
-  width: 1020px;
+  width: min(1020px, 100%);
   min-height: 450px;
   margin: 0 auto;
 }
@@ -136,55 +142,70 @@ body {
   align-items: center;
   padding-top: 18px;
 }
+
 .logo {
-  width: 180px;
+  width: clamp(130px, 20vw, 180px);
   height: auto;
   display: block;
   margin: 0 auto 8px;
 }
+
 .title {
   text-align: center;
-  font-size: 30px;
+  font-size: clamp(24px, 3vw, 30px);
   letter-spacing: 0.06em;
-  line-height: 1.1;
+  line-height: 1.15;
   text-transform: uppercase;
   margin: 0;
   color: var(--navy);
+  text-wrap: balance;
+  max-width: 90%;
 }
+
 .name-row {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
   margin-top: 10px;
+  width: 100%;
+  padding-inline: 16px;
 }
+
 .name-row .rule {
-  width: 76px;
+  width: min(76px, 18vw);
   border-top: 2px solid var(--line);
   opacity: .9;
+  flex: 0 1 auto;
 }
+
 .name {
-  font-size: 24px;
+  font-size: clamp(20px, 2.4vw, 24px);
   font-style: italic;
   color: var(--navy);
+  text-align: center;
+  white-space: nowrap;
 }
+
 .divider {
-  margin: 52px 96px 0;
+  margin: 52px clamp(20px, 6vw, 96px) 0;
   border-top: 2px solid var(--line);
 }
 
 .mockups {
   display: grid;
   grid-template-columns: 330px 250px 230px;
+  justify-content: center;
   align-items: end;
   gap: 24px;
-  padding: 18px 68px 28px;
+  padding: 18px clamp(20px, 5vw, 68px) 28px;
 }
 
 .stack {
   position: relative;
   height: 190px;
 }
+
 .stack .navy-back {
   position: absolute;
   left: 148px;
@@ -195,6 +216,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(39, 34, 28, .12);
 }
+
 .card {
   width: 280px;
   height: 160px;
@@ -210,17 +232,27 @@ body {
   align-items: center;
   padding: 16px 16px 10px;
 }
+
 .card-logo { width: 78px; margin-bottom: 10px; }
+
 .card-title {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: .03em;
   line-height: 1.15;
   text-align: center;
+  text-wrap: balance;
 }
+
 .card-name-row {
-  display: flex; align-items: center; gap: 10px; margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
 }
+
 .card-name-row .mini-rule { width: 34px; border-top: 1.5px solid var(--line); }
 .card-name { font-size: 15px; font-style: italic; }
 
@@ -228,6 +260,7 @@ body {
   position: relative;
   height: 170px;
 }
+
 .sothebys-base {
   position: absolute;
   left: 0;
@@ -236,6 +269,7 @@ body {
   height: 28px;
   background: #2c4563;
 }
+
 .sothebys-card {
   position: absolute;
   left: 18px;
@@ -251,10 +285,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .sothebys-word {
   font-size: 28px;
   line-height: 1;
 }
+
 .sothebys-sub {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 9px;
@@ -262,6 +298,7 @@ body {
   color: #666;
   margin-top: 6px;
 }
+
 .sothebys-vrule {
   position: absolute;
   right: 18px;
@@ -280,6 +317,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .notch {
   position: absolute;
   top: 8px;
@@ -289,6 +327,7 @@ body {
   border-radius: 5px;
   background: #e1e1e1;
 }
+
 .speaker-dot {
   position: absolute;
   top: 14px;
@@ -298,6 +337,7 @@ body {
   border-radius: 50%;
   background: #b8b8b8;
 }
+
 .profile {
   display: flex;
   align-items: center;
@@ -307,6 +347,7 @@ body {
   font-size: 18px;
   color: #2b2b2b;
 }
+
 .avatar {
   width: 52px;
   height: 52px;
@@ -317,7 +358,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .avatar img { width: 36px; }
+
 .verify {
   width: 12px;
   height: 12px;
@@ -325,6 +368,7 @@ body {
   background: #3ea6ff;
   display: inline-block;
 }
+
 .post {
   position: absolute;
   left: 16px;
@@ -337,24 +381,31 @@ body {
   box-shadow: 0 10px 18px rgba(46, 37, 29, .12);
   overflow: hidden;
 }
+
 .post-header {
   padding: 14px 14px 0;
   text-align: center;
 }
+
 .post-logo { width: 90px; }
+
 .post-title {
   margin-top: 8px;
   font-size: 14px;
   line-height: 1.15;
   text-transform: uppercase;
+  text-wrap: balance;
 }
+
 .post-name { font-size: 14px; font-style: italic; margin-top: 8px; }
+
 .post-scene {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   height: 112px;
   background: #ece5da;
 }
+
 .post-scene img {
   width: 100%;
   height: 100%;
@@ -362,6 +413,182 @@ body {
   display: block;
 }
 
-@media (max-width: 1700px) {
-  body { overflow-x: auto; }
+@media (max-width: 1100px) {
+  .mockups {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 28px;
+    padding-top: 26px;
+  }
+
+  .stack,
+  .sothebys-wrap,
+  .phone {
+    transform-origin: top center;
+  }
+
+  .sothebys-wrap {
+    width: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .board {
+    padding-inline: 12px;
+    gap: 16px;
+  }
+
+  .board-header .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+
+  .board-subtitle {
+    font-size: 14px;
+  }
+
+  .tabs {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 2px 2px 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 11px 14px;
+  }
+
+  .solo-panel {
+    min-height: auto;
+  }
+
+  .panel {
+    border-radius: 14px;
+  }
+
+  .header {
+    padding-top: 16px;
+  }
+
+  .logo {
+    width: 128px;
+    margin-bottom: 6px;
+  }
+
+  .title {
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    max-width: 92%;
+  }
+
+  .name-row {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .name-row .rule {
+    width: min(44px, 12vw);
+  }
+
+  .name {
+    font-size: 18px;
+    white-space: normal;
+    text-wrap: balance;
+  }
+
+  .divider {
+    margin: 24px 16px 0;
+  }
+
+  .mockups {
+    padding: 18px 12px 20px;
+    gap: 20px;
+  }
+
+  .stack {
+    width: 100%;
+    max-width: 288px;
+    height: 172px;
+  }
+
+  .stack .navy-back {
+    left: auto;
+    right: 0;
+    top: 42px;
+    width: 150px;
+    height: 96px;
+  }
+
+  .card {
+    width: min(252px, calc(100vw - 68px));
+    height: 148px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 14px;
+    padding: 14px 14px 10px;
+  }
+
+  .card-logo {
+    width: 70px;
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-name {
+    font-size: 14px;
+  }
+
+  .card-name-row .mini-rule {
+    width: 24px;
+  }
+
+  .sothebys-wrap {
+    width: 210px;
+    height: 154px;
+  }
+
+  .sothebys-base {
+    width: 184px;
+    height: 24px;
+  }
+
+  .sothebys-card {
+    left: 16px;
+    width: 166px;
+    height: 102px;
+  }
+
+  .sothebys-word {
+    font-size: 24px;
+  }
+
+  .phone {
+    width: min(230px, calc(100vw - 72px));
+    height: 470px;
+  }
+
+  .profile {
+    font-size: 16px;
+    gap: 8px;
+    padding-inline: 16px;
+  }
+
+  .profile strong {
+    font-size: 15px;
+  }
 }
