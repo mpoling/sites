@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -38,490 +39,657 @@
         <span class="num">03</span>
         <span class="name">Peninsula, lived well</span>
       </button>
+      <button class="direction-tab" type="button" role="tab" id="tab-calm"
+              aria-selected="false" aria-controls="panel-calm" data-direction="calm">
+        <span class="num">04</span>
+        <span class="name">Cottages, cliffs &amp; calm</span>
+      </button>
     </div>
   </nav>
 
   <main class="stage">
 
-    <!-- ============== DIRECTION 01 ============== -->
-    <article class="direction" id="panel-sea" role="tabpanel"
-             aria-labelledby="tab-sea" data-direction="sea" data-active="true">
 
-      <section class="hero">
-        <p class="ordinal">Direction One</p>
-        <div class="mark-row">
-          <figure class="mark-figure">
-            <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
-            <figcaption class="mark-caption">Cypress mark</figcaption>
-          </figure>
-          <figure class="mark-figure">
-            <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
-            <figcaption class="mark-caption">Monogram mark</figcaption>
-          </figure>
-        </div>
-        <h2 class="tagline">Between the cypress<br />and the sea</h2>
-        <div class="signature">
-          <span class="stroke"></span>
-          <span class="byline">Natalie Nagel Poling</span>
-          <span class="stroke"></span>
-        </div>
-        <p class="voice">
-          <span class="voice-label">Voice</span>
-          Poetic, place-rooted. Leads with landscape.
-        </p>
-      </section>
+<!-- ============== DIRECTION 01 ============== -->
+<article class="direction" id="panel-sea" role="tabpanel"
+         aria-labelledby="tab-sea" data-direction="sea" data-active="true">
 
-      <section class="scene">
-        <p class="scene-label">Business card</p>
+  <section class="hero">
+    <p class="ordinal">Direction One</p>
+    <div class="mark-row">
+      <figure class="mark-figure">
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <figcaption class="mark-caption">Cypress mark</figcaption>
+      </figure>
+      <figure class="mark-figure">
+        <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
+        <figcaption class="mark-caption">Monogram mark</figcaption>
+      </figure>
+    </div>
+    <h2 class="tagline">Between the cypress<br />and the sea</h2>
+    <div class="signature">
+      <span class="stroke"></span>
+      <span class="byline">Natalie Nagel Poling</span>
+      <span class="stroke"></span>
+    </div>
+    <p class="voice">
+      <span class="voice-label">Voice</span>
+      Poetic, place-rooted. Leads with landscape.
+    </p>
+  </section>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <div class="card-assembly">
-            <div class="card card--back" aria-hidden="true"></div>
-            <div class="card card--front">
-              <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
-              <p class="card-tagline">Between the cypress and the sea</p>
-              <div class="card-sig">
-                <span class="card-rule"></span>
-                <em>Natalie Nagel Poling</em>
-                <span class="card-rule"></span>
-              </div>
-              <p class="card-affil">Sotheby's International Realty</p>
-            </div>
+  <section class="scene">
+    <p class="scene-label">Business card</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">Between the cypress and the sea</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
           </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
+      </div>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <div class="card-assembly">
-            <div class="card card--back" aria-hidden="true"></div>
-            <div class="card card--front">
-              <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
-              <p class="card-tagline">Between the cypress and the sea</p>
-              <div class="card-sig">
-                <span class="card-rule"></span>
-                <em>Natalie Nagel Poling</em>
-                <span class="card-rule"></span>
-              </div>
-              <p class="card-affil">Sotheby's International Realty</p>
-            </div>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">Between the cypress and the sea</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
           </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="scene">
-        <p class="scene-label">Alongside Sotheby's</p>
+  <section class="scene">
+    <p class="scene-label">Alongside Sotheby's</p>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <div class="lockup">
-            <div class="lockup-half">
-              <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
-              <p class="lockup-caption">Natalie Nagel Poling</p>
-            </div>
-            <span class="lockup-rule" aria-hidden="true"></span>
-            <div class="lockup-half">
-              <p class="lockup-word">Sotheby's</p>
-              <p class="lockup-sub">International Realty</p>
-            </div>
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene">
+    <p class="scene-label">On social</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
           </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">Between the cypress and the sea</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
         </div>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <div class="lockup">
-            <div class="lockup-half">
-              <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
-              <p class="lockup-caption">Natalie Nagel Poling</p>
-            </div>
-            <span class="lockup-rule" aria-hidden="true"></span>
-            <div class="lockup-half">
-              <p class="lockup-word">Sotheby's</p>
-              <p class="lockup-sub">International Realty</p>
-            </div>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
           </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">Between the cypress and the sea</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
         </div>
-      </section>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
+  </section>
 
-      <section class="scene">
-        <p class="scene-label">On social</p>
+</article>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <article class="post">
-            <header class="post-head">
-              <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
-              <div class="post-meta">
-                <span class="post-handle">
-                  natalienagelpoling
-                  <span class="verify" aria-hidden="true"></span>
-                </span>
-                <span class="post-place">Monterey · Carmel · Pebble Beach</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
-              <p class="post-tagline">Between the cypress and the sea</p>
-              <p class="post-byline">— Natalie Nagel Poling —</p>
-              <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
-            </div>
-            <footer class="post-actions" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
-            </footer>
-          </article>
-        </div>
+<!-- ============== DIRECTION 02 ============== -->
+<article class="direction" id="panel-cliffs" role="tabpanel"
+         aria-labelledby="tab-cliffs" data-direction="cliffs">
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <article class="post">
-            <header class="post-head">
-              <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
-              <div class="post-meta">
-                <span class="post-handle">
-                  natalienagelpoling
-                  <span class="verify" aria-hidden="true"></span>
-                </span>
-                <span class="post-place">Monterey · Carmel · Pebble Beach</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
-              <p class="post-tagline">Between the cypress and the sea</p>
-              <p class="post-byline">— Natalie Nagel Poling —</p>
-              <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
-            </div>
-            <footer class="post-actions" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
-            </footer>
-          </article>
-        </div>
-      </section>
+  <section class="hero">
+    <p class="ordinal">Direction Two</p>
+    <div class="mark-row">
+      <figure class="mark-figure">
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <figcaption class="mark-caption">Cypress mark</figcaption>
+      </figure>
+      <figure class="mark-figure">
+        <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
+        <figcaption class="mark-caption">Monogram mark</figcaption>
+      </figure>
+    </div>
+    <h2 class="tagline">From cottages<br />to cliffs</h2>
+    <div class="signature">
+      <span class="stroke"></span>
+      <span class="byline">Natalie Nagel Poling</span>
+      <span class="stroke"></span>
+    </div>
+    <p class="voice">
+      <span class="voice-label">Voice</span>
+      Versatile, wide-ranging. Signals breadth of practice.
+    </p>
+  </section>
 
-    </article>
+  <section class="scene">
+    <p class="scene-label">Business card</p>
 
-    <!-- ============== DIRECTION 02 ============== -->
-    <article class="direction" id="panel-cliffs" role="tabpanel"
-             aria-labelledby="tab-cliffs" data-direction="cliffs">
-
-      <section class="hero">
-        <p class="ordinal">Direction Two</p>
-        <div class="mark-row">
-          <figure class="mark-figure">
-            <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
-            <figcaption class="mark-caption">Cypress mark</figcaption>
-          </figure>
-          <figure class="mark-figure">
-            <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
-            <figcaption class="mark-caption">Monogram mark</figcaption>
-          </figure>
-        </div>
-        <h2 class="tagline">From cottages<br />to cliffs</h2>
-        <div class="signature">
-          <span class="stroke"></span>
-          <span class="byline">Natalie Nagel Poling</span>
-          <span class="stroke"></span>
-        </div>
-        <p class="voice">
-          <span class="voice-label">Voice</span>
-          Versatile, wide-ranging. Signals breadth of practice.
-        </p>
-      </section>
-
-      <section class="scene">
-        <p class="scene-label">Business card</p>
-
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <div class="card-assembly">
-            <div class="card card--back" aria-hidden="true"></div>
-            <div class="card card--front">
-              <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
-              <p class="card-tagline">From cottages to cliffs</p>
-              <div class="card-sig">
-                <span class="card-rule"></span>
-                <em>Natalie Nagel Poling</em>
-                <span class="card-rule"></span>
-              </div>
-              <p class="card-affil">Sotheby's International Realty</p>
-            </div>
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">From cottages to cliffs</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
           </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
+      </div>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <div class="card-assembly">
-            <div class="card card--back" aria-hidden="true"></div>
-            <div class="card card--front">
-              <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
-              <p class="card-tagline">From cottages to cliffs</p>
-              <div class="card-sig">
-                <span class="card-rule"></span>
-                <em>Natalie Nagel Poling</em>
-                <span class="card-rule"></span>
-              </div>
-              <p class="card-affil">Sotheby's International Realty</p>
-            </div>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">From cottages to cliffs</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
           </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="scene">
-        <p class="scene-label">Alongside Sotheby's</p>
+  <section class="scene">
+    <p class="scene-label">Alongside Sotheby's</p>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <div class="lockup">
-            <div class="lockup-half">
-              <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
-              <p class="lockup-caption">Natalie Nagel Poling</p>
-            </div>
-            <span class="lockup-rule" aria-hidden="true"></span>
-            <div class="lockup-half">
-              <p class="lockup-word">Sotheby's</p>
-              <p class="lockup-sub">International Realty</p>
-            </div>
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene">
+    <p class="scene-label">On social</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
           </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">From cottages to cliffs</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
         </div>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <div class="lockup">
-            <div class="lockup-half">
-              <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
-              <p class="lockup-caption">Natalie Nagel Poling</p>
-            </div>
-            <span class="lockup-rule" aria-hidden="true"></span>
-            <div class="lockup-half">
-              <p class="lockup-word">Sotheby's</p>
-              <p class="lockup-sub">International Realty</p>
-            </div>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
           </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">From cottages to cliffs</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
         </div>
-      </section>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
+  </section>
 
-      <section class="scene">
-        <p class="scene-label">On social</p>
+</article>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <article class="post">
-            <header class="post-head">
-              <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
-              <div class="post-meta">
-                <span class="post-handle">
-                  natalienagelpoling
-                  <span class="verify" aria-hidden="true"></span>
-                </span>
-                <span class="post-place">Monterey · Carmel · Pebble Beach</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
-              <p class="post-tagline">From cottages to cliffs</p>
-              <p class="post-byline">— Natalie Nagel Poling —</p>
-              <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
-            </div>
-            <footer class="post-actions" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
-            </footer>
-          </article>
-        </div>
+<!-- ============== DIRECTION 03 ============== -->
+<article class="direction" id="panel-peninsula" role="tabpanel"
+         aria-labelledby="tab-peninsula" data-direction="peninsula">
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <article class="post">
-            <header class="post-head">
-              <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
-              <div class="post-meta">
-                <span class="post-handle">
-                  natalienagelpoling
-                  <span class="verify" aria-hidden="true"></span>
-                </span>
-                <span class="post-place">Monterey · Carmel · Pebble Beach</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
-              <p class="post-tagline">From cottages to cliffs</p>
-              <p class="post-byline">— Natalie Nagel Poling —</p>
-              <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
-            </div>
-            <footer class="post-actions" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
-            </footer>
-          </article>
-        </div>
-      </section>
+  <section class="hero">
+    <p class="ordinal">Direction Three</p>
+    <div class="mark-row">
+      <figure class="mark-figure">
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <figcaption class="mark-caption">Cypress mark</figcaption>
+      </figure>
+      <figure class="mark-figure">
+        <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
+        <figcaption class="mark-caption">Monogram mark</figcaption>
+      </figure>
+    </div>
+    <h2 class="tagline">The Peninsula,<br />lived well</h2>
+    <div class="signature">
+      <span class="stroke"></span>
+      <span class="byline">Natalie Nagel Poling</span>
+      <span class="stroke"></span>
+    </div>
+    <p class="voice">
+      <span class="voice-label">Voice</span>
+      Insider, lifestyle-forward. Positions expertise as belonging.
+    </p>
+  </section>
 
-    </article>
+  <section class="scene">
+    <p class="scene-label">Business card</p>
 
-    <!-- ============== DIRECTION 03 ============== -->
-    <article class="direction" id="panel-peninsula" role="tabpanel"
-             aria-labelledby="tab-peninsula" data-direction="peninsula">
-
-      <section class="hero">
-        <p class="ordinal">Direction Three</p>
-        <div class="mark-row">
-          <figure class="mark-figure">
-            <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
-            <figcaption class="mark-caption">Cypress mark</figcaption>
-          </figure>
-          <figure class="mark-figure">
-            <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
-            <figcaption class="mark-caption">Monogram mark</figcaption>
-          </figure>
-        </div>
-        <h2 class="tagline">The Peninsula,<br />lived well</h2>
-        <div class="signature">
-          <span class="stroke"></span>
-          <span class="byline">Natalie Nagel Poling</span>
-          <span class="stroke"></span>
-        </div>
-        <p class="voice">
-          <span class="voice-label">Voice</span>
-          Insider, lifestyle-forward. Positions expertise as belonging.
-        </p>
-      </section>
-
-      <section class="scene">
-        <p class="scene-label">Business card</p>
-
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <div class="card-assembly">
-            <div class="card card--back" aria-hidden="true"></div>
-            <div class="card card--front">
-              <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
-              <p class="card-tagline">The Peninsula, lived well</p>
-              <div class="card-sig">
-                <span class="card-rule"></span>
-                <em>Natalie Nagel Poling</em>
-                <span class="card-rule"></span>
-              </div>
-              <p class="card-affil">Sotheby's International Realty</p>
-            </div>
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">The Peninsula, lived well</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
           </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
+      </div>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <div class="card-assembly">
-            <div class="card card--back" aria-hidden="true"></div>
-            <div class="card card--front">
-              <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
-              <p class="card-tagline">The Peninsula, lived well</p>
-              <div class="card-sig">
-                <span class="card-rule"></span>
-                <em>Natalie Nagel Poling</em>
-                <span class="card-rule"></span>
-              </div>
-              <p class="card-affil">Sotheby's International Realty</p>
-            </div>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">The Peninsula, lived well</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
           </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="scene">
-        <p class="scene-label">Alongside Sotheby's</p>
+  <section class="scene">
+    <p class="scene-label">Alongside Sotheby's</p>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <div class="lockup">
-            <div class="lockup-half">
-              <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
-              <p class="lockup-caption">Natalie Nagel Poling</p>
-            </div>
-            <span class="lockup-rule" aria-hidden="true"></span>
-            <div class="lockup-half">
-              <p class="lockup-word">Sotheby's</p>
-              <p class="lockup-sub">International Realty</p>
-            </div>
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene">
+    <p class="scene-label">On social</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
           </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">The Peninsula, lived well</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
         </div>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <div class="lockup">
-            <div class="lockup-half">
-              <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
-              <p class="lockup-caption">Natalie Nagel Poling</p>
-            </div>
-            <span class="lockup-rule" aria-hidden="true"></span>
-            <div class="lockup-half">
-              <p class="lockup-word">Sotheby's</p>
-              <p class="lockup-sub">International Realty</p>
-            </div>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
           </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">The Peninsula, lived well</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
         </div>
-      </section>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
+  </section>
 
-      <section class="scene">
-        <p class="scene-label">On social</p>
+</article>
 
-        <div class="variant">
-          <p class="variant-tag">Cypress mark</p>
-          <article class="post">
-            <header class="post-head">
-              <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
-              <div class="post-meta">
-                <span class="post-handle">
-                  natalienagelpoling
-                  <span class="verify" aria-hidden="true"></span>
-                </span>
-                <span class="post-place">Monterey · Carmel · Pebble Beach</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
-              <p class="post-tagline">The Peninsula, lived well</p>
-              <p class="post-byline">— Natalie Nagel Poling —</p>
-              <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
-            </div>
-            <footer class="post-actions" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
-            </footer>
-          </article>
+<!-- ============== DIRECTION 04 ============== -->
+<article class="direction" id="panel-calm" role="tabpanel"
+         aria-labelledby="tab-calm" data-direction="calm">
+
+  <section class="hero">
+    <p class="ordinal">Direction Four</p>
+    <div class="mark-row">
+      <figure class="mark-figure">
+        <img class="crest" src="cypress-logo.svg" alt="Cypress logo" />
+        <figcaption class="mark-caption">Cypress mark</figcaption>
+      </figure>
+      <figure class="mark-figure">
+        <img class="crest crest--mono" src="nnp-monogram.svg" alt="NNP monogram" />
+        <figcaption class="mark-caption">Monogram mark</figcaption>
+      </figure>
+    </div>
+    <h2 class="tagline">Cottages, Cliffs,<br />and Calm</h2>
+    <div class="signature">
+      <span class="stroke"></span>
+      <span class="byline">Natalie Nagel Poling</span>
+      <span class="stroke"></span>
+    </div>
+    <p class="voice">
+      <span class="voice-label">Voice</span>
+      Alliterative, unhurried. Breadth with a promise of ease.
+    </p>
+  </section>
+
+  <section class="scene">
+    <p class="scene-label">Business card</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">Cottages, Cliffs, and Calm</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
+          </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
+      </div>
+    </div>
 
-        <div class="variant variant--mono">
-          <p class="variant-tag">Monogram mark</p>
-          <article class="post">
-            <header class="post-head">
-              <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
-              <div class="post-meta">
-                <span class="post-handle">
-                  natalienagelpoling
-                  <span class="verify" aria-hidden="true"></span>
-                </span>
-                <span class="post-place">Monterey · Carmel · Pebble Beach</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
-              <p class="post-tagline">The Peninsula, lived well</p>
-              <p class="post-byline">— Natalie Nagel Poling —</p>
-              <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
-            </div>
-            <footer class="post-actions" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
-            </footer>
-          </article>
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="card-assembly">
+        <div class="card card--back" aria-hidden="true"></div>
+        <div class="card card--front">
+          <img class="card-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="card-tagline">Cottages, Cliffs, and Calm</p>
+          <div class="card-sig">
+            <span class="card-rule"></span>
+            <em>Natalie Nagel Poling</em>
+            <span class="card-rule"></span>
+          </div>
+          <p class="card-affil">Sotheby's International Realty</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-    </article>
+  <section class="scene">
+    <p class="scene-label">Alongside Sotheby's</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="cypress-logo.svg" alt="Cypress logo" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <div class="lockup">
+        <div class="lockup-half">
+          <img class="lockup-mark" src="nnp-monogram.svg" alt="NNP monogram" />
+          <p class="lockup-caption">Natalie Nagel Poling</p>
+        </div>
+        <span class="lockup-rule" aria-hidden="true"></span>
+        <div class="lockup-half">
+          <p class="lockup-word">Sotheby's</p>
+          <p class="lockup-sub">International Realty</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene">
+    <p class="scene-label">On social</p>
+
+    <div class="variant">
+      <p class="variant-tag">Cypress mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="cypress-logo.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
+          </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="cypress-logo.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">Cottages, Cliffs, and Calm</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
+        </div>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
+
+    <div class="variant variant--mono">
+      <p class="variant-tag">Monogram mark</p>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-avatar"><img src="nnp-monogram.svg" alt="" aria-hidden="true" /></div>
+          <div class="post-meta">
+            <span class="post-handle">
+              natalienagelpoling
+              <span class="verify" aria-hidden="true"></span>
+            </span>
+            <span class="post-place">Monterey · Carmel · Pebble Beach</span>
+          </div>
+        </header>
+        <div class="post-body">
+          <img class="post-crest" src="nnp-monogram.svg" alt="" aria-hidden="true" />
+          <p class="post-tagline">Cottages, Cliffs, and Calm</p>
+          <p class="post-byline">— Natalie Nagel Poling —</p>
+          <div class="post-scene"><img src="coastal-scene.svg" alt="Coastal scene illustration" /></div>
+        </div>
+        <footer class="post-actions" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </footer>
+      </article>
+    </div>
+  </section>
+
+</article>
+
 
   </main>
 
