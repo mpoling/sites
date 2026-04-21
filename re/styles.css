@@ -214,6 +214,62 @@ button { font: inherit; color: inherit; }
   margin: 0 auto 16px;
 }
 
+/* ---------- Mark row (cypress + monogram side by side in the hero) ---------- */
+.mark-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: clamp(28px, 10vw, 56px);
+  margin: 0 auto 18px;
+  padding: 0 8px;
+  position: relative;
+}
+
+/* A hairline between the two marks — only on wider screens where there's room */
+.mark-row::before {
+  content: "";
+  position: absolute;
+  top: 22%;
+  bottom: 36%;
+  left: 50%;
+  width: 1px;
+  background: var(--line-strong);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+@media (min-width: 420px) {
+  .mark-row::before { opacity: 0.55; }
+}
+
+.mark-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.mark-figure .crest {
+  margin: 0;
+  width: clamp(108px, 32vw, 148px);
+}
+
+.mark-figure .crest--mono {
+  /* Monogram is square vs cypress's ~1.57:1 — sized for equal optical weight */
+  width: clamp(72px, 22vw, 100px);
+}
+
+.mark-caption {
+  margin: 0;
+  font: 500 10px/1 var(--font-ui);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .hero .tagline {
   margin: 0;
   font-family: var(--font-display);
@@ -296,6 +352,33 @@ button { font: inherit; color: inherit; }
 }
 .scene-label::before { right: calc(50% + 62px); }
 .scene-label::after  { left:  calc(50% + 62px); }
+
+/* ---------- Variant wrapper (each scene holds cypress + monogram) ---------- */
+.variant {
+  display: block;
+}
+
+.variant + .variant {
+  margin-top: 36px;
+}
+
+.variant-tag {
+  margin: 0 0 16px;
+  text-align: center;
+  font: 500 10px/1 var(--font-ui);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.55;
+}
+
+/* Monogram sizing overrides — monogram is square (1:1) while cypress is ~1.57:1,
+   so widths are reduced to match the cypress's optical height and weight. */
+.variant--mono .card-crest { width: 40px; margin-bottom: 6px; }
+.variant--mono .lockup-mark { width: 50px; }
+.variant--mono .post-crest { width: clamp(68px, 19vw, 84px); }
+.variant--mono .post-avatar { padding: 3px; }
+.variant--mono .post-avatar img { width: 86%; }
 
 /* ============================================================
    Business card
@@ -634,6 +717,17 @@ button { font: inherit; color: inherit; }
   .direction[data-active="true"] > *:nth-child(3),
   .direction[data-active="true"] > *:nth-child(4) {
     animation-delay: 0s;
+  }
+
+  /* Tighter variant spacing when inside grid columns */
+  .variant + .variant {
+    margin-top: 28px;
+  }
+
+  /* Hero mark row can breathe more on desktop */
+  .mark-row {
+    gap: 72px;
+    margin-bottom: 26px;
   }
 
   .foot { padding-top: 48px; }
