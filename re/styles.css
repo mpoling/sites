@@ -460,7 +460,7 @@ button { font: inherit; color: inherit; }
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: clamp(20px, 6vw, 32px);
+  gap: clamp(20px, 6vw, 1px);
   padding: 30px 24px;
   max-width: 420px;
   margin: 0 auto;
