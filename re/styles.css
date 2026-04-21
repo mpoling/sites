@@ -258,8 +258,10 @@ button { font: inherit; color: inherit; }
 }
 
 .mark-figure .crest--mono {
-  /* Monogram is square vs cypress's ~1.57:1 — sized for equal optical weight */
-  width: clamp(72px, 22vw, 100px);
+  /* Monogram is square (1:1); cypress is ~1.57:1. Matching widths so the
+     monogram feels like a peer — it'll be proportionally taller, which
+     is correct since it's a different mark shape. */
+  width: clamp(108px, 32vw, 148px);
 }
 
 .mark-caption {
@@ -372,13 +374,12 @@ button { font: inherit; color: inherit; }
   opacity: 0.55;
 }
 
-/* Monogram sizing overrides — monogram is square (1:1) while cypress is ~1.57:1,
-   so widths are reduced to match the cypress's optical height and weight. */
-.variant--mono .card-crest { width: 40px; margin-bottom: 6px; }
-.variant--mono .lockup-mark { width: 50px; }
-.variant--mono .post-crest { width: clamp(68px, 19vw, 84px); }
-.variant--mono .post-avatar { padding: 3px; }
-.variant--mono .post-avatar img { width: 86%; }
+/* Monogram sizing — matched to cypress widths so both marks feel like peers.
+   The monogram is square, so it occupies more vertical space than the cypress;
+   layouts account for that naturally through flexbox centering. */
+.variant--mono .card-crest { width: 58px; margin-bottom: 8px; }
+.variant--mono .lockup-mark { width: 72px; }
+.variant--mono .post-crest { width: clamp(92px, 27vw, 116px); }
 
 /* ============================================================
    Business card
@@ -487,7 +488,9 @@ button { font: inherit; color: inherit; }
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
+  line-height: 1.25;
   color: var(--muted);
+  text-wrap: balance;
 }
 
 .lockup-rule {
