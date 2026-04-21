@@ -252,15 +252,9 @@ button { font: inherit; color: inherit; }
   min-width: 0;
 }
 
-.mark-figure .crest {
-  margin: 0;
-  width: clamp(108px, 32vw, 148px);
-}
-
+.mark-figure .crest,
 .mark-figure .crest--mono {
-  /* Monogram is square (1:1); cypress is ~1.57:1. Matching widths so the
-     monogram feels like a peer — it'll be proportionally taller, which
-     is correct since it's a different mark shape. */
+  margin: 0;
   width: clamp(108px, 32vw, 148px);
 }
 
@@ -374,12 +368,10 @@ button { font: inherit; color: inherit; }
   opacity: 0.55;
 }
 
-/* Monogram sizing — matched to cypress widths so both marks feel like peers.
-   The monogram is square, so it occupies more vertical space than the cypress;
-   layouts account for that naturally through flexbox centering. */
-.variant--mono .card-crest { width: 58px; margin-bottom: 8px; }
-.variant--mono .lockup-mark { width: 72px; }
-.variant--mono .post-crest { width: clamp(92px, 27vw, 116px); }
+/* Note: monogram-specific sizing overrides used to live here, compensating for
+   the monogram SVG's oversized viewBox. The SVG now has a tight viewBox that
+   wraps the artwork with cypress-matching padding, so both marks render at
+   equal visible size when given equal CSS widths — no overrides needed. */
 
 /* ============================================================
    Business card
