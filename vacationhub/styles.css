@@ -194,3 +194,27 @@ img { display: block; max-width: 100%; }
   transition: background-color 120ms var(--ease), transform 120ms var(--ease);
 }
 .btn-primary:hover { background: var(--accent-hi); transform: translateY(-1px); }
+
+/* === Brand chips === */
+.chips {
+  display: flex;
+  gap: 8px;
+  padding: 0 48px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: 0 0 auto;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--bg-elev-2);
+  color: var(--text-dim);
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease);
+}
+.chip:hover { color: var(--text); }
+.chip.active { background: var(--accent); color: #fff; }
