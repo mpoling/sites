@@ -210,22 +210,25 @@
     if (!overlay) return;
     searchOpen = true;
     overlay.hidden = false;
+    let items = null;
+    let resultsEl = null;
     overlay.replaceChildren(
       VH.el('div', { class: 'search-panel', onclick: (e) => e.stopPropagation() }, [
         VH.el('input', {
           class: 'search-input', type: 'text', placeholder: 'Search parks and collections',
           'aria-label': 'Search', autofocus: true,
-          oninput: (e) => renderResults(resultsEl, e.target.value, items),
+          oninput: (e) => { if (items && resultsEl) renderResults(resultsEl, e.target.value, items); },
           onkeydown: (e) => { if (e.key === 'Escape') VH.closeSearch(); },
         }),
         VH.el('div', { class: 'search-results', id: 'search-results' }),
       ])
     );
     overlay.addEventListener('click', closeOnBackdrop, { once: true });
-    const items = await ensureSearchIndex();
-    const resultsEl = VH.$('#search-results');
-    renderResults(resultsEl, '', items);
-    VH.$('.search-input').focus();
+    resultsEl = VH.$('#search-results');
+    items = await ensureSearchIndex();
+    if (!searchOpen) return;   // user closed during fetch
+    renderResults(resultsEl, VH.$('.search-input')?.value || '', items);
+    VH.$('.search-input')?.focus();
   };
 
   VH.closeSearch = () => {

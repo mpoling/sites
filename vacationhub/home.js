@@ -52,7 +52,7 @@
     else url.searchParams.set('brand', slug);
     history.replaceState(null, '', url);
     renderChips(index, slug);
-    if (VH.refilterRails) VH.refilterRails(slug);   // Task 8 will define this
+    if (VH.refilterRails) VH.refilterRails(slug);
   }
 
   renderRails(index);

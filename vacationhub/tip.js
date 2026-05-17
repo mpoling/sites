@@ -32,7 +32,7 @@
   document.title = `${tipMeta.title} · ${park.name} · VacationHub`;
 
   const body = el('div', { class: 'article-body' });
-  body.innerHTML = window.marked.parse(md, { mangle: false, headerIds: false });
+  body.innerHTML = window.marked.parse(md);
 
   $('#article').replaceChildren(
     el('header', { class: 'article-header' }, [
