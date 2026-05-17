@@ -21,6 +21,7 @@
   document.title = `${park.name} · VacationHub`;
   renderHero(park);
   renderQuickFacts(park);
+  renderTips(park);
 
   function renderHero(p) {
     $('#hero').replaceChildren(
@@ -50,6 +51,25 @@
             ? el('a', { class: 'fact-val', href: f.link, target: '_blank', rel: 'noopener', text: f.v })
             : el('div', { class: 'fact-val', text: f.v }),
         ])
+      )
+    );
+  }
+
+  function renderTips(p) {
+    const root = $('#tips');
+    if (!p.tips || p.tips.length === 0) { root.replaceChildren(); return; }
+    root.replaceChildren(
+      el('h2', {}, ['Tips ', el('span', { class: 'section-meta', text: `· ${p.tips.length}` })]),
+      el('div', { class: 'tip-grid' },
+        p.tips.map((t) =>
+          el('a', { class: 'tip-card', href: `./tip.html?park=${p.slug}&slug=${t.slug}` }, [
+            el('div', { class: 'tip-card-body' }, [
+              el('div', { class: 'tip-card-title', text: t.title }),
+              el('p', { class: 'tip-card-summary', text: t.summary || '' }),
+              el('div', { class: 'tip-card-meta', text: t.updated ? `Updated ${t.updated}` : '' }),
+            ]),
+          ])
+        )
       )
     );
   }
