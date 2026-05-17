@@ -100,6 +100,34 @@ button { font: inherit; }
   flex-shrink: 0;
 }
 
+/* The "Updated 5m ago" tag is a button so it can toggle to the full
+   timestamp on click. Visually it has to look like part of the subtitle
+   while still hinting at being interactive — a subtle dotted underline
+   does that without breaking the editorial feel. */
+.updated-label {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+  border-bottom: 1px dotted currentColor;
+  line-height: 1.2;
+  transition: color 0.15s, border-color 0.15s;
+}
+.updated-label:hover {
+  color: var(--text-muted);
+  border-bottom-color: var(--text-muted);
+}
+.updated-label:focus-visible {
+  outline: 1px solid var(--text-muted);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
 /* team drill-down header */
 .header-team {
   display: flex;
@@ -357,7 +385,19 @@ button { font: inherit; }
 .card-meta-left {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.25rem;
+  min-width: 0;        /* lets long venue names truncate instead of pushing siblings */
+}
+
+/* Venue can be long ("Mercedes-Benz Stadium"); let it truncate at the
+   chip's right edge on narrow screens rather than overflow. */
+.card-venue {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .card-league {

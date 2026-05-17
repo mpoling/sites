@@ -23,6 +23,7 @@
     refreshing: false,
     didInitialScroll: false,
     errorsPanelOpen: false,
+    showAbsoluteTime: false,   // toggled by clicking the "Updated …" tag
   };
 
   const headerEl = document.getElementById('header');
@@ -53,6 +54,31 @@
       groups.get(key).games.push(g);
     }
     return [...groups.values()];
+  }
+
+  // Short relative-time formatter for the "Updated …" tag in the header.
+  // Falls back to a short date once the gap exceeds a week (a generated.json
+  // that old means the cron's stalled — surface the date so it's diagnosable).
+  function timeAgo(iso) {
+    if (!iso) return null;
+    const then = new Date(iso);
+    if (Number.isNaN(then.getTime())) return null;
+    const diffSec = Math.max(0, Math.floor((Date.now() - then.getTime()) / 1000));
+    if (diffSec < 45)        return 'just now';
+    if (diffSec < 3600)      return `${Math.round(diffSec / 60)}m ago`;
+    if (diffSec < 86400)     return `${Math.round(diffSec / 3600)}h ago`;
+    const diffDay = Math.round(diffSec / 86400);
+    if (diffDay === 1)       return 'yesterday';
+    if (diffDay < 7)         return `${diffDay}d ago`;
+    return then.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  // Absolute timestamp for the hover tooltip / click-to-toggle display.
+  function formatFullTimestamp(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return '';
+    return d.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' });
   }
 
   function formatTime(dateISO) {
@@ -196,11 +222,26 @@
       </div>
     ` : '';
 
+    const updatedAgo = timeAgo(state.data?.generatedAt);
+    const updatedFull = formatFullTimestamp(state.data?.generatedAt);
+    // The label is a button: click toggles relative ↔ absolute display;
+    // hover surfaces the absolute timestamp as a native tooltip.
+    const updatedTag = updatedAgo
+      ? `<span class="muted-3">·</span> Updated <button
+          type="button"
+          class="updated-label"
+          data-action="toggle-time"
+          title="${esc(updatedFull)}"
+          aria-label="Toggle absolute time (${esc(updatedFull)})"
+        >${esc(state.showAbsoluteTime ? updatedFull : updatedAgo)}</button>`
+      : '';
+    const subtitle = `Personal Sports Desk${updatedTag}`;
+
     return `
       <div class="container header-inner">
         <div class="header-main">
           <div>
-            <div class="mono caps muted-2">Personal Sports Desk</div>
+            <div class="mono caps muted-2">${subtitle}</div>
             <h1 class="serif title">On<em>Deck</em></h1>
           </div>
           <div class="header-actions">
@@ -297,6 +338,10 @@
             <span class="card-league">${esc(team.league)}</span>
             <span class="card-sep">·</span>
             <span class="muted">${esc(formatTime(game.dateISO))}</span>
+            ${game.venue ? `
+              <span class="card-sep">·</span>
+              <span class="muted card-venue">${esc(game.venue)}</span>
+            ` : ''}
           </div>
           ${isPast ? '<span class="badge badge-past mono">Aired</span>' : ''}
         </div>
@@ -316,12 +361,10 @@
 
   function renderFooter() {
     if (!state.data && !state.error) return '';
-    const dt = state.data?.generatedAt
-      ? new Date(state.data.generatedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })
-      : 'never';
+    // The "last refreshed" timestamp now lives in the header subtitle, so
+    // the footer only carries the editorial source/by-design line.
     return `
       <div class="container footer-inner">
-        <p>Schedule last refreshed · ${esc(dt)}</p>
         <p class="muted-3">Source: ESPN unofficial JSON · Built without scores by design</p>
       </div>
     `;
@@ -346,6 +389,11 @@
         state.errorsPanelOpen = !state.errorsPanelOpen;
         render();
         break;
+      case 'toggle-time':
+        state.showAbsoluteTime = !state.showAbsoluteTime;
+        // Re-render just the header — the time label only lives there.
+        headerEl.innerHTML = renderHeader();
+        break;
     }
   });
 
@@ -362,4 +410,12 @@
       state.didInitialScroll = true;
     }
   });
+
+  // Tick the header every minute so the "Updated 5m ago" tag stays
+  // honest on a long-open page. Re-rendering just the header is cheap
+  // and preserves outer scroll position. State (selected team, errors
+  // panel open/closed) is read from `state` so it survives the re-render.
+  setInterval(() => {
+    if (state.data) headerEl.innerHTML = renderHeader();
+  }, 60_000);
 })();
