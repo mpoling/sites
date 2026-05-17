@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T01:25:47.257Z",
+  "generatedAt": "2026-05-17T14:38:46.301Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -689,6 +689,18 @@
       ]
     },
     {
+      "id": "sje-761641",
+      "teamId": "sje",
+      "dateISO": "2026-05-17T02:30Z",
+      "isHome": true,
+      "opponentShort": "Dallas",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
       "id": "atl-401815376",
       "teamId": "atl",
       "dateISO": "2026-05-17T17:35Z",
@@ -701,6 +713,18 @@
         "BravesVision",
         "NESN",
         "Gray Media"
+      ]
+    },
+    {
+      "id": "stan-sb-401872537",
+      "teamId": "stan-sb",
+      "dateISO": "2026-05-17T20:00Z",
+      "isHome": true,
+      "opponentShort": "Oklahoma St",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+      "venue": "Cowgirl Stadium",
+      "broadcasts": [
+        "ESPN+"
       ]
     },
     {
@@ -728,6 +752,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "stan-sb-401872538",
+      "teamId": "stan-sb",
+      "dateISO": "2026-05-17T22:30Z",
+      "isHome": false,
+      "opponentShort": "Oklahoma St",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+      "venue": "Cowgirl Stadium",
+      "broadcasts": []
     },
     {
       "id": "atl-401815390",
