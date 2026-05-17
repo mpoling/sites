@@ -43,6 +43,46 @@
     if (VH.refilterRails) VH.refilterRails(slug);   // Task 8 will define this
   }
 
+  renderRails(index);
+  VH.refilterRails = (brand) => applyBrandFilter(brand);
+  applyBrandFilter(currentBrand);
+
+  function renderRails(idx) {
+    const root = $('#rails');
+    const parksBySlug = Object.fromEntries(idx.parks.map((p) => [p.slug, p]));
+    const colsBySlug = Object.fromEntries(idx.collections.map((c) => [c.slug, c]));
+    const parkBrand = Object.fromEntries(idx.parks.map((p) => [p.slug, p.brand]));
+
+    root.replaceChildren(
+      ...idx.home.rails.map((rail) => {
+        const wrap = el('section', { class: 'rail', 'data-rail-type': rail.type });
+        let tiles;
+        if (rail.type === 'park') {
+          tiles = rail.items.map((s) => parksBySlug[s]).filter(Boolean).map(VH.parkTile);
+        } else if (rail.type === 'collection') {
+          tiles = rail.items.map((s) => colsBySlug[s]).filter(Boolean).map((c) => VH.collectionTile(c, parkBrand));
+        } else {
+          tiles = [];
+        }
+        VH.renderRail(wrap, rail.title, tiles);
+        return wrap;
+      })
+    );
+  }
+
+  function applyBrandFilter(brand) {
+    const all = brand === 'all';
+    VH.$$('#rails .tile').forEach((tile) => {
+      const tb = tile.dataset.brand;
+      tile.dataset.hidden = all || tb === brand ? 'false' : 'true';
+    });
+    // Hide rails that have no visible tiles.
+    VH.$$('#rails .rail').forEach((rail) => {
+      const anyVisible = VH.$$('.tile', rail).some((t) => t.dataset.hidden !== 'true');
+      rail.style.display = anyVisible ? '' : 'none';
+    });
+  }
+
   function renderHero(idx) {
     const featuredSlug = idx.home.featured;
     const park = idx.parks.find((p) => p.slug === featuredSlug);
