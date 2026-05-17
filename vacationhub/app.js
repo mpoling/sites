@@ -163,5 +163,91 @@
     );
   };
 
+  // ---- Search overlay ----
+  let searchIndex = null;
+  let searchOpen = false;
+
+  async function ensureSearchIndex() {
+    if (searchIndex) return searchIndex;
+    const idx = await VH.fetchJSON('./data/index.json');
+    searchIndex = [
+      ...idx.parks.map((p) => ({
+        kind: 'Park',
+        title: p.name,
+        subtitle: [p.resort, p.location?.city].filter(Boolean).join(' · '),
+        haystack: [p.name, p.resort, p.tagline, p.location?.city, p.location?.state].filter(Boolean).join(' ').toLowerCase(),
+        href: `./park.html?slug=${p.slug}`,
+      })),
+      ...idx.collections.map((c) => ({
+        kind: 'Collection',
+        title: c.name,
+        subtitle: c.scope?.brand ? `Brand · ${c.scope.brand}` : c.scope?.park ? `Park · ${c.scope.park}` : '',
+        haystack: c.name.toLowerCase(),
+        href: `./collection.html?slug=${c.slug}`,
+      })),
+    ];
+    return searchIndex;
+  }
+
+  function renderResults(root, query, items) {
+    const q = query.trim().toLowerCase();
+    const filtered = q ? items.filter((i) => i.haystack.includes(q)).slice(0, 30) : [];
+    root.replaceChildren(
+      ...(filtered.length === 0
+        ? [VH.el('div', { class: 'search-empty', text: q ? 'No matches.' : 'Start typing to search parks and collections.' })]
+        : filtered.map((r, i) =>
+            VH.el('a', { class: 'search-result', href: r.href, 'data-idx': String(i) }, [
+              VH.el('div', { class: 'search-result-kind', text: r.kind }),
+              VH.el('div', { class: 'search-result-title', text: r.title }),
+              VH.el('div', { class: 'search-result-sub', text: r.subtitle }),
+            ])
+          ))
+    );
+  }
+
+  VH.openSearch = async () => {
+    const overlay = VH.$('#search-overlay');
+    if (!overlay) return;
+    searchOpen = true;
+    overlay.hidden = false;
+    overlay.replaceChildren(
+      VH.el('div', { class: 'search-panel', onclick: (e) => e.stopPropagation() }, [
+        VH.el('input', {
+          class: 'search-input', type: 'text', placeholder: 'Search parks and collections',
+          'aria-label': 'Search', autofocus: true,
+          oninput: (e) => renderResults(resultsEl, e.target.value, items),
+          onkeydown: (e) => { if (e.key === 'Escape') VH.closeSearch(); },
+        }),
+        VH.el('div', { class: 'search-results', id: 'search-results' }),
+      ])
+    );
+    overlay.addEventListener('click', closeOnBackdrop, { once: true });
+    const items = await ensureSearchIndex();
+    const resultsEl = VH.$('#search-results');
+    renderResults(resultsEl, '', items);
+    VH.$('.search-input').focus();
+  };
+
+  VH.closeSearch = () => {
+    const overlay = VH.$('#search-overlay');
+    if (!overlay) return;
+    overlay.hidden = true;
+    overlay.replaceChildren();
+    searchOpen = false;
+  };
+
+  function closeOnBackdrop(e) {
+    if (e.target.id === 'search-overlay') VH.closeSearch();
+  }
+
+  // Keyboard: '/' to open, Esc to close
+  window.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !searchOpen && !['INPUT','TEXTAREA'].includes(document.activeElement?.tagName)) {
+      e.preventDefault(); VH.openSearch();
+    } else if (e.key === 'Escape' && searchOpen) {
+      VH.closeSearch();
+    }
+  });
+
   window.VH = VH;
 })();
