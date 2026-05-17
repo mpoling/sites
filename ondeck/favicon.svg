@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Concept A: Amber dot with italic serif "D" knocked out.
+       Minimal, instantly readable at 16x16 (becomes "amber dot on dark"). -->
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  <!-- Subtle radial glow echoing the page background -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fcd34d" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fcd34d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#glow)"/>
+  <!-- Amber filled circle -->
+  <circle cx="256" cy="256" r="180" fill="#fcd34d"/>
+  <!-- Italic serif D, knocked out.  Font-family lists Georgia first
+       because favicons render outside the page's @font-face context,
+       so 'Instrument Serif' won't be available to most viewers.
+       Georgia is universally installed on macOS / iOS / Windows and
+       produces an italic glyph that matches our apple-touch-icon PNG
+       (which qlmanage rasterizes using Georgia too). -->
+  <text x="256" y="345"
+        font-family="Georgia, 'Instrument Serif', serif"
+        font-size="320"
+        font-style="italic"
+        font-weight="400"
+        text-anchor="middle"
+        fill="#0a0a0a">D</text>
+</svg>
