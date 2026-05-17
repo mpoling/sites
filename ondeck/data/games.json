@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T01:25:28.652Z",
+  "generatedAt": "2026-05-17T01:25:47.257Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -704,16 +704,6 @@
       ]
     },
     {
-      "id": "stan-sb-401872537",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-17T20:00Z",
-      "isHome": true,
-      "opponentShort": "Oklahoma St",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-      "venue": "Cowgirl Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "sfg-401815389",
       "teamId": "sfg",
       "dateISO": "2026-05-17T20:05Z",
@@ -738,16 +728,6 @@
       "broadcasts": [
         "Apple TV"
       ]
-    },
-    {
-      "id": "stan-sb-401872538",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-17T22:30Z",
-      "isHome": false,
-      "opponentShort": "Oklahoma St",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-      "venue": "Cowgirl Stadium",
-      "broadcasts": []
     },
     {
       "id": "atl-401815390",
