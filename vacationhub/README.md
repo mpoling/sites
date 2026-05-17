@@ -37,3 +37,23 @@ python3 -m http.server 8000
 All paths in HTML/JS are **relative** — the Cloudflare worker
 rewrites `vacationhub.<owner-tld>` to `/sites/vacationhub/`
 under the hood, so absolute paths break.
+
+## Status
+
+V1 engine complete with Magic Kingdom as the seed park. The
+remaining 14 parks from the design spec are seeded in a
+follow-up pass.
+
+## Adding a new park
+
+1. Add the park to `data/index.json` under `parks` (and to
+   the relevant home rail under `home.rails`).
+2. Create `data/parks/<slug>.json` matching the schema in the
+   design spec (see "Ride field reference").
+3. Drop `assets/images/parks/<slug>-hero.jpg` (2400×1000) and
+   `<slug>-tile.jpg` (800×450).
+4. (Optional) Add tip files under
+   `data/parks/<slug>/tips/<tip-slug>.md` and matching manifest
+   entries in the park JSON's `tips` array.
+5. (Optional) Add a collection JSON under
+   `data/collections/` and register it in `data/index.json`.
