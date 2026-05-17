@@ -157,6 +157,16 @@ that you'll save time by knowing up-front:
 - **The right way to discover any ID** is to hit
   `/apis/site/v2/sports/{sport}/{league}/teams` and search the returned
   list by name. Don't guess.
+- **`/teams/{id}/schedule` is past-only for non-MLB leagues.** This was
+  the most surprising one. For MLB the endpoint returns the full season
+  (past + future), but for MLS, NWSL, USL Championship, and college
+  softball it returns only events up to today — essentially a "recent
+  results" endpoint despite the name. The fetcher works around this by
+  *additionally* hitting the league-wide scoreboard with a future date
+  range and merging the results, deduped by `event.id`. So `fetch-games.js`
+  now makes two requests per team's league (cached when teams share one).
+  If you ever see "no future games" for an in-season team, suspect a
+  scoreboard fetch failure first.
 
 ## Tuning the window
 
@@ -202,21 +212,29 @@ python3 -m http.server               # then open http://localhost:8000
 Each per-team line looks like:
 
 ```
-→ Giants          39 games in window (of 163 returned)  [✓ ESPN: San Francisco Giants]
+→ Giants          39 in window  (schedule=163, scoreboard-future=6)  [✓ ESPN: San Francisco Giants]
 ```
 
-- **`X games in window (of Y returned)`** — `Y` is the total number of
-  events ESPN has for this team in the current season; `X` is the subset
-  that fell inside the `pastDays`/`futureDays` window.
-- **`0 of 0`** usually means ESPN has no schedule data for the team at
-  all — true off-season, between seasons.
-- **`0 of N`** means events exist but are all outside the window — the
-  season is just farther away than the window reaches. Normal for sports
-  in deep off-season (e.g. NFL in May).
+- **`X in window`** — number of games that passed the
+  `pastDays`/`futureDays` filter and landed in `games.json`.
+- **`schedule=N`** — events the team's `/schedule` endpoint returned
+  (covers past and, for MLB, future too).
+- **`scoreboard-future=N`** — events the league `/scoreboard` endpoint
+  returned for the future window. For MLS/NWSL/USL/college-softball
+  this is the *only* source of future games; for MLB it's mostly
+  redundant with what `/schedule` already had, then deduped.
+- **`schedule=0, scoreboard-future=0`** — true off-season; ESPN has no
+  events at all for this team right now.
+- **`schedule=N, scoreboard-future=0`** with `0 in window` — events
+  exist but all sit outside the window (deep off-season, e.g. NFL in
+  May).
 - **`[✓ ESPN: …]`** — cross-check passed, the team ID resolves to the
   expected team.
 - **`[⚠ ESPN: …]`** — the team ID is pointing at a *different* team than
   the one in your `teams.json`. Fix it.
-- **`✗ <error>`** at the end of a line means the fetch itself failed
-  (HTTP error, network issue). The team is recorded in `errors[]` in
-  `games.json` and the rest of the run continues.
+- **`✗ <error>`** at the end of a line means the team's `/schedule`
+  fetch failed entirely (HTTP error, network issue). The team is
+  recorded in `errors[]` in `games.json` and the rest of the run
+  continues. A scoreboard fetch failure does *not* fail the team — it
+  prints a `(scoreboard miss for …)` line on stderr and contributes
+  zero future events from that source.
