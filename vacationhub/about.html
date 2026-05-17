@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <title>About · VacationHub</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app">
+    <nav id="sidebar" class="sidebar" aria-label="Primary"></nav>
+    <main id="main" class="main">
+      <article class="article">
+        <header class="article-header">
+          <h1 class="article-title">About VacationHub</h1>
+        </header>
+        <div class="article-body">
+          <p>VacationHub is a personal project that collects useful,
+          hard-to-find information about popular vacation destinations.
+          V1 focuses on US theme parks. Future versions will cover
+          cruises, resorts, and curated experiences.</p>
+
+          <h2>What you'll find here</h2>
+          <ul>
+            <li><strong>Insider tips</strong> — editorial guidance on rope-drop
+              routes, Lightning Lane priority orders, the best times of year
+              to visit, and other things that take years of going to figure out.</li>
+            <li><strong>Structured ride data</strong> — height requirements,
+              intensity, manufacturer, opening year, priority-access tier,
+              and accessibility flags for every major attraction.</li>
+          </ul>
+
+          <h2>What you won't find here</h2>
+          <ul>
+            <li>Live wait times or crowd predictions.</li>
+            <li>User accounts, ratings, or comments.</li>
+            <li>Affiliate links or sponsored content.</li>
+          </ul>
+
+          <h2>Corrections</h2>
+          <p>Spotted an error? Open an issue on
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.</p>
+        </div>
+      </article>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+  <script>VH.renderSidebar('about');</script>
+</body>
+</html>
