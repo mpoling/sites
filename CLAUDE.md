@@ -135,11 +135,12 @@ data. Default to daily; faster only when the data warrants it.
 
 ## Existing sites
 
-| Site      | Subdomain              | Purpose                                       |
-|-----------|------------------------|-----------------------------------------------|
-| `ondeck`  | `ondeck.<owner-tld>`   | Personal sports schedule, no scores           |
-| `dc-2026` | `dc-2026.<owner-tld>`  | Itinerary page for an April 2026 DC trip      |
-| `re`      | `re.<owner-tld>`       | Brand direction explorations for Natalie Nagel Poling |
+| Site         | Subdomain                 | Purpose                                       |
+|--------------|---------------------------|-----------------------------------------------|
+| `ondeck`     | `ondeck.<owner-tld>`      | Personal sports schedule, no scores           |
+| `dc-2026`    | `dc-2026.<owner-tld>`     | Itinerary page for an April 2026 DC trip      |
+| `re`         | `re.<owner-tld>`          | Brand direction explorations for Natalie Nagel Poling |
+| `vacationhub`| `vacationhub.<owner-tld>` | Disney+-styled hub for hard-to-find vacation info (theme parks first) |
 
 See each site's `README.md` for full details on purpose, data sources, and
 operational quirks. (Note: `dc-2026` and `re` predate the conventions
@@ -163,3 +164,8 @@ patterns when editing it.)
 - **Personal scale.** These are personal projects. Prefer the simple,
   slightly scrappy solution over the scalable enterprise one. Unofficial
   APIs are fine where the alternative is paying or building auth flows.
+- **`origin` uses SSH.** The remote is
+  `git@github.com:mpoling/sites.git`. HTTPS pushes will fail in
+  non-interactive sessions (no TTY for the keychain prompt). The owner's
+  SSH key in `~/.ssh/id_ed25519` is authorized — `git push` should just
+  work.
