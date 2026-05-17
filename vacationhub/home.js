@@ -4,6 +4,18 @@
 
   renderSidebar('home');
 
+  // Skeleton placeholders while we wait
+  $('#hero').replaceChildren(VH.el('div', { class: 'skeleton', style: 'width:100%;height:100%' }));
+  $('#rails').replaceChildren(
+    ...Array.from({ length: 2 }, () =>
+      VH.el('section', { class: 'rail' }, [
+        VH.el('div', { class: 'rail-header' }, [VH.el('div', { class: 'skeleton', style: 'width:160px;height:24px' })]),
+        VH.el('div', { class: 'rail-strip' },
+          Array.from({ length: 5 }, () => VH.el('div', { class: 'skeleton', style: 'aspect-ratio:16/9' }))),
+      ])
+    )
+  );
+
   let index;
   try {
     index = await fetchJSON('./data/index.json');

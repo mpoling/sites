@@ -3,6 +3,9 @@
   const { $, el, fetchJSON, renderError, renderSidebar, params } = VH;
   renderSidebar('parks');
 
+  // Skeleton placeholders while we wait
+  $('#hero').replaceChildren(VH.el('div', { class: 'skeleton', style: 'width:100%;height:100%' }));
+
   const slug = params().get('slug');
   if (!slug) { renderError($('#main'), 'No collection specified.'); return; }
 

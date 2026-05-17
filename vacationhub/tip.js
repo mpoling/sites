@@ -3,6 +3,14 @@
   const { $, el, fetchJSON, fetchText, renderError, renderSidebar, params } = VH;
   renderSidebar('parks');
 
+  // Skeleton placeholders while we wait
+  $('#article').replaceChildren(
+    VH.el('div', { class: 'skeleton', style: 'height:36px;width:60%;margin-bottom:24px' }),
+    VH.el('div', { class: 'skeleton', style: 'height:18px;margin-bottom:8px' }),
+    VH.el('div', { class: 'skeleton', style: 'height:18px;width:80%;margin-bottom:8px' }),
+    VH.el('div', { class: 'skeleton', style: 'height:18px;width:90%;margin-bottom:8px' }),
+  );
+
   const parkSlug = params().get('park');
   const tipSlug = params().get('slug');
   if (!parkSlug || !tipSlug) { renderError($('#main'), 'Missing park or tip slug.'); return; }
