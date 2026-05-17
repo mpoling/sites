@@ -107,5 +107,61 @@
     );
   };
 
+  // ---- Tile builders ----
+  VH.parkTile = (park) =>
+    VH.el('a', {
+      class: 'tile tile-park',
+      href: `./park.html?slug=${park.slug}`,
+      'data-brand': park.brand,
+      'aria-label': `${park.name} — ${park.resort || ''}`,
+    }, [
+      VH.el('div', { class: 'tile-img', style: `background-image:url('${park.tile}')` }),
+      VH.el('div', { class: 'tile-shade' }),
+      VH.el('div', { class: 'tile-body' }, [
+        VH.el('div', { class: 'tile-title', text: park.name }),
+        VH.el('div', { class: 'tile-meta', text: park.resort || park.location?.city || '' }),
+      ]),
+    ]);
+
+  VH.collectionTile = (col, parksByBrand) => {
+    const brand = col.scope?.brand;
+    const park = col.scope?.park;
+    const meta = brand ? brand : park ? park : '';
+    return VH.el('a', {
+      class: 'tile tile-collection',
+      href: `./collection.html?slug=${col.slug}`,
+      'data-brand': brand || (parksByBrand && parksByBrand[park]) || '',
+    }, [
+      VH.el('div', { class: 'tile-img', style: `background-image:url('${col.tile}')` }),
+      VH.el('div', { class: 'tile-shade' }),
+      VH.el('div', { class: 'tile-body' }, [
+        VH.el('div', { class: 'tile-title', text: col.name }),
+        VH.el('div', { class: 'tile-meta', text: meta }),
+      ]),
+    ]);
+  };
+
+  // ---- Rail (horizontal scrolling strip) ----
+  VH.renderRail = (root, title, tiles) => {
+    if (tiles.length === 0) { root.replaceChildren(); return; }
+    const strip = VH.el('div', { class: 'rail-strip' }, tiles);
+
+    const scroll = (dir) => {
+      const step = strip.clientWidth * 0.8;
+      strip.scrollBy({ left: dir * step, behavior: 'smooth' });
+    };
+
+    root.replaceChildren(
+      VH.el('div', { class: 'rail-header' }, [
+        VH.el('h2', { class: 'rail-title', text: title }),
+        VH.el('div', { class: 'rail-controls' }, [
+          VH.el('button', { class: 'rail-arrow', 'aria-label': 'Scroll left', onclick: () => scroll(-1) }, ['‹']),
+          VH.el('button', { class: 'rail-arrow', 'aria-label': 'Scroll right', onclick: () => scroll(1) }, ['›']),
+        ]),
+      ]),
+      strip,
+    );
+  };
+
   window.VH = VH;
 })();

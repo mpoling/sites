@@ -218,3 +218,57 @@ img { display: block; max-width: 100%; }
 }
 .chip:hover { color: var(--text); }
 .chip.active { background: var(--accent); color: #fff; }
+
+/* === Rails === */
+.rails { display: flex; flex-direction: column; gap: 32px; }
+.rail { padding: 0 48px; }
+.rail-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 12px;
+}
+.rail-title { font: 700 18px/24px inherit; margin: 0; }
+.rail-controls { display: flex; gap: 6px; opacity: 0; transition: opacity 200ms var(--ease); }
+.rail:hover .rail-controls, .rail:focus-within .rail-controls { opacity: 1; }
+.rail-arrow {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--bg-elev-2);
+  color: var(--text-dim);
+  font-size: 18px;
+  display: grid; place-items: center;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease);
+}
+.rail-arrow:hover { background: var(--accent); color: #fff; }
+
+.rail-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 1fr);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+.rail-strip::-webkit-scrollbar { display: none; }
+
+/* === Tiles === */
+.tile {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-elev);
+  scroll-snap-align: start;
+  transition: transform 200ms var(--ease), box-shadow 200ms var(--ease);
+}
+.tile:hover { transform: scale(1.05); box-shadow: 0 8px 24px rgba(0,0,0,0.5); z-index: 1; }
+.tile-img { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.tile-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+}
+.tile-body { position: absolute; left: 12px; right: 12px; bottom: 10px; }
+.tile-title { font: 700 14px/18px inherit; color: #fff; }
+.tile-meta { font: 500 11px/14px inherit; color: var(--text-dim); margin-top: 2px; }
+.tile[data-hidden="true"] { display: none; }
