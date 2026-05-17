@@ -23,6 +23,93 @@
   renderQuickFacts(park);
   renderTips(park);
 
+  const rideFilter = { land: 'all', type: 'all', height: 'all' };
+  renderRidesSection(park);
+
+  function renderRidesSection(p) {
+    const root = $('#rides');
+    if (!p.rides || p.rides.length === 0) { root.replaceChildren(); return; }
+
+    const lands = ['all', ...new Set(p.rides.map((r) => r.land).filter(Boolean))];
+    const types = ['all', ...new Set(p.rides.map((r) => r.type).filter(Boolean))];
+    const heights = ['all', 'no-min', '<40', '40-47', '48+'];
+
+    const chipBar = (key, options) =>
+      el('div', { class: 'filter-bar', role: 'group', 'aria-label': key }, options.map((o) =>
+        el('button', {
+          class: 'chip-sm' + (rideFilter[key] === o ? ' active' : ''),
+          'aria-pressed': rideFilter[key] === o ? 'true' : 'false',
+          onclick: () => { rideFilter[key] = o; renderRidesSection(p); },
+        }, [o === 'all' ? `All ${key}s` : o])
+      ));
+
+    const grid = el('div', { class: 'ride-grid' },
+      p.rides.filter(matchesFilter).map(rideCard)
+    );
+
+    root.replaceChildren(
+      el('h2', {}, ['Rides ', el('span', { class: 'section-meta', text: `· ${p.rides.length}` })]),
+      el('div', { class: 'ride-filters' }, [
+        chipBar('land', lands),
+        chipBar('type', types),
+        chipBar('height', heights),
+      ]),
+      grid,
+    );
+  }
+
+  function matchesFilter(r) {
+    if (rideFilter.land !== 'all' && r.land !== rideFilter.land) return false;
+    if (rideFilter.type !== 'all' && r.type !== rideFilter.type) return false;
+    if (rideFilter.height !== 'all') {
+      const h = r.height_min_in;
+      if (rideFilter.height === 'no-min' && h != null) return false;
+      if (rideFilter.height === '<40' && !(h != null && h < 40)) return false;
+      if (rideFilter.height === '40-47' && !(h != null && h >= 40 && h <= 47)) return false;
+      if (rideFilter.height === '48+' && !(h != null && h >= 48)) return false;
+    }
+    return true;
+  }
+
+  function rideCard(r) {
+    const meta = [
+      r.type ? prettyType(r.type) : null,
+      r.height_min_in != null ? `${r.height_min_in}"` : null,
+      r.intensity ? '★'.repeat(r.intensity) + '☆'.repeat(5 - r.intensity) : null,
+    ].filter(Boolean).join(' · ');
+
+    return el('article', { class: 'ride-card', id: `ride-${r.slug}` }, [
+      el('div', { class: 'ride-card-head' }, [
+        el('div', { class: 'ride-card-land', text: r.land || '' }),
+        priorityBadge(r.priority_access),
+      ]),
+      el('div', { class: 'ride-card-body' }, [
+        el('h3', { class: 'ride-card-title', text: r.name }),
+        el('div', { class: 'ride-card-meta', text: meta }),
+        r.blurb ? el('p', { class: 'ride-card-blurb', text: `"${r.blurb}"` }) : null,
+      ]),
+    ]);
+  }
+
+  function priorityBadge(pa) {
+    if (!pa || pa === 'none') return null;
+    const label = { multipass: 'MULTI', premier: 'PREMIER', 'express-unlimited': 'EXPRESS' }[pa] || pa.toUpperCase();
+    return el('span', { class: `pa-badge pa-${pa}`, text: label });
+  }
+
+  function prettyType(t) {
+    return ({
+      'roller-coaster': 'Coaster',
+      'dark-ride': 'Dark Ride',
+      'water': 'Water',
+      'show': 'Show',
+      'flat': 'Flat',
+      'boat': 'Boat',
+      'transport': 'Transport',
+      'other': 'Other',
+    })[t] || t;
+  }
+
   function renderHero(p) {
     $('#hero').replaceChildren(
       el('div', { class: 'hero-bg', style: `background-image:url('${p.hero}')` }),

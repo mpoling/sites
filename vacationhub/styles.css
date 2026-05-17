@@ -320,3 +320,64 @@ a.fact-val { color: var(--accent-hi); }
 .tip-card-title { font: 700 16px/22px inherit; margin-bottom: 6px; }
 .tip-card-summary { color: var(--text-dim); margin: 0 0 10px; font-size: 14px; line-height: 20px; }
 .tip-card-meta { font: 500 11px/14px inherit; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* === Ride filters === */
+.ride-filters {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-bottom: 16px;
+}
+.filter-bar { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip-sm {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--bg-elev-2);
+  color: var(--text-dim);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease);
+}
+.chip-sm:hover { color: var(--text); }
+.chip-sm.active { background: var(--accent); color: #fff; }
+
+/* === Ride cards === */
+.ride-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+.ride-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.ride-card-head {
+  position: relative;
+  height: 80px;
+  background: linear-gradient(135deg, var(--bg-elev-2), var(--bg-elev));
+  display: flex; align-items: flex-end; padding: 10px 12px;
+}
+.ride-card-land {
+  font: 700 10px/13px inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+.pa-badge {
+  position: absolute; top: 8px; right: 8px;
+  background: var(--accent);
+  color: #fff;
+  font: 700 9px/12px inherit;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.pa-badge.pa-premier { background: var(--premier); }
+
+.ride-card-body { padding: 12px 14px 14px; }
+.ride-card-title { font: 700 15px/19px inherit; margin: 0 0 4px; }
+.ride-card-meta { font-size: 12px; color: var(--text-dim); margin-bottom: 8px; }
+.ride-card-blurb { font-size: 13px; line-height: 18px; color: var(--text-dim); font-style: italic; margin: 0; }
