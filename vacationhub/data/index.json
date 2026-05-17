@@ -17,17 +17,17 @@
       "tile": {
         "src": "./assets/images/parks/magic-kingdom-tile.jpg",
         "credit": {
-          "author": "Jedi94",
-          "license": "CC BY-SA 4.0",
-          "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle,_Magic_Kingdom_Walt_Disney_World_2024_(square_crop).jpg"
+          "author": "Michael Gray",
+          "license": "CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Magic_Kingdom_-_Cinderella_Castle_panorama_-_by_mrkathika.jpg"
         }
       },
       "hero": {
         "src": "./assets/images/parks/magic-kingdom-hero.jpg",
         "credit": {
-          "author": "Jedi94",
+          "author": "Backattaxk251",
           "license": "CC BY-SA 4.0",
-          "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle,_Magic_Kingdom_Walt_Disney_World_(2024).jpg"
+          "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle_January_2021.jpg"
         }
       },
       "tagline": "The original Disney park east of California."
