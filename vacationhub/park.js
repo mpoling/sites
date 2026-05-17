@@ -10,9 +10,12 @@
     return;
   }
 
-  let park;
+  let park, index;
   try {
-    park = await fetchJSON(`./data/parks/${slug}.json`);
+    [park, index] = await Promise.all([
+      fetchJSON(`./data/parks/${slug}.json`),
+      fetchJSON('./data/index.json'),
+    ]);
   } catch (err) {
     renderError($('#main'), `Could not load park "${slug}".`);
     return;
@@ -25,6 +28,7 @@
 
   const rideFilter = { land: 'all', type: 'all', height: 'all' };
   renderRidesSection(park);
+  renderCollections(park, index);
 
   function renderRidesSection(p) {
     const root = $('#rides');
@@ -154,6 +158,25 @@
               el('div', { class: 'tip-card-title', text: t.title }),
               el('p', { class: 'tip-card-summary', text: t.summary || '' }),
               el('div', { class: 'tip-card-meta', text: t.updated ? `Updated ${t.updated}` : '' }),
+            ]),
+          ])
+        )
+      )
+    );
+  }
+
+  function renderCollections(p, idx) {
+    const root = $('#collections');
+    const scoped = idx.collections.filter((c) => c.scope?.park === p.slug);
+    if (scoped.length === 0) { root.replaceChildren(); return; }
+    root.replaceChildren(
+      el('h2', {}, ['Collections']),
+      el('div', { class: 'tip-grid' },
+        scoped.map((c) =>
+          el('a', { class: 'tip-card', href: `./collection.html?slug=${c.slug}` }, [
+            el('div', { class: 'tip-card-body' }, [
+              el('div', { class: 'tip-card-title', text: c.name }),
+              el('div', { class: 'tip-card-meta', text: 'Curated list' }),
             ]),
           ])
         )
