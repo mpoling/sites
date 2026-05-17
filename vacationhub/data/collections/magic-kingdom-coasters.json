@@ -1,0 +1,12 @@
+{
+  "slug": "magic-kingdom-coasters",
+  "name": "Magic Kingdom Coasters",
+  "scope": { "park": "magic-kingdom" },
+  "intro": "Every roller coaster at the Magic Kingdom, ranked by what's worth your time.",
+  "rides": [
+    { "ride": "tron-lightcycle-run",    "blurb": "Modern Disney's best coaster, even at a short 60 seconds." },
+    { "ride": "space-mountain",         "blurb": "The classic. Ride at night with the lights low." },
+    { "ride": "big-thunder-mountain",   "blurb": "Family-friendly thrills with the best theming in the park." },
+    { "ride": "seven-dwarfs-mine-train","blurb": "Skip unless you have Lightning Lane — the wait isn't worth it." }
+  ]
+}
