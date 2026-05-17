@@ -1,0 +1,443 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   OnDeck — styles.css
+   Dark editorial scoreboard aesthetic. Mobile-first.
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --bg:            #0a0a0a;
+  --bg-elevated:   rgba(28, 25, 23, 0.4);
+  --bg-elevated-2: rgba(41, 37, 36, 0.5);
+  --border:        rgb(41, 37, 36);
+  --border-strong: rgb(68, 64, 60);
+  --border-subtle: rgba(41, 37, 36, 0.6);
+
+  --text:          rgb(245, 245, 244);
+  --text-muted:    rgb(168, 162, 158);
+  --text-faint:    rgb(120, 113, 108);
+  --text-ghost:    rgb(87, 83, 78);
+  --text-dim:      rgb(68, 64, 60);
+
+  --accent:        rgb(252, 211, 77);
+  --accent-bg:     rgba(251, 191, 36, 0.15);
+
+  --font-display:  'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-body:     'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:     'Geist Mono', 'SF Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-image: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(251,191,36,0.04), transparent 60%);
+  background-attachment: fixed;
+}
+
+img { max-width: 100%; display: block; }
+button { font: inherit; }
+
+/* utility classes */
+.serif    { font-family: var(--font-display); font-weight: 400; }
+.mono     { font-family: var(--font-mono); }
+.caps     { text-transform: uppercase; letter-spacing: 0.2em; font-size: 10px; font-weight: 500; }
+.muted    { color: var(--text-faint); }
+.muted-2  { color: var(--text-faint); }
+.muted-3  { color: var(--text-dim); }
+
+.container {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ─── Header ───────────────────────────────────────────────────────────── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(41, 37, 36, 0.8);
+}
+
+.header-inner {
+  padding-top: 1.25rem;
+  padding-bottom: 0.75rem;
+}
+
+.header-main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.title {
+  margin-top: 0.25rem;
+  font-size: 42px;
+  line-height: 1;
+  color: var(--text);
+}
+.title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* team drill-down header */
+.header-team {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.team-logo-lg {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.team-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── Icon buttons ─────────────────────────────────────────────────────── */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 0.5rem;
+  border-radius: 999px;
+  min-width: 40px;
+  min-height: 40px;
+  transition: background 0.15s, color 0.15s;
+}
+.icon-btn:hover { background: var(--bg-elevated); color: var(--text); }
+.icon-btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+.icon-btn-outlined {
+  border: 1px solid var(--border);
+  padding: 0.625rem;
+}
+.icon-btn-outlined:hover { background: rgba(28, 25, 23, 0.6); }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinning svg { animation: spin 0.9s linear infinite; }
+
+/* ─── Filter chips ─────────────────────────────────────────────────────── */
+.chips-row {
+  margin: 0.75rem -1.25rem 0;
+}
+
+.chips {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.25rem 1.25rem;
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(28, 25, 23, 0.4);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: border-color 0.15s, background 0.15s;
+}
+.chip:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-elevated-2);
+}
+
+.chip-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.chip-logo {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+}
+
+/* Off-season teams sort to the end of the chip row and dim down so they
+   don't compete visually with teams that actually have games. */
+.chip--off {
+  opacity: 0.45;
+}
+.chip--off .chip-dot   { opacity: 0.5; }
+.chip--off .chip-logo  { filter: grayscale(0.75); }
+.chip--off:hover       { opacity: 0.7; }
+
+/* ─── Error pill + panel ───────────────────────────────────────────────── */
+.error-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.625rem;
+  background: rgba(220, 38, 38, 0.10);
+  border: 1px solid rgba(220, 38, 38, 0.30);
+  color: rgb(252, 165, 165);
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+.error-pill:hover {
+  background: rgba(220, 38, 38, 0.16);
+  border-color: rgba(220, 38, 38, 0.45);
+}
+.error-pill[aria-expanded="true"] {
+  background: rgba(220, 38, 38, 0.18);
+  border-color: rgba(220, 38, 38, 0.50);
+}
+
+.errors-panel {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.22);
+  border-radius: 0.5rem;
+}
+.errors-panel-title {
+  margin-bottom: 0.5rem;
+  color: rgb(252, 165, 165);
+}
+.errors-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.errors-panel li {
+  padding: 0.25rem 0;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+.errors-team {
+  color: var(--text);
+  margin-right: 0.5rem;
+}
+.errors-msg {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+/* ─── Schedule ─────────────────────────────────────────────────────────── */
+.main {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  min-height: 60vh;
+}
+
+.day-section { margin-bottom: 1.75rem; }
+
+.day-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+.day-header.is-past { opacity: 0.5; }
+
+.day-num,
+.day-month {
+  font-size: 30px;
+  line-height: 1;
+}
+.day-month {
+  font-style: italic;
+  color: var(--text-faint);
+}
+
+.badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  margin-left: 0.25rem;
+}
+.badge-today {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+.badge-past {
+  background: rgba(41, 37, 36, 0.8);
+  color: var(--text-faint);
+  margin-left: 0;
+}
+
+/* ─── Game cards ───────────────────────────────────────────────────────── */
+.cards {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: rgba(28, 25, 23, 0.4);
+  padding: 1rem 1rem 1rem 1.125rem;
+  transition: border-color 0.15s, opacity 0.2s;
+}
+.card.is-past {
+  border-color: var(--border-subtle);
+  opacity: 0.55;
+}
+.card:not(.is-past):hover { border-color: var(--border-strong); }
+
+.card-stripe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 11px;
+}
+
+.card-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-league {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+
+.card-sep { color: var(--text-dim); }
+
+.card-matchup {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.25rem 0;
+}
+
+.card-logo,
+.card-logo-placeholder {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.card-logo { object-fit: contain; }
+.card-logo-placeholder {
+  border-radius: 50%;
+  border: 1px dashed var(--text-dim);
+}
+
+.card-team {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+.card-opp {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+}
+.card-vs {
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.card-broadcast {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+/* ─── Empty / error state ──────────────────────────────────────────────── */
+.empty {
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--text-faint);
+}
+.empty-headline {
+  font-size: 1.875rem;
+  font-style: italic;
+}
+.empty-sub {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ─── Footer ───────────────────────────────────────────────────────────── */
+.footer {
+  padding-bottom: 2rem;
+}
+.footer-inner {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.25rem;
+  color: var(--text-faint);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.footer-inner p { margin-top: 0.25rem; }
+.footer-inner p:first-child { margin-top: 0; }
