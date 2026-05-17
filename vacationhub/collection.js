@@ -43,13 +43,18 @@
     const scopeName =
       c.scope?.brand ? idx.brands.find((b) => b.slug === c.scope.brand)?.name :
       c.scope?.park  ? idx.parks.find((p) => p.slug === c.scope.park)?.name : '';
+    const indexed = idx.collections.find((x) => x.slug === c.slug);
+    const tile = indexed?.tile;
+    const tileSrc = VH.imgSrc(tile);
     $('#hero').replaceChildren(
+      tileSrc ? el('div', { class: 'hero-bg', style: `background-image:url('${tileSrc}')` }) : null,
       el('div', { class: 'hero-shade' }),
       el('div', { class: 'hero-content' }, [
         el('div', { class: 'label', text: scopeName || '' }),
         el('h1', { class: 'hero-title', text: c.name }),
         el('p', { class: 'hero-tag', text: c.intro || '' }),
-      ])
+      ]),
+      VH.creditEl(tile),
     );
   }
 
@@ -66,11 +71,17 @@
 
     root.replaceChildren(
       el('div', { class: 'col-list' },
-        items.map(({ entry, p, r, pSlug }) =>
-          el('a', {
-            class: 'col-item',
+        items.map(({ entry, p, r, pSlug }) => {
+          const photoSrc = VH.imgSrc(r.photo);
+          return el('a', {
+            class: 'col-item' + (photoSrc ? ' has-photo' : ''),
             href: `./park.html?slug=${pSlug}#ride-${r.slug}`,
           }, [
+            photoSrc
+              ? el('div', { class: 'col-item-thumb', style: `background-image:url('${photoSrc}')` }, [
+                  VH.creditEl(r.photo, { subtle: true }),
+                ])
+              : null,
             el('div', { class: 'col-item-main' }, [
               el('div', { class: 'col-item-park', text: p.name }),
               el('h3', { class: 'col-item-title', text: r.name }),
@@ -83,8 +94,8 @@
                 ? el('div', { class: `meta-pill pa-${r.priority_access}` }, [({multipass:'MULTI',premier:'PREMIER','express-unlimited':'EXPRESS'})[r.priority_access] || r.priority_access])
                 : null,
             ]),
-          ])
-        )
+          ]);
+        })
       )
     );
   }

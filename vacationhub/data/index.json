@@ -14,8 +14,22 @@
       "brand": "disney",
       "resort": "Walt Disney World",
       "location": { "city": "Orlando", "state": "FL", "country": "US" },
-      "tile": "./assets/images/parks/magic-kingdom-tile.jpg",
-      "hero": "./assets/images/parks/magic-kingdom-hero.jpg",
+      "tile": {
+        "src": "./assets/images/parks/magic-kingdom-tile.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle,_Magic_Kingdom_Walt_Disney_World_2024_(square_crop).jpg"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/magic-kingdom-hero.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle,_Magic_Kingdom_Walt_Disney_World_(2024).jpg"
+        }
+      },
       "tagline": "The original Disney park east of California."
     }
   ],
@@ -24,7 +38,14 @@
       "slug": "magic-kingdom-coasters",
       "name": "Magic Kingdom Coasters",
       "scope": { "park": "magic-kingdom" },
-      "tile": "./assets/images/collections/magic-kingdom-coasters.jpg"
+      "tile": {
+        "src": "./assets/images/collections/magic-kingdom-coasters.jpg",
+        "credit": {
+          "author": "HarshLight",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Big_Thunder_Mountain_Railroad_(42404714385).jpg"
+        }
+      }
     }
   ],
   "home": {

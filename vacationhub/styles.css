@@ -534,3 +534,77 @@ a.fact-val { color: var(--accent-hi); }
   .col-item-meta { justify-content: flex-start; flex-wrap: wrap; }
   .article-title { font-size: 28px; line-height: 32px; }
 }
+
+/* === Image credit overlay === */
+.img-credit {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  font: 500 10px/14px inherit;
+  letter-spacing: 0.02em;
+  color: rgba(230, 237, 247, 0.7);
+  background: rgba(7, 13, 24, 0.55);
+  padding: 2px 7px;
+  border-radius: 999px;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2;
+  pointer-events: auto;
+  transition: color 120ms var(--ease), background-color 120ms var(--ease);
+}
+a.img-credit:hover { color: var(--text); background: rgba(7, 13, 24, 0.85); }
+.img-credit-subtle {
+  font-size: 9px;
+  padding: 1px 5px;
+  right: 5px;
+  bottom: 4px;
+  opacity: 0;
+  transition: opacity 180ms var(--ease);
+}
+.tile:hover .img-credit-subtle,
+.ride-card:hover .img-credit-subtle,
+.col-item:hover .img-credit-subtle { opacity: 1; }
+.tile:focus-within .img-credit-subtle,
+.ride-card:focus-within .img-credit-subtle,
+.col-item:focus-within .img-credit-subtle { opacity: 1; }
+
+/* === Ride card photo header === */
+.ride-card-head.has-photo {
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+}
+.ride-card-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 55%);
+}
+.ride-card-head.has-photo .ride-card-land {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  position: relative;
+  z-index: 1;
+}
+.ride-card-head { position: relative; }
+
+/* === Collection item with photo === */
+.col-item.has-photo {
+  grid-template-columns: 160px 1fr auto;
+  padding: 0 18px 0 0;
+  gap: 18px;
+}
+.col-item-thumb {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  align-self: stretch;
+  min-height: 96px;
+}
+@media (max-width: 639px) {
+  .col-item.has-photo { grid-template-columns: 1fr; padding: 0; }
+  .col-item-thumb {
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    height: 140px;
+  }
+}

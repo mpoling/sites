@@ -7,7 +7,14 @@
   "opened": 1971,
   "size_acres": 142,
   "official_url": "https://disneyworld.disney.go.com/destinations/magic-kingdom/",
-  "hero": "./assets/images/parks/magic-kingdom-hero.jpg",
+  "hero": {
+    "src": "./assets/images/parks/magic-kingdom-hero.jpg",
+    "credit": {
+      "author": "Jedi94",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle,_Magic_Kingdom_Walt_Disney_World_(2024).jpg"
+    }
+  },
   "summary": "The flagship park of the Walt Disney World Resort and the most-visited theme park in the world. Six themed lands radiate from Cinderella Castle.",
   "rides": [
     {
@@ -27,7 +34,15 @@
       "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
       "intensity": 3,
       "blurb": "Ride at night for the full effect.",
-      "collections": ["magic-kingdom-coasters"]
+      "collections": ["magic-kingdom-coasters"],
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/space-mountain.jpg",
+        "credit": {
+          "author": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Space_Mountain_(22793680393).jpg"
+        }
+      }
     },
     {
       "slug": "big-thunder-mountain",
@@ -46,7 +61,15 @@
       "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
       "intensity": 2,
       "blurb": "The wildest ride in the wilderness.",
-      "collections": ["magic-kingdom-coasters"]
+      "collections": ["magic-kingdom-coasters"],
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/big-thunder-mountain.jpg",
+        "credit": {
+          "author": "HarshLight",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Big_Thunder_Mountain_Railroad_(42404714385).jpg"
+        }
+      }
     },
     {
       "slug": "tron-lightcycle-run",
@@ -64,7 +87,15 @@
       "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
       "intensity": 4,
       "blurb": "Worth the Premier upgrade — but only just.",
-      "collections": ["magic-kingdom-coasters"]
+      "collections": ["magic-kingdom-coasters"],
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/tron-lightcycle-run.jpg",
+        "credit": {
+          "author": "Carter Johnson",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Tron_Lightcycle_Power_Run_(Magic_Kingdom)_5.jpg"
+        }
+      }
     },
     {
       "slug": "seven-dwarfs-mine-train",
@@ -81,7 +112,15 @@
       "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
       "intensity": 2,
       "blurb": "Long line. Skip unless you have Lightning Lane.",
-      "collections": ["magic-kingdom-coasters"]
+      "collections": ["magic-kingdom-coasters"],
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/seven-dwarfs-mine-train.jpg",
+        "credit": {
+          "author": "Carter Johnson",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Seven_Dwarfs_Mine_Train_(Magic_Kingdom)_1.jpg"
+        }
+      }
     },
     {
       "slug": "pirates-of-the-caribbean",
@@ -95,7 +134,15 @@
       "priority_access": "none",
       "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
       "intensity": 1,
-      "blurb": "Classic. Never a long wait."
+      "blurb": "Classic. Never a long wait.",
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/pirates-of-the-caribbean.jpg",
+        "credit": {
+          "author": "Malpass93",
+          "license": "Public Domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Pirates_of_the_Caribbean_Magic_Kingdom.JPG"
+        }
+      }
     },
     {
       "slug": "haunted-mansion",
@@ -109,7 +156,15 @@
       "priority_access": "multipass",
       "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
       "intensity": 2,
-      "blurb": "Ride in the front Doom Buggy for the best effects."
+      "blurb": "Ride in the front Doom Buggy for the best effects.",
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/haunted-mansion.jpg",
+        "credit": {
+          "author": "Evan Nichols",
+          "license": "CC BY 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Haunted_Mansion_-_panoramio.jpg"
+        }
+      }
     },
     {
       "slug": "jungle-cruise",
@@ -122,7 +177,15 @@
       "priority_access": "multipass",
       "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
       "intensity": 1,
-      "blurb": "Skipper jokes are the whole point."
+      "blurb": "Skipper jokes are the whole point.",
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/jungle-cruise.jpg",
+        "credit": {
+          "author": "Evan Nichols",
+          "license": "CC BY 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Jungle_Cruise_-_panoramio.jpg"
+        }
+      }
     },
     {
       "slug": "its-a-small-world",
@@ -135,7 +198,15 @@
       "priority_access": "none",
       "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
       "intensity": 1,
-      "blurb": "Either you love it or you can't escape the song."
+      "blurb": "Either you love it or you can't escape the song.",
+      "photo": {
+        "src": "./assets/images/rides/magic-kingdom/its-a-small-world.jpg",
+        "credit": {
+          "author": "Noted Seven",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Its_a_small_world_at_Magic_Kingdom_Florida.JPG"
+        }
+      }
     }
   ],
   "tips": [

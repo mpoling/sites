@@ -30,7 +30,14 @@ python3 -m http.server 8000
 - Tips: `data/parks/<slug>/tips/<tip-slug>.md` + matching entry in
   the park's `tips` manifest
 - Collections: `data/collections/<slug>.json`
-- Images: `assets/images/parks/<slug>-{hero,tile}.jpg`
+- Images: `assets/images/parks/<slug>-{hero,tile}.jpg`,
+  `assets/images/rides/<park>/<ride>.jpg`,
+  `assets/images/collections/<slug>.jpg`
+
+Every image field accepts either a path string OR an object
+`{ src, credit: { author, license, source } }` — see §5.6 of the
+design spec. Use CC BY, CC BY-SA, CC0, or Public Domain only;
+no press-kit photos.
 
 ## Conventions
 

@@ -102,7 +102,7 @@
     if (!park) { hero.replaceChildren(); return; }
 
     hero.replaceChildren(
-      el('div', { class: 'hero-bg', style: `background-image:url('${park.hero}')` }),
+      el('div', { class: 'hero-bg', style: `background-image:url('${VH.imgSrc(park.hero)}')` }),
       el('div', { class: 'hero-shade' }),
       el('div', { class: 'hero-content' }, [
         el('div', { class: 'label', text: 'Featured Park' }),
@@ -112,7 +112,8 @@
           class: 'btn-primary',
           href: `./park.html?slug=${park.slug}`,
         }, ['Explore →']),
-      ])
+      ]),
+      VH.creditEl(park.hero),
     );
   }
 })();

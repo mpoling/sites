@@ -142,8 +142,18 @@ chips, and v1 search.
       "brand": "disney",
       "resort": "Walt Disney World",
       "location": { "city": "Orlando", "state": "FL", "country": "US" },
-      "tile": "assets/images/parks/magic-kingdom-tile.jpg",
-      "hero": "assets/images/parks/magic-kingdom-hero.jpg",
+      "tile": {
+        "src": "assets/images/parks/magic-kingdom-tile.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:..."
+        }
+      },
+      "hero": {
+        "src": "assets/images/parks/magic-kingdom-hero.jpg",
+        "credit": { "author": "...", "license": "...", "source": "..." }
+      },
       "tagline": "The original Disney park east of California."
     }
   ],
@@ -152,7 +162,10 @@ chips, and v1 search.
       "slug": "magic-kingdom-coasters",
       "name": "Magic Kingdom Coasters",
       "scope": { "park": "magic-kingdom" },
-      "tile": "assets/images/collections/magic-kingdom-coasters.jpg"
+      "tile": {
+        "src": "assets/images/collections/magic-kingdom-coasters.jpg",
+        "credit": { "author": "...", "license": "...", "source": "..." }
+      }
     }
   ],
   "home": {
@@ -196,7 +209,10 @@ chips, and v1 search.
   "opened": 1971,
   "size_acres": 142,
   "official_url": "https://disneyworld.disney.go.com/...",
-  "hero": "assets/images/parks/magic-kingdom-hero.jpg",
+  "hero": {
+    "src": "assets/images/parks/magic-kingdom-hero.jpg",
+    "credit": { "author": "...", "license": "...", "source": "..." }
+  },
   "summary": "Short editorial blurb shown under the hero.",
   "rides": [
     {
@@ -220,7 +236,11 @@ chips, and v1 search.
       },
       "intensity": 3,
       "blurb": "Ride at night for the full effect.",
-      "collections": ["magic-kingdom-coasters"]
+      "collections": ["magic-kingdom-coasters"],
+      "photo": {
+        "src": "assets/images/rides/magic-kingdom/space-mountain.jpg",
+        "credit": { "author": "...", "license": "...", "source": "..." }
+      }
     }
   ],
   "tips": [
@@ -255,9 +275,10 @@ chips, and v1 search.
 | `intensity`       | integer (1–5)              | Editorial judgment.                                      |
 | `blurb`           | string                     | One-line take. Shown on ride cards and collection items. |
 | `collections`     | array of collection slugs  | The collections this ride belongs to.                    |
+| `photo`           | image-with-credit (see 5.6) | Optional. Header image for the ride card. Originally deferred to v2; promoted to v1 to make seeded parks feel real. |
 
 Explicitly excluded from v1: `height_max_in`, `rider_swap`, `closed`,
-`max_g`, photos, video URLs, live wait times.
+`max_g`, video URLs, live wait times.
 
 ### 5.3 Tip file: `data/parks/<park>/tips/<slug>.md`
 
@@ -290,6 +311,38 @@ field is omitted from each entry (always implied).
 Rides are identified by the pair `(park-slug, ride-slug)`. This identity
 must remain stable across the v2 promotion of rides to first-class detail
 pages — no schema migration required, only addition.
+
+### 5.6 Image-with-credit schema
+
+Any image field in the data layer (`parks[*].tile`, `parks[*].hero`,
+`collections[*].tile`, `rides[*].photo`, and the per-park `hero` in the
+park JSON) accepts **either** a bare path string **or** an object of the
+form:
+
+```json
+{
+  "src": "assets/images/parks/<slug>-hero.jpg",
+  "credit": {
+    "author": "<photographer>",
+    "license": "<short license name, e.g., CC BY-SA 4.0>",
+    "source": "<URL of the source page, e.g., Wikimedia Commons file page>"
+  }
+}
+```
+
+Renderers accept both forms via `VH.imgSrc(img)` and `VH.imgCredit(img)`
+helpers in `app.js`. When `credit` is present, an attribution overlay
+renders in the bottom-right of the image (small pill, dimmed by default,
+fades to full opacity on hover for tiles/cards; always visible on heroes).
+Clicking the credit opens the source page in a new tab.
+
+**Brand SVGs do not need credits** when they are first-party wordmarks
+authored for this site.
+
+**License acceptability:** any image committed to the repo must allow
+commercial use with attribution. In practice that means CC BY, CC BY-SA,
+CC0, or Public Domain. No CC NC / ND, no press-kit photos, no fair-use
+arguments.
 
 ## 6. Pages
 
@@ -448,11 +501,22 @@ fonts.
 
 Every park needs:
 
-- `<slug>-hero.jpg` — 2400×1000, JPEG, ~200 KB target
+- `<slug>-hero.jpg` — 2400×1000, JPEG, ~200–350 KB target
 - `<slug>-tile.jpg` — 800×450, JPEG, ~60 KB target
 
-Sources: Unsplash, official press kits, owner's own photos. All images
-committed to the repo under `assets/images/parks/`.
+Optional per-ride:
+
+- `assets/images/rides/<park-slug>/<ride-slug>.jpg` — 800×450, JPEG, ~60 KB target
+
+Optional per-collection:
+
+- `assets/images/collections/<slug>.jpg` — 800×450, JPEG, ~60 KB target
+
+**Sources:** Wikimedia Commons (CC BY / CC BY-SA / CC0 / Public Domain),
+Unsplash / Pexels (broad license, mostly non-Disney content), owner's own
+photos. **No official press-kit photos** — they're not licensed for general
+web use. Every image must record its author, license, and source URL per
+the image-with-credit schema in §5.6.
 
 ### 8.6 Accessibility
 

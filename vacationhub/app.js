@@ -107,6 +107,22 @@
     );
   };
 
+  // ---- Image helpers ----
+  // An image field may be either a string path or { src, credit: { author, license, source } }.
+  VH.imgSrc = (img) => (img == null ? '' : typeof img === 'string' ? img : img.src || '');
+  VH.imgCredit = (img) => (img && typeof img === 'object' ? img.credit : null) || null;
+
+  VH.creditEl = (img, opts) => {
+    const c = VH.imgCredit(img);
+    if (!c) return null;
+    const text = `© ${c.author}${c.license ? ' · ' + c.license : ''}`;
+    const cls = 'img-credit' + (opts && opts.subtle ? ' img-credit-subtle' : '');
+    if (c.source) {
+      return VH.el('a', { class: cls, href: c.source, target: '_blank', rel: 'noopener noreferrer' }, [text]);
+    }
+    return VH.el('span', { class: cls }, [text]);
+  };
+
   // ---- Tile builders ----
   VH.parkTile = (park) =>
     VH.el('a', {
@@ -115,12 +131,13 @@
       'data-brand': park.brand,
       'aria-label': `${park.name} — ${park.resort || ''}`,
     }, [
-      VH.el('div', { class: 'tile-img', style: `background-image:url('${park.tile}')` }),
+      VH.el('div', { class: 'tile-img', style: `background-image:url('${VH.imgSrc(park.tile)}')` }),
       VH.el('div', { class: 'tile-shade' }),
       VH.el('div', { class: 'tile-body' }, [
         VH.el('div', { class: 'tile-title', text: park.name }),
         VH.el('div', { class: 'tile-meta', text: park.resort || park.location?.city || '' }),
       ]),
+      VH.creditEl(park.tile, { subtle: true }),
     ]);
 
   VH.collectionTile = (col, parksByBrand) => {
@@ -132,12 +149,13 @@
       href: `./collection.html?slug=${col.slug}`,
       'data-brand': brand || (parksByBrand && parksByBrand[park]) || '',
     }, [
-      VH.el('div', { class: 'tile-img', style: `background-image:url('${col.tile}')` }),
+      VH.el('div', { class: 'tile-img', style: `background-image:url('${VH.imgSrc(col.tile)}')` }),
       VH.el('div', { class: 'tile-shade' }),
       VH.el('div', { class: 'tile-body' }, [
         VH.el('div', { class: 'tile-title', text: col.name }),
         VH.el('div', { class: 'tile-meta', text: meta }),
       ]),
+      VH.creditEl(col.tile, { subtle: true }),
     ]);
   };
 

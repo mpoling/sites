@@ -88,10 +88,14 @@
       r.intensity ? '★'.repeat(r.intensity) + '☆'.repeat(5 - r.intensity) : null,
     ].filter(Boolean).join(' · ');
 
+    const photoSrc = VH.imgSrc(r.photo);
+    const headStyle = photoSrc ? `background-image:url('${photoSrc}')` : '';
     return el('article', { class: 'ride-card', id: `ride-${r.slug}` }, [
-      el('div', { class: 'ride-card-head' }, [
+      el('div', { class: 'ride-card-head' + (photoSrc ? ' has-photo' : ''), style: headStyle }, [
+        photoSrc ? el('div', { class: 'ride-card-shade' }) : null,
         el('div', { class: 'ride-card-land', text: r.land || '' }),
         priorityBadge(r.priority_access),
+        VH.creditEl(r.photo, { subtle: true }),
       ]),
       el('div', { class: 'ride-card-body' }, [
         el('h3', { class: 'ride-card-title', text: r.name }),
@@ -122,13 +126,14 @@
 
   function renderHero(p) {
     $('#hero').replaceChildren(
-      el('div', { class: 'hero-bg', style: `background-image:url('${p.hero}')` }),
+      el('div', { class: 'hero-bg', style: `background-image:url('${VH.imgSrc(p.hero)}')` }),
       el('div', { class: 'hero-shade' }),
       el('div', { class: 'hero-content' }, [
         el('div', { class: 'label', text: p.resort || p.brand }),
         el('h1', { class: 'hero-title', text: p.name }),
         el('p', { class: 'hero-tag', text: p.summary || '' }),
-      ])
+      ]),
+      VH.creditEl(p.hero),
     );
   }
 
