@@ -272,3 +272,33 @@ img { display: block; max-width: 100%; }
 .tile-title { font: 700 14px/18px inherit; color: #fff; }
 .tile-meta { font: 500 11px/14px inherit; color: var(--text-dim); margin-top: 2px; }
 .tile[data-hidden="true"] { display: none; }
+
+/* === Quick facts === */
+.quick-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  max-width: var(--content-max);
+  padding: 0 48px;
+  margin: -8px 0 40px;
+}
+.fact {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+.fact-key {
+  font: 700 11px/14px inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-mute);
+  margin-bottom: 4px;
+}
+.fact-val { font: 600 14px/20px inherit; color: var(--text); }
+a.fact-val { color: var(--accent-hi); }
+
+/* === Park sections === */
+.park-section { padding: 0 48px; margin-bottom: 48px; max-width: var(--content-max); }
+.park-section h2 { font: 700 22px/28px inherit; margin: 0 0 16px; letter-spacing: -0.01em; }
+.section-meta { color: var(--text-mute); font-weight: 500; margin-left: 8px; }
