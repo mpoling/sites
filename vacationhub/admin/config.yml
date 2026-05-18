@@ -1,0 +1,225 @@
+backend:
+  name: github
+  repo: mpoling/sites
+  branch: main
+  auth_type: pat
+
+site_url: https://vacationhub.<owner-tld>
+
+media_folder: vacationhub/assets/images/uploads
+public_folder: ./assets/images/uploads
+
+media_library:
+  config:
+    slugify_filename: true
+
+collections:
+  # ============================== PARKS ==============================
+  - name: parks
+    label: Parks
+    label_singular: Park
+    folder: vacationhub/data/parks
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    format: json
+    identifier_field: slug
+    summary: '{{name}} ({{brand}})'
+    fields:
+      # --- Identity ---
+      - { name: slug, label: Slug, widget: string,
+          hint: "URL slug — lowercase, hyphens only (e.g. magic-kingdom)" }
+      - { name: name, label: Park name, widget: string }
+      - name: brand
+        label: Brand
+        widget: select
+        options: [disney, universal, legoland, cedar-fair, six-flags, dollywood]
+      - { name: resort, label: Resort name, widget: string, required: false }
+
+      # --- Location ---
+      - name: location
+        label: Location
+        widget: object
+        fields:
+          - { name: city, label: City, widget: string }
+          - { name: state, label: State / Province, widget: string }
+          - { name: country, label: Country, widget: string, default: US }
+          - { name: lat, label: Latitude, widget: number, required: false, value_type: float }
+          - { name: lng, label: Longitude, widget: number, required: false, value_type: float }
+
+      # --- Basics ---
+      - { name: opened, label: Year opened, widget: number, required: false, value_type: int }
+      - { name: size_acres, label: Size (acres), widget: number, required: false, value_type: int }
+      - { name: official_url, label: Official site URL, widget: string, required: false }
+      - { name: summary, label: Editorial summary, widget: text }
+
+      # --- Hero image ---
+      - name: hero
+        label: Hero image (2400×1000)
+        widget: object
+        fields:
+          - name: src
+            label: Image
+            widget: image
+            media_folder: /vacationhub/assets/images/parks
+            public_folder: ./assets/images/parks
+            choose_url: false
+          - name: credit
+            label: Credit
+            widget: object
+            fields:
+              - { name: author, label: Photographer, widget: string }
+              - { name: license, label: License, widget: string,
+                  hint: "e.g. CC BY-SA 4.0, CC0, Self" }
+              - { name: source, label: Source URL, widget: string, required: false }
+
+      # --- Rides ---
+      - name: rides
+        label: Rides
+        widget: list
+        label_singular: Ride
+        summary: '{{fields.name}} ({{fields.land}})'
+        fields:
+          - { name: slug, label: Slug, widget: string }
+          - { name: name, label: Name, widget: string }
+          - { name: land, label: Land, widget: string }
+          - name: type
+            label: Type
+            widget: select
+            options: [roller-coaster, dark-ride, water, show, flat, boat, transport, other]
+          - { name: subtype, label: Subtype, widget: string, required: false,
+              hint: "Free-form — e.g. indoor-dark, mine-train, launched" }
+          - { name: manufacturer, label: Manufacturer, widget: string, required: false }
+          - { name: opened, label: Year opened, widget: number, required: false, value_type: int }
+          - { name: duration_sec, label: Duration (sec), widget: number, required: false, value_type: int }
+          - { name: length_ft, label: Length (ft), widget: number, required: false, value_type: int }
+          - { name: top_speed_mph, label: Top speed (mph), widget: number, required: false, value_type: int }
+          - { name: height_min_in, label: Min height (in), widget: number, required: false, value_type: int }
+          - { name: single_rider, label: Single rider lane, widget: boolean, default: false }
+          - name: priority_access
+            label: Priority access tier
+            widget: select
+            options: [none, multipass, premier, express-unlimited]
+            default: none
+          - name: accessibility
+            label: Accessibility
+            widget: object
+            fields:
+              - { name: wheelchair_transfer, label: Wheelchair transfer, widget: boolean, default: false }
+              - { name: must_transfer, label: Must transfer, widget: boolean, default: false }
+              - { name: service_animal_ok, label: Service animals OK, widget: boolean, default: false }
+          - name: intensity
+            label: Intensity (1–5)
+            widget: number
+            value_type: int
+            min: 1
+            max: 5
+          - { name: blurb, label: One-line take, widget: string }
+          - name: collections
+            label: Member of collections
+            widget: relation
+            collection: collections
+            multiple: true
+            search_fields: [name]
+            value_field: slug
+            display_fields: [name]
+            required: false
+          - name: photo
+            label: Photo (800×450)
+            widget: object
+            required: false
+            fields:
+              - name: src
+                label: Image
+                widget: image
+                media_folder: /vacationhub/assets/images/rides/{{fields.slug}}
+                public_folder: ./assets/images/rides/{{fields.slug}}
+              - name: credit
+                label: Credit
+                widget: object
+                fields:
+                  - { name: author, label: Photographer, widget: string, required: false }
+                  - { name: license, label: License, widget: string, required: false }
+                  - { name: source, label: Source URL, widget: string, required: false }
+
+      # --- Tips (with inlined body) ---
+      - name: tips
+        label: Tips
+        widget: list
+        label_singular: Tip
+        summary: '{{fields.title}}'
+        fields:
+          - { name: slug, label: Slug, widget: string,
+              hint: "URL slug — e.g. rope-drop" }
+          - { name: title, label: Title, widget: string }
+          - { name: summary, label: Summary (one sentence), widget: string }
+          - { name: updated, label: Last updated, widget: datetime,
+              format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+          - name: body
+            label: Body
+            widget: markdown
+            modes: [raw]
+            hint: "Markdown. Headings use ## and ###. Lists with -. Bold with **text**."
+
+  # ============================== COLLECTIONS ==============================
+  - name: collections
+    label: Ride collections
+    label_singular: Collection
+    folder: vacationhub/data/collections
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    format: json
+    identifier_field: slug
+    summary: '{{name}}'
+    fields:
+      - { name: slug, label: Slug, widget: string }
+      - { name: name, label: Name, widget: string }
+      - name: scope
+        label: Scope
+        widget: object
+        hint: "Fill EITHER park OR brand, never both."
+        fields:
+          - name: park
+            label: Park (if park-scoped)
+            widget: relation
+            collection: parks
+            search_fields: [name]
+            value_field: slug
+            display_fields: [name]
+            required: false
+          - { name: brand, label: Brand (if brand-scoped), widget: string, required: false,
+              hint: "e.g. disney, universal" }
+      - { name: intro, label: Intro blurb, widget: text }
+      - name: tile
+        label: Tile image (800×450)
+        widget: object
+        required: false
+        fields:
+          - name: src
+            label: Image
+            widget: image
+            media_folder: /vacationhub/assets/images/collections
+            public_folder: ./assets/images/collections
+          - name: credit
+            label: Credit
+            widget: object
+            fields:
+              - { name: author, label: Photographer, widget: string, required: false }
+              - { name: license, label: License, widget: string, required: false }
+              - { name: source, label: Source URL, widget: string, required: false }
+      - name: rides
+        label: Rides in this collection
+        widget: list
+        summary: '{{fields.ride}}'
+        fields:
+          - name: park
+            label: Park (only for cross-park / brand-scoped collections)
+            widget: relation
+            collection: parks
+            value_field: slug
+            display_fields: [name]
+            required: false
+            hint: "Leave blank when the collection's scope is a single park."
+          - { name: ride, label: Ride slug, widget: string }
+          - { name: blurb, label: Curator blurb, widget: string }
