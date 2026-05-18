@@ -1,0 +1,18 @@
+{
+  "slug": "harry-potter-at-usf",
+  "name": "Harry Potter at Universal Studios Florida",
+  "scope": {
+    "park": "universal-studios-florida"
+  },
+  "intro": "Diagon Alley is the Harry Potter land that Disney wished it had built — a fully enclosed, weather-tight world hidden behind a King's Cross station facade, anchored by the best dark ride in Florida. Everything here works together: ride Gringotts, explore Knockturn Alley, grab a Butterbeer, then board the Hogwarts Express to Hogsmeade.",
+  "rides": [
+    {
+      "ride": "harry-potter-escape-from-gringotts",
+      "blurb": "The reason you're here. Book your Express Pass for this or commit to rope drop — the difference between a 20-minute and 90-minute wait is which side of 9 am you show up."
+    },
+    {
+      "ride": "hogwarts-express-kings-cross",
+      "blurb": "The train ride is a full narrative experience, not a shuttle — the story in your compartment window is entirely different on the return trip. Park-to-park ticket required."
+    }
+  ]
+}

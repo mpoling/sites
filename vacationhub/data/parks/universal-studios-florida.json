@@ -1,0 +1,427 @@
+{
+  "slug": "universal-studios-florida",
+  "name": "Universal Studios Florida",
+  "brand": "universal",
+  "resort": "Universal Orlando Resort",
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US",
+    "lat": 28.4752,
+    "lng": -81.467
+  },
+  "opened": 1990,
+  "size_acres": 107,
+  "official_url": "https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida",
+  "hero": {
+    "src": "./assets/images/parks/universal-studios-florida-hero.jpg",
+    "credit": {
+      "author": "Malpass93",
+      "license": "Public Domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Universal_Studios_Florida_Gate.JPG"
+    }
+  },
+  "summary": "The original Universal park in Orlando, open since 1990 — a working studio-themed park built around IP immersion with the Wizarding World of Harry Potter's Diagon Alley as its anchor. Unlike its sister park Islands of Adventure, USF skews toward screen-based and indoor experiences, making it more rain-friendly but lighter on outdoor coasters (especially since Hollywood Rip Ride Rockit closed in 2025).",
+  "rides": [
+    {
+      "slug": "harry-potter-escape-from-gringotts",
+      "name": "Harry Potter and the Escape from Gringotts",
+      "land": "The Wizarding World of Harry Potter — Diagon Alley",
+      "type": "dark-ride",
+      "subtype": "multi-dimensional with coaster elements",
+      "manufacturer": "Intamin",
+      "opened": 2014,
+      "duration_sec": 300,
+      "length_ft": 2000,
+      "height_min_in": 42,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "The best dark ride in Florida and possibly the country — fire-breathing dragon overhead, real drops blended with screens so seamlessly you can't tell where the coaster ends and the movie begins. Do it first thing or wait 90+ minutes.",
+      "collections": [
+        "harry-potter-at-usf"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/universal-studios-florida/harry-potter-escape-from-gringotts.jpg",
+        "credit": {
+          "author": "Eliedion",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Harry_Potter_and_the_Escape_from_Gringotts.JPG"
+        }
+      }
+    },
+    {
+      "slug": "hogwarts-express-kings-cross",
+      "name": "Hogwarts Express",
+      "land": "The Wizarding World of Harry Potter — Diagon Alley",
+      "type": "transport",
+      "subtype": "immersive themed train",
+      "manufacturer": "Doppelmayr Garaventa Group",
+      "opened": 2014,
+      "duration_sec": 270,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "More immersive experience than ride — and crucially the London → Hogsmeade and Hogsmeade → London shows are completely different. You need both directions for the full story. Useless without a park-to-park ticket.",
+      "collections": [
+        "harry-potter-at-usf"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/universal-studios-florida/hogwarts-express-kings-cross.jpg",
+        "credit": {
+          "author": "Eliedion",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:King%E2%80%99s_Cross_Station_and_Leicester_Square_Station._Universal_Studios_Florida.JPG"
+        }
+      }
+    },
+    {
+      "slug": "revenge-of-the-mummy",
+      "name": "Revenge of the Mummy",
+      "land": "New York",
+      "type": "roller-coaster",
+      "subtype": "launched indoor",
+      "manufacturer": "Premier Rides",
+      "opened": 2004,
+      "duration_sec": 180,
+      "length_ft": 2200,
+      "top_speed_mph": 45,
+      "height_min_in": 48,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "The park's best pure thrill ride since Rip Ride Rockit's closure — three LIM launches in the dark, fire effects, and a fake-ending trick that gets every first-timer.",
+      "photo": {
+        "src": "./assets/images/rides/universal-studios-florida/revenge-of-the-mummy.jpg",
+        "credit": {
+          "author": "Quxyz",
+          "license": "CC BY 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Revenge_of_the_Mummy_June_2025.jpg"
+        }
+      }
+    },
+    {
+      "slug": "transformers-the-ride-3d",
+      "name": "Transformers: The Ride – 3D",
+      "land": "New York",
+      "type": "dark-ride",
+      "subtype": "screen-based motion sim",
+      "manufacturer": "Oceaneering International",
+      "opened": 2013,
+      "duration_sec": 240,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "The Spider-Man formula applied to Transformers with bigger screens and louder sound — technically excellent, narratively thin, but the physical sets mixed with screens still hold up better than you'd expect for a 2013 ride.",
+      "photo": {
+        "src": "./assets/images/rides/universal-studios-florida/transformers-the-ride-3d.jpg",
+        "credit": {
+          "author": "Eliedion",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Transformers_The_Ride_at_Universal_Studios_Florida.JPG"
+        }
+      }
+    },
+    {
+      "slug": "race-through-new-york-jimmy-fallon",
+      "name": "Race Through New York Starring Jimmy Fallon",
+      "land": "New York",
+      "type": "dark-ride",
+      "subtype": "platform motion simulator",
+      "manufacturer": "Dynamic Attractions",
+      "opened": 2017,
+      "duration_sec": 240,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 2,
+      "blurb": "Wildly underrated queue and lounge area (live NBC entertainment while you wait), and the ride itself is the most gentle of the major USF simulators — good for Harry Potter fans who can't handle Gringotts."
+    },
+    {
+      "slug": "men-in-black-alien-attack",
+      "name": "MEN IN BLACK Alien Attack",
+      "land": "World Expo",
+      "type": "dark-ride",
+      "subtype": "spinning interactive shooter",
+      "opened": 2000,
+      "duration_sec": 1200,
+      "height_min_in": 42,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "The competitive shooter format Disney didn't invent — vehicles spin to face whatever alien you're targeting, so the experience varies wildly by score. Hunt for the large bug on the boss vehicle for a secret ending.",
+      "photo": {
+        "src": "./assets/images/rides/universal-studios-florida/men-in-black-alien-attack.jpg",
+        "credit": {
+          "author": "Malpass93",
+          "license": "Public Domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Men_In_Black_Alien_Attack_at_Universal_Studios_Florida.JPG"
+        }
+      }
+    },
+    {
+      "slug": "the-simpsons-ride",
+      "name": "The Simpsons Ride",
+      "land": "Springfield: Home of the Simpsons",
+      "type": "dark-ride",
+      "subtype": "IMAX dome motion sim",
+      "manufacturer": "Intamin",
+      "opened": 2008,
+      "duration_sec": 360,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "Same dome-simulator platform as the old Back to the Future ride, now in Springfield neon — the script by Simpsons writers is genuinely funny and meta, but mild enough that thrill-seekers skip it and miss the comedy."
+    },
+    {
+      "slug": "kang-kodos-twirl-n-hurl",
+      "name": "Kang & Kodos' Twirl 'n' Hurl",
+      "land": "Springfield: Home of the Simpsons",
+      "type": "flat",
+      "subtype": "spinner with interactive targets",
+      "manufacturer": "Zamperla",
+      "opened": 2013,
+      "duration_sec": 90,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "Dumbo with aliens. The Kang and Kodos audio loop is genuinely worth lingering near even if you're not riding, and the wait rarely exceeds 10 minutes."
+    },
+    {
+      "slug": "fast-furious-supercharged",
+      "name": "Fast & Furious – Supercharged",
+      "land": "San Francisco",
+      "type": "dark-ride",
+      "subtype": "screen-based tram simulator",
+      "manufacturer": "Oceaneering International",
+      "opened": 2018,
+      "duration_sec": 300,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "Closing in 2027 and not a moment too soon — the pre-show drags and the ride itself is a single-room screen experience with modest effects. Ride once for completion, skip if time is short."
+    },
+    {
+      "slug": "despicable-me-minion-mayhem",
+      "name": "Despicable Me Minion Mayhem",
+      "land": "Minion Land on Illumination Avenue",
+      "type": "dark-ride",
+      "subtype": "3D motion simulator",
+      "manufacturer": "Intamin",
+      "opened": 2012,
+      "duration_sec": 480,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "The pre-show setup with Gru transforming guests into Minions is clever and gets kids invested. The ride itself is a straightforward simulator but the IP does a lot of heavy lifting for families with young children."
+    },
+    {
+      "slug": "villain-con-minion-blast",
+      "name": "Illumination's Villain-Con Minion Blast",
+      "land": "Minion Land on Illumination Avenue",
+      "type": "dark-ride",
+      "subtype": "moving walkway interactive shooter",
+      "opened": 2023,
+      "duration_sec": 240,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "A walking shooter where you blast villains with an E-Liminator X blaster — competitive scoring keeps groups engaged and no height requirement makes it a parent-plus-toddler workhorse. Much better than its low profile suggests."
+    },
+    {
+      "slug": "et-adventure",
+      "name": "E.T. Adventure",
+      "land": "Hollywood",
+      "type": "dark-ride",
+      "subtype": "suspended bicycle dark ride",
+      "manufacturer": "Intamin",
+      "opened": 1990,
+      "duration_sec": 240,
+      "height_min_in": 34,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "The park's original ride and its last remaining classic-era Spielberg attraction — 300+ animatronics, a John Williams score written specifically for this queue, and E.T. calls you by name at the end. Sentimental for adults, delightful for small kids."
+    },
+    {
+      "slug": "trolls-trollercoaster",
+      "name": "Trolls TrollerCoaster",
+      "land": "DreamWorks Land",
+      "type": "roller-coaster",
+      "subtype": "junior steel",
+      "manufacturer": "Vekoma",
+      "opened": 2024,
+      "duration_sec": 60,
+      "top_speed_mph": 22,
+      "height_min_in": 36,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "The skeleton is a 1999 junior coaster (formerly Woody Woodpecker's Nuthouse Coaster) — repainting and Trolls theming don't change the physics, but it's a genuine coaster for kids clearing 36 inches, not a spinning teacup."
+    },
+    {
+      "slug": "bourne-stuntacular",
+      "name": "The Bourne Stuntacular",
+      "land": "Hollywood",
+      "type": "show",
+      "subtype": "live stunt show",
+      "opened": 2020,
+      "duration_sec": 1260,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 2,
+      "blurb": "The best theme park stunt show in the US right now — real stunt performers on a seamless stage where the screen backdrop shifts continents mid-chase and a motorcycle actually accelerates on stage. The pre-show adds 6 minutes but don't skip it."
+    },
+    {
+      "slug": "animal-actors-on-location",
+      "name": "Animal Actors on Location!",
+      "land": "Hollywood",
+      "type": "show",
+      "subtype": "live animal show",
+      "opened": 1990,
+      "duration_sec": 1200,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "An original-day attraction still charming enough to fill seats — trained animals from film and TV, audience participation, and pacing that actually holds young kids for 20 minutes. Prioritize if you have under-7s."
+    },
+    {
+      "slug": "horror-makeup-show",
+      "name": "Universal Orlando's Horror Make-Up Show",
+      "land": "Hollywood",
+      "type": "show",
+      "subtype": "live theatrical comedy with SFX demos",
+      "opened": 1990,
+      "duration_sec": 1200,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "The scrappiest legacy show in any major theme park — practical effects demos dressed up in improv comedy that punches way above its production budget. The 'victim volunteer' sequence is a crowd favorite and the humor runs darker than you'd expect for a family park."
+    },
+    {
+      "slug": "dreamworks-imagination-celebration",
+      "name": "DreamWorks Imagination Celebration",
+      "land": "DreamWorks Land",
+      "type": "show",
+      "subtype": "live character stage show",
+      "opened": 2024,
+      "duration_sec": 600,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "The marquee entertainment for DreamWorks Land — rotating DreamWorks characters on an outdoor stage with music and audience interaction. Schedule around show times rather than making it a destination; it's a filler between rides, not a headliner."
+    }
+  ],
+  "tips": [
+    {
+      "slug": "express-pass-priority",
+      "title": "How to Sequence Your Express Pass at USF",
+      "summary": "Universal Express gives unlimited ride access to most attractions, but the right order matters.",
+      "updated": "2026-05-17",
+      "body": "## What it covers\n\nExpress Pass at USF covers: Gringotts, Revenge of the Mummy, Transformers 3D, MIB Alien Attack, Simpsons, Race Through New York, Fast & Furious Supercharged, Villain-Con Minion Blast, Despicable Me, Kang & Kodos, E.T. Adventure, and Hogwarts Express (still requires park-to-park ticket).\n\n## Where it earns the cost\n\n**Highest-priority Express use:** Harry Potter and the Escape from Gringotts (longest waits in the park, routinely 60–120 min) and Revenge of the Mummy (next highest).\n\n## Where to skip Express in favor of single rider\n\nTransformers and MIB have single rider lines that often move faster than the Express line. Use single rider on those and save Express for the rides without single rider options.\n\n## What rarely needs Express\n\nRace Through New York, Simpsons, and Villain-Con Minion Blast rarely exceed 30-minute waits on moderate days. Don't waste Express on them outside peak (noon–3 pm).\n\n## Unlimited use\n\nUnlike Disney Lightning Lane, Universal Express is unlimited use — you can re-ride Gringotts back-to-back if you want. No return windows, no booking in advance.\n\n## When to skip Express entirely\n\nSlow weekdays in September or January — use single rider lines instead and you'll ride everything in half a day without it."
+    },
+    {
+      "slug": "hogwarts-express-two-park-strategy",
+      "title": "The Hogwarts Express Requires a Park-to-Park Ticket",
+      "summary": "The train physically moves you between two separate parks — missing this detail can strand you with the wrong ticket.",
+      "updated": "2026-05-17",
+      "body": "## The hard rule\n\nYou must have a Park-to-Park ticket (USF + IoA) to board the Hogwarts Express at either station. Staff scan tickets at the gate — a one-park ticket will be rejected.\n\n## Both directions are different rides\n\nThe ride has two entirely different experiences. USF's King's Cross → IoA's Hogsmeade Station tells one part of the story; the return trip tells a completely different chapter. Both are worth riding.\n\n## Optimal Wizarding World day\n\n1. Start at Diagon Alley (USF) at rope drop — ride Gringotts first, explore, get Butterbeer.\n2. Take the train to Hogsmeade (IoA) mid-morning when Gringotts wait has built up.\n3. Ride Hagrid's and the IoA HP rides.\n4. Train back to USF.\n\n## Three-park days\n\nIn 2026, a 3-day+ park-to-park ticket gives 'Freedom of Movement' across USF, IoA, and Epic Universe — the train's value is amplified because your ticket already covers all three parks.\n\n## Refurbishment risk\n\nIf the Hogwarts Express is closed for refurbishment (had a 2-week closure in Feb 2026), you cannot ride between parks but you can still walk the connecting path. Don't upgrade to park-to-park solely for the train during announced refurbishment windows.\n\n## Early Park Admission edge\n\nOn-site hotel guests get Diagon Alley one hour early — use this to ride Gringotts with nearly zero wait, then be on the first Hogwarts Express train at official park open to beat Hogsmeade crowds."
+    },
+    {
+      "slug": "best-time-wizarding-world",
+      "title": "When to Visit Diagon Alley",
+      "summary": "Diagon Alley rewards early mornings and late evenings — and quiet calendar windows beat any Express Pass on a packed summer day.",
+      "updated": "2026-05-17",
+      "body": "## Best seasons\n\nMid-January through mid-February and the week after Labor Day through October (excluding HHN nights) have the lowest crowds. These windows offer 20-minute Gringotts waits vs. 90+ in summer.\n\n## Best days of week\n\nTuesday, Wednesday, Thursday — weekends are the worst. Monday can be heavy if guests arrive Sunday for a Monday rope drop.\n\n## Best time of day in the park\n\nArrive at Diagon Alley's entry (behind the King's Cross facade) at park open. With Early Park Admission, go at the hotel-guest early entry time — one full hour of near-empty Diagon Alley.\n\n## Atmosphere is best at dusk and the first hour\n\nThe 'always overcast' design of the land means it photographs beautifully under any light. Crowds thin significantly after 7 pm on days when the park closes at 9 or 10 pm.\n\n## Interactive wand spots\n\nGet congested from 10 am onward. Buy your wand the moment shops open and hit the wand spots in the first 30 minutes while lines at each bronze medallion are still 0–2 guests deep.\n\n## Avoid HHN nights for Diagon Alley\n\nDon't book a Diagon Alley-heavy day during Halloween Horror Nights (mid-September through early November, select nights). The park stays open late but the haunt crowds compress the Wizarding World significantly.\n\n## Hot weather tip\n\nDiagon Alley is entirely covered and shaded — one of the best places to be during the 1–4 pm Florida heat window. Knockturn Alley is even darker and cooler. Don't abandon the area mid-afternoon just because it's hot outside."
+    }
+  ]
+}

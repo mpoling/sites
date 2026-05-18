@@ -143,6 +143,34 @@
         }
       },
       "tagline": "A real zoo dressed as a theme park, and vice versa."
+    },
+    {
+      "slug": "universal-studios-florida",
+      "name": "Universal Studios Florida",
+      "brand": "universal",
+      "resort": "Universal Orlando Resort",
+      "location": {
+        "city": "Orlando",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/universal-studios-florida-tile.jpg",
+        "credit": {
+          "author": "Snowman Guy",
+          "license": "Public Domain",
+          "source": "https://commons.wikimedia.org/wiki/File:UniversalStudiosFloridaEntrance.JPG"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/universal-studios-florida-hero.jpg",
+        "credit": {
+          "author": "Malpass93",
+          "license": "Public Domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Universal_Studios_Florida_Gate.JPG"
+        }
+      },
+      "tagline": "Ride the movies. Step inside the story."
     }
   ],
   "collections": [
@@ -203,6 +231,21 @@
           "author": "Benjamin D. Esham",
           "license": "CC BY-SA 4.0",
           "source": "https://commons.wikimedia.org/wiki/File:Expedition_Everest.jpg"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-at-usf",
+      "name": "Harry Potter at Universal Studios Florida",
+      "scope": {
+        "park": "universal-studios-florida"
+      },
+      "tile": {
+        "src": "./assets/images/collections/harry-potter-at-usf.jpg",
+        "credit": {
+          "author": "HarshLight",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(43334673921).jpg"
         }
       }
     }
