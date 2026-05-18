@@ -1,0 +1,30 @@
+{
+  "slug": "hollywood-studios-thrill-run",
+  "name": "Hollywood Studios Thrill Run",
+  "scope": {
+    "park": "hollywood-studios"
+  },
+  "intro": "Hollywood Studios punches well above its weight for thrill rides — five genuinely great ones in a 135-acre park is a better ratio than any other Disney World park. This is the order to tackle them in, and why.",
+  "rides": [
+    {
+      "ride": "rise-of-the-resistance",
+      "blurb": "The flagship — 18 minutes of the most technically ambitious Disney ride ever built. Do this first, rope drop, no exceptions."
+    },
+    {
+      "ride": "tower-of-terror",
+      "blurb": "The park's original anchor ride and still the most atmospheric — a genuine dark ride disguised as a drop tower, with Twilight Zone storytelling that actually lands."
+    },
+    {
+      "ride": "rock-n-roller-coaster-muppets",
+      "blurb": "The hardest 57 mph in any Disney park: three inversions in the dark with Electric Mayhem on the soundtrack. Brand new Muppets theming as of May 2026."
+    },
+    {
+      "ride": "slinky-dog-dash",
+      "blurb": "The 'family coaster' that grown-ups end up enjoying more than expected. Book the Lightning Lane first thing or you'll be waiting 70 minutes by noon."
+    },
+    {
+      "ride": "millennium-falcon-smugglers-run",
+      "blurb": "You're the crew now. Even if you draw engineer duty, the new Grogu interaction (May 2026) makes the consolation feel intentional."
+    }
+  ]
+}

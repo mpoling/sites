@@ -1,0 +1,402 @@
+{
+  "slug": "hollywood-studios",
+  "name": "Disney's Hollywood Studios",
+  "brand": "disney",
+  "resort": "Walt Disney World",
+  "location": {
+    "city": "Lake Buena Vista",
+    "state": "FL",
+    "country": "US",
+    "lat": 28.358,
+    "lng": -81.5592
+  },
+  "opened": 1989,
+  "size_acres": 135,
+  "official_url": "https://disneyworld.disney.go.com/destinations/hollywood-studios/",
+  "hero": {
+    "src": "./assets/images/parks/hollywood-studios-hero.jpg",
+    "credit": {
+      "author": "Jedi94",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Twilight_Zone_Tower_of_Terror,_2024.jpg"
+    }
+  },
+  "summary": "Opened in 1989 as Disney-MGM Studios and rebuilt over the next three decades into the resort's IP showcase — today it's where you go for Star Wars, Toy Story, and Tower of Terror without apology. The smallest of the four WDW parks at 135 acres, but it punches above its weight on ride density, and Rise of the Resistance alone is worth the price of admission.",
+  "rides": [
+    {
+      "slug": "rise-of-the-resistance",
+      "name": "Star Wars: Rise of the Resistance",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "dark-ride",
+      "subtype": "multi-modal trackless",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2019,
+      "duration_sec": 1080,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "premier",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "The most ambitious ride Disney has ever built — 18 minutes of pre-shows, simulators, and a trackless dark ride where Kylo Ren walks up to your vehicle. Down at rope drop ~20% of the time; always check the app first.",
+      "collections": [
+        "hollywood-studios-thrill-run"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/hollywood-studios/rise-of-the-resistance.jpg",
+        "credit": {
+          "author": "elisfkc",
+          "license": "CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Rise_of_the_Resistance_Entrance_(48512194827).jpg"
+        }
+      }
+    },
+    {
+      "slug": "tower-of-terror",
+      "name": "The Twilight Zone Tower of Terror",
+      "land": "Sunset Boulevard",
+      "type": "dark-ride",
+      "subtype": "randomized drop tower",
+      "manufacturer": "Otis Elevator Company",
+      "opened": 1994,
+      "duration_sec": 300,
+      "top_speed_mph": 39,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 5,
+      "blurb": "The Hollywood Hills skyline anchor — still one of the best theme park rides anywhere. The randomized drop sequence means repeat rides are never identical.",
+      "collections": [
+        "hollywood-studios-thrill-run"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/hollywood-studios/tower-of-terror.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Twilight_Zone_Tower_of_Terror,_2024.jpg"
+        }
+      }
+    },
+    {
+      "slug": "rock-n-roller-coaster-muppets",
+      "name": "Rock 'n' Roller Coaster Starring The Muppets",
+      "land": "Sunset Boulevard",
+      "type": "roller-coaster",
+      "subtype": "launched indoor",
+      "manufacturer": "Vekoma",
+      "opened": 2026,
+      "duration_sec": 90,
+      "length_ft": 3403,
+      "top_speed_mph": 57,
+      "height_min_in": 48,
+      "single_rider": true,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 5,
+      "blurb": "Same bone-rattling 0-to-57-mph launch the Aerosmith version made famous, now with Dr. Teeth and the Electric Mayhem on the soundtrack. Three inversions in the dark at 57 mph is still a very good time.",
+      "collections": [
+        "hollywood-studios-thrill-run"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/hollywood-studios/rock-n-roller-coaster-muppets.jpg",
+        "credit": {
+          "author": "Raul654",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Rock_n_Roller_Coaster,_Disney's_Hollywood_Studios.jpg"
+        }
+      }
+    },
+    {
+      "slug": "millennium-falcon-smugglers-run",
+      "name": "Millennium Falcon: Smugglers Run",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "dark-ride",
+      "subtype": "interactive simulator",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2019,
+      "duration_sec": 300,
+      "height_min_in": 38,
+      "single_rider": true,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "You actually sit in the cockpit of the Millennium Falcon — a genuine thrill even if you're a gunner and your pilots are chaos. The Mandalorian and Grogu missions added May 2026 are a real upgrade.",
+      "collections": [
+        "hollywood-studios-thrill-run"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/hollywood-studios/millennium-falcon-smugglers-run.jpg",
+        "credit": {
+          "author": "elisfkc",
+          "license": "CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Millennium_Falcon_Panorama_(48512183287).jpg"
+        }
+      }
+    },
+    {
+      "slug": "mickey-minnies-runaway-railway",
+      "name": "Mickey & Minnie's Runaway Railway",
+      "land": "Hollywood Boulevard",
+      "type": "dark-ride",
+      "subtype": "trackless",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2020,
+      "duration_sec": 270,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Disney's first Mickey-headlined ride is more charming than that premise sounds — a genuinely funny trackless dark ride that earns its spot in the Chinese Theatre. No height requirement means it pulls families and the Lightning Lane drains fast.",
+      "photo": {
+        "src": "./assets/images/rides/hollywood-studios/mickey-minnies-runaway-railway.jpg",
+        "credit": {
+          "author": "Benoît Prieur",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Mickey_%26_Minnie%27s_Runaway_Railway_(Disney%27s_Hollywood_Studios)_May_2023.JPG"
+        }
+      }
+    },
+    {
+      "slug": "slinky-dog-dash",
+      "name": "Slinky Dog Dash",
+      "land": "Toy Story Land",
+      "type": "roller-coaster",
+      "subtype": "family launched",
+      "manufacturer": "Mack Rides",
+      "opened": 2018,
+      "duration_sec": 117,
+      "length_ft": 1357,
+      "top_speed_mph": 40,
+      "height_min_in": 38,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "The most competitive Tier 1 Lightning Lane at the park — book it the moment you buy Multi Pass. Ride at dusk; the oversized Toy Story props and midway lighting make it substantially more fun than 40 mph suggests.",
+      "collections": [
+        "hollywood-studios-thrill-run"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/hollywood-studios/slinky-dog-dash.jpg",
+        "credit": {
+          "author": "U+1F360",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Slinky_Dog_Dash_Sunset.jpg"
+        }
+      }
+    },
+    {
+      "slug": "toy-story-mania",
+      "name": "Toy Story Mania!",
+      "land": "Toy Story Land",
+      "type": "dark-ride",
+      "subtype": "4D interactive shooter",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2008,
+      "duration_sec": 390,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Competitive family dark ride with five midway-style games. Still holds up 15+ years in because the pull-string mechanic is inherently fun and the scoreboards create genuine rivalries."
+    },
+    {
+      "slug": "alien-swirling-saucers",
+      "name": "Alien Swirling Saucers",
+      "land": "Toy Story Land",
+      "type": "flat",
+      "subtype": "spinner",
+      "manufacturer": "Zamperla",
+      "opened": 2018,
+      "duration_sec": 90,
+      "height_min_in": 32,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "Charming filler for Toy Story Land. The Little Green Men audio is genuinely funny; don't burn a Lightning Lane on it unless you have small kids who will melt down without it."
+    },
+    {
+      "slug": "star-tours",
+      "name": "Star Tours – The Adventures Continue",
+      "land": "Echo Lake",
+      "type": "dark-ride",
+      "subtype": "3D motion simulator",
+      "opened": 2011,
+      "duration_sec": 420,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "250+ ride combinations across a decade of film content means no two trips through the galaxy are the same. Can cause simulator sickness; close your eyes for the hyperspace jump if that's a concern."
+    },
+    {
+      "slug": "indiana-jones-epic-stunt-spectacular",
+      "name": "Indiana Jones Epic Stunt Spectacular!",
+      "land": "Echo Lake",
+      "type": "show",
+      "subtype": "live stunt show",
+      "opened": 1989,
+      "duration_sec": 2100,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "A 35-minute practical-effects stunt show that still holds up in the CGI age — watch the boulder roll out toward the audience and tell me it doesn't land. Best air-conditioned rest for your legs in the park."
+    },
+    {
+      "slug": "frozen-sing-along",
+      "name": "For the First Time in Forever: A Frozen Sing-Along Celebration",
+      "land": "Echo Lake",
+      "type": "show",
+      "subtype": "sing-along stage show",
+      "opened": 2014,
+      "duration_sec": 1800,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Underrated crowd-management asset — 30 minutes of A/C and ~1,000 seats per showing. The comedic hosts are actually funny rather than relentlessly cheerful."
+    },
+    {
+      "slug": "beauty-and-the-beast-live-on-stage",
+      "name": "Beauty and the Beast – Live on Stage",
+      "land": "Sunset Boulevard",
+      "type": "show",
+      "subtype": "Broadway-style musical",
+      "opened": 1991,
+      "duration_sec": 1500,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "A condensed Broadway-style production running continuously since 1991 — costumes are legitimately impressive and live voices better than you'd expect from a park show. Catch it while waiting for a Sunset Boulevard Lightning Lane return window."
+    },
+    {
+      "slug": "fantasmic",
+      "name": "Fantasmic!",
+      "land": "Sunset Boulevard",
+      "type": "show",
+      "subtype": "nighttime spectacular",
+      "opened": 1998,
+      "duration_sec": 1740,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "11,000-seat amphitheater that regularly fills multiple performances on peak nights. The Fantasmic! Dining Package is genuinely worth it for reserved seating. Sit center, four or five rows back, not in the front splash zone."
+    },
+    {
+      "slug": "walt-disney-presents",
+      "name": "Walt Disney Presents",
+      "land": "Walt Disney Studios Lot",
+      "type": "other",
+      "subtype": "walk-through exhibit",
+      "opened": 1989,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Self-paced walk-through exhibit on Walt's life and Disney Parks history — interesting for anyone who cares about Disney history, easy to skip if you don't. Models of in-progress attractions are worth a look for park nerds."
+    },
+    {
+      "slug": "little-mermaid-musical-adventure",
+      "name": "The Little Mermaid – A Musical Adventure",
+      "land": "Walt Disney Studios Lot",
+      "type": "show",
+      "subtype": "stage musical with puppetry",
+      "opened": 2025,
+      "duration_sec": 1800,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Opened May 2025 as a full replacement for the decades-old Voyage of the Little Mermaid — new staging, puppetry, and visual effects make it substantially more impressive. Excellent for mid-afternoon when ride queues peak."
+    }
+  ],
+  "tips": [
+    {
+      "slug": "rope-drop-order",
+      "title": "The Only Hollywood Studios Rope Drop Order That Actually Works",
+      "summary": "Two rides at 60+ minutes by 9:30am means your first 45 minutes determine the day.",
+      "updated": "2026-05-17",
+      "body": "## Arrive earlier than you think\n\n45–60 minutes before Early Entry if you're a resort guest. 60–75 before general open otherwise.\n\n## Default order\n\n1. **Rise of the Resistance**\n2. **Slinky Dog Dash**\n3. **Millennium Falcon: Smugglers Run**\n\nBook **Mickey & Minnie's Runaway Railway** Lightning Lane the moment you enter the park.\n\n## Rise of the Resistance contingency\n\nIt goes down at rope drop roughly 20% of the time. If it's down when you arrive, go left to Slinky Dog Dash immediately — don't wait around hoping.\n\n## Resort-guest edge\n\nEarly Entry (30 minutes before park open) at Galaxy's Edge often lets you walk onto Smugglers Run, then be positioned for Rise of the Resistance at open.\n\n## What NOT to rope-drop\n\n**Rock 'n' Roller Coaster** rarely needs to be roped — waits stay shorter in the morning while everyone is in Galaxy's Edge.\n\n**Tower of Terror** peaks mid-morning. Aim for the first 2 hours or late afternoon as crowds thin."
+    },
+    {
+      "slug": "lightning-lane-strategy",
+      "title": "Hollywood Studios Lightning Lane: What to Buy, What to Skip",
+      "summary": "One Premier ride (Rise of the Resistance) and a competitive Multi Pass lineup — here's how to allocate both.",
+      "updated": "2026-05-17",
+      "body": "## Premier\n\nLightning Lane Premier covers only **Rise of the Resistance** as of 2026. Genuinely worth it if you can't rope drop, but expensive per ride.\n\n## Multi Pass priority order\n\n1. **Slinky Dog Dash** — book at 7am immediately\n2. **Mickey & Minnie's Runaway Railway**\n3. **Toy Story Mania**\n4. **Tower of Terror**\n5. **Rock 'n' Roller Coaster (Muppets)**\n\nSlinky Dog Dash is Tier 1 and the fastest to sell out. Book it first every time, then check what return time you got and plan your morning around it.\n\n## When to skip Lightning Lane\n\n- **Millennium Falcon: Smugglers Run** has a single rider line that often moves faster than Lightning Lane.\n- **Shows** (Indiana Jones, Frozen Sing-Along, Fantasmic!) don't need Lightning Lane — just show up.\n- **Fantasmic! Dining Package** provides reserved seating for the nighttime show. Book well in advance if you don't want to arrive 45 minutes early for the standing section."
+    },
+    {
+      "slug": "2026-construction-navigation",
+      "title": "Hollywood Studios in 2026: What's Open, What's Closed, Where the Walls Are",
+      "summary": "2026 is one of the most transitional years in Hollywood Studios history — two major projects opening while Grand Avenue is being razed for Monsters Inc. Land.",
+      "updated": "2026-05-17",
+      "body": "## What's changed since your last visit\n\n- **Grand Avenue / Muppets Courtyard** is fully walled off for Monsters Inc. Land construction — no through-access. Plan alternate routes between Galaxy's Edge and Echo Lake.\n- **Muppet*Vision 3D is gone** (closed June 2025, building being reworked for the Monsters Inc. area).\n- **Rock 'n' Roller Coaster Aerosmith → Muppets retheme** opened May 26, 2026. Queue and show building are new; ride hardware is identical (same launch, track, inversions).\n- **Walt Disney Studios Lot** (formerly Animation Courtyard) opened May 26, 2026 with the Little Mermaid show, Disney Jr. show, and courtyard. Interactive \"Magic of Disney Animation\" exhibits open later in summer 2026.\n- **Millennium Falcon: Smugglers Run** updated May 22, 2026 with new Mandalorian/Grogu missions — the ride experience has meaningfully changed even though the hardware is the same.\n\n## What's unchanged\n\nGalaxy's Edge remains the park's centerpiece and is fully operational. No construction impacts there.\n\n## Expected timeline\n\nMonsters Inc. Land opening is speculative ~2028. Plan multiple visits if you want to see it complete."
+    }
+  ]
+}

@@ -87,6 +87,34 @@
         }
       },
       "tagline": "Part world's fair, part pub crawl, all Epcot."
+    },
+    {
+      "slug": "hollywood-studios",
+      "name": "Disney's Hollywood Studios",
+      "brand": "disney",
+      "resort": "Walt Disney World",
+      "location": {
+        "city": "Lake Buena Vista",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/hollywood-studios-tile.jpg",
+        "credit": {
+          "author": "Jake Toczek",
+          "license": "CC BY 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hollywood_Tower_Hotel_-_panoramio.jpg"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/hollywood-studios-hero.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Twilight_Zone_Tower_of_Terror,_2024.jpg"
+        }
+      },
+      "tagline": "Where the movies pull you in and don't let go."
     }
   ],
   "collections": [
@@ -117,6 +145,21 @@
           "author": "Jedi94",
           "license": "CC BY-SA 4.0",
           "source": "https://commons.wikimedia.org/wiki/File:Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg"
+        }
+      }
+    },
+    {
+      "slug": "hollywood-studios-thrill-run",
+      "name": "Hollywood Studios Thrill Run",
+      "scope": {
+        "park": "hollywood-studios"
+      },
+      "tile": {
+        "src": "./assets/images/collections/hollywood-studios-thrill-run.jpg",
+        "credit": {
+          "author": "U+1F360",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Slinky_Dog_Dash_Sunset.jpg"
         }
       }
     }
