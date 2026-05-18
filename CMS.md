@@ -275,8 +275,8 @@ backend:
   branch: main
   auth_type: pat      # personal access token mode
 
-media_folder: vacationhub/assets/images/uploads
-public_folder: ./assets/images/uploads
+media_folder: /vacationhub/assets/images/uploads
+public_folder: /assets/images/uploads
 
 collections:
   - name: parks
@@ -303,7 +303,7 @@ collections:
             label: Image
             widget: image
             media_folder: /vacationhub/assets/images/parks
-            public_folder: ./assets/images/parks
+            public_folder: /assets/images/parks
             # Sveltia-specific: target dimensions for browser-side resize
             max_width: 2400
             max_height: 1000
@@ -334,7 +334,7 @@ collections:
                 label: Image
                 widget: image
                 media_folder: /vacationhub/assets/images/rides/{{fields.slug}}
-                public_folder: ./assets/images/rides/{{fields.slug}}
+                public_folder: /assets/images/rides/{{fields.slug}}
                 max_width: 800
                 max_height: 450
                 crop: cover
@@ -512,6 +512,25 @@ it or edit it.
 `<site>.<owner-tld>/admin/` and see the login screen. That's by design —
 PAT-gated — but it's a known surface. For sites that index well in search,
 add `Disallow: /admin/` to a `robots.txt` for that site.
+
+### 10.7 Path forms in `config.yml`
+
+Sveltia requires both `media_folder` and `public_folder` to be
+**absolute paths starting with `/`** and will refuse to load with a
+"public folder is invalid" error on any other form.
+
+- `media_folder` is **repo-rooted** — leading `/` represents the
+  repository root: `/vacationhub/assets/images/parks`.
+- `public_folder` is **site-rooted** — leading `/` represents the live
+  site root: `/assets/images/parks`. This is the value that gets stored
+  in the saved JSON, so the renderer must be able to resolve it.
+
+These `/`-rooted public paths are compatible with the Cloudflare
+Worker rewrite per [`ARCHITECTURE.md` §5.2](./ARCHITECTURE.md#52-paths-must-not-leak-the-subdirectory):
+they resolve to the subdomain root, which the worker rewrites onto the
+correct `/sites/<site>/` path. **Do not** include the site name in
+`public_folder` (e.g., `/vacationhub/assets/...`) — that path would
+double-prefix and 404.
 
 ---
 

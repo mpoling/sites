@@ -37,9 +37,9 @@ Key properties of this architecture:
 - **Custom subdomains are an edge concern.** The Cloudflare Worker is the
   only piece that maps `<site>.<owner-tld>` → `/sites/<site>/`. GitHub Pages
   knows nothing about subdomains.
-- **The subdirectory must be invisible to the browser.** Because the worker
-  rewrites the path, all in-page references must be relative; absolute paths
-  starting with `/` would leak the `/sites/<site>/` prefix and break.
+- **The subdirectory must be invisible to the browser.** Any path that
+  hardcodes the `/sites/<site>/` prefix leaks the subdirectory and breaks.
+  See §5.2 for the exact rule on path forms.
 
 ---
 
@@ -165,14 +165,40 @@ pipeline pattern in §6, where Python/Node scripts run in GitHub Actions to
 *produce* static JSON files committed back to the repo. Those scripts are
 infrastructure, not site code.)
 
-### 5.2 Relative paths only
+### 5.2 Paths must not leak the subdirectory
 
 Because the Cloudflare Worker rewrites the subdomain to a subdirectory,
-the subdirectory must be invisible to the browser. Every in-page reference
-must be relative:
+no in-page reference may hardcode the `/sites/<site>/` prefix — that
+prefix is invisible to the browser and the worker re-applies it
+automatically.
 
-- ✅ `./styles.css`, `../data/games.json`, `assets/logo.svg`
-- ❌ `/styles.css`, `/sites/<site>/styles.css`
+Acceptable path forms:
+
+- ✅ **Relative** — `./styles.css`, `../data/games.json`,
+  `assets/logo.svg`. Resolves against the current page URL.
+- ✅ **Subdomain-absolute** — `/styles.css`, `/assets/logo.svg`,
+  `/data/games.json`. Resolves to the subdomain root
+  (`<site>.<owner-tld>/styles.css`), which the worker rewrites to
+  `mpoling.github.io/sites/<site>/styles.css`. This works because the
+  worker rewrites *all* paths under the subdomain, regardless of leading
+  slash.
+
+Unacceptable:
+
+- ❌ **Subdirectory-aware** — `/sites/<site>/styles.css`. Resolves to
+  `<site>.<owner-tld>/sites/<site>/styles.css`, which the worker
+  rewrites to `mpoling.github.io/sites/<site>/sites/<site>/styles.css`
+  (double prefix, 404).
+- ❌ **GH-Pages absolute** — `https://mpoling.github.io/sites/<site>/foo`.
+  Works but tightly couples the site to the deploy host and bypasses the
+  worker.
+
+Practical guidance: **prefer relative paths in hand-written HTML/JS**
+(simpler, no leading-slash gotchas in local dev). **Subdomain-absolute
+paths are acceptable when a tool requires them** — Sveltia CMS's
+`public_folder` config is one such case (it rejects `./...` and requires
+`/...`). The renderer handles either form because it just feeds the
+stored path into `background-image: url(...)` or `<img src>`.
 
 This applies everywhere: `<link>`, `<script>`, `<img>`, `<a href>`,
 `fetch()`, `background-image: url(...)`, and any other URL.

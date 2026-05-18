@@ -211,8 +211,8 @@ backend:
 site_url: https://vacationhub.<owner-tld>
 
 # Default landing path for any image uploaded without a per-field media_folder
-media_folder: vacationhub/assets/images/uploads
-public_folder: ./assets/images/uploads
+media_folder: /vacationhub/assets/images/uploads
+public_folder: /assets/images/uploads
 
 # Normalize uploaded filenames (lowercase, dashes) so the repo stays tidy
 media_library:
@@ -268,7 +268,7 @@ collections:
             label: Image
             widget: image
             media_folder: /vacationhub/assets/images/parks
-            public_folder: ./assets/images/parks
+            public_folder: /assets/images/parks
             choose_url: false
           - name: credit
             label: Credit
@@ -339,7 +339,7 @@ collections:
                 label: Image
                 widget: image
                 media_folder: /vacationhub/assets/images/rides/{{fields.slug}}
-                public_folder: ./assets/images/rides/{{fields.slug}}
+                public_folder: /assets/images/rides/{{fields.slug}}
               - name: credit
                 label: Credit
                 widget: object
@@ -406,7 +406,7 @@ collections:
             label: Image
             widget: image
             media_folder: /vacationhub/assets/images/collections
-            public_folder: ./assets/images/collections
+            public_folder: /assets/images/collections
           - name: credit
             label: Credit
             widget: object
