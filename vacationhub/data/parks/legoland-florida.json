@@ -1,0 +1,18 @@
+{
+  "slug": "legoland-florida",
+  "name": "LEGOLAND Florida",
+  "brand": "legoland",
+  "resort": "LEGOLAND Florida Resort",
+  "location": {
+    "city": "Winter Haven",
+    "state": "FL",
+    "country": "US"
+  },
+  "opened": 2011,
+  "hero": {
+    "src": "./assets/images/parks/legoland-florida-hero.jpg"
+  },
+  "summary": "Awaiting content. This park is scaffolded and ready for CMS authoring — visit the admin editor to add rides, tips, and a proper hero image.",
+  "rides": [],
+  "tips": []
+}

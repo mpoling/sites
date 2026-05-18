@@ -1,0 +1,18 @@
+{
+  "slug": "california-adventure",
+  "name": "Disney California Adventure",
+  "brand": "disney",
+  "resort": "Disneyland Resort",
+  "location": {
+    "city": "Anaheim",
+    "state": "CA",
+    "country": "US"
+  },
+  "opened": 2001,
+  "hero": {
+    "src": "./assets/images/parks/california-adventure-hero.jpg"
+  },
+  "summary": "Awaiting content. This park is scaffolded and ready for CMS authoring — visit the admin editor to add rides, tips, and a proper hero image.",
+  "rides": [],
+  "tips": []
+}

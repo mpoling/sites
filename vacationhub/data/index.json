@@ -227,6 +227,96 @@
         }
       },
       "tagline": "Five worlds, one hub, opened 2025."
+    },
+    {
+      "slug": "disneyland",
+      "name": "Disneyland Park",
+      "brand": "disney",
+      "resort": "Disneyland Resort",
+      "location": {
+        "city": "Anaheim",
+        "state": "CA",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/disneyland-tile.jpg"
+      },
+      "hero": {
+        "src": "./assets/images/parks/disneyland-hero.jpg"
+      },
+      "tagline": "The original Disneyland. Walt's park."
+    },
+    {
+      "slug": "california-adventure",
+      "name": "Disney California Adventure",
+      "brand": "disney",
+      "resort": "Disneyland Resort",
+      "location": {
+        "city": "Anaheim",
+        "state": "CA",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/california-adventure-tile.jpg"
+      },
+      "hero": {
+        "src": "./assets/images/parks/california-adventure-hero.jpg"
+      },
+      "tagline": "Pixar Pier, Cars Land, and Radiator Springs Racers."
+    },
+    {
+      "slug": "universal-studios-hollywood",
+      "name": "Universal Studios Hollywood",
+      "brand": "universal",
+      "resort": "Universal Studios Hollywood",
+      "location": {
+        "city": "Universal City",
+        "state": "CA",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/universal-studios-hollywood-tile.jpg"
+      },
+      "hero": {
+        "src": "./assets/images/parks/universal-studios-hollywood-hero.jpg"
+      },
+      "tagline": "The original Universal park, with the working studio tour."
+    },
+    {
+      "slug": "legoland-california",
+      "name": "LEGOLAND California",
+      "brand": "legoland",
+      "resort": "LEGOLAND California Resort",
+      "location": {
+        "city": "Carlsbad",
+        "state": "CA",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/legoland-california-tile.jpg"
+      },
+      "hero": {
+        "src": "./assets/images/parks/legoland-california-hero.jpg"
+      },
+      "tagline": "The first LEGOLAND park outside Europe."
+    },
+    {
+      "slug": "legoland-florida",
+      "name": "LEGOLAND Florida",
+      "brand": "legoland",
+      "resort": "LEGOLAND Florida Resort",
+      "location": {
+        "city": "Winter Haven",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/legoland-florida-tile.jpg"
+      },
+      "hero": {
+        "src": "./assets/images/parks/legoland-florida-hero.jpg"
+      },
+      "tagline": "Built on the bones of the legendary Cypress Gardens."
     }
   ],
   "collections": [
