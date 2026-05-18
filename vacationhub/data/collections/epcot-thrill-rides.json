@@ -1,0 +1,13 @@
+{
+  "slug": "epcot-thrill-rides",
+  "name": "Epcot Thrill Rides",
+  "scope": { "park": "epcot" },
+  "intro": "Epcot spent its first three decades as the Disney park you visited for the food and the ambiance — thrills were optional. That changed fast. Between Guardians, Test Track 3.0, and Mission: SPACE's Orange Mission, it now has a legitimate lineup for guests who want their pulse to move. These are the rides that give Epcot its edge.",
+  "rides": [
+    { "ride": "guardians-of-the-galaxy-cosmic-rewind", "blurb": "The anchor of the collection and the ride that changed the conversation about Epcot — a fully enclosed reverse-launch coaster with a killer playlist is not something anyone expected to find here." },
+    { "ride": "test-track", "blurb": "The park's speed benchmark — 65 mph around the outside of the pavilion, now dressed in retro-futurist GM styling for version 3.0." },
+    { "ride": "mission-space", "blurb": "Orange Mission produces real G-forces via centrifuge — the closest thing to legitimate astronaut training at any Disney park, and it belongs here on physical merits alone." },
+    { "ride": "soarin-across-america", "blurb": "Not a thrill ride by any traditional definition, but being lifted 40 feet over an 80-foot IMAX dome earns it a spot — the Grand Canyon stomach-drop is real." },
+    { "ride": "frozen-ever-after", "blurb": "The lightest entry here, but it moves faster and with more purpose than you'd expect from a Frozen boat ride. Worth revisiting after the 2026 animatronic upgrade." }
+  ]
+}

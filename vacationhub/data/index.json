@@ -1,11 +1,35 @@
 {
   "brands": [
-    { "slug": "disney",     "name": "Disney",     "logo": "./assets/images/brands/disney.svg" },
-    { "slug": "universal",  "name": "Universal",  "logo": "./assets/images/brands/universal.svg" },
-    { "slug": "legoland",   "name": "LEGOLAND",   "logo": "./assets/images/brands/legoland.svg" },
-    { "slug": "cedar-fair", "name": "Cedar Fair", "logo": "./assets/images/brands/cedar-fair.svg" },
-    { "slug": "six-flags",  "name": "Six Flags",  "logo": "./assets/images/brands/six-flags.svg" },
-    { "slug": "dollywood",  "name": "Dollywood",  "logo": "./assets/images/brands/dollywood.svg" }
+    {
+      "slug": "disney",
+      "name": "Disney",
+      "logo": "./assets/images/brands/disney.svg"
+    },
+    {
+      "slug": "universal",
+      "name": "Universal",
+      "logo": "./assets/images/brands/universal.svg"
+    },
+    {
+      "slug": "legoland",
+      "name": "LEGOLAND",
+      "logo": "./assets/images/brands/legoland.svg"
+    },
+    {
+      "slug": "cedar-fair",
+      "name": "Cedar Fair",
+      "logo": "./assets/images/brands/cedar-fair.svg"
+    },
+    {
+      "slug": "six-flags",
+      "name": "Six Flags",
+      "logo": "./assets/images/brands/six-flags.svg"
+    },
+    {
+      "slug": "dollywood",
+      "name": "Dollywood",
+      "logo": "./assets/images/brands/dollywood.svg"
+    }
   ],
   "parks": [
     {
@@ -13,7 +37,11 @@
       "name": "Magic Kingdom",
       "brand": "disney",
       "resort": "Walt Disney World",
-      "location": { "city": "Orlando", "state": "FL", "country": "US" },
+      "location": {
+        "city": "Orlando",
+        "state": "FL",
+        "country": "US"
+      },
       "tile": {
         "src": "./assets/images/parks/magic-kingdom-tile.jpg",
         "credit": {
@@ -31,13 +59,43 @@
         }
       },
       "tagline": "The original Disney park east of California."
+    },
+    {
+      "slug": "epcot",
+      "name": "Epcot",
+      "brand": "disney",
+      "resort": "Walt Disney World",
+      "location": {
+        "city": "Lake Buena Vista",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/epcot-tile.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Spaceship_Earth,_EPCOT.jpg"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/epcot-hero.jpg",
+        "credit": {
+          "author": "Anthony Quintano",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Walt_Disney_World_Epcot_Spaceship_Earth_(50098996838).jpg"
+        }
+      },
+      "tagline": "Part world's fair, part pub crawl, all Epcot."
     }
   ],
   "collections": [
     {
       "slug": "magic-kingdom-coasters",
       "name": "Magic Kingdom Coasters",
-      "scope": { "park": "magic-kingdom" },
+      "scope": {
+        "park": "magic-kingdom"
+      },
       "tile": {
         "src": "./assets/images/collections/magic-kingdom-coasters.jpg",
         "credit": {
@@ -46,14 +104,47 @@
           "source": "https://commons.wikimedia.org/wiki/File:Big_Thunder_Mountain_Railroad_(42404714385).jpg"
         }
       }
+    },
+    {
+      "slug": "epcot-thrill-rides",
+      "name": "Epcot Thrill Rides",
+      "scope": {
+        "park": "epcot"
+      },
+      "tile": {
+        "src": "./assets/images/collections/epcot-thrill-rides.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg"
+        }
+      }
     }
   ],
   "home": {
     "featured": "magic-kingdom",
     "rails": [
-      { "title": "Featured",         "type": "park",       "items": ["magic-kingdom"] },
-      { "title": "New Openings",     "type": "park",       "items": ["magic-kingdom"] },
-      { "title": "Ride Collections", "type": "collection", "items": ["magic-kingdom-coasters"] }
+      {
+        "title": "Featured",
+        "type": "park",
+        "items": [
+          "magic-kingdom"
+        ]
+      },
+      {
+        "title": "New Openings",
+        "type": "park",
+        "items": [
+          "magic-kingdom"
+        ]
+      },
+      {
+        "title": "Ride Collections",
+        "type": "collection",
+        "items": [
+          "magic-kingdom-coasters"
+        ]
+      }
     ]
   }
 }

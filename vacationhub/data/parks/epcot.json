@@ -1,0 +1,290 @@
+{
+  "slug": "epcot",
+  "name": "Epcot",
+  "brand": "disney",
+  "resort": "Walt Disney World",
+  "location": { "city": "Lake Buena Vista", "state": "FL", "country": "US", "lat": 28.3744, "lng": -81.5494 },
+  "opened": 1982,
+  "size_acres": 305,
+  "official_url": "https://disneyworld.disney.go.com/destinations/epcot/",
+  "hero": {
+    "src": "./assets/images/parks/epcot-hero.jpg",
+    "credit": {
+      "author": "Anthony Quintano",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Walt_Disney_World_Epcot_Spaceship_Earth_(50098996838).jpg"
+    }
+  },
+  "summary": "Originally conceived as Walt Disney's literal utopian city of tomorrow and pivoted after his death into something stranger and more interesting — a permanent world's fair crossed with a science museum that somehow works. The only Disney park where adults without kids can spend an entire day eating, drinking across eleven countries, and occasionally riding things, and leave feeling like they got their money's worth.",
+  "rides": [
+    {
+      "slug": "guardians-of-the-galaxy-cosmic-rewind",
+      "name": "Guardians of the Galaxy: Cosmic Rewind",
+      "land": "World Discovery",
+      "type": "roller-coaster",
+      "subtype": "reverse-launch indoor",
+      "manufacturer": "Vekoma",
+      "opened": 2022,
+      "duration_sec": 200,
+      "length_ft": 5577,
+      "top_speed_mph": 60,
+      "height_min_in": 42,
+      "single_rider": false,
+      "priority_access": "premier",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 4,
+      "blurb": "Disney's first reverse-launch coaster and genuinely one of the best on property — buy the Single Pass without agonizing over it.",
+      "collections": ["epcot-thrill-rides"],
+      "photo": {
+        "src": "./assets/images/rides/epcot/guardians-of-the-galaxy-cosmic-rewind.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg"
+        }
+      }
+    },
+    {
+      "slug": "test-track",
+      "name": "Test Track",
+      "land": "World Discovery",
+      "type": "flat",
+      "subtype": "high-speed slot car",
+      "manufacturer": "Dynamic Attractions",
+      "opened": 1999,
+      "duration_sec": 300,
+      "top_speed_mph": 65,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 3,
+      "blurb": "Version 3.0 reopened July 2025 with a GM-sponsored retro-futurism theme — the 65 mph outdoor finale still delivers, even if the pre-show nostalgia isn't for everyone.",
+      "collections": ["epcot-thrill-rides"],
+      "photo": {
+        "src": "./assets/images/rides/epcot/test-track.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Test_Track,_EPCOT_(2024).jpg"
+        }
+      }
+    },
+    {
+      "slug": "mission-space",
+      "name": "Mission: SPACE",
+      "land": "World Discovery",
+      "type": "flat",
+      "subtype": "centrifuge simulator",
+      "manufacturer": "Environmental Tectonics Corporation",
+      "opened": 2003,
+      "duration_sec": 240,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 4,
+      "blurb": "Orange Mission hits 2.5Gs and earns its warning labels — do Green if you're unsure (40\" minimum), but don't skip the whole thing.",
+      "collections": ["epcot-thrill-rides"],
+      "photo": {
+        "src": "./assets/images/rides/epcot/mission-space.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Mission_Space_Epcot.jpg"
+        }
+      }
+    },
+    {
+      "slug": "spaceship-earth",
+      "name": "Spaceship Earth",
+      "land": "World Celebration",
+      "type": "dark-ride",
+      "subtype": "omnimover",
+      "manufacturer": "WED Enterprises",
+      "opened": 1982,
+      "duration_sec": 960,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "intensity": 1,
+      "blurb": "The park's literal icon — 16 minutes through human communication history inside a geodesic sphere. Better than it sounds, especially if you remember to look backward on the descent."
+    },
+    {
+      "slug": "journey-into-imagination-with-figment",
+      "name": "Journey Into Imagination With Figment",
+      "land": "World Celebration",
+      "type": "dark-ride",
+      "subtype": "clustered omnimover",
+      "opened": 1999,
+      "duration_sec": 360,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "intensity": 1,
+      "blurb": "Beloved by a generation of Epcot lifers and aggressively mediocre by any objective measure — ride it anyway, Figment is the mascot and the theme song will haunt you."
+    },
+    {
+      "slug": "soarin-across-america",
+      "name": "Soarin' Across America",
+      "land": "World Nature",
+      "type": "flat",
+      "subtype": "flying theater",
+      "opened": 2026,
+      "duration_sec": 330,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 2,
+      "blurb": "Brand-new May 2026 — American landmarks on a massive IMAX dome with scents and wind effects. Less dramatic motion than the previous film but the Grand Canyon to New England scenery is stunning.",
+      "collections": ["epcot-thrill-rides"]
+    },
+    {
+      "slug": "living-with-the-land",
+      "name": "Living with the Land",
+      "land": "World Nature",
+      "type": "boat",
+      "subtype": "slow tour",
+      "opened": 1982,
+      "duration_sec": 840,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "intensity": 1,
+      "blurb": "A 14-minute float through actual working greenhouses where Disney grows food for park restaurants. The real-ness makes it more interesting than it looks on paper.",
+      "photo": {
+        "src": "./assets/images/rides/epcot/living-with-the-land.jpg",
+        "credit": {
+          "author": "Michael Rivera",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Living_with_the_Land_entrance.jpg"
+        }
+      }
+    },
+    {
+      "slug": "the-seas-with-nemo-and-friends",
+      "name": "The Seas with Nemo & Friends",
+      "land": "World Nature",
+      "type": "dark-ride",
+      "subtype": "clamshell omnimover",
+      "opened": 2007,
+      "duration_sec": 360,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 1,
+      "blurb": "Short and mostly an excuse to get you into the giant SeaBase aquarium on the other side — the manatees and sharks are worth the walk-through."
+    },
+    {
+      "slug": "remys-ratatouille-adventure",
+      "name": "Remy's Ratatouille Adventure",
+      "land": "World Showcase",
+      "type": "dark-ride",
+      "subtype": "trackless 4D",
+      "manufacturer": "ETF Ride Systems",
+      "opened": 2021,
+      "single_rider": true,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 2,
+      "blurb": "Epcot's best family dark ride — the trackless ratmobile goes wild through Gusteau's kitchen and the France pavilion theming bleeds in seamlessly.",
+      "photo": {
+        "src": "./assets/images/rides/epcot/remys-ratatouille-adventure.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Remy%27s_Ratatouille_Adventure_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "frozen-ever-after",
+      "name": "Frozen Ever After",
+      "land": "World Showcase",
+      "type": "boat",
+      "subtype": "dark ride boat",
+      "manufacturer": "Intamin",
+      "opened": 2016,
+      "duration_sec": 300,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "intensity": 2,
+      "blurb": "Reopened February 2026 with upgraded animatronics. The Norway pavilion theming is half the experience — don't rush in and out; grab a Kringla skolebolle first.",
+      "photo": {
+        "src": "./assets/images/rides/epcot/frozen-ever-after.jpg",
+        "credit": {
+          "author": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Frozen_Ever_After_(27235272373).jpg"
+        }
+      }
+    },
+    {
+      "slug": "gran-fiesta-tour-starring-the-three-caballeros",
+      "name": "Gran Fiesta Tour Starring the Three Caballeros",
+      "land": "World Showcase",
+      "type": "boat",
+      "subtype": "slow dark ride",
+      "opened": 2007,
+      "duration_sec": 480,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "intensity": 1,
+      "blurb": "No Lightning Lane, almost no wait, air-conditioned, inside the Mexico pavilion pyramid — the right move on a hot afternoon when you just need to sit down."
+    },
+    {
+      "slug": "journey-of-water-inspired-by-moana",
+      "name": "Journey of Water, Inspired by Moana",
+      "land": "World Nature",
+      "type": "other",
+      "subtype": "interactive walk-through",
+      "opened": 2023,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "intensity": 1,
+      "blurb": "Self-paced outdoor trail with interactive water features. Kids will love getting wet; adults will appreciate the shade and lack of queue. Genuinely beautiful at golden hour."
+    },
+    {
+      "slug": "the-american-adventure",
+      "name": "The American Adventure",
+      "land": "World Showcase",
+      "type": "show",
+      "subtype": "Audio-Animatronic stage show",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 1982,
+      "duration_sec": 1800,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "intensity": 1,
+      "blurb": "A 30-minute Audio-Animatronic history of the US in a 1,024-seat theater, narrated by Ben Franklin and Mark Twain. A great place to rest your feet midday, and actually good."
+    }
+  ],
+  "tips": [
+    {
+      "slug": "food-and-wine-festival-timing",
+      "title": "When to Hit the Food & Wine Festival",
+      "summary": "The festival runs almost three months — but not all those days are created equal.",
+      "updated": "2026-05-17",
+      "body": "## When the festival runs in 2026\n\nAugust 27 – November 21. Eighty-seven days. You don't need to scramble for specific dates — most weekdays will be fine.\n\n## The weekday/weekend split is huge\n\nSaturday and Sunday crowds are noticeably worse than midweek because locals drive up for the festival on weekends. If you have any flexibility, plan your Epcot day for a Tuesday through Thursday.\n\n## When in the run to go\n\n- **Early September** — lightest crowds, but it's still humid Florida-in-summer and you're in hurricane season.\n- **Late October** — the sweet spot. Weather has broken, full booth lineup is still up, crowds manageable.\n- **November** — the festival is winding down; some booths cycle out late.\n\n## Plan around what matters to you\n\nIf you care about **Eat to the Beat concerts**: headline acts perform weekends (30-minute sets), local artists midweek. Lineup is published ahead — check before booking.\n\nIf you care about **scavenger hunts** (Emile's Fromage Montage, Remy's Hide & Squeak): they reward multiple visits to the same booths. Space them across the day rather than trying to complete them in one pass.\n\n## Practical notes\n\n- Booths open around 11am with World Showcase. Don't blow your appetite at park breakfast.\n- Budget $50–80 per person if you want to graze seriously. Most dishes run $4–8.50. Sharing with a partner cuts that roughly in half.\n- The festival is included in park admission — no separate ticket. Don't let anyone tell you otherwise."
+    },
+    {
+      "slug": "lightning-lane-priority",
+      "title": "Lightning Lane priority: Guardians vs. Test Track",
+      "summary": "Epcot's two main thrill rides live on different Lightning Lane systems — knowing which to buy before you walk in saves money and frustration.",
+      "updated": "2026-05-17",
+      "body": "## The two systems\n\n**Guardians of the Galaxy: Cosmic Rewind** is Lightning Lane Single Pass only — *not* included in Multi Pass. About $19–22 per person, purchased separately. As of 2026, it's the only Single Pass attraction at Epcot.\n\n**Test Track** is Lightning Lane Multi Pass, Tier 1 — if you buy Multi Pass, you can only pick Test Track OR Remy's OR Frozen Ever After as your first reservation. Not multiple Tier 1 rides simultaneously.\n\n## What to buy\n\nFor most people: **buy the Single Pass for Guardians every time.** It's the hardest to walk on as standby (60+ minute average) and there's no single rider line.\n\nFor Multi Pass: pick between Test Track, Remy's, and Frozen Ever After as your first Tier 1.\n\n- **Remy's** books up fastest via Multi Pass. If you're traveling with someone who cares about it, this is your pick.\n- **Test Track** is the better value if you're a thrill-seeker — long, consistent standby waits.\n- **Frozen Ever After** moves quickly first thing in the morning. Rope drop it if you didn't book it.\n\n## The stack\n\n1. Buy the Guardians Single Pass at 7am the morning of your visit (or at park open if you're not pre-booking).\n2. Use Multi Pass for Remy's or Test Track.\n3. Rope drop Frozen Ever After.\n\n## Premier Pass — when it's worth it\n\nThe Lightning Lane Premier Pass (all rides, skip all lines, no tier system) makes sense for Epcot if you have three or more people and a single day. The math often works out versus buying individual passes.\n\n## If you're not buying anything\n\nRope drop Guardians via virtual queue or early boarding lottery (verify the day-of system since this changes). Then Remy's. Then everything else."
+    },
+    {
+      "slug": "around-the-world-strategy",
+      "title": "Around the World Showcase: the right pace",
+      "summary": "The eleven-country World Showcase circuit is the entire reason adults love Epcot — here's how to actually finish it without burning out.",
+      "updated": "2026-05-17",
+      "body": "## The basics\n\nWorld Showcase opens at 11am (sometimes earlier with Early Park Entry). That's when you start. The full circuit is eleven countries.\n\n## Order\n\nClockwise — Mexico → Norway → China → Germany → Italy → USA → Japan → Morocco → France → UK → Canada — is the natural path. No optimal order, but starting in Mexico is consensus: the food and drinks are excellent and you're fresh.\n\n## Do thrill rides FIRST\n\nGuardians, Test Track, Mission: SPACE — none of these are improved by sitting in a slow boat through Mexico afterward. Get them done at rope drop in the Future World areas before you cross into World Showcase.\n\n## Share. Seriously.\n\nIf you're tasting drinks or food at every stop, share with a partner whenever possible. Eleven full portions is too many for almost anyone. Sharing cuts intake roughly in half while still letting you experience every country.\n\n## Eat real food, not just snacks\n\nAt least three or four actual food items across the circuit. Kringla Bakeri (Norway) and Yakitori House (Japan) are reliable. The Regal Eagle Smokehouse (USA pavilion) has self-serve water — fill up there. It's the midpoint, which is exactly when you need it.\n\n## Morocco is underrated\n\nBoth the food (try the hummus platter) and the pavilion architecture are better than the crowds suggest. Don't rush through.\n\n## Pacing\n\nBudget 5–6 hours minimum. Doing it in under four means you're not stopping to enjoy anything."
+    }
+  ]
+}
