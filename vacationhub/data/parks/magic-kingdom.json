@@ -13,6 +13,7 @@
   "opened": 1971,
   "size_acres": 142,
   "official_url": "https://disneyworld.disney.go.com/destinations/magic-kingdom/",
+  "summary": "The flagship park of the Walt Disney World Resort in Florida and the most-visited theme park in the world. Six themed lands radiate from Cinderella Castle.",
   "hero": {
     "src": "./assets/images/parks/magic-kingdom-hero.jpg",
     "credit": {
@@ -21,7 +22,6 @@
       "source": "https://commons.wikimedia.org/wiki/File:Cinderella_Castle_January_2021.jpg"
     }
   },
-  "summary": "The flagship park of the Walt Disney World Resort and the most-visited theme park in the world. Six themed lands radiate from Cinderella Castle.",
   "rides": [
     {
       "slug": "space-mountain",
@@ -261,21 +261,21 @@
       "title": "Rope-drop strategy",
       "summary": "Hit Space Mountain before 9:30am to skip the worst lines.",
       "updated": "2026-04-12",
-      "body": "## Why rope drop matters\n\nThe first 60–90 minutes of operation at Magic Kingdom are\n*massively* under-utilized. Most guests roll in around 10am,\nwhich means the first ~90 minutes can clear several headliners\nthat otherwise have 60+ minute waits.\n\n## The route\n\n1. Be at the tap stiles 30 minutes before posted opening.\n2. Head straight to **Space Mountain** — the queue forms long\n   before the ride opens but moves fast on early entry.\n3. From Space Mountain, cross to **TRON Lightcycle / Run** if\n   you have a virtual queue boarding pass.\n4. End the rope-drop sprint at **Seven Dwarfs Mine Train**,\n   which posts its longest wait of the day starting at 10am.\n\nBy 9:30am you can have three of the park's longest-wait rides\ndone before most guests have entered.\n"
+      "body": "## Why rope drop matters\n\nThe first 60–90 minutes of operation at Magic Kingdom are\n*massively* under-utilized. Most guests roll in around 10am,\nwhich means the first ~90 minutes can clear several headliners\nthat otherwise have 60+ minute waits.\n\n## The route\n\n1. Be at the tap stiles 30 minutes before posted opening.\n2. Head straight to **Space Mountain** — the queue forms long\n   before the ride opens but moves fast on early entry.\n3. From Space Mountain, cross to **TRON Lightcycle / Run** if\n   you have a virtual queue boarding pass.\n4. End the rope-drop sprint at **Seven Dwarfs Mine Train**,\n   which posts its longest wait of the day starting at 10am.\n\nBy 9:30am you can have three of the park's longest-wait rides\ndone before most guests have entered."
     },
     {
       "slug": "lightning-lane",
       "title": "Lightning Lane priority order",
       "summary": "What to book at 7am and in what order.",
       "updated": "2026-04-12",
-      "body": "## Lightning Lane priority order\n\nDisney's paid Lightning Lane system lets you skip the standby\nline for select rides. At Magic Kingdom, the best use of your\nallotments — in priority order:\n\n1. **Seven Dwarfs Mine Train** — almost always the longest\n   standby in the park.\n2. **TRON Lightcycle / Run** — requires the Premier (single\n   ride) tier; only worth it if you don't snag a virtual queue.\n3. **Peter Pan's Flight** — short ride, perpetually long line.\n4. **Space Mountain** — only if you couldn't rope-drop it.\n\nAvoid burning a slot on Big Thunder Mountain or Pirates —\nthose rarely exceed 30 minutes outside peak season.\n"
+      "body": "## Lightning Lane priority order\n\nDisney's paid Lightning Lane system lets you skip the standby\nline for select rides. At Magic Kingdom, the best use of your\nallotments — in priority order:\n\n1. **Seven Dwarfs Mine Train** — almost always the longest\n   standby in the park.\n2. **TRON Lightcycle / Run** — requires the Premier (single\n   ride) tier; only worth it if you don't snag a virtual queue.\n3. **Peter Pan's Flight** — short ride, perpetually long line.\n4. **Space Mountain** — only if you couldn't rope-drop it.\n\nAvoid burning a slot on Big Thunder Mountain or Pirates —\nthose rarely exceed 30 minutes outside peak season."
     },
     {
       "slug": "best-time-to-visit",
       "title": "Best time of year to visit",
       "summary": "Mid-January and late August have the shortest waits.",
       "updated": "2026-04-12",
-      "body": "## Best weeks to visit Magic Kingdom\n\nThe two genuinely-low-crowd windows each year:\n\n- **Mid-January** (the week after Martin Luther King Jr. Day,\n  through the end of the month). School is back in session\n  everywhere; weather is mild; refurbishments are common but\n  manageable.\n- **Late August** (the two weeks before Labor Day). Florida is\n  miserably hot but lines are at yearly lows.\n\nAvoid: Thanksgiving week, the entire month of December after\nthe 18th, Easter week, and the second half of June through\nmid-July.\n"
+      "body": "## Best weeks to visit Magic Kingdom\n\nThe two genuinely-low-crowd windows each year:\n\n- **Mid-January** (the week after Martin Luther King Jr. Day,\n  through the end of the month). School is back in session\n  everywhere; weather is mild; refurbishments are common but\n  manageable.\n- **Late August** (the two weeks before Labor Day). Florida is\n  miserably hot but lines are at yearly lows.\n\nAvoid: Thanksgiving week, the entire month of December after\nthe 18th, Easter week, and the second half of June through\nmid-July."
     }
   ]
 }
