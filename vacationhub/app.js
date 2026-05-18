@@ -108,15 +108,27 @@
   };
 
   // ---- Image helpers ----
-  // An image field may be either a string path or { src, credit: { author, license, source } }.
+  // An image field may be either:
+  //   - a string path, OR
+  //   - { src, credit: <object|string> } where credit is either:
+  //       - structured: { author, license, source }
+  //       - HTML string: e.g. 'Photo by <a href="...">Name</a> on <a href="...">Unsplash</a>'
+  //         (the format Sveltia's stock-photo integrations produce)
   VH.imgSrc = (img) => (img == null ? '' : typeof img === 'string' ? img : img.src || '');
   VH.imgCredit = (img) => (img && typeof img === 'object' ? img.credit : null) || null;
 
   VH.creditEl = (img, opts) => {
     const c = VH.imgCredit(img);
     if (!c) return null;
-    const text = `© ${c.author}${c.license ? ' · ' + c.license : ''}`;
     const cls = 'img-credit' + (opts && opts.subtle ? ' img-credit-subtle' : '');
+
+    // Stock-photo HTML credit string (from Sveltia Unsplash/Pexels integration)
+    if (typeof c === 'string') {
+      return VH.el('span', { class: cls, html: c });
+    }
+
+    // Structured credit object (manual entry / Wikimedia)
+    const text = `© ${c.author}${c.license ? ' · ' + c.license : ''}`;
     if (c.source) {
       return VH.el('a', { class: cls, href: c.source, target: '_blank', rel: 'noopener noreferrer' }, [text]);
     }
