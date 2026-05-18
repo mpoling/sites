@@ -1,0 +1,26 @@
+{
+  "slug": "animal-kingdom-thrill-rides",
+  "name": "Animal Kingdom Thrill Rides",
+  "scope": {
+    "park": "animal-kingdom"
+  },
+  "intro": "Animal Kingdom is deceptively thrilling for a park that bills itself on nature. It has one of the best roller coasters on property, the most technically ambitious simulator Disney has ever built, and a river rapids that takes no prisoners. These four are the ones to plan your day around.",
+  "rides": [
+    {
+      "ride": "avatar-flight-of-passage",
+      "blurb": "The undisputed centerpiece of the park and arguably the best theme park attraction in the world. Book Lightning Lane Single Pass before park open or expect 90+ minute waits — worth every minute of either."
+    },
+    {
+      "ride": "expedition-everest",
+      "blurb": "A proper steel coaster at 50 mph with a backward section and genuine vertical drop. Use the single-rider line if your group doesn't mind splitting up; it's consistently the fastest way into the mountain."
+    },
+    {
+      "ride": "kali-river-rapids",
+      "blurb": "Skip this on cold mornings, ride it on hot afternoons — a 20-foot drop in a spinning 12-person raft through a lushly themed conflict that ends with at least one person absolutely soaked."
+    },
+    {
+      "ride": "kilimanjaro-safaris",
+      "blurb": "Not a thrill ride in the traditional sense, but the unpredictability of real animals at close range — a lion walking the road, hippos surfacing at the wrong moment — creates excitement no animatronic can match."
+    }
+  ]
+}

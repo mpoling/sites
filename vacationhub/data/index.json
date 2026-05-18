@@ -115,6 +115,34 @@
         }
       },
       "tagline": "Where the movies pull you in and don't let go."
+    },
+    {
+      "slug": "animal-kingdom",
+      "name": "Disney's Animal Kingdom",
+      "brand": "disney",
+      "resort": "Walt Disney World",
+      "location": {
+        "city": "Bay Lake",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/animal-kingdom-tile.jpg",
+        "credit": {
+          "author": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Asia_themed_land_at_Disney%27s_Animal_Kingdom.jpg"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/animal-kingdom-hero.jpg",
+        "credit": {
+          "author": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Disney%27s_Animal_Kingdom_(22338855540).jpg"
+        }
+      },
+      "tagline": "A real zoo dressed as a theme park, and vice versa."
     }
   ],
   "collections": [
@@ -160,6 +188,21 @@
           "author": "U+1F360",
           "license": "CC BY-SA 4.0",
           "source": "https://commons.wikimedia.org/wiki/File:Slinky_Dog_Dash_Sunset.jpg"
+        }
+      }
+    },
+    {
+      "slug": "animal-kingdom-thrill-rides",
+      "name": "Animal Kingdom Thrill Rides",
+      "scope": {
+        "park": "animal-kingdom"
+      },
+      "tile": {
+        "src": "./assets/images/collections/animal-kingdom-thrill-rides.jpg",
+        "credit": {
+          "author": "Benjamin D. Esham",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Expedition_Everest.jpg"
         }
       }
     }

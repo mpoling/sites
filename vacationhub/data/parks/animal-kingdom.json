@@ -1,0 +1,350 @@
+{
+  "slug": "animal-kingdom",
+  "name": "Disney's Animal Kingdom",
+  "brand": "disney",
+  "resort": "Walt Disney World",
+  "location": {
+    "city": "Bay Lake",
+    "state": "FL",
+    "country": "US",
+    "lat": 28.358,
+    "lng": -81.59
+  },
+  "opened": 1998,
+  "size_acres": 580,
+  "official_url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+  "hero": {
+    "src": "./assets/images/parks/animal-kingdom-hero.jpg",
+    "credit": {
+      "author": "Theme Park Tourist",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Disney%27s_Animal_Kingdom_(22338855540).jpg"
+    }
+  },
+  "summary": "The largest theme park at Walt Disney World by acreage, Animal Kingdom blends a functioning AZA-accredited zoo with some of Disney's most technically ambitious rides — Avatar Flight of Passage and Expedition Everest among them. Despite the mid-2026 construction gap left by DinoLand U.S.A.'s closure, the Africa and Asia halves remain world-class and Pandora is unlike anything else on the planet.",
+  "rides": [
+    {
+      "slug": "avatar-flight-of-passage",
+      "name": "Avatar Flight of Passage",
+      "land": "Pandora — The World of Avatar",
+      "type": "flat",
+      "subtype": "simulator",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2017,
+      "duration_sec": 270,
+      "height_min_in": 44,
+      "single_rider": false,
+      "priority_access": "premier",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "Sit astride a banshee on a motion-base 'bike' seat, 3D glasses on, and suddenly you're soaring over Pandora's floating mountains. Disney's most sophisticated attraction and arguably the best theme park ride in the world.",
+      "collections": [
+        "animal-kingdom-thrill-rides"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/animal-kingdom/avatar-flight-of-passage.jpg",
+        "credit": {
+          "author": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Floating_Mountain_(34537473301).jpg"
+        }
+      }
+    },
+    {
+      "slug": "navi-river-journey",
+      "name": "Na'vi River Journey",
+      "land": "Pandora — The World of Avatar",
+      "type": "boat",
+      "subtype": "dark boat",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2017,
+      "duration_sec": 270,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "A no-thrills, all-atmosphere float through Pandora's bioluminescent rainforest. The Na'vi Shaman animatronic at the end is the most sophisticated figure Disney has ever built, and worth the ride alone.",
+      "photo": {
+        "src": "./assets/images/rides/animal-kingdom/navi-river-journey.jpg",
+        "credit": {
+          "author": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Floating_Mountain_(34537473301).jpg"
+        }
+      }
+    },
+    {
+      "slug": "kilimanjaro-safaris",
+      "name": "Kilimanjaro Safaris",
+      "land": "Africa",
+      "type": "transport",
+      "subtype": "safari",
+      "opened": 1998,
+      "duration_sec": 1320,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Roughly 110 acres of actual African savanna with real elephants, lions, giraffes, hippos, and zebras — no two rides are identical, and it's genuinely the best zoo exhibit in the United States dressed up as a Disney attraction.",
+      "collections": [
+        "animal-kingdom-thrill-rides"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/animal-kingdom/kilimanjaro-safaris.jpg",
+        "credit": {
+          "author": "BrokenSphere",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Giraffe,_Kilimanjaro_Safaris.JPG"
+        }
+      }
+    },
+    {
+      "slug": "expedition-everest",
+      "name": "Expedition Everest — Legend of the Forbidden Mountain",
+      "land": "Asia",
+      "type": "roller-coaster",
+      "subtype": "steel with backward section",
+      "manufacturer": "Vekoma",
+      "opened": 2006,
+      "duration_sec": 180,
+      "length_ft": 4424,
+      "top_speed_mph": 50,
+      "height_min_in": 44,
+      "single_rider": true,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "A proper roller coaster that goes forward, then backward after a 'broken track' encounter. 199.5 ft tall, 50 mph, and the single-rider line is one of WDW's best-kept secrets — typical waits drop to 10–15 minutes.",
+      "collections": [
+        "animal-kingdom-thrill-rides"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/animal-kingdom/expedition-everest.jpg",
+        "credit": {
+          "author": "Benjamin D. Esham",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Expedition_Everest.jpg"
+        }
+      }
+    },
+    {
+      "slug": "kali-river-rapids",
+      "name": "Kali River Rapids",
+      "land": "Asia",
+      "type": "water",
+      "subtype": "river rapids",
+      "manufacturer": "Intamin",
+      "opened": 1999,
+      "duration_sec": 480,
+      "height_min_in": 38,
+      "single_rider": false,
+      "priority_access": "multipass",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "A 12-person spinning raft through a 20-foot drop in a themed logging-conflict storyline. You will get wet; someone in your group will get drenched. On a Florida summer afternoon that's worth every cent.",
+      "collections": [
+        "animal-kingdom-thrill-rides"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/animal-kingdom/kali-river-rapids.jpg",
+        "credit": {
+          "author": "Loadmaster",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Disney-Animal-Kingdom-Kali-River-Ride-8319.jpg"
+        }
+      }
+    },
+    {
+      "slug": "maharajah-jungle-trek",
+      "name": "Maharajah Jungle Trek",
+      "land": "Asia",
+      "type": "other",
+      "subtype": "walking trail",
+      "opened": 1998,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Self-guided trail through habitat ruins housing Sumatran tigers, giant fruit bats, Komodo dragons, and a screened aviary with 50+ bird species. One of the park's most underrated experiences and never has a wait."
+    },
+    {
+      "slug": "gorilla-falls-exploration-trail",
+      "name": "Gorilla Falls Exploration Trail",
+      "land": "Africa",
+      "type": "other",
+      "subtype": "walking trail",
+      "opened": 1998,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "3/8-mile trail with western lowland gorillas, hippos with underwater viewing, naked mole rats, and a free-flight aviary. The kind of exhibit a major city zoo would build a wing around, tucked between Kilimanjaro Safaris and Harambe village."
+    },
+    {
+      "slug": "festival-of-the-lion-king",
+      "name": "Festival of the Lion King",
+      "land": "Africa",
+      "type": "show",
+      "subtype": "live-stage musical",
+      "opened": 1998,
+      "duration_sec": 2700,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "The park's longest-running attraction and a legitimate Broadway-caliber show — tumblers, fire, massive lion-float puppets, Elton John's score, and audience participation. Skip it and you've missed Animal Kingdom's beating heart."
+    },
+    {
+      "slug": "feathered-friends-in-flight",
+      "name": "Feathered Friends in Flight!",
+      "land": "Asia",
+      "type": "show",
+      "subtype": "live bird show",
+      "opened": 2020,
+      "duration_sec": 1500,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Free-flight demonstration with 15+ species — toucans, macaws, Harris hawks, African fish eagles — in the open-air Anandapur Theater. Sit on the shaded side, arrive 20 minutes early; it's the best pure bird show in any theme park."
+    },
+    {
+      "slug": "zootopia-better-zoogether",
+      "name": "Zootopia: Better Zoogether!",
+      "land": "Discovery Island",
+      "type": "show",
+      "subtype": "4D theater",
+      "manufacturer": "Walt Disney Imagineering",
+      "opened": 2025,
+      "duration_sec": 600,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Opened November 2025 in the Tree of Life Theater — Judy Hopps and Nick Wilde in a 4D short with in-seat effects and a new Clawhauser Audio-Animatronic. A crowd-pleasing 10-minute break inside one of the park's most iconic structures.",
+      "photo": {
+        "src": "./assets/images/rides/animal-kingdom/zootopia-better-zoogether.jpg",
+        "credit": {
+          "author": "Eden, Janine and Jim",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Tree_of_Life_(49560198253).jpg"
+        }
+      }
+    },
+    {
+      "slug": "discovery-island-trails",
+      "name": "Discovery Island Trails",
+      "land": "Discovery Island",
+      "type": "other",
+      "subtype": "walking trail",
+      "opened": 1998,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "The free-roaming base of the Tree of Life — tortoises, flamingos, otters, and exotic birds in the root systems of the park's 14-story icon. Most guests walk through without stopping and that's a shame."
+    },
+    {
+      "slug": "the-oasis-exhibits",
+      "name": "The Oasis Exhibits",
+      "land": "Oasis",
+      "type": "other",
+      "subtype": "walking trail / entry experience",
+      "opened": 1998,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "The lushly landscaped entry corridor serving as a decompression chamber from parking chaos. Giant anteaters, a giant tortoise, tree kangaroos, and exotic deer are tucked around every corner if you slow down."
+    },
+    {
+      "slug": "wildlife-express-train",
+      "name": "Wildlife Express Train",
+      "land": "Africa",
+      "type": "transport",
+      "subtype": "steam train",
+      "opened": 1998,
+      "duration_sec": 300,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "The back-of-house train ride that's the only way to reach Conservation Station — now transformed into Bluey's Wild World (opened May 26, 2026), where kids meet Bluey and Bingo alongside Australian animals. Virtual queue required."
+    }
+  ],
+  "tips": [
+    {
+      "slug": "safari-timing-strategy",
+      "title": "Ride Kilimanjaro Safaris Twice: Once at Rope Drop, Once at Dusk",
+      "summary": "Animal activity changes dramatically between morning and late afternoon — the two rides feel like completely different experiences.",
+      "updated": "2026-05-17",
+      "body": "## Morning is peak sighting time\n\nAt rope drop, cast members place food across the savanna habitats just before the first safari vehicles depart. Animals are active, spread out, and feeding visibly. This is the best window of the day for sightings.\n\n## Mid-day is the worst window\n\nAs temperatures climb, animals seek shade and disappear from easy view. Mid-morning through early afternoon tends to be the weakest safari time. Lines also climb fast — typically 40–60 minutes by 9:30 on busy days.\n\n## Golden hour is the second best window\n\nThe 5:00–6:30 PM slot is the second-best window: lower temperatures bring animals back out, and the warm light makes for extraordinary photography. Lines also drop naturally in the evening.\n\n## Rain is counterintuitive but excellent\n\nMany African savanna animals (cheetah especially) become active during precipitation. If it starts drizzling, head straight to the Safari queue.\n\n## Plan to ride both windows\n\nThe morning ride and the evening ride deliver such different experiences that doing both is the right call if you have time. Multi Pass it in the morning, walk-on it in the evening."
+    },
+    {
+      "slug": "pandora-at-night",
+      "title": "Pandora at Night Transforms the Land",
+      "summary": "The bioluminescent effects in Pandora's Valley of Mo'ara are invisible in daylight and stunning after sunset.",
+      "updated": "2026-05-17",
+      "body": "## What you can't see in daylight\n\nThe pathways embed bioluminescent materials that respond to footsteps with rippling light. Plants and rock formations glow in blues and purples invisible in daylight. You'll walk through the same land in the afternoon and not realize what you missed.\n\n## Best timing\n\nAbout 30 minutes after sunset — when there's still faint ambient light in the sky but the glow effects are fully visible. That's when photography is best.\n\n## Check the park hours\n\nAnimal Kingdom has historically closed earlier than the other WDW parks. Look for nights when closing is 9 PM or later to guarantee Pandora darkness. Extended Evening Hours nights are even better.\n\n## Avoid the closing rush\n\nDon't enter Pandora right after \"park closing\" is announced — the land floods as exit-bound guests converge through it. Get into Pandora at least 2 hours before close and stay through the transition.\n\n## What's worth doing\n\nNa'vi River Journey's bioluminescent forest is enhanced at night since the interior is unchanged but the entry/exit feels more cohesive. Avatar Flight of Passage standby drains slowly in the evening; Multi Pass it earlier in the day.\n\n## The floating mountains at night\n\nLit with subtle uplighting after dark. The waterfall down the face of the main peak is visible from across the land."
+    },
+    {
+      "slug": "everest-single-rider-strategy",
+      "title": "Expedition Everest's Single Rider Line Is One of WDW's Best Secrets",
+      "summary": "The posted standby wait and the actual single-rider experience are worlds apart.",
+      "updated": "2026-05-17",
+      "body": "## The line that doesn't follow the rules\n\nExpedition Everest is one of the very few WDW rides with a single-rider line. It typically runs 10–15 minutes regardless of posted standby — even when standby shows 45–60 minutes.\n\n## Works for groups too\n\nGroups of 3 or more can use single rider and often still end up in the same row. Disney fills each row of 2 with one single rider each, so a party of 4 frequently becomes two pairs in the same train.\n\n## The practical implication\n\nSkip booking Everest on Lightning Lane Multi Pass. Use that slot for Na'vi River Journey or Kilimanjaro Safaris instead — neither has a single-rider option, both have long waits.\n\n## When to use it\n\nAny time posted standby exceeds 25–30 minutes. That's typically 9:30 AM through 5 PM on moderate-to-busy days. If posted is under 20 minutes (early morning, late evening), just ride standby with your group.\n\n## Find the entrance\n\nThe single rider queue entrance is easy to miss — look for the 'Single Rider' sign just past the main standby signs at the coaster entrance.\n\n## About the Yeti\n\nThe Yeti animatronic is permanently in strobe-light 'B-mode' (not moving) due to a structural issue. Disney has no announced repair timeline. Still a great ride; temper expectations for that specific moment."
+    }
+  ]
+}
