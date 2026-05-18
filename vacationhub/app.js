@@ -200,6 +200,14 @@
   async function ensureSearchIndex() {
     if (searchIndex) return searchIndex;
     const idx = await VH.fetchJSON('./data/index.json');
+
+    // Lazy-load every park JSON so rides can be searchable too. Failures
+    // for individual parks degrade gracefully — that park's rides just
+    // won't show up in results.
+    const parkJsons = await Promise.all(
+      idx.parks.map((p) => VH.fetchJSON(`./data/parks/${p.slug}.json`).catch(() => null))
+    );
+
     searchIndex = [
       ...idx.parks.map((p) => ({
         kind: 'Park',
@@ -216,6 +224,23 @@
         href: `./collection.html?slug=${c.slug}`,
       })),
     ];
+
+    for (let i = 0; i < idx.parks.length; i++) {
+      const park = idx.parks[i];
+      const pj = parkJsons[i];
+      if (!pj || !Array.isArray(pj.rides)) continue;
+      for (const ride of pj.rides) {
+        if (!ride || !ride.slug || !ride.name) continue;
+        searchIndex.push({
+          kind: 'Ride',
+          title: ride.name,
+          subtitle: [park.name, ride.land].filter(Boolean).join(' · '),
+          haystack: [ride.name, ride.land, ride.subtype, ride.blurb, park.name].filter(Boolean).join(' ').toLowerCase(),
+          href: `./park.html?slug=${park.slug}#ride-${ride.slug}`,
+        });
+      }
+    }
+
     return searchIndex;
   }
 
@@ -224,7 +249,7 @@
     const filtered = q ? items.filter((i) => i.haystack.includes(q)).slice(0, 30) : [];
     root.replaceChildren(
       ...(filtered.length === 0
-        ? [VH.el('div', { class: 'search-empty', text: q ? 'No matches.' : 'Start typing to search parks and collections.' })]
+        ? [VH.el('div', { class: 'search-empty', text: q ? 'No matches.' : 'Start typing to search parks, rides, and collections.' })]
         : filtered.map((r, i) =>
             VH.el('a', { class: 'search-result', href: r.href, 'data-idx': String(i) }, [
               VH.el('div', { class: 'search-result-kind', text: r.kind }),
