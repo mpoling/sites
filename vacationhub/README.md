@@ -45,6 +45,55 @@ All paths in HTML/JS are **relative** — the Cloudflare worker
 rewrites `vacationhub.<owner-tld>` to `/sites/vacationhub/`
 under the hood, so absolute paths break.
 
+## Editing content with the CMS
+
+VacationHub uses [Sveltia CMS](https://github.com/sveltia/sveltia-cms) for
+content authoring. You don't need to touch JSON files or use a terminal.
+
+### One-time setup
+
+1. Sign in to GitHub with the account that's a collaborator on
+   `mpoling/sites`.
+2. Go to https://github.com/settings/personal-access-tokens/new
+3. Create a fine-grained token:
+   - **Resource owner**: your GitHub account
+   - **Repository access**: Only select repositories → `mpoling/sites`
+   - **Permissions** → Repository permissions:
+     - **Contents**: Read and write
+     - **Metadata**: Read-only (auto-selected)
+   - **Expiration**: 1 year (renew when it expires)
+4. Click Generate token. **Copy the token now** — GitHub only shows it
+   once.
+5. Treat the token like a password. Don't paste it into chat, email,
+   or any file.
+
+### Logging in
+
+1. Open https://vacationhub.<owner-tld>/admin/
+2. Choose "Log in with Personal Access Token"
+3. Paste the token. Sveltia stores it in your browser only.
+
+### Editing a park
+
+1. Click **Parks** in the sidebar.
+2. Pick a park to edit, or click **New Park**.
+3. Fill out the fields. Image uploads land in the right repo path
+   automatically.
+4. Click **Save**. The change commits to `main` and goes live on the
+   site in about a minute.
+
+### Editing a collection
+
+1. Click **Ride collections** in the sidebar.
+2. Same flow: edit existing or create new, save when done.
+
+### When something looks wrong
+
+- The site cached an old version → hard refresh (Cmd/Ctrl+Shift+R).
+- The save failed silently → refresh the editor and try again.
+- You added a field that doesn't show up on the site → ping the
+  developer; the renderer might need an update.
+
 ## Status
 
 V1 engine complete with Magic Kingdom as the seed park. The
