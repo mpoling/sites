@@ -171,6 +171,34 @@
         }
       },
       "tagline": "Ride the movies. Step inside the story."
+    },
+    {
+      "slug": "islands-of-adventure",
+      "name": "Universal's Islands of Adventure",
+      "brand": "universal",
+      "resort": "Universal Orlando Resort",
+      "location": {
+        "city": "Orlando",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/islands-of-adventure-tile.jpg",
+        "credit": {
+          "author": "GunnerVV",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hogwarts_Castle_Night_(5586868829).jpg"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/islands-of-adventure-hero.jpg",
+        "credit": {
+          "author": "HarshLight",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hogwarts_Castle_(43334648101).jpg"
+        }
+      },
+      "tagline": "Where every thrill tells a story."
     }
   ],
   "collections": [
@@ -246,6 +274,21 @@
           "author": "HarshLight",
           "license": "CC BY 2.0",
           "source": "https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(43334673921).jpg"
+        }
+      }
+    },
+    {
+      "slug": "ioa-big-coasters",
+      "name": "IoA's Big Coasters",
+      "scope": {
+        "park": "islands-of-adventure"
+      },
+      "tile": {
+        "src": "./assets/images/collections/ioa-big-coasters.jpg",
+        "credit": {
+          "author": "Skorp",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:IncredibleHulkCoaster.jpg"
         }
       }
     }

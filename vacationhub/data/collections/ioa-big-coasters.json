@@ -1,0 +1,26 @@
+{
+  "slug": "ioa-big-coasters",
+  "name": "IoA's Big Coasters",
+  "scope": {
+    "park": "islands-of-adventure"
+  },
+  "intro": "No theme park in Florida has a coaster lineup that punches as consistently hard as Islands of Adventure. These four represent genuinely different coaster experiences — a launched multi-inversion B&M powerhouse, a 70 mph marquee launch coaster, a magical-creatures adventure that defies easy categorization, and a family coaster that earns its lift-hill view.",
+  "rides": [
+    {
+      "ride": "incredible-hulk-coaster",
+      "blurb": "The park's founding coaster and still its most reliably satisfying — the launch into a zero-G roll is one of the great coaster openings in Florida. Front row in morning light is the move."
+    },
+    {
+      "ride": "velocicoaster",
+      "blurb": "IoA's current headline act — two launches, 70 mph, four inversions, and a lagoon-skimming barrel roll that's become the park's defining postcard moment."
+    },
+    {
+      "ride": "hagrids-magical-creatures-motorbike-adventure",
+      "blurb": "Technically a launched coaster, but that label barely captures what Hagrid's is — seven launches, live creatures, a backwards spike, and enough theming to justify the wait."
+    },
+    {
+      "ride": "flight-of-the-hippogriff",
+      "blurb": "Short — 66 seconds, 29 mph — but the lift-hill view of Hogwarts Castle is legitimately beautiful and the line moves faster than anything else in Hogsmeade."
+    }
+  ]
+}

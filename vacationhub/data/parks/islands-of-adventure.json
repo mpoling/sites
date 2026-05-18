@@ -1,0 +1,493 @@
+{
+  "slug": "islands-of-adventure",
+  "name": "Universal's Islands of Adventure",
+  "brand": "universal",
+  "resort": "Universal Orlando Resort",
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US",
+    "lat": 28.4711,
+    "lng": -81.4716
+  },
+  "opened": 1999,
+  "size_acres": 110,
+  "official_url": "https://www.universalorlando.com/web/en/us/theme-parks/islands-of-adventure",
+  "hero": {
+    "src": "./assets/images/parks/islands-of-adventure-hero.jpg",
+    "credit": {
+      "author": "HarshLight",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hogwarts_Castle_(43334648101).jpg"
+    }
+  },
+  "summary": "Universal Orlando's heavy-hitter park — a dense, richly themed circuit of lands where the coasters are genuinely world-class and the IP immersion runs deep enough that adults lose the plot. It's the park that put Hogwarts on a roller coaster, gave the Hulk a launched B&M, and then had the audacity to top both of them with Hagrid's in 2019.",
+  "rides": [
+    {
+      "slug": "incredible-hulk-coaster",
+      "name": "The Incredible Hulk Coaster",
+      "land": "Marvel Super Hero Island",
+      "type": "roller-coaster",
+      "subtype": "launched sit-down",
+      "manufacturer": "Bolliger & Mabillard",
+      "opened": 1999,
+      "duration_sec": 135,
+      "length_ft": 3670,
+      "top_speed_mph": 67,
+      "height_min_in": 54,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 5,
+      "blurb": "The original headliner still earns it — a 0-to-40 mph launch into a zero-G roll sets the tone, and seven inversions later you'll understand why B&M built their reputation on this one.",
+      "collections": [
+        "ioa-big-coasters"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/incredible-hulk-coaster.jpg",
+        "credit": {
+          "author": "Skorp",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:IncredibleHulkCoaster.jpg"
+        }
+      }
+    },
+    {
+      "slug": "velocicoaster",
+      "name": "Jurassic World VelociCoaster",
+      "land": "Jurassic World",
+      "type": "roller-coaster",
+      "subtype": "launched multi-inversion",
+      "manufacturer": "Intamin",
+      "opened": 2021,
+      "duration_sec": 80,
+      "length_ft": 4700,
+      "top_speed_mph": 70,
+      "height_min_in": 51,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 5,
+      "blurb": "Two launches — 0 to 50 mph in 2 seconds, then 40 to 70 in 2.4 — four inversions including the 155-foot top hat, and a lagoon-skimming barrel roll that's become one of Florida's most-photographed coaster moments.",
+      "collections": [
+        "ioa-big-coasters"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/velocicoaster.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:VelociCoaster_9.jpg"
+        }
+      }
+    },
+    {
+      "slug": "hagrids-magical-creatures-motorbike-adventure",
+      "name": "Hagrid's Magical Creatures Motorbike Adventure",
+      "land": "The Wizarding World of Harry Potter — Hogsmeade",
+      "type": "roller-coaster",
+      "subtype": "launched motorbike",
+      "manufacturer": "Intamin",
+      "opened": 2019,
+      "top_speed_mph": 50,
+      "height_min_in": 48,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "Seven launches, a backwards spike, a vertical drop track section, four tunnels, and live magical creatures — the most technically ambitious coaster in Florida and routinely posts the park's longest waits even after six-plus years. Shuts down in lightning within 5 miles.",
+      "collections": [
+        "ioa-big-coasters"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/hagrids-magical-creatures-motorbike-adventure.jpg",
+        "credit": {
+          "author": "Eric A. Soto",
+          "license": "CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hagrid%27s_Magical_Creatures_Motorbike_Adventure_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "harry-potter-forbidden-journey",
+      "name": "Harry Potter and the Forbidden Journey",
+      "land": "The Wizarding World of Harry Potter — Hogsmeade",
+      "type": "dark-ride",
+      "subtype": "KUKA robotic arm",
+      "manufacturer": "Oceaneering / KUKA",
+      "opened": 2010,
+      "duration_sec": 244,
+      "height_min_in": 48,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "You ride a KUKA KR500 robotic arm through and around Hogwarts Castle — the pre-show queue through the castle itself is half the experience and worth doing even if you skip the ride. The motion can be rough if you're prone to simulator sickness.",
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/harry-potter-forbidden-journey.jpg",
+        "credit": {
+          "author": "HarshLight",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hogwarts_Castle_(43334648101).jpg"
+        }
+      }
+    },
+    {
+      "slug": "flight-of-the-hippogriff",
+      "name": "Flight of the Hippogriff",
+      "land": "The Wizarding World of Harry Potter — Hogsmeade",
+      "type": "roller-coaster",
+      "subtype": "family coaster",
+      "manufacturer": "Vekoma",
+      "opened": 2010,
+      "duration_sec": 66,
+      "length_ft": 1099,
+      "top_speed_mph": 29,
+      "height_min_in": 36,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "A tight Vekoma family coaster with a great view of Hogwarts Castle on the lift hill — that view is the main reason adults ride it. Short (1:06) and not particularly intense, but the line moves faster than almost anything else in Hogsmeade.",
+      "collections": [
+        "ioa-big-coasters"
+      ]
+    },
+    {
+      "slug": "hogwarts-express-hogsmeade",
+      "name": "Hogwarts Express: Hogsmeade Station",
+      "land": "The Wizarding World of Harry Potter — Hogsmeade",
+      "type": "transport",
+      "subtype": "park-to-park train",
+      "manufacturer": "Doppelmayr Garaventa Group",
+      "opened": 2014,
+      "duration_sec": 240,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "Connects Hogsmeade (IoA) to King's Cross / Diagon Alley (USF). Each direction has a completely different story. Requires a park-to-park ticket; boarding the wrong-direction train is an expensive mistake. The Hogsmeade → King's Cross journey features the Dementors sequence."
+    },
+    {
+      "slug": "amazing-adventures-of-spider-man",
+      "name": "The Amazing Adventures of Spider-Man",
+      "land": "Marvel Super Hero Island",
+      "type": "dark-ride",
+      "subtype": "screen-based motion-simulator",
+      "manufacturer": "Oceaneering International",
+      "opened": 1999,
+      "duration_sec": 270,
+      "height_min_in": 40,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "Won Best Dark Ride for 12 consecutive years and it's still not embarrassing — the 3D projection system got a 4K upgrade in 2012, and the physical set pieces keep it from feeling like a screen ride. Good fallback when every coaster has a 90-minute wait.",
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/amazing-adventures-of-spider-man.jpg",
+        "credit": {
+          "author": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Amazing_Adventures_of_Spider-Man_(Universal%27s_Islands_of_Adventure)_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "doctor-dooms-fearfall",
+      "name": "Doctor Doom's Fearfall",
+      "land": "Marvel Super Hero Island",
+      "type": "flat",
+      "subtype": "space-shot tower",
+      "manufacturer": "S&S – Sansei Technologies",
+      "opened": 1999,
+      "duration_sec": 60,
+      "top_speed_mph": 40,
+      "height_min_in": 52,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "Two 185-foot towers that blast you skyward without warning — the launch is the whole ride, but the view of the lagoon at the top is legitimately great for about 1.5 seconds before the bottom drops.",
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/doctor-dooms-fearfall.jpg",
+        "credit": {
+          "author": "Wacky Windjammer",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Doctor_Doom%27s_Fearfall_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "storm-force-accelatron",
+      "name": "Storm Force Accelatron",
+      "land": "Marvel Super Hero Island",
+      "type": "flat",
+      "subtype": "spinning teacup",
+      "manufacturer": "Mack Rides",
+      "opened": 2000,
+      "duration_sec": 90,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "Spinning teacup ride with an X-Men Storm reskin — skip it unless you have young kids or a pathological need to complete the land."
+    },
+    {
+      "slug": "dudley-do-rights-ripsaw-falls",
+      "name": "Dudley Do-Right's Ripsaw Falls",
+      "land": "Toon Lagoon",
+      "type": "water",
+      "subtype": "log flume",
+      "manufacturer": "Mack Rides",
+      "opened": 1999,
+      "duration_sec": 360,
+      "height_min_in": 44,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "A 75-foot drop that hits 45 mph on a log-flume — genuinely more aggressive than it looks. The Dudley Do-Right theming is deep-cut nostalgia, but the soaking is universal and complete. Don't ride this if you have anywhere to be afterward.",
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/dudley-do-rights-ripsaw-falls.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Dudley_Do-Rights_Ripsaw_Falls_02.jpg"
+        }
+      }
+    },
+    {
+      "slug": "popeye-blutos-bilge-rat-barges",
+      "name": "Popeye & Bluto's Bilge-Rat Barges",
+      "land": "Toon Lagoon",
+      "type": "water",
+      "subtype": "river rapids",
+      "opened": 1999,
+      "duration_sec": 420,
+      "height_min_in": 42,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "Classic 10-person circular raft ride where guests operate water cannons on each other as they pass — the interactivity is the bit. You will get wet. The water cannons along the path cost a quarter and are operated by sadistic strangers.",
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/popeye-blutos-bilge-rat-barges.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Popeye_and_Blutos_Bilge-Rat_Barges_11.jpg"
+        }
+      }
+    },
+    {
+      "slug": "skull-island-reign-of-kong",
+      "name": "Skull Island: Reign of Kong",
+      "land": "Skull Island",
+      "type": "dark-ride",
+      "subtype": "trackless bus dark ride",
+      "manufacturer": "Oceaneering International",
+      "opened": 2016,
+      "duration_sec": 300,
+      "height_min_in": 36,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "A 72-seat open-sided expedition truck that crawls through Skull Island encountering Kong and various prehistoric horrors — starts outdoors through genuine jungle landscaping (the best part), then pivots indoors. The animatronic Kong at the climax is a showstopper even after a decade."
+    },
+    {
+      "slug": "jurassic-park-river-adventure",
+      "name": "Jurassic Park River Adventure",
+      "land": "Jurassic World",
+      "type": "water",
+      "subtype": "shoot-the-chute dark ride",
+      "opened": 1999,
+      "duration_sec": 440,
+      "height_min_in": 42,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "The park's original anchor water ride — a slow scenic float through the Jurassic Park compound that goes sideways fast, culminating in an 85-foot plunge. Currently closed for a major refurbishment through ~November 2026; expected to reopen with Jurassic World branding.",
+      "photo": {
+        "src": "./assets/images/rides/islands-of-adventure/jurassic-park-river-adventure.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Jurassic_Park_River_Adventure_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "pteranodon-flyers",
+      "name": "Pteranodon Flyers",
+      "land": "Jurassic World",
+      "type": "roller-coaster",
+      "subtype": "suspended sky ride",
+      "manufacturer": "Setpoint USA",
+      "opened": 1999,
+      "duration_sec": 80,
+      "height_min_in": 36,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "A slow pterosaur-shaped gondola that swoops over Camp Jurassic — adults over 56\" must ride with a child 36–56\", which makes it functionally off-limits for adult-only groups. The wait-to-experience ratio is brutal; skip unless your 4-year-old needs this specifically."
+    },
+    {
+      "slug": "cat-in-the-hat",
+      "name": "The Cat in the Hat",
+      "land": "Seuss Landing",
+      "type": "dark-ride",
+      "subtype": "spinning family dark ride",
+      "opened": 1999,
+      "duration_sec": 360,
+      "height_min_in": 36,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "An 18-scene retelling of the book in a spinning couch vehicle. Universal toned down the spin cycles in 2014 after motion sickness complaints, so it's gentler than its reputation. Kids love it; adults find it charming for about half of the 6 minutes."
+    },
+    {
+      "slug": "high-in-the-sky-seuss-trolley-train",
+      "name": "The High in the Sky Seuss Trolley Train Ride!",
+      "land": "Seuss Landing",
+      "type": "transport",
+      "subtype": "elevated scenic train",
+      "manufacturer": "Mack Rides",
+      "opened": 2006,
+      "duration_sec": 180,
+      "height_min_in": 36,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "Two elevated tracks weave through Seuss Landing buildings while a narrator reads a Dr. Seuss story — adult-friendly because the aerial perspective gives a surprisingly good view of the whole park. Short line, pleasant break."
+    },
+    {
+      "slug": "one-fish-two-fish",
+      "name": "One Fish, Two Fish, Red Fish, Blue Fish",
+      "land": "Seuss Landing",
+      "type": "flat",
+      "subtype": "aerial spinner",
+      "manufacturer": "Zierer",
+      "opened": 1999,
+      "duration_sec": 120,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "Riders control fish-car altitude and are encouraged to dodge water jets by following a song — fail to follow the instructions and you get soaked. The meta-commentary on guest obedience is accidental but real."
+    },
+    {
+      "slug": "caro-seuss-el",
+      "name": "Caro-Seuss-el",
+      "land": "Seuss Landing",
+      "type": "flat",
+      "subtype": "carousel",
+      "opened": 1999,
+      "duration_sec": 90,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "A classic carousel with Seussian mounts that move in multiple directions, not just up-and-down — the creatures are well-sculpted and the whole thing is a nice slow-down moment in an otherwise intense park."
+    }
+  ],
+  "tips": [
+    {
+      "slug": "hagrids-wait-strategy",
+      "title": "How to Actually Get on Hagrid's Without Destroying Your Day",
+      "summary": "Hagrid's averages 134 minutes of standby across the full day — but that number masks big swings.",
+      "updated": "2026-05-17",
+      "body": "## The early move\n\nArrive 30–45 min before park opening and go to Hogsmeade first on rope drop. Waits are often under 30 min for the first 20–30 minutes after gates open.\n\n## The worst time is right after\n\nThe worst time to try standby is 9–10 AM. Crowds rush Hogsmeade immediately and the queue can be 150+ minutes by 9:15.\n\n## The last hour is the best window\n\nThe final hour of park operation is the best standby window — historical data shows ~56 min at 10 PM versus the 134 min midday average.\n\n## Express Pass works now\n\nExpress Pass (added May 30, 2025) now works on Hagrid's — first time since the 2019 opening. This is a significant upgrade to the pass's value at IoA.\n\n## The weather caveat\n\nHagrid's closes in lightning within 5 miles — check the Orlando weather radar before making it your day's anchor attraction. Once down, it can stay down for 2+ hours.\n\n## Sidecar vs. motorbike\n\nThe motorbike seat is narrower than the sidecar. If you have any concern about fit, request the sidecar — ask the greeter, not the ride op."
+    },
+    {
+      "slug": "velocicoaster-single-rider",
+      "title": "VelociCoaster Single Rider: When It Works",
+      "summary": "When operational, single rider can reduce a 60-minute standby to 15–25 minutes.",
+      "updated": "2026-05-17",
+      "body": "## Find the entrance\n\nThe single-rider entrance is a separate queue at the attraction entrance. It's been closed intermittently; ask a team member if the sign is covered.\n\n## How the math works\n\nVelociCoaster runs 4-across trains, so true single-rider fill-in opportunities happen whenever a party of odd size takes a row. Can be frequent or slow depending on crowd mix.\n\n## When it helps and when it doesn't\n\n- **Standby over 25 minutes**: single rider is almost always faster. Use it.\n- **Standby under 20 minutes**: join the regular queue with your group.\n\n## What you give up\n\nYou can't guarantee a seat position as a single rider. If front-row or back-row matters to you, use standby or Express Pass. You also can't guarantee sitting with your group — if that matters for first-timers in your party, skip single rider for them."
+    },
+    {
+      "slug": "ioa-express-pass-strategy",
+      "title": "Getting Full Value from Express Pass at IoA",
+      "summary": "Express Pass at IoA starts around $120/person/day. Worth it on peak days; barely necessary on slow ones.",
+      "updated": "2026-05-17",
+      "body": "## What it covers now\n\nAll major IoA rides now accept Express Pass — Hagrid's added it in May 2025, making this the first time the pass covers every headliner simultaneously.\n\n## Where Express saves the most time\n\n- **Hagrid's**: can cut 90–120 min to 15–30 min\n- **VelociCoaster**: cuts 45–90 min to 10–20 min\n- **Forbidden Journey**: cuts 40–60 min to 10–15 min\n\n## Where it doesn't matter much\n\n- **Hulk**: usually 25–45 min standby — manageable\n- **Spider-Man**: rarely over 30 min\n- **Doctor Doom**: low throughput but also low demand\n\n## The free alternative\n\nThe first 60–90 minutes after general park opening sees dramatically shorter standby waits on every headliner. Early arrival is the best free version of Express Pass.\n\n## Unlimited use\n\nExpress is unlimited — you can re-ride the same attraction repeatedly. Matters most for VelociCoaster if it's your priority.\n\n## Hotel-guest perk\n\nGuests at on-site premier-tier Universal hotels (except some value tiers) get free Express Unlimited. Factor this into your hotel-vs-pass cost comparison.\n\n## When NOT to buy\n\nSlow weekdays in fall or January — waits are often short enough that Express doesn't pay for itself. Check current wait-time apps before buying day-of."
+    }
+  ]
+}
