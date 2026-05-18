@@ -1,6 +1,6 @@
 (async function () {
   'use strict';
-  const { $, el, fetchJSON, fetchText, renderError, renderSidebar, params } = VH;
+  const { $, el, fetchJSON, renderError, renderSidebar, params } = VH;
   renderSidebar('parks');
 
   // Skeleton placeholders while we wait
@@ -15,12 +15,9 @@
   const tipSlug = params().get('slug');
   if (!parkSlug || !tipSlug) { renderError($('#main'), 'Missing park or tip slug.'); return; }
 
-  let park, md;
+  let park;
   try {
-    [park, md] = await Promise.all([
-      fetchJSON(`./data/parks/${parkSlug}.json`),
-      fetchText(`./data/parks/${parkSlug}/tips/${tipSlug}.md`),
-    ]);
+    park = await fetchJSON(`./data/parks/${parkSlug}.json`);
   } catch (err) {
     renderError($('#main'), 'Could not load tip.');
     return;
@@ -32,7 +29,7 @@
   document.title = `${tipMeta.title} · ${park.name} · VacationHub`;
 
   const body = el('div', { class: 'article-body' });
-  body.innerHTML = window.marked.parse(md);
+  body.innerHTML = window.marked.parse(tipMeta.body || '');
 
   $('#article').replaceChildren(
     el('header', { class: 'article-header' }, [

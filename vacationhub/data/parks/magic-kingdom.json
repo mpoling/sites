@@ -3,7 +3,13 @@
   "name": "Magic Kingdom",
   "brand": "disney",
   "resort": "Walt Disney World",
-  "location": { "city": "Orlando", "state": "FL", "country": "US", "lat": 28.4177, "lng": -81.5812 },
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US",
+    "lat": 28.4177,
+    "lng": -81.5812
+  },
   "opened": 1971,
   "size_acres": 142,
   "official_url": "https://disneyworld.disney.go.com/destinations/magic-kingdom/",
@@ -31,10 +37,16 @@
       "height_min_in": 44,
       "single_rider": false,
       "priority_access": "multipass",
-      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
       "intensity": 3,
       "blurb": "Ride at night for the full effect.",
-      "collections": ["magic-kingdom-coasters"],
+      "collections": [
+        "magic-kingdom-coasters"
+      ],
       "photo": {
         "src": "./assets/images/rides/magic-kingdom/space-mountain.jpg",
         "credit": {
@@ -58,10 +70,16 @@
       "height_min_in": 40,
       "single_rider": false,
       "priority_access": "multipass",
-      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
       "intensity": 2,
       "blurb": "The wildest ride in the wilderness.",
-      "collections": ["magic-kingdom-coasters"],
+      "collections": [
+        "magic-kingdom-coasters"
+      ],
       "photo": {
         "src": "./assets/images/rides/magic-kingdom/big-thunder-mountain.jpg",
         "credit": {
@@ -84,10 +102,16 @@
       "height_min_in": 48,
       "single_rider": false,
       "priority_access": "premier",
-      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
       "intensity": 4,
       "blurb": "Worth the Premier upgrade — but only just.",
-      "collections": ["magic-kingdom-coasters"],
+      "collections": [
+        "magic-kingdom-coasters"
+      ],
       "photo": {
         "src": "./assets/images/rides/magic-kingdom/tron-lightcycle-run.jpg",
         "credit": {
@@ -109,10 +133,16 @@
       "height_min_in": 38,
       "single_rider": false,
       "priority_access": "multipass",
-      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
       "intensity": 2,
       "blurb": "Long line. Skip unless you have Lightning Lane.",
-      "collections": ["magic-kingdom-coasters"],
+      "collections": [
+        "magic-kingdom-coasters"
+      ],
       "photo": {
         "src": "./assets/images/rides/magic-kingdom/seven-dwarfs-mine-train.jpg",
         "credit": {
@@ -132,7 +162,11 @@
       "duration_sec": 510,
       "single_rider": false,
       "priority_access": "none",
-      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
       "intensity": 1,
       "blurb": "Classic. Never a long wait.",
       "photo": {
@@ -154,7 +188,11 @@
       "duration_sec": 525,
       "single_rider": false,
       "priority_access": "multipass",
-      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
       "intensity": 2,
       "blurb": "Ride in the front Doom Buggy for the best effects.",
       "photo": {
@@ -175,7 +213,11 @@
       "duration_sec": 600,
       "single_rider": false,
       "priority_access": "multipass",
-      "accessibility": { "wheelchair_transfer": false, "must_transfer": true, "service_animal_ok": false },
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
       "intensity": 1,
       "blurb": "Skipper jokes are the whole point.",
       "photo": {
@@ -196,7 +238,11 @@
       "duration_sec": 600,
       "single_rider": false,
       "priority_access": "none",
-      "accessibility": { "wheelchair_transfer": true, "must_transfer": false, "service_animal_ok": true },
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
       "intensity": 1,
       "blurb": "Either you love it or you can't escape the song.",
       "photo": {
@@ -210,8 +256,26 @@
     }
   ],
   "tips": [
-    { "slug": "rope-drop", "title": "Rope-drop strategy", "summary": "Hit Space Mountain before 9:30am to skip the worst lines.", "updated": "2026-04-12" },
-    { "slug": "lightning-lane", "title": "Lightning Lane priority order", "summary": "What to book at 7am and in what order.", "updated": "2026-04-12" },
-    { "slug": "best-time-to-visit", "title": "Best time of year to visit", "summary": "Mid-January and late August have the shortest waits.", "updated": "2026-04-12" }
+    {
+      "slug": "rope-drop",
+      "title": "Rope-drop strategy",
+      "summary": "Hit Space Mountain before 9:30am to skip the worst lines.",
+      "updated": "2026-04-12",
+      "body": "## Why rope drop matters\n\nThe first 60–90 minutes of operation at Magic Kingdom are\n*massively* under-utilized. Most guests roll in around 10am,\nwhich means the first ~90 minutes can clear several headliners\nthat otherwise have 60+ minute waits.\n\n## The route\n\n1. Be at the tap stiles 30 minutes before posted opening.\n2. Head straight to **Space Mountain** — the queue forms long\n   before the ride opens but moves fast on early entry.\n3. From Space Mountain, cross to **TRON Lightcycle / Run** if\n   you have a virtual queue boarding pass.\n4. End the rope-drop sprint at **Seven Dwarfs Mine Train**,\n   which posts its longest wait of the day starting at 10am.\n\nBy 9:30am you can have three of the park's longest-wait rides\ndone before most guests have entered.\n"
+    },
+    {
+      "slug": "lightning-lane",
+      "title": "Lightning Lane priority order",
+      "summary": "What to book at 7am and in what order.",
+      "updated": "2026-04-12",
+      "body": "## Lightning Lane priority order\n\nDisney's paid Lightning Lane system lets you skip the standby\nline for select rides. At Magic Kingdom, the best use of your\nallotments — in priority order:\n\n1. **Seven Dwarfs Mine Train** — almost always the longest\n   standby in the park.\n2. **TRON Lightcycle / Run** — requires the Premier (single\n   ride) tier; only worth it if you don't snag a virtual queue.\n3. **Peter Pan's Flight** — short ride, perpetually long line.\n4. **Space Mountain** — only if you couldn't rope-drop it.\n\nAvoid burning a slot on Big Thunder Mountain or Pirates —\nthose rarely exceed 30 minutes outside peak season.\n"
+    },
+    {
+      "slug": "best-time-to-visit",
+      "title": "Best time of year to visit",
+      "summary": "Mid-January and late August have the shortest waits.",
+      "updated": "2026-04-12",
+      "body": "## Best weeks to visit Magic Kingdom\n\nThe two genuinely-low-crowd windows each year:\n\n- **Mid-January** (the week after Martin Luther King Jr. Day,\n  through the end of the month). School is back in session\n  everywhere; weather is mild; refurbishments are common but\n  manageable.\n- **Late August** (the two weeks before Labor Day). Florida is\n  miserably hot but lines are at yearly lows.\n\nAvoid: Thanksgiving week, the entire month of December after\nthe 18th, Easter week, and the second half of June through\nmid-July.\n"
+    }
   ]
 }
