@@ -1,0 +1,26 @@
+{
+  "slug": "epic-universe-coasters",
+  "name": "Epic Universe Coasters",
+  "scope": {
+    "park": "epic-universe"
+  },
+  "intro": "Epic Universe launched with four coasters that together span every intensity level — from a family launch coaster your 8-year-old can handle to a 62-mph twin-track beast that ranks among the best in the United States. None of them are filler.",
+  "rides": [
+    {
+      "ride": "mine-cart-madness",
+      "blurb": "The 'boom coaster' concept — simulating riding a mine cart launching off broken track — sounds gimmicky until you're on it. DK theming so well done that you forget it's the park's tamest coaster."
+    },
+    {
+      "ride": "hiccups-wing-gliders",
+      "blurb": "Two launches, Toothless appearances, and a 75-foot layout that threads through Isle of Berk's dragon village. The one Universal designed to make coaster skeptics into converts."
+    },
+    {
+      "ride": "curse-of-the-werewolf",
+      "blurb": "Forward through the haunted forest, then launched backwards through a barn while your car spins. Under 2 minutes, perfectly calibrated. Mack's spinning launch tech has never been deployed this effectively."
+    },
+    {
+      "ride": "stardust-racers",
+      "blurb": "5,000 feet of twin Mack track, 62 mph, a one-of-a-kind inverted crisscross element, and synchronized on-board audio. Both the best coaster in the park and one of the top 5 in Florida. Ride it twice — once in daylight, once in the dark."
+    }
+  ]
+}

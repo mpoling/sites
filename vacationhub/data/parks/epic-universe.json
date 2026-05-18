@@ -1,0 +1,343 @@
+{
+  "slug": "epic-universe",
+  "name": "Universal Epic Universe",
+  "brand": "universal",
+  "resort": "Universal Orlando Resort",
+  "location": {
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US",
+    "lat": 28.4422,
+    "lng": -81.4494
+  },
+  "opened": 2025,
+  "size_acres": 110,
+  "official_url": "https://www.universalorlando.com/web/en/us/theme-parks/epic-universe",
+  "hero": {
+    "src": "./assets/images/parks/epic-universe-hero.jpg",
+    "credit": {
+      "author": "Gfgbeach",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Celestial_Park.jpg"
+    }
+  },
+  "summary": "Universal Orlando's fourth and most technologically ambitious park, opened May 22, 2025 with five fully-immersive themed worlds spanning Nintendo, Harry Potter, classic Universal Monsters, DreamWorks dragons, and an original celestial-themed hub. The hub-and-spoke layout means every land-to-land transit goes through Celestial Park, which sounds annoying but actually makes navigation cleaner than IoA's loop.",
+  "rides": [
+    {
+      "slug": "stardust-racers",
+      "name": "Stardust Racers",
+      "land": "Celestial Park",
+      "type": "roller-coaster",
+      "subtype": "launched dueling",
+      "manufacturer": "Mack Rides",
+      "opened": 2025,
+      "duration_sec": 90,
+      "length_ft": 5000,
+      "top_speed_mph": 62,
+      "height_min_in": 48,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 5,
+      "blurb": "Universal's longest coaster to date and genuinely the best reason to visit — two trains launch simultaneously so you're racing neck-and-neck. Ride it twice: once in daylight, once at night for the 'comet through darkness' effect.",
+      "collections": [
+        "epic-universe-coasters"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/epic-universe/stardust-racers.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Stardust_Racers_3.jpg"
+        }
+      }
+    },
+    {
+      "slug": "constellation-carousel",
+      "name": "Constellation Carousel",
+      "land": "Celestial Park",
+      "type": "flat",
+      "subtype": "gondola carousel",
+      "opened": 2025,
+      "duration_sec": 180,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "The carousel other carousels are jealous of — each 'horse' is a celestial creature inside a glowing enclosed gondola, and the whole thing looks like a jewel box at night. Perfectly good filler while waiting for Stardust to come down.",
+      "photo": {
+        "src": "./assets/images/rides/epic-universe/constellation-carousel.jpg",
+        "credit": {
+          "author": "Gfgbeach",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Constellation_Carousel.jpg"
+        }
+      }
+    },
+    {
+      "slug": "mario-kart-bowsers-challenge",
+      "name": "Mario Kart: Bowser's Challenge",
+      "land": "Super Nintendo World",
+      "type": "dark-ride",
+      "subtype": "AR screen-hybrid",
+      "manufacturer": "MTS Systems",
+      "opened": 2025,
+      "duration_sec": 240,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 2,
+      "blurb": "The AR goggles are the hook — you're actually aiming and throwing shells using a steering wheel while the physical set flies by. The wait is almost always absurd, so this is a first-thing-in-the-morning or hotel-guest-early-entry target.",
+      "photo": {
+        "src": "./assets/images/rides/epic-universe/mario-kart-bowsers-challenge.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Super_Nintendo_World_(Universal_Epic_Universe)_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "yoshis-adventure",
+      "name": "Yoshi's Adventure",
+      "land": "Super Nintendo World",
+      "type": "dark-ride",
+      "subtype": "scenic omnimover",
+      "manufacturer": "MTS Systems",
+      "opened": 2025,
+      "duration_sec": 300,
+      "height_min_in": 34,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "The gentlest ride in the park, and that's fine — genuinely pretty, slow enough for toddlers to absorb Nintendo scenery, and the interactive egg-hunt button keeps small kids busy. Don't bother with waits over 20 minutes."
+    },
+    {
+      "slug": "mine-cart-madness",
+      "name": "Mine-Cart Madness",
+      "land": "Super Nintendo World",
+      "type": "roller-coaster",
+      "subtype": "boom coaster",
+      "manufacturer": "Setpoint USA",
+      "opened": 2025,
+      "duration_sec": 90,
+      "top_speed_mph": 30,
+      "height_min_in": 36,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "The 'boom coaster' illusion of launching off broken track is legitimately clever — it's not a big coaster, but the mine-cart fantasy is so well executed that it punches above its physical weight. Expect the longest waits in the park, which is a little insane for a family coaster.",
+      "collections": [
+        "epic-universe-coasters"
+      ]
+    },
+    {
+      "slug": "harry-potter-battle-at-the-ministry",
+      "name": "Harry Potter and the Battle at the Ministry",
+      "land": "The Wizarding World of Harry Potter — Ministry of Magic",
+      "type": "dark-ride",
+      "subtype": "omnidirectional elevator",
+      "manufacturer": "Simtec / Universal Creative",
+      "opened": 2025,
+      "duration_sec": 270,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "Probably the best dark ride Universal has ever built — the Floo Network elevator drop is a genuine 'what just happened' moment, and the Umbridge animatronic is one for the books. Running on tech nobody else has deployed yet."
+    },
+    {
+      "slug": "le-cirque-arcanus",
+      "name": "Le Cirque Arcanus",
+      "land": "The Wizarding World of Harry Potter — Ministry of Magic",
+      "type": "show",
+      "subtype": "live stage show with film",
+      "opened": 2025,
+      "duration_sec": 1200,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": true,
+        "must_transfer": false,
+        "service_animal_ok": true
+      },
+      "intensity": 1,
+      "blurb": "A full theatrical show set in the Fantastic Beasts wizarding world with real puppetry and magical creatures — Eddie Redmayne filmed new scenes as Newt Scamander specifically for this. Good mid-day break when the ride queues are brutal."
+    },
+    {
+      "slug": "monsters-unchained-frankenstein-experiment",
+      "name": "Monsters Unchained: The Frankenstein Experiment",
+      "land": "Dark Universe",
+      "type": "dark-ride",
+      "subtype": "KUKA robotic arm",
+      "manufacturer": "KUKA / Universal Creative",
+      "opened": 2025,
+      "duration_sec": 240,
+      "height_min_in": 48,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 5,
+      "blurb": "Danny Elfman did the score, there's a legitimate Dracula animatronic, and the KUKA arm goes places Forbidden Journey never dreamed of. Consistently shorter waits than Battle at the Ministry despite being equally good.",
+      "photo": {
+        "src": "./assets/images/rides/epic-universe/monsters-unchained-frankenstein-experiment.jpg",
+        "credit": {
+          "author": "Gfgbeach",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Frankenstein_Manor_Night_Epic_Universe.jpg"
+        }
+      }
+    },
+    {
+      "slug": "curse-of-the-werewolf",
+      "name": "Curse of the Werewolf",
+      "land": "Dark Universe",
+      "type": "roller-coaster",
+      "subtype": "spinning launched",
+      "manufacturer": "Mack Rides",
+      "opened": 2025,
+      "duration_sec": 90,
+      "top_speed_mph": 37,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "Short and brutal in the best way — forward through a werewolf-infested forest, then launched backwards through a barn. The spinning cars mean every rider gets a different experience. Feels way more intense than a 37 mph top speed suggests.",
+      "collections": [
+        "epic-universe-coasters"
+      ]
+    },
+    {
+      "slug": "hiccups-wing-gliders",
+      "name": "Hiccup's Wing Gliders",
+      "land": "How to Train Your Dragon — Isle of Berk",
+      "type": "roller-coaster",
+      "subtype": "launched family coaster",
+      "manufacturer": "Intamin",
+      "opened": 2025,
+      "duration_sec": 120,
+      "top_speed_mph": 45,
+      "height_min_in": 40,
+      "single_rider": true,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 3,
+      "blurb": "Two launches, Toothless appearances, and a 75-foot layout that threads through Isle of Berk's dragon village — designed specifically to make coaster skeptics into converts. Morning lines are the move.",
+      "collections": [
+        "epic-universe-coasters"
+      ],
+      "photo": {
+        "src": "./assets/images/rides/epic-universe/hiccups-wing-gliders.jpg",
+        "credit": {
+          "author": "Jeremy Thompson",
+          "license": "CC BY 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hiccup%27s_Wing_Gliders_1.jpg"
+        }
+      }
+    },
+    {
+      "slug": "dragon-racers-rally",
+      "name": "Dragon Racer's Rally",
+      "land": "How to Train Your Dragon — Isle of Berk",
+      "type": "flat",
+      "subtype": "Sky Fly aerobatics",
+      "manufacturer": "Gerstlauer",
+      "opened": 2025,
+      "duration_sec": 120,
+      "top_speed_mph": 31,
+      "height_min_in": 48,
+      "single_rider": false,
+      "priority_access": "none",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 4,
+      "blurb": "Two paired Sky Fly units so you're literally racing your group — you control how aggressively the gondola flips, meaning skilled riders can go fully inverted while grandma in the neighboring unit rides mild. The one ride with no Express Pass, which says something about Universal's confidence in the throughput."
+    },
+    {
+      "slug": "fyre-drill",
+      "name": "Fyre Drill",
+      "land": "How to Train Your Dragon — Isle of Berk",
+      "type": "boat",
+      "subtype": "interactive battle",
+      "manufacturer": "Mack Rides",
+      "opened": 2025,
+      "duration_sec": 300,
+      "single_rider": false,
+      "priority_access": "express-unlimited",
+      "accessibility": {
+        "wheelchair_transfer": false,
+        "must_transfer": true,
+        "service_animal_ok": false
+      },
+      "intensity": 1,
+      "blurb": "130+ moving targets, water cannons, and boats shooting at other boats in a dragon-fire-training scenario — light on thrills but perfect for kids and great for a cool-down on a Florida afternoon. You will get wet."
+    }
+  ],
+  "tips": [
+    {
+      "slug": "epic-is-a-separate-day",
+      "title": "Epic Universe Is a Separate Day, Not an Afternoon Extension",
+      "summary": "It's 4.5 miles from USF/IoA with no internal transport link — budget a full standalone day.",
+      "updated": "2026-05-17",
+      "body": "## Physically separate\n\nEpic Universe is 4.5 miles south of the CityWalk/USF/IoA campus. No water taxi, no internal shuttle, no Hogwarts Express connection. You drive (or are bussed) between them.\n\n## Different ticket\n\nPark-to-park tickets do NOT include Epic Universe; it requires its own admission. The 3-day+ park-to-park 'Freedom of Movement' ticket does include all three parks.\n\n## Three hotels next door\n\nThe 750-acre development includes Stella Nova, Terra Luna, and the Helios Grand Hotel immediately adjacent — hotel guests walk to the park in under 5 minutes versus 15–20 from other UOR properties.\n\n## Hub-and-spoke layout\n\nCelestial Park at the center, every land off the hub. Sounds annoying but actually makes navigation much cleaner than IoA's loop.\n\n## Indoor/outdoor mix\n\nSeven of twelve attractions are outdoor or partially outdoor — Epic Universe closes more rides during lightning delays than USF/IoA. Have a backup indoor plan (Battle at the Ministry, Mario Kart, Monsters Unchained, Le Cirque Arcanus).\n\n## Two-day budget recommended\n\nEven experienced park-runners find one day tight if they want to absorb the theming rather than sprint. Two days gives you room to do nights properly.\n\n## Celestial Park stays open later\n\nCelestial Park rides operate one hour after official park close. If you're in line at closing, you'll still ride."
+    },
+    {
+      "slug": "express-pass-rules-are-different",
+      "title": "Express Pass at Epic Universe Has Different Rules",
+      "summary": "Single-use per ride (not unlimited), excludes Dragon Racer's Rally, and a couple of headliners didn't launch with Express.",
+      "updated": "2026-05-17",
+      "body": "## Single use, not unlimited\n\nUnlike USF/IoA where Unlimited Express lets you re-ride all day, Epic Universe Express is one-use-per-ride-per-day. Factor that into whether it's worth the premium for you.\n\n## Dragon Racer's Rally has no Express\n\nThe only ride in the park excluded entirely. Plan to standby this one regardless.\n\n## Verify which rides are covered\n\nMario Kart: Bowser's Challenge and Harry Potter and the Battle at the Ministry weren't in the Express Pass program at opening — they were added later. Always verify current status before purchasing.\n\n## Express Now option\n\n'Universal Express Now' (single-ride Express purchases, ~$25 each) is available at select attractions. An option for surgical use on one or two headliners instead of buying full Express.\n\n## Best case for buying Express\n\nA moderate-to-busy day when standby waits exceed 60 minutes mid-morning.\n\n## Worst case for buying Express\n\nLow-crowd weekday with good early-entry hotel access — you can lap Stardust Racers on standby before 10am.\n\n## Hotel guests get a soft alternative\n\nEarly Park Admission is essentially a soft Express alternative — one focused hour before general public can eliminate the need for purchased Express on a well-timed day."
+    },
+    {
+      "slug": "after-dark-hits-different",
+      "title": "Epic Universe After Dark Hits Different",
+      "summary": "Several of Epic Universe's biggest moments only exist at night, and crowds thin meaningfully after 8 PM.",
+      "updated": "2026-05-17",
+      "body": "## Celestial Park transforms at night\n\nLED-illuminated fountains, chromatic garden lighting, and synchronized music create an atmosphere that's worth lingering in — not just a backdrop. Genuinely the best version of the hub.\n\n## Stardust Racers in the dark\n\nRuns with zero external illumination at night by design, creating a 'comet shooting through darkness' effect. Completely different emotional experience from the daytime ride. Ride it twice.\n\n## Dark Universe is purpose-built for night\n\nFog machines in Darkmoor, torch-lit mob lighting through the trees beside Burning Blade Tavern, and electric window effects in Frankenstein Manor only show up after dark. Visit Dark Universe twice — once midday for the rides, once after sunset for the atmosphere.\n\n## Crowds thin after 8 PM\n\nFamilies with young children exit in volume. Standby waits on Stardust Racers and Hiccup's Wing Gliders can drop below 20 minutes in the final hour.\n\n## Celestial rides stay open later\n\nStardust Racers and Constellation Carousel operate one hour past official park closing. Hold these as your last stop.\n\n## Super Nintendo at night\n\nAlso beautifully lit. If Mario Kart waits are brutal midday, the land is worth a second visit after 7 PM when they often become manageable."
+    }
+  ]
+}

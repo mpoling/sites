@@ -199,6 +199,34 @@
         }
       },
       "tagline": "Where every thrill tells a story."
+    },
+    {
+      "slug": "epic-universe",
+      "name": "Universal Epic Universe",
+      "brand": "universal",
+      "resort": "Universal Orlando Resort",
+      "location": {
+        "city": "Orlando",
+        "state": "FL",
+        "country": "US"
+      },
+      "tile": {
+        "src": "./assets/images/parks/epic-universe-tile.jpg",
+        "credit": {
+          "author": "Gfgbeach",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Chronos_Tower_Front_Epic_Universe.jpg"
+        }
+      },
+      "hero": {
+        "src": "./assets/images/parks/epic-universe-hero.jpg",
+        "credit": {
+          "author": "Gfgbeach",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Celestial_Park.jpg"
+        }
+      },
+      "tagline": "Five worlds, one hub, opened 2025."
     }
   ],
   "collections": [
@@ -289,6 +317,21 @@
           "author": "Skorp",
           "license": "CC BY-SA 3.0",
           "source": "https://commons.wikimedia.org/wiki/File:IncredibleHulkCoaster.jpg"
+        }
+      }
+    },
+    {
+      "slug": "epic-universe-coasters",
+      "name": "Epic Universe Coasters",
+      "scope": {
+        "park": "epic-universe"
+      },
+      "tile": {
+        "src": "./assets/images/collections/epic-universe-coasters.jpg",
+        "credit": {
+          "author": "Gfgbeach",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Stardust_Racers_in_twilight.jpg"
         }
       }
     }
