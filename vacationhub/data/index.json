@@ -427,27 +427,52 @@
     }
   ],
   "home": {
-    "featured": "magic-kingdom",
+    "featured": "epic-universe",
     "rails": [
       {
         "title": "Featured",
         "type": "park",
         "items": [
-          "magic-kingdom"
+          "epic-universe",
+          "magic-kingdom",
+          "islands-of-adventure",
+          "hollywood-studios",
+          "animal-kingdom",
+          "universal-studios-florida"
         ]
       },
       {
         "title": "New Openings",
         "type": "park",
         "items": [
-          "magic-kingdom"
+          "epic-universe",
+          "hollywood-studios",
+          "epcot",
+          "animal-kingdom"
         ]
       },
       {
         "title": "Ride Collections",
         "type": "collection",
         "items": [
-          "magic-kingdom-coasters"
+          "magic-kingdom-coasters",
+          "ioa-big-coasters",
+          "epic-universe-coasters",
+          "hollywood-studios-thrill-run",
+          "harry-potter-at-usf",
+          "epcot-thrill-rides",
+          "animal-kingdom-thrill-rides"
+        ]
+      },
+      {
+        "title": "Coming Soon",
+        "type": "park",
+        "items": [
+          "disneyland",
+          "california-adventure",
+          "universal-studios-hollywood",
+          "legoland-california",
+          "legoland-florida"
         ]
       }
     ]
