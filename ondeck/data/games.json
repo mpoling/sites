@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-19T16:29:53.370Z",
+  "generatedAt": "2026-05-20T16:31:59.906Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -161,35 +161,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815225",
-      "teamId": "atl",
-      "dateISO": "2026-05-06T01:40Z",
-      "isHome": false,
-      "opponentShort": "Mariners",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "venue": "T-Mobile Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Mariners.TV",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "sfg-401815228",
-      "teamId": "sfg",
-      "dateISO": "2026-05-06T01:45Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV"
-      ]
-    },
     {
       "id": "sfg-401815243",
       "teamId": "sfg",
@@ -1539,6 +1510,34 @@
       "venue": "ONEOK Field",
       "broadcasts": [
         "ESPN+"
+      ]
+    },
+    {
+      "id": "sfg-401815805",
+      "teamId": "sfg",
+      "dateISO": "2026-06-18T23:15Z",
+      "isHome": false,
+      "opponentShort": "Braves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "atl-401815805",
+      "teamId": "atl",
+      "dateISO": "2026-06-18T23:15Z",
+      "isHome": true,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
       ]
     }
   ],
