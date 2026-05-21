@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T16:31:59.906Z",
+  "generatedAt": "2026-05-21T16:22:32.658Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -161,34 +161,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815243",
-      "teamId": "sfg",
-      "dateISO": "2026-05-06T19:45Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV"
-      ]
-    },
-    {
-      "id": "atl-401815240",
-      "teamId": "atl",
-      "dateISO": "2026-05-06T20:10Z",
-      "isHome": false,
-      "opponentShort": "Mariners",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "venue": "T-Mobile Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Mariners.TV"
-      ]
-    },
     {
       "id": "stan-sb-401870081",
       "teamId": "stan-sb",
@@ -735,7 +707,7 @@
       "dateISO": "2026-05-21T02:00Z",
       "isHome": false,
       "opponentShort": "Portland",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15362.png",
       "venue": "Providence Park",
       "broadcasts": [
         "Victory+"
@@ -1538,6 +1510,35 @@
         "MLB.TV",
         "NBC Sports BA",
         "BravesVision"
+      ]
+    },
+    {
+      "id": "sfg-401815815",
+      "teamId": "sfg",
+      "dateISO": "2026-06-19T23:10Z",
+      "isHome": false,
+      "opponentShort": "Marlins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "venue": "loanDepot park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Marlins.TV",
+        "WFOR"
+      ]
+    },
+    {
+      "id": "atl-401815814",
+      "teamId": "atl",
+      "dateISO": "2026-06-19T23:15Z",
+      "isHome": true,
+      "opponentShort": "Brewers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Brewers.TV"
       ]
     }
   ],
