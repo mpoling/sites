@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T16:22:32.658Z",
+  "generatedAt": "2026-05-22T15:52:19.627Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -161,18 +161,6 @@
     }
   ],
   "games": [
-    {
-      "id": "stan-sb-401870081",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-07T17:30Z",
-      "isHome": true,
-      "opponentShort": "Louisville",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
-      "venue": "University of Virginia Softball Stadium",
-      "broadcasts": [
-        "ACC Network"
-      ]
-    },
     {
       "id": "stan-sb-401870084",
       "teamId": "stan-sb",
@@ -1539,6 +1527,46 @@
         "MLB.TV",
         "BravesVision",
         "Brewers.TV"
+      ]
+    },
+    {
+      "id": "sfg-401815829",
+      "teamId": "sfg",
+      "dateISO": "2026-06-20T20:10Z",
+      "isHome": false,
+      "opponentShort": "Marlins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "venue": "loanDepot park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Marlins.TV"
+      ]
+    },
+    {
+      "id": "atl-401815827",
+      "teamId": "atl",
+      "dateISO": "2026-06-20T20:10Z",
+      "isHome": true,
+      "opponentShort": "Brewers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Brewers.TV"
+      ]
+    },
+    {
+      "id": "mbfc-401841936",
+      "teamId": "mbfc",
+      "dateISO": "2026-06-21T02:00Z",
+      "isHome": true,
+      "opponentShort": "El Paso",
+      "opponentLogo": null,
+      "venue": "Cardinale Stadium",
+      "broadcasts": [
+        "ESPN+"
       ]
     }
   ],
