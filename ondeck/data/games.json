@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-22T15:52:19.627Z",
+  "generatedAt": "2026-05-23T14:42:48.626Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -161,59 +161,6 @@
     }
   ],
   "games": [
-    {
-      "id": "stan-sb-401870084",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-08T17:00Z",
-      "isHome": false,
-      "opponentShort": "Florida St",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
-      "venue": "University of Virginia Softball Stadium",
-      "broadcasts": [
-        "ACC Network"
-      ]
-    },
-    {
-      "id": "mbfc-401841816",
-      "teamId": "mbfc",
-      "dateISO": "2026-05-08T23:30Z",
-      "isHome": false,
-      "opponentShort": "Lexington",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
-      "venue": "Lexington Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "atl-401815264",
-      "teamId": "atl",
-      "dateISO": "2026-05-09T02:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "Sportsnet LA",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "sfg-401815266",
-      "teamId": "sfg",
-      "dateISO": "2026-05-09T02:15Z",
-      "isHome": true,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "KNTV"
-      ]
-    },
     {
       "id": "mia-761611",
       "teamId": "mia",
@@ -1567,6 +1514,35 @@
       "venue": "Cardinale Stadium",
       "broadcasts": [
         "ESPN+"
+      ]
+    },
+    {
+      "id": "atl-401815841",
+      "teamId": "atl",
+      "dateISO": "2026-06-21T17:00Z",
+      "isHome": true,
+      "opponentShort": "Brewers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "ESPN Unlmtd",
+        "MLB.TV",
+        "BravesVision",
+        "Brewers.TV"
+      ]
+    },
+    {
+      "id": "sfg-401815843",
+      "teamId": "sfg",
+      "dateISO": "2026-06-21T17:40Z",
+      "isHome": false,
+      "opponentShort": "Marlins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "venue": "loanDepot park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Marlins.TV"
       ]
     }
   ],
