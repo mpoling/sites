@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T14:42:48.626Z",
+  "generatedAt": "2026-05-23T23:57:22.676Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -13,7 +13,9 @@
       "sport": "Baseball",
       "espn": {
         "sport": "baseball",
-        "league": "mlb",
+        "leagues": [
+          "mlb"
+        ],
         "teamId": "26"
       },
       "accent": "#FD5A1E",
@@ -27,7 +29,9 @@
       "sport": "Baseball",
       "espn": {
         "sport": "baseball",
-        "league": "mlb",
+        "leagues": [
+          "mlb"
+        ],
         "teamId": "15"
       },
       "accent": "#CE1141",
@@ -41,7 +45,9 @@
       "sport": "Football",
       "espn": {
         "sport": "football",
-        "league": "nfl",
+        "leagues": [
+          "nfl"
+        ],
         "teamId": "25"
       },
       "accent": "#AA0000",
@@ -55,11 +61,29 @@
       "sport": "Basketball",
       "espn": {
         "sport": "basketball",
-        "league": "nba",
+        "leagues": [
+          "nba"
+        ],
         "teamId": "9"
       },
       "accent": "#1D428A",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+    },
+    {
+      "id": "gsv",
+      "shortName": "Valkyries",
+      "fullName": "Golden State Valkyries",
+      "league": "WNBA",
+      "sport": "Basketball",
+      "espn": {
+        "sport": "basketball",
+        "leagues": [
+          "wnba"
+        ],
+        "teamId": "129689"
+      },
+      "accent": "#B38FCF",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/gs.png"
     },
     {
       "id": "sjs",
@@ -69,7 +93,9 @@
       "sport": "Hockey",
       "espn": {
         "sport": "hockey",
-        "league": "nhl",
+        "leagues": [
+          "nhl"
+        ],
         "teamId": "18"
       },
       "accent": "#006D75",
@@ -83,7 +109,9 @@
       "sport": "Soccer",
       "espn": {
         "sport": "soccer",
-        "league": "usa.1",
+        "leagues": [
+          "usa.1"
+        ],
         "teamId": "191"
       },
       "accent": "#0067A0",
@@ -97,7 +125,9 @@
       "sport": "Soccer",
       "espn": {
         "sport": "soccer",
-        "league": "usa.1",
+        "leagues": [
+          "usa.1"
+        ],
         "teamId": "20232"
       },
       "accent": "#F7B5CD",
@@ -111,11 +141,71 @@
       "sport": "Soccer",
       "espn": {
         "sport": "soccer",
-        "league": "usa.nwsl",
+        "leagues": [
+          "usa.nwsl"
+        ],
         "teamId": "22187"
       },
       "accent": "#1A4B7F",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22187.png"
+    },
+    {
+      "id": "psg-w",
+      "shortName": "PSG Women",
+      "fullName": "Paris Saint-Germain",
+      "league": "D1 Arkema",
+      "sport": "Soccer",
+      "espn": {
+        "sport": "soccer",
+        "leagues": [
+          "fra.w.1",
+          "uefa.wchampions"
+        ],
+        "teamId": "19258"
+      },
+      "accent": "#00003E",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19258.png"
+    },
+    {
+      "id": "uswnt",
+      "shortName": "USWNT",
+      "fullName": "United States Women",
+      "league": "Intl",
+      "sport": "Soccer",
+      "espn": {
+        "sport": "soccer",
+        "leagues": [
+          "fifa.friendly.w",
+          "fifa.shebelieves",
+          "concacaf.womens.championship",
+          "concacaf.w.gold",
+          "fifa.wwc",
+          "fifa.w.olympics"
+        ],
+        "teamId": "2765"
+      },
+      "accent": "#213065",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2765.png"
+    },
+    {
+      "id": "engw",
+      "shortName": "Lionesses",
+      "fullName": "England Women",
+      "league": "Intl",
+      "sport": "Soccer",
+      "espn": {
+        "sport": "soccer",
+        "leagues": [
+          "fifa.friendly.w",
+          "fifa.wworldq.uefa",
+          "uefa.w.nations",
+          "uefa.weuro",
+          "fifa.wwc"
+        ],
+        "teamId": "5159"
+      },
+      "accent": "#CE1124",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5159.png"
     },
     {
       "id": "mbfc",
@@ -125,11 +215,23 @@
       "sport": "Soccer",
       "espn": {
         "sport": "soccer",
-        "league": "usa.usl.1",
+        "leagues": [
+          "usa.usl.1"
+        ],
         "teamId": "21370"
       },
       "accent": "#006C5B",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21370.png"
+    },
+    {
+      "id": "mb-sirens",
+      "shortName": "Sirens",
+      "fullName": "Monterey Bay Sirens",
+      "league": "USL W",
+      "sport": "Soccer",
+      "static": "data/sirens-fixtures.json",
+      "accent": "#006C5B",
+      "logo": "https://cdn-production.fast-rapidreplay.com/upload/images/20260510-f7223684e8734b706a2c292188d9fc7f918f4136.png"
     },
     {
       "id": "stan-sb",
@@ -139,7 +241,9 @@
       "sport": "Softball",
       "espn": {
         "sport": "baseball",
-        "league": "college-softball",
+        "leagues": [
+          "college-softball"
+        ],
         "teamId": "476"
       },
       "accent": "#8C1515",
@@ -153,7 +257,9 @@
       "sport": "Football",
       "espn": {
         "sport": "football",
-        "league": "college-football",
+        "leagues": [
+          "college-football"
+        ],
         "teamId": "59"
       },
       "accent": "#B3A369",
@@ -161,18 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mia-761611",
-      "teamId": "mia",
-      "dateISO": "2026-05-09T17:00Z",
-      "isHome": false,
-      "opponentShort": "Toronto",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
-      "venue": "BMO Field",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "sfg-401815281",
       "teamId": "sfg",
@@ -199,6 +293,16 @@
         "Sportsnet LA",
         "BravesVision"
       ]
+    },
+    {
+      "id": "mb-sirens-static-0",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-05-09T19:00:00-07:00",
+      "isHome": true,
+      "opponentShort": "Stockton Cargo SC",
+      "opponentLogo": null,
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
     },
     {
       "id": "sje-761608",
@@ -251,6 +355,19 @@
         "Sportsnet LA",
         "BravesVision",
         "Gray Media"
+      ]
+    },
+    {
+      "id": "gsv-401856900",
+      "teamId": "gsv",
+      "dateISO": "2026-05-11T00:30Z",
+      "isHome": true,
+      "opponentShort": "Mercury",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "KPIX+",
+        "Arizona's Family 3TV"
       ]
     },
     {
@@ -333,6 +450,20 @@
       "venue": "Lumen Field",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsv-401856906",
+      "teamId": "gsv",
+      "dateISO": "2026-05-14T02:00Z",
+      "isHome": true,
+      "opponentShort": "Sky",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "WNBA League Pass",
+        "KPIX+",
+        "CW26"
       ]
     },
     {
@@ -445,6 +576,16 @@
       ]
     },
     {
+      "id": "psg-w-401871802",
+      "teamId": "psg-w",
+      "dateISO": "2026-05-16T19:00Z",
+      "isHome": false,
+      "opponentShort": "Paris FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
+      "venue": "Stade Jean Bouin",
+      "broadcasts": []
+    },
+    {
       "id": "stan-sb-401872503",
       "teamId": "stan-sb",
       "dateISO": "2026-05-16T22:25Z",
@@ -549,6 +690,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "mb-sirens-static-1",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-05-17T16:00:00-07:00",
+      "isHome": false,
+      "opponentShort": "Marin FC",
+      "opponentLogo": null,
+      "venue": "Kennelly Field",
+      "broadcasts": []
     },
     {
       "id": "atl-401815390",
@@ -663,6 +814,20 @@
       ]
     },
     {
+      "id": "gsv-401856924",
+      "teamId": "gsv",
+      "dateISO": "2026-05-22T00:00Z",
+      "isHome": false,
+      "opponentShort": "Liberty",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+      "venue": "Barclays Center",
+      "broadcasts": [
+        "Prime Video",
+        "WWOR-TV",
+        "Liberty Live"
+      ]
+    },
+    {
       "id": "atl-401815448",
       "teamId": "atl",
       "dateISO": "2026-05-22T23:15Z",
@@ -674,6 +839,19 @@
         "MLB.TV",
         "BravesVision",
         "Nationals.TV"
+      ]
+    },
+    {
+      "id": "gsv-401856928",
+      "teamId": "gsv",
+      "dateISO": "2026-05-22T23:30Z",
+      "isHome": false,
+      "opponentShort": "Fever",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+      "venue": "Gainbridge Fieldhouse",
+      "broadcasts": [
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
@@ -810,6 +988,20 @@
       ]
     },
     {
+      "id": "gsv-401856937",
+      "teamId": "gsv",
+      "dateISO": "2026-05-26T02:00Z",
+      "isHome": true,
+      "opponentShort": "Sun",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "WNBA League Pass",
+        "KPIX+",
+        "NBC Sports BO"
+      ]
+    },
+    {
       "id": "atl-401815500",
       "teamId": "atl",
       "dateISO": "2026-05-26T22:45Z",
@@ -881,6 +1073,18 @@
       ]
     },
     {
+      "id": "gsv-401856944",
+      "teamId": "gsv",
+      "dateISO": "2026-05-29T02:00Z",
+      "isHome": true,
+      "opponentShort": "Fever",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
       "id": "atl-401815536",
       "teamId": "atl",
       "dateISO": "2026-05-29T22:40Z",
@@ -919,6 +1123,16 @@
         "NBC Sports BA",
         "Rockies.TV"
       ]
+    },
+    {
+      "id": "mb-sirens-static-2",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-05-30T15:00:00-07:00",
+      "isHome": true,
+      "opponentShort": "Oakland Soul SC",
+      "opponentLogo": null,
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
     },
     {
       "id": "atl-401815551",
@@ -988,6 +1202,19 @@
       ]
     },
     {
+      "id": "gsv-401856952",
+      "teamId": "gsv",
+      "dateISO": "2026-05-31T19:30Z",
+      "isHome": true,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815584",
       "teamId": "sfg",
       "dateISO": "2026-06-01T23:40Z",
@@ -1032,6 +1259,20 @@
       ]
     },
     {
+      "id": "gsv-401856957",
+      "teamId": "gsv",
+      "dateISO": "2026-06-03T02:00Z",
+      "isHome": true,
+      "opponentShort": "Fire",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "WNBA League Pass",
+        "KPIX+",
+        "Fox 12 Plus"
+      ]
+    },
+    {
       "id": "atl-401815610",
       "teamId": "atl",
       "dateISO": "2026-06-03T23:15Z",
@@ -1059,6 +1300,16 @@
         "NBC Sports BA",
         "Brewers.TV"
       ]
+    },
+    {
+      "id": "mb-sirens-static-3",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-03T19:00:00-07:00",
+      "isHome": false,
+      "opponentShort": "Pleasanton RAGE",
+      "opponentLogo": null,
+      "venue": "Stanford Medicine Sports Complex",
+      "broadcasts": []
     },
     {
       "id": "sfg-401815626",
@@ -1089,6 +1340,18 @@
       ]
     },
     {
+      "id": "gsv-401856962",
+      "teamId": "gsv",
+      "dateISO": "2026-06-05T01:00Z",
+      "isHome": false,
+      "opponentShort": "Lynx",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+      "venue": "Target Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
       "id": "sfg-401815638",
       "teamId": "sfg",
       "dateISO": "2026-06-05T18:20Z",
@@ -1101,6 +1364,16 @@
         "NBC Sports BA",
         "Marquee Sports Net"
       ]
+    },
+    {
+      "id": "engw-761253",
+      "teamId": "engw",
+      "dateISO": "2026-06-05T19:00Z",
+      "isHome": false,
+      "opponentShort": "Spain",
+      "opponentLogo": null,
+      "venue": "Estadi Mallorca Son Moix",
+      "broadcasts": []
     },
     {
       "id": "atl-401815631",
@@ -1130,6 +1403,18 @@
       ]
     },
     {
+      "id": "gsv-401856967",
+      "teamId": "gsv",
+      "dateISO": "2026-06-06T19:00Z",
+      "isHome": false,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Michelob ULTRA Arena",
+      "broadcasts": [
+        "ABC"
+      ]
+    },
+    {
       "id": "atl-401815646",
       "teamId": "atl",
       "dateISO": "2026-06-06T20:10Z",
@@ -1141,6 +1426,32 @@
         "MLB.TV",
         "BravesVision"
       ]
+    },
+    {
+      "id": "uswnt-401870096",
+      "teamId": "uswnt",
+      "dateISO": "2026-06-06T21:30Z",
+      "isHome": false,
+      "opponentShort": "Brazil",
+      "opponentLogo": null,
+      "venue": "Neo Química Arena",
+      "broadcasts": [
+        "TBS",
+        "HBO Max",
+        "Tele",
+        "Universo",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "mb-sirens-static-4",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-06T19:00:00-07:00",
+      "isHome": true,
+      "opponentShort": "Marin FC",
+      "opponentLogo": null,
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
     },
     {
       "id": "atl-401815661",
@@ -1183,6 +1494,16 @@
       ]
     },
     {
+      "id": "engw-761261",
+      "teamId": "engw",
+      "dateISO": "2026-06-09T19:00Z",
+      "isHome": true,
+      "opponentShort": "Ukraine",
+      "opponentLogo": null,
+      "venue": "Hill Dickinson Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401815689",
       "teamId": "atl",
       "dateISO": "2026-06-09T23:40Z",
@@ -1198,6 +1519,20 @@
       ]
     },
     {
+      "id": "uswnt-401870097",
+      "teamId": "uswnt",
+      "dateISO": "2026-06-10T00:30Z",
+      "isHome": false,
+      "opponentShort": "Brazil",
+      "opponentLogo": null,
+      "venue": "Arena Castelão",
+      "broadcasts": [
+        "TNT",
+        "HBO Max",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815695",
       "teamId": "sfg",
       "dateISO": "2026-06-10T01:00Z",
@@ -1210,6 +1545,18 @@
         "MLB.TV",
         "NBC Sports BA",
         "Nationals.TV"
+      ]
+    },
+    {
+      "id": "gsv-401856977",
+      "teamId": "gsv",
+      "dateISO": "2026-06-10T02:00Z",
+      "isHome": true,
+      "opponentShort": "Mercury",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "AZ Family Sports Net"
       ]
     },
     {
@@ -1253,6 +1600,16 @@
       ]
     },
     {
+      "id": "mb-sirens-static-5",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-10T19:00:00-07:00",
+      "isHome": false,
+      "opponentShort": "Stockton Cargo SC",
+      "opponentLogo": null,
+      "venue": "Saint Mary's High School Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401815716",
       "teamId": "atl",
       "dateISO": "2026-06-11T23:40Z",
@@ -1276,6 +1633,18 @@
       "venue": "Citi Field",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsv-401856985",
+      "teamId": "gsv",
+      "dateISO": "2026-06-13T02:00Z",
+      "isHome": false,
+      "opponentShort": "Storm",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+      "venue": "Climate Pledge Arena",
+      "broadcasts": [
+        "ION"
       ]
     },
     {
@@ -1306,6 +1675,16 @@
         "BravesVision",
         "SNY"
       ]
+    },
+    {
+      "id": "mb-sirens-static-6",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-13T19:00:00-07:00",
+      "isHome": true,
+      "opponentShort": "San Juan SC",
+      "opponentLogo": null,
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
     },
     {
       "id": "sfg-401815746",
@@ -1347,6 +1726,20 @@
       "broadcasts": [
         "ABC",
         "MLB.TV"
+      ]
+    },
+    {
+      "id": "gsv-401856994",
+      "teamId": "gsv",
+      "dateISO": "2026-06-16T02:00Z",
+      "isHome": true,
+      "opponentShort": "Sparks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Peacock",
+        "NBCSN",
+        "Spectrum Sports Net"
       ]
     },
     {
@@ -1420,6 +1813,19 @@
       ]
     },
     {
+      "id": "gsv-401856998",
+      "teamId": "gsv",
+      "dateISO": "2026-06-18T02:00Z",
+      "isHome": true,
+      "opponentShort": "Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "KPIX+",
+        "KFAA-TV"
+      ]
+    },
+    {
       "id": "sfg-401815805",
       "teamId": "sfg",
       "dateISO": "2026-06-18T23:15Z",
@@ -1475,6 +1881,28 @@
         "BravesVision",
         "Brewers.TV"
       ]
+    },
+    {
+      "id": "gsv-401857005",
+      "teamId": "gsv",
+      "dateISO": "2026-06-20T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lynx",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "ION"
+      ]
+    },
+    {
+      "id": "mb-sirens-static-7",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-19T19:00:00-07:00",
+      "isHome": false,
+      "opponentShort": "California Storm",
+      "opponentLogo": null,
+      "venue": "Davis Legacy Soccer Complex",
+      "broadcasts": []
     },
     {
       "id": "sfg-401815829",
@@ -1544,6 +1972,29 @@
         "NBC Sports BA",
         "Marlins.TV"
       ]
+    },
+    {
+      "id": "gsv-401857009",
+      "teamId": "gsv",
+      "dateISO": "2026-06-21T20:00Z",
+      "isHome": false,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Michelob ULTRA Arena",
+      "broadcasts": [
+        "CBS",
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "mb-sirens-static-8",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-21T15:00:00-07:00",
+      "isHome": false,
+      "opponentShort": "Oakland Soul SC",
+      "opponentLogo": null,
+      "venue": "Merritt College",
+      "broadcasts": []
     }
   ],
   "errors": []
