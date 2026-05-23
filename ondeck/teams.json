@@ -6,7 +6,7 @@
       "fullName": "San Francisco Giants",
       "league": "MLB",
       "sport": "Baseball",
-      "espn": { "sport": "baseball", "league": "mlb", "teamId": "26" },
+      "espn": { "sport": "baseball", "leagues": ["mlb"], "teamId": "26" },
       "accent": "#FD5A1E",
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png"
     },
@@ -16,7 +16,7 @@
       "fullName": "Atlanta Braves",
       "league": "MLB",
       "sport": "Baseball",
-      "espn": { "sport": "baseball", "league": "mlb", "teamId": "15" },
+      "espn": { "sport": "baseball", "leagues": ["mlb"], "teamId": "15" },
       "accent": "#CE1141",
       "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png"
     },
@@ -26,7 +26,7 @@
       "fullName": "San Francisco 49ers",
       "league": "NFL",
       "sport": "Football",
-      "espn": { "sport": "football", "league": "nfl", "teamId": "25" },
+      "espn": { "sport": "football", "leagues": ["nfl"], "teamId": "25" },
       "accent": "#AA0000",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png"
     },
@@ -36,7 +36,7 @@
       "fullName": "Golden State Warriors",
       "league": "NBA",
       "sport": "Basketball",
-      "espn": { "sport": "basketball", "league": "nba", "teamId": "9" },
+      "espn": { "sport": "basketball", "leagues": ["nba"], "teamId": "9" },
       "accent": "#1D428A",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
     },
@@ -46,7 +46,7 @@
       "fullName": "Golden State Valkyries",
       "league": "WNBA",
       "sport": "Basketball",
-      "espn": { "sport": "basketball", "league": "wnba", "teamId": "129689" },
+      "espn": { "sport": "basketball", "leagues": ["wnba"], "teamId": "129689" },
       "accent": "#B38FCF",
       "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/gs.png"
     },
@@ -56,7 +56,7 @@
       "fullName": "San Jose Sharks",
       "league": "NHL",
       "sport": "Hockey",
-      "espn": { "sport": "hockey", "league": "nhl", "teamId": "18" },
+      "espn": { "sport": "hockey", "leagues": ["nhl"], "teamId": "18" },
       "accent": "#006D75",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png"
     },
@@ -66,7 +66,7 @@
       "fullName": "San Jose Earthquakes",
       "league": "MLS",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "usa.1", "teamId": "191" },
+      "espn": { "sport": "soccer", "leagues": ["usa.1"], "teamId": "191" },
       "accent": "#0067A0",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png"
     },
@@ -76,7 +76,7 @@
       "fullName": "Inter Miami CF",
       "league": "MLS",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "usa.1", "teamId": "20232" },
+      "espn": { "sport": "soccer", "leagues": ["usa.1"], "teamId": "20232" },
       "accent": "#F7B5CD",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
     },
@@ -86,7 +86,7 @@
       "fullName": "Bay FC",
       "league": "NWSL",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "usa.nwsl", "teamId": "22187" },
+      "espn": { "sport": "soccer", "leagues": ["usa.nwsl"], "teamId": "22187" },
       "accent": "#1A4B7F",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22187.png"
     },
@@ -96,7 +96,7 @@
       "fullName": "Paris Saint-Germain",
       "league": "D1 Arkema",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "fra.w.1", "teamId": "19258" },
+      "espn": { "sport": "soccer", "leagues": ["fra.w.1", "uefa.wchampions"], "teamId": "19258" },
       "accent": "#00003E",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19258.png"
     },
@@ -106,7 +106,18 @@
       "fullName": "United States Women",
       "league": "Intl",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "fifa.friendly.w", "teamId": "2765" },
+      "espn": {
+        "sport": "soccer",
+        "leagues": [
+          "fifa.friendly.w",
+          "fifa.shebelieves",
+          "concacaf.womens.championship",
+          "concacaf.w.gold",
+          "fifa.wwc",
+          "fifa.w.olympics"
+        ],
+        "teamId": "2765"
+      },
       "accent": "#213065",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2765.png"
     },
@@ -116,7 +127,17 @@
       "fullName": "England Women",
       "league": "Intl",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "fifa.friendly.w", "teamId": "5159" },
+      "espn": {
+        "sport": "soccer",
+        "leagues": [
+          "fifa.friendly.w",
+          "fifa.wworldq.uefa",
+          "uefa.w.nations",
+          "uefa.weuro",
+          "fifa.wwc"
+        ],
+        "teamId": "5159"
+      },
       "accent": "#CE1124",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5159.png"
     },
@@ -126,9 +147,19 @@
       "fullName": "Monterey Bay F.C.",
       "league": "USL Ch",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "league": "usa.usl.1", "teamId": "21370" },
+      "espn": { "sport": "soccer", "leagues": ["usa.usl.1"], "teamId": "21370" },
       "accent": "#006C5B",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21370.png"
+    },
+    {
+      "id": "mb-sirens",
+      "shortName": "Sirens",
+      "fullName": "Monterey Bay Sirens",
+      "league": "USL W",
+      "sport": "Soccer",
+      "static": "data/sirens-fixtures.json",
+      "accent": "#006C5B",
+      "logo": "https://cdn-production.fast-rapidreplay.com/upload/images/20260510-f7223684e8734b706a2c292188d9fc7f918f4136.png"
     },
     {
       "id": "stan-sb",
@@ -136,7 +167,7 @@
       "fullName": "Stanford Cardinal Softball",
       "league": "NCAA",
       "sport": "Softball",
-      "espn": { "sport": "baseball", "league": "college-softball", "teamId": "476" },
+      "espn": { "sport": "baseball", "leagues": ["college-softball"], "teamId": "476" },
       "accent": "#8C1515",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png"
     },
@@ -146,7 +177,7 @@
       "fullName": "Georgia Tech Yellow Jackets",
       "league": "NCAA",
       "sport": "Football",
-      "espn": { "sport": "football", "league": "college-football", "teamId": "59" },
+      "espn": { "sport": "football", "leagues": ["college-football"], "teamId": "59" },
       "accent": "#B3A369",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png"
     }

@@ -1,0 +1,18 @@
+{
+  "_comment": "Hand-entered fixtures for teams ESPN doesn't cover. Sirens are USL W League — the league has no ESPN/TheSportsDB presence and SportsEngine's public API only returns games scheduled for streaming. Source: https://www.mbfcsirens.com/schedule/. Update this file if a game time changes.",
+  "teamId": "mb-sirens",
+  "source": "https://www.mbfcsirens.com/schedule/",
+  "lastVerified": "2026-05-23",
+  "games": [
+    { "dateISO": "2026-05-09T19:00:00-07:00", "isHome": true,  "opponentShort": "Stockton Cargo SC", "venue": "Cardinale Stadium" },
+    { "dateISO": "2026-05-17T16:00:00-07:00", "isHome": false, "opponentShort": "Marin FC",          "venue": "Kennelly Field" },
+    { "dateISO": "2026-05-30T15:00:00-07:00", "isHome": true,  "opponentShort": "Oakland Soul SC",   "venue": "Cardinale Stadium" },
+    { "dateISO": "2026-06-03T19:00:00-07:00", "isHome": false, "opponentShort": "Pleasanton RAGE",   "venue": "Stanford Medicine Sports Complex" },
+    { "dateISO": "2026-06-06T19:00:00-07:00", "isHome": true,  "opponentShort": "Marin FC",          "venue": "Cardinale Stadium" },
+    { "dateISO": "2026-06-10T19:00:00-07:00", "isHome": false, "opponentShort": "Stockton Cargo SC", "venue": "Saint Mary's High School Stadium" },
+    { "dateISO": "2026-06-13T19:00:00-07:00", "isHome": true,  "opponentShort": "San Juan SC",       "venue": "Cardinale Stadium" },
+    { "dateISO": "2026-06-19T19:00:00-07:00", "isHome": false, "opponentShort": "California Storm",  "venue": "Davis Legacy Soccer Complex" },
+    { "dateISO": "2026-06-21T15:00:00-07:00", "isHome": false, "opponentShort": "Oakland Soul SC",   "venue": "Merritt College" },
+    { "dateISO": "2026-06-27T19:00:00-07:00", "isHome": true,  "opponentShort": "Pleasanton RAGE",   "venue": "Cardinale Stadium" }
+  ]
+}

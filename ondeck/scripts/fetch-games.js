@@ -25,6 +25,17 @@
  * way. This was added after the initial release shipped with only past
  * games for non-MLB teams — the user reported "only MLB teams have future
  * games" and probing showed the team schedule endpoint was the cause.
+ *
+ * Each team declares an array of `espn.leagues` (competition slugs). We pull
+ * schedule+scoreboard for each one and dedupe by event.id — the same physical
+ * match has a single id even if multiple slugs surface it. National teams
+ * are the motivating case (friendlies, WCQ, Euros, Nations League, etc., all
+ * live under different slugs), but clubs use it too where they play in
+ * multiple competitions (e.g. PSG-W in D1 Arkema + Women's Champions League).
+ *
+ * Teams ESPN doesn't cover (e.g. USL W League — no ESPN/TheSportsDB presence,
+ * SportsEngine's public API only returns games scheduled for streaming) can
+ * instead point `static` at a hand-entered fixtures file (see data/*-fixtures.json).
  */
 
 import fs from 'node:fs/promises';
@@ -47,11 +58,12 @@ async function fetchJSON(url) {
   return res.json();
 }
 
-async function fetchTeamSchedule(team) {
-  const { sport, league, teamId } = team.espn;
+async function fetchTeamSchedule(team, league) {
+  const { sport, teamId } = team.espn;
   const url = `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/teams/${teamId}/schedule`;
   const data = await fetchJSON(url);
   return {
+    league,
     events: data.events ?? [],
     // Cross-check: the team name ESPN actually returned for this ID. The
     // run loop surfaces this so wrong-team-ID bugs become visible on the
@@ -177,42 +189,93 @@ async function main() {
   for (const team of config.teams) {
     process.stdout.write(`→ ${team.shortName.padEnd(14)}`);
     try {
-      // Pull both sources in parallel:
+      let kept = 0;
+
+      // Static fixtures: for teams ESPN doesn't cover (e.g. small / new
+      // leagues like the USL W League). Hand-entered JSON keyed by team id;
+      // see ondeck/data/*-fixtures.json. Filter to the same window as ESPN.
+      if (team.static) {
+        const staticRaw = await fs.readFile(team.static, 'utf-8');
+        const staticData = JSON.parse(staticRaw);
+        const now = new Date();
+        const min = new Date(now); min.setDate(now.getDate() - window.pastDays);
+        const max = new Date(now); max.setDate(now.getDate() + window.futureDays);
+        let inWindow = 0;
+        for (const [i, g] of (staticData.games ?? []).entries()) {
+          const date = new Date(g.dateISO);
+          if (Number.isNaN(date.getTime()) || date < min || date > max) continue;
+          allGames.push({
+            id: `${team.id}-static-${i}`,
+            teamId: team.id,
+            dateISO: g.dateISO,
+            isHome: !!g.isHome,
+            opponentShort: g.opponentShort ?? 'TBD',
+            opponentLogo: g.opponentLogo ?? null,
+            venue: g.venue ?? null,
+            broadcasts: g.broadcasts ?? [],
+          });
+          inWindow++;
+        }
+        kept += inWindow;
+        const total = staticData.games?.length ?? 0;
+        console.log(`  ${kept} in window  (static=${total}, ${inWindow} in window) [verified ${staticData.lastVerified ?? '?'}]`);
+        await new Promise(r => setTimeout(r, 50));
+        continue;
+      }
+
+      const leagues = team.espn.leagues;
+      // For each league this team plays in, pull both sources in parallel:
       //   - team /schedule:  authoritative for past games; sometimes future too (MLB)
       //   - league /scoreboard for the future window: fills the gap for leagues whose
       //     team endpoint is past-only (MLS/NWSL/USL/college-softball).
-      const [scheduleRes, scoreboardEvents] = await Promise.all([
-        fetchTeamSchedule(team),
-        fetchLeagueScoreboard(team.espn.sport, team.espn.league, window.futureDays),
-      ]);
-      const { events: teamEvents, espnTeamName } = scheduleRes;
-      const futureForUs = scoreboardEvents.filter(e => eventInvolvesTeam(e, team.espn.teamId));
+      // Parallelize all (league × source) calls for this team. Scoreboards are
+      // de-duped across teams by the per-(sport,league) cache, so multi-league
+      // teams only pay the schedule-call cost once per league they're in.
+      const perLeague = await Promise.all(leagues.map(async league => {
+        const [scheduleRes, scoreboardEvents] = await Promise.all([
+          fetchTeamSchedule(team, league),
+          fetchLeagueScoreboard(team.espn.sport, league, window.futureDays),
+        ]);
+        const futureForUs = scoreboardEvents.filter(e => eventInvolvesTeam(e, team.espn.teamId));
+        return { ...scheduleRes, futureForUs };
+      }));
 
-      // Dedupe: prefer the team-endpoint version when both are present.
+      // Dedupe across all (league × source) results by event id. ESPN gives the
+      // same event the same id regardless of which competition slug surfaces it.
       const merged = new Map();
-      for (const e of teamEvents)  merged.set(String(e.id), e);
-      for (const e of futureForUs) if (!merged.has(String(e.id))) merged.set(String(e.id), e);
+      let fromTeam = 0, fromSb = 0;
+      let espnTeamName = null;
+      let crossCheckOk = true;
+      for (const { league, events: teamEvents, espnTeamName: nm, futureForUs } of perLeague) {
+        fromTeam += teamEvents.length;
+        fromSb += futureForUs.length;
+        for (const e of teamEvents)  merged.set(String(e.id), e);
+        for (const e of futureForUs) if (!merged.has(String(e.id))) merged.set(String(e.id), e);
+        // First non-null name wins for the summary; check every league's name
+        // against the configured fullName so a wrong teamId in any one league
+        // is visible.
+        if (nm) {
+          espnTeamName ??= nm;
+          const expected = team.fullName.toLowerCase();
+          const actual = nm.toLowerCase();
+          const ok = actual === expected
+                  || expected.includes(actual)
+                  || actual.includes(expected);
+          if (!ok) {
+            crossCheckOk = false;
+            process.stderr.write(`  (name mismatch in ${league}: expected "${team.fullName}", got "${nm}")\n`);
+          }
+        }
+      }
 
-      let kept = 0;
       for (const event of merged.values()) {
         const game = transformEvent(event, team, window);
         if (game) { allGames.push(game); kept++; }
       }
 
-      // Cross-check: surface ESPN's reported team name so wrong teamIds are
-      // immediately visible. Also report how many came from each source.
-      const fromTeam = teamEvents.length;
-      const fromSb = futureForUs.length;
-      let crossCheck = '';
-      if (espnTeamName) {
-        const expected = team.fullName.toLowerCase();
-        const actual = espnTeamName.toLowerCase();
-        const ok = actual === expected
-                || expected.includes(actual)
-                || actual.includes(expected);
-        crossCheck = `  [${ok ? '✓' : '⚠'} ESPN: ${espnTeamName}]`;
-      }
-      console.log(`  ${kept} in window  (schedule=${fromTeam}, scoreboard-future=${fromSb})${crossCheck}`);
+      const crossCheck = espnTeamName ? `  [${crossCheckOk ? '✓' : '⚠'} ESPN: ${espnTeamName}]` : '';
+      const leagueSuffix = leagues.length > 1 ? ` across ${leagues.length} leagues` : '';
+      console.log(`  ${kept} in window  (schedule=${fromTeam}, scoreboard-future=${fromSb})${leagueSuffix}${crossCheck}`);
     } catch (err) {
       console.log(`  ✗ ${err.message}`);
       errors.push({ team: team.shortName, error: err.message });

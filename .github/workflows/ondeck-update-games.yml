@@ -12,6 +12,7 @@ on:
     paths:
       - 'ondeck/teams.json'
       - 'ondeck/scripts/**'
+      - 'ondeck/data/*-fixtures.json'
       - '.github/workflows/ondeck-update-games.yml'
 
 permissions:
