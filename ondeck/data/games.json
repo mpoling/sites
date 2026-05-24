@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T02:11:27.114Z",
+  "generatedAt": "2026-05-24T14:41:43.992Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,18 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761608",
-      "teamId": "sje",
-      "dateISO": "2026-05-10T02:30Z",
-      "isHome": true,
-      "opponentShort": "Vancouver",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "bay-fc-401853906",
       "teamId": "bay-fc",
@@ -860,6 +848,28 @@
       ]
     },
     {
+      "id": "sje-761653",
+      "teamId": "sje",
+      "dateISO": "2026-05-24T01:30Z",
+      "isHome": false,
+      "opponentShort": "Portland",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+      "venue": "Providence Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "mbfc-401841861",
+      "teamId": "mbfc",
+      "dateISO": "2026-05-24T02:00Z",
+      "isHome": true,
+      "opponentShort": "Birmingham",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19405.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "sfg-401815483",
       "teamId": "sfg",
       "dateISO": "2026-05-24T20:05Z",
@@ -897,6 +907,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15360.png",
       "venue": "PayPal Park",
       "broadcasts": [
+        "ESPN2",
         "ESPN Deportes",
         "ESPN+"
       ]
