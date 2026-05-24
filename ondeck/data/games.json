@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T23:57:22.676Z",
+  "generatedAt": "2026-05-24T02:11:27.114Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -231,7 +231,7 @@
       "sport": "Soccer",
       "static": "data/sirens-fixtures.json",
       "accent": "#006C5B",
-      "logo": "https://cdn-production.fast-rapidreplay.com/upload/images/20260510-f7223684e8734b706a2c292188d9fc7f918f4136.png"
+      "logo": "https://www.mbfcsirens.com/wp-content/uploads/sites/354/2026/03/SirensWebLogo.png"
     },
     {
       "id": "stan-sb",
@@ -267,43 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815281",
-      "teamId": "sfg",
-      "dateISO": "2026-05-10T01:05Z",
-      "isHome": true,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "atl-401815279",
-      "teamId": "atl",
-      "dateISO": "2026-05-10T01:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "Sportsnet LA",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "mb-sirens-static-0",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-05-09T19:00:00-07:00",
-      "isHome": true,
-      "opponentShort": "Stockton Cargo SC",
-      "opponentLogo": null,
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
     {
       "id": "sje-761608",
       "teamId": "sje",
@@ -897,28 +860,6 @@
       ]
     },
     {
-      "id": "sje-761653",
-      "teamId": "sje",
-      "dateISO": "2026-05-24T01:30Z",
-      "isHome": false,
-      "opponentShort": "Portland",
-      "opponentLogo": null,
-      "venue": "Providence Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401841861",
-      "teamId": "mbfc",
-      "dateISO": "2026-05-24T02:00Z",
-      "isHome": true,
-      "opponentShort": "Birmingham",
-      "opponentLogo": null,
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "sfg-401815483",
       "teamId": "sfg",
       "dateISO": "2026-05-24T20:05Z",
@@ -953,7 +894,7 @@
       "dateISO": "2026-05-24T21:00Z",
       "isHome": true,
       "opponentShort": "Chicago",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15360.png",
       "venue": "PayPal Park",
       "broadcasts": [
         "ESPN Deportes",
@@ -966,7 +907,7 @@
       "dateISO": "2026-05-24T23:00Z",
       "isHome": true,
       "opponentShort": "Philadelphia",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
       "venue": "Nu Stadium",
       "broadcasts": [
         "FOX",
@@ -1104,7 +1045,7 @@
       "dateISO": "2026-05-29T23:00Z",
       "isHome": false,
       "opponentShort": "Orlando",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18206.png",
       "venue": "Inter&Co Stadium",
       "broadcasts": [
         "NWSL+"
@@ -1167,7 +1108,7 @@
       "dateISO": "2026-05-31T02:00Z",
       "isHome": true,
       "opponentShort": "Loudoun",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19410.png",
       "venue": "Cardinale Stadium",
       "broadcasts": [
         "ESPN+"
@@ -1371,7 +1312,7 @@
       "dateISO": "2026-06-05T19:00Z",
       "isHome": false,
       "opponentShort": "Spain",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "venue": "Estadi Mallorca Son Moix",
       "broadcasts": []
     },
@@ -1433,7 +1374,7 @@
       "dateISO": "2026-06-06T21:30Z",
       "isHome": false,
       "opponentShort": "Brazil",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "venue": "Neo Química Arena",
       "broadcasts": [
         "TBS",
@@ -1499,7 +1440,7 @@
       "dateISO": "2026-06-09T19:00Z",
       "isHome": true,
       "opponentShort": "Ukraine",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
       "venue": "Hill Dickinson Stadium",
       "broadcasts": []
     },
@@ -1524,7 +1465,7 @@
       "dateISO": "2026-06-10T00:30Z",
       "isHome": false,
       "opponentShort": "Brazil",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "venue": "Arena Castelão",
       "broadcasts": [
         "TNT",
@@ -1593,7 +1534,7 @@
       "dateISO": "2026-06-11T02:00Z",
       "isHome": true,
       "opponentShort": "Sporting JAX",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131578.png",
       "venue": "Cardinale Stadium",
       "broadcasts": [
         "ESPN+"
@@ -1806,7 +1747,7 @@
       "dateISO": "2026-06-18T00:30Z",
       "isHome": false,
       "opponentShort": "Tulsa ",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18446.png",
       "venue": "ONEOK Field",
       "broadcasts": [
         "ESPN+"
@@ -1938,7 +1879,7 @@
       "dateISO": "2026-06-21T02:00Z",
       "isHome": true,
       "opponentShort": "El Paso",
-      "opponentLogo": null,
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19407.png",
       "venue": "Cardinale Stadium",
       "broadcasts": [
         "ESPN+"
@@ -1995,6 +1936,18 @@
       "opponentLogo": null,
       "venue": "Merritt College",
       "broadcasts": []
+    },
+    {
+      "id": "atl-401815865",
+      "teamId": "atl",
+      "dateISO": "2026-06-23T02:00Z",
+      "isHome": false,
+      "opponentShort": "Padres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
+      "venue": "Petco Park",
+      "broadcasts": [
+        "ESPN"
+      ]
     }
   ],
   "errors": []
