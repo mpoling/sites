@@ -6,17 +6,16 @@ via the Cloudflare worker that maps subdomains to subdirectories.
 
 ## How it works
 
-```
-┌────────────────┐   daily    ┌────────────────┐  commits  ┌──────────────────┐
-│ teams.json     │ ─────────▶ │ GitHub Actions │ ────────▶ │ data/games.json  │
-│ (you edit it)  │            │ 13:07 UTC cron │           │ (auto-generated) │
-└────────────────┘            └────────────────┘           └────────┬─────────┘
-                                                                    │ fetch()
-                                                                    ▼
-                                                           ┌──────────────────┐
-                                                           │ ondeck.<domain>  │
-                                                           │ static page      │
-                                                           └──────────────────┘
+```mermaid
+flowchart LR
+    teams["teams.json<br/>(you edit it)"]
+    cron["GitHub Actions<br/>13:07 UTC cron"]
+    games["data/games.json<br/>(auto-generated)"]
+    page["ondeck.&lt;domain&gt;<br/>static page"]
+
+    teams -->|daily| cron
+    cron -->|commits| games
+    games -->|fetch&#40;&#41;| page
 ```
 
 The page itself does no live ESPN calls — it only reads `data/games.json`,
@@ -38,8 +37,10 @@ sites/
     ├── styles.css
     ├── app.js
     ├── teams.json                  # source of truth: which teams to track
+    ├── DATA-SOURCES.md             # what to do when ESPN doesn't cover a team
     ├── data/
-    │   └── games.json              # generated — do not hand-edit
+    │   ├── games.json              # generated — do not hand-edit
+    │   └── *-fixtures.json         # hand-entered fallback fixtures (rare)
     └── scripts/
         └── fetch-games.js
 ```
@@ -81,7 +82,10 @@ Edit `ondeck/teams.json`. The full file shape is:
       "sport":     "Baseball",
       "espn": {
         "sport":   "baseball",              // ESPN's sport segment
-        "league":  "mlb",                   // ESPN's league segment
+        "leagues": ["mlb"],                 // ESPN league slugs (array — one
+                                            //   per competition the team plays
+                                            //   in; e.g. ["fra.w.1",
+                                            //   "uefa.wchampions"] for PSG-W)
         "teamId":  "26"                     // ESPN's numeric team ID
       },
       "accent":    "#FD5A1E",               // team color stripe in the UI
@@ -103,6 +107,12 @@ roster.
 **Finding ESPN team IDs**: hit
 `https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/teams` in a
 browser and grab the `id` of the team you want.
+
+**If ESPN doesn't have your team** (small / new / regional leagues): see
+[DATA-SOURCES.md](./DATA-SOURCES.md) for the decision tree and the
+hand-entered `static` fixtures path used for the Monterey Bay Sirens
+(USL W League). That doc also captures the SportsEngine / modular11 /
+SE Play investigation so we don't have to redo it.
 
 **Verifying the team you added**: after the workflow runs (or after running
 `fetch-games.js` locally), look at the per-team line in the output:
