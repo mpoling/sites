@@ -150,7 +150,12 @@ function transformEvent(event, team, window) {
                 ?? opponent.team?.name
                 ?? opponent.team?.displayName
                 ?? 'TBD',
-    opponentLogo: opponent.team?.logos?.[0]?.href ?? null,
+    // ESPN returns logos in two shapes:
+    //   - team /schedule:  competitor.team.logos  (array of {href, rel, ...})
+    //   - league /scoreboard: competitor.team.logo (singular string)
+    // Future MLS/NWSL events come from the scoreboard path, so without the
+    // singular-string fallback their opponents render with no logo.
+    opponentLogo: opponent.team?.logos?.[0]?.href ?? opponent.team?.logo ?? null,
     venue: comp.venue?.fullName ?? null,
     broadcasts: extractBroadcasts(comp),
     // NOTE: we intentionally do not include any score / status.type.completed
