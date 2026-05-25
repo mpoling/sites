@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T14:41:43.992Z",
+  "generatedAt": "2026-05-25T15:58:23.999Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,60 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "bay-fc-401853906",
-      "teamId": "bay-fc",
-      "dateISO": "2026-05-10T20:00Z",
-      "isHome": true,
-      "opponentShort": "Utah",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19141.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Victory+"
-      ]
-    },
-    {
-      "id": "sfg-401815296",
-      "teamId": "sfg",
-      "dateISO": "2026-05-10T20:05Z",
-      "isHome": true,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "atl-401815294",
-      "teamId": "atl",
-      "dateISO": "2026-05-10T20:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "Sportsnet LA",
-        "BravesVision",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "gsv-401856900",
-      "teamId": "gsv",
-      "dateISO": "2026-05-11T00:30Z",
-      "isHome": true,
-      "opponentShort": "Mercury",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "KPIX+",
-        "Arizona's Family 3TV"
-      ]
-    },
     {
       "id": "sfg-401815303",
       "teamId": "sfg",
@@ -1958,6 +1904,36 @@
       "venue": "Petco Park",
       "broadcasts": [
         "ESPN"
+      ]
+    },
+    {
+      "id": "atl-401815880",
+      "teamId": "atl",
+      "dateISO": "2026-06-24T01:00Z",
+      "isHome": false,
+      "opponentShort": "Padres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
+      "venue": "Petco Park",
+      "broadcasts": [
+        "ESPN Unlmtd",
+        "MLB.TV",
+        "BravesVision",
+        "Padres.TV",
+        "Gray Media"
+      ]
+    },
+    {
+      "id": "sfg-401815879",
+      "teamId": "sfg",
+      "dateISO": "2026-06-24T01:45Z",
+      "isHome": true,
+      "opponentShort": "Athletics",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "NBC Sports CA"
       ]
     }
   ],
