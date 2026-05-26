@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T15:58:23.999Z",
+  "generatedAt": "2026-05-26T16:50:58.598Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,20 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815303",
-      "teamId": "sfg",
-      "dateISO": "2026-05-12T02:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Sportsnet LA"
-      ]
-    },
     {
       "id": "atl-401815305",
       "teamId": "atl",
@@ -1454,6 +1440,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "AZ Family Sports Net"
       ]
     },
@@ -1934,6 +1921,49 @@
         "MLB.TV",
         "NBC Sports BA",
         "NBC Sports CA"
+      ]
+    },
+    {
+      "id": "atl-401815895",
+      "teamId": "atl",
+      "dateISO": "2026-06-25T00:40Z",
+      "isHome": false,
+      "opponentShort": "Padres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
+      "venue": "Petco Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Padres.TV"
+      ]
+    },
+    {
+      "id": "sfg-401815894",
+      "teamId": "sfg",
+      "dateISO": "2026-06-25T01:45Z",
+      "isHome": true,
+      "opponentShort": "Athletics",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "NBC Sports CA"
+      ]
+    },
+    {
+      "id": "gsv-401857020",
+      "teamId": "gsv",
+      "dateISO": "2026-06-25T02:00Z",
+      "isHome": true,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "USA Net",
+        "KPIX+",
+        "Atlanta News First",
+        "Victory+ ATL"
       ]
     }
   ],
