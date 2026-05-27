@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T16:50:58.598Z",
+  "generatedAt": "2026-05-27T16:43:57.835Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,36 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815305",
-      "teamId": "atl",
-      "dateISO": "2026-05-12T23:15Z",
-      "isHome": true,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "Marquee Sports Net",
-        "BravesVision",
-        "Gray Media",
-        "TBS"
-      ]
-    },
-    {
-      "id": "sfg-401815317",
-      "teamId": "sfg",
-      "dateISO": "2026-05-13T02:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Sportsnet LA"
-      ]
-    },
     {
       "id": "atl-401815320",
       "teamId": "atl",
@@ -1964,6 +1934,20 @@
         "KPIX+",
         "Atlanta News First",
         "Victory+ ATL"
+      ]
+    },
+    {
+      "id": "sfg-401815905",
+      "teamId": "sfg",
+      "dateISO": "2026-06-25T19:45Z",
+      "isHome": true,
+      "opponentShort": "Athletics",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "NBC Sports CA"
       ]
     }
   ],
