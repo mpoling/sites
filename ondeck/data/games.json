@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T16:43:57.835Z",
+  "generatedAt": "2026-05-28T17:00:54.116Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,72 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815320",
-      "teamId": "atl",
-      "dateISO": "2026-05-13T23:15Z",
-      "isHome": true,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "Marquee Sports Net",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "mia-761619",
-      "teamId": "mia",
-      "dateISO": "2026-05-13T23:30Z",
-      "isHome": false,
-      "opponentShort": "Cincinnati",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
-      "venue": "TQL Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sje-761626",
-      "teamId": "sje",
-      "dateISO": "2026-05-14T01:30Z",
-      "isHome": false,
-      "opponentShort": "Seattle",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png",
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "gsv-401856906",
-      "teamId": "gsv",
-      "dateISO": "2026-05-14T02:00Z",
-      "isHome": true,
-      "opponentShort": "Sky",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "CW26"
-      ]
-    },
-    {
-      "id": "sfg-401815332",
-      "teamId": "sfg",
-      "dateISO": "2026-05-14T02:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Sportsnet LA"
-      ]
-    },
     {
       "id": "atl-401815334",
       "teamId": "atl",
@@ -1411,7 +1345,8 @@
       "venue": "Chase Center",
       "broadcasts": [
         "WNBA League Pass",
-        "AZ Family Sports Net"
+        "AZ Family Sports Net",
+        "Merc+"
       ]
     },
     {
@@ -1948,6 +1883,46 @@
         "MLB.TV",
         "NBC Sports BA",
         "NBC Sports CA"
+      ]
+    },
+    {
+      "id": "gsv-401857026",
+      "teamId": "gsv",
+      "dateISO": "2026-06-27T02:00Z",
+      "isHome": true,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "ION"
+      ]
+    },
+    {
+      "id": "sfg-401815919",
+      "teamId": "sfg",
+      "dateISO": "2026-06-27T02:15Z",
+      "isHome": true,
+      "opponentShort": "Braves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "atl-401815919",
+      "teamId": "atl",
+      "dateISO": "2026-06-27T02:15Z",
+      "isHome": false,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
       ]
     }
   ],
