@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T17:00:54.116Z",
+  "generatedAt": "2026-05-29T16:52:03.852Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,35 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815334",
-      "teamId": "atl",
-      "dateISO": "2026-05-14T23:15Z",
-      "isHome": true,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "Marquee Sports Net",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "sfg-401815343",
-      "teamId": "sfg",
-      "dateISO": "2026-05-15T02:10Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "MLB Net",
-        "NBC Sports BA",
-        "Sportsnet LA"
-      ]
-    },
     {
       "id": "stan-sb-401872458",
       "teamId": "stan-sb",
@@ -1323,7 +1294,7 @@
     {
       "id": "sfg-401815695",
       "teamId": "sfg",
-      "dateISO": "2026-06-10T01:00Z",
+      "dateISO": "2026-06-10T01:45Z",
       "isHome": true,
       "opponentShort": "Nationals",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
@@ -1737,7 +1708,7 @@
     {
       "id": "atl-401815841",
       "teamId": "atl",
-      "dateISO": "2026-06-21T17:00Z",
+      "dateISO": "2026-06-21T17:35Z",
       "isHome": true,
       "opponentShort": "Brewers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
@@ -1801,7 +1772,7 @@
     {
       "id": "atl-401815880",
       "teamId": "atl",
-      "dateISO": "2026-06-24T01:00Z",
+      "dateISO": "2026-06-24T01:40Z",
       "isHome": false,
       "opponentShort": "Padres",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
@@ -1924,6 +1895,44 @@
         "NBC Sports BA",
         "BravesVision"
       ]
+    },
+    {
+      "id": "sfg-401815934",
+      "teamId": "sfg",
+      "dateISO": "2026-06-28T01:05Z",
+      "isHome": true,
+      "opponentShort": "Braves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "atl-401815934",
+      "teamId": "atl",
+      "dateISO": "2026-06-28T01:05Z",
+      "isHome": false,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "mb-sirens-static-9",
+      "teamId": "mb-sirens",
+      "dateISO": "2026-06-27T19:00:00-07:00",
+      "isHome": true,
+      "opponentShort": "Pleasanton RAGE",
+      "opponentLogo": null,
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
     }
   ],
   "errors": []
