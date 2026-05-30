@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T16:52:03.852Z",
+  "generatedAt": "2026-05-30T14:46:01.206Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,60 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "stan-sb-401872458",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-15T18:00Z",
-      "isHome": true,
-      "opponentShort": "Princeton",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/163.png",
-      "venue": "Cowgirl Stadium",
-      "broadcasts": [
-        "ACC Network"
-      ]
-    },
-    {
-      "id": "atl-401815346",
-      "teamId": "atl",
-      "dateISO": "2026-05-15T23:15Z",
-      "isHome": true,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "NESN"
-      ]
-    },
-    {
-      "id": "sfg-401815359",
-      "teamId": "sfg",
-      "dateISO": "2026-05-16T01:40Z",
-      "isHome": false,
-      "opponentShort": "Athletics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
-      "venue": "Sutter Health Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "NBC Sports CA"
-      ]
-    },
-    {
-      "id": "bay-fc-401854055",
-      "teamId": "bay-fc",
-      "dateISO": "2026-05-16T02:00Z",
-      "isHome": true,
-      "opponentShort": "Boston",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131562.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Victory+"
-      ]
-    },
     {
       "id": "stan-sb-401872501",
       "teamId": "stan-sb",
@@ -1933,6 +1879,46 @@
       "opponentLogo": null,
       "venue": "Cardinale Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "sfg-401815949",
+      "teamId": "sfg",
+      "dateISO": "2026-06-28T20:05Z",
+      "isHome": true,
+      "opponentShort": "Braves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "atl-401815949",
+      "teamId": "atl",
+      "dateISO": "2026-06-28T20:05Z",
+      "isHome": false,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "gsv-401857033",
+      "teamId": "gsv",
+      "dateISO": "2026-06-28T23:00Z",
+      "isHome": true,
+      "opponentShort": "Liberty",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "ESPN"
+      ]
     }
   ],
   "errors": []
