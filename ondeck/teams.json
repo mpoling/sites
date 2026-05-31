@@ -66,7 +66,7 @@
       "fullName": "San Jose Earthquakes",
       "league": "MLS",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "leagues": ["usa.1"], "teamId": "191" },
+      "espn": { "sport": "soccer", "leagues": ["usa.1", "concacaf.leagues.cup", "usa.open"], "teamId": "191" },
       "accent": "#0067A0",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png"
     },
@@ -76,7 +76,7 @@
       "fullName": "Inter Miami CF",
       "league": "MLS",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "leagues": ["usa.1"], "teamId": "20232" },
+      "espn": { "sport": "soccer", "leagues": ["usa.1", "concacaf.leagues.cup", "usa.open"], "teamId": "20232" },
       "accent": "#F7B5CD",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
     },
@@ -86,7 +86,7 @@
       "fullName": "Bay FC",
       "league": "NWSL",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "leagues": ["usa.nwsl"], "teamId": "22187" },
+      "espn": { "sport": "soccer", "leagues": ["usa.nwsl", "usa.nwsl.summer.cup"], "teamId": "22187" },
       "accent": "#1A4B7F",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22187.png"
     },
@@ -147,7 +147,7 @@
       "fullName": "Monterey Bay F.C.",
       "league": "USL Ch",
       "sport": "Soccer",
-      "espn": { "sport": "soccer", "leagues": ["usa.usl.1"], "teamId": "21370" },
+      "espn": { "sport": "soccer", "leagues": ["usa.usl.1", "usa.open"], "teamId": "21370" },
       "accent": "#006C5B",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21370.png"
     },
@@ -184,6 +184,6 @@
   ],
   "window": {
     "pastDays": 14,
-    "futureDays": 30
+    "futureDays": 75
   }
 }
