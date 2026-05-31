@@ -38,6 +38,9 @@ sites/
     ├── app.js
     ├── teams.json                  # source of truth: which teams to track
     ├── DATA-SOURCES.md             # what to do when ESPN doesn't cover a team
+    ├── assets/
+    │   └── opponents/              # self-hosted logos for static-fixture
+    │                               # teams' opponents (see DATA-SOURCES.md)
     ├── data/
     │   ├── games.json              # generated — do not hand-edit
     │   └── *-fixtures.json         # hand-entered fallback fixtures (rare)
@@ -95,10 +98,16 @@ Edit `ondeck/teams.json`. The full file shape is:
   ],
   "window": {                               // optional; see "Tuning the window"
     "pastDays":   14,
-    "futureDays": 30
+    "futureDays": 75
   }
 }
 ```
+
+A team entry can alternatively use the `static` data source — for teams
+ESPN doesn't cover at all (small / new / regional leagues). In that case
+`espn` is omitted and `static` points at a per-team fixtures JSON under
+`ondeck/data/`. See [DATA-SOURCES.md](./DATA-SOURCES.md) for the schema,
+the opponent-logo map, and the worked Monterey Bay Sirens example.
 
 Pushing the change triggers the workflow (the `paths:` filter on push
 includes `teams.json`), so the next `data/games.json` will reflect your new
@@ -118,7 +127,7 @@ SE Play investigation so we don't have to redo it.
 `fetch-games.js` locally), look at the per-team line in the output:
 
 ```
-→ Quakes          2 games in window (of 13 returned)  [✓ ESPN: San Jose Earthquakes]
+→ Quakes          5 in window  (schedule=18, scoreboard-future=3) across 3 leagues  [✓ ESPN: San Jose Earthquakes]
 ```
 
 The bracketed bit shows the name ESPN actually returned for that ID. A `✓`
@@ -147,6 +156,28 @@ Common league slugs:
 | Women's CBB    | `basketball`   | `womens-college-basketball` |
 | NCAA Softball  | `baseball`     | `college-softball`          |
 
+Auxiliary cups and tournaments (use these *in addition* to a team's
+primary league slug):
+
+| Competition                            | sport          | league                       |
+|----------------------------------------|----------------|------------------------------|
+| Leagues Cup (MLS × Liga MX)            | `soccer`       | `concacaf.leagues.cup`       |
+| US Open Cup                            | `soccer`       | `usa.open`                   |
+| NWSL × Liga MX Femenil Summer Cup      | `soccer`       | `usa.nwsl.summer.cup`        |
+| UEFA Women's Champions League          | `soccer`       | `uefa.wchampions`            |
+| FIFA Women's World Cup                 | `soccer`       | `fifa.wwc`                   |
+| FIFA WWC Qualifying — UEFA             | `soccer`       | `fifa.wworldq.uefa`          |
+| UEFA Women's Euro                      | `soccer`       | `uefa.weuro`                 |
+| UEFA Women's Nations League            | `soccer`       | `uefa.w.nations`             |
+| Women's International Friendlies       | `soccer`       | `fifa.friendly.w`            |
+| SheBelieves Cup                        | `soccer`       | `fifa.shebelieves`           |
+| Concacaf W Championship                | `soccer`       | `concacaf.womens.championship` |
+| Concacaf W Gold Cup                    | `soccer`       | `concacaf.w.gold`            |
+| French Première Ligue (women)          | `soccer`       | `fra.w.1`                    |
+
+This list isn't exhaustive — see DATA-SOURCES.md's "ESPN — what it
+covers, what it doesn't" for how to discover new slugs.
+
 ## ESPN API quirks
 
 ESPN's site API is unofficial and has a handful of non-obvious gotchas
@@ -174,14 +205,28 @@ that you'll save time by knowing up-front:
   results" endpoint despite the name. The fetcher works around this by
   *additionally* hitting the league-wide scoreboard with a future date
   range and merging the results, deduped by `event.id`. So `fetch-games.js`
-  now makes two requests per team's league (cached when teams share one).
-  If you ever see "no future games" for an in-season team, suspect a
-  scoreboard fetch failure first.
+  makes two requests per (team, league) pair, scoreboards cached per
+  `(sport, league)` across teams. If you ever see "no future games" for
+  an in-season team, suspect a scoreboard fetch failure first.
+- **Two competitor logo shapes.** The team `/schedule` endpoint returns
+  `competitor.team.logos` (array of `{href}`); the `/scoreboard`
+  endpoint returns `competitor.team.logo` (singular string). The
+  fetcher reads both — without the fallback, all future MLS/NWSL/USL
+  opponents (sourced from the scoreboard) silently render with no logo.
 
 ## Tuning the window
 
-`teams.json` has a `window` block — defaults are 14 past days and 30 future
-days. Adjust to taste.
+`teams.json` has a `window` block — defaults are 14 past days and 75 future
+days. The 75-day forward window was deliberately wider than "one rolling
+month" so it bridges mid-season pauses (most notably the FIFA 2026 World
+Cup break, which trapped a 30-day window inside a 6-week MLS hiatus).
+Adjust to taste.
+
+The window edges are calendar-day boundaries in UTC, not run-time-of-day —
+an event at any time on the boundary day is included. (A previous version
+used `setDate` which carried the script's run time forward, silently
+dropping events earlier in the day on the past-edge day. Fixed in
+[`0803f70`](https://github.com/mpoling/sites/commit/0803f70).)
 
 ## Caveats
 
@@ -194,6 +239,11 @@ days. Adjust to taste.
   still renders, you just lose images. Refresh the `logo` URLs from
   `https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/teams`
   if that ever happens.
+- **For static-fixture teams, opponent logos are self-hosted** under
+  `ondeck/assets/opponents/` and referenced by relative path. ESPN's
+  hot-link model has no equivalent for teams ESPN doesn't index, and the
+  alternative (hot-linking from each opponent's WordPress / SportsEngine
+  site) is fragile. See DATA-SOURCES.md for sourcing notes.
 - **Broadcast accuracy** is best for major US leagues with national deals;
   regional sports networks and streaming-only deals may sometimes resolve to
   "Check listings".
@@ -219,20 +269,31 @@ python3 -m http.server               # then open http://localhost:8000
 
 ### Reading the fetcher output
 
-Each per-team line looks like:
+Each per-team line looks like one of:
 
 ```
-→ Giants          39 in window  (schedule=163, scoreboard-future=6)  [✓ ESPN: San Francisco Giants]
+→ Giants          75 in window  (schedule=163, scoreboard-future=7)  [✓ ESPN: San Francisco Giants]
+→ USWNT           2 in window  (schedule=24, scoreboard-future=2) across 6 leagues  [✓ ESPN: United States]
+→ Sirens          9 in window  (static=10, 9 in window) [verified 2026-05-31]
 ```
 
 - **`X in window`** — number of games that passed the
   `pastDays`/`futureDays` filter and landed in `games.json`.
 - **`schedule=N`** — events the team's `/schedule` endpoint returned
-  (covers past and, for MLB, future too).
+  (covers past and, for MLB, future too). For multi-league teams this
+  is the sum across every league the team subscribes to.
 - **`scoreboard-future=N`** — events the league `/scoreboard` endpoint
   returned for the future window. For MLS/NWSL/USL/college-softball
   this is the *only* source of future games; for MLB it's mostly
   redundant with what `/schedule` already had, then deduped.
+- **`across N leagues`** — appears only for teams with more than one
+  entry in `espn.leagues` (e.g. national teams pulling friendlies +
+  qualifiers + tournaments, clubs in domestic + continental comps).
+- **`(static=N, M in window)`** — static-fixtures teams (no `espn`
+  config). `N` is total entries in the per-team fixtures JSON, `M` is
+  how many fell inside the window.
+- **`[verified YYYY-MM-DD]`** — for static teams, the `lastVerified`
+  date from the fixtures file. Bump it when you re-check the schedule.
 - **`schedule=0, scoreboard-future=0`** — true off-season; ESPN has no
   events at all for this team right now.
 - **`schedule=N, scoreboard-future=0`** with `0 in window` — events
@@ -241,7 +302,9 @@ Each per-team line looks like:
 - **`[✓ ESPN: …]`** — cross-check passed, the team ID resolves to the
   expected team.
 - **`[⚠ ESPN: …]`** — the team ID is pointing at a *different* team than
-  the one in your `teams.json`. Fix it.
+  the one in your `teams.json`. Fix it. For multi-league teams the
+  check runs per league; any mismatch prints a `(name mismatch in
+  <league>: …)` line to stderr.
 - **`✗ <error>`** at the end of a line means the team's `/schedule`
   fetch failed entirely (HTTP error, network issue). The team is
   recorded in `errors[]` in `games.json` and the rest of the run
