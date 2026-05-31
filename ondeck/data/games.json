@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T20:37:35.587Z",
+  "generatedAt": "2026-05-31T20:58:25.782Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -358,7 +358,7 @@
       "dateISO": "2026-05-17T16:00:00-07:00",
       "isHome": false,
       "opponentShort": "Marin FC",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/marin-fc.png",
       "venue": "Kennelly Field",
       "broadcasts": []
     },
@@ -805,7 +805,7 @@
       "dateISO": "2026-05-30T15:00:00-07:00",
       "isHome": true,
       "opponentShort": "Oakland Soul SC",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/oakland-soul.png",
       "venue": "Cardinale Stadium",
       "broadcasts": []
     },
@@ -982,7 +982,7 @@
       "dateISO": "2026-06-03T19:00:00-07:00",
       "isHome": false,
       "opponentShort": "Pleasanton RAGE",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/pleasanton-rage.png",
       "venue": "Stanford Medicine Sports Complex",
       "broadcasts": []
     },
@@ -1124,7 +1124,7 @@
       "dateISO": "2026-06-06T19:00:00-07:00",
       "isHome": true,
       "opponentShort": "Marin FC",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/marin-fc.png",
       "venue": "Cardinale Stadium",
       "broadcasts": []
     },
@@ -1282,7 +1282,7 @@
       "dateISO": "2026-06-10T19:00:00-07:00",
       "isHome": false,
       "opponentShort": "Stockton Cargo SC",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/stockton-cargo.png",
       "venue": "Saint Mary's High School Stadium",
       "broadcasts": []
     },
@@ -1359,7 +1359,7 @@
       "dateISO": "2026-06-13T19:00:00-07:00",
       "isHome": true,
       "opponentShort": "San Juan SC",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/san-juan.png",
       "venue": "Cardinale Stadium",
       "broadcasts": []
     },
@@ -1577,7 +1577,7 @@
       "dateISO": "2026-06-19T19:00:00-07:00",
       "isHome": false,
       "opponentShort": "California Storm",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/california-storm.png",
       "venue": "Davis Legacy Soccer Complex",
       "broadcasts": []
     },
@@ -1669,7 +1669,7 @@
       "dateISO": "2026-06-21T15:00:00-07:00",
       "isHome": false,
       "opponentShort": "Oakland Soul SC",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/oakland-soul.png",
       "venue": "Merritt College",
       "broadcasts": []
     },
@@ -1846,7 +1846,7 @@
       "dateISO": "2026-06-27T19:00:00-07:00",
       "isHome": true,
       "opponentShort": "Pleasanton RAGE",
-      "opponentLogo": null,
+      "opponentLogo": "assets/opponents/pleasanton-rage.png",
       "venue": "Cardinale Stadium",
       "broadcasts": []
     },
