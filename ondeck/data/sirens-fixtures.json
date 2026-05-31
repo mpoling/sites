@@ -2,7 +2,16 @@
   "_comment": "Hand-entered fixtures for teams ESPN doesn't cover. Sirens are USL W League — the league has no ESPN/TheSportsDB presence and SportsEngine's public API only returns games scheduled for streaming. Source: https://www.mbfcsirens.com/schedule/. Update this file if a game time changes.",
   "teamId": "mb-sirens",
   "source": "https://www.mbfcsirens.com/schedule/",
-  "lastVerified": "2026-05-23",
+  "lastVerified": "2026-05-31",
+  "opponents": {
+    "_comment": "Opponent logos self-hosted under ondeck/assets/opponents/ — see DATA-SOURCES.md for the rationale (ESPN has no USL W coverage; vip.sportsengine.com serves only 25x25 thumbnails). Sources noted per-team.",
+    "Stockton Cargo SC": "assets/opponents/stockton-cargo.png",
+    "Marin FC":          "assets/opponents/marin-fc.png",
+    "Oakland Soul SC":   "assets/opponents/oakland-soul.png",
+    "Pleasanton RAGE":   "assets/opponents/pleasanton-rage.png",
+    "San Juan SC":       "assets/opponents/san-juan.png",
+    "California Storm":  "assets/opponents/california-storm.png"
+  },
   "games": [
     { "dateISO": "2026-05-09T19:00:00-07:00", "isHome": true,  "opponentShort": "Stockton Cargo SC", "venue": "Cardinale Stadium" },
     { "dateISO": "2026-05-17T16:00:00-07:00", "isHome": false, "opponentShort": "Marin FC",          "venue": "Kennelly Field" },

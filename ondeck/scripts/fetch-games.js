@@ -207,9 +207,16 @@ async function main() {
       if (team.static) {
         const staticRaw = await fs.readFile(team.static, 'utf-8');
         const staticData = JSON.parse(staticRaw);
+        // Optional opponent-logo map keyed by opponentShort, so we don't have
+        // to repeat the URL on every game vs the same opponent. Strip the
+        // "_comment" key, which is documentation only.
+        const opponentLogos = { ...(staticData.opponents ?? {}) };
+        delete opponentLogos._comment;
+        // Window edges snap to calendar-day boundaries (UTC) — same fix as
+        // transformEvent (see comment there).
         const now = new Date();
-        const min = new Date(now); min.setDate(now.getDate() - window.pastDays);
-        const max = new Date(now); max.setDate(now.getDate() + window.futureDays);
+        const min = new Date(now); min.setUTCDate(now.getUTCDate() - window.pastDays); min.setUTCHours(0, 0, 0, 0);
+        const max = new Date(now); max.setUTCDate(now.getUTCDate() + window.futureDays); max.setUTCHours(23, 59, 59, 999);
         let inWindow = 0;
         for (const [i, g] of (staticData.games ?? []).entries()) {
           const date = new Date(g.dateISO);
@@ -220,7 +227,7 @@ async function main() {
             dateISO: g.dateISO,
             isHome: !!g.isHome,
             opponentShort: g.opponentShort ?? 'TBD',
-            opponentLogo: g.opponentLogo ?? null,
+            opponentLogo: g.opponentLogo ?? opponentLogos[g.opponentShort] ?? null,
             venue: g.venue ?? null,
             broadcasts: g.broadcasts ?? [],
           });
