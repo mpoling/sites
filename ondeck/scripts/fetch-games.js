@@ -127,9 +127,14 @@ function transformEvent(event, team, window) {
   const date = new Date(event.date);
   if (Number.isNaN(date.getTime())) return null;
 
+  // Snap the window edges to calendar-day boundaries (UTC) so an event on
+  // the boundary day isn't excluded just because its kickoff time is earlier
+  // than the script's run-time-of-day. Without this, e.g. a game on
+  // 2026-05-17T20:05Z dropped out when the script ran at 2026-05-31T20:34Z
+  // because 20:05Z falls 29 minutes before the (run-time-of-day - 14d) cutoff.
   const now = new Date();
-  const min = new Date(now); min.setDate(now.getDate() - window.pastDays);
-  const max = new Date(now); max.setDate(now.getDate() + window.futureDays);
+  const min = new Date(now); min.setUTCDate(now.getUTCDate() - window.pastDays); min.setUTCHours(0, 0, 0, 0);
+  const max = new Date(now); max.setUTCDate(now.getUTCDate() + window.futureDays); max.setUTCHours(23, 59, 59, 999);
   if (date < min || date > max) return null;
 
   const comp = event.competitions?.[0];
