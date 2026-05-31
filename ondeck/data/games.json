@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T14:46:01.206Z",
+  "generatedAt": "2026-05-31T14:53:09.377Z",
   "window": {
     "pastDays": 14,
     "futureDays": 30
@@ -267,81 +267,6 @@
     }
   ],
   "games": [
-    {
-      "id": "stan-sb-401872501",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-16T17:00Z",
-      "isHome": false,
-      "opponentShort": "Oklahoma St",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-      "venue": "Cowgirl Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "psg-w-401871802",
-      "teamId": "psg-w",
-      "dateISO": "2026-05-16T19:00Z",
-      "isHome": false,
-      "opponentShort": "Paris FC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
-      "venue": "Stade Jean Bouin",
-      "broadcasts": []
-    },
-    {
-      "id": "stan-sb-401872503",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-16T22:25Z",
-      "isHome": false,
-      "opponentShort": "Princeton",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/163.png",
-      "venue": "Cowgirl Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "atl-401815361",
-      "teamId": "atl",
-      "dateISO": "2026-05-16T23:15Z",
-      "isHome": true,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NESN",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "sfg-401815374",
-      "teamId": "sfg",
-      "dateISO": "2026-05-17T01:40Z",
-      "isHome": false,
-      "opponentShort": "Athletics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
-      "venue": "Sutter Health Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "NBC Sports CA"
-      ]
-    },
-    {
-      "id": "sje-761641",
-      "teamId": "sje",
-      "dateISO": "2026-05-17T02:30Z",
-      "isHome": true,
-      "opponentShort": "Dallas",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "atl-401815376",
       "teamId": "atl",
@@ -1918,6 +1843,20 @@
       "venue": "Chase Center",
       "broadcasts": [
         "ESPN"
+      ]
+    },
+    {
+      "id": "sfg-401815963",
+      "teamId": "sfg",
+      "dateISO": "2026-06-30T01:40Z",
+      "isHome": false,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Chase Field",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "DBACKS.TV"
       ]
     }
   ],
