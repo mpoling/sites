@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T20:58:25.782Z",
+  "generatedAt": "2026-06-01T18:46:40.151Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,95 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815374",
-      "teamId": "sfg",
-      "dateISO": "2026-05-17T01:40Z",
-      "isHome": false,
-      "opponentShort": "Athletics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
-      "venue": "Sutter Health Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "NBC Sports CA"
-      ]
-    },
-    {
-      "id": "sje-761641",
-      "teamId": "sje",
-      "dateISO": "2026-05-17T02:30Z",
-      "isHome": true,
-      "opponentShort": "Dallas",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "atl-401815376",
-      "teamId": "atl",
-      "dateISO": "2026-05-17T17:35Z",
-      "isHome": true,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NESN",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "stan-sb-401872537",
-      "teamId": "stan-sb",
-      "dateISO": "2026-05-17T20:00Z",
-      "isHome": true,
-      "opponentShort": "Oklahoma St",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-      "venue": "Cowgirl Stadium",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "sfg-401815389",
-      "teamId": "sfg",
-      "dateISO": "2026-05-17T20:05Z",
-      "isHome": false,
-      "opponentShort": "Athletics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ath.png",
-      "venue": "Sutter Health Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "NBC Sports CA"
-      ]
-    },
-    {
-      "id": "mia-761642",
-      "teamId": "mia",
-      "dateISO": "2026-05-17T22:00Z",
-      "isHome": true,
-      "opponentShort": "Portland",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mb-sirens-static-1",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-05-17T16:00:00-07:00",
-      "isHome": false,
-      "opponentShort": "Marin FC",
-      "opponentLogo": "assets/opponents/marin-fc.png",
-      "venue": "Kennelly Field",
-      "broadcasts": []
-    },
     {
       "id": "atl-401815390",
       "teamId": "atl",
@@ -3404,6 +3315,59 @@
         "MLB.TV",
         "BravesVision",
         "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401853971",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-15T02:00Z",
+      "isHome": false,
+      "opponentShort": "Utah",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19141.png",
+      "venue": "America First Field",
+      "broadcasts": [
+        "Victory+"
+      ]
+    },
+    {
+      "id": "sfg-401816528",
+      "teamId": "sfg",
+      "dateISO": "2026-08-15T02:15Z",
+      "isHome": true,
+      "opponentShort": "Rockies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Rockies.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816543",
+      "teamId": "sfg",
+      "dateISO": "2026-08-15T20:05Z",
+      "isHome": true,
+      "opponentShort": "Rockies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Rockies.TV"
+      ]
+    },
+    {
+      "id": "atl-401816532",
+      "teamId": "atl",
+      "dateISO": "2026-08-15T23:15Z",
+      "isHome": true,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "FOX"
       ]
     }
   ],
