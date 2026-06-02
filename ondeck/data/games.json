@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T18:46:40.151Z",
+  "generatedAt": "2026-06-02T17:48:05.629Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,21 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815390",
-      "teamId": "atl",
-      "dateISO": "2026-05-18T22:40Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV",
-        "Gray Media"
-      ]
-    },
     {
       "id": "sfg-401815403",
       "teamId": "sfg",
@@ -1232,7 +1217,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
       "venue": "Climate Pledge Arena",
       "broadcasts": [
-        "ION"
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
@@ -1409,6 +1395,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "KPIX+",
         "KFAA-TV"
       ]
@@ -1479,7 +1466,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "ION"
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
@@ -3368,6 +3356,58 @@
       "broadcasts": [
         "MLB.TV",
         "FOX"
+      ]
+    },
+    {
+      "id": "mia-761716",
+      "teamId": "mia",
+      "dateISO": "2026-08-16T00:30Z",
+      "isHome": false,
+      "opponentShort": "Nashville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+      "venue": "GEODIS Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761721",
+      "teamId": "sje",
+      "dateISO": "2026-08-16T02:30Z",
+      "isHome": true,
+      "opponentShort": "St. Louis",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "atl-401816547",
+      "teamId": "atl",
+      "dateISO": "2026-08-16T17:35Z",
+      "isHome": true,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816558",
+      "teamId": "sfg",
+      "dateISO": "2026-08-16T20:05Z",
+      "isHome": true,
+      "opponentShort": "Rockies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Rockies.TV"
       ]
     }
   ],
