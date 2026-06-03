@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T17:48:05.629Z",
+  "generatedAt": "2026-06-03T18:03:16.847Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,35 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815403",
-      "teamId": "sfg",
-      "dateISO": "2026-05-19T01:40Z",
-      "isHome": false,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Chase Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "atl-401815404",
-      "teamId": "atl",
-      "dateISO": "2026-05-19T20:10Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV"
-      ]
-    },
     {
       "id": "sfg-401815418",
       "teamId": "sfg",
@@ -3292,6 +3263,16 @@
       ]
     },
     {
+      "id": "sf49-401874392",
+      "teamId": "sf49",
+      "dateISO": "2026-08-14T01:00Z",
+      "isHome": true,
+      "opponentShort": "Titans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401816517",
       "teamId": "atl",
       "dateISO": "2026-08-14T23:15Z",
@@ -3408,6 +3389,20 @@
         "MLB.TV",
         "NBC Sports BA",
         "Rockies.TV"
+      ]
+    },
+    {
+      "id": "atl-401816581",
+      "teamId": "atl",
+      "dateISO": "2026-08-17T23:40Z",
+      "isHome": false,
+      "opponentShort": "Twins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+      "venue": "Target Field",
+      "broadcasts": [
+        "MLB.TV",
+        "Twins.TV",
+        "BravesVision"
       ]
     }
   ],
