@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T18:03:16.847Z",
+  "generatedAt": "2026-06-04T16:27:46.632Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,48 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815418",
-      "teamId": "sfg",
-      "dateISO": "2026-05-20T01:40Z",
-      "isHome": false,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Chase Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "sfg-401815433",
-      "teamId": "sfg",
-      "dateISO": "2026-05-20T19:40Z",
-      "isHome": false,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Chase Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "atl-401815419",
-      "teamId": "atl",
-      "dateISO": "2026-05-20T22:40Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV"
-      ]
-    },
     {
       "id": "sje-401871129",
       "teamId": "sje",
@@ -941,7 +899,8 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "Marquee Sports Net"
+        "Marquee Sports Net",
+        "ERADM"
       ]
     },
     {
@@ -1018,7 +977,8 @@
       "venue": "Wrigley Field",
       "broadcasts": [
         "NBC",
-        "Peacock"
+        "Peacock",
+        "ERADM"
       ]
     },
     {
@@ -2132,8 +2092,7 @@
       "venue": "Busch Stadium",
       "broadcasts": [
         "MLB.TV",
-        "BravesVision",
-        "Cardinals.TV"
+        "Apple TV"
       ]
     },
     {
@@ -2772,8 +2731,7 @@
       "venue": "Petco Park",
       "broadcasts": [
         "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV"
+        "Apple TV"
       ]
     },
     {
@@ -3403,6 +3361,50 @@
         "MLB.TV",
         "Twins.TV",
         "BravesVision"
+      ]
+    },
+    {
+      "id": "gsv-401857151",
+      "teamId": "gsv",
+      "dateISO": "2026-08-18T02:00Z",
+      "isHome": true,
+      "opponentShort": "Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Peacock",
+        "NBCSN",
+        "KFAA-TV"
+      ]
+    },
+    {
+      "id": "sfg-401816576",
+      "teamId": "sfg",
+      "dateISO": "2026-08-18T22:40Z",
+      "isHome": false,
+      "opponentShort": "Guardians",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
+      "venue": "Progressive Field",
+      "broadcasts": [
+        "MLB.TV",
+        "CLEGuardians.TV",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "atl-401816596",
+      "teamId": "atl",
+      "dateISO": "2026-08-18T23:40Z",
+      "isHome": false,
+      "opponentShort": "Twins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+      "venue": "Target Field",
+      "broadcasts": [
+        "MLB.TV",
+        "Twins.TV",
+        "BravesVision",
+        "KMSP-TV",
+        "Gray Media"
       ]
     }
   ],
