@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T16:27:46.632Z",
+  "generatedAt": "2026-06-05T16:07:57.318Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,45 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-401871129",
-      "teamId": "sje",
-      "dateISO": "2026-05-21T02:00Z",
-      "isHome": false,
-      "opponentShort": "Colorado",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
-      "venue": "Dick's Sporting Goods Park",
-      "broadcasts": [
-        "CBSSN",
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "bay-fc-401853915",
-      "teamId": "bay-fc",
-      "dateISO": "2026-05-21T02:00Z",
-      "isHome": false,
-      "opponentShort": "Portland",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15362.png",
-      "venue": "Providence Park",
-      "broadcasts": [
-        "Victory+"
-      ]
-    },
-    {
-      "id": "atl-401815434",
-      "teamId": "atl",
-      "dateISO": "2026-05-21T22:40Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV"
-      ]
-    },
     {
       "id": "gsv-401856924",
       "teamId": "gsv",
@@ -3405,6 +3366,46 @@
         "BravesVision",
         "KMSP-TV",
         "Gray Media"
+      ]
+    },
+    {
+      "id": "atl-401816607",
+      "teamId": "atl",
+      "dateISO": "2026-08-19T17:40Z",
+      "isHome": false,
+      "opponentShort": "Twins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+      "venue": "Target Field",
+      "broadcasts": [
+        "MLB.TV",
+        "Twins.TV",
+        "BravesVision"
+      ]
+    },
+    {
+      "id": "sfg-401816591",
+      "teamId": "sfg",
+      "dateISO": "2026-08-19T22:40Z",
+      "isHome": false,
+      "opponentShort": "Guardians",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
+      "venue": "Progressive Field",
+      "broadcasts": [
+        "MLB.TV",
+        "CLEGuardians.TV",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "mia-761727",
+      "teamId": "mia",
+      "dateISO": "2026-08-19T23:30Z",
+      "isHome": false,
+      "opponentShort": "Philadelphia",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
+      "venue": "Subaru Park",
+      "broadcasts": [
+        "Apple TV"
       ]
     }
   ],
