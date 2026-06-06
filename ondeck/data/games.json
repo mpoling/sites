@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T16:07:57.318Z",
+  "generatedAt": "2026-06-06T14:50:56.377Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,47 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401856924",
-      "teamId": "gsv",
-      "dateISO": "2026-05-22T00:00Z",
-      "isHome": false,
-      "opponentShort": "Liberty",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-      "venue": "Barclays Center",
-      "broadcasts": [
-        "Prime Video",
-        "WWOR-TV",
-        "Liberty Live"
-      ]
-    },
-    {
-      "id": "atl-401815448",
-      "teamId": "atl",
-      "dateISO": "2026-05-22T23:15Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "gsv-401856928",
-      "teamId": "gsv",
-      "dateISO": "2026-05-22T23:30Z",
-      "isHome": false,
-      "opponentShort": "Fever",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
-      "venue": "Gainbridge Fieldhouse",
-      "broadcasts": [
-        "ION",
-        "WNBA League Pass"
-      ]
-    },
     {
       "id": "sfg-401815453",
       "teamId": "sfg",
@@ -3406,6 +3365,47 @@
       "venue": "Subaru Park",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsv-401857157",
+      "teamId": "gsv",
+      "dateISO": "2026-08-20T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lynx",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "USA Net",
+        "KPIX+",
+        "Victory+ MIN"
+      ]
+    },
+    {
+      "id": "sje-761738",
+      "teamId": "sje",
+      "dateISO": "2026-08-20T02:30Z",
+      "isHome": false,
+      "opponentShort": "LA Galaxy",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
+      "venue": "Dignity Health Sports Park",
+      "broadcasts": [
+        "FS1",
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sfg-401816602",
+      "teamId": "sfg",
+      "dateISO": "2026-08-20T17:10Z",
+      "isHome": false,
+      "opponentShort": "Guardians",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
+      "venue": "Progressive Field",
+      "broadcasts": [
+        "MLB.TV",
+        "CLEGuardians.TV",
+        "NBC Sports BA"
       ]
     }
   ],
