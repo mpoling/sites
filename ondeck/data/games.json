@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T14:50:56.377Z",
+  "generatedAt": "2026-06-07T14:57:28.826Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,48 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815453",
-      "teamId": "sfg",
-      "dateISO": "2026-05-23T02:15Z",
-      "isHome": true,
-      "opponentShort": "White Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "CHSN"
-      ]
-    },
-    {
-      "id": "sfg-401815468",
-      "teamId": "sfg",
-      "dateISO": "2026-05-23T20:05Z",
-      "isHome": true,
-      "opponentShort": "White Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "CHSN"
-      ]
-    },
-    {
-      "id": "atl-401815463",
-      "teamId": "atl",
-      "dateISO": "2026-05-23T20:10Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
     {
       "id": "sje-761653",
       "teamId": "sje",
@@ -857,7 +815,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "venue": "Neo Química Arena",
       "broadcasts": [
-        "TBS",
+        "TNT",
         "HBO Max",
         "Tele",
         "Universo",
@@ -3406,6 +3364,56 @@
         "MLB.TV",
         "CLEGuardians.TV",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "sf49-401873285",
+      "teamId": "sf49",
+      "dateISO": "2026-08-21T02:00Z",
+      "isHome": false,
+      "opponentShort": "Chargers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "venue": "SoFi Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "atl-401816617",
+      "teamId": "atl",
+      "dateISO": "2026-08-21T20:10Z",
+      "isHome": false,
+      "opponentShort": "Brewers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "venue": "American Family Field",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Brewers.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816610",
+      "teamId": "sfg",
+      "dateISO": "2026-08-21T23:10Z",
+      "isHome": false,
+      "opponentShort": "Red Sox",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
+      "venue": "Fenway Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "NESN"
+      ]
+    },
+    {
+      "id": "gsv-401857162",
+      "teamId": "gsv",
+      "dateISO": "2026-08-21T23:30Z",
+      "isHome": false,
+      "opponentShort": "Sky",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
+      "venue": "Wintrust Arena",
+      "broadcasts": [
+        "ION"
       ]
     }
   ],
