@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T14:57:28.826Z",
+  "generatedAt": "2026-06-08T16:52:29.083Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,84 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761653",
-      "teamId": "sje",
-      "dateISO": "2026-05-24T01:30Z",
-      "isHome": false,
-      "opponentShort": "Portland",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
-      "venue": "Providence Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401841861",
-      "teamId": "mbfc",
-      "dateISO": "2026-05-24T02:00Z",
-      "isHome": true,
-      "opponentShort": "Birmingham",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19405.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "sfg-401815483",
-      "teamId": "sfg",
-      "dateISO": "2026-05-24T20:05Z",
-      "isHome": true,
-      "opponentShort": "White Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "CHSN"
-      ]
-    },
-    {
-      "id": "atl-401815478",
-      "teamId": "atl",
-      "dateISO": "2026-05-24T20:10Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "bay-fc-401853920",
-      "teamId": "bay-fc",
-      "dateISO": "2026-05-24T21:00Z",
-      "isHome": true,
-      "opponentShort": "Chicago",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15360.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "ESPN2",
-        "ESPN Deportes",
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "mia-761657",
-      "teamId": "mia",
-      "dateISO": "2026-05-24T23:00Z",
-      "isHome": true,
-      "opponentShort": "Philadelphia",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "FOX",
-        "Apple TV"
-      ]
-    },
     {
       "id": "sfg-401815495",
       "teamId": "sfg",
@@ -3414,6 +3336,45 @@
       "venue": "Wintrust Arena",
       "broadcasts": [
         "ION"
+      ]
+    },
+    {
+      "id": "atl-401816632",
+      "teamId": "atl",
+      "dateISO": "2026-08-22T18:10Z",
+      "isHome": false,
+      "opponentShort": "Brewers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "venue": "American Family Field",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Brewers.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816625",
+      "teamId": "sfg",
+      "dateISO": "2026-08-22T23:15Z",
+      "isHome": false,
+      "opponentShort": "Red Sox",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
+      "venue": "Fenway Park",
+      "broadcasts": [
+        "MLB.TV",
+        "FOX"
+      ]
+    },
+    {
+      "id": "mia-761742",
+      "teamId": "mia",
+      "dateISO": "2026-08-22T23:30Z",
+      "isHome": true,
+      "opponentShort": "Toronto",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
       ]
     }
   ],
