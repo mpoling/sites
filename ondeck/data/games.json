@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T16:52:29.083Z",
+  "generatedAt": "2026-06-09T16:11:36.599Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,20 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815495",
-      "teamId": "sfg",
-      "dateISO": "2026-05-25T21:05Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
     {
       "id": "gsv-401856937",
       "teamId": "gsv",
@@ -3375,6 +3361,55 @@
       "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761752",
+      "teamId": "sje",
+      "dateISO": "2026-08-23T02:30Z",
+      "isHome": true,
+      "opponentShort": "Minnesota",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sfg-401816640",
+      "teamId": "sfg",
+      "dateISO": "2026-08-23T19:10Z",
+      "isHome": false,
+      "opponentShort": "Red Sox",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
+      "venue": "Fenway Park",
+      "broadcasts": [
+        "NBC",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "bay-fc-401853981",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-23T22:00Z",
+      "isHome": true,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17346.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "CBSSN"
+      ]
+    },
+    {
+      "id": "atl-401816647",
+      "teamId": "atl",
+      "dateISO": "2026-08-23T23:00Z",
+      "isHome": false,
+      "opponentShort": "Brewers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+      "venue": "Journey Bank Ballpark at Historic Bowman Field",
+      "broadcasts": [
+        "ESPN"
       ]
     }
   ],
