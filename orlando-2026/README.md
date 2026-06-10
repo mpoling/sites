@@ -26,9 +26,9 @@ orlando-2026/
 
 ## Content notes
 
-- **Trip dates:** June 7–14, 2026 (Orlando), then St. Pete from June 14.
-  Day 1 = June 7. The nav snaps to "Today" (Eastern Time) during the trip
-  window, same mechanism as dc-2026.
+- **Trip dates:** June 6–14, 2026 (Orlando), then St. Pete from June 14.
+  Day 1 = June 6 (arrival day). The nav snaps to "Today" (Eastern Time)
+  during the trip window, same mechanism as dc-2026.
 - **Door code is partially redacted on purpose.** The site is publicly
   reachable, so the first three digits are shown as `✱✱✱` — the full code
   lives in the Florida Premier Rentals booking email. Don't "fix" this.
@@ -36,12 +36,16 @@ orlando-2026/
   collectively (no first names for the traveling families, by request).
   The St. Pete relatives are named because that's the itinerary content.
 - **Art is a mix of original SVG badges and real photos.** The day-header
-  badges are original flat art, not official logos. Each park/destination
-  day (1, 3, 4, 6, 7, and St. Pete) opens with a tilted "postcard" photo
-  from Wikimedia Commons — CC-licensed, downscaled to ≤1200px, attributed
-  in the on-page caption and in
+  badges are original flat art, not official logos. Every section (Home
+  Base and all ten day tabs) opens with a tilted "postcard" photo from
+  Wikimedia Commons — CC-licensed, downscaled to ≤1200px, attributed in
+  the on-page caption and in
   [`assets/photos/SOURCES.md`](./assets/photos/SOURCES.md). After the
   trip, family photos can replace them (update caption + SOURCES.md).
+- **Park days are "highlights" lists, not timelines.** Each park day has
+  up to 8 highlight items tagged by vibe (Must-do, Big thrill, Wet!,
+  A/C break…) pitched at a crew spanning age 8 to adventurous mid-40s.
+  Down days, travel days, and St. Pete keep the loose time-based format.
 - External links (queue-times.com wait pages, Disney/Universal app and
   planning pages, Google Maps directions) are convenience shortcuts and
   may rot after the trip; that's fine — this becomes a journal afterward.

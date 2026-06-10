@@ -174,6 +174,7 @@
     .day-photo img {
       display: block;
       width: 100%;
+      height: auto;
       max-height: 400px;
       object-fit: cover;
       border-radius: 4px;
@@ -186,6 +187,22 @@
     }
     .day-photo figcaption a { color: var(--muted); text-decoration: underline; }
     .day-photo figcaption a:hover { color: var(--accent2); }
+    .day-photo.portrait { max-width: 400px; margin-left: auto; margin-right: auto; }
+    .day-photo.portrait img { max-height: none; }
+    .card-grid .day-photo { grid-column: 1 / -1; margin-bottom: 0; }
+
+    /* HIGHLIGHTS — park days list draws, not a timeline */
+    .highlights-label {
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'Fredoka', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .highlights .schedule-item:not(:last-child)::after { display: none; }
+    .highlights .schedule-item { margin-bottom: 18px; }
     .schedule-item { display: flex; gap: 14px; margin-bottom: 22px; position: relative; }
     .schedule-item:not(:last-child)::after {
       content: '';
@@ -363,15 +380,16 @@
   <nav class="nav-container">
     <div class="nav-wrapper" id="navWrapper">
       <button class="day-tab active" data-target="base">🏠 Base</button>
-      <button class="day-tab" data-target="day-1" data-day="1">🌐 Sun 7</button>
-      <button class="day-tab" data-target="day-2" data-day="2">🏖️ Mon 8</button>
-      <button class="day-tab" data-target="day-3" data-day="3">🎬 Tue 9</button>
-      <button class="day-tab" data-target="day-4" data-day="4">🦁 Wed 10</button>
-      <button class="day-tab" data-target="day-5" data-day="5">🏖️ Thu 11</button>
-      <button class="day-tab" data-target="day-6" data-day="6">🌌 Fri 12</button>
-      <button class="day-tab" data-target="day-7" data-day="7">🏰 Sat 13</button>
-      <button class="day-tab" data-target="day-8" data-day="8">✈️ Sun 14</button>
-      <button class="day-tab" data-target="day-9" data-day="9">🌅 St Pete</button>
+      <button class="day-tab" data-target="day-1" data-day="1">🧳 Sat 6</button>
+      <button class="day-tab" data-target="day-2" data-day="2">🌐 Sun 7</button>
+      <button class="day-tab" data-target="day-3" data-day="3">🏖️ Mon 8</button>
+      <button class="day-tab" data-target="day-4" data-day="4">🎬 Tue 9</button>
+      <button class="day-tab" data-target="day-5" data-day="5">🦁 Wed 10</button>
+      <button class="day-tab" data-target="day-6" data-day="6">🏖️ Thu 11</button>
+      <button class="day-tab" data-target="day-7" data-day="7">🌌 Fri 12</button>
+      <button class="day-tab" data-target="day-8" data-day="8">🏰 Sat 13</button>
+      <button class="day-tab" data-target="day-9" data-day="9">✈️ Sun 14</button>
+      <button class="day-tab" data-target="day-10" data-day="10">🌅 St Pete</button>
     </div>
   </nav>
 
@@ -387,6 +405,10 @@
       </div>
 
       <div class="card-grid">
+        <figure class="day-photo">
+          <img src="assets/photos/base-florida-poolside.jpg" alt="Palm trees shading a poolside with white loungers under a blue sky" width="1200" height="795" loading="lazy">
+          <figcaption>The Florida uniform: palms, pool, loungers · 📷 <a href="https://commons.wikimedia.org/wiki/File:GX-211_-_Tropical_palm_trees_shade_a_serene_poolside_with_white_loungers_and_cabanas_under_bright_blue_skies.jpg" target="_blank" rel="noopener">public domain</a></figcaption>
+        </figure>
         <div class="info-card">
           <div class="card-title">📍 The House</div>
           <p><a href="https://www.google.com/maps/search/?api=1&amp;query=4724+Sleepy+Hollow+Drive,+Kissimmee,+FL+34746" target="_blank" rel="noopener"><strong>4724 Sleepy Hollow Drive</strong></a><br>
@@ -446,52 +468,123 @@
     </section>
 
     <!-- DAY 1 -->
-    <section class="day-section theme-universal" id="day-1">
+    <section class="day-section theme-travel" id="day-1">
       <div class="day-header">
-        <img class="day-badge" src="assets/badge-universal.svg" alt="Universal globe">
-        <div class="day-number">Day 1 · Universal × 2</div>
-        <div class="day-date">Sunday, June 7, 2026</div>
-        <div class="day-subtitle">Everyone arrives + Universal Studios &amp; Islands of Adventure</div>
-        <div class="ticket-chip">🎟️ 1-day park-to-park ticket</div>
+        <img class="day-badge" src="assets/badge-travel.svg" alt="Travel day">
+        <div class="day-number">Day 1 · Wheels Down</div>
+        <div class="day-date">Saturday, June 6, 2026</div>
+        <div class="day-subtitle">Both families land, keys in hand by 4 PM</div>
       </div>
       <div class="schedule-container">
         <figure class="day-photo">
-          <img src="assets/photos/day1-gringotts-dragon.jpg" alt="The fire-breathing dragon perched atop Gringotts bank in Diagon Alley" width="1200" height="799" loading="lazy">
-          <figcaption>The Gringotts dragon, Diagon Alley · 📷 <a href="https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(28462847187).jpg" target="_blank" rel="noopener">HarshLight</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+          <img src="assets/photos/day1-mco-terminal-c.jpg" alt="Palm trees and skylights inside Terminal C at Orlando International Airport" width="1200" height="851" loading="lazy">
+          <figcaption>Terminal C, Orlando International — palm trees included · 📷 <a href="https://commons.wikimedia.org/wiki/File:Terminal_C,_Orlando_International_Airport.jpg" target="_blank" rel="noopener">Olga Ernst</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
         </figure>
-        <div class="schedule-item">
-          <div class="time-badge">Morning</div>
-          <div class="activity-content">
-            <div class="activity-text">🛬 Both families arrive in Orlando — trip officially ON!</div>
-            <div class="activity-detail">House check-in isn't until 4 PM, so it's straight to the parks.</div>
-          </div>
-        </div>
-        <div class="schedule-item">
-          <div class="time-badge">Late AM</div>
-          <div class="activity-content">
-            <div class="activity-text"><a href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida" class="venue-link" target="_blank" rel="noopener">Universal Studios Florida</a> 🌐</div>
-            <div class="activity-detail">Diagon Alley (watch the dragon breathe fire!), Gringotts, Minion Land, MIB, The Mummy, Rip Ride Rockit.</div>
-          </div>
-        </div>
         <div class="schedule-item">
           <div class="time-badge">Afternoon</div>
           <div class="activity-content">
-            <div class="activity-text">🚂 Ride the Hogwarts Express to <a href="https://www.universalorlando.com/web/en/us/theme-parks/islands-of-adventure" class="venue-link" target="_blank" rel="noopener">Islands of Adventure</a></div>
-            <div class="activity-detail">King's Cross → Hogsmeade — the train itself needs the park-to-park ticket, and we've got it. Then: Hagrid's Motorbike Adventure, VelociCoaster, Spider-Man, Jurassic Park.</div>
+            <div class="activity-text">🛬 Both families land at <a href="https://flymco.com/" class="venue-link" target="_blank" rel="noopener">Orlando International (MCO)</a> — trip officially ON!</div>
+            <div class="activity-detail">Grab the bags, grab the rental cars, point them at Kissimmee.</div>
           </div>
         </div>
         <div class="schedule-item">
           <div class="time-badge">4:00 PM</div>
           <div class="activity-content">
-            <div class="activity-text">🏠 Door code goes live at the house — whoever taps out first can check in</div>
-            <div class="activity-detail">4724 Sleepy Hollow Dr. Code: ✱✱✱754 + ✓</div>
+            <div class="activity-text">🏠 Door code goes live — check in, claim bedrooms</div>
+            <div class="activity-detail">4724 Sleepy Hollow Dr. Code: ✱✱✱754 + ✓ (it won't work before 4).</div>
           </div>
         </div>
         <div class="schedule-item">
           <div class="time-badge">Evening</div>
           <div class="activity-content">
-            <div class="activity-text">🛒 Settle in + grocery run, easy dinner at the house</div>
-            <div class="activity-detail">Publix is the Florida way. Stock up for down days.</div>
+            <div class="activity-text">🛒 Publix run + easy dinner at the house</div>
+            <div class="activity-detail">Publix is the Florida way. Stock up for down days — and tomorrow's early start.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Night</div>
+          <div class="activity-content">
+            <div class="activity-text">🏊 First cannonball, then a reasonable bedtime — Universal opens early tomorrow</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://flymco.com/" target="_blank" rel="noopener">✈️ MCO airport</a>
+        <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=4724+Sleepy+Hollow+Drive,+Kissimmee,+FL+34746" target="_blank" rel="noopener">🏠 The house</a>
+        <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=Publix+near+Storey+Lake+Kissimmee" target="_blank" rel="noopener">🛒 Nearest Publix</a>
+      </div>
+    </section>
+
+    <!-- DAY 2 -->
+    <section class="day-section theme-universal" id="day-2">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-universal.svg" alt="Universal globe">
+        <div class="day-number">Day 2 · Universal × 2</div>
+        <div class="day-date">Sunday, June 7, 2026</div>
+        <div class="day-subtitle">Universal Studios &amp; Islands of Adventure, one big day</div>
+        <div class="ticket-chip">🎟️ 1-day park-to-park ticket</div>
+      </div>
+      <div class="schedule-container highlights">
+        <figure class="day-photo">
+          <img src="assets/photos/day2-gringotts-dragon.jpg" alt="The fire-breathing dragon perched atop Gringotts bank in Diagon Alley" width="1200" height="799" loading="lazy">
+          <figcaption>The Gringotts dragon, Diagon Alley · 📷 <a href="https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(28462847187).jpg" target="_blank" rel="noopener">HarshLight</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+        </figure>
+        <div class="highlights-label">✨ Highlights &amp; things to consider</div>
+        <div class="schedule-item">
+          <div class="time-badge">Must-do</div>
+          <div class="activity-content">
+            <div class="activity-text">🏍️ Hagrid's Magical Creatures Motorbike Adventure (IOA)</div>
+            <div class="activity-detail">The crowd-pleaser of the whole resort — fast but not scary-fast. 48" height req, so the whole crew clears it. Hit it early or brace for the longest line on property.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Big thrill</div>
+          <div class="activity-content">
+            <div class="activity-text">🦖 VelociCoaster (IOA)</div>
+            <div class="activity-detail">70 mph, a 155-ft top hat, and a barrel roll over the lagoon — for the daredevil wing of the group. Spectators: the bridge by the paddock is prime viewing.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Everyone</div>
+          <div class="activity-content">
+            <div class="activity-text">🐉 Escape from Gringotts (USF)</div>
+            <div class="activity-detail">Coaster-meets-dark-ride underneath Diagon Alley. Above ground, the dragon breathes real fire about every 10 minutes — listen for the rumble.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Don't skip</div>
+          <div class="activity-content">
+            <div class="activity-text">🚂 Hogwarts Express — ride it BOTH directions</div>
+            <div class="activity-detail">King's Cross ↔ Hogsmeade is a different show each way, and it's the easiest way to hop parks. Needs the park-to-park ticket — we've got it.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Classics</div>
+          <div class="activity-content">
+            <div class="activity-text">🕷️ Spider-Man (IOA) + 🧟 Revenge of the Mummy (USF)</div>
+            <div class="activity-detail">Two all-timer indoor rides — and two excellent blasts of air conditioning.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Wet!</div>
+          <div class="activity-content">
+            <div class="activity-text">💦 Jurassic Park River Adventure &amp; Popeye's barges (IOA)</div>
+            <div class="activity-detail">"Wet" undersells it — you will be drenched. Save for the hottest stretch of the afternoon.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">All ages</div>
+          <div class="activity-content">
+            <div class="activity-text">🍌 Minion Land + Men in Black: Alien Attack (USF)</div>
+            <div class="activity-detail">MIB is competitive laser-blasting with a score — family leaderboard rules apply.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Snack</div>
+          <div class="activity-content">
+            <div class="activity-text">🍺 Butterbeer + Florean Fortescue's ice cream (Diagon Alley)</div>
+            <div class="activity-detail">Frozen butterbeer &gt; regular butterbeer. This is the hill we die on.</div>
           </div>
         </div>
       </div>
@@ -516,15 +609,19 @@
       </div>
     </section>
 
-    <!-- DAY 2 -->
-    <section class="day-section theme-down" id="day-2">
+    <!-- DAY 3 -->
+    <section class="day-section theme-down" id="day-3">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-pool.svg" alt="Pool day">
-        <div class="day-number">Day 2 · Down Day</div>
+        <div class="day-number">Day 3 · Down Day</div>
         <div class="day-date">Monday, June 8, 2026</div>
         <div class="day-subtitle">Recover, float, recharge</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo tilt-r">
+          <img src="assets/photos/day3-disney-springs.jpg" alt="Turquoise spring water and a wooden footbridge at Disney Springs" width="1200" height="799" loading="lazy">
+          <figcaption>The actual springs at Disney Springs · 📷 <a href="https://commons.wikimedia.org/wiki/File:Disney_Springs_(27832916856).jpg" target="_blank" rel="noopener">Jennifer Lynn</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">All day</div>
           <div class="activity-content">
@@ -555,45 +652,74 @@
       </div>
     </section>
 
-    <!-- DAY 3 -->
-    <section class="day-section theme-hsepcot" id="day-3">
+    <!-- DAY 4 -->
+    <section class="day-section theme-hsepcot" id="day-4">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-hs.svg" alt="Hollywood Studios tower">
-        <div class="day-number">Day 3 · Hollywood Studios + EPCOT</div>
+        <div class="day-number">Day 4 · Hollywood Studios + EPCOT</div>
         <div class="day-date">Tuesday, June 9, 2026</div>
         <div class="day-subtitle">Two parks, one epic hop</div>
         <div class="ticket-chip">🎟️ Disney Park Hopper · day 1 of 3</div>
       </div>
-      <div class="schedule-container">
+      <div class="schedule-container highlights">
         <figure class="day-photo tilt-r">
-          <img src="assets/photos/day3-spaceship-earth.jpg" alt="Spaceship Earth glowing purple and gold at night" width="1200" height="960" loading="lazy">
+          <img src="assets/photos/day4-spaceship-earth.jpg" alt="Spaceship Earth glowing purple and gold at night" width="1200" height="960" loading="lazy">
           <figcaption>Spaceship Earth after dark, EPCOT · 📷 <a href="https://commons.wikimedia.org/wiki/File:Spaceship_Earth_at_night.jpg" target="_blank" rel="noopener">Benjamin D. Esham</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
         </figure>
+        <div class="highlights-label">✨ Highlights &amp; things to consider</div>
         <div class="schedule-item">
-          <div class="time-badge">Rope drop</div>
+          <div class="time-badge">Must-do</div>
           <div class="activity-content">
-            <div class="activity-text"><a href="https://disneyworld.disney.go.com/destinations/hollywood-studios/" class="venue-link" target="_blank" rel="noopener">Hollywood Studios</a> 🎬 — hit the big ones early</div>
-            <div class="activity-detail">Rise of the Resistance, Slinky Dog Dash, Tower of Terror, Millennium Falcon, Mickey &amp; Minnie's Runaway Railway.</div>
+            <div class="activity-text">🚀 Star Wars: Rise of the Resistance (<a href="https://disneyworld.disney.go.com/destinations/hollywood-studios/" class="venue-link" target="_blank" rel="noopener">Hollywood Studios</a>)</div>
+            <div class="activity-detail">Disney's most ambitious ride — part walkthrough, part dark ride, all spectacle. Rope-drop it or grab Lightning Lane; it's everyone's first pick.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">~2:00 PM</div>
+          <div class="time-badge">Everyone</div>
           <div class="activity-content">
-            <div class="activity-text">🚝 Hop to <a href="https://disneyworld.disney.go.com/destinations/epcot/" class="venue-link" target="_blank" rel="noopener">EPCOT</a> — take the Skyliner!</div>
-            <div class="activity-detail">The gondola ride from HS to EPCOT's International Gateway is an attraction in itself (park hopping opens at 2 PM... actually anytime now, but afternoon is the plan).</div>
+            <div class="activity-text">🐶 Slinky Dog Dash</div>
+            <div class="activity-detail">The family coaster that makes the whole group grin — gentle enough for the cautious, fun enough for the rest.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Afternoon</div>
+          <div class="time-badge">Big thrill</div>
           <div class="activity-content">
-            <div class="activity-text">🌍 Guardians of the Galaxy: Cosmic Rewind, Test Track, Frozen, Remy's</div>
-            <div class="activity-detail">Cosmic Rewind may need a virtual queue — check the app at 1 PM sharp.</div>
+            <div class="activity-text">🗼 The Twilight Zone Tower of Terror</div>
+            <div class="activity-detail">The drop sequence is randomized — no two rides are the same. Stomachs optional, screams guaranteed.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Crew up</div>
+          <div class="activity-content">
+            <div class="activity-text">🛸 Millennium Falcon: Smugglers Run + 🚂 Mickey &amp; Minnie's Runaway Railway</div>
+            <div class="activity-detail">On the Falcon everyone gets an actual job — pilots steer, engineers push the blinky buttons. Runaway Railway is trackless, clever, and good for all ages.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">The hop</div>
+          <div class="activity-content">
+            <div class="activity-text">🚡 Take the Skyliner to <a href="https://disneyworld.disney.go.com/destinations/epcot/" class="venue-link" target="_blank" rel="noopener">EPCOT</a></div>
+            <div class="activity-detail">The gondola from HS to EPCOT's back door is an attraction in itself — aim for early afternoon.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Heads-up</div>
+          <div class="activity-content">
+            <div class="activity-text">🌌 Guardians of the Galaxy: Cosmic Rewind</div>
+            <div class="activity-detail">Likely needs a virtual queue — check the app at 7 AM and again at 1 PM sharp. The coaster cars rotate mid-ride; intense but smooth, and the soundtrack slaps.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">EPCOT trio</div>
+          <div class="activity-content">
+            <div class="activity-text">🏎️ Test Track · ❄️ Frozen Ever After · 🐀 Remy's Ratatouille Adventure</div>
+            <div class="activity-detail">Design-your-own car races, a singalong boat, and a shrunk-to-rat-size scamper through a Paris kitchen — something for every faction.</div>
           </div>
         </div>
         <div class="schedule-item">
           <div class="time-badge">Evening</div>
           <div class="activity-content">
-            <div class="activity-text">🍜 Graze dinner around World Showcase, then <strong>Luminous</strong> fireworks on the lagoon</div>
+            <div class="activity-text">🍜 Graze World Showcase, then <strong>Luminous</strong> fireworks on the lagoon</div>
             <div class="activity-detail">11 countries, every snack counts. Stake out a lagoon spot ~30 min before show time.</div>
           </div>
         </div>
@@ -619,45 +745,75 @@
       </div>
     </section>
 
-    <!-- DAY 4 -->
-    <section class="day-section theme-ak" id="day-4">
+    <!-- DAY 5 -->
+    <section class="day-section theme-ak" id="day-5">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-ak.svg" alt="Tree of Life">
-        <div class="day-number">Day 4 · Animal Kingdom</div>
+        <div class="day-number">Day 5 · Animal Kingdom</div>
         <div class="day-date">Wednesday, June 10, 2026</div>
         <div class="day-subtitle">Safaris, Pandora, and a yeti</div>
         <div class="ticket-chip">🎟️ Disney Park Hopper · day 2 of 3</div>
       </div>
-      <div class="schedule-container">
+      <div class="schedule-container highlights">
         <figure class="day-photo">
-          <img src="assets/photos/day4-tree-of-life.jpg" alt="The Tree of Life under a blue sky at Disney's Animal Kingdom" width="1200" height="900" loading="lazy">
+          <img src="assets/photos/day5-tree-of-life.jpg" alt="The Tree of Life under a blue sky at Disney's Animal Kingdom" width="1200" height="900" loading="lazy">
           <figcaption>The Tree of Life · 📷 <a href="https://commons.wikimedia.org/wiki/File:Tree_of_Life,_Disney%27s_Animal_Kingdom.jpg" target="_blank" rel="noopener">Jedi94</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
         </figure>
+        <div class="highlights-label">✨ Highlights &amp; things to consider</div>
         <div class="schedule-item">
-          <div class="time-badge">Early AM</div>
+          <div class="time-badge">Go early</div>
           <div class="activity-content">
-            <div class="activity-text">🦁 <a href="https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/" class="venue-link" target="_blank" rel="noopener">Kilimanjaro Safaris</a> first thing</div>
-            <div class="activity-detail">Animals are most active in the cool morning — giraffes, lions, elephants, rhinos on a real 110-acre savanna.</div>
+            <div class="activity-text">🦒 <a href="https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/" class="venue-link" target="_blank" rel="noopener">Kilimanjaro Safaris</a></div>
+            <div class="activity-detail">A real 110-acre savanna — giraffes, lions, elephants, rhinos. Animals are most active in the cool of the morning, so make this the first stop.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Midday</div>
+          <div class="time-badge">Must-do</div>
           <div class="activity-content">
-            <div class="activity-text">🌺 Pandora — Flight of Passage &amp; Na'vi River Journey</div>
-            <div class="activity-detail">Flight of Passage is arguably Disney's best ride, period. Worth the wait or the Lightning Lane.</div>
+            <div class="activity-text">🪂 Avatar Flight of Passage (Pandora)</div>
+            <div class="activity-detail">Arguably Disney's best ride, period — you're on the back of a banshee. Worth the wait or the Lightning Lane. 44" height req.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Afternoon</div>
+          <div class="time-badge">All ages</div>
           <div class="activity-content">
-            <div class="activity-text">🏔️ Expedition Everest, Kali River Rapids (you WILL get soaked), Festival of the Lion King</div>
-            <div class="activity-detail">Kali strategy: ponchos or sacrificial clothes. June in Florida = you'll dry... eventually.</div>
+            <div class="activity-text">🛶 Na'vi River Journey (Pandora)</div>
+            <div class="activity-detail">A gentle float through a glowing bioluminescent forest — the looker of the park, zero thrills required.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Evening</div>
+          <div class="time-badge">Thrill</div>
           <div class="activity-content">
-            <div class="activity-text">🏊 Back to the house early — AK closes earlier than other parks. Pool + grill night.</div>
+            <div class="activity-text">🏔️ Expedition Everest</div>
+            <div class="activity-detail">Forwards, then BACKWARDS in the dark, then a yeti. 44" — the 8-year-olds who like coasters will be fine; so will most mid-40s knees.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Wet!</div>
+          <div class="activity-content">
+            <div class="activity-text">🌊 Kali River Rapids</div>
+            <div class="activity-detail">You WILL get soaked — ponchos or sacrificial clothes. June in Florida = you'll dry… eventually.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Show</div>
+          <div class="activity-content">
+            <div class="activity-text">🦁 Festival of the Lion King</div>
+            <div class="activity-detail">Broadway-caliber singers and acrobats, 30 minutes of A/C — the perfect afternoon-storm shelter.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Wander</div>
+          <div class="activity-content">
+            <div class="activity-text">🦍 Gorilla Falls &amp; Maharajah Jungle Trek walking trails</div>
+            <div class="activity-detail">Gorillas, tigers, komodo dragons, giant bats — self-paced walkthroughs most people speed past. Don't.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Kids (sure)</div>
+          <div class="activity-content">
+            <div class="activity-text">🥾 Wilderness Explorers badge hunt</div>
+            <div class="activity-detail">A park-wide scavenger hunt with a sticker book — nominally for the kids, historically taken over by the adults. AK closes earlier than other parks, so it's pool + grill night after.</div>
           </div>
         </div>
       </div>
@@ -681,15 +837,19 @@
       </div>
     </section>
 
-    <!-- DAY 5 -->
-    <section class="day-section theme-down" id="day-5">
+    <!-- DAY 6 -->
+    <section class="day-section theme-down" id="day-6">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-pool.svg" alt="Pool day">
-        <div class="day-number">Day 5 · Down Day</div>
+        <div class="day-number">Day 6 · Down Day</div>
         <div class="day-date">Thursday, June 11, 2026</div>
         <div class="day-subtitle">Mid-trip recharge before Epic</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo">
+          <img src="assets/photos/day6-old-town-kissimmee.jpg" alt="The Old Town entrance sign and a pastel ferris wheel against a blue sky" width="1200" height="798" loading="lazy">
+          <figcaption>Old Town, Kissimmee — retro Florida, 10 minutes away · 📷 <a href="https://commons.wikimedia.org/wiki/File:Old_Town_Entrance.jpg" target="_blank" rel="noopener">OldTown2020</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">All day</div>
           <div class="activity-content">
@@ -717,53 +877,75 @@
       </div>
     </section>
 
-    <!-- DAY 6 -->
-    <section class="day-section theme-epic" id="day-6">
+    <!-- DAY 7 -->
+    <section class="day-section theme-epic" id="day-7">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-epic.svg" alt="Epic Universe celestial star">
-        <div class="day-number">Day 6 · Epic Universe</div>
+        <div class="day-number">Day 7 · Epic Universe</div>
         <div class="day-date">Friday, June 12, 2026</div>
         <div class="day-subtitle">Orlando's newest park — portals to five worlds</div>
         <div class="ticket-chip">🎟️ 1-day single-park ticket</div>
       </div>
-      <div class="schedule-container">
+      <div class="schedule-container highlights">
         <figure class="day-photo tilt-r">
-          <img src="assets/photos/day6-epic-universe-gate.jpg" alt="The Chronos gate at the entrance to Epic Universe's Celestial Park" width="1200" height="673" loading="lazy">
+          <img src="assets/photos/day7-epic-universe-gate.jpg" alt="The Chronos gate at the entrance to Epic Universe's Celestial Park" width="1200" height="673" loading="lazy">
           <figcaption>The Chronos, gateway to Celestial Park · 📷 <a href="https://commons.wikimedia.org/wiki/File:Chronos_Tower_Front_Epic_Universe.jpg" target="_blank" rel="noopener">Gfgbeach</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></figcaption>
         </figure>
+        <div class="highlights-label">✨ Highlights &amp; things to consider</div>
         <div class="schedule-item">
-          <div class="time-badge">Early!</div>
+          <div class="time-badge">First!</div>
           <div class="activity-content">
-            <div class="activity-text">⏰ Arrive before opening — this park is the hot ticket</div>
-            <div class="activity-detail">~30 min drive. Through the gates and into Celestial Park, then pick a portal.</div>
+            <div class="activity-text">⏰ Arrive before gates open, then beeline to 🍄 <strong>Super Nintendo World</strong></div>
+            <div class="activity-detail">This park is the hot ticket and the Mushroom Kingdom fills first — get there early or expect a long wait just to walk in.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Morning</div>
+          <div class="time-badge">Everyone</div>
           <div class="activity-content">
-            <div class="activity-text">🍄 <strong>Super Nintendo World</strong> — Mario Kart: Bowser's Challenge &amp; Mine-Cart Madness</div>
-            <div class="activity-detail">Grab Power-Up Bands to punch ? blocks and battle bosses. Head here first or expect long entry waits.</div>
+            <div class="activity-text">🏎️ Mario Kart: Bowser's Challenge + Power-Up Bands</div>
+            <div class="activity-detail">AR headset kart battle the whole crew can ride. The Power-Up Bands track your score across the land — the family leaderboard is very much a competition.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Midday</div>
+          <div class="time-badge">Sleeper hit</div>
           <div class="activity-content">
-            <div class="activity-text">🐉 <strong>Isle of Berk</strong> (How to Train Your Dragon) — Hiccup's Wing Gliders, live dragons everywhere</div>
-            <div class="activity-detail">Then 🧙 <strong>Ministry of Magic</strong> — 1920s wizarding Paris and the Battle at the Ministry ride.</div>
+            <div class="activity-text">🦍 Mine-Cart Madness (Donkey Kong Country)</div>
+            <div class="activity-detail">The cart "jumps" gaps in the track — looks impossible, feels hilarious, fine for everyone.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Afternoon</div>
+          <div class="time-badge">Big thrill</div>
           <div class="activity-content">
-            <div class="activity-text">🧟 <strong>Dark Universe</strong> — Monsters Unchained: The Frankenstein Experiment</div>
-            <div class="activity-detail">Classic Universal monsters in Darkmoor village. Werewolves optional.</div>
+            <div class="activity-text">🌠 Stardust Racers</div>
+            <div class="activity-detail">Dual-launch racing coaster — two trains dogfight at 62 mph over 133-ft peaks. Ride it by day, then again after dark when it glows.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Evening</div>
+          <div class="time-badge">All ages</div>
           <div class="activity-content">
-            <div class="activity-text">🌠 <strong>Stardust Racers</strong> at night + Celestial Park fountains</div>
-            <div class="activity-detail">The dual-launch racing coaster glows after dark. Stay for the nighttime show over the water.</div>
+            <div class="activity-text">🐉 Isle of Berk — Hiccup's Wing Gliders + live dragons everywhere</div>
+            <div class="activity-detail">The How to Train Your Dragon land is the warmest of the five worlds — shows, splash zones, and a family coaster that's better than it needs to be.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Don't skip</div>
+          <div class="activity-content">
+            <div class="activity-text">🧙 Ministry of Magic — Battle at the Ministry</div>
+            <div class="activity-detail">1920s wizarding Paris; the queue through the Ministry is half the attraction. Expect a virtual line in the app.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Brave-ish</div>
+          <div class="activity-content">
+            <div class="activity-text">🧟 Dark Universe — Monsters Unchained: The Frankenstein Experiment</div>
+            <div class="activity-detail">Intense animatronics and dark scenes in Darkmoor village — great for 8-year-olds who like spooky, skippable for ones who don't.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Stay late</div>
+          <div class="activity-content">
+            <div class="activity-text">🎠 Constellation Carousel, the fountains, and the nighttime show over the water</div>
+            <div class="activity-detail">Celestial Park is the breather between portals — and the whole park is a different place after dark.</div>
           </div>
         </div>
       </div>
@@ -787,46 +969,75 @@
       </div>
     </section>
 
-    <!-- DAY 7 -->
-    <section class="day-section theme-mk" id="day-7">
+    <!-- DAY 8 -->
+    <section class="day-section theme-mk" id="day-8">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-mk.svg" alt="Magic Kingdom castle">
-        <div class="day-number">Day 7 · Magic Kingdom</div>
+        <div class="day-number">Day 8 · Magic Kingdom</div>
         <div class="day-date">Saturday, June 13, 2026</div>
         <div class="day-subtitle">The classic — plus circle back for anything we missed</div>
         <div class="ticket-chip">🎟️ Disney Park Hopper · day 3 of 3</div>
       </div>
-      <div class="schedule-container">
-        <figure class="day-photo">
-          <img src="assets/photos/day7-castle-fireworks.jpg" alt="Fireworks bursting around Cinderella Castle at night" width="1200" height="900" loading="lazy">
-          <figcaption>Fireworks over Cinderella Castle · 📷 <a href="https://commons.wikimedia.org/wiki/File:Fireworks_in_Magic_Kingdom.jpg" target="_blank" rel="noopener">Stevenliuyi</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+      <div class="schedule-container highlights">
+        <figure class="day-photo portrait">
+          <img src="assets/photos/day8-cinderella-castle.jpg" alt="Cinderella Castle in pink, gold, and blue against a clear sky" width="1200" height="1500" loading="lazy">
+          <figcaption>The one and only Cinderella Castle · 📷 <a href="https://commons.wikimedia.org/wiki/File:Cinderella_Castle,_Magic_Kingdom_Walt_Disney_World_(2024).jpg" target="_blank" rel="noopener">Jedi94</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
         </figure>
+        <div class="highlights-label">✨ Highlights &amp; things to consider</div>
         <div class="schedule-item">
-          <div class="time-badge">Morning</div>
+          <div class="time-badge">Heads-up</div>
           <div class="activity-content">
-            <div class="activity-text">🏰 <a href="https://disneyworld.disney.go.com/destinations/magic-kingdom/" class="venue-link" target="_blank" rel="noopener">Magic Kingdom</a> — down Main Street toward the castle</div>
-            <div class="activity-detail">Seven Dwarfs Mine Train, Space Mountain, TRON Lightcycle/Run (check virtual queue at 7 AM!), Big Thunder, Pirates, Haunted Mansion.</div>
+            <div class="activity-text">🚴 TRON Lightcycle/Run — virtual queue drops at <strong>7 AM</strong></div>
+            <div class="activity-detail">Phones out at breakfast. You straddle the bike like an actual lightcycle; the launch is the best 3 seconds at <a href="https://disneyworld.disney.go.com/destinations/magic-kingdom/" class="venue-link" target="_blank" rel="noopener">Magic Kingdom</a>.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Midday</div>
+          <div class="time-badge">Must-do</div>
           <div class="activity-content">
-            <div class="activity-text">🍦 Dole Whip break + classics: Jungle Cruise, it's a small world, PeopleMover</div>
-            <div class="activity-detail">The PeopleMover is the most underrated 10 minutes of air-conditioned sitting at Disney World.</div>
+            <div class="activity-text">⛏️ Seven Dwarfs Mine Train</div>
+            <div class="activity-detail">The swinging mine carts are gentle enough for everyone and the line is eternal — Lightning Lane it or rope-drop it.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Afternoon</div>
+          <div class="time-badge">Classics</div>
           <div class="activity-content">
-            <div class="activity-text">🔁 Hopper power: circle back to EPCOT / Hollywood Studios / Animal Kingdom for anything missed</div>
-            <div class="activity-detail">Last Disney day — clear the wish list. Monorail to EPCOT is the classic hop.</div>
+            <div class="activity-text">🚀 Space Mountain + 🚂 Big Thunder Mountain</div>
+            <div class="activity-detail">Coasters in the dark and runaway trains — 1970s thrills that still absolutely hold up.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Night</div>
+          <div class="time-badge">All-timers</div>
           <div class="activity-content">
-            <div class="activity-text">🎆 <strong>Happily Ever After</strong> fireworks over Cinderella Castle</div>
-            <div class="activity-detail">The grand finale of theme-park week. Hub grass or Main Street view — get there early, tissues optional but likely.</div>
+            <div class="activity-text">🏴‍☠️ Pirates of the Caribbean + 👻 Haunted Mansion</div>
+            <div class="activity-detail">All ages, no height requirement, endlessly rewatchable — count the hidden details. Grim grinning ghosts come out to socialize.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Pure silly</div>
+          <div class="activity-content">
+            <div class="activity-text">🛥️ Jungle Cruise</div>
+            <div class="activity-detail">The puns are the point. The backside of water never gets old.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">A/C break</div>
+          <div class="activity-content">
+            <div class="activity-text">🚝 PeopleMover + Carousel of Progress</div>
+            <div class="activity-detail">The most underrated air-conditioned sitting at Disney World. There's a great big beautiful tomorrow, and the kids will be humming it for days.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Snack</div>
+          <div class="activity-content">
+            <div class="activity-text">🍍 Dole Whip in Adventureland</div>
+            <div class="activity-detail">Non-negotiable. Last Disney day — the Park Hopper also lets us circle back to EPCOT / HS / AK to clear the wish list (monorail to EPCOT is the classic hop).</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Finale</div>
+          <div class="activity-content">
+            <div class="activity-text">🎆 <strong>Happily Ever After</strong> fireworks over the castle</div>
+            <div class="activity-detail">The grand finale of theme-park week. Hub grass or Main Street view — stake out a spot early. Tissues optional but likely.</div>
           </div>
         </div>
       </div>
@@ -850,15 +1061,19 @@
       </div>
     </section>
 
-    <!-- DAY 8 -->
-    <section class="day-section theme-travel" id="day-8">
+    <!-- DAY 9 -->
+    <section class="day-section theme-travel" id="day-9">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-travel.svg" alt="Travel day">
-        <div class="day-number">Day 8 · Farewell &amp; Onward</div>
+        <div class="day-number">Day 9 · Farewell &amp; Onward</div>
         <div class="day-date">Sunday, June 14, 2026</div>
         <div class="day-subtitle">De Bertis fly home · Polings roll west to St. Pete</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo tilt-r">
+          <img src="assets/photos/day9-sunshine-skyway.jpg" alt="Driving across the Sunshine Skyway Bridge under its yellow cables" width="1200" height="900" loading="lazy">
+          <figcaption>Crossing the Sunshine Skyway into St. Pete · 📷 <a href="https://commons.wikimedia.org/wiki/File:2010-09-10_Sunshine_Skyway_Bridge.jpg" target="_blank" rel="noopener">Joe King</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">By 10 AM</div>
           <div class="activity-content">
@@ -901,8 +1116,8 @@
       </div>
     </section>
 
-    <!-- DAY 9 -->
-    <section class="day-section theme-stpete" id="day-9">
+    <!-- ST. PETE -->
+    <section class="day-section theme-stpete" id="day-10">
       <div class="day-header">
         <img class="day-badge" src="assets/badge-stpete.svg" alt="St. Pete sunset">
         <div class="day-number">St. Pete Days</div>
@@ -910,8 +1125,8 @@
         <div class="day-subtitle">Family time in the Sunshine City</div>
       </div>
       <div class="schedule-container">
-        <figure class="day-photo tilt-r">
-          <img src="assets/photos/day9-fort-de-soto-sunset.jpg" alt="Sunset over the Gulf at North Beach, Fort De Soto Park" width="1200" height="900" loading="lazy">
+        <figure class="day-photo">
+          <img src="assets/photos/stpete-fort-de-soto-sunset.jpg" alt="Sunset over the Gulf at North Beach, Fort De Soto Park" width="1200" height="900" loading="lazy">
           <figcaption>Sunset at Fort De Soto's North Beach · 📷 <a href="https://commons.wikimedia.org/wiki/File:Sunset_on_North_Beach_at_Fort_De_Soto_Park.jpg" target="_blank" rel="noopener">Christopher Hollis</a> · public domain</figcaption>
         </figure>
         <div class="schedule-item">
@@ -996,14 +1211,14 @@
 
     // "Today" tab — highlight and snap to current trip day
     function getTodayDayNum() {
-      // Day 1 = Jun 7 … Day 8 = Jun 14; Day 9 covers the St. Pete days after
-      const tripStart = new Date('2026-06-07T00:00:00-04:00'); // Eastern Time
+      // Day 1 = Jun 6 … Day 9 = Jun 14; Day 10 covers the St. Pete days after
+      const tripStart = new Date('2026-06-06T00:00:00-04:00'); // Eastern Time
       const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
       const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
       const startDate = new Date(tripStart.getFullYear(), tripStart.getMonth(), tripStart.getDate());
       const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-      if (diffDays >= 0 && diffDays <= 7) return diffDays + 1; // Days 1–8
-      if (diffDays >= 8 && diffDays <= 11) return 9;           // St. Pete stretch
+      if (diffDays >= 0 && diffDays <= 8) return diffDays + 1;  // Days 1–9
+      if (diffDays >= 9 && diffDays <= 12) return 10;           // St. Pete stretch
       return null; // Outside trip dates
     }
 
