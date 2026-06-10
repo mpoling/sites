@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#2A2356" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- stars -->
+  <circle cx="30" cy="30" r="2" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="92" cy="36" r="1.6" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="86" cy="88" r="2" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="26" cy="84" r="1.6" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="60" cy="20" r="1.6" fill="#FFFFFF" opacity="0.8"/>
+  <!-- orbit ring -->
+  <ellipse cx="60" cy="60" rx="42" ry="16" fill="none" stroke="#5C8DFF" stroke-width="2.5" transform="rotate(-20 60 60)"/>
+  <circle cx="24" cy="74" r="4" fill="#FF6F61"/>
+  <!-- helios star -->
+  <g fill="#FFC93C">
+    <path d="M60 26 L66 52 L60 60 L54 52 Z"/>
+    <path d="M60 94 L66 68 L60 60 L54 68 Z"/>
+    <path d="M26 60 L52 54 L60 60 L52 66 Z"/>
+    <path d="M94 60 L68 54 L60 60 L68 66 Z"/>
+  </g>
+  <g fill="#FFD86B" opacity="0.85">
+    <path d="M38 38 L56 54 L54 58 L48 56 Z"/>
+    <path d="M82 38 L64 54 L66 58 L72 56 Z"/>
+    <path d="M38 82 L54 66 L58 68 L56 74 Z"/>
+    <path d="M82 82 L66 66 L62 68 L64 74 Z"/>
+  </g>
+  <circle cx="60" cy="60" r="9" fill="#FFF3CC"/>
+</svg>

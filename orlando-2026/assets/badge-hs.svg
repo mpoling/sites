@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B259D0"/>
+      <stop offset="1" stop-color="#FF8A5C"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#hsky)" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- stars -->
+  <path d="M30 28 l2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 Z" fill="#FFC93C"/>
+  <path d="M90 34 l1.6 3.2 3.2 1.6 -3.2 1.6 -1.6 3.2 -1.6 -3.2 -3.2 -1.6 3.2 -1.6 Z" fill="#FFC93C"/>
+  <!-- tower silhouette -->
+  <rect x="44" y="38" width="32" height="56" fill="#3D2B4F"/>
+  <rect x="40" y="50" width="8" height="44" fill="#3D2B4F"/>
+  <rect x="72" y="50" width="8" height="44" fill="#3D2B4F"/>
+  <rect x="50" y="28" width="20" height="14" fill="#3D2B4F"/>
+  <rect x="56" y="22" width="8" height="8" fill="#3D2B4F"/>
+  <!-- windows -->
+  <rect x="50" y="46" width="5" height="7" fill="#FFC93C"/>
+  <rect x="58" y="46" width="5" height="7" fill="#FFD86B"/>
+  <rect x="66" y="46" width="5" height="7" fill="#FFC93C"/>
+  <rect x="50" y="58" width="5" height="7" fill="#FFD86B" opacity="0.85"/>
+  <rect x="66" y="58" width="5" height="7" fill="#FFC93C" opacity="0.85"/>
+  <rect x="58" y="70" width="5" height="7" fill="#FFC93C" opacity="0.7"/>
+  <!-- marquee zigzag -->
+  <path d="M22 94 Q60 88 98 94 L98 98 Q60 92 22 98 Z" fill="#3D2B4F"/>
+</svg>

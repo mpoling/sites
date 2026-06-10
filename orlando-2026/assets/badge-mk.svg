@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#2A3F9E" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- firework bursts -->
+  <g stroke="#FFC93C" stroke-width="2" stroke-linecap="round">
+    <path d="M28 30 v8 M24 34 h8 M25 31 l6 6 M31 31 l-6 6"/>
+  </g>
+  <g stroke="#FF6F61" stroke-width="2" stroke-linecap="round">
+    <path d="M92 26 v8 M88 30 h8 M89 27 l6 6 M95 27 l-6 6"/>
+  </g>
+  <!-- castle -->
+  <rect x="48" y="52" width="24" height="38" fill="#F4F0FF"/>
+  <path d="M48 52 h24 l-3 -6 h-18 Z" fill="#E4DCF7"/>
+  <!-- center spire -->
+  <rect x="55" y="34" width="10" height="22" fill="#F4F0FF"/>
+  <path d="M55 34 L60 18 L65 34 Z" fill="#5C8DFF"/>
+  <!-- side towers -->
+  <rect x="38" y="58" width="10" height="32" fill="#E4DCF7"/>
+  <path d="M38 58 L43 44 L48 58 Z" fill="#5C8DFF"/>
+  <rect x="72" y="58" width="10" height="32" fill="#E4DCF7"/>
+  <path d="M72 58 L77 44 L82 58 Z" fill="#5C8DFF"/>
+  <!-- outer turrets -->
+  <rect x="30" y="68" width="8" height="22" fill="#F4F0FF"/>
+  <path d="M30 68 L34 58 L38 68 Z" fill="#7FA4FF"/>
+  <rect x="82" y="68" width="8" height="22" fill="#F4F0FF"/>
+  <path d="M82 68 L86 58 L90 68 Z" fill="#7FA4FF"/>
+  <!-- door & windows -->
+  <path d="M55 90 v-12 a5 5 0 0 1 10 0 v12 Z" fill="#2A3F9E"/>
+  <rect x="58" y="42" width="4" height="7" rx="2" fill="#2A3F9E"/>
+  <rect x="41" y="64" width="4" height="6" rx="2" fill="#2A3F9E"/>
+  <rect x="75" y="64" width="4" height="6" rx="2" fill="#2A3F9E"/>
+  <!-- flag -->
+  <line x1="60" y1="18" x2="60" y2="11" stroke="#FFC93C" stroke-width="1.6"/>
+  <path d="M60 11 h8 l-3 2.5 3 2.5 h-8 Z" fill="#FFC93C"/>
+  <!-- ground -->
+  <path d="M26 90 Q60 84 94 90 L94 94 Q60 88 26 94 Z" fill="#1E2C73"/>
+</svg>

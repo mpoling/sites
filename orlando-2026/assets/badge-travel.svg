@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#FFD9B8" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="32" cy="34" r="10" fill="#FFC93C"/>
+  <!-- plane -->
+  <g transform="rotate(-18 76 38)">
+    <path d="M58 38 h26 a5 5 0 0 1 0 10 h-26 l-8 8 h-5 l4 -10 -4 -10 h5 Z" fill="#2A2356"/>
+    <path d="M70 38 l8 -9 h5 l-5 9 Z" fill="#2A2356"/>
+    <path d="M70 48 l8 9 h5 l-5 -9 Z" fill="#2A2356"/>
+    <circle cx="84" cy="43" r="2" fill="#FFC93C"/>
+  </g>
+  <!-- road -->
+  <path d="M14 92 C40 78 80 86 106 70 L106 80 C82 94 42 88 14 100 Z" fill="#4A453F"/>
+  <path d="M20 92 C44 80 78 86 100 74" stroke="#FFC93C" stroke-width="2.5" stroke-dasharray="7 7" fill="none"/>
+  <!-- car -->
+  <g transform="rotate(-8 48 80)">
+    <rect x="36" y="74" width="26" height="10" rx="4" fill="#FF6F61"/>
+    <path d="M41 74 l4 -6 h9 l4 6 Z" fill="#FF8A78"/>
+    <circle cx="43" cy="85" r="3.6" fill="#2A2356"/>
+    <circle cx="56" cy="85" r="3.6" fill="#2A2356"/>
+  </g>
+</svg>

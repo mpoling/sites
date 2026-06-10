@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Orlando Trip · June 2026 · Polings &amp; De Bertis</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --sand: #FFF8EC;
+      --ink: #33302E;
+      --sun: #FFC93C;
+      --coral: #FF6F61;
+      --ocean: #0099B8;
+      --deep-ocean: #006B82;
+      --palm: #2E9E63;
+      --night: #2A2356;
+      --card: #FFFFFF;
+      --muted: #7A736C;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--sand);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    h1, h2, .day-number, .day-tab, .time-badge, .card-title { font-family: 'Fredoka', sans-serif; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(180deg, #FFD86B 0%, #FF9E5E 55%, #FF6F61 100%);
+      text-align: center;
+      padding: 28px 16px 22px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--night);
+      letter-spacing: 0.5px;
+    }
+    .hero .sub {
+      font-size: 15px;
+      color: #5B3A4E;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .hero .crew {
+      display: inline-block;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--night);
+      box-shadow: 0 2px 6px rgba(90, 40, 30, 0.15);
+    }
+
+    /* STICKY NAVIGATION */
+    .nav-container {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(to bottom, var(--night), #3A3170);
+      box-shadow: 0 2px 10px rgba(42, 35, 86, 0.35);
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+    .nav-wrapper::-webkit-scrollbar { height: 3px; }
+    .nav-wrapper::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); }
+    .nav-wrapper::-webkit-scrollbar-thumb { background: var(--sun); border-radius: 3px; }
+
+    .day-tab {
+      flex-shrink: 0;
+      padding: 14px 14px;
+      border: none;
+      background: none;
+      color: rgba(255, 255, 255, 0.75);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+    .day-tab:hover { color: #FFF; background: rgba(255, 201, 60, 0.12); }
+    .day-tab.active {
+      color: var(--sun);
+      border-bottom-color: var(--sun);
+      background: rgba(255, 201, 60, 0.12);
+    }
+    .day-tab.today {
+      background: var(--sun);
+      color: var(--night);
+      font-weight: 700;
+      border-bottom-color: var(--sun);
+    }
+    .day-tab.today.active { border-bottom-color: #FFF; }
+
+    /* MAIN */
+    main { max-width: 720px; margin: 0 auto; }
+    .day-section { scroll-margin-top: 64px; background: var(--card); padding-bottom: 10px; }
+
+    /* DAY HEADER — per-day accent via section theme class */
+    .day-section { --accent: var(--ocean); --accent2: var(--deep-ocean); }
+    .theme-home      { --accent: #FF9E5E; --accent2: #E8654F; }
+    .theme-universal { --accent: #1F6FEB; --accent2: #0B3D91; }
+    .theme-down      { --accent: #00B8A9; --accent2: #00857D; }
+    .theme-hsepcot   { --accent: #B259D0; --accent2: #5F2C91; }
+    .theme-ak        { --accent: #3FA34D; --accent2: #1E6B3C; }
+    .theme-epic      { --accent: #5C4DB1; --accent2: #2A2356; }
+    .theme-mk        { --accent: #4D7CFF; --accent2: #2A3F9E; }
+    .theme-travel    { --accent: #FF8A5C; --accent2: #D85A45; }
+    .theme-stpete    { --accent: #FFB13C; --accent2: #E8654F; }
+
+    .day-header {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #FFF;
+      padding: 28px 24px;
+      text-align: center;
+      border-bottom: 5px solid var(--sun);
+    }
+    .day-badge {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 10px;
+      display: block;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+    }
+    .day-number { font-size: 34px; font-weight: 700; line-height: 1.1; }
+    .day-date { font-size: 17px; font-weight: 600; margin-top: 4px; opacity: 0.95; }
+    .day-subtitle { font-size: 14px; opacity: 0.9; font-style: italic; margin-top: 2px; }
+    .ticket-chip {
+      display: inline-block;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px dashed rgba(255, 255, 255, 0.7);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* SCHEDULE */
+    .schedule-container { padding: 24px; background: var(--card); }
+    .schedule-item { display: flex; gap: 14px; margin-bottom: 22px; position: relative; }
+    .schedule-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 52px;
+      width: 3px;
+      height: calc(100% - 24px);
+      border-radius: 2px;
+      background: linear-gradient(to bottom, var(--accent), rgba(255, 201, 60, 0.25));
+      opacity: 0.35;
+    }
+    .time-badge {
+      flex-shrink: 0;
+      background: var(--accent);
+      color: #FFF;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      min-width: 92px;
+      height: fit-content;
+      margin-top: 2px;
+    }
+    .activity-content { flex: 1; min-width: 0; }
+    .activity-text { font-size: 15px; margin-bottom: 6px; line-height: 1.5; }
+    .activity-detail { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+    /* LINK CHIPS */
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 24px 20px; background: var(--card); }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--sand);
+      border: 1.5px solid var(--accent);
+      color: var(--accent2);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .chip:hover { background: #FFF1D6; transform: translateY(-1px); }
+    .chips-label {
+      width: 100%;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    /* CARDS (home base) */
+    .card-grid { display: grid; grid-template-columns: 1fr; gap: 14px; padding: 20px 24px; background: var(--card); }
+    @media (min-width: 600px) { .card-grid { grid-template-columns: 1fr 1fr; } }
+    .info-card {
+      background: var(--sand);
+      border-radius: 14px;
+      padding: 16px 18px;
+      border: 1px solid #F0E3CB;
+    }
+    .info-card.wide { grid-column: 1 / -1; }
+    .card-title { font-size: 16px; font-weight: 600; color: var(--accent2); margin-bottom: 8px; }
+    .info-card p { font-size: 14px; margin-bottom: 6px; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .door-code {
+      display: inline-block;
+      font-family: 'Fredoka', monospace;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      background: var(--night);
+      color: var(--sun);
+      border-radius: 10px;
+      padding: 8px 16px;
+      margin: 4px 0;
+    }
+
+    /* LINKS */
+    a.venue-link {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1.5px solid rgba(0, 153, 184, 0.45);
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+      font-weight: 600;
+    }
+    a.venue-link:hover { border-bottom-color: var(--deep-ocean); color: var(--deep-ocean); }
+    .info-card a { color: var(--deep-ocean); text-decoration: none; font-weight: 600; }
+    .info-card a:hover { text-decoration: underline; }
+
+    /* COLLAPSIBLES */
+    .collapsible-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(255, 201, 60, 0.18), rgba(255, 111, 97, 0.12));
+      border: 1.5px solid rgba(255, 158, 94, 0.5);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin: 10px 24px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Fredoka', sans-serif;
+      color: var(--accent2);
+      width: calc(100% - 48px);
+      text-align: left;
+      transition: background 0.2s;
+    }
+    .collapsible-toggle:hover { background: linear-gradient(135deg, rgba(255, 201, 60, 0.3), rgba(255, 111, 97, 0.2)); }
+    .collapsible-toggle .arrow { display: inline-block; transition: transform 0.3s; font-size: 11px; }
+    .collapsible-toggle.open .arrow { transform: rotate(90deg); }
+    .collapsible-body {
+      display: none;
+      margin: 0 24px 14px;
+      padding: 14px 16px;
+      background: #FFFDF7;
+      border: 1px solid #F0E3CB;
+      border-radius: 12px;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #4A453F;
+    }
+    .collapsible-body.open { display: block; }
+    .fact { display: flex; gap: 10px; margin-bottom: 12px; }
+    .fact:last-child { margin-bottom: 0; }
+    .fact .emoji { flex-shrink: 0; font-size: 18px; line-height: 1.4; }
+
+    .note {
+      background: rgba(255, 201, 60, 0.15);
+      border-left: 4px solid var(--sun);
+      padding: 12px 16px;
+      margin: 4px 24px 18px;
+      border-radius: 0 10px 10px 0;
+      font-size: 13px;
+      color: #6B5B33;
+      background-color: #FFF7E0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--night);
+      color: #FFF;
+      text-align: center;
+      padding: 26px 20px;
+      margin-top: 36px;
+      font-size: 13px;
+    }
+    footer .palms { font-size: 22px; margin-bottom: 6px; }
+    footer a { color: var(--sun); }
+
+    @media (min-width: 768px) {
+      .day-section { margin: 12px 8px; border-radius: 16px; overflow: hidden; box-shadow: 0 3px 12px rgba(42, 35, 86, 0.12); }
+      .hero h1 { font-size: 38px; }
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>☀️ Orlando · June 2026 🌴</h1>
+    <div class="sub">Theme-park week + Gulf-coast family finale</div>
+    <div class="crew">🧳 The Polings &amp; the De Bertis — best friends, one big adventure</div>
+  </header>
+
+  <!-- STICKY NAVIGATION -->
+  <nav class="nav-container">
+    <div class="nav-wrapper" id="navWrapper">
+      <button class="day-tab active" data-target="base">🏠 Base</button>
+      <button class="day-tab" data-target="day-1" data-day="1">🌐 Sun 7</button>
+      <button class="day-tab" data-target="day-2" data-day="2">🏖️ Mon 8</button>
+      <button class="day-tab" data-target="day-3" data-day="3">🎬 Tue 9</button>
+      <button class="day-tab" data-target="day-4" data-day="4">🦁 Wed 10</button>
+      <button class="day-tab" data-target="day-5" data-day="5">🏖️ Thu 11</button>
+      <button class="day-tab" data-target="day-6" data-day="6">🌌 Fri 12</button>
+      <button class="day-tab" data-target="day-7" data-day="7">🏰 Sat 13</button>
+      <button class="day-tab" data-target="day-8" data-day="8">✈️ Sun 14</button>
+      <button class="day-tab" data-target="day-9" data-day="9">🌅 St Pete</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HOME BASE -->
+    <section class="day-section theme-home" id="base">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-home.svg" alt="Vacation home">
+        <div class="day-number">Home Base</div>
+        <div class="day-date">Story Lake Resort · Kissimmee</div>
+        <div class="day-subtitle">Our vacation home for the week</div>
+      </div>
+
+      <div class="card-grid">
+        <div class="info-card">
+          <div class="card-title">📍 The House</div>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=4724+Sleepy+Hollow+Drive,+Kissimmee,+FL+34746" target="_blank" rel="noopener"><strong>4724 Sleepy Hollow Drive</strong></a><br>
+          Story Lake Resort, Kissimmee, FL 34746</p>
+          <p style="font-size: 12px; color: var(--muted);">Managed by Florida Premier Rentals. ~20 min to Disney, ~30 min to Universal.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-title">🕓 Check-In / Check-Out</div>
+          <p><strong>Check-in:</strong> 4:00 PM (door code won't work earlier)</p>
+          <p><strong>Check-out:</strong> 10:00 AM</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-title">🚪 Door Code</div>
+          <p><span class="door-code">✱✱✱754</span> then press <strong>✓</strong></p>
+          <p style="font-size: 12px; color: var(--muted);">First three digits left off on purpose — they're in the booking email. To lock: press any button on the silver lock.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-title">🎟️ Tickets at a Glance</div>
+          <p><strong>Universal:</strong> 1-day, 2-park (park-to-park) — Jun 7</p>
+          <p><strong>Disney:</strong> 3-day Park Hopper — Jun 9, 10, 13</p>
+          <p><strong>Epic Universe:</strong> 1-day, single park — Jun 12</p>
+        </div>
+
+        <div class="info-card wide">
+          <div class="card-title">📱 Apps to Install Before You Go</div>
+          <p>🪄 <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/mobile-apps/" target="_blank" rel="noopener">My Disney Experience</a> — tickets, Lightning Lane, mobile food orders, wait times</p>
+          <p>🌐 <a href="https://www.universalorlando.com/web/en/us/plan-your-visit/mobile-app" target="_blank" rel="noopener">Universal Orlando App</a> — tickets, mobile ordering, virtual lines, park maps</p>
+          <p>🎲 <a href="https://disneyworld.disney.go.com/guest-services/play-app/" target="_blank" rel="noopener">Play Disney Parks</a> — official in-queue games that activate while you wait in line</p>
+        </div>
+
+        <div class="info-card wide" id="queue-games">
+          <div class="card-title">🎮 Waiting in Line? Play These</div>
+          <p>🕹️ <a href="https://disneyworld.disney.go.com/guest-services/play-app/" target="_blank" rel="noopener">Play Disney Parks app</a> — queue-specific games that unlock inside Disney lines (Peter Pan, Space Mountain &amp; more)</p>
+          <p>🐭 <a href="https://www.findingmickey.com/" target="_blank" rel="noopener">Hidden Mickey hunting</a> — spot the camouflaged Mickeys hidden all over every Disney park</p>
+          <p>🧠 <a href="https://www.sporcle.com/games/category/disney" target="_blank" rel="noopener">Sporcle Disney quizzes</a> — name every park ride, Pixar character, villain…</p>
+          <p>🗽 <a href="https://www.geoguessr.com/" target="_blank" rel="noopener">GeoGuessr</a> — guess the place from a street view, pass-the-phone style</p>
+          <p>🟩 <a href="https://www.nytimes.com/games/wordle" target="_blank" rel="noopener">Wordle</a> &amp; <a href="https://www.nytimes.com/games/connections" target="_blank" rel="noopener">Connections</a> — one each per day, make it a family tournament</p>
+          <p>📣 <a href="https://apps.apple.com/us/app/heads-up/id623592465" target="_blank" rel="noopener">Heads Up!</a> — the hold-the-phone-to-your-forehead charades game</p>
+          <p>💬 No-phone classics: 20 Questions, the Alphabet Game (find A–Z on signs), "Park Superlatives" (best ride, best snack, most likely to scream…)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY 1 -->
+    <section class="day-section theme-universal" id="day-1">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-universal.svg" alt="Universal globe">
+        <div class="day-number">Day 1 · Universal × 2</div>
+        <div class="day-date">Sunday, June 7, 2026</div>
+        <div class="day-subtitle">Everyone arrives + Universal Studios &amp; Islands of Adventure</div>
+        <div class="ticket-chip">🎟️ 1-day park-to-park ticket</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">Morning</div>
+          <div class="activity-content">
+            <div class="activity-text">🛬 Both families arrive in Orlando — trip officially ON!</div>
+            <div class="activity-detail">House check-in isn't until 4 PM, so it's straight to the parks.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Late AM</div>
+          <div class="activity-content">
+            <div class="activity-text"><a href="https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida" class="venue-link" target="_blank" rel="noopener">Universal Studios Florida</a> 🌐</div>
+            <div class="activity-detail">Diagon Alley (watch the dragon breathe fire!), Gringotts, Minion Land, MIB, The Mummy, Rip Ride Rockit.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Afternoon</div>
+          <div class="activity-content">
+            <div class="activity-text">🚂 Ride the Hogwarts Express to <a href="https://www.universalorlando.com/web/en/us/theme-parks/islands-of-adventure" class="venue-link" target="_blank" rel="noopener">Islands of Adventure</a></div>
+            <div class="activity-detail">King's Cross → Hogsmeade — the train itself needs the park-to-park ticket, and we've got it. Then: Hagrid's Motorbike Adventure, VelociCoaster, Spider-Man, Jurassic Park.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">4:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">🏠 Door code goes live at the house — whoever taps out first can check in</div>
+            <div class="activity-detail">4724 Sleepy Hollow Dr. Code: ✱✱✱754 + ✓</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Evening</div>
+          <div class="activity-content">
+            <div class="activity-text">🛒 Settle in + grocery run, easy dinner at the house</div>
+            <div class="activity-detail">Publix is the Florida way. Stock up for down days.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://www.google.com/maps/dir/?api=1&amp;destination=Universal+Orlando+Resort+Parking+Garage" target="_blank" rel="noopener">🚗 Directions</a>
+        <a class="chip" href="https://www.universalorlando.com/web/en/us/plan-your-visit/mobile-app" target="_blank" rel="noopener">📱 Universal app</a>
+        <a class="chip" href="https://queue-times.com/parks/65/queue_times" target="_blank" rel="noopener">⏱️ USF waits</a>
+        <a class="chip" href="https://queue-times.com/parks/64/queue_times" target="_blank" rel="noopener">⏱️ IOA waits</a>
+        <a class="chip" href="https://www.universalorlando.com/web/en/us/tickets-packages/express-passes" target="_blank" rel="noopener">⚡ Express Pass</a>
+        <a class="chip" href="#queue-games">🎮 Queue games</a>
+      </div>
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> Fun Facts &amp; Trivia 🌐
+      </button>
+      <div class="collapsible-body">
+        <div class="fact"><span class="emoji">🎂</span><div><strong>It's the park's birthday — today!</strong> Universal Studios Florida opened June 7, 1990. We're visiting on its 36th anniversary, to the day.</div></div>
+        <div class="fact"><span class="emoji">👽</span><div><strong>E.T. Adventure</strong> is the only opening-day ride still operating — and E.T. says your name at the end (they type it in when you enter the queue).</div></div>
+        <div class="fact"><span class="emoji">🐉</span><div>The dragon on top of Gringotts in Diagon Alley <strong>breathes real fire</strong> roughly every 10 minutes. Listen for the low rumble right before.</div></div>
+        <div class="fact"><span class="emoji">🦖</span><div><strong>VelociCoaster</strong> hits 70 mph and a 155-ft top hat — the fastest, tallest coaster at either park today.</div></div>
+        <div class="fact"><span class="emoji">📏</span><div><strong>Seuss Landing</strong> in IOA was built with almost <strong>no straight lines</strong> — even the palm trees are curved ones salvaged after Hurricane Andrew.</div></div>
+      </div>
+    </section>
+
+    <!-- DAY 2 -->
+    <section class="day-section theme-down" id="day-2">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-pool.svg" alt="Pool day">
+        <div class="day-number">Day 2 · Down Day</div>
+        <div class="day-date">Monday, June 8, 2026</div>
+        <div class="day-subtitle">Recover, float, recharge</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">All day</div>
+          <div class="activity-content">
+            <div class="activity-text">😴 Sleep in → pool → repeat</div>
+            <div class="activity-detail">Story Lake resort amenities: pools, lazy river, slides, mini golf, fitness center.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Optional</div>
+          <div class="activity-content">
+            <div class="activity-text">🛍️ Evening at <a href="https://disneyworld.disney.go.com/destinations/disney-springs/" class="venue-link" target="_blank" rel="noopener">Disney Springs</a></div>
+            <div class="activity-detail">No ticket needed, free parking, ~20 min drive. World of Disney store, LEGO Store, Gideon's Bakehouse-sized cookies… wait, that's the other coast. M&amp;M's store it is.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Tonight</div>
+          <div class="activity-content">
+            <div class="activity-text">📲 Plan tomorrow: book Lightning Lane for Hollywood Studios + EPCOT</div>
+            <div class="activity-detail">Set a reminder — popular rides (Rise of the Resistance, Slinky Dog) go fast.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://disneyworld.disney.go.com/genie/lightning-lane/" target="_blank" rel="noopener">⚡ Lightning Lane info</a>
+        <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=Publix+near+Storey+Lake+Kissimmee" target="_blank" rel="noopener">🛒 Nearest Publix</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/destinations/disney-springs/" target="_blank" rel="noopener">🛍️ Disney Springs</a>
+      </div>
+    </section>
+
+    <!-- DAY 3 -->
+    <section class="day-section theme-hsepcot" id="day-3">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-hs.svg" alt="Hollywood Studios tower">
+        <div class="day-number">Day 3 · Hollywood Studios + EPCOT</div>
+        <div class="day-date">Tuesday, June 9, 2026</div>
+        <div class="day-subtitle">Two parks, one epic hop</div>
+        <div class="ticket-chip">🎟️ Disney Park Hopper · day 1 of 3</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">Rope drop</div>
+          <div class="activity-content">
+            <div class="activity-text"><a href="https://disneyworld.disney.go.com/destinations/hollywood-studios/" class="venue-link" target="_blank" rel="noopener">Hollywood Studios</a> 🎬 — hit the big ones early</div>
+            <div class="activity-detail">Rise of the Resistance, Slinky Dog Dash, Tower of Terror, Millennium Falcon, Mickey &amp; Minnie's Runaway Railway.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">~2:00 PM</div>
+          <div class="activity-content">
+            <div class="activity-text">🚝 Hop to <a href="https://disneyworld.disney.go.com/destinations/epcot/" class="venue-link" target="_blank" rel="noopener">EPCOT</a> — take the Skyliner!</div>
+            <div class="activity-detail">The gondola ride from HS to EPCOT's International Gateway is an attraction in itself (park hopping opens at 2 PM... actually anytime now, but afternoon is the plan).</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Afternoon</div>
+          <div class="activity-content">
+            <div class="activity-text">🌍 Guardians of the Galaxy: Cosmic Rewind, Test Track, Frozen, Remy's</div>
+            <div class="activity-detail">Cosmic Rewind may need a virtual queue — check the app at 1 PM sharp.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Evening</div>
+          <div class="activity-content">
+            <div class="activity-text">🍜 Graze dinner around World Showcase, then <strong>Luminous</strong> fireworks on the lagoon</div>
+            <div class="activity-detail">11 countries, every snack counts. Stake out a lagoon spot ~30 min before show time.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://www.google.com/maps/dir/?api=1&amp;destination=Disney%27s+Hollywood+Studios" target="_blank" rel="noopener">🚗 Directions</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/calendars/" target="_blank" rel="noopener">🕐 Park hours</a>
+        <a class="chip" href="https://queue-times.com/parks/7/queue_times" target="_blank" rel="noopener">⏱️ HS waits</a>
+        <a class="chip" href="https://queue-times.com/parks/5/queue_times" target="_blank" rel="noopener">⏱️ EPCOT waits</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/guest-services/mobile-food-orders/" target="_blank" rel="noopener">🍔 Mobile order</a>
+        <a class="chip" href="#queue-games">🎮 Queue games</a>
+      </div>
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> Fun Facts &amp; Trivia 🎬🌍
+      </button>
+      <div class="collapsible-body">
+        <div class="fact"><span class="emoji">🗼</span><div>The <strong>Tower of Terror is exactly 199 feet tall</strong> — one foot shorter than the height that would legally require a blinking aircraft-warning light on top (which would ruin the spooky 1939 vibe).</div></div>
+        <div class="fact"><span class="emoji">🛸</span><div>The <strong>Millennium Falcon in Galaxy's Edge is full size</strong> — over 100 feet across — the first complete, full-scale Falcon ever built.</div></div>
+        <div class="fact"><span class="emoji">⚪</span><div><strong>Spaceship Earth</strong> (the big golf ball) is wrapped in <strong>11,324 aluminum triangles</strong>, with hidden gutters that swallow rainwater so it never pours off the sides — it drains into World Showcase Lagoon.</div></div>
+        <div class="fact"><span class="emoji">🏙️</span><div><strong>EPCOT</strong> stands for <em>Experimental Prototype Community of Tomorrow</em> — Walt Disney originally planned it as a real, functioning city of 20,000 people.</div></div>
+        <div class="fact"><span class="emoji">🌎</span><div>World Showcase has <strong>11 country pavilions</strong>, and many cast members working each pavilion are from that country, on cultural exchange programs.</div></div>
+      </div>
+    </section>
+
+    <!-- DAY 4 -->
+    <section class="day-section theme-ak" id="day-4">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-ak.svg" alt="Tree of Life">
+        <div class="day-number">Day 4 · Animal Kingdom</div>
+        <div class="day-date">Wednesday, June 10, 2026</div>
+        <div class="day-subtitle">Safaris, Pandora, and a yeti</div>
+        <div class="ticket-chip">🎟️ Disney Park Hopper · day 2 of 3</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">Early AM</div>
+          <div class="activity-content">
+            <div class="activity-text">🦁 <a href="https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/" class="venue-link" target="_blank" rel="noopener">Kilimanjaro Safaris</a> first thing</div>
+            <div class="activity-detail">Animals are most active in the cool morning — giraffes, lions, elephants, rhinos on a real 110-acre savanna.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Midday</div>
+          <div class="activity-content">
+            <div class="activity-text">🌺 Pandora — Flight of Passage &amp; Na'vi River Journey</div>
+            <div class="activity-detail">Flight of Passage is arguably Disney's best ride, period. Worth the wait or the Lightning Lane.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Afternoon</div>
+          <div class="activity-content">
+            <div class="activity-text">🏔️ Expedition Everest, Kali River Rapids (you WILL get soaked), Festival of the Lion King</div>
+            <div class="activity-detail">Kali strategy: ponchos or sacrificial clothes. June in Florida = you'll dry... eventually.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Evening</div>
+          <div class="activity-content">
+            <div class="activity-text">🏊 Back to the house early — AK closes earlier than other parks. Pool + grill night.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://www.google.com/maps/dir/?api=1&amp;destination=Disney%27s+Animal+Kingdom" target="_blank" rel="noopener">🚗 Directions</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/calendars/" target="_blank" rel="noopener">🕐 Park hours</a>
+        <a class="chip" href="https://queue-times.com/parks/8/queue_times" target="_blank" rel="noopener">⏱️ AK waits</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/guest-services/mobile-food-orders/" target="_blank" rel="noopener">🍔 Mobile order</a>
+        <a class="chip" href="#queue-games">🎮 Queue games</a>
+      </div>
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> Fun Facts &amp; Trivia 🌳
+      </button>
+      <div class="collapsible-body">
+        <div class="fact"><span class="emoji">📐</span><div>Animal Kingdom is the <strong>largest Disney theme park on Earth</strong> — about 580 acres. Magic Kingdom would fit inside it five times.</div></div>
+        <div class="fact"><span class="emoji">🌳</span><div>The <strong>Tree of Life</strong> is 145 feet tall with <strong>over 300 animals carved</strong> into its trunk and branches — and its core is engineered like an offshore oil platform so it can hold a theater inside.</div></div>
+        <div class="fact"><span class="emoji">🦨</span><div>The park opened on <strong>Earth Day</strong> — April 22, 1998 — and is home to over 2,000 real animals representing 300+ species.</div></div>
+        <div class="fact"><span class="emoji">🏔️</span><div><strong>Expedition Everest</strong> is reported to be the <strong>most expensive roller coaster ever built</strong> (~$100M). Its yeti was the largest, most complex animatronic Disney ever made — until it broke and became the beloved strobe-lit "Disco Yeti."</div></div>
+        <div class="fact"><span class="emoji">🦋</span><div>There are <strong>no balloons or plastic straws</strong> anywhere in the park — they could harm the animals.</div></div>
+      </div>
+    </section>
+
+    <!-- DAY 5 -->
+    <section class="day-section theme-down" id="day-5">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-pool.svg" alt="Pool day">
+        <div class="day-number">Day 5 · Down Day</div>
+        <div class="day-date">Thursday, June 11, 2026</div>
+        <div class="day-subtitle">Mid-trip recharge before Epic</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">All day</div>
+          <div class="activity-content">
+            <div class="activity-text">🏖️ Pool, lazy river, naps, laundry (the glamorous part of vacation)</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Optional</div>
+          <div class="activity-content">
+            <div class="activity-text">🎡 <a href="https://myoldtownusa.com/" class="venue-link" target="_blank" rel="noopener">Old Town Kissimmee</a> — free-entry retro fairground 10 min away</div>
+            <div class="activity-detail">Classic rides, funnel cake, arcades. Very Florida.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Tonight</div>
+          <div class="activity-content">
+            <div class="activity-text">😤 Early-ish night — tomorrow is Epic Universe and we're getting there EARLY</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://myoldtownusa.com/" target="_blank" rel="noopener">🎡 Old Town</a>
+        <a class="chip" href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe" target="_blank" rel="noopener">🌌 Epic Universe preview</a>
+      </div>
+    </section>
+
+    <!-- DAY 6 -->
+    <section class="day-section theme-epic" id="day-6">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-epic.svg" alt="Epic Universe celestial star">
+        <div class="day-number">Day 6 · Epic Universe</div>
+        <div class="day-date">Friday, June 12, 2026</div>
+        <div class="day-subtitle">Orlando's newest park — portals to five worlds</div>
+        <div class="ticket-chip">🎟️ 1-day single-park ticket</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">Early!</div>
+          <div class="activity-content">
+            <div class="activity-text">⏰ Arrive before opening — this park is the hot ticket</div>
+            <div class="activity-detail">~30 min drive. Through the gates and into Celestial Park, then pick a portal.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Morning</div>
+          <div class="activity-content">
+            <div class="activity-text">🍄 <strong>Super Nintendo World</strong> — Mario Kart: Bowser's Challenge &amp; Mine-Cart Madness</div>
+            <div class="activity-detail">Grab Power-Up Bands to punch ? blocks and battle bosses. Head here first or expect long entry waits.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Midday</div>
+          <div class="activity-content">
+            <div class="activity-text">🐉 <strong>Isle of Berk</strong> (How to Train Your Dragon) — Hiccup's Wing Gliders, live dragons everywhere</div>
+            <div class="activity-detail">Then 🧙 <strong>Ministry of Magic</strong> — 1920s wizarding Paris and the Battle at the Ministry ride.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Afternoon</div>
+          <div class="activity-content">
+            <div class="activity-text">🧟 <strong>Dark Universe</strong> — Monsters Unchained: The Frankenstein Experiment</div>
+            <div class="activity-detail">Classic Universal monsters in Darkmoor village. Werewolves optional.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Evening</div>
+          <div class="activity-content">
+            <div class="activity-text">🌠 <strong>Stardust Racers</strong> at night + Celestial Park fountains</div>
+            <div class="activity-detail">The dual-launch racing coaster glows after dark. Stay for the nighttime show over the water.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://www.google.com/maps/dir/?api=1&amp;destination=Universal+Epic+Universe" target="_blank" rel="noopener">🚗 Directions</a>
+        <a class="chip" href="https://www.universalorlando.com/web/en/us/theme-parks/epic-universe" target="_blank" rel="noopener">🌌 Official page</a>
+        <a class="chip" href="https://www.universalorlando.com/web/en/us/plan-your-visit/mobile-app" target="_blank" rel="noopener">📱 Universal app</a>
+        <a class="chip" href="https://queue-times.com/parks" target="_blank" rel="noopener">⏱️ Wait times</a>
+        <a class="chip" href="#queue-games">🎮 Queue games</a>
+      </div>
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> Fun Facts &amp; Trivia 🌌
+      </button>
+      <div class="collapsible-body">
+        <div class="fact"><span class="emoji">🆕</span><div>Epic Universe opened <strong>May 22, 2025</strong> — the first brand-new major theme park in Orlando since Islands of Adventure in 1999. We're visiting in its second-ever summer.</div></div>
+        <div class="fact"><span class="emoji">🌀</span><div>Each of the four worlds is entered through a giant <strong>portal</strong> — the theming, music, and even pavement change the instant you cross through.</div></div>
+        <div class="fact"><span class="emoji">🏁</span><div><strong>Stardust Racers</strong> is a dual-launch racing coaster: two trains "race" side by side at up to <strong>62 mph over 133-ft peaks</strong>, swapping sides mid-ride in a celestial dogfight.</div></div>
+        <div class="fact"><span class="emoji">🏨</span><div>The <strong>Helios Grand Hotel</strong> is built into the back of the park with its own private park entrance — its rooftop bar overlooks the whole nighttime show.</div></div>
+        <div class="fact"><span class="emoji">⚡</span><div>The Power-Up Bands in Super Nintendo World keep score across the whole land — your family leaderboard is very much a competition.</div></div>
+      </div>
+    </section>
+
+    <!-- DAY 7 -->
+    <section class="day-section theme-mk" id="day-7">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-mk.svg" alt="Magic Kingdom castle">
+        <div class="day-number">Day 7 · Magic Kingdom</div>
+        <div class="day-date">Saturday, June 13, 2026</div>
+        <div class="day-subtitle">The classic — plus circle back for anything we missed</div>
+        <div class="ticket-chip">🎟️ Disney Park Hopper · day 3 of 3</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">Morning</div>
+          <div class="activity-content">
+            <div class="activity-text">🏰 <a href="https://disneyworld.disney.go.com/destinations/magic-kingdom/" class="venue-link" target="_blank" rel="noopener">Magic Kingdom</a> — down Main Street toward the castle</div>
+            <div class="activity-detail">Seven Dwarfs Mine Train, Space Mountain, TRON Lightcycle/Run (check virtual queue at 7 AM!), Big Thunder, Pirates, Haunted Mansion.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Midday</div>
+          <div class="activity-content">
+            <div class="activity-text">🍦 Dole Whip break + classics: Jungle Cruise, it's a small world, PeopleMover</div>
+            <div class="activity-detail">The PeopleMover is the most underrated 10 minutes of air-conditioned sitting at Disney World.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Afternoon</div>
+          <div class="activity-content">
+            <div class="activity-text">🔁 Hopper power: circle back to EPCOT / Hollywood Studios / Animal Kingdom for anything missed</div>
+            <div class="activity-detail">Last Disney day — clear the wish list. Monorail to EPCOT is the classic hop.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Night</div>
+          <div class="activity-content">
+            <div class="activity-text">🎆 <strong>Happily Ever After</strong> fireworks over Cinderella Castle</div>
+            <div class="activity-detail">The grand finale of theme-park week. Hub grass or Main Street view — get there early, tissues optional but likely.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://www.google.com/maps/dir/?api=1&amp;destination=Magic+Kingdom+Park" target="_blank" rel="noopener">🚗 Directions</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/calendars/" target="_blank" rel="noopener">🕐 Park hours</a>
+        <a class="chip" href="https://queue-times.com/parks/6/queue_times" target="_blank" rel="noopener">⏱️ MK waits</a>
+        <a class="chip" href="https://disneyworld.disney.go.com/guest-services/mobile-food-orders/" target="_blank" rel="noopener">🍔 Mobile order</a>
+        <a class="chip" href="#queue-games">🎮 Queue games</a>
+      </div>
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> Fun Facts &amp; Trivia 🏰
+      </button>
+      <div class="collapsible-body">
+        <div class="fact"><span class="emoji">🕳️</span><div>You never walk on the ground floor: the whole park sits on top of the <strong>utilidors</strong>, a tunnel network where cast members, costumes, and trash travel out of sight. Main Street is technically the second story.</div></div>
+        <div class="fact"><span class="emoji">🏰</span><div><strong>Cinderella Castle contains zero bricks</strong> — it's fiberglass over a steel frame, 189 feet tall, and was built in about 18 months. Forced perspective makes it look much taller.</div></div>
+        <div class="fact"><span class="emoji">👑</span><div>Magic Kingdom is the <strong>most-visited theme park on the planet</strong> — roughly 17–18 million guests a year.</div></div>
+        <div class="fact"><span class="emoji">🗑️</span><div>Trash cans are placed about <strong>every 30 feet</strong> — supposedly the distance Walt observed a person would carry trash before dropping it.</div></div>
+        <div class="fact"><span class="emoji">😢</span><div>Walt Disney never saw it: he died in 1966, five years before the park opened on <strong>October 1, 1971</strong>. His brother Roy delayed retirement to finish it and insisted it be named <em>Walt</em> Disney World.</div></div>
+      </div>
+    </section>
+
+    <!-- DAY 8 -->
+    <section class="day-section theme-travel" id="day-8">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-travel.svg" alt="Travel day">
+        <div class="day-number">Day 8 · Farewell &amp; Onward</div>
+        <div class="day-date">Sunday, June 14, 2026</div>
+        <div class="day-subtitle">De Bertis fly home · Polings roll west to St. Pete</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">By 10 AM</div>
+          <div class="activity-content">
+            <div class="activity-text">🧳 Check out of the house (hard 10:00 AM checkout)</div>
+            <div class="activity-detail">Sweep for chargers, pool toys, and souvenirs. Lock: press any button on the silver pad.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Morning</div>
+          <div class="activity-content">
+            <div class="activity-text">✈️ Hugs at the curb — the De Bertis head to <a href="https://flymco.com/" class="venue-link" target="_blank" rel="noopener">Orlando International (MCO)</a> and fly home</div>
+            <div class="activity-detail">Best. Trip. Ever. Same crew next time?</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Midday</div>
+          <div class="activity-content">
+            <div class="activity-text">🚗 Polings drive west on I-4 toward St. Petersburg (~1¾ hours)</div>
+            <div class="activity-detail">Gulf coast, here we come.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">En route</div>
+          <div class="activity-content">
+            <div class="activity-text">👋 Stop to visit <strong>Aunt Susan</strong>, <strong>Cousin Bryan</strong> &amp; his wife <strong>Emily</strong>, and the kids' 2nd cousin <strong>Katie Mae</strong></div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Evening</div>
+          <div class="activity-content">
+            <div class="activity-text">🌇 Arrive St. Petersburg — sunset over the Gulf to close out the day</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://flymco.com/" target="_blank" rel="noopener">✈️ MCO airport</a>
+        <a class="chip" href="https://www.google.com/maps/dir/?api=1&amp;origin=4724+Sleepy+Hollow+Dr,+Kissimmee,+FL+34746&amp;destination=St.+Petersburg,+FL" target="_blank" rel="noopener">🚗 Drive route</a>
+        <a class="chip" href="https://www.fl511.com/" target="_blank" rel="noopener">🚦 FL traffic (511)</a>
+      </div>
+    </section>
+
+    <!-- DAY 9 -->
+    <section class="day-section theme-stpete" id="day-9">
+      <div class="day-header">
+        <img class="day-badge" src="assets/badge-stpete.svg" alt="St. Pete sunset">
+        <div class="day-number">St. Pete Days</div>
+        <div class="day-date">Monday, June 15, 2026 →</div>
+        <div class="day-subtitle">Family time in the Sunshine City</div>
+      </div>
+      <div class="schedule-container">
+        <div class="schedule-item">
+          <div class="time-badge">These days</div>
+          <div class="activity-content">
+            <div class="activity-text">💛 Visit <strong>Aunt Denise</strong> and <strong>Cousins Michelle &amp; Kristina</strong></div>
+            <div class="activity-detail">The whole reason for the Gulf-coast leg — catch-up time with family.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Between</div>
+          <div class="activity-content">
+            <div class="activity-text">🏖️ Beach time — St. Pete Beach, Pass-a-Grille, or Fort De Soto</div>
+            <div class="activity-detail">Fort De Soto's North Beach regularly ranks among America's best beaches. Soft white sand, calm Gulf water.</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time-badge">Ideas</div>
+          <div class="activity-content">
+            <div class="activity-text">🎨 <a href="https://stpetepier.org/" class="venue-link" target="_blank" rel="noopener">The St. Pete Pier</a> · <a href="https://thedali.org/" class="venue-link" target="_blank" rel="noopener">Dalí Museum</a> · waterfront ice cream</div>
+            <div class="activity-detail">The Pier has a playground, splash pad, and fishing deck — easy crowd-pleaser evening.</div>
+          </div>
+        </div>
+      </div>
+      <div class="chips">
+        <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://stpetepier.org/" target="_blank" rel="noopener">🎡 St. Pete Pier</a>
+        <a class="chip" href="https://thedali.org/" target="_blank" rel="noopener">🎨 Dalí Museum</a>
+        <a class="chip" href="https://www.pinellascounty.gov/park/05_ft_desoto.htm" target="_blank" rel="noopener">🏖️ Fort De Soto</a>
+      </div>
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> Fun Facts &amp; Trivia 🌅
+      </button>
+      <div class="collapsible-body">
+        <div class="fact"><span class="emoji">☀️</span><div>St. Petersburg holds the Guinness World Record for <strong>most consecutive days of sunshine: 768 days</strong> (1967–1969). Hence the nickname "The Sunshine City."</div></div>
+        <div class="fact"><span class="emoji">🗞️</span><div>A local paper, <em>The Evening Independent</em>, famously gave the paper away <strong>free on any day the sun didn't shine</strong> — it only had to pay up a handful of times a year.</div></div>
+        <div class="fact"><span class="emoji">✈️</span><div>The <strong>world's first scheduled commercial airline flight</strong> took off from St. Pete in 1914 — a 23-minute hop across Tampa Bay.</div></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="palms">🌴 🏰 🌐 🌴</div>
+    <p>The Polings &amp; the De Bertis · Orlando &amp; St. Pete · June 2026</p>
+    <p style="margin-top: 8px; font-size: 11px; opacity: 0.7;">If this page is inaccessible, try <a href="https://mpoling.github.io/sites/orlando-2026">mpoling.github.io/sites/orlando-2026</a></p>
+  </footer>
+
+  <script>
+    // Tab navigation
+    const dayTabs = document.querySelectorAll('.day-tab');
+    const sections = document.querySelectorAll('.day-section');
+
+    dayTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const section = document.getElementById(tab.getAttribute('data-target'));
+        dayTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => {
+          tab.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      });
+    });
+
+    // Update active tab on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const activeTab = document.querySelector(`[data-target="${entry.target.id}"]`);
+          if (activeTab) {
+            dayTabs.forEach(tab => tab.classList.remove('active'));
+            activeTab.classList.add('active');
+            activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => observer.observe(section));
+
+    // "Today" tab — highlight and snap to current trip day
+    function getTodayDayNum() {
+      // Day 1 = Jun 7 … Day 8 = Jun 14; Day 9 covers the St. Pete days after
+      const tripStart = new Date('2026-06-07T00:00:00-04:00'); // Eastern Time
+      const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const startDate = new Date(tripStart.getFullYear(), tripStart.getMonth(), tripStart.getDate());
+      const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+      if (diffDays >= 0 && diffDays <= 7) return diffDays + 1; // Days 1–8
+      if (diffDays >= 8 && diffDays <= 11) return 9;           // St. Pete stretch
+      return null; // Outside trip dates
+    }
+
+    const todayDayNum = getTodayDayNum();
+    if (todayDayNum) {
+      const todayTab = document.querySelector(`[data-day="${todayDayNum}"]`);
+      if (todayTab) {
+        todayTab.textContent = '⭐ Today';
+        todayTab.classList.add('today');
+        setTimeout(() => {
+          dayTabs.forEach(tab => tab.classList.remove('active'));
+          todayTab.classList.add('active');
+          todayTab.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          const todaySection = document.getElementById(`day-${todayDayNum}`);
+          if (todaySection) {
+            todaySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 300);
+      }
+    }
+  </script>
+
+</body>
+</html>

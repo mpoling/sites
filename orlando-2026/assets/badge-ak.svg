@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#CDEBC2" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="88" cy="30" r="9" fill="#FFC93C"/>
+  <!-- canopy -->
+  <circle cx="42" cy="44" r="16" fill="#2E9E63"/>
+  <circle cx="60" cy="36" r="18" fill="#36B374"/>
+  <circle cx="79" cy="46" r="15" fill="#2E9E63"/>
+  <circle cx="60" cy="48" r="20" fill="#3FA34D"/>
+  <!-- trunk with carved animal hints -->
+  <path d="M52 92 C54 74 50 64 46 56 L74 56 C70 64 66 74 68 92 Z" fill="#8C5A3C"/>
+  <path d="M56 66 q4 -4 8 0" stroke="#6E4128" stroke-width="2" fill="none"/>
+  <circle cx="58" cy="74" r="2" fill="#6E4128"/>
+  <path d="M62 78 q3 3 0 6" stroke="#6E4128" stroke-width="2" fill="none"/>
+  <!-- roots / ground -->
+  <path d="M40 92 Q60 86 80 92 L80 96 Q60 90 40 96 Z" fill="#2E9E63"/>
+  <!-- bird -->
+  <path d="M28 64 q4 -4 8 0 q-4 -1 -8 0 Z" fill="#FF6F61"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#FFE8C9" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="86" cy="32" r="11" fill="#FFC93C"/>
+  <!-- house -->
+  <rect x="36" y="58" width="40" height="30" rx="2" fill="#FFFFFF"/>
+  <path d="M30 60 L56 38 L82 60 Z" fill="#FF6F61"/>
+  <rect x="50" y="70" width="12" height="18" rx="1.5" fill="#0099B8"/>
+  <rect x="66" y="64" width="9" height="9" rx="1.5" fill="#FFC93C"/>
+  <rect x="39" y="64" width="9" height="9" rx="1.5" fill="#FFC93C"/>
+  <!-- palm -->
+  <path d="M92 88 C90 74 91 64 95 56" stroke="#8C5A3C" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M95 56 C88 50 80 50 75 54 C82 54 89 56 95 56 Z" fill="#2E9E63"/>
+  <path d="M95 56 C102 49 110 50 114 54 C107 53 100 55 95 56 Z" fill="#2E9E63"/>
+  <path d="M95 56 C93 47 96 41 102 38 C98 44 97 50 95 56 Z" fill="#36B374"/>
+  <!-- ground -->
+  <path d="M22 90 Q60 84 98 90 L98 94 Q60 88 22 94 Z" fill="#2E9E63"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD86B"/>
+      <stop offset="1" stop-color="#FF6F61"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#sunset)" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- sun on horizon -->
+  <circle cx="60" cy="64" r="18" fill="#FFF3CC"/>
+  <g stroke="#FFF3CC" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <line x1="60" y1="34" x2="60" y2="26"/>
+    <line x1="38" y1="42" x2="32" y2="36"/>
+    <line x1="82" y1="42" x2="88" y2="36"/>
+    <line x1="30" y1="60" x2="22" y2="58"/>
+    <line x1="90" y1="60" x2="98" y2="58"/>
+  </g>
+  <!-- gulf water -->
+  <path d="M6 68 Q18 62 30 68 T54 68 T78 68 T102 68 L114 68 A56 56 0 0 1 6 68 Z" fill="#0099B8"/>
+  <path d="M14 80 Q26 74 38 80 T62 80 T86 80 T104 80" stroke="#9FE5DC" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <path d="M22 92 Q34 86 46 92 T70 92 T94 92" stroke="#9FE5DC" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <!-- gulls -->
+  <path d="M34 36 q3 -3 6 0 q3 -3 6 0" stroke="#5B3A4E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M76 28 q2.5 -2.5 5 0 q2.5 -2.5 5 0" stroke="#5B3A4E" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
