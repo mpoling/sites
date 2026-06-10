@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T16:11:36.599Z",
+  "generatedAt": "2026-06-10T16:42:21.393Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -273,35 +273,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401856937",
-      "teamId": "gsv",
-      "dateISO": "2026-05-26T02:00Z",
-      "isHome": true,
-      "opponentShort": "Sun",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "NBC Sports BO"
-      ]
-    },
-    {
-      "id": "atl-401815500",
-      "teamId": "atl",
-      "dateISO": "2026-05-26T22:45Z",
-      "isHome": false,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Fenway Park",
-      "broadcasts": [
-        "MLB.TV",
-        "TBS",
-        "BravesVision",
-        "NESN"
-      ]
-    },
     {
       "id": "sfg-401815510",
       "teamId": "sfg",
