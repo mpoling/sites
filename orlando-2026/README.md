@@ -19,7 +19,8 @@ orlando-2026/
 ├── apple-touch-icon-180x180.png  # Generated sunset/castle icon
 ├── assets/
 │   ├── badge-*.svg               # Original flat-art park/day badges used in day headers
-│   └── photos/                   # Drop-in spot for real trip photos (empty for now)
+│   └── photos/                   # One "postcard" photo per park/destination day
+│       └── SOURCES.md            # Source URL + license for every photo
 └── README.md
 ```
 
@@ -34,14 +35,31 @@ orlando-2026/
 - **Family names:** the site refers to "the Polings" and "the De Bertis"
   collectively (no first names for the traveling families, by request).
   The St. Pete relatives are named because that's the itinerary content.
-- **Park art is original SVG**, not official logos/photos. This session's
-  network allowlist blocked downloading real imagery (Wikimedia, park
-  sites all 403). To add real photos later: drop files in
-  `assets/photos/` and reference them with relative paths from
-  `index.html`.
+- **Art is a mix of original SVG badges and real photos.** The day-header
+  badges are original flat art, not official logos. Each park/destination
+  day (1, 3, 4, 6, 7, and St. Pete) opens with a tilted "postcard" photo
+  from Wikimedia Commons — CC-licensed, downscaled to ≤1200px, attributed
+  in the on-page caption and in
+  [`assets/photos/SOURCES.md`](./assets/photos/SOURCES.md). After the
+  trip, family photos can replace them (update caption + SOURCES.md).
 - External links (queue-times.com wait pages, Disney/Universal app and
   planning pages, Google Maps directions) are convenience shortcuts and
   may rot after the trip; that's fine — this becomes a journal afterward.
+
+## Ideas backlog (nothing committed to)
+
+- **Post-trip journal mode** — as days pass, rewrite schedule items in past
+  tense with what actually happened (dc-2026 did this); swap in family
+  photos once they exist.
+- **Height-requirement cheat sheet** per park day (collapsible).
+- **Dining ideas per park** (kept light by request — candidates: Satu'li
+  Canteen, Three Broomsticks, Ronto Roasters, Les Halles, Toothsome,
+  Dole Whip stands).
+- **Per-day weather chip** linking to the forecast for the park's zip.
+- **Lightning Lane / virtual-queue reminders** pinned on park days
+  (partially there).
+- **PNG favicon fallback** (`favicon.png`) if older in-app browsers
+  misrender the SVG.
 
 ## Conventions
 

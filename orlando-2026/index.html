@@ -159,6 +159,33 @@
 
     /* SCHEDULE */
     .schedule-container { padding: 24px; background: var(--card); }
+
+    /* POSTCARD PHOTOS */
+    .day-photo {
+      margin: 0 0 24px;
+      background: #FFF;
+      border: 1px solid #F0E3CB;
+      border-radius: 8px;
+      padding: 10px 10px 4px;
+      box-shadow: 0 5px 16px rgba(42, 35, 86, 0.16);
+      transform: rotate(-0.6deg);
+    }
+    .day-photo.tilt-r { transform: rotate(0.6deg); }
+    .day-photo img {
+      display: block;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .day-photo figcaption {
+      font-size: 11.5px;
+      color: var(--muted);
+      text-align: center;
+      padding: 7px 6px 5px;
+    }
+    .day-photo figcaption a { color: var(--muted); text-decoration: underline; }
+    .day-photo figcaption a:hover { color: var(--accent2); }
     .schedule-item { display: flex; gap: 14px; margin-bottom: 22px; position: relative; }
     .schedule-item:not(:last-child)::after {
       content: '';
@@ -387,6 +414,18 @@
         </div>
 
         <div class="info-card wide">
+          <div class="card-title">⛈️ Rain Plan — the June Special</div>
+          <p>June in Orlando means a thunderstorm most afternoons, usually rolling through <strong>~2–4 PM</strong> and gone within the hour. Don't bail — duck into something indoors, let it pass, and enjoy the thinner crowds after. Outdoor coasters pause for lightning; indoor rides keep right on running.</p>
+          <p>🧥 <strong>Ponchos:</strong> pack them from home — they're ~$15 apiece in the parks.</p>
+          <p>🌐 <strong>Universal / IOA:</strong> Gringotts, Spider-Man, The Mummy, MIB, Hogwarts Express</p>
+          <p>🎬 <strong>Hollywood Studios:</strong> Rise of the Resistance, Runaway Railway, Star Tours, Tower of Terror</p>
+          <p>⚪ <strong>EPCOT:</strong> basically rain-proof — Spaceship Earth, Cosmic Rewind, Remy's, Frozen, World Showcase pavilions</p>
+          <p>🦁 <strong>Animal Kingdom:</strong> Festival of the Lion King, Na'vi River Journey, Dinosaur, It's Tough to Be a Bug</p>
+          <p>🌌 <strong>Epic Universe:</strong> Ministry of Magic, Monsters Unchained, Mario Kart: Bowser's Challenge</p>
+          <p>🏰 <strong>Magic Kingdom:</strong> Pirates, Haunted Mansion, PhilharMagic, small world, Carousel of Progress</p>
+        </div>
+
+        <div class="info-card wide">
           <div class="card-title">📱 Apps to Install Before You Go</div>
           <p>🪄 <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/mobile-apps/" target="_blank" rel="noopener">My Disney Experience</a> — tickets, Lightning Lane, mobile food orders, wait times</p>
           <p>🌐 <a href="https://www.universalorlando.com/web/en/us/plan-your-visit/mobile-app" target="_blank" rel="noopener">Universal Orlando App</a> — tickets, mobile ordering, virtual lines, park maps</p>
@@ -416,6 +455,10 @@
         <div class="ticket-chip">🎟️ 1-day park-to-park ticket</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo">
+          <img src="assets/photos/day1-gringotts-dragon.jpg" alt="The fire-breathing dragon perched atop Gringotts bank in Diagon Alley" width="1200" height="799" loading="lazy">
+          <figcaption>The Gringotts dragon, Diagon Alley · 📷 <a href="https://commons.wikimedia.org/wiki/File:Gringotts_Dragon_(28462847187).jpg" target="_blank" rel="noopener">HarshLight</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">Morning</div>
           <div class="activity-content">
@@ -522,6 +565,10 @@
         <div class="ticket-chip">🎟️ Disney Park Hopper · day 1 of 3</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo tilt-r">
+          <img src="assets/photos/day3-spaceship-earth.jpg" alt="Spaceship Earth glowing purple and gold at night" width="1200" height="960" loading="lazy">
+          <figcaption>Spaceship Earth after dark, EPCOT · 📷 <a href="https://commons.wikimedia.org/wiki/File:Spaceship_Earth_at_night.jpg" target="_blank" rel="noopener">Benjamin D. Esham</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">Rope drop</div>
           <div class="activity-content">
@@ -582,6 +629,10 @@
         <div class="ticket-chip">🎟️ Disney Park Hopper · day 2 of 3</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo">
+          <img src="assets/photos/day4-tree-of-life.jpg" alt="The Tree of Life under a blue sky at Disney's Animal Kingdom" width="1200" height="900" loading="lazy">
+          <figcaption>The Tree of Life · 📷 <a href="https://commons.wikimedia.org/wiki/File:Tree_of_Life,_Disney%27s_Animal_Kingdom.jpg" target="_blank" rel="noopener">Jedi94</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">Early AM</div>
           <div class="activity-content">
@@ -676,6 +727,10 @@
         <div class="ticket-chip">🎟️ 1-day single-park ticket</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo tilt-r">
+          <img src="assets/photos/day6-epic-universe-gate.jpg" alt="The Chronos gate at the entrance to Epic Universe's Celestial Park" width="1200" height="673" loading="lazy">
+          <figcaption>The Chronos, gateway to Celestial Park · 📷 <a href="https://commons.wikimedia.org/wiki/File:Chronos_Tower_Front_Epic_Universe.jpg" target="_blank" rel="noopener">Gfgbeach</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">Early!</div>
           <div class="activity-content">
@@ -742,6 +797,10 @@
         <div class="ticket-chip">🎟️ Disney Park Hopper · day 3 of 3</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo">
+          <img src="assets/photos/day7-castle-fireworks.jpg" alt="Fireworks bursting around Cinderella Castle at night" width="1200" height="900" loading="lazy">
+          <figcaption>Fireworks over Cinderella Castle · 📷 <a href="https://commons.wikimedia.org/wiki/File:Fireworks_in_Magic_Kingdom.jpg" target="_blank" rel="noopener">Stevenliuyi</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">Morning</div>
           <div class="activity-content">
@@ -851,6 +910,10 @@
         <div class="day-subtitle">Family time in the Sunshine City</div>
       </div>
       <div class="schedule-container">
+        <figure class="day-photo tilt-r">
+          <img src="assets/photos/day9-fort-de-soto-sunset.jpg" alt="Sunset over the Gulf at North Beach, Fort De Soto Park" width="1200" height="900" loading="lazy">
+          <figcaption>Sunset at Fort De Soto's North Beach · 📷 <a href="https://commons.wikimedia.org/wiki/File:Sunset_on_North_Beach_at_Fort_De_Soto_Park.jpg" target="_blank" rel="noopener">Christopher Hollis</a> · public domain</figcaption>
+        </figure>
         <div class="schedule-item">
           <div class="time-badge">These days</div>
           <div class="activity-content">
