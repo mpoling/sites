@@ -17,7 +17,7 @@
 
   // ─── State ──────────────────────────────────────────────────────────────
   const state = {
-    data: null,         // { generatedAt, teams, games, errors }
+    data: null,         // { generatedAt, teams, tournaments, games, errors }
     error: null,
     selectedTeamId: null,
     refreshing: false,
@@ -43,6 +43,13 @@
 
   function startOfDay(d) {
     return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  }
+
+  // Teams and tournaments share the chip/filter/card machinery — a
+  // tournament entry has the same shape (id, shortName, accent, logo, …),
+  // it just maps to neutral home-vs-away games instead of us-vs-them ones.
+  function roster() {
+    return [...(state.data?.teams ?? []), ...(state.data?.tournaments ?? [])];
   }
 
   function groupByDay(games) {
@@ -152,7 +159,7 @@
   // ─── Renderers ──────────────────────────────────────────────────────────
   function renderHeader() {
     const team = state.selectedTeamId && state.data
-      ? state.data.teams.find(t => t.id === state.selectedTeamId)
+      ? roster().find(t => t.id === state.selectedTeamId)
       : null;
 
     if (team) {
@@ -173,7 +180,7 @@
     // Split teams into "in-season" (any games in window) and "off-season"
     // (no games). Off-season teams sort to the end and get visually dimmed,
     // so they don't compete for attention with teams actually playing now.
-    const teams = state.data?.teams ?? [];
+    const teams = roster();
     const games = state.data?.games ?? [];
     const hasGames = (id) => games.some(g => g.teamId === id);
     const orderedTeams = [
@@ -325,10 +332,29 @@
   }
 
   function renderGameCard(game, isPast) {
-    const team = state.data.teams.find(t => t.id === game.teamId);
+    const team = roster().find(t => t.id === game.teamId);
     if (!team) return '';
 
     const broadcasts = (game.broadcasts || []).filter(Boolean).join('  ·  ') || 'Check listings';
+    const logoHtml = (url) => url
+      ? `<img src="${esc(url)}" class="card-logo" alt="" loading="lazy">`
+      : '<span class="card-logo-placeholder"></span>';
+
+    // Tournament games (homeShort present) are neutral matchups — both sides
+    // come from the data, home listed first. Team games keep us-vs-them.
+    const matchupHtml = game.homeShort != null ? `
+      ${logoHtml(game.homeLogo)}
+      <span class="serif card-team">${esc(game.homeShort)}</span>
+      <span class="mono card-vs">vs</span>
+      ${logoHtml(game.awayLogo)}
+      <span class="serif card-opp">${esc(game.awayShort)}</span>
+    ` : `
+      <img src="${esc(team.logo)}" class="card-logo" alt="" loading="lazy">
+      <span class="serif card-team">${esc(team.shortName)}</span>
+      <span class="mono card-vs">${game.isHome ? 'vs' : '@'}</span>
+      ${logoHtml(game.opponentLogo)}
+      <span class="serif card-opp">${esc(game.opponentShort)}</span>
+    `;
 
     return `
       <article class="card ${isPast ? 'is-past' : ''}">
@@ -336,6 +362,10 @@
         <div class="card-meta mono">
           <div class="card-meta-left">
             <span class="card-league">${esc(team.league)}</span>
+            ${game.note ? `
+              <span class="card-sep">·</span>
+              <span class="muted">${esc(game.note)}</span>
+            ` : ''}
             <span class="card-sep">·</span>
             <span class="muted">${esc(formatTime(game.dateISO))}</span>
             ${game.venue ? `
@@ -345,15 +375,7 @@
           </div>
           ${isPast ? '<span class="badge badge-past mono">Aired</span>' : ''}
         </div>
-        <div class="card-matchup">
-          <img src="${esc(team.logo)}" class="card-logo" alt="" loading="lazy">
-          <span class="serif card-team">${esc(team.shortName)}</span>
-          <span class="mono card-vs">${game.isHome ? 'vs' : '@'}</span>
-          ${game.opponentLogo
-            ? `<img src="${esc(game.opponentLogo)}" class="card-logo" alt="" loading="lazy">`
-            : '<span class="card-logo-placeholder"></span>'}
-          <span class="serif card-opp">${esc(game.opponentShort)}</span>
-        </div>
+        <div class="card-matchup">${matchupHtml}</div>
         <div class="card-broadcast">${ICONS.tv}<span>${esc(broadcasts)}</span></div>
       </article>
     `;

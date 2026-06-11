@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T17:00:05.656Z",
+  "generatedAt": "2026-06-11T17:18:01.545Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -272,6 +272,21 @@
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png"
     }
   ],
+  "tournaments": [
+    {
+      "id": "wc26",
+      "shortName": "World Cup",
+      "fullName": "FIFA World Cup 2026",
+      "league": "FIFA WC",
+      "sport": "Soccer",
+      "espn": {
+        "sport": "soccer",
+        "league": "fifa.world"
+      },
+      "accent": "#C8102E",
+      "logo": "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png"
+    }
+  ],
   "games": [
     {
       "id": "atl-401815530",
@@ -311,6 +326,18 @@
         "MLB.TV",
         "BravesVision",
         "Reds.TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401853922",
+      "teamId": "bay-fc",
+      "dateISO": "2026-05-29T23:00Z",
+      "isHome": false,
+      "opponentShort": "Orlando",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18206.png",
+      "venue": "Inter&Co Stadium",
+      "broadcasts": [
+        "NWSL+"
       ]
     },
     {
@@ -817,6 +844,22 @@
       "broadcasts": []
     },
     {
+      "id": "wc26-760415",
+      "teamId": "wc26",
+      "dateISO": "2026-06-11T19:00Z",
+      "homeShort": "Mexico",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "awayShort": "South Africa",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "note": null,
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401815716",
       "teamId": "atl",
       "dateISO": "2026-06-11T23:40Z",
@@ -831,6 +874,38 @@
       ]
     },
     {
+      "id": "wc26-760414",
+      "teamId": "wc26",
+      "dateISO": "2026-06-12T02:00Z",
+      "homeShort": "South Korea",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "awayShort": "Czechia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "note": null,
+      "venue": "Estadio Akron",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760416",
+      "teamId": "wc26",
+      "dateISO": "2026-06-12T19:00Z",
+      "homeShort": "Canada",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "awayShort": "Bosnia-Herz",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "note": null,
+      "venue": "BMO Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401815720",
       "teamId": "atl",
       "dateISO": "2026-06-12T23:10Z",
@@ -840,6 +915,22 @@
       "venue": "Citi Field",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "wc26-760417",
+      "teamId": "wc26",
+      "dateISO": "2026-06-13T01:00Z",
+      "homeShort": "USA",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "awayShort": "Paraguay",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -871,6 +962,22 @@
       ]
     },
     {
+      "id": "wc26-760420",
+      "teamId": "wc26",
+      "dateISO": "2026-06-13T19:00Z",
+      "homeShort": "Qatar",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "awayShort": "Switzerland",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "note": null,
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401815735",
       "teamId": "atl",
       "dateISO": "2026-06-13T20:10Z",
@@ -882,6 +989,38 @@
         "MLB.TV",
         "BravesVision",
         "SNY"
+      ]
+    },
+    {
+      "id": "wc26-760419",
+      "teamId": "wc26",
+      "dateISO": "2026-06-13T22:00Z",
+      "homeShort": "Brazil",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "awayShort": "Morocco",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760418",
+      "teamId": "wc26",
+      "dateISO": "2026-06-14T01:00Z",
+      "homeShort": "Haiti",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "awayShort": "Scotland",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -906,6 +1045,38 @@
         "MLB.TV",
         "NBC Sports BA",
         "Marquee Sports Net"
+      ]
+    },
+    {
+      "id": "wc26-760421",
+      "teamId": "wc26",
+      "dateISO": "2026-06-14T04:00Z",
+      "homeShort": "Australia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "awayShort": "Türkiye",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760422",
+      "teamId": "wc26",
+      "dateISO": "2026-06-14T17:00Z",
+      "homeShort": "Germany",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "awayShort": "Curaçao",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -937,6 +1108,118 @@
       ]
     },
     {
+      "id": "wc26-760425",
+      "teamId": "wc26",
+      "dateISO": "2026-06-14T20:00Z",
+      "homeShort": "Netherlands",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "awayShort": "Japan",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760423",
+      "teamId": "wc26",
+      "dateISO": "2026-06-14T23:00Z",
+      "homeShort": "Ivory Coast",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "awayShort": "Ecuador",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "note": null,
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760424",
+      "teamId": "wc26",
+      "dateISO": "2026-06-15T02:00Z",
+      "homeShort": "Sweden",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+      "awayShort": "Tunisia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+      "note": null,
+      "venue": "Estadio BBVA",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760428",
+      "teamId": "wc26",
+      "dateISO": "2026-06-15T16:00Z",
+      "homeShort": "Spain",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "awayShort": "Cape Verde",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760426",
+      "teamId": "wc26",
+      "dateISO": "2026-06-15T19:00Z",
+      "homeShort": "Belgium",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "awayShort": "Egypt",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "note": null,
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760429",
+      "teamId": "wc26",
+      "dateISO": "2026-06-15T22:00Z",
+      "homeShort": "Saudi Arabia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+      "awayShort": "Uruguay",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760427",
+      "teamId": "wc26",
+      "dateISO": "2026-06-16T01:00Z",
+      "homeShort": "Iran",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "awayShort": "New Zealand",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsv-401856994",
       "teamId": "gsv",
       "dateISO": "2026-06-16T02:00Z",
@@ -948,6 +1231,38 @@
         "Peacock",
         "NBCSN",
         "Spectrum Sports Net"
+      ]
+    },
+    {
+      "id": "wc26-760432",
+      "teamId": "wc26",
+      "dateISO": "2026-06-16T19:00Z",
+      "homeShort": "France",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "awayShort": "Senegal",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760430",
+      "teamId": "wc26",
+      "dateISO": "2026-06-16T22:00Z",
+      "homeShort": "Iraq",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "awayShort": "Norway",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -978,6 +1293,86 @@
         "NBC Sports BA",
         "BravesVision",
         "Gray Media"
+      ]
+    },
+    {
+      "id": "wc26-760433",
+      "teamId": "wc26",
+      "dateISO": "2026-06-17T01:00Z",
+      "homeShort": "Argentina",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "awayShort": "Algeria",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "note": null,
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760431",
+      "teamId": "wc26",
+      "dateISO": "2026-06-17T04:00Z",
+      "homeShort": "Austria",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "awayShort": "Jordan",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+      "note": null,
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760435",
+      "teamId": "wc26",
+      "dateISO": "2026-06-17T17:00Z",
+      "homeShort": "Portugal",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "awayShort": "Congo DR",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760437",
+      "teamId": "wc26",
+      "dateISO": "2026-06-17T20:00Z",
+      "homeShort": "England",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "awayShort": "Croatia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760434",
+      "teamId": "wc26",
+      "dateISO": "2026-06-17T23:00Z",
+      "homeShort": "Ghana",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "awayShort": "Panama",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "note": null,
+      "venue": "BMO Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1035,6 +1430,70 @@
       ]
     },
     {
+      "id": "wc26-760436",
+      "teamId": "wc26",
+      "dateISO": "2026-06-18T02:00Z",
+      "homeShort": "Uzbekistan",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "awayShort": "Colombia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "note": null,
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760438",
+      "teamId": "wc26",
+      "dateISO": "2026-06-18T16:00Z",
+      "homeShort": "Czechia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "awayShort": "South Africa",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760439",
+      "teamId": "wc26",
+      "dateISO": "2026-06-18T19:00Z",
+      "homeShort": "Switzerland",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "awayShort": "Bosnia-Herz",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760440",
+      "teamId": "wc26",
+      "dateISO": "2026-06-18T22:00Z",
+      "homeShort": "Canada",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "awayShort": "Qatar",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815805",
       "teamId": "sfg",
       "dateISO": "2026-06-18T23:15Z",
@@ -1060,6 +1519,54 @@
         "MLB.TV",
         "NBC Sports BA",
         "BravesVision"
+      ]
+    },
+    {
+      "id": "wc26-760441",
+      "teamId": "wc26",
+      "dateISO": "2026-06-19T01:00Z",
+      "homeShort": "Mexico",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "awayShort": "South Korea",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "note": null,
+      "venue": "Estadio Akron",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760442",
+      "teamId": "wc26",
+      "dateISO": "2026-06-19T19:00Z",
+      "homeShort": "USA",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "awayShort": "Australia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "note": null,
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760445",
+      "teamId": "wc26",
+      "dateISO": "2026-06-19T22:00Z",
+      "homeShort": "Scotland",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "awayShort": "Morocco",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1092,6 +1599,22 @@
       ]
     },
     {
+      "id": "wc26-760444",
+      "teamId": "wc26",
+      "dateISO": "2026-06-20T00:30Z",
+      "homeShort": "Brazil",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "awayShort": "Haiti",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "note": null,
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsv-401857005",
       "teamId": "gsv",
       "dateISO": "2026-06-20T02:00Z",
@@ -1113,6 +1636,54 @@
       "opponentLogo": "assets/opponents/california-storm.png",
       "venue": "Davis Legacy Soccer Complex",
       "broadcasts": []
+    },
+    {
+      "id": "wc26-760443",
+      "teamId": "wc26",
+      "dateISO": "2026-06-20T03:00Z",
+      "homeShort": "Türkiye",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+      "awayShort": "Paraguay",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+      "note": null,
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760447",
+      "teamId": "wc26",
+      "dateISO": "2026-06-20T17:00Z",
+      "homeShort": "Netherlands",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "awayShort": "Sweden",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760448",
+      "teamId": "wc26",
+      "dateISO": "2026-06-20T20:00Z",
+      "homeShort": "Germany",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "awayShort": "Ivory Coast",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "note": null,
+      "venue": "BMO Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
     },
     {
       "id": "sfg-401815829",
@@ -1143,6 +1714,22 @@
       ]
     },
     {
+      "id": "wc26-760446",
+      "teamId": "wc26",
+      "dateISO": "2026-06-21T00:00Z",
+      "homeShort": "Ecuador",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "awayShort": "Curaçao",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+      "note": null,
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "mbfc-401841936",
       "teamId": "mbfc",
       "dateISO": "2026-06-21T02:00Z",
@@ -1152,6 +1739,38 @@
       "venue": "Cardinale Stadium",
       "broadcasts": [
         "ESPN+"
+      ]
+    },
+    {
+      "id": "wc26-760449",
+      "teamId": "wc26",
+      "dateISO": "2026-06-21T04:00Z",
+      "homeShort": "Tunisia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+      "awayShort": "Japan",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "note": null,
+      "venue": "Estadio BBVA",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760453",
+      "teamId": "wc26",
+      "dateISO": "2026-06-21T16:00Z",
+      "homeShort": "Spain",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "awayShort": "Saudi Arabia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1184,6 +1803,22 @@
       ]
     },
     {
+      "id": "wc26-760451",
+      "teamId": "wc26",
+      "dateISO": "2026-06-21T19:00Z",
+      "homeShort": "Belgium",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "awayShort": "Iran",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsv-401857009",
       "teamId": "gsv",
       "dateISO": "2026-06-21T20:00Z",
@@ -1207,6 +1842,86 @@
       "broadcasts": []
     },
     {
+      "id": "wc26-760450",
+      "teamId": "wc26",
+      "dateISO": "2026-06-21T22:00Z",
+      "homeShort": "Uruguay",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+      "awayShort": "Cape Verde",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760452",
+      "teamId": "wc26",
+      "dateISO": "2026-06-22T01:00Z",
+      "homeShort": "New Zealand",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "awayShort": "Egypt",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760456",
+      "teamId": "wc26",
+      "dateISO": "2026-06-22T17:00Z",
+      "homeShort": "Argentina",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "awayShort": "Austria",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760457",
+      "teamId": "wc26",
+      "dateISO": "2026-06-22T21:00Z",
+      "homeShort": "France",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "awayShort": "Iraq",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "note": null,
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760454",
+      "teamId": "wc26",
+      "dateISO": "2026-06-23T00:00Z",
+      "homeShort": "Norway",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "awayShort": "Senegal",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401815865",
       "teamId": "atl",
       "dateISO": "2026-06-23T02:00Z",
@@ -1216,6 +1931,70 @@
       "venue": "Petco Park",
       "broadcasts": [
         "ESPN"
+      ]
+    },
+    {
+      "id": "wc26-760455",
+      "teamId": "wc26",
+      "dateISO": "2026-06-23T03:00Z",
+      "homeShort": "Jordan",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+      "awayShort": "Algeria",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "note": null,
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760461",
+      "teamId": "wc26",
+      "dateISO": "2026-06-23T17:00Z",
+      "homeShort": "Portugal",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "awayShort": "Uzbekistan",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760458",
+      "teamId": "wc26",
+      "dateISO": "2026-06-23T20:00Z",
+      "homeShort": "England",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "awayShort": "Ghana",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760460",
+      "teamId": "wc26",
+      "dateISO": "2026-06-23T23:00Z",
+      "homeShort": "Panama",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "awayShort": "Croatia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "note": null,
+      "venue": "BMO Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1249,6 +2028,86 @@
       ]
     },
     {
+      "id": "wc26-760459",
+      "teamId": "wc26",
+      "dateISO": "2026-06-24T02:00Z",
+      "homeShort": "Colombia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "awayShort": "Congo DR",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "note": null,
+      "venue": "Estadio Akron",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760462",
+      "teamId": "wc26",
+      "dateISO": "2026-06-24T19:00Z",
+      "homeShort": "Bosnia-Herz",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "awayShort": "Qatar",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "note": null,
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760463",
+      "teamId": "wc26",
+      "dateISO": "2026-06-24T19:00Z",
+      "homeShort": "Switzerland",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "awayShort": "Canada",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760464",
+      "teamId": "wc26",
+      "dateISO": "2026-06-24T22:00Z",
+      "homeShort": "Morocco",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "awayShort": "Haiti",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760465",
+      "teamId": "wc26",
+      "dateISO": "2026-06-24T22:00Z",
+      "homeShort": "Scotland",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "awayShort": "Brazil",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401815895",
       "teamId": "atl",
       "dateISO": "2026-06-25T00:40Z",
@@ -1260,6 +2119,38 @@
         "MLB.TV",
         "BravesVision",
         "Padres.TV"
+      ]
+    },
+    {
+      "id": "wc26-760467",
+      "teamId": "wc26",
+      "dateISO": "2026-06-25T01:00Z",
+      "homeShort": "Czechia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "awayShort": "Mexico",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "note": null,
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760466",
+      "teamId": "wc26",
+      "dateISO": "2026-06-25T01:00Z",
+      "homeShort": "South Africa",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "awayShort": "South Korea",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "note": null,
+      "venue": "Estadio BBVA",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1306,6 +2197,166 @@
       ]
     },
     {
+      "id": "wc26-760473",
+      "teamId": "wc26",
+      "dateISO": "2026-06-25T20:00Z",
+      "homeShort": "Curaçao",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+      "awayShort": "Ivory Coast",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "note": null,
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760468",
+      "teamId": "wc26",
+      "dateISO": "2026-06-25T20:00Z",
+      "homeShort": "Ecuador",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "awayShort": "Germany",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760471",
+      "teamId": "wc26",
+      "dateISO": "2026-06-25T23:00Z",
+      "homeShort": "Japan",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "awayShort": "Sweden",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760472",
+      "teamId": "wc26",
+      "dateISO": "2026-06-25T23:00Z",
+      "homeShort": "Tunisia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+      "awayShort": "Netherlands",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "note": null,
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760469",
+      "teamId": "wc26",
+      "dateISO": "2026-06-26T02:00Z",
+      "homeShort": "Paraguay",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+      "awayShort": "Australia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "note": null,
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760470",
+      "teamId": "wc26",
+      "dateISO": "2026-06-26T02:00Z",
+      "homeShort": "Türkiye",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+      "awayShort": "USA",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760475",
+      "teamId": "wc26",
+      "dateISO": "2026-06-26T19:00Z",
+      "homeShort": "Norway",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "awayShort": "France",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760474",
+      "teamId": "wc26",
+      "dateISO": "2026-06-26T19:00Z",
+      "homeShort": "Senegal",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "awayShort": "Iraq",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "note": null,
+      "venue": "BMO Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760478",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T00:00Z",
+      "homeShort": "Cape Verde",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "awayShort": "Saudi Arabia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760479",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T00:00Z",
+      "homeShort": "Uruguay",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+      "awayShort": "Spain",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "note": null,
+      "venue": "Estadio Akron",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsv-401857026",
       "teamId": "gsv",
       "dateISO": "2026-06-27T02:00Z",
@@ -1346,6 +2397,102 @@
       ]
     },
     {
+      "id": "wc26-760476",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T03:00Z",
+      "homeShort": "Egypt",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "awayShort": "Iran",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "note": null,
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760477",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T03:00Z",
+      "homeShort": "New Zealand",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "awayShort": "Belgium",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760480",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T21:00Z",
+      "homeShort": "Croatia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "awayShort": "Ghana",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "note": null,
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760485",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T21:00Z",
+      "homeShort": "Panama",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "awayShort": "England",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760481",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T23:30Z",
+      "homeShort": "Colombia",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "awayShort": "Portugal",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760482",
+      "teamId": "wc26",
+      "dateISO": "2026-06-27T23:30Z",
+      "homeShort": "Congo DR",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "awayShort": "Uzbekistan",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815934",
       "teamId": "sfg",
       "dateISO": "2026-06-28T01:05Z",
@@ -1382,6 +2529,54 @@
       "opponentLogo": "assets/opponents/pleasanton-rage.png",
       "venue": "Cardinale Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "wc26-760484",
+      "teamId": "wc26",
+      "dateISO": "2026-06-28T02:00Z",
+      "homeShort": "Algeria",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "awayShort": "Austria",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "note": null,
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760483",
+      "teamId": "wc26",
+      "dateISO": "2026-06-28T02:00Z",
+      "homeShort": "Jordan",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+      "awayShort": "Argentina",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760486",
+      "teamId": "wc26",
+      "dateISO": "2026-06-28T19:00Z",
+      "homeShort": "2A",
+      "homeLogo": null,
+      "awayShort": "2B",
+      "awayLogo": null,
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
     },
     {
       "id": "sfg-401815949",
@@ -1424,6 +2619,54 @@
       ]
     },
     {
+      "id": "wc26-760487",
+      "teamId": "wc26",
+      "dateISO": "2026-06-29T17:00Z",
+      "homeShort": "1C",
+      "homeLogo": null,
+      "awayShort": "2F",
+      "awayLogo": null,
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760489",
+      "teamId": "wc26",
+      "dateISO": "2026-06-29T20:30Z",
+      "homeShort": "1E",
+      "homeLogo": null,
+      "awayShort": "3RD A/B/C/D/F",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760488",
+      "teamId": "wc26",
+      "dateISO": "2026-06-30T01:00Z",
+      "homeShort": "1F",
+      "homeLogo": null,
+      "awayShort": "2C",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Estadio BBVA",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815963",
       "teamId": "sfg",
       "dateISO": "2026-06-30T01:40Z",
@@ -1435,6 +2678,38 @@
         "MLB.TV",
         "NBC Sports BA",
         "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "wc26-760490",
+      "teamId": "wc26",
+      "dateISO": "2026-06-30T17:00Z",
+      "homeShort": "2E",
+      "homeLogo": null,
+      "awayShort": "2I",
+      "awayLogo": null,
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760492",
+      "teamId": "wc26",
+      "dateISO": "2026-06-30T21:00Z",
+      "homeShort": "1I",
+      "homeLogo": null,
+      "awayShort": "3RD C/D/F/G/H",
+      "awayLogo": null,
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1453,6 +2728,22 @@
       ]
     },
     {
+      "id": "wc26-760491",
+      "teamId": "wc26",
+      "dateISO": "2026-07-01T01:00Z",
+      "homeShort": "1A",
+      "homeLogo": null,
+      "awayShort": "3RD C/E/F/H/I",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815978",
       "teamId": "sfg",
       "dateISO": "2026-07-01T01:40Z",
@@ -1464,6 +2755,38 @@
         "MLB.TV",
         "NBC Sports BA",
         "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "wc26-760495",
+      "teamId": "wc26",
+      "dateISO": "2026-07-01T16:00Z",
+      "homeShort": "1L",
+      "homeLogo": null,
+      "awayShort": "3RD E/H/I/J/K",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760493",
+      "teamId": "wc26",
+      "dateISO": "2026-07-01T20:00Z",
+      "homeShort": "1G",
+      "homeLogo": null,
+      "awayShort": "3RD A/E/H/I/J",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1481,6 +2804,22 @@
       ]
     },
     {
+      "id": "wc26-760494",
+      "teamId": "wc26",
+      "dateISO": "2026-07-02T00:00Z",
+      "homeShort": "1D",
+      "homeLogo": null,
+      "awayShort": "3RD B/E/F/I/J",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401815992",
       "teamId": "sfg",
       "dateISO": "2026-07-02T01:40Z",
@@ -1495,6 +2834,38 @@
       ]
     },
     {
+      "id": "wc26-760497",
+      "teamId": "wc26",
+      "dateISO": "2026-07-02T19:00Z",
+      "homeShort": "1H",
+      "homeLogo": null,
+      "awayShort": "2J",
+      "awayLogo": null,
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760496",
+      "teamId": "wc26",
+      "dateISO": "2026-07-02T23:00Z",
+      "homeShort": "2K",
+      "homeLogo": null,
+      "awayShort": "2L",
+      "awayLogo": null,
+      "note": null,
+      "venue": "BMO Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401815995",
       "teamId": "atl",
       "dateISO": "2026-07-02T23:15Z",
@@ -1506,6 +2877,54 @@
         "MLB.TV",
         "BravesVision",
         "Cardinals.TV"
+      ]
+    },
+    {
+      "id": "wc26-760498",
+      "teamId": "wc26",
+      "dateISO": "2026-07-03T03:00Z",
+      "homeShort": "1B",
+      "homeLogo": null,
+      "awayShort": "3RD E/F/G/I/J",
+      "awayLogo": null,
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FS1",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760499",
+      "teamId": "wc26",
+      "dateISO": "2026-07-03T18:00Z",
+      "homeShort": "2D",
+      "homeLogo": null,
+      "awayShort": "2G",
+      "awayLogo": null,
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760500",
+      "teamId": "wc26",
+      "dateISO": "2026-07-03T22:00Z",
+      "homeShort": "1J",
+      "homeLogo": null,
+      "awayShort": "2H",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1537,6 +2956,22 @@
       ]
     },
     {
+      "id": "wc26-760501",
+      "teamId": "wc26",
+      "dateISO": "2026-07-04T01:30Z",
+      "homeShort": "1K",
+      "homeLogo": null,
+      "awayShort": "3RD D/E/I/J/L",
+      "awayLogo": null,
+      "note": null,
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsv-401857039",
       "teamId": "gsv",
       "dateISO": "2026-07-04T17:00Z",
@@ -1547,6 +2982,38 @@
       "broadcasts": [
         "CBS",
         "Paramount+"
+      ]
+    },
+    {
+      "id": "wc26-760502",
+      "teamId": "wc26",
+      "dateISO": "2026-07-04T17:00Z",
+      "homeShort": "RD32 W1",
+      "homeLogo": null,
+      "awayShort": "RD32 W3",
+      "awayLogo": null,
+      "note": null,
+      "venue": "NRG Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760503",
+      "teamId": "wc26",
+      "dateISO": "2026-07-04T21:00Z",
+      "homeShort": "RD32 W2",
+      "homeLogo": null,
+      "awayShort": "RD32 W5",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1587,6 +3054,18 @@
       "broadcasts": []
     },
     {
+      "id": "bay-fc-401854062",
+      "teamId": "bay-fc",
+      "dateISO": "2026-07-05T16:00Z",
+      "isHome": false,
+      "opponentShort": "Boston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131562.png",
+      "venue": "Centreville Bank Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
       "id": "atl-401816033",
       "teamId": "atl",
       "dateISO": "2026-07-05T16:30Z",
@@ -1610,6 +3089,54 @@
       "broadcasts": [
         "Peacock",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "wc26-760504",
+      "teamId": "wc26",
+      "dateISO": "2026-07-05T20:00Z",
+      "homeShort": "RD32 W4",
+      "homeLogo": null,
+      "awayShort": "RD32 W6",
+      "awayLogo": null,
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760505",
+      "teamId": "wc26",
+      "dateISO": "2026-07-06T00:00Z",
+      "homeShort": "RD32 W7",
+      "homeLogo": null,
+      "awayShort": "RD32 W8",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760506",
+      "teamId": "wc26",
+      "dateISO": "2026-07-06T19:00Z",
+      "homeShort": "RD32 W11",
+      "homeLogo": null,
+      "awayShort": "RD32 W12",
+      "awayLogo": null,
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1639,6 +3166,22 @@
       ]
     },
     {
+      "id": "wc26-760507",
+      "teamId": "wc26",
+      "dateISO": "2026-07-07T00:00Z",
+      "homeShort": "RD32 W9",
+      "homeLogo": null,
+      "awayShort": "RD32 W10",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401816052",
       "teamId": "sfg",
       "dateISO": "2026-07-07T01:45Z",
@@ -1651,6 +3194,38 @@
         "NBC Sports BA",
         "Sportsnet",
         "TVA"
+      ]
+    },
+    {
+      "id": "wc26-760509",
+      "teamId": "wc26",
+      "dateISO": "2026-07-07T16:00Z",
+      "homeShort": "RD32 W14",
+      "homeLogo": null,
+      "awayShort": "RD32 W16",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760508",
+      "teamId": "wc26",
+      "dateISO": "2026-07-07T20:00Z",
+      "homeShort": "RD32 W13",
+      "homeLogo": null,
+      "awayShort": "RD32 W15",
+      "awayLogo": null,
+      "note": null,
+      "venue": "BC Place",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1736,6 +3311,22 @@
       ]
     },
     {
+      "id": "wc26-760510",
+      "teamId": "wc26",
+      "dateISO": "2026-07-09T20:00Z",
+      "homeShort": "RD16 W1",
+      "homeLogo": null,
+      "awayShort": "RD16 W2",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "sfg-401816095",
       "teamId": "sfg",
       "dateISO": "2026-07-10T01:45Z",
@@ -1750,6 +3341,22 @@
       ]
     },
     {
+      "id": "wc26-760511",
+      "teamId": "wc26",
+      "dateISO": "2026-07-10T19:00Z",
+      "homeShort": "RD16 W5",
+      "homeLogo": null,
+      "awayShort": "RD16 W6",
+      "awayLogo": null,
+      "note": null,
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsv-401857054",
       "teamId": "gsv",
       "dateISO": "2026-07-10T23:30Z",
@@ -1759,6 +3366,18 @@
       "venue": "Mohegan Sun Arena",
       "broadcasts": [
         "ION"
+      ]
+    },
+    {
+      "id": "bay-fc-401853935",
+      "teamId": "bay-fc",
+      "dateISO": "2026-07-11T00:00Z",
+      "isHome": false,
+      "opponentShort": "Louisville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20905.png",
+      "venue": "Lynn Family Stadium",
+      "broadcasts": [
+        "NWSL+"
       ]
     },
     {
@@ -1804,6 +3423,22 @@
       ]
     },
     {
+      "id": "wc26-760512",
+      "teamId": "wc26",
+      "dateISO": "2026-07-11T21:00Z",
+      "homeShort": "RD16 W3",
+      "homeLogo": null,
+      "awayShort": "RD16 W4",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
       "id": "atl-401816121",
       "teamId": "atl",
       "dateISO": "2026-07-11T23:15Z",
@@ -1815,6 +3450,22 @@
         "MLB.TV",
         "BravesVision",
         "Cardinals.TV"
+      ]
+    },
+    {
+      "id": "wc26-760513",
+      "teamId": "wc26",
+      "dateISO": "2026-07-12T01:00Z",
+      "homeShort": "RD16 W7",
+      "homeLogo": null,
+      "awayShort": "RD16 W8",
+      "awayLogo": null,
+      "note": null,
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1843,6 +3494,38 @@
         "MLB.TV",
         "NBC Sports BA",
         "Rockies.TV"
+      ]
+    },
+    {
+      "id": "wc26-760514",
+      "teamId": "wc26",
+      "dateISO": "2026-07-14T19:00Z",
+      "homeShort": "QF W1",
+      "homeLogo": null,
+      "awayShort": "QF W2",
+      "awayLogo": null,
+      "note": null,
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "wc26-760515",
+      "teamId": "wc26",
+      "dateISO": "2026-07-15T19:00Z",
+      "homeShort": "QF W3",
+      "homeLogo": null,
+      "awayShort": "QF W4",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1889,6 +3572,19 @@
       ]
     },
     {
+      "id": "bay-fc-401853943",
+      "teamId": "bay-fc",
+      "dateISO": "2026-07-18T20:00Z",
+      "isHome": true,
+      "opponentShort": "North Carolina",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15366.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "CBS",
+        "Paramount+"
+      ]
+    },
+    {
       "id": "atl-401816161",
       "teamId": "atl",
       "dateISO": "2026-07-18T20:10Z",
@@ -1900,6 +3596,22 @@
         "MLB.TV",
         "BravesVision",
         "Rangers Sports Network"
+      ]
+    },
+    {
+      "id": "wc26-760516",
+      "teamId": "wc26",
+      "dateISO": "2026-07-18T21:00Z",
+      "homeShort": "SF L1",
+      "homeLogo": null,
+      "awayShort": "SF L2",
+      "awayLogo": null,
+      "note": null,
+      "venue": "Hard Rock Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -1950,6 +3662,22 @@
         "MLB.TV",
         "BravesVision",
         "Rangers Sports Network"
+      ]
+    },
+    {
+      "id": "wc26-760517",
+      "teamId": "wc26",
+      "dateISO": "2026-07-19T19:00Z",
+      "homeShort": "SF W1",
+      "homeLogo": null,
+      "awayShort": "SF W2",
+      "awayLogo": null,
+      "note": null,
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "Peacock"
       ]
     },
     {
@@ -2114,6 +3842,18 @@
         "MLB.TV",
         "BravesVision",
         "MASN"
+      ]
+    },
+    {
+      "id": "bay-fc-401853948",
+      "teamId": "bay-fc",
+      "dateISO": "2026-07-25T00:00Z",
+      "isHome": false,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17346.png",
+      "venue": "Shell Energy Stadium",
+      "broadcasts": [
+        "Victory+"
       ]
     },
     {
@@ -2322,6 +4062,18 @@
       ]
     },
     {
+      "id": "bay-fc-401853955",
+      "teamId": "bay-fc",
+      "dateISO": "2026-07-30T02:00Z",
+      "isHome": true,
+      "opponentShort": "Gotham",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15364.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "CBSSN"
+      ]
+    },
+    {
       "id": "atl-401816325",
       "teamId": "atl",
       "dateISO": "2026-07-30T23:15Z",
@@ -2437,6 +4189,18 @@
         "NBC Sports BA",
         "Padres.TV",
         "KFMB 8.1 (CBS)"
+      ]
+    },
+    {
+      "id": "bay-fc-401853960",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-02T00:45Z",
+      "isHome": true,
+      "opponentShort": "Seattle",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15363.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "ION"
       ]
     },
     {
@@ -2728,6 +4492,18 @@
       ]
     },
     {
+      "id": "bay-fc-401853967",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-09T23:00Z",
+      "isHome": false,
+      "opponentShort": "Chicago",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15360.png",
+      "venue": "Northwestern Medicine Field at Martin Stadium",
+      "broadcasts": [
+        "Victory+"
+      ]
+    },
+    {
       "id": "atl-401816470",
       "teamId": "atl",
       "dateISO": "2026-08-10T23:15Z",
@@ -2863,6 +4639,18 @@
       ]
     },
     {
+      "id": "bay-fc-401853971",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-15T02:00Z",
+      "isHome": false,
+      "opponentShort": "Utah",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19141.png",
+      "venue": "America First Field",
+      "broadcasts": [
+        "Victory+"
+      ]
+    },
+    {
       "id": "sfg-401816528",
       "teamId": "sfg",
       "dateISO": "2026-08-15T02:15Z",
@@ -2914,6 +4702,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "mbfc-401842106",
+      "teamId": "mbfc",
+      "dateISO": "2026-08-16T02:00Z",
+      "isHome": false,
+      "opponentShort": "Oakland",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20687.png",
+      "venue": "Oakland-Alameda County Coliseum",
+      "broadcasts": []
     },
     {
       "id": "sje-761721",
@@ -3184,6 +4982,16 @@
       ]
     },
     {
+      "id": "mbfc-401842129",
+      "teamId": "mbfc",
+      "dateISO": "2026-08-22T23:30Z",
+      "isHome": false,
+      "opponentShort": "Rhode Island",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/22164.png",
+      "venue": "Centreville Bank Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "sje-761752",
       "teamId": "sje",
       "dateISO": "2026-08-23T02:30Z",
@@ -3206,6 +5014,18 @@
       "broadcasts": [
         "NBC",
         "Peacock"
+      ]
+    },
+    {
+      "id": "bay-fc-401853981",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-23T22:00Z",
+      "isHome": true,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17346.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "CBSSN"
       ]
     },
     {
@@ -3264,10 +5084,5 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "team": "Bay FC",
-      "error": "ESPN returned 502 Bad Gateway for https://site.api.espn.com/apis/site/v2/sports/soccer/usa.nwsl.summer.cup/teams/22187/schedule"
-    }
-  ]
+  "errors": []
 }
