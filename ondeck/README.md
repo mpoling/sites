@@ -113,6 +113,47 @@ Pushing the change triggers the workflow (the `paths:` filter on push
 includes `teams.json`), so the next `data/games.json` will reflect your new
 roster.
 
+## Tracking a whole tournament
+
+Besides `teams`, `teams.json` accepts a `tournaments` array — competitions
+tracked in full, every game, no team filter. The motivating case is the
+FIFA World Cup 2026: you want all 104 games on the board, not just the
+ones involving a tracked team.
+
+```jsonc
+{
+  "tournaments": [
+    {
+      "id":        "wc26",
+      "shortName": "World Cup",            // filter chip
+      "fullName":  "FIFA World Cup 2026",  // tournament page header
+      "league":    "FIFA WC",
+      "sport":     "Soccer",
+      "espn": {
+        "sport":  "soccer",
+        "league": "fifa.world"             // single slug, not an array
+      },
+      "accent":    "#C8102E",
+      "logo":      "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png"
+    }
+  ]
+}
+```
+
+A tournament costs one league-scoreboard call covering the whole
+past+future window. Its games are neutral matchups (`homeShort` vs
+`awayShort`, home listed first) rather than us-vs-them, and the UI renders
+them with both sides' logos from the data. Knockout slots whose teams
+aren't decided yet render as ESPN's placeholders ("2A", "SF W1") with no
+logo. Tournament entries share the chip / filter / off-season-dimming
+machinery with teams — when the competition ends and its games age out of
+the window, the chip dims like an off-season team. Delete the entry from
+`teams.json` whenever you're done with it.
+
+League logos live at `https://a.espncdn.com/i/leaguelogos/{sport}/500/{id}.png`;
+the easiest way to find one is the `leagues[0].logos` block of the
+competition's own scoreboard response.
+
 **Finding ESPN team IDs**: hit
 `https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/teams` in a
 browser and grab the `id` of the team you want.
@@ -213,6 +254,16 @@ that you'll save time by knowing up-front:
   endpoint returns `competitor.team.logo` (singular string). The
   fetcher reads both — without the fallback, all future MLS/NWSL/USL
   opponents (sourced from the scoreboard) silently render with no logo.
+- **The scoreboard defaults to 100 events per response** and silently
+  truncates beyond that — no pagination hint, no error. A 75-day MLS
+  window or a full World Cup (104 games) both blow past it. The fetcher
+  passes `limit=1000` on every scoreboard call.
+- **Transient 5xx errors happen.** ESPN's edge occasionally throws a
+  one-off 502/503 on an endpoint that's perfectly healthy a second later
+  (observed 2026-06-11 on the NWSL Summer Cup schedule endpoint). The
+  fetcher retries 5xx and network errors up to 3 attempts with backoff;
+  4xx responses fail immediately since they indicate a real config error
+  (bad slug / bad team ID).
 
 ## Tuning the window
 
@@ -305,9 +356,21 @@ Each per-team line looks like one of:
   the one in your `teams.json`. Fix it. For multi-league teams the
   check runs per league; any mismatch prints a `(name mismatch in
   <league>: …)` line to stderr.
-- **`✗ <error>`** at the end of a line means the team's `/schedule`
-  fetch failed entirely (HTTP error, network issue). The team is
-  recorded in `errors[]` in `games.json` and the rest of the run
-  continues. A scoreboard fetch failure does *not* fail the team — it
+- **`(schedule miss for <league>: …)`** on stderr means that league's
+  `/schedule` fetch failed (after retries). It does *not* fail the team:
+  the other leagues' schedules and every scoreboard still contribute, and
+  the failure is recorded in `errors[]` so the UI's issues pill surfaces
+  it. (Before this softening, a single transient 502 on one of Bay FC's
+  two league slugs dropped all of her games — including the healthy NWSL
+  ones — from `games.json` for a day.)
+- **A scoreboard fetch failure** likewise does *not* fail the team — it
   prints a `(scoreboard miss for …)` line on stderr and contributes
   zero future events from that source.
+- **`✗ <error>`** at the end of a line now only appears for unexpected
+  failures (and, for tournaments, a failed scoreboard call — it's their
+  only data source). The entry is recorded in `errors[]` in `games.json`
+  and the rest of the run continues.
+- **Tournament lines** look like
+  `→ World Cup       104 in window  (scoreboard=104)  [ESPN: FIFA World Cup]` —
+  the bracketed name is the competition ESPN resolved for the slug, the
+  same wrong-config tripwire as the team cross-check.
