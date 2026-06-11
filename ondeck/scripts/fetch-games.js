@@ -36,6 +36,11 @@
  * Teams ESPN doesn't cover (e.g. USL W League — no ESPN/TheSportsDB presence,
  * SportsEngine's public API only returns games scheduled for streaming) can
  * instead point `static` at a hand-entered fixtures file (see data/*-fixtures.json).
+ *
+ * Besides `teams`, the config can declare `tournaments` — whole competitions
+ * tracked without a team filter (e.g. the FIFA World Cup). Each one is a
+ * single league-scoreboard call over the full window; every event is kept,
+ * transformed into a neutral home-vs-away shape (see transformTournamentEvent).
  */
 
 import fs from 'node:fs/promises';
@@ -48,14 +53,29 @@ const USER_AGENT = 'sportsview/1.0 (+https://github.com/) personal-use';
 // ─────────────────────────────────────────────────────────────────────────────
 // ESPN fetch helpers
 // ─────────────────────────────────────────────────────────────────────────────
-async function fetchJSON(url) {
-  const res = await fetch(url, {
-    headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
-  });
-  if (!res.ok) {
-    throw new Error(`ESPN returned ${res.status} ${res.statusText} for ${url}`);
+// ESPN's edge occasionally throws transient 5xx errors (a one-off 502 on
+// 2026-06-11 wiped a team's games for a day). Retry those — and network
+// errors — a couple of times with a short backoff before giving up. 4xx
+// responses are real (bad slug / bad ID) and fail immediately.
+const RETRYABLE_STATUS = new Set([500, 502, 503, 504]);
+async function fetchJSON(url, attempts = 3) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
+      });
+      if (!res.ok) {
+        const err = new Error(`ESPN returned ${res.status} ${res.statusText} for ${url}`);
+        err.retryable = RETRYABLE_STATUS.has(res.status);
+        throw err;
+      }
+      return await res.json();
+    } catch (err) {
+      const retryable = err.retryable ?? true; // network-level errors: retry
+      if (!retryable || attempt >= attempts) throw err;
+      await new Promise(r => setTimeout(r, 1000 * attempt));
+    }
   }
-  return res.json();
 }
 
 async function fetchTeamSchedule(team, league) {
@@ -83,12 +103,26 @@ function yyyymmdd(d) {
 // Build the league-scoreboard URL covering the future portion of our window.
 // We don't bother going into the past — the /teams/{id}/schedule endpoint
 // already covers past games well for every league we use.
+// `limit=1000` matters: the scoreboard defaults to 100 events per response,
+// which silently truncates busy leagues over a 75-day window (MLS league-wide
+// easily exceeds 100 games in that span).
 function buildScoreboardURL(sport, league, futureDays) {
   const now = new Date();
   const start = yyyymmdd(now);
   const end = new Date(now);
   end.setDate(now.getDate() + futureDays);
-  return `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${start}-${yyyymmdd(end)}`;
+  return `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${start}-${yyyymmdd(end)}&limit=1000`;
+}
+
+// Tournament scoreboards cover the full window (past + future) in one call —
+// there's no team /schedule endpoint backing them up for past games.
+function buildTournamentScoreboardURL(sport, league, window) {
+  const now = new Date();
+  const start = new Date(now);
+  start.setDate(now.getDate() - window.pastDays);
+  const end = new Date(now);
+  end.setDate(now.getDate() + window.futureDays);
+  return `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${yyyymmdd(start)}-${yyyymmdd(end)}&limit=1000`;
 }
 
 // Cache scoreboards per (sport, league) key so leagues with multiple teams
@@ -119,6 +153,18 @@ function eventInvolvesTeam(event, teamId) {
   return competitors.some(c => String(c.id) === tid || String(c.team?.id) === tid);
 }
 
+// Snap the window edges to calendar-day boundaries (UTC) so an event on
+// the boundary day isn't excluded just because its kickoff time is earlier
+// than the script's run-time-of-day. Without this, e.g. a game on
+// 2026-05-17T20:05Z dropped out when the script ran at 2026-05-31T20:34Z
+// because 20:05Z falls 29 minutes before the (run-time-of-day - 14d) cutoff.
+function windowBounds(window) {
+  const now = new Date();
+  const min = new Date(now); min.setUTCDate(now.getUTCDate() - window.pastDays); min.setUTCHours(0, 0, 0, 0);
+  const max = new Date(now); max.setUTCDate(now.getUTCDate() + window.futureDays); max.setUTCHours(23, 59, 59, 999);
+  return { min, max };
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Transform a raw ESPN event into our clean shape.
 // Crucially, we do NOT copy any score fields. We never want them in games.json.
@@ -127,14 +173,7 @@ function transformEvent(event, team, window) {
   const date = new Date(event.date);
   if (Number.isNaN(date.getTime())) return null;
 
-  // Snap the window edges to calendar-day boundaries (UTC) so an event on
-  // the boundary day isn't excluded just because its kickoff time is earlier
-  // than the script's run-time-of-day. Without this, e.g. a game on
-  // 2026-05-17T20:05Z dropped out when the script ran at 2026-05-31T20:34Z
-  // because 20:05Z falls 29 minutes before the (run-time-of-day - 14d) cutoff.
-  const now = new Date();
-  const min = new Date(now); min.setUTCDate(now.getUTCDate() - window.pastDays); min.setUTCHours(0, 0, 0, 0);
-  const max = new Date(now); max.setUTCDate(now.getUTCDate() + window.futureDays); max.setUTCHours(23, 59, 59, 999);
+  const { min, max } = windowBounds(window);
   if (date < min || date > max) return null;
 
   const comp = event.competitions?.[0];
@@ -165,6 +204,45 @@ function transformEvent(event, team, window) {
     broadcasts: extractBroadcasts(comp),
     // NOTE: we intentionally do not include any score / status.type.completed
     // fields. The UI infers past vs upcoming from dateISO alone, by design.
+  };
+}
+
+// Tournament events have no "us vs them" — both sides are kept, home first.
+// The game carries `homeShort`/`awayShort` instead of `opponentShort`, which
+// is also how the UI tells a tournament card from a team card.
+function transformTournamentEvent(event, tournament, window) {
+  const date = new Date(event.date);
+  if (Number.isNaN(date.getTime())) return null;
+
+  const { min, max } = windowBounds(window);
+  if (date < min || date > max) return null;
+
+  const comp = event.competitions?.[0];
+  if (!comp) return null;
+
+  const competitors = comp.competitors ?? [];
+  const home = competitors.find(c => c.homeAway === 'home') ?? competitors[0];
+  const away = competitors.find(c => c !== home);
+  if (!home || !away) return null;
+
+  const nameOf = c => c.team?.shortDisplayName ?? c.team?.name ?? c.team?.displayName ?? 'TBD';
+  // `||` not `??`: unscheduled knockout slots ("SF W1") come back with
+  // logo as an empty string, which should fall through to the placeholder.
+  const logoOf = c => c.team?.logos?.[0]?.href || c.team?.logo || null;
+
+  return {
+    id: `${tournament.id}-${event.id}`,
+    teamId: tournament.id,
+    dateISO: event.date,
+    homeShort: nameOf(home),
+    homeLogo: logoOf(home),
+    awayShort: nameOf(away),
+    awayLogo: logoOf(away),
+    // Stage/group annotation when ESPN provides one (e.g. "Group A").
+    note: comp.notes?.[0]?.headline ?? null,
+    venue: comp.venue?.fullName ?? null,
+    broadcasts: extractBroadcasts(comp),
+    // Same no-scores rule as transformEvent.
   };
 }
 
@@ -212,11 +290,7 @@ async function main() {
         // "_comment" key, which is documentation only.
         const opponentLogos = { ...(staticData.opponents ?? {}) };
         delete opponentLogos._comment;
-        // Window edges snap to calendar-day boundaries (UTC) — same fix as
-        // transformEvent (see comment there).
-        const now = new Date();
-        const min = new Date(now); min.setUTCDate(now.getUTCDate() - window.pastDays); min.setUTCHours(0, 0, 0, 0);
-        const max = new Date(now); max.setUTCDate(now.getUTCDate() + window.futureDays); max.setUTCHours(23, 59, 59, 999);
+        const { min, max } = windowBounds(window);
         let inWindow = 0;
         for (const [i, g] of (staticData.games ?? []).entries()) {
           const date = new Date(g.dateISO);
@@ -250,7 +324,16 @@ async function main() {
       // teams only pay the schedule-call cost once per league they're in.
       const perLeague = await Promise.all(leagues.map(async league => {
         const [scheduleRes, scoreboardEvents] = await Promise.all([
-          fetchTeamSchedule(team, league),
+          // A schedule failure in ONE league must not drop the whole team:
+          // a transient 502 on usa.nwsl.summer.cup once wiped every Bay FC
+          // game (including all the NWSL ones) from games.json for a day.
+          // Record it in errors[] (so the UI pill surfaces it) and carry on
+          // with the other leagues plus the scoreboard.
+          fetchTeamSchedule(team, league).catch(err => {
+            errors.push({ team: team.shortName, error: `${league} schedule: ${err.message}` });
+            process.stderr.write(`  (schedule miss for ${league}: ${err.message})\n`);
+            return { league, events: [], espnTeamName: null };
+          }),
           fetchLeagueScoreboard(team.espn.sport, league, window.futureDays),
         ]);
         const futureForUs = scoreboardEvents.filter(e => eventInvolvesTeam(e, team.espn.teamId));
@@ -301,12 +384,37 @@ async function main() {
     await new Promise(r => setTimeout(r, 250));
   }
 
+  // Tournaments: whole-competition entries (every game, no team filter).
+  // One scoreboard call each, covering the full past+future window.
+  for (const tournament of config.tournaments ?? []) {
+    process.stdout.write(`→ ${tournament.shortName.padEnd(14)}`);
+    try {
+      const { sport, league } = tournament.espn;
+      const data = await fetchJSON(buildTournamentScoreboardURL(sport, league, window));
+      const events = data.events ?? [];
+      let kept = 0;
+      for (const event of events) {
+        const game = transformTournamentEvent(event, tournament, window);
+        if (game) { allGames.push(game); kept++; }
+      }
+      // Same spirit as the team-name cross-check: surface what competition
+      // ESPN thinks this slug is, so a wrong slug is visible on first run.
+      const espnName = data.leagues?.[0]?.name ?? null;
+      console.log(`  ${kept} in window  (scoreboard=${events.length})${espnName ? `  [ESPN: ${espnName}]` : ''}`);
+    } catch (err) {
+      console.log(`  ✗ ${err.message}`);
+      errors.push({ team: tournament.shortName, error: err.message });
+    }
+    await new Promise(r => setTimeout(r, 250));
+  }
+
   allGames.sort((a, b) => new Date(a.dateISO) - new Date(b.dateISO));
 
   const output = {
     generatedAt: new Date().toISOString(),
     window,
     teams: config.teams,
+    tournaments: config.tournaments ?? [],
     games: allGames,
     errors,
   };
