@@ -96,6 +96,9 @@ Edit `ondeck/teams.json`. The full file shape is:
     }
     // ...more team objects
   ],
+  "tournaments": [                          // optional; whole competitions,
+    // ...tournament objects               //   every game, no team filter —
+  ],                                        //   see "Tracking a whole tournament"
   "window": {                               // optional; see "Tuning the window"
     "pastDays":   14,
     "futureDays": 75

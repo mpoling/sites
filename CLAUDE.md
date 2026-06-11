@@ -2,7 +2,9 @@
 
 `sites` is a multi-site monorepo for personal static websites. Each top-level
 directory is an independent site, deployed as-is by GitHub Pages and routed
-to a custom subdomain by a Cloudflare Worker on the owner's TLD.
+to a custom subdomain by a Cloudflare Worker on the owner's TLD, which is
+**`polings.net`** — wherever docs write `<site>.<owner-tld>`, read
+`<site>.polings.net` (e.g. `ondeck.polings.net`).
 
 For the full system architecture (routing, deployment, repo layout, site
 conventions, GitHub Actions conventions, data pipeline pattern), see
@@ -20,6 +22,7 @@ repo need to follow.
 |--------------|---------------------------|-----------------------------------------------|
 | `ondeck`     | `ondeck.<owner-tld>`      | Personal sports schedule, no scores           |
 | `dc-2026`    | `dc-2026.<owner-tld>`     | Itinerary page for an April 2026 DC trip      |
+| `orlando-2026`| `orlando-2026.<owner-tld>` | Itinerary for the June 2026 Orlando / St. Pete trip |
 | `re`         | `re.<owner-tld>`          | Brand direction explorations for Natalie Nagel Poling |
 | `vacationhub`| `vacationhub.<owner-tld>` | Disney+-styled hub for hard-to-find vacation info (theme parks first) |
 

@@ -13,6 +13,8 @@ conventions that hold across them. For day-to-day contributor guidance, see
 `sites` is a **multi-site monorepo** for personal static websites. Each
 top-level directory is an independent site, deployed as-is by GitHub Pages
 and routed to a custom subdomain on the owner's TLD by a Cloudflare Worker.
+The owner's TLD is **`polings.net`** — the `<site>.<owner-tld>` placeholder
+used throughout these docs resolves to `<site>.polings.net`.
 
 The whole architecture in one diagram:
 
@@ -354,6 +356,7 @@ and to avoid the cron-tide herd of jobs that fire on the hour.
 |--------------|---------------------------|------------------------------------|----------------------|
 | `ondeck`     | `ondeck.<owner-tld>`      | Personal sports schedule           | Yes (daily cron)     |
 | `dc-2026`    | `dc-2026.<owner-tld>`     | Static itinerary                   | No                   |
+| `orlando-2026`| `orlando-2026.<owner-tld>` | Static itinerary                  | No                   |
 | `re`         | `re.<owner-tld>`          | Brand direction explorations       | No                   |
 | `vacationhub`| `vacationhub.<owner-tld>` | Theme-park content hub             | Not yet              |
 
