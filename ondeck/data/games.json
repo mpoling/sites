@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T17:28:14.623Z",
+  "generatedAt": "2026-06-12T16:26:24.009Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -288,20 +288,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815530",
-      "teamId": "atl",
-      "dateISO": "2026-05-28T20:10Z",
-      "isHome": false,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Fenway Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NESN"
-      ]
-    },
     {
       "id": "gsv-401856944",
       "teamId": "gsv",
@@ -908,7 +894,7 @@
     {
       "id": "atl-401815720",
       "teamId": "atl",
-      "dateISO": "2026-06-12T23:10Z",
+      "dateISO": "2026-06-12T23:15Z",
       "isHome": false,
       "opponentShort": "Mets",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
@@ -4893,6 +4879,20 @@
       ]
     },
     {
+      "id": "atl-401877087",
+      "teamId": "atl",
+      "dateISO": "2026-08-20T18:10Z",
+      "isHome": false,
+      "opponentShort": "White Sox",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
+      "venue": "Rate Field",
+      "broadcasts": [
+        "MLB.TV",
+        "CHSN",
+        "BravesVision"
+      ]
+    },
+    {
       "id": "sf49-401873285",
       "teamId": "sf49",
       "dateISO": "2026-08-21T02:00Z",
@@ -5081,6 +5081,62 @@
         "Sportsnet LA",
         "BravesVision",
         "Gray Media"
+      ]
+    },
+    {
+      "id": "sfg-401816675",
+      "teamId": "sfg",
+      "dateISO": "2026-08-26T01:45Z",
+      "isHome": true,
+      "opponentShort": "Reds",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Reds.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816690",
+      "teamId": "sfg",
+      "dateISO": "2026-08-26T19:45Z",
+      "isHome": true,
+      "opponentShort": "Reds",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Reds.TV"
+      ]
+    },
+    {
+      "id": "gsv-401857176",
+      "teamId": "gsv",
+      "dateISO": "2026-08-26T23:00Z",
+      "isHome": false,
+      "opponentShort": "Sun",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+      "venue": "Mohegan Sun Arena",
+      "broadcasts": [
+        "KPIX+",
+        "NBC Sports BO"
+      ]
+    },
+    {
+      "id": "atl-401816684",
+      "teamId": "atl",
+      "dateISO": "2026-08-26T23:15Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "Sportsnet LA",
+        "BravesVision",
+        "MLB Net"
       ]
     }
   ],
