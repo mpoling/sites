@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T16:26:24.009Z",
+  "generatedAt": "2026-06-13T02:07:01.918Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -256,6 +256,22 @@
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png"
     },
     {
+      "id": "juv",
+      "shortName": "Juventus",
+      "fullName": "Juventus",
+      "league": "Serie A",
+      "sport": "Soccer",
+      "espn": {
+        "sport": "soccer",
+        "leagues": [
+          "ita.1"
+        ],
+        "teamId": "111"
+      },
+      "accent": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+    },
+    {
       "id": "gt-fb",
       "shortName": "GT Football",
       "fullName": "Georgia Tech Yellow Jackets",
@@ -288,44 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401856944",
-      "teamId": "gsv",
-      "dateISO": "2026-05-29T02:00Z",
-      "isHome": true,
-      "opponentShort": "Fever",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "atl-401815536",
-      "teamId": "atl",
-      "dateISO": "2026-05-29T22:40Z",
-      "isHome": false,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "venue": "Great American Ball Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Reds.TV"
-      ]
-    },
-    {
-      "id": "bay-fc-401853922",
-      "teamId": "bay-fc",
-      "dateISO": "2026-05-29T23:00Z",
-      "isHome": false,
-      "opponentShort": "Orlando",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18206.png",
-      "venue": "Inter&Co Stadium",
-      "broadcasts": [
-        "NWSL+"
-      ]
-    },
     {
       "id": "sfg-401815546",
       "teamId": "sfg",
@@ -5004,6 +4982,18 @@
       ]
     },
     {
+      "id": "juv-401874930",
+      "teamId": "juv",
+      "dateISO": "2026-08-23T18:00Z",
+      "isHome": false,
+      "opponentShort": "Frosinone",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+      "venue": "Stadio Benito Stirpe",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "sfg-401816640",
       "teamId": "sfg",
       "dateISO": "2026-08-23T19:10Z",
@@ -5137,6 +5127,21 @@
         "Sportsnet LA",
         "BravesVision",
         "MLB Net"
+      ]
+    },
+    {
+      "id": "atl-401816698",
+      "teamId": "atl",
+      "dateISO": "2026-08-27T23:15Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "FS1",
+        "Sportsnet LA",
+        "BravesVision"
       ]
     }
   ],

@@ -172,6 +172,16 @@
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png"
     },
     {
+      "id": "juv",
+      "shortName": "Juventus",
+      "fullName": "Juventus",
+      "league": "Serie A",
+      "sport": "Soccer",
+      "espn": { "sport": "soccer", "leagues": ["ita.1"], "teamId": "111" },
+      "accent": "#000000",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+    },
+    {
       "id": "gt-fb",
       "shortName": "GT Football",
       "fullName": "Georgia Tech Yellow Jackets",
