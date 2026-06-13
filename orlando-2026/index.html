@@ -336,6 +336,47 @@
     .fact:last-child { margin-bottom: 0; }
     .fact .emoji { flex-shrink: 0; font-size: 18px; line-height: 1.4; }
 
+    /* DAY-PLAN STOPS (St. Pete sunny/rainy plans) */
+    .stop-meta { display: block; margin-top: 5px; font-size: 12px; color: var(--muted); line-height: 1.55; }
+    .stop-meta .tag {
+      display: inline-block;
+      color: var(--accent2);
+      font-weight: 700;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 10.5px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .fact.plan-pick {
+      background: rgba(255, 201, 60, 0.16);
+      border: 1px solid rgba(255, 158, 94, 0.55);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+    .plan-top {
+      display: inline-block;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #FFF;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 2px 10px;
+      margin-bottom: 7px;
+    }
+    .plan-sub {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 18px 0 10px;
+    }
+
     .note {
       background: rgba(255, 201, 60, 0.15);
       border-left: 4px solid var(--sun);
@@ -1104,7 +1145,8 @@
         <div class="schedule-item">
           <div class="time-badge">Evening</div>
           <div class="activity-content">
-            <div class="activity-text">🌇 Arrive St. Petersburg — sunset over the Gulf to close out the day</div>
+            <div class="activity-text">🏨 Check in at <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Vinoy+Resort,+501+5th+Ave+NE,+St.+Petersburg,+FL+33701" class="venue-link" target="_blank" rel="noopener">The Vinoy</a> in downtown St. Pete — let the light fade over the waterfront</div>
+            <div class="activity-detail">501 5th Ave NE. Walkable to the Pier, the Dalí, and dinner — our base for the Gulf-coast leg.</div>
           </div>
         </div>
       </div>
@@ -1122,7 +1164,7 @@
         <img class="day-badge" src="assets/badge-stpete.svg" alt="St. Pete sunset">
         <div class="day-number">St. Pete Days</div>
         <div class="day-date">Monday, June 15, 2026 →</div>
-        <div class="day-subtitle">Family time in the Sunshine City</div>
+        <div class="day-subtitle">Family time, from a downtown base at The Vinoy</div>
       </div>
       <div class="schedule-container">
         <figure class="day-photo">
@@ -1130,38 +1172,132 @@
           <figcaption>Sunset at Fort De Soto's North Beach · 📷 <a href="https://commons.wikimedia.org/wiki/File:Sunset_on_North_Beach_at_Fort_De_Soto_Park.jpg" target="_blank" rel="noopener">Christopher Hollis</a> · public domain</figcaption>
         </figure>
         <div class="schedule-item">
-          <div class="time-badge">These days</div>
+          <div class="time-badge">The point</div>
           <div class="activity-content">
             <div class="activity-text">💛 Visit <strong>Aunt Denise</strong> and <strong>Cousins Michelle &amp; Kristina</strong></div>
-            <div class="activity-detail">The whole reason for the Gulf-coast leg — catch-up time with family.</div>
+            <div class="activity-detail">The whole reason for the Gulf-coast leg — catch-up time with family, in loose blocks of a few hours.</div>
           </div>
         </div>
         <div class="schedule-item">
-          <div class="time-badge">Between</div>
+          <div class="time-badge">Home base</div>
           <div class="activity-content">
-            <div class="activity-text">🏖️ Beach time — St. Pete Beach, Pass-a-Grille, or Fort De Soto</div>
-            <div class="activity-detail">Fort De Soto's North Beach regularly ranks among America's best beaches. Soft white sand, calm Gulf water.</div>
-          </div>
-        </div>
-        <div class="schedule-item">
-          <div class="time-badge">Ideas</div>
-          <div class="activity-content">
-            <div class="activity-text">🎨 <a href="https://stpetepier.org/" class="venue-link" target="_blank" rel="noopener">The St. Pete Pier</a> · <a href="https://thedali.org/" class="venue-link" target="_blank" rel="noopener">Dalí Museum</a> · waterfront ice cream</div>
-            <div class="activity-detail">The Pier has a playground, splash pad, and fishing deck — easy crowd-pleaser evening.</div>
+            <div class="activity-text">🏨 <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Vinoy+Resort,+501+5th+Ave+NE,+St.+Petersburg,+FL+33701" class="venue-link" target="_blank" rel="noopener">The Vinoy Resort</a>, downtown</div>
+            <div class="activity-detail">501 5th Ave NE. Walkable to the Pier, the Dalí, the Museum of Fine Arts, and Sunken Gardens — ideal for short outings between family visits. Rental car for the day trips.</div>
           </div>
         </div>
       </div>
+      <div class="note">
+        🗺️ <strong>Two plans below — pick by the sky.</strong> Built to keep an almost-13-year-old history buff genuinely interested while giving the 8-year-old plenty of beach and energy-burn. Tap a plan to open it.
+      </div>
+
+      <button class="collapsible-toggle open" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> ☀️ Sunny-day plan · Forts, Ferries &amp; Sand
+      </button>
+      <div class="collapsible-body open">
+        <div class="plan-sub">The big one — pick one anchor</div>
+        <div class="fact plan-pick">
+          <span class="emoji">⛴️</span>
+          <div>
+            <span class="plan-top">Top pick</span><br>
+            <strong>Egmont Key by ferry</strong> — an island you can only reach by boat, and the rare stop that delights both kids at once. The <strong>history buff</strong> gets Fort Dade's crumbling turn-of-the-century gun batteries and an 1858 lighthouse to explore on foot; the <strong>beach kid</strong> gets clear water, great shelling, and shark-tooth hunting — and the ferry out and back often turns up dolphins.
+            <span class="stop-meta"><span class="tag">Getting there</span> ~30 min to the <a href="https://www.hubbardsmarina.com/" class="venue-link" target="_blank" rel="noopener">Hubbard's Marina</a> ferry, then 1 hr+ on the water each way · <span class="tag">Half day</span> · <span class="tag">Heads-up</span> no facilities on the island — pack water, food, sunscreen, and shade; water shoes for the hot sand. Confirm the ferry schedule &amp; fare before you go.</span>
+          </div>
+        </div>
+        <div class="fact">
+          <span class="emoji">🏰</span>
+          <div>
+            <strong>Fort De Soto Park</strong> — same forts-and-sand combo, far lower commitment. Spanish-American War–era cannons and walk-through bunker rooms for the historian (free with the park); a shallow tidal lagoon that's perfect for safe wading for the 8-year-old.
+            <span class="stop-meta"><span class="tag">~30 min</span> · <span class="tag">2–3 hrs</span> · ~$6 parking · open daily ~7 AM–8:30 PM</span>
+          </div>
+        </div>
+        <div class="plan-sub">Shorter &amp; walkable</div>
+        <div class="fact">
+          <span class="emoji">🎡</span>
+          <div>
+            <strong><a href="https://stpetepier.org/" class="venue-link" target="_blank" rel="noopener">St. Pete Pier</a></strong> — free to wander, and a couple of hours fill themselves: splash pad and playground for the 8-year-old, a pier aquarium, bay views, food, and a free tram.
+            <span class="stop-meta"><span class="tag">Walkable</span> from The Vinoy · <span class="tag">1–2 hrs</span> · free entry</span>
+          </div>
+        </div>
+        <div class="fact">
+          <span class="emoji">🐚</span>
+          <div>
+            <strong>Pass-a-Grille Beach</strong> — a quieter, local-feeling Gulf beach with great shelling and calm water. Lovely at sunset.
+            <span class="stop-meta"><span class="tag">~20–25 min</span> · <span class="tag">2+ hrs</span> · paid parking</span>
+          </div>
+        </div>
+        <div class="fact">
+          <span class="emoji">🏴‍☠️</span>
+          <div>
+            <strong>Royal Conquest pirate ship</strong> at John's Pass — a 2-hour cruise with costumed pirates, dolphin spotting, and face painting. A lock for the 8-year-old, and the on-the-water angle keeps the older one aboard too.
+            <span class="stop-meta"><span class="tag">~25 min</span> · <span class="tag">~2 hrs</span> · ticketed · confirm sailing times</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+        <span class="arrow">▶</span> 🌧️ Rainy-day plan · Indoor History &amp; Energy Burn
+      </button>
+      <div class="collapsible-body">
+        <div class="plan-sub">The deep dive</div>
+        <div class="fact plan-pick">
+          <span class="emoji">🏛️</span>
+          <div>
+            <span class="plan-top">History pick</span><br>
+            <strong><a href="https://tampabayhistorycenter.org/" class="venue-link" target="_blank" rel="noopener">Tampa Bay History Center</a></strong> — the serious one for the history nerd: Seminole culture, Spanish exploration, and Tampa Bay's own pirate history, substantive enough to impress a sharp almost-13-year-old. Short films and interactive exhibits keep the 8-year-old in it too.
+            <span class="stop-meta"><span class="tag">~45 min</span> to the Tampa waterfront · <span class="tag">2–3 hrs</span> · ticketed · no dedicated lot (street/garage) — pairs well with a meal out</span>
+          </div>
+        </div>
+        <div class="plan-sub">Close to The Vinoy</div>
+        <div class="fact">
+          <span class="emoji">🎨</span>
+          <div>
+            <strong><a href="https://thedali.org/" class="venue-link" target="_blank" rel="noopener">The Dalí Museum</a></strong> — world-class surreal art that genuinely fascinates both ages, with augmented-reality features throughout. Regularly rated among Florida's best museums.
+            <span class="stop-meta"><span class="tag">~5–10 min</span> · <span class="tag">~2 hrs</span> · ticketed ($$) · open daily, later on Thursdays</span>
+          </div>
+        </div>
+        <div class="fact">
+          <span class="emoji">🖼️</span>
+          <div>
+            <strong>Museum of Fine Arts</strong> — smaller and easy to get through without overwhelm; a calmer backup when nobody wants a big museum.
+            <span class="stop-meta"><span class="tag">~5 min</span> · <span class="tag">1–2 hrs</span> · ticketed · closed Mondays</span>
+          </div>
+        </div>
+        <div class="fact">
+          <span class="emoji">🦩</span>
+          <div>
+            <strong>Sunken Gardens</strong> — a partly-covered botanical garden with flamingos and wildlife; very doable in light rain.
+            <span class="stop-meta"><span class="tag">~10 min</span> · <span class="tag">1–1.5 hrs</span> · ticketed</span>
+          </div>
+        </div>
+        <div class="plan-sub">Pure energy burn</div>
+        <div class="fact">
+          <span class="emoji">🤸</span>
+          <div>
+            <strong>Catapult Adventure Park</strong> — indoor bounce houses, obstacle courses, go-karts, climbing walls, and a foam pit. The release valve for the 8-year-old when someone needs to run, weather be damned.
+            <span class="stop-meta"><span class="tag">~15–20 min</span> · <span class="tag">1–2 hrs</span> · ticketed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="note">
+        ✅ <strong>Confirm before the trip:</strong> Egmont Key ferry schedule, departure point &amp; pricing · current museum hours &amp; ticket prices · pirate-cruise sailing times. Drive times are rough and depend on traffic and the exact ferry dock.
+      </div>
+
       <div class="chips">
         <div class="chips-label">Quick links</div>
+        <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=The+Vinoy+Resort,+501+5th+Ave+NE,+St.+Petersburg,+FL+33701" target="_blank" rel="noopener">🏨 The Vinoy</a>
         <a class="chip" href="https://stpetepier.org/" target="_blank" rel="noopener">🎡 St. Pete Pier</a>
-        <a class="chip" href="https://thedali.org/" target="_blank" rel="noopener">🎨 Dalí Museum</a>
+        <a class="chip" href="https://www.hubbardsmarina.com/" target="_blank" rel="noopener">⛴️ Egmont Key ferry</a>
         <a class="chip" href="https://www.pinellascounty.gov/park/05_ft_desoto.htm" target="_blank" rel="noopener">🏖️ Fort De Soto</a>
+        <a class="chip" href="https://thedali.org/" target="_blank" rel="noopener">🎨 Dalí Museum</a>
+        <a class="chip" href="https://tampabayhistorycenter.org/" target="_blank" rel="noopener">🏛️ History Center</a>
       </div>
       <button class="collapsible-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
         <span class="arrow">▶</span> Fun Facts &amp; Trivia 🌅
       </button>
       <div class="collapsible-body">
         <div class="fact"><span class="emoji">☀️</span><div>St. Petersburg holds the Guinness World Record for <strong>most consecutive days of sunshine: 768 days</strong> (1967–1969). Hence the nickname "The Sunshine City."</div></div>
+        <div class="fact"><span class="emoji">🏝️</span><div><strong>Egmont Key</strong> packs an 1858 lighthouse, a quarantine station, and a Spanish-American War fort onto one tiny island — now a national wildlife refuge that's slowly eroding into the bay, so it's smaller every decade.</div></div>
         <div class="fact"><span class="emoji">🗞️</span><div>A local paper, <em>The Evening Independent</em>, famously gave the paper away <strong>free on any day the sun didn't shine</strong> — it only had to pay up a handful of times a year.</div></div>
         <div class="fact"><span class="emoji">✈️</span><div>The <strong>world's first scheduled commercial airline flight</strong> took off from St. Pete in 1914 — a 23-minute hop across Tampa Bay.</div></div>
       </div>

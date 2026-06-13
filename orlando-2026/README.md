@@ -45,7 +45,14 @@ orlando-2026/
 - **Park days are "highlights" lists, not timelines.** Each park day has
   up to 8 highlight items tagged by vibe (Must-do, Big thrill, Wet!,
   A/C break…) pitched at a crew spanning age 8 to adventurous mid-40s.
-  Down days, travel days, and St. Pete keep the loose time-based format.
+  Down days and travel days keep the loose time-based format.
+- **St. Pete leg** is based at The Vinoy (downtown) and carries two
+  weather-based plans in collapsibles — a sunny "Forts, Ferries & Sand"
+  plan (Egmont Key is the top pick) and a rainy "Indoor History & Energy
+  Burn" plan — tuned for an almost-13 history buff and a beach-loving
+  8-year-old. Each stop lists drive time, duration, and cost; the
+  "confirm before the trip" items (ferry schedule, museum hours, cruise
+  times) are flagged in a note, not asserted as fixed.
 - External links (queue-times.com wait pages, Disney/Universal app and
   planning pages, Google Maps directions) are convenience shortcuts and
   may rot after the trip; that's fine — this becomes a journal afterward.
