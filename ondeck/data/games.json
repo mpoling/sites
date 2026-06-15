@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T15:14:50.617Z",
+  "generatedAt": "2026-06-15T18:01:05.081Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,73 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815561",
-      "teamId": "sfg",
-      "dateISO": "2026-05-31T01:10Z",
-      "isHome": false,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Coors Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "mbfc-401841877",
-      "teamId": "mbfc",
-      "dateISO": "2026-05-31T02:00Z",
-      "isHome": true,
-      "opponentShort": "Loudoun",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19410.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "atl-401815566",
-      "teamId": "atl",
-      "dateISO": "2026-05-31T17:40Z",
-      "isHome": false,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "venue": "Great American Ball Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Reds.TV"
-      ]
-    },
-    {
-      "id": "sfg-401815576",
-      "teamId": "sfg",
-      "dateISO": "2026-05-31T19:10Z",
-      "isHome": false,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Coors Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "gsv-401856952",
-      "teamId": "gsv",
-      "dateISO": "2026-05-31T19:30Z",
-      "isHome": true,
-      "opponentShort": "Aces",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBC",
-        "Peacock"
-      ]
-    },
     {
       "id": "sfg-401815584",
       "teamId": "sfg",
@@ -4541,16 +4474,6 @@
       ]
     },
     {
-      "id": "sf49-401874392",
-      "teamId": "sf49",
-      "dateISO": "2026-08-14T01:00Z",
-      "isHome": true,
-      "opponentShort": "Titans",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
-      "venue": "Levi's Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "atl-401816517",
       "teamId": "atl",
       "dateISO": "2026-08-14T23:15Z",
@@ -4833,16 +4756,6 @@
       ]
     },
     {
-      "id": "sf49-401873285",
-      "teamId": "sf49",
-      "dateISO": "2026-08-21T02:00Z",
-      "isHome": false,
-      "opponentShort": "Chargers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
-      "venue": "SoFi Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "atl-401816617",
       "teamId": "atl",
       "dateISO": "2026-08-21T20:10Z",
@@ -5107,16 +5020,6 @@
       ]
     },
     {
-      "id": "sf49-401873641",
-      "teamId": "sf49",
-      "dateISO": "2026-08-28T00:00Z",
-      "isHome": false,
-      "opponentShort": "Raiders",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
-      "venue": "Allegiant Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "gsv-401857178",
       "teamId": "gsv",
       "dateISO": "2026-08-28T00:00Z",
@@ -5158,12 +5061,48 @@
         "BravesVision",
         "Rockies.TV"
       ]
+    },
+    {
+      "id": "sfg-401816714",
+      "teamId": "sfg",
+      "dateISO": "2026-08-29T02:15Z",
+      "isHome": true,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "KNTV",
+        "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "atl-401816718",
+      "teamId": "atl",
+      "dateISO": "2026-08-29T20:10Z",
+      "isHome": true,
+      "opponentShort": "Rockies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Rockies.TV"
+      ]
+    },
+    {
+      "id": "mia-761757",
+      "teamId": "mia",
+      "dateISO": "2026-08-29T23:30Z",
+      "isHome": true,
+      "opponentShort": "CF Montréal",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     }
   ],
-  "errors": [
-    {
-      "team": "Quakes",
-      "error": "concacaf.leagues.cup schedule: ESPN returned 502 Bad Gateway for https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.leagues.cup/teams/191/schedule"
-    }
-  ]
+  "errors": []
 }
