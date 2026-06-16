@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T18:01:05.081Z",
+  "generatedAt": "2026-06-16T18:07:45.052Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,21 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815584",
-      "teamId": "sfg",
-      "dateISO": "2026-06-01T23:40Z",
-      "isHome": false,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "American Family Field",
-      "broadcasts": [
-        "MLB.TV",
-        "FS1",
-        "NBC Sports BA",
-        "Brewers.TV"
-      ]
-    },
     {
       "id": "atl-401815595",
       "teamId": "atl",
@@ -2224,6 +2209,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "ION"
       ]
     },
@@ -2947,7 +2933,8 @@
       "venue": "Coors Field",
       "broadcasts": [
         "Peacock",
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "NBCSN Extra"
       ]
     },
     {
@@ -3125,6 +3112,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
       "venue": "Oracle Park",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "NBC Sports BA",
         "Sportsnet"
@@ -3410,6 +3398,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
       "venue": "Truist Park",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "BravesVision",
         "CW33"
@@ -3548,6 +3537,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
       "venue": "T-Mobile Park",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "NBC Sports BA",
         "Mariners.TV"
@@ -3724,6 +3714,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
       "venue": "Oracle Park",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "NBC Sports BA",
         "KNTV",
@@ -4474,6 +4465,16 @@
       ]
     },
     {
+      "id": "sf49-401874392",
+      "teamId": "sf49",
+      "dateISO": "2026-08-14T01:00Z",
+      "isHome": true,
+      "opponentShort": "Titans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401816517",
       "teamId": "atl",
       "dateISO": "2026-08-14T23:15Z",
@@ -4756,6 +4757,16 @@
       ]
     },
     {
+      "id": "sf49-401873285",
+      "teamId": "sf49",
+      "dateISO": "2026-08-21T02:00Z",
+      "isHome": false,
+      "opponentShort": "Chargers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "venue": "SoFi Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401816617",
       "teamId": "atl",
       "dateISO": "2026-08-21T20:10Z",
@@ -5020,6 +5031,16 @@
       ]
     },
     {
+      "id": "sf49-401873641",
+      "teamId": "sf49",
+      "dateISO": "2026-08-28T00:00Z",
+      "isHome": false,
+      "opponentShort": "Raiders",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+      "venue": "Allegiant Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "gsv-401857178",
       "teamId": "gsv",
       "dateISO": "2026-08-28T00:00Z",
@@ -5101,6 +5122,108 @@
       "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761765",
+      "teamId": "sje",
+      "dateISO": "2026-08-30T00:30Z",
+      "isHome": false,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+      "venue": "Shell Energy Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "mbfc-401842163",
+      "teamId": "mbfc",
+      "dateISO": "2026-08-30T02:00Z",
+      "isHome": true,
+      "opponentShort": "Sacramento",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17828.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "sfg-401816729",
+      "teamId": "sfg",
+      "dateISO": "2026-08-30T02:05Z",
+      "isHome": true,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401853988",
+      "teamId": "bay-fc",
+      "dateISO": "2026-08-30T16:30Z",
+      "isHome": false,
+      "opponentShort": "Washington",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15365.png",
+      "venue": "Audi Field",
+      "broadcasts": [
+        "ESPN2",
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "id": "atl-401816733",
+      "teamId": "atl",
+      "dateISO": "2026-08-30T17:35Z",
+      "isHome": true,
+      "opponentShort": "Rockies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Rockies.TV"
+      ]
+    },
+    {
+      "id": "juv-401874746",
+      "teamId": "juv",
+      "dateISO": "2026-08-30T18:00Z",
+      "isHome": true,
+      "opponentShort": "Parma",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "sfg-401816744",
+      "teamId": "sfg",
+      "dateISO": "2026-08-30T20:05Z",
+      "isHome": true,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "gsv-401857188",
+      "teamId": "gsv",
+      "dateISO": "2026-08-30T23:00Z",
+      "isHome": false,
+      "opponentShort": "Fire",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
+      "venue": "Moda Center",
+      "broadcasts": [
+        "KPIX+",
+        "Fox 12 Plus"
       ]
     }
   ],
