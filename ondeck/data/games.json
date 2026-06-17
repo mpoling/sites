@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T18:07:45.052Z",
+  "generatedAt": "2026-06-17T16:42:18.554Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,35 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401815595",
-      "teamId": "atl",
-      "dateISO": "2026-06-02T23:15Z",
-      "isHome": true,
-      "opponentShort": "Blue Jays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "Sportsnet One"
-      ]
-    },
-    {
-      "id": "sfg-401815599",
-      "teamId": "sfg",
-      "dateISO": "2026-06-02T23:40Z",
-      "isHome": false,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "American Family Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Brewers.TV"
-      ]
-    },
     {
       "id": "gsv-401856957",
       "teamId": "gsv",
@@ -1230,7 +1201,8 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "BravesVision"
+        "BravesVision",
+        "Gray Media"
       ]
     },
     {
@@ -1244,7 +1216,8 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "BravesVision"
+        "BravesVision",
+        "Gray Media"
       ]
     },
     {
@@ -2021,6 +1994,7 @@
       "venue": "Chase Center",
       "broadcasts": [
         "USA Net",
+        "CNBC",
         "KPIX+",
         "Atlanta News First",
         "Victory+ ATL"
@@ -2460,7 +2434,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "ESPN"
+        "ESPN",
+        "Disney+"
       ]
     },
     {
@@ -2896,7 +2871,9 @@
       "opponentShort": "San Antonio ",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18265.png",
       "venue": "Toyota Field",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "bay-fc-401854062",
@@ -3769,7 +3746,9 @@
       "opponentShort": "Orange County",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
       "venue": "Cardinale Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "sje-761693",
@@ -3906,6 +3885,7 @@
       "venue": "Mortgage Matchup Center",
       "broadcasts": [
         "USA Net",
+        "CNBC",
         "KPIX+",
         "AZ Family Sports Net",
         "Merc+"
@@ -4338,7 +4318,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
       "venue": "crypto.com Arena",
       "broadcasts": [
-        "ESPN"
+        "ESPN",
+        "Disney+"
       ]
     },
     {
@@ -4460,6 +4441,7 @@
       "venue": "Chase Center",
       "broadcasts": [
         "USA Net",
+        "CNBC",
         "KPIX+",
         "CW26"
       ]
