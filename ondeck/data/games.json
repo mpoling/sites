@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T16:42:18.554Z",
+  "generatedAt": "2026-06-18T16:40:18.347Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,49 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401856957",
-      "teamId": "gsv",
-      "dateISO": "2026-06-03T02:00Z",
-      "isHome": true,
-      "opponentShort": "Fire",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "Fox 12 Plus"
-      ]
-    },
-    {
-      "id": "atl-401815610",
-      "teamId": "atl",
-      "dateISO": "2026-06-03T23:15Z",
-      "isHome": true,
-      "opponentShort": "Blue Jays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Sportsnet One",
-        "TVA"
-      ]
-    },
-    {
-      "id": "sfg-401815614",
-      "teamId": "sfg",
-      "dateISO": "2026-06-03T23:40Z",
-      "isHome": false,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "American Family Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Brewers.TV"
-      ]
-    },
     {
       "id": "mb-sirens-static-3",
       "teamId": "mb-sirens",
@@ -1138,8 +1095,7 @@
       "venue": "Levi's Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
-        "Peacock"
+        "Tele"
       ]
     },
     {
@@ -1187,7 +1143,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1259,7 +1215,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1275,7 +1231,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1291,7 +1247,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1307,7 +1263,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1351,7 +1307,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1367,7 +1323,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1383,7 +1339,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1428,7 +1384,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1467,7 +1423,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1483,7 +1439,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1499,7 +1455,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1527,7 +1483,8 @@
       "broadcasts": [
         "MLB.TV",
         "BravesVision",
-        "Brewers.TV"
+        "Brewers.TV",
+        "ERADM"
       ]
     },
     {
@@ -1543,7 +1500,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1571,7 +1528,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1587,7 +1544,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1632,7 +1589,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1671,7 +1628,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1687,7 +1644,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1703,7 +1660,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1719,7 +1676,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1735,7 +1692,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1763,7 +1720,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1779,7 +1736,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1795,7 +1752,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1811,7 +1768,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1857,7 +1814,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1873,7 +1830,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1889,7 +1846,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1905,7 +1862,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1921,7 +1878,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1951,7 +1908,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -1967,7 +1924,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2027,7 +1984,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2043,7 +2000,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2059,7 +2016,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2075,7 +2032,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2091,7 +2048,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2107,7 +2064,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2123,7 +2080,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2139,7 +2096,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2155,7 +2112,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2171,7 +2128,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2228,7 +2185,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2244,7 +2201,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2260,7 +2217,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2276,7 +2233,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2292,7 +2249,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2308,7 +2265,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2362,7 +2319,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2378,7 +2335,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2394,7 +2351,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2451,7 +2408,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2467,7 +2424,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2483,7 +2440,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2513,7 +2470,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2529,7 +2486,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2560,7 +2517,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2590,7 +2547,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2606,7 +2563,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2636,7 +2593,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2666,7 +2623,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2682,7 +2639,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2712,7 +2669,7 @@
       "broadcasts": [
         "FS1",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2728,7 +2685,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2744,7 +2701,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2788,7 +2745,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2817,7 +2774,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2833,7 +2790,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2927,7 +2884,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2943,7 +2900,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -2959,7 +2916,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3001,7 +2958,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3032,7 +2989,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3048,7 +3005,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3147,7 +3104,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3177,7 +3134,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3259,7 +3216,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3289,7 +3246,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3333,7 +3290,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3349,7 +3306,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3436,7 +3393,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -3502,7 +3459,7 @@
       "broadcasts": [
         "FOX",
         "Tele",
-        "Peacock"
+        "FOX One"
       ]
     },
     {
@@ -5206,6 +5163,33 @@
       "broadcasts": [
         "KPIX+",
         "Fox 12 Plus"
+      ]
+    },
+    {
+      "id": "sfg-401816762",
+      "teamId": "sfg",
+      "dateISO": "2026-09-01T22:40Z",
+      "isHome": false,
+      "opponentShort": "Pirates",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
+      "venue": "PNC Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "atl-401816758",
+      "teamId": "atl",
+      "dateISO": "2026-09-01T22:45Z",
+      "isHome": false,
+      "opponentShort": "Nationals",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
+      "venue": "Nationals Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Nationals.TV"
       ]
     }
   ],
