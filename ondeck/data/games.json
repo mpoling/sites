@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T16:40:18.347Z",
+  "generatedAt": "2026-06-19T16:12:29.699Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,44 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mb-sirens-static-3",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-06-03T19:00:00-07:00",
-      "isHome": false,
-      "opponentShort": "Pleasanton RAGE",
-      "opponentLogo": "assets/opponents/pleasanton-rage.png",
-      "venue": "Stanford Medicine Sports Complex",
-      "broadcasts": []
-    },
-    {
-      "id": "sfg-401815626",
-      "teamId": "sfg",
-      "dateISO": "2026-06-04T18:10Z",
-      "isHome": false,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "American Family Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Brewers.TV"
-      ]
-    },
-    {
-      "id": "atl-401815622",
-      "teamId": "atl",
-      "dateISO": "2026-06-04T23:15Z",
-      "isHome": true,
-      "opponentShort": "Blue Jays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Sportsnet One"
-      ]
-    },
     {
       "id": "gsv-401856962",
       "teamId": "gsv",
@@ -2508,8 +2470,8 @@
       "id": "wc26-760491",
       "teamId": "wc26",
       "dateISO": "2026-07-01T01:00Z",
-      "homeShort": "1A",
-      "homeLogo": null,
+      "homeShort": "Mexico",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "awayShort": "3RD C/E/F/H/I",
       "awayLogo": null,
       "note": null,
@@ -5166,6 +5128,34 @@
       ]
     },
     {
+      "id": "sfg-401878657",
+      "teamId": "sfg",
+      "dateISO": "2026-08-31T22:05Z",
+      "isHome": false,
+      "opponentShort": "Braves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "atl-401878657",
+      "teamId": "atl",
+      "dateISO": "2026-08-31T22:05Z",
+      "isHome": true,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC Sports BA"
+      ]
+    },
+    {
       "id": "sfg-401816762",
       "teamId": "sfg",
       "dateISO": "2026-09-01T22:40Z",
@@ -5190,6 +5180,33 @@
         "MLB.TV",
         "BravesVision",
         "Nationals.TV"
+      ]
+    },
+    {
+      "id": "atl-401816773",
+      "teamId": "atl",
+      "dateISO": "2026-09-02T17:05Z",
+      "isHome": false,
+      "opponentShort": "Nationals",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
+      "venue": "Nationals Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Nationals.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816777",
+      "teamId": "sfg",
+      "dateISO": "2026-09-02T22:40Z",
+      "isHome": false,
+      "opponentShort": "Pirates",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
+      "venue": "PNC Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA"
       ]
     }
   ],
