@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T16:12:29.699Z",
+  "generatedAt": "2026-06-20T15:08:10.873Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,55 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401856962",
-      "teamId": "gsv",
-      "dateISO": "2026-06-05T01:00Z",
-      "isHome": false,
-      "opponentShort": "Lynx",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-      "venue": "Target Center",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "sfg-401815638",
-      "teamId": "sfg",
-      "dateISO": "2026-06-05T18:20Z",
-      "isHome": false,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Wrigley Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Marquee Sports Net"
-      ]
-    },
-    {
-      "id": "engw-761253",
-      "teamId": "engw",
-      "dateISO": "2026-06-05T19:00Z",
-      "isHome": false,
-      "opponentShort": "Spain",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "venue": "Estadi Mallorca Son Moix",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401815631",
-      "teamId": "atl",
-      "dateISO": "2026-06-05T23:15Z",
-      "isHome": true,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision"
-      ]
-    },
     {
       "id": "sfg-401815653",
       "teamId": "sfg",
@@ -2546,8 +2497,8 @@
       "id": "wc26-760494",
       "teamId": "wc26",
       "dateISO": "2026-07-02T00:00Z",
-      "homeShort": "1D",
-      "homeLogo": null,
+      "homeShort": "USA",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "awayShort": "3RD B/E/F/I/J",
       "awayLogo": null,
       "note": null,
@@ -5200,6 +5151,19 @@
       "id": "sfg-401816777",
       "teamId": "sfg",
       "dateISO": "2026-09-02T22:40Z",
+      "isHome": false,
+      "opponentShort": "Pirates",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
+      "venue": "PNC Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "sfg-401816789",
+      "teamId": "sfg",
+      "dateISO": "2026-09-03T16:35Z",
       "isHome": false,
       "opponentShort": "Pirates",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
