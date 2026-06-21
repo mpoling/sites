@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T15:08:10.873Z",
+  "generatedAt": "2026-06-21T15:15:24.334Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,62 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815653",
-      "teamId": "sfg",
-      "dateISO": "2026-06-06T18:20Z",
-      "isHome": false,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Wrigley Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Marquee Sports Net",
-        "ERADM"
-      ]
-    },
-    {
-      "id": "gsv-401856967",
-      "teamId": "gsv",
-      "dateISO": "2026-06-06T19:00Z",
-      "isHome": false,
-      "opponentShort": "Aces",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-      "venue": "Michelob ULTRA Arena",
-      "broadcasts": [
-        "ABC"
-      ]
-    },
-    {
-      "id": "atl-401815646",
-      "teamId": "atl",
-      "dateISO": "2026-06-06T20:10Z",
-      "isHome": true,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "uswnt-401870096",
-      "teamId": "uswnt",
-      "dateISO": "2026-06-06T21:30Z",
-      "isHome": false,
-      "opponentShort": "Brazil",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "venue": "Neo Química Arena",
-      "broadcasts": [
-        "TNT",
-        "HBO Max",
-        "Tele",
-        "Universo",
-        "Peacock"
-      ]
-    },
     {
       "id": "mb-sirens-static-4",
       "teamId": "mb-sirens",
@@ -1742,7 +1686,7 @@
       "venue": "Lumen Field",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -1774,7 +1718,7 @@
       "venue": "Mercedes-Benz Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -1836,7 +1780,7 @@
       "venue": "Estadio BBVA",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -1896,7 +1840,7 @@
       "venue": "Lincoln Financial Field",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -1928,7 +1872,7 @@
       "venue": "AT&T Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -1960,7 +1904,7 @@
       "venue": "Levi's Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2008,7 +1952,7 @@
       "venue": "BMO Field",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2024,7 +1968,7 @@
       "venue": "NRG Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2113,7 +2057,7 @@
       "venue": "BC Place",
       "broadcasts": [
         "FOX",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2129,7 +2073,7 @@
       "venue": "Lincoln Financial Field",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2177,7 +2121,7 @@
       "venue": "Mercedes-Benz Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2231,7 +2175,7 @@
       "venue": "GEHA Field at Arrowhead Stadium",
       "broadcasts": [
         "FS1",
-        "Tele",
+        "Universo",
         "FOX One"
       ]
     },
@@ -2328,8 +2272,8 @@
       "id": "wc26-760489",
       "teamId": "wc26",
       "dateISO": "2026-06-29T20:30Z",
-      "homeShort": "1E",
-      "homeLogo": null,
+      "homeShort": "Germany",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "awayShort": "3RD A/B/C/D/F",
       "awayLogo": null,
       "note": null,
@@ -5171,6 +5115,46 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gt-fb-401856776",
+      "teamId": "gt-fb",
+      "dateISO": "2026-09-04T00:00Z",
+      "isHome": true,
+      "opponentShort": "Colorado",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
+      "venue": "Bobby Dodd Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "atl-401816798",
+      "teamId": "atl",
+      "dateISO": "2026-09-04T22:40Z",
+      "isHome": false,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Citizens Bank Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC Sports Phil"
+      ]
+    },
+    {
+      "id": "sfg-401816803",
+      "teamId": "sfg",
+      "dateISO": "2026-09-04T23:10Z",
+      "isHome": false,
+      "opponentShort": "Mets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
+      "venue": "Citi Field",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "WPIX"
       ]
     }
   ],
