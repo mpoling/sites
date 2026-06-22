@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T15:15:24.334Z",
+  "generatedAt": "2026-06-22T17:46:10.726Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,29 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mb-sirens-static-4",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-06-06T19:00:00-07:00",
-      "isHome": true,
-      "opponentShort": "Marin FC",
-      "opponentLogo": "assets/opponents/marin-fc.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401815661",
-      "teamId": "atl",
-      "dateISO": "2026-06-07T17:35Z",
-      "isHome": true,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision"
-      ]
-    },
     {
       "id": "sfg-401815668",
       "teamId": "sfg",
@@ -5155,6 +5132,58 @@
         "MLB.TV",
         "NBC Sports BA",
         "WPIX"
+      ]
+    },
+    {
+      "id": "bay-fc-401853990",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-05T02:00Z",
+      "isHome": true,
+      "opponentShort": "Kansas City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20907.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "sfg-401816818",
+      "teamId": "sfg",
+      "dateISO": "2026-09-05T20:10Z",
+      "isHome": false,
+      "opponentShort": "Mets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
+      "venue": "Citi Field",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "SNY"
+      ]
+    },
+    {
+      "id": "atl-401816813",
+      "teamId": "atl",
+      "dateISO": "2026-09-05T22:05Z",
+      "isHome": false,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Citizens Bank Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC Sports Phil"
+      ]
+    },
+    {
+      "id": "mia-761777",
+      "teamId": "mia",
+      "dateISO": "2026-09-05T23:30Z",
+      "isHome": true,
+      "opponentShort": "Atlanta",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
       ]
     }
   ],
