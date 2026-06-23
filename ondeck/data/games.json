@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T17:46:10.726Z",
+  "generatedAt": "2026-06-23T16:05:04.951Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,20 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815668",
-      "teamId": "sfg",
-      "dateISO": "2026-06-08T00:30Z",
-      "isHome": false,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Wrigley Field",
-      "broadcasts": [
-        "NBC",
-        "Peacock",
-        "ERADM"
-      ]
-    },
     {
       "id": "sfg-401815680",
       "teamId": "sfg",
@@ -1848,7 +1834,7 @@
       "note": null,
       "venue": "AT&T Stadium",
       "broadcasts": [
-        "FS1",
+        "FOX",
         "Universo",
         "FOX One"
       ]
@@ -1864,7 +1850,7 @@
       "note": null,
       "venue": "GEHA Field at Arrowhead Stadium",
       "broadcasts": [
-        "FOX",
+        "FS1",
         "Tele",
         "FOX One"
       ]
@@ -2526,8 +2512,8 @@
       "id": "wc26-760500",
       "teamId": "wc26",
       "dateISO": "2026-07-03T22:00Z",
-      "homeShort": "1J",
-      "homeLogo": null,
+      "homeShort": "Argentina",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "awayShort": "2H",
       "awayLogo": null,
       "note": null,
@@ -2776,6 +2762,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
       "venue": "CareFirst Arena",
       "broadcasts": [
+        "WNBA League Pass",
         "MNMT"
       ]
     },
@@ -4872,6 +4859,20 @@
       ]
     },
     {
+      "id": "sfg-401816744",
+      "teamId": "sfg",
+      "dateISO": "2026-08-29T20:05Z",
+      "isHome": true,
+      "opponentShort": "Diamondbacks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "DBACKS.TV"
+      ]
+    },
+    {
       "id": "atl-401816718",
       "teamId": "atl",
       "dateISO": "2026-08-29T20:10Z",
@@ -4970,20 +4971,6 @@
       "venue": "Allianz Stadium",
       "broadcasts": [
         "Paramount+"
-      ]
-    },
-    {
-      "id": "sfg-401816744",
-      "teamId": "sfg",
-      "dateISO": "2026-08-30T20:05Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
       ]
     },
     {
@@ -5184,6 +5171,67 @@
       "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761778",
+      "teamId": "sje",
+      "dateISO": "2026-09-06T00:30Z",
+      "isHome": false,
+      "opponentShort": "Austin",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
+      "venue": "Q2 Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "mbfc-401842179",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-06T02:00Z",
+      "isHome": true,
+      "opponentShort": "Phoenix",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17850.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "sfg-401816833",
+      "teamId": "sfg",
+      "dateISO": "2026-09-06T17:40Z",
+      "isHome": false,
+      "opponentShort": "Mets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
+      "venue": "Citi Field",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "SNY"
+      ]
+    },
+    {
+      "id": "juv-401874954",
+      "teamId": "juv",
+      "dateISO": "2026-09-06T18:00Z",
+      "isHome": true,
+      "opponentShort": "Milan",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "atl-401816828",
+      "teamId": "atl",
+      "dateISO": "2026-09-06T19:10Z",
+      "isHome": false,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Citizens Bank Park",
+      "broadcasts": [
+        "NBC",
+        "Peacock"
       ]
     }
   ],
