@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T16:05:04.951Z",
+  "generatedAt": "2026-06-24T15:36:34.159Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,45 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815680",
-      "teamId": "sfg",
-      "dateISO": "2026-06-09T01:45Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "engw-761261",
-      "teamId": "engw",
-      "dateISO": "2026-06-09T19:00Z",
-      "isHome": true,
-      "opponentShort": "Ukraine",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
-      "venue": "Hill Dickinson Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401815689",
-      "teamId": "atl",
-      "dateISO": "2026-06-09T23:40Z",
-      "isHome": false,
-      "opponentShort": "White Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "venue": "Rate Field",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "CHSN",
-        "Gray Media"
-      ]
-    },
     {
       "id": "uswnt-401870097",
       "teamId": "uswnt",
@@ -3796,7 +3757,8 @@
         "MLB.TV",
         "NBC Sports BA",
         "Padres.TV",
-        "KFMB 8.1 (CBS)"
+        "KFMB 8.1 (CBS)",
+        "TV Azteca"
       ]
     },
     {
@@ -5232,6 +5194,20 @@
       "broadcasts": [
         "NBC",
         "Peacock"
+      ]
+    },
+    {
+      "id": "atl-401816843",
+      "teamId": "atl",
+      "dateISO": "2026-09-07T17:05Z",
+      "isHome": false,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Citizens Bank Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC 10"
       ]
     }
   ],
