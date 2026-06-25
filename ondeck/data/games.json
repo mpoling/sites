@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T15:36:34.159Z",
+  "generatedAt": "2026-06-25T15:44:09.614Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,77 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "uswnt-401870097",
-      "teamId": "uswnt",
-      "dateISO": "2026-06-10T00:30Z",
-      "isHome": false,
-      "opponentShort": "Brazil",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "venue": "Arena Castelão",
-      "broadcasts": [
-        "TNT",
-        "HBO Max",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "sfg-401815695",
-      "teamId": "sfg",
-      "dateISO": "2026-06-10T01:45Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "gsv-401856977",
-      "teamId": "gsv",
-      "dateISO": "2026-06-10T02:00Z",
-      "isHome": true,
-      "opponentShort": "Mercury",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "AZ Family Sports Net",
-        "Merc+"
-      ]
-    },
-    {
-      "id": "sfg-401815710",
-      "teamId": "sfg",
-      "dateISO": "2026-06-10T19:45Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "atl-401815704",
-      "teamId": "atl",
-      "dateISO": "2026-06-10T23:40Z",
-      "isHome": false,
-      "opponentShort": "White Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "venue": "Rate Field",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "CHSN"
-      ]
-    },
     {
       "id": "mbfc-401841893",
       "teamId": "mbfc",
@@ -2123,10 +2052,10 @@
       "id": "wc26-760486",
       "teamId": "wc26",
       "dateISO": "2026-06-28T19:00Z",
-      "homeShort": "2A",
-      "homeLogo": null,
-      "awayShort": "2B",
-      "awayLogo": null,
+      "homeShort": "South Africa",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "awayShort": "Canada",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "note": null,
       "venue": "SoFi Stadium",
       "broadcasts": [
@@ -2180,8 +2109,8 @@
       "id": "wc26-760487",
       "teamId": "wc26",
       "dateISO": "2026-06-29T17:00Z",
-      "homeShort": "1C",
-      "homeLogo": null,
+      "homeShort": "Brazil",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "awayShort": "2F",
       "awayLogo": null,
       "note": null,
@@ -2214,8 +2143,8 @@
       "dateISO": "2026-06-30T01:00Z",
       "homeShort": "1F",
       "homeLogo": null,
-      "awayShort": "2C",
-      "awayLogo": null,
+      "awayShort": "Morocco",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "note": null,
       "venue": "Estadio BBVA",
       "broadcasts": [
@@ -2441,8 +2370,8 @@
       "id": "wc26-760498",
       "teamId": "wc26",
       "dateISO": "2026-07-03T03:00Z",
-      "homeShort": "1B",
-      "homeLogo": null,
+      "homeShort": "Switzerland",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "awayShort": "3RD E/F/G/I/J",
       "awayLogo": null,
       "note": null,
@@ -4592,7 +4521,7 @@
     {
       "id": "juv-401874930",
       "teamId": "juv",
-      "dateISO": "2026-08-23T18:00Z",
+      "dateISO": "2026-08-23T16:30Z",
       "isHome": false,
       "opponentShort": "Frosinone",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
@@ -4821,6 +4750,18 @@
       ]
     },
     {
+      "id": "juv-401874746",
+      "teamId": "juv",
+      "dateISO": "2026-08-29T18:45Z",
+      "isHome": true,
+      "opponentShort": "Parma",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "sfg-401816744",
       "teamId": "sfg",
       "dateISO": "2026-08-29T20:05Z",
@@ -4921,18 +4862,6 @@
         "MLB.TV",
         "BravesVision",
         "Rockies.TV"
-      ]
-    },
-    {
-      "id": "juv-401874746",
-      "teamId": "juv",
-      "dateISO": "2026-08-30T18:00Z",
-      "isHome": true,
-      "opponentShort": "Parma",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
       ]
     },
     {
@@ -5174,7 +5103,7 @@
     {
       "id": "juv-401874954",
       "teamId": "juv",
-      "dateISO": "2026-09-06T18:00Z",
+      "dateISO": "2026-09-06T18:45Z",
       "isHome": true,
       "opponentShort": "Milan",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
@@ -5208,6 +5137,34 @@
         "MLB.TV",
         "BravesVision",
         "NBC 10"
+      ]
+    },
+    {
+      "id": "sfg-401816850",
+      "teamId": "sfg",
+      "dateISO": "2026-09-08T00:10Z",
+      "isHome": true,
+      "opponentShort": "Cardinals",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "NBC",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "atl-401816859",
+      "teamId": "atl",
+      "dateISO": "2026-09-08T23:15Z",
+      "isHome": true,
+      "opponentShort": "Rays",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Gray Media",
+        "Rays.TV"
       ]
     }
   ],
