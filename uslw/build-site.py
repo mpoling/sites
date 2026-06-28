@@ -7,16 +7,18 @@ HTML at build time — no runtime JavaScript, no fetch(), nothing loaded
 dynamically. The intent is that another tool can read the data straight out of
 the HTML (it does not need to be pretty for humans).
 
-Each page carries the data twice, redundantly, so a downstream reader can pick
-whichever is easiest:
-  • as a machine-readable  <script type="application/json"> block (this is not
-    executable JS — it's just an inert, self-contained data island); and
+There is NO <script> element of any kind on these pages — not even an inert
+application/json data island. Each page carries the data twice, redundantly, so
+a downstream reader can pick whichever is easiest:
+  • as a <pre> JSON block (id="data" / id="division-data") — plain text, no
+    script tag; read it with element.textContent (or BeautifulSoup .get_text());
+    and
   • as plain HTML <table>s whose rows carry data-* attributes (data-team-id,
     data-match-id, data-home-score, data-lat, …).
 
 Output:
   index.html              — links to every division page, plus the FULL dataset
-                            inlined as one JSON island.
+                            inlined as one <pre> JSON block.
   division-<slug>.html    — one file per division, fully self-contained: that
                             division's standings + head-to-head results, with
                             team names/crests denormalized inline (no registry
@@ -137,11 +139,13 @@ def division_payload(data, season, division):
 # ── HTML rendering ────────────────────────────────────────────────────────────
 
 
-def json_island(obj, island_id):
-    """An inert, machine-readable data block. Not executed as JS."""
-    # </script> can't appear literally inside a script element; escape the slash.
-    blob = json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    return f'<script type="application/json" id="{island_id}">{blob}</script>'
+def json_block(obj, block_id):
+    """A machine-readable data block with NO <script> element — the JSON lives in
+    a hidden <pre> as plain text. Only the three text-significant characters are
+    entity-escaped; a reader gets clean JSON back via textContent / .get_text()."""
+    blob = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+    text = blob.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return f'<pre id="{block_id}" hidden>{text}</pre>'
 
 
 def standings_table(payload):
@@ -234,7 +238,7 @@ def main():
             f'<p>USL W League · {esc(payload["season"])} · groupId {esc(payload["groupId"])}</p>\n'
             f"{standings_table(payload)}\n"
             f"{head_to_head_table(payload)}\n"
-            f"{json_island(payload, 'division-data')}\n"
+            f"{json_block(payload, 'division-data')}\n"
         )
         payload["_file"] = fname
         write(fname, page(f'{payload["name"]} — USL W League', body))
@@ -250,9 +254,9 @@ def main():
         f'<p>Top {len(divisions[0]["teams"]) if divisions else 0} of each division &amp; head-to-head results · '
         f'scraped {esc(data.get("scrapedAt"))}</p>\n'
         f"<ul>{links}</ul>\n"
-        "<p>The complete dataset is inlined below as JSON "
-        '(<code>&lt;script type="application/json" id="data"&gt;</code>).</p>\n'
-        f"{json_island(data, 'data')}\n"
+        "<p>The complete dataset is inlined below as JSON in "
+        '<code>&lt;pre id="data" hidden&gt;</code> (no script tag).</p>\n'
+        f"{json_block(data, 'data')}\n"
     )
     write("index.html", page("USL W League — Divisions", index_body))
 

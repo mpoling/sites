@@ -2,25 +2,28 @@
 
 A one-time-use static site showing the top of each USL W League division and the
 head-to-head results that decide standings ties. **All data is baked into the
-HTML at build time** — no runtime JavaScript, no `fetch()`, nothing loaded
-dynamically — so another tool can read it straight out of the markup.
+HTML at build time** — and there is **no JavaScript at all**: no `<script>`
+element of any kind (not even an inert `application/json` block), no inline event
+handlers, no `javascript:` URLs, no `fetch()`. Another tool can read the data
+straight out of the markup.
 
 Every page carries its data twice, redundantly, so a reader can pick whichever
 is easier:
 
-- a machine-readable `<script type="application/json">` block (an inert,
-  self-contained data island — not executable JS); and
+- a `<pre>` JSON block (`id="data"` / `id="division-data"`) — plain text, no
+  script tag; read it with `element.textContent` (or BeautifulSoup
+  `.get_text()`), then `JSON.parse` / `json.loads`; and
 - plain HTML `<table>`s whose rows carry `data-*` attributes (`data-team-id`,
   `data-match-id`, `data-home-score`, `data-lat`, …).
 
 Files:
 
 - **`index.html`** — links to every division page, **plus the full dataset
-  inlined** as one JSON island (`id="data"`).
+  inlined** as one `<pre id="data" hidden>` JSON block.
 - **`division-<slug>.html`** — one real file per division (e.g.
   `division-chesapeake.html`), fully self-contained: that division's standings
   table + head-to-head results, with team names/crests denormalized inline so no
-  registry lookup is needed. The division's data island has `id="division-data"`.
+  registry lookup is needed. The division's data block is `<pre id="division-data" hidden>`.
 - **`build-site.py`** — generates the HTML from `standings.json`.
 - **`scrape-standings.py`** — produces `standings.json` (see below).
 
