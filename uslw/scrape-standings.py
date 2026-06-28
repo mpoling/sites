@@ -75,6 +75,18 @@ TOURNAMENT_TYPE = "league"  # path segment + tournament_type param
 LIST_TYPE = "29"            # standings widget's listType default ("29")
 UID_GENDER = ""             # the W League widget passes gender empty
 
+# ── Output shaping (size controls) ───────────────────────────────────────────
+# The full dataset (all 95 teams, every fixture) is ~1.7 MB. These knobs trim it
+# to what's actually needed. Defaults: the top 3 of each division, and for those
+# teams only their head-to-head matches against the other kept teams in the same
+# division (head-to-head record is the standings tiebreaker, so that's the part
+# of the schedule worth keeping). Everything else is still scraped — we just
+# don't serialize it.
+TOP_N = 3                       # teams to keep per division (None = all)
+SCHEDULE_SCOPE = "head_to_head" # "head_to_head" | "full" | "none"
+MINIFY = True                   # single-line JSON vs 2-space indented
+INCLUDE_MAPS_URL = False        # mapsUrl is reconstructable from lat/lng/placeId
+
 # Be a polite, identifiable client.
 USER_AGENT = (
     "uslw-standings-scraper/1.0 (+https://github.com/mpoling/sites) personal-use"
@@ -530,42 +542,112 @@ def fetch_team_schedule(team_id, group_id, uid_age):
     return matches
 
 
+def _match_dict(m):
+    """Serialize a Match to a compact dict: teams referenced by id (names/crests
+    live in the top-level registry), mapsUrl optionally dropped."""
+    venue = dict(m.venue)
+    if not INCLUDE_MAPS_URL:
+        venue.pop("mapsUrl", None)
+    return {
+        "matchId": m.matchId,
+        "dateText": m.dateText,
+        "dateISO": m.dateISO,
+        "competition": m.competition,
+        "division": m.division,
+        "round": m.round,
+        "game": m.game,
+        "bracket": m.bracket,
+        "home": {"teamId": m.home.get("teamId")},
+        "away": {"teamId": m.away.get("teamId")},
+        "score": m.score,
+        "venue": venue,
+    }
+
+
 def main():
     seasons = fetch_seasons()
     out_seasons = []
+    registry = {}  # teamId → {name, logo}; deduped across the whole document
 
     for season in seasons:
         uid_age = season["UID_age"]
         sys.stderr.write(f"→ season {uid_age} ({season.get('age')})\n")
 
         divisions = parse_standings(fetch_standings(uid_age))
-        team_count = sum(len(d.teams) for d in divisions)
-        sys.stderr.write(f"  {len(divisions)} divisions, {team_count} teams\n")
 
-        # Pull each team's full schedule.
+        # Trim each division to its top N teams (None = keep all).
         for d in divisions:
-            for t in d.teams:
+            if TOP_N is not None:
+                d.teams = d.teams[:TOP_N]
+        kept = [(d, t) for d in divisions for t in d.teams]
+        sys.stderr.write(
+            f"  {len(divisions)} divisions, keeping {len(kept)} teams "
+            f"(top {TOP_N if TOP_N is not None else 'all'}/division)\n"
+        )
+
+        # Register every kept team's name + crest once, here.
+        for _, t in kept:
+            if t.teamId is not None:
+                registry[t.teamId] = {"name": t.name, "logo": t.logo}
+
+        # Fetch schedules only for kept teams (skip if we're not emitting any).
+        if SCHEDULE_SCOPE != "none":
+            kept_ids_by_div = {
+                d.groupId: {t.teamId for t in d.teams} for d in divisions
+            }
+            for d, t in kept:
                 if t.teamId is None:
                     sys.stderr.write(f"    ! no id for {t.name!r}; skipping schedule\n")
                     continue
-                t.schedule = fetch_team_schedule(t.teamId, d.groupId, uid_age)
+                full = fetch_team_schedule(t.teamId, d.groupId, uid_age)
+
+                if SCHEDULE_SCOPE == "head_to_head":
+                    # Keep only matches against the OTHER kept teams in this
+                    # division — i.e. the head-to-head results used to break
+                    # standings ties.
+                    others = kept_ids_by_div[d.groupId]
+                    t.schedule = [
+                        m for m in full
+                        if m.home.get("teamId") in others
+                        and m.away.get("teamId") in others
+                    ]
+                else:  # "full"
+                    t.schedule = full
+
                 sys.stderr.write(
-                    f"    · {t.name:<34} {len(t.schedule):>2} matches\n"
+                    f"    · {t.name:<34} {len(t.schedule):>2}/{len(full):<2} matches kept\n"
                 )
 
-        out_seasons.append(
-            {
-                "uidAge": uid_age,
-                "name": season.get("age"),
-                "divisions": [dataclasses.asdict(d) for d in divisions],
-            }
-        )
+        # Build the serializable division/team tree (ids only; no inline crests).
+        out_divisions = []
+        for d in divisions:
+            out_divisions.append({
+                "groupId": d.groupId,
+                "name": d.name,
+                "teams": [{
+                    "rank": t.rank,
+                    "teamId": t.teamId,
+                    "stats": t.stats,
+                    "headToHead" if SCHEDULE_SCOPE == "head_to_head" else "schedule":
+                        [_match_dict(m) for m in t.schedule],
+                } for t in d.teams],
+            })
+
+        out_seasons.append({
+            "uidAge": uid_age,
+            "name": season.get("age"),
+            "divisions": out_divisions,
+        })
 
     document = {
         "league": "USL W League",
         "sourcePage": SOURCE_PAGE,
         "dataProvider": M11_IFRAME,
         "scrapedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "config": {
+            "teamsPerDivision": TOP_N,
+            "scheduleScope": SCHEDULE_SCOPE,
+        },
         "providerIds": {
             "uidEvent": UID_EVENT,
             "tournamentType": TOURNAMENT_TYPE,
@@ -582,10 +664,16 @@ def main():
             "GA": "Goals Against",
             "GD": "Goal Difference",
         },
+        # teamId → {name, logo}. Matches and standings reference teams by id so
+        # crest URLs (the single biggest repeated cost) appear exactly once.
+        "teams": {str(k): v for k, v in sorted(registry.items())},
         "seasons": out_seasons,
     }
 
-    json.dump(document, sys.stdout, indent=2, ensure_ascii=False)
+    if MINIFY:
+        json.dump(document, sys.stdout, separators=(",", ":"), ensure_ascii=False)
+    else:
+        json.dump(document, sys.stdout, indent=2, ensure_ascii=False)
     sys.stdout.write("\n")
 
 
