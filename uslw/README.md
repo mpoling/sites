@@ -1,23 +1,38 @@
-# uslw — USL W League standings & head-to-head viewer
+# uslw — USL W League standings & head-to-head, data-inlined static site
 
-A small static site showing the top of each USL W League division and the
-head-to-head results that decide standings ties, backed by a dependency-free
-scraper.
+A one-time-use static site showing the top of each USL W League division and the
+head-to-head results that decide standings ties. **All data is baked into the
+HTML at build time** — no runtime JavaScript, no `fetch()`, nothing loaded
+dynamically — so another tool can read it straight out of the markup.
 
-- **`index.html`** — lists every division, each linking to its own page.
-- **`division.html?d=<groupId>`** — one division's full standings table plus its
-  head-to-head match results (date, score, venue). Each division is a distinct,
-  bookmarkable URL.
-- **`app.js` / `styles.css`** — vanilla rendering + styling; both pages fetch
-  `./standings.json` at runtime.
+Every page carries its data twice, redundantly, so a reader can pick whichever
+is easier:
+
+- a machine-readable `<script type="application/json">` block (an inert,
+  self-contained data island — not executable JS); and
+- plain HTML `<table>`s whose rows carry `data-*` attributes (`data-team-id`,
+  `data-match-id`, `data-home-score`, `data-lat`, …).
+
+Files:
+
+- **`index.html`** — links to every division page, **plus the full dataset
+  inlined** as one JSON island (`id="data"`).
+- **`division-<slug>.html`** — one real file per division (e.g.
+  `division-chesapeake.html`), fully self-contained: that division's standings
+  table + head-to-head results, with team names/crests denormalized inline so no
+  registry lookup is needed. The division's data island has `id="division-data"`.
+- **`build-site.py`** — generates the HTML from `standings.json`.
 - **`scrape-standings.py`** — produces `standings.json` (see below).
 
-The pages are static and use relative paths only, per the repo's
-[architecture](../ARCHITECTURE.md). To preview locally:
+Build (after scraping):
 
 ```bash
-python3 -m http.server   # then open http://localhost:8000/
+python3 scrape-standings.py > standings.json
+python3 build-site.py            # writes index.html + division-*.html
 ```
+
+The pages are static and use relative paths only, per the repo's
+[architecture](../ARCHITECTURE.md); open any file directly or serve the folder.
 
 ## The scraper
 
