@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Division — USL W League</title>
+  <meta name="description" content="USL W League division standings and head-to-head results.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <h1><a href="./">USL W League</a></h1>
+      <p class="sub" id="division-title">Division</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="crumbs"><a href="./">Divisions</a> ›</p>
+    <div id="app"><p class="empty">Loading…</p></div>
+
+    <footer class="site">
+      <p>
+        Data scraped from
+        <a href="https://www.uslwleague.com/league-standings" target="_blank" rel="noopener">uslwleague.com</a>.
+        Last updated <span id="updated">—</span>.
+      </p>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>
+    renderDivision(
+      document.getElementById("app"),
+      document.getElementById("division-title")
+    );
+  </script>
+</body>
+</html>

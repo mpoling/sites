@@ -1,9 +1,29 @@
-# uslw — USL W League standings & schedule scraper
+# uslw — USL W League standings & head-to-head viewer
 
-`scrape-standings.py` scrapes **every team's standings position and full match
-schedule** for the [USL W League](https://www.uslwleague.com/league-standings)
-and writes a single structured JSON (`standings.json`) that loses no
-information.
+A small static site showing the top of each USL W League division and the
+head-to-head results that decide standings ties, backed by a dependency-free
+scraper.
+
+- **`index.html`** — lists every division, each linking to its own page.
+- **`division.html?d=<groupId>`** — one division's full standings table plus its
+  head-to-head match results (date, score, venue). Each division is a distinct,
+  bookmarkable URL.
+- **`app.js` / `styles.css`** — vanilla rendering + styling; both pages fetch
+  `./standings.json` at runtime.
+- **`scrape-standings.py`** — produces `standings.json` (see below).
+
+The pages are static and use relative paths only, per the repo's
+[architecture](../ARCHITECTURE.md). To preview locally:
+
+```bash
+python3 -m http.server   # then open http://localhost:8000/
+```
+
+## The scraper
+
+`scrape-standings.py` scrapes every team's standings position and match schedule
+for the [USL W League](https://www.uslwleague.com/league-standings) and writes a
+single structured `standings.json`.
 
 ```bash
 python3 scrape-standings.py > standings.json
