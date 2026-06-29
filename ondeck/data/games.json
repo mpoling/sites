@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T14:54:04.840Z",
+  "generatedAt": "2026-06-29T16:40:34.728Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,137 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mb-sirens-static-6",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-06-13T19:00:00-07:00",
-      "isHome": true,
-      "opponentShort": "San Juan SC",
-      "opponentLogo": "assets/opponents/san-juan.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "sfg-401815746",
-      "teamId": "sfg",
-      "dateISO": "2026-06-14T02:05Z",
-      "isHome": true,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Marquee Sports Net"
-      ]
-    },
-    {
-      "id": "wc26-760421",
-      "teamId": "wc26",
-      "dateISO": "2026-06-14T04:00Z",
-      "homeShort": "Australia",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "awayShort": "Türkiye",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
-      "note": null,
-      "venue": "BC Place",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760422",
-      "teamId": "wc26",
-      "dateISO": "2026-06-14T17:00Z",
-      "homeShort": "Germany",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-      "awayShort": "Curaçao",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
-      "note": null,
-      "venue": "NRG Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "atl-401815750",
-      "teamId": "atl",
-      "dateISO": "2026-06-14T17:40Z",
-      "isHome": false,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Citi Field",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "WPIX",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "sfg-401815761",
-      "teamId": "sfg",
-      "dateISO": "2026-06-14T19:10Z",
-      "isHome": true,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ABC"
-      ]
-    },
-    {
-      "id": "wc26-760425",
-      "teamId": "wc26",
-      "dateISO": "2026-06-14T20:00Z",
-      "homeShort": "Netherlands",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "awayShort": "Japan",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "note": null,
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760423",
-      "teamId": "wc26",
-      "dateISO": "2026-06-14T23:00Z",
-      "homeShort": "Ivory Coast",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
-      "awayShort": "Ecuador",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "note": null,
-      "venue": "Lincoln Financial Field",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760424",
-      "teamId": "wc26",
-      "dateISO": "2026-06-15T02:00Z",
-      "homeShort": "Sweden",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "awayShort": "Tunisia",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
-      "note": null,
-      "venue": "Estadio BBVA",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "Peacock"
-      ]
-    },
     {
       "id": "wc26-760428",
       "teamId": "wc26",
@@ -2273,8 +2142,8 @@
       "id": "wc26-760502",
       "teamId": "wc26",
       "dateISO": "2026-07-04T17:00Z",
-      "homeShort": "RD32 W1",
-      "homeLogo": null,
+      "homeShort": "Canada",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "awayShort": "RD32 W3",
       "awayLogo": null,
       "note": null,
@@ -2349,7 +2218,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131562.png",
       "venue": "Centreville Bank Stadium",
       "broadcasts": [
-        "ESPN"
+        "ESPN",
+        "ESPN Unlmtd"
       ]
     },
     {
@@ -5071,7 +4941,79 @@
         "BravesVision",
         "NBC Sports Phil"
       ]
+    },
+    {
+      "id": "sfg-401816900",
+      "teamId": "sfg",
+      "dateISO": "2026-09-12T02:15Z",
+      "isHome": true,
+      "opponentShort": "Padres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "KNTV",
+        "Padres.TV"
+      ]
+    },
+    {
+      "id": "sfg-401816915",
+      "teamId": "sfg",
+      "dateISO": "2026-09-12T20:05Z",
+      "isHome": true,
+      "opponentShort": "Padres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Padres.TV"
+      ]
+    },
+    {
+      "id": "gt-fb-401856681",
+      "teamId": "gt-fb",
+      "dateISO": "2026-09-12T23:00Z",
+      "isHome": true,
+      "opponentShort": "Tennessee",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+      "venue": "Bobby Dodd Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "atl-401816910",
+      "teamId": "atl",
+      "dateISO": "2026-09-12T23:15Z",
+      "isHome": true,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC Sports Phil"
+      ]
+    },
+    {
+      "id": "mia-761800",
+      "teamId": "mia",
+      "dateISO": "2026-09-12T23:30Z",
+      "isHome": true,
+      "opponentShort": "Nashville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "team": "Stanford SB",
+      "error": "college-softball schedule: ESPN returned 500 Internal Server Error for https://site.api.espn.com/apis/site/v2/sports/baseball/college-softball/teams/476/schedule"
+    }
+  ]
 }
