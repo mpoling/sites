@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T16:40:34.728Z",
+  "generatedAt": "2026-06-30T15:39:04.221Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,70 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "wc26-760428",
-      "teamId": "wc26",
-      "dateISO": "2026-06-15T16:00Z",
-      "homeShort": "Spain",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "awayShort": "Cape Verde",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "note": null,
-      "venue": "Mercedes-Benz Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760426",
-      "teamId": "wc26",
-      "dateISO": "2026-06-15T19:00Z",
-      "homeShort": "Belgium",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "awayShort": "Egypt",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "note": null,
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760429",
-      "teamId": "wc26",
-      "dateISO": "2026-06-15T22:00Z",
-      "homeShort": "Saudi Arabia",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-      "awayShort": "Uruguay",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
-      "note": null,
-      "venue": "Hard Rock Stadium",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760427",
-      "teamId": "wc26",
-      "dateISO": "2026-06-16T01:00Z",
-      "homeShort": "Iran",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "awayShort": "New Zealand",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "note": null,
-      "venue": "SoFi Stadium",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "Peacock"
-      ]
-    },
     {
       "id": "gsv-401856994",
       "teamId": "gsv",
@@ -1796,7 +1732,7 @@
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "awayShort": "Paraguay",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "note": null,
+      "note": "Paraguay advance 4-3 on penalties",
       "venue": "Gillette Stadium",
       "broadcasts": [
         "FOX",
@@ -1812,7 +1748,7 @@
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "awayShort": "Morocco",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "note": null,
+      "note": "Morocco advance 3-2 on penalties",
       "venue": "Estadio BBVA",
       "broadcasts": [
         "FOX",
@@ -2144,8 +2080,8 @@
       "dateISO": "2026-07-04T17:00Z",
       "homeShort": "Canada",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "awayShort": "RD32 W3",
-      "awayLogo": null,
+      "awayShort": "Morocco",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "note": null,
       "venue": "NRG Stadium",
       "broadcasts": [
@@ -2158,8 +2094,8 @@
       "id": "wc26-760503",
       "teamId": "wc26",
       "dateISO": "2026-07-04T21:00Z",
-      "homeShort": "RD32 W2",
-      "homeLogo": null,
+      "homeShort": "Paraguay",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "awayShort": "RD32 W5",
       "awayLogo": null,
       "note": null,
@@ -2245,16 +2181,15 @@
       "venue": "Coors Field",
       "broadcasts": [
         "Peacock",
-        "NBC Sports BA",
-        "NBCSN Extra"
+        "NBC Sports BA"
       ]
     },
     {
       "id": "wc26-760504",
       "teamId": "wc26",
       "dateISO": "2026-07-05T20:00Z",
-      "homeShort": "RD32 W4",
-      "homeLogo": null,
+      "homeShort": "Brazil",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "awayShort": "RD32 W6",
       "awayLogo": null,
       "note": null,
@@ -5008,12 +4943,69 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "bay-fc-401853998",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-13T00:00Z",
+      "isHome": false,
+      "opponentShort": "Seattle",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15363.png",
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "NWSL+"
+      ]
+    },
+    {
+      "id": "sje-761810",
+      "teamId": "sje",
+      "dateISO": "2026-09-13T02:30Z",
+      "isHome": true,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "atl-401816925",
+      "teamId": "atl",
+      "dateISO": "2026-09-13T17:35Z",
+      "isHome": true,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "NBC Sports Phil"
+      ]
+    },
+    {
+      "id": "juv-401874750",
+      "teamId": "juv",
+      "dateISO": "2026-09-13T18:00Z",
+      "isHome": false,
+      "opponentShort": "Sassuolo",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+      "venue": "Mapei Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "sfg-401816930",
+      "teamId": "sfg",
+      "dateISO": "2026-09-13T23:20Z",
+      "isHome": true,
+      "opponentShort": "Padres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "Peacock"
+      ]
     }
   ],
-  "errors": [
-    {
-      "team": "Stanford SB",
-      "error": "college-softball schedule: ESPN returned 500 Internal Server Error for https://site.api.espn.com/apis/site/v2/sports/baseball/college-softball/teams/476/schedule"
-    }
-  ]
+  "errors": []
 }
