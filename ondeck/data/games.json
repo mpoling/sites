@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T15:39:04.221Z",
+  "generatedAt": "2026-07-01T15:48:07.690Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,98 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401856994",
-      "teamId": "gsv",
-      "dateISO": "2026-06-16T02:00Z",
-      "isHome": true,
-      "opponentShort": "Sparks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "Peacock",
-        "NBCSN",
-        "Spectrum Sports Net"
-      ]
-    },
-    {
-      "id": "wc26-760432",
-      "teamId": "wc26",
-      "dateISO": "2026-06-16T19:00Z",
-      "homeShort": "France",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "Senegal",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "note": null,
-      "venue": "MetLife Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "wc26-760430",
-      "teamId": "wc26",
-      "dateISO": "2026-06-16T22:00Z",
-      "homeShort": "Iraq",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
-      "awayShort": "Norway",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "note": null,
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "sfg-401815778",
-      "teamId": "sfg",
-      "dateISO": "2026-06-16T23:15Z",
-      "isHome": false,
-      "opponentShort": "Braves",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "BravesVision",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "atl-401815778",
-      "teamId": "atl",
-      "dateISO": "2026-06-16T23:15Z",
-      "isHome": true,
-      "opponentShort": "Giants",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "BravesVision",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "wc26-760433",
-      "teamId": "wc26",
-      "dateISO": "2026-06-17T01:00Z",
-      "homeShort": "Argentina",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "awayShort": "Algeria",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "note": null,
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "Peacock"
-      ]
-    },
     {
       "id": "wc26-760431",
       "teamId": "wc26",
@@ -1818,22 +1726,6 @@
       ]
     },
     {
-      "id": "wc26-760491",
-      "teamId": "wc26",
-      "dateISO": "2026-07-01T01:00Z",
-      "homeShort": "Mexico",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "awayShort": "Ecuador",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "note": null,
-      "venue": "Estadio Banorte",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
       "id": "sfg-401815978",
       "teamId": "sfg",
       "dateISO": "2026-07-01T01:40Z",
@@ -1845,6 +1737,22 @@
         "MLB.TV",
         "NBC Sports BA",
         "DBACKS.TV"
+      ]
+    },
+    {
+      "id": "wc26-760491",
+      "teamId": "wc26",
+      "dateISO": "2026-07-01T02:00Z",
+      "homeShort": "Mexico",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "awayShort": "Ecuador",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "note": null,
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "FOX",
+        "Tele",
+        "FOX One"
       ]
     },
     {
@@ -2096,8 +2004,8 @@
       "dateISO": "2026-07-04T21:00Z",
       "homeShort": "Paraguay",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "awayShort": "RD32 W5",
-      "awayLogo": null,
+      "awayShort": "France",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "note": null,
       "venue": "Lincoln Financial Field",
       "broadcasts": [
@@ -2190,8 +2098,8 @@
       "dateISO": "2026-07-05T20:00Z",
       "homeShort": "Brazil",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "awayShort": "RD32 W6",
-      "awayLogo": null,
+      "awayShort": "Norway",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "note": null,
       "venue": "MetLife Stadium",
       "broadcasts": [
@@ -2204,8 +2112,8 @@
       "id": "wc26-760505",
       "teamId": "wc26",
       "dateISO": "2026-07-06T00:00Z",
-      "homeShort": "RD32 W7",
-      "homeLogo": null,
+      "homeShort": "Mexico",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "awayShort": "RD32 W8",
       "awayLogo": null,
       "note": null,
@@ -2388,6 +2296,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
       "venue": "Coca-Cola Coliseum",
       "broadcasts": [
+        "WNBA League Pass",
         "KPIX+",
         "TSN"
       ]
@@ -2460,7 +2369,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
       "venue": "Mohegan Sun Arena",
       "broadcasts": [
-        "ION"
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
@@ -2732,6 +2642,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "MNMT",
         "KPIX+"
       ]
@@ -2829,6 +2740,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "MNMT"
       ]
     },
@@ -5004,6 +4916,35 @@
       "venue": "Oracle Park",
       "broadcasts": [
         "Peacock"
+      ]
+    },
+    {
+      "id": "atl-401816937",
+      "teamId": "atl",
+      "dateISO": "2026-09-14T23:40Z",
+      "isHome": false,
+      "opponentShort": "Cubs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
+      "venue": "Wrigley Field",
+      "broadcasts": [
+        "MLB.TV",
+        "Marquee Sports Net",
+        "BravesVision",
+        "MLB Net"
+      ]
+    },
+    {
+      "id": "sfg-401816939",
+      "teamId": "sfg",
+      "dateISO": "2026-09-14T23:45Z",
+      "isHome": false,
+      "opponentShort": "Cardinals",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
+      "venue": "Busch Stadium",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Cardinals.TV"
       ]
     }
   ],
