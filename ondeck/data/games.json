@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T15:20:05.070Z",
+  "generatedAt": "2026-07-04T14:43:30.556Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,83 +305,6 @@
   ],
   "games": [
     {
-      "id": "wc26-760442",
-      "teamId": "wc26",
-      "dateISO": "2026-06-19T19:00Z",
-      "homeShort": "USA",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "awayShort": "Australia",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "note": null,
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760445",
-      "teamId": "wc26",
-      "dateISO": "2026-06-19T22:00Z",
-      "homeShort": "Scotland",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
-      "awayShort": "Morocco",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "note": null,
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "sfg-401815815",
-      "teamId": "sfg",
-      "dateISO": "2026-06-19T23:10Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Marlins.TV",
-        "WFOR"
-      ]
-    },
-    {
-      "id": "atl-401815814",
-      "teamId": "atl",
-      "dateISO": "2026-06-19T23:15Z",
-      "isHome": true,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Brewers.TV"
-      ]
-    },
-    {
-      "id": "wc26-760444",
-      "teamId": "wc26",
-      "dateISO": "2026-06-20T00:30Z",
-      "homeShort": "Brazil",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "awayShort": "Haiti",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
-      "note": null,
-      "venue": "Lincoln Financial Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
       "id": "gsv-401857005",
       "teamId": "gsv",
       "dateISO": "2026-06-20T02:00Z",
@@ -403,22 +326,6 @@
       "opponentLogo": "assets/opponents/california-storm.png",
       "venue": "Davis Legacy Soccer Complex",
       "broadcasts": []
-    },
-    {
-      "id": "wc26-760443",
-      "teamId": "wc26",
-      "dateISO": "2026-06-20T03:00Z",
-      "homeShort": "Türkiye",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
-      "awayShort": "Paraguay",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "note": null,
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "FOX One"
-      ]
     },
     {
       "id": "wc26-760447",
@@ -1674,7 +1581,7 @@
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
       "awayShort": "Egypt",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "note": null,
+      "note": "Egypt advance 4-2 on penalties",
       "venue": "AT&T Stadium",
       "broadcasts": [
         "FOX",
@@ -1975,10 +1882,10 @@
       "id": "wc26-760509",
       "teamId": "wc26",
       "dateISO": "2026-07-07T16:00Z",
-      "homeShort": "RD32 W14",
-      "homeLogo": null,
-      "awayShort": "RD32 W16",
-      "awayLogo": null,
+      "homeShort": "Argentina",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "awayShort": "Egypt",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "note": null,
       "venue": "Mercedes-Benz Stadium",
       "broadcasts": [
@@ -1993,8 +1900,8 @@
       "dateISO": "2026-07-07T20:00Z",
       "homeShort": "Switzerland",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "awayShort": "RD32 W15",
-      "awayLogo": null,
+      "awayShort": "Colombia",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "note": null,
       "venue": "BC Place",
       "broadcasts": [
@@ -4775,6 +4682,18 @@
         "MLB.TV",
         "Marquee Sports Net",
         "BravesVision"
+      ]
+    },
+    {
+      "id": "bay-fc-401854084",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-17T01:30Z",
+      "isHome": false,
+      "opponentShort": "Denver",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131563.png",
+      "venue": "Centennial Stadium",
+      "broadcasts": [
+        "Victory+"
       ]
     }
   ],
