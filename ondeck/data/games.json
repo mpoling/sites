@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T14:43:30.556Z",
+  "generatedAt": "2026-07-05T14:50:04.411Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,106 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857005",
-      "teamId": "gsv",
-      "dateISO": "2026-06-20T02:00Z",
-      "isHome": true,
-      "opponentShort": "Lynx",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "ION",
-        "WNBA League Pass"
-      ]
-    },
-    {
-      "id": "mb-sirens-static-7",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-06-19T19:00:00-07:00",
-      "isHome": false,
-      "opponentShort": "California Storm",
-      "opponentLogo": "assets/opponents/california-storm.png",
-      "venue": "Davis Legacy Soccer Complex",
-      "broadcasts": []
-    },
-    {
-      "id": "wc26-760447",
-      "teamId": "wc26",
-      "dateISO": "2026-06-20T17:00Z",
-      "homeShort": "Netherlands",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "awayShort": "Sweden",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "note": null,
-      "venue": "NRG Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760448",
-      "teamId": "wc26",
-      "dateISO": "2026-06-20T20:00Z",
-      "homeShort": "Germany",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-      "awayShort": "Ivory Coast",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
-      "note": null,
-      "venue": "BMO Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "sfg-401815829",
-      "teamId": "sfg",
-      "dateISO": "2026-06-20T20:10Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Marlins.TV"
-      ]
-    },
-    {
-      "id": "atl-401815827",
-      "teamId": "atl",
-      "dateISO": "2026-06-20T20:10Z",
-      "isHome": true,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Brewers.TV",
-        "ERADM"
-      ]
-    },
-    {
-      "id": "wc26-760446",
-      "teamId": "wc26",
-      "dateISO": "2026-06-21T00:00Z",
-      "homeShort": "Ecuador",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "awayShort": "Curaçao",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
-      "note": null,
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "mbfc-401841936",
       "teamId": "mbfc",
@@ -1998,10 +1898,10 @@
       "id": "wc26-760510",
       "teamId": "wc26",
       "dateISO": "2026-07-09T20:00Z",
-      "homeShort": "RD16 W1",
-      "homeLogo": null,
-      "awayShort": "RD16 W2",
-      "awayLogo": null,
+      "homeShort": "France",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "awayShort": "Morocco",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "note": null,
       "venue": "Gillette Stadium",
       "broadcasts": [
@@ -4483,6 +4383,16 @@
         "KNTV",
         "Padres.TV"
       ]
+    },
+    {
+      "id": "psg-w-401885667",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-12T18:00Z",
+      "isHome": true,
+      "opponentShort": "Strasbourg",
+      "opponentLogo": "",
+      "venue": "Campus PSG",
+      "broadcasts": []
     },
     {
       "id": "sfg-401816915",
