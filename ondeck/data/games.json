@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T16:27:17.571Z",
+  "generatedAt": "2026-07-07T15:47:58.289Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,54 +305,6 @@
   ],
   "games": [
     {
-      "id": "wc26-760456",
-      "teamId": "wc26",
-      "dateISO": "2026-06-22T17:00Z",
-      "homeShort": "Argentina",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "awayShort": "Austria",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
-      "note": null,
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760457",
-      "teamId": "wc26",
-      "dateISO": "2026-06-22T21:00Z",
-      "homeShort": "France",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "Iraq",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
-      "note": null,
-      "venue": "Lincoln Financial Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760454",
-      "teamId": "wc26",
-      "dateISO": "2026-06-23T00:00Z",
-      "homeShort": "Norway",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "awayShort": "Senegal",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "note": null,
-      "venue": "MetLife Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
       "id": "atl-401815865",
       "teamId": "atl",
       "dateISO": "2026-06-23T02:00Z",
@@ -362,22 +314,6 @@
       "venue": "Petco Park",
       "broadcasts": [
         "ESPN"
-      ]
-    },
-    {
-      "id": "wc26-760455",
-      "teamId": "wc26",
-      "dateISO": "2026-06-23T03:00Z",
-      "homeShort": "Jordan",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
-      "awayShort": "Algeria",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "note": null,
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "FOX One"
       ]
     },
     {
@@ -1784,10 +1720,10 @@
       "id": "wc26-760511",
       "teamId": "wc26",
       "dateISO": "2026-07-10T19:00Z",
-      "homeShort": "RD16 W5",
-      "homeLogo": null,
-      "awayShort": "RD16 W6",
-      "awayLogo": null,
+      "homeShort": "Spain",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "awayShort": "Belgium",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "note": null,
       "venue": "SoFi Stadium",
       "broadcasts": [
@@ -4561,6 +4497,119 @@
       "venue": "Levi's Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsv-401857200",
+      "teamId": "gsv",
+      "dateISO": "2026-09-20T01:00Z",
+      "isHome": true,
+      "opponentShort": "Storm",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "sfg-401817011",
+      "teamId": "sfg",
+      "dateISO": "2026-09-20T01:10Z",
+      "isHome": false,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Dodger Stadium",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Sportsnet LA"
+      ]
+    },
+    {
+      "id": "juv-401874757",
+      "teamId": "juv",
+      "dateISO": "2026-09-20T16:00Z",
+      "isHome": true,
+      "opponentShort": "Atalanta",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "atl-401817018",
+      "teamId": "atl",
+      "dateISO": "2026-09-20T18:10Z",
+      "isHome": false,
+      "opponentShort": "Astros",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
+      "venue": "Daikin Park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Space City Home Network",
+        "Space City Home (Alt.)"
+      ]
+    },
+    {
+      "id": "sjs-401879368",
+      "teamId": "sjs",
+      "dateISO": "2026-09-20T20:00Z",
+      "isHome": false,
+      "opponentShort": "Ducks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
+      "venue": "Honda Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sfg-401817026",
+      "teamId": "sfg",
+      "dateISO": "2026-09-20T20:10Z",
+      "isHome": false,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Dodger Stadium",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Sportsnet LA"
+      ]
+    },
+    {
+      "id": "sf49-401872942",
+      "teamId": "sf49",
+      "dateISO": "2026-09-20T20:25Z",
+      "isHome": true,
+      "opponentShort": "Dolphins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
+    },
+    {
+      "id": "mia-761829",
+      "teamId": "mia",
+      "dateISO": "2026-09-20T23:00Z",
+      "isHome": true,
+      "opponentShort": "San Diego",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401854007",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-20T23:00Z",
+      "isHome": true,
+      "opponentShort": "Louisville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20905.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Victory+"
       ]
     }
   ],
