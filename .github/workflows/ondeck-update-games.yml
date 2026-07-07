@@ -2,10 +2,16 @@ name: Update OnDeck game data
 
 on:
   schedule:
-    # Daily at 13:07 UTC. That's ~5–6am Pacific depending on DST
-    # (5am PST in winter, 6am PDT in summer). Off-round minute to be
-    # polite to ESPN's API.
-    - cron: '7 13 * * *'
+    # Every 3 hours at :07 UTC (keeps the original 13:07 slot). This was
+    # daily at 13:07, but during the 2026 World Cup every match kicked off
+    # between 16:00Z and 03:00Z — i.e. AFTER the day's run — so knockout
+    # matchups that ESPN resolved in the evening ("RD16 W5" → "Spain") sat
+    # stale on the site for up to a day. 3-hourly caps that at ~3h and also
+    # buffers GitHub's scheduler delay (observed 1.5–3.5h on this repo).
+    # Still polite to ESPN: ~40 requests per run, 8 runs/day. The commit
+    # step below skips generatedAt-only churn, so extra runs that find no
+    # real schedule changes don't commit or redeploy Pages.
+    - cron: '7 */3 * * *'
   workflow_dispatch:                # manual "Run workflow" button
   push:
     branches: [main]
@@ -46,7 +52,13 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/games.json
-          if git diff --staged --quiet; then
+          # -I: ignore the generatedAt timestamp, which changes every run.
+          # Without it every scheduled run commits (and redeploys Pages)
+          # even when no schedule data actually changed — tolerable at one
+          # run a day, pure noise at eight. The window rolls daily, so real
+          # commits still land at least ~once a day; during tournaments,
+          # whenever a knockout matchup resolves.
+          if git diff --staged --quiet -I '"generatedAt"'; then
             echo "No changes — schedules unchanged since last run."
           else
             git commit -m "chore(ondeck): refresh game data [skip ci]"

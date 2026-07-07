@@ -9,11 +9,11 @@ via the Cloudflare worker that maps subdomains to subdirectories.
 ```mermaid
 flowchart LR
     teams["teams.json<br/>(you edit it)"]
-    cron["GitHub Actions<br/>13:07 UTC cron"]
+    cron["GitHub Actions<br/>3-hourly cron"]
     games["data/games.json<br/>(auto-generated)"]
     page["ondeck.&lt;domain&gt;<br/>static page"]
 
-    teams -->|daily| cron
+    teams -->|every 3 h| cron
     cron -->|commits| games
     games -->|fetch&#40;&#41;| page
 ```
@@ -31,7 +31,7 @@ ownership without nesting.
 ```
 sites/
 ├── .github/workflows/
-│   └── ondeck-update-games.yml     # daily fetch + commit
+│   └── ondeck-update-games.yml     # 3-hourly fetch + commit-if-changed
 └── ondeck/
     ├── index.html
     ├── styles.css
@@ -63,11 +63,16 @@ sites/
    data right away.
 4. **Visit `ondeck.<owner-tld>`**. Done.
 
-After that the daily cron handles refreshes; hit "Run workflow" any time you
-want a fresh pull on demand.
+After that the cron handles refreshes — every 3 hours, committing only when
+the schedule data actually changed (the `generatedAt` timestamp alone doesn't
+count). It was daily at first, but the 2026 World Cup showed why that's not
+enough: every match kicks off after 16:00 UTC, so knockout matchups that ESPN
+resolved in the evening ("RD16 W5" → "Spain") stayed stale on the site until
+the next day's run. Hit "Run workflow" any time you want a fresh pull on
+demand.
 
 > The committed `ondeck/data/games.json` is intentional: it's a seed so the
-> first page load isn't an empty state. The cron rewrites it daily; treat it
+> first page load isn't an empty state. The cron rewrites it; treat it
 > as bot-managed and don't hand-edit.
 
 ## Adding or removing a team
