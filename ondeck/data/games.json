@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:47:58.289Z",
+  "generatedAt": "2026-07-08T15:29:51.979Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,66 +305,6 @@
   ],
   "games": [
     {
-      "id": "atl-401815865",
-      "teamId": "atl",
-      "dateISO": "2026-06-23T02:00Z",
-      "isHome": false,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Petco Park",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "wc26-760461",
-      "teamId": "wc26",
-      "dateISO": "2026-06-23T17:00Z",
-      "homeShort": "Portugal",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "awayShort": "Uzbekistan",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
-      "note": null,
-      "venue": "NRG Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760458",
-      "teamId": "wc26",
-      "dateISO": "2026-06-23T20:00Z",
-      "homeShort": "England",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "awayShort": "Ghana",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "note": null,
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760460",
-      "teamId": "wc26",
-      "dateISO": "2026-06-23T23:00Z",
-      "homeShort": "Panama",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
-      "awayShort": "Croatia",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "note": null,
-      "venue": "BMO Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
       "id": "atl-401815880",
       "teamId": "atl",
       "dateISO": "2026-06-24T01:40Z",
@@ -392,22 +332,6 @@
         "MLB.TV",
         "NBC Sports BA",
         "NBC Sports CA"
-      ]
-    },
-    {
-      "id": "wc26-760459",
-      "teamId": "wc26",
-      "dateISO": "2026-06-24T02:00Z",
-      "homeShort": "Colombia",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "awayShort": "Congo DR",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "note": null,
-      "venue": "Estadio Akron",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "FOX One"
       ]
     },
     {
@@ -1594,7 +1518,7 @@
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "awayShort": "Colombia",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "note": null,
+      "note": "Switzerland advance 4-3 on penalties",
       "venue": "BC Place",
       "broadcasts": [
         "FOX",
@@ -1833,10 +1757,10 @@
       "id": "wc26-760513",
       "teamId": "wc26",
       "dateISO": "2026-07-12T01:00Z",
-      "homeShort": "RD16 W7",
-      "homeLogo": null,
-      "awayShort": "RD16 W8",
-      "awayLogo": null,
+      "homeShort": "Argentina",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "awayShort": "Switzerland",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "note": null,
       "venue": "GEHA Field at Arrowhead Stadium",
       "broadcasts": [
