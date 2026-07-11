@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T15:38:29.784Z",
+  "generatedAt": "2026-07-11T14:24:41.907Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,70 +305,6 @@
   ],
   "games": [
     {
-      "id": "wc26-760475",
-      "teamId": "wc26",
-      "dateISO": "2026-06-26T19:00Z",
-      "homeShort": "Norway",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "awayShort": "France",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "note": null,
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760474",
-      "teamId": "wc26",
-      "dateISO": "2026-06-26T19:00Z",
-      "homeShort": "Senegal",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "awayShort": "Iraq",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
-      "note": null,
-      "venue": "BMO Field",
-      "broadcasts": [
-        "FS1",
-        "Universo",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760478",
-      "teamId": "wc26",
-      "dateISO": "2026-06-27T00:00Z",
-      "homeShort": "Cape Verde",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "awayShort": "Saudi Arabia",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-      "note": null,
-      "venue": "NRG Stadium",
-      "broadcasts": [
-        "FS1",
-        "Universo",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760479",
-      "teamId": "wc26",
-      "dateISO": "2026-06-27T00:00Z",
-      "homeShort": "Uruguay",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
-      "awayShort": "Spain",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "note": null,
-      "venue": "Estadio Akron",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
       "id": "gsv-401857026",
       "teamId": "gsv",
       "dateISO": "2026-06-27T02:00Z",
@@ -407,38 +343,6 @@
         "MLB.TV",
         "NBC Sports BA",
         "BravesVision"
-      ]
-    },
-    {
-      "id": "wc26-760476",
-      "teamId": "wc26",
-      "dateISO": "2026-06-27T03:00Z",
-      "homeShort": "Egypt",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "awayShort": "Iran",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "note": null,
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760477",
-      "teamId": "wc26",
-      "dateISO": "2026-06-27T03:00Z",
-      "homeShort": "New Zealand",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "awayShort": "Belgium",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "note": null,
-      "venue": "BC Place",
-      "broadcasts": [
-        "FOX",
-        "Universo",
-        "FOX One"
       ]
     },
     {
@@ -1523,8 +1427,8 @@
       "dateISO": "2026-07-14T19:00Z",
       "homeShort": "France",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "QF W2",
-      "awayLogo": null,
+      "awayShort": "Spain",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "note": null,
       "venue": "AT&T Stadium",
       "broadcasts": [
@@ -4355,6 +4259,21 @@
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
+        "BravesVision",
+        "Reds.TV"
+      ]
+    },
+    {
+      "id": "atl-401817060",
+      "teamId": "atl",
+      "dateISO": "2026-09-24T23:15Z",
+      "isHome": true,
+      "opponentShort": "Reds",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "MLB.TV",
+        "FS1",
         "BravesVision",
         "Reds.TV"
       ]
