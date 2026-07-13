@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T14:36:22.811Z",
+  "generatedAt": "2026-07-13T15:48:06.074Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,101 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815934",
-      "teamId": "sfg",
-      "dateISO": "2026-06-28T01:05Z",
-      "isHome": true,
-      "opponentShort": "Braves",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "atl-401815934",
-      "teamId": "atl",
-      "dateISO": "2026-06-28T01:05Z",
-      "isHome": false,
-      "opponentShort": "Giants",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "mb-sirens-static-9",
-      "teamId": "mb-sirens",
-      "dateISO": "2026-06-27T19:00:00-07:00",
-      "isHome": true,
-      "opponentShort": "Pleasanton RAGE",
-      "opponentLogo": "assets/opponents/pleasanton-rage.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "wc26-760486",
-      "teamId": "wc26",
-      "dateISO": "2026-06-28T19:00Z",
-      "homeShort": "South Africa",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "awayShort": "Canada",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "note": null,
-      "venue": "SoFi Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "sfg-401815949",
-      "teamId": "sfg",
-      "dateISO": "2026-06-28T20:05Z",
-      "isHome": true,
-      "opponentShort": "Braves",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "atl-401815949",
-      "teamId": "atl",
-      "dateISO": "2026-06-28T20:05Z",
-      "isHome": false,
-      "opponentShort": "Giants",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "gsv-401857033",
-      "teamId": "gsv",
-      "dateISO": "2026-06-28T23:00Z",
-      "isHome": true,
-      "opponentShort": "Liberty",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "ESPN",
-        "Disney+"
-      ]
-    },
     {
       "id": "wc26-760487",
       "teamId": "wc26",
@@ -4168,6 +4073,48 @@
       "id": "atl-401817072",
       "teamId": "atl",
       "dateISO": "2026-09-25T23:10Z",
+      "isHome": false,
+      "opponentShort": "Marlins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "venue": "loanDepot park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Marlins.TV"
+      ]
+    },
+    {
+      "id": "sfg-401817086",
+      "teamId": "sfg",
+      "dateISO": "2026-09-26T02:15Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Sportsnet LA"
+      ]
+    },
+    {
+      "id": "sfg-401817101",
+      "teamId": "sfg",
+      "dateISO": "2026-09-26T20:05Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Sportsnet LA"
+      ]
+    },
+    {
+      "id": "atl-401817087",
+      "teamId": "atl",
+      "dateISO": "2026-09-26T20:10Z",
       "isHome": false,
       "opponentShort": "Marlins",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
