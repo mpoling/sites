@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T15:48:06.074Z",
+  "generatedAt": "2026-07-14T15:00:27.977Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,61 +305,13 @@
   ],
   "games": [
     {
-      "id": "wc26-760487",
-      "teamId": "wc26",
-      "dateISO": "2026-06-29T17:00Z",
-      "homeShort": "Brazil",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "awayShort": "Japan",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "note": null,
-      "venue": "NRG Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760489",
-      "teamId": "wc26",
-      "dateISO": "2026-06-29T20:30Z",
-      "homeShort": "Germany",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-      "awayShort": "Paraguay",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "note": "Paraguay advance 4-3 on penalties",
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760488",
-      "teamId": "wc26",
-      "dateISO": "2026-06-30T01:00Z",
-      "homeShort": "Netherlands",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "awayShort": "Morocco",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "note": "Morocco advance 3-2 on penalties",
-      "venue": "Estadio BBVA",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
       "id": "sfg-401815963",
       "teamId": "sfg",
       "dateISO": "2026-06-30T01:40Z",
       "isHome": false,
       "opponentShort": "Diamondbacks",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Chase Field",
+      "venue": "Chase Field (NH)",
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
@@ -4123,6 +4075,115 @@
         "MLB.TV",
         "BravesVision",
         "Marlins.TV"
+      ]
+    },
+    {
+      "id": "sjs-401879414",
+      "teamId": "sjs",
+      "dateISO": "2026-09-27T02:00Z",
+      "isHome": false,
+      "opponentShort": "Golden Knights",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+      "venue": "T-Mobile Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842253",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-27T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lexington",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "sje-761843",
+      "teamId": "sje",
+      "dateISO": "2026-09-27T02:30Z",
+      "isHome": true,
+      "opponentShort": "Portland",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "gt-fb-401858240",
+      "teamId": "gt-fb",
+      "dateISO": "2026-09-27T02:30Z",
+      "isHome": false,
+      "opponentShort": "Stanford",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
+      "venue": "Stanford Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sfg-401817116",
+      "teamId": "sfg",
+      "dateISO": "2026-09-27T19:05Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Oracle Park",
+      "broadcasts": [
+        "MLB.TV",
+        "NBC Sports BA",
+        "Sportsnet LA"
+      ]
+    },
+    {
+      "id": "atl-401817102",
+      "teamId": "atl",
+      "dateISO": "2026-09-27T19:10Z",
+      "isHome": false,
+      "opponentShort": "Marlins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "venue": "loanDepot park",
+      "broadcasts": [
+        "MLB.TV",
+        "BravesVision",
+        "Marlins.TV",
+        "WBFS"
+      ]
+    },
+    {
+      "id": "sf49-401872958",
+      "teamId": "sf49",
+      "dateISO": "2026-09-27T20:05Z",
+      "isHome": true,
+      "opponentShort": "Cardinals",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
+    },
+    {
+      "id": "bay-fc-401854013",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-27T21:00Z",
+      "isHome": true,
+      "opponentShort": "Orlando",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18206.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "mia-761844",
+      "teamId": "mia",
+      "dateISO": "2026-09-27T23:00Z",
+      "isHome": false,
+      "opponentShort": "Columbus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+      "venue": "ScottsMiracle-Gro Field",
+      "broadcasts": [
+        "Apple TV"
       ]
     }
   ],
