@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T15:00:27.977Z",
+  "generatedAt": "2026-07-15T14:59:16.380Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,67 +305,6 @@
   ],
   "games": [
     {
-      "id": "sfg-401815963",
-      "teamId": "sfg",
-      "dateISO": "2026-06-30T01:40Z",
-      "isHome": false,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Chase Field (NH)",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "wc26-760490",
-      "teamId": "wc26",
-      "dateISO": "2026-06-30T17:00Z",
-      "homeShort": "Ivory Coast",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
-      "awayShort": "Norway",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "note": null,
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760492",
-      "teamId": "wc26",
-      "dateISO": "2026-06-30T21:00Z",
-      "homeShort": "France",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "Sweden",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "note": null,
-      "venue": "MetLife Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "atl-401815968",
-      "teamId": "atl",
-      "dateISO": "2026-06-30T23:15Z",
-      "isHome": true,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "Cardinals.TV"
-      ]
-    },
-    {
       "id": "sfg-401815978",
       "teamId": "sfg",
       "dateISO": "2026-07-01T01:40Z",
@@ -377,22 +316,6 @@
         "MLB.TV",
         "NBC Sports BA",
         "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "wc26-760491",
-      "teamId": "wc26",
-      "dateISO": "2026-07-01T02:00Z",
-      "homeShort": "Mexico",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "awayShort": "Ecuador",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "note": null,
-      "venue": "Estadio Banorte",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
       ]
     },
     {
@@ -1248,8 +1171,8 @@
       "id": "wc26-760516",
       "teamId": "wc26",
       "dateISO": "2026-07-18T21:00Z",
-      "homeShort": "SF L1",
-      "homeLogo": null,
+      "homeShort": "France",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "awayShort": "SF L2",
       "awayLogo": null,
       "note": null,
@@ -1315,8 +1238,8 @@
       "id": "wc26-760517",
       "teamId": "wc26",
       "dateISO": "2026-07-19T19:00Z",
-      "homeShort": "SF W1",
-      "homeLogo": null,
+      "homeShort": "Spain",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "awayShort": "SF W2",
       "awayLogo": null,
       "note": null,
