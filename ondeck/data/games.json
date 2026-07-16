@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T14:59:16.380Z",
+  "generatedAt": "2026-07-16T15:10:25.888Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,82 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401815978",
-      "teamId": "sfg",
-      "dateISO": "2026-07-01T01:40Z",
-      "isHome": false,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Chase Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "wc26-760495",
-      "teamId": "wc26",
-      "dateISO": "2026-07-01T16:00Z",
-      "homeShort": "England",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "awayShort": "Congo DR",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "note": null,
-      "venue": "Mercedes-Benz Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760493",
-      "teamId": "wc26",
-      "dateISO": "2026-07-01T20:00Z",
-      "homeShort": "Belgium",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "awayShort": "Senegal",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "note": null,
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "FS1",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "atl-401815983",
-      "teamId": "atl",
-      "dateISO": "2026-07-01T23:15Z",
-      "isHome": true,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Cardinals.TV"
-      ]
-    },
-    {
-      "id": "wc26-760494",
-      "teamId": "wc26",
-      "dateISO": "2026-07-02T00:00Z",
-      "homeShort": "USA",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "awayShort": "Bosnia-Herz",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "note": null,
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "sfg-401815992",
       "teamId": "sfg",
@@ -1106,7 +1030,6 @@
       "venue": "Gainbridge Fieldhouse",
       "broadcasts": [
         "USA Net",
-        "KPIX+",
         "WTHR Channel 13"
       ]
     },
@@ -1173,8 +1096,8 @@
       "dateISO": "2026-07-18T21:00Z",
       "homeShort": "France",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "SF L2",
-      "awayLogo": null,
+      "awayShort": "England",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "note": null,
       "venue": "Hard Rock Stadium",
       "broadcasts": [
@@ -1240,8 +1163,8 @@
       "dateISO": "2026-07-19T19:00Z",
       "homeShort": "Spain",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "awayShort": "SF W2",
-      "awayLogo": null,
+      "awayShort": "Argentina",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "note": null,
       "venue": "MetLife Stadium",
       "broadcasts": [
@@ -3378,6 +3301,18 @@
       ]
     },
     {
+      "id": "juv-401874750",
+      "teamId": "juv",
+      "dateISO": "2026-09-12T16:00Z",
+      "isHome": false,
+      "opponentShort": "Sassuolo",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+      "venue": "Mapei Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "psg-w-401885667",
       "teamId": "psg-w",
       "dateISO": "2026-09-12T18:00Z",
@@ -3475,18 +3410,6 @@
         "MLB.TV",
         "BravesVision",
         "NBC Sports Phil"
-      ]
-    },
-    {
-      "id": "juv-401874750",
-      "teamId": "juv",
-      "dateISO": "2026-09-13T18:00Z",
-      "isHome": false,
-      "opponentShort": "Sassuolo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
-      "venue": "Mapei Stadium",
-      "broadcasts": [
-        "Paramount+"
       ]
     },
     {
