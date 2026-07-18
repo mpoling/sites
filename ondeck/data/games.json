@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T14:50:27.850Z",
+  "generatedAt": "2026-07-18T14:22:36.592Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,52 +305,6 @@
   ],
   "games": [
     {
-      "id": "wc26-760499",
-      "teamId": "wc26",
-      "dateISO": "2026-07-03T18:00Z",
-      "homeShort": "Australia",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "awayShort": "Egypt",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "note": "Egypt advance 4-2 on penalties",
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760500",
-      "teamId": "wc26",
-      "dateISO": "2026-07-03T22:00Z",
-      "homeShort": "Argentina",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "awayShort": "Cape Verde",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "note": null,
-      "venue": "Hard Rock Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "atl-401816005",
-      "teamId": "atl",
-      "dateISO": "2026-07-03T23:15Z",
-      "isHome": true,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "WPIX"
-      ]
-    },
-    {
       "id": "sfg-401816009",
       "teamId": "sfg",
       "dateISO": "2026-07-04T00:10Z",
@@ -362,22 +316,6 @@
         "MLB.TV",
         "NBC Sports BA",
         "Rockies.TV"
-      ]
-    },
-    {
-      "id": "wc26-760501",
-      "teamId": "wc26",
-      "dateISO": "2026-07-04T01:30Z",
-      "homeShort": "Colombia",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "awayShort": "Ghana",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "note": null,
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
       ]
     },
     {
@@ -1558,7 +1496,9 @@
       "opponentShort": "Lexington",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
       "venue": "Lexington Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "atl-401816353",
@@ -1768,7 +1708,9 @@
       "opponentShort": "El Paso",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19407.png",
       "venue": "Southwest University Park",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "atl-401816417",
@@ -2138,7 +2080,9 @@
       "opponentShort": "Oakland",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20687.png",
       "venue": "Oakland-Alameda County Coliseum",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "sje-761721",
@@ -2432,7 +2376,9 @@
       "opponentShort": "Rhode Island",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/22164.png",
       "venue": "Centreville Bank Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "sje-761752",
@@ -2778,7 +2724,8 @@
       "venue": "Audi Field",
       "broadcasts": [
         "ESPN2",
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN Unlmtd"
       ]
     },
     {
