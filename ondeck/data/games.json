@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T14:22:36.592Z",
+  "generatedAt": "2026-07-19T14:33:15.066Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,65 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816009",
-      "teamId": "sfg",
-      "dateISO": "2026-07-04T00:10Z",
-      "isHome": false,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Coors Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "gsv-401857039",
-      "teamId": "gsv",
-      "dateISO": "2026-07-04T17:00Z",
-      "isHome": false,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "Gateway Center",
-      "broadcasts": [
-        "CBS",
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "wc26-760502",
-      "teamId": "wc26",
-      "dateISO": "2026-07-04T17:00Z",
-      "homeShort": "Canada",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "awayShort": "Morocco",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "note": null,
-      "venue": "NRG Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760503",
-      "teamId": "wc26",
-      "dateISO": "2026-07-04T21:00Z",
-      "homeShort": "Paraguay",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "awayShort": "France",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "note": null,
-      "venue": "Lincoln Financial Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "atl-401816018",
       "teamId": "atl",
@@ -3908,6 +3849,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "sjs-401891823",
+      "teamId": "sjs",
+      "dateISO": "2026-10-02T02:00Z",
+      "isHome": true,
+      "opponentShort": "Panthers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
     }
   ],
   "errors": []
