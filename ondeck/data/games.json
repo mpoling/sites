@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T14:33:15.066Z",
+  "generatedAt": "2026-07-20T15:18:47.019Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,116 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816018",
-      "teamId": "atl",
-      "dateISO": "2026-07-05T00:08Z",
-      "isHome": true,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FOX"
-      ]
-    },
-    {
-      "id": "sfg-401816024",
-      "teamId": "sfg",
-      "dateISO": "2026-07-05T00:10Z",
-      "isHome": false,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Coors Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "mbfc-401841972",
-      "teamId": "mbfc",
-      "dateISO": "2026-07-05T01:00Z",
-      "isHome": false,
-      "opponentShort": "San Antonio ",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18265.png",
-      "venue": "Toyota Field",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "bay-fc-401854062",
-      "teamId": "bay-fc",
-      "dateISO": "2026-07-05T16:00Z",
-      "isHome": false,
-      "opponentShort": "Boston",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131562.png",
-      "venue": "Centreville Bank Stadium",
-      "broadcasts": [
-        "ESPN",
-        "ESPN Unlmtd"
-      ]
-    },
-    {
-      "id": "atl-401816033",
-      "teamId": "atl",
-      "dateISO": "2026-07-05T16:30Z",
-      "isHome": true,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "NBC",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "sfg-401816039",
-      "teamId": "sfg",
-      "dateISO": "2026-07-05T20:00Z",
-      "isHome": false,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Coors Field",
-      "broadcasts": [
-        "Peacock",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "wc26-760504",
-      "teamId": "wc26",
-      "dateISO": "2026-07-05T20:00Z",
-      "homeShort": "Brazil",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "awayShort": "Norway",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "note": null,
-      "venue": "MetLife Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760505",
-      "teamId": "wc26",
-      "dateISO": "2026-07-06T01:00Z",
-      "homeShort": "Mexico",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "awayShort": "England",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "note": null,
-      "venue": "Estadio Banorte",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "wc26-760506",
       "teamId": "wc26",
@@ -3859,6 +3749,28 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885662",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-03T18:00Z",
+      "isHome": false,
+      "opponentShort": "Fleury",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21637.png",
+      "venue": "Stade Robert Bobin",
+      "broadcasts": []
+    },
+    {
+      "id": "bay-fc-401854018",
+      "teamId": "bay-fc",
+      "dateISO": "2026-10-03T22:30Z",
+      "isHome": false,
+      "opponentShort": "Kansas City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20907.png",
+      "venue": "CPKC Stadium",
+      "broadcasts": [
+        "ION"
+      ]
     }
   ],
   "errors": []
