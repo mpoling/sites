@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T15:18:47.019Z",
+  "generatedAt": "2026-07-21T15:12:31.910Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,65 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "wc26-760506",
-      "teamId": "wc26",
-      "dateISO": "2026-07-06T19:00Z",
-      "homeShort": "Portugal",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "awayShort": "Spain",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "note": null,
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "atl-401816047",
-      "teamId": "atl",
-      "dateISO": "2026-07-06T23:15Z",
-      "isHome": true,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "SNY"
-      ]
-    },
-    {
-      "id": "gsv-401857043",
-      "teamId": "gsv",
-      "dateISO": "2026-07-06T23:30Z",
-      "isHome": false,
-      "opponentShort": "Mystics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
-      "venue": "CareFirst Arena",
-      "broadcasts": [
-        "WNBA League Pass",
-        "MNMT"
-      ]
-    },
-    {
-      "id": "wc26-760507",
-      "teamId": "wc26",
-      "dateISO": "2026-07-07T00:00Z",
-      "homeShort": "USA",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "awayShort": "Belgium",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "note": null,
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "sfg-401816052",
       "teamId": "sfg",
@@ -1268,12 +1209,13 @@
     {
       "id": "atl-401816325",
       "teamId": "atl",
-      "dateISO": "2026-07-30T23:15Z",
+      "dateISO": "2026-07-30T23:00Z",
       "isHome": true,
       "opponentShort": "Nationals",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
       "venue": "Truist Park",
       "broadcasts": [
+        "ESPN",
         "MLB.TV"
       ]
     },
@@ -1434,6 +1376,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "KPIX+",
         "TSN"
       ]
@@ -1488,6 +1431,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
       "venue": "Chase Center",
       "broadcasts": [
+        "WNBA League Pass",
         "TSN"
       ]
     },
@@ -3770,6 +3714,38 @@
       "venue": "CPKC Stadium",
       "broadcasts": [
         "ION"
+      ]
+    },
+    {
+      "id": "sjs-401892441",
+      "teamId": "sjs",
+      "dateISO": "2026-10-04T02:00Z",
+      "isHome": true,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842264",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-04T02:00Z",
+      "isHome": false,
+      "opponentShort": "Orange County",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
+      "venue": "Championship Soccer Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "sf49-401872975",
+      "teamId": "sf49",
+      "dateISO": "2026-10-04T20:25Z",
+      "isHome": true,
+      "opponentShort": "Broncos",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "CBS"
       ]
     }
   ],
