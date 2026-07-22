@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T15:12:31.910Z",
+  "generatedAt": "2026-07-22T15:10:38.457Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,67 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816052",
-      "teamId": "sfg",
-      "dateISO": "2026-07-07T01:45Z",
-      "isHome": true,
-      "opponentShort": "Blue Jays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Sportsnet",
-        "TVA"
-      ]
-    },
-    {
-      "id": "wc26-760509",
-      "teamId": "wc26",
-      "dateISO": "2026-07-07T16:00Z",
-      "homeShort": "Argentina",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "awayShort": "Egypt",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "note": null,
-      "venue": "Mercedes-Benz Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "wc26-760508",
-      "teamId": "wc26",
-      "dateISO": "2026-07-07T20:00Z",
-      "homeShort": "Switzerland",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "awayShort": "Colombia",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "note": "Switzerland advance 4-3 on penalties",
-      "venue": "BC Place",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "atl-401816054",
-      "teamId": "atl",
-      "dateISO": "2026-07-07T22:40Z",
-      "isHome": false,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "PNC Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media"
-      ]
-    },
     {
       "id": "sfg-401816067",
       "teamId": "sfg",
