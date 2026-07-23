@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T15:10:38.457Z",
+  "generatedAt": "2026-07-23T15:19:35.581Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,63 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816067",
-      "teamId": "sfg",
-      "dateISO": "2026-07-08T01:45Z",
-      "isHome": true,
-      "opponentShort": "Blue Jays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Sportsnet",
-        "TVA"
-      ]
-    },
-    {
-      "id": "sfg-401816082",
-      "teamId": "sfg",
-      "dateISO": "2026-07-08T19:45Z",
-      "isHome": true,
-      "opponentShort": "Blue Jays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "Sportsnet"
-      ]
-    },
-    {
-      "id": "atl-401816069",
-      "teamId": "atl",
-      "dateISO": "2026-07-08T22:40Z",
-      "isHome": false,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "PNC Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "gsv-401857048",
-      "teamId": "gsv",
-      "dateISO": "2026-07-08T23:00Z",
-      "isHome": false,
-      "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
-      "venue": "Coca-Cola Coliseum",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "TSN"
-      ]
-    },
     {
       "id": "atl-401816084",
       "teamId": "atl",
@@ -1154,8 +1097,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
       "venue": "Truist Park",
       "broadcasts": [
-        "ESPN",
-        "MLB.TV"
+        "ESPN"
       ]
     },
     {
@@ -1383,6 +1325,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
       "venue": "Globe Life Field",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "NBC Sports BA",
         "Rangers Sports Network"
@@ -1449,6 +1392,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
       "venue": "Yankee Stadium",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "BravesVision",
         "YES"
@@ -1553,6 +1497,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
       "venue": "Oracle Park",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "NBC Sports BA",
         "Tigers.TV"
@@ -1905,6 +1850,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
       "venue": "Target Field",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "Twins.TV",
         "BravesVision"
@@ -1986,6 +1932,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
       "venue": "Rate Field",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "CHSN",
         "BravesVision"
@@ -2012,6 +1959,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
       "venue": "American Family Field",
       "broadcasts": [
+        "ESPN Unlmtd",
         "MLB.TV",
         "BravesVision",
         "Brewers.TV"
@@ -3686,6 +3634,16 @@
       "broadcasts": [
         "CBS"
       ]
+    },
+    {
+      "id": "sjs-401892448",
+      "teamId": "sjs",
+      "dateISO": "2026-10-06T00:00Z",
+      "isHome": false,
+      "opponentShort": "Stars",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+      "venue": "American Airlines Center",
+      "broadcasts": []
     }
   ],
   "errors": []
