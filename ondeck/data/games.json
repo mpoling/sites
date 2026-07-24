@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T15:19:35.581Z",
+  "generatedAt": "2026-07-24T15:03:07.832Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,35 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816084",
-      "teamId": "atl",
-      "dateISO": "2026-07-09T16:35Z",
-      "isHome": false,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "PNC Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "wc26-760510",
-      "teamId": "wc26",
-      "dateISO": "2026-07-09T20:00Z",
-      "homeShort": "France",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "Morocco",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "note": null,
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "sfg-401816095",
       "teamId": "sfg",
@@ -3643,6 +3614,16 @@
       "opponentShort": "Stars",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "venue": "American Airlines Center",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401898390",
+      "teamId": "gsw",
+      "dateISO": "2026-10-07T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "venue": "Chase Center",
       "broadcasts": []
     }
   ],
