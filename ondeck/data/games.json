@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T15:03:07.832Z",
+  "generatedAt": "2026-07-25T14:40:53.617Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,49 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816095",
-      "teamId": "sfg",
-      "dateISO": "2026-07-10T01:45Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "wc26-760511",
-      "teamId": "wc26",
-      "dateISO": "2026-07-10T19:00Z",
-      "homeShort": "Spain",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "awayShort": "Belgium",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "note": null,
-      "venue": "SoFi Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "gsv-401857054",
-      "teamId": "gsv",
-      "dateISO": "2026-07-10T23:30Z",
-      "isHome": false,
-      "opponentShort": "Sun",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
-      "venue": "Mohegan Sun Arena",
-      "broadcasts": [
-        "ION",
-        "WNBA League Pass"
-      ]
-    },
     {
       "id": "bay-fc-401853935",
       "teamId": "bay-fc",
