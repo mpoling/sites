@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T14:40:53.617Z",
+  "generatedAt": "2026-07-26T14:42:24.040Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,106 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "bay-fc-401853935",
-      "teamId": "bay-fc",
-      "dateISO": "2026-07-11T00:00Z",
-      "isHome": false,
-      "opponentShort": "Louisville",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20905.png",
-      "venue": "Lynn Family Stadium",
-      "broadcasts": [
-        "NWSL+"
-      ]
-    },
-    {
-      "id": "atl-401816106",
-      "teamId": "atl",
-      "dateISO": "2026-07-11T00:15Z",
-      "isHome": false,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Busch Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sfg-401816109",
-      "teamId": "sfg",
-      "dateISO": "2026-07-11T02:15Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816124",
-      "teamId": "sfg",
-      "dateISO": "2026-07-11T20:05Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "wc26-760512",
-      "teamId": "wc26",
-      "dateISO": "2026-07-11T21:00Z",
-      "homeShort": "Norway",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "awayShort": "England",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "note": null,
-      "venue": "Hard Rock Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "atl-401816121",
-      "teamId": "atl",
-      "dateISO": "2026-07-11T23:15Z",
-      "isHome": false,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Busch Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Cardinals.TV"
-      ]
-    },
-    {
-      "id": "wc26-760513",
-      "teamId": "wc26",
-      "dateISO": "2026-07-12T01:00Z",
-      "homeShort": "Argentina",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "awayShort": "Switzerland",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "note": null,
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "atl-401816136",
       "teamId": "atl",
@@ -3581,6 +3481,26 @@
       "opponentShort": "Lakers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401891825",
+      "teamId": "sjs",
+      "dateISO": "2026-10-09T00:00Z",
+      "isHome": false,
+      "opponentShort": "Blues",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+      "venue": "Enterprise Center",
+      "broadcasts": []
+    },
+    {
+      "id": "engw-401878170",
+      "teamId": "engw",
+      "dateISO": "2026-10-09T18:00Z",
+      "isHome": false,
+      "opponentShort": "Greece",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+      "venue": null,
       "broadcasts": []
     }
   ],
