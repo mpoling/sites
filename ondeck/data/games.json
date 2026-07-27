@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T14:42:24.040Z",
+  "generatedAt": "2026-07-27T15:49:06.880Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,34 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816136",
-      "teamId": "atl",
-      "dateISO": "2026-07-12T18:15Z",
-      "isHome": false,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Busch Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Cardinals.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816139",
-      "teamId": "sfg",
-      "dateISO": "2026-07-12T20:05Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
     {
       "id": "wc26-760514",
       "teamId": "wc26",
@@ -3502,6 +3474,54 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
       "venue": null,
       "broadcasts": []
+    },
+    {
+      "id": "gt-fb-401858255",
+      "teamId": "gt-fb",
+      "dateISO": "2026-10-10T04:00Z",
+      "isHome": true,
+      "opponentShort": "Duke",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
+      "venue": "Bobby Dodd Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "uswnt-401890785",
+      "teamId": "uswnt",
+      "dateISO": "2026-10-10T18:30Z",
+      "isHome": true,
+      "opponentShort": "Spain",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "venue": "Audi Field",
+      "broadcasts": [
+        "TBS",
+        "Tele",
+        "Universo",
+        "HBO Max",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "sjs-401892471",
+      "teamId": "sjs",
+      "dateISO": "2026-10-10T20:00Z",
+      "isHome": true,
+      "opponentShort": "Oilers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761847",
+      "teamId": "mia",
+      "dateISO": "2026-10-10T23:30Z",
+      "isHome": true,
+      "opponentShort": "D.C. United",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     }
   ],
   "errors": []
