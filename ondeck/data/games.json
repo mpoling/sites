@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T15:49:06.880Z",
+  "generatedAt": "2026-07-28T15:28:53.098Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -1071,7 +1071,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
       "venue": "Globe Life Field",
       "broadcasts": [
-        "MLB.TV"
+        "ESPN"
       ]
     },
     {
@@ -1207,7 +1207,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
       "venue": "American Airlines Center",
       "broadcasts": [
-        "ION"
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
@@ -3521,6 +3522,62 @@
       "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsw-401898399",
+      "teamId": "gsw",
+      "dateISO": "2026-10-11T00:30Z",
+      "isHome": true,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842281",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-11T01:00Z",
+      "isHome": false,
+      "opponentShort": "New Mexico",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19408.png",
+      "venue": "Isotopes Park",
+      "broadcasts": []
+    },
+    {
+      "id": "sje-761857",
+      "teamId": "sje",
+      "dateISO": "2026-10-11T01:30Z",
+      "isHome": false,
+      "opponentShort": "Colorado",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+      "venue": "Dick's Sporting Goods Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "juv-401874764",
+      "teamId": "juv",
+      "dateISO": "2026-10-11T18:00Z",
+      "isHome": false,
+      "opponentShort": "Cagliari",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+      "venue": "Unipol Domus",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "sf49-401872992",
+      "teamId": "sf49",
+      "dateISO": "2026-10-11T20:25Z",
+      "isHome": false,
+      "opponentShort": "Seahawks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "FOX"
       ]
     }
   ],
