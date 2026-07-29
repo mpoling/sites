@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T15:28:53.098Z",
+  "generatedAt": "2026-07-29T15:32:53.867Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,22 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "wc26-760514",
-      "teamId": "wc26",
-      "dateISO": "2026-07-14T19:00Z",
-      "homeShort": "France",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "Spain",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "note": null,
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "wc26-760515",
       "teamId": "wc26",
@@ -861,6 +845,21 @@
       ]
     },
     {
+      "id": "atl-401902545",
+      "teamId": "atl",
+      "dateISO": "2026-07-29T23:10Z",
+      "isHome": false,
+      "opponentShort": "Mets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
+      "venue": "Citi Field",
+      "broadcasts": [
+        "MLB.TV",
+        "SNY",
+        "BravesVision",
+        "Gray Media"
+      ]
+    },
+    {
       "id": "gsv-401857098",
       "teamId": "gsv",
       "dateISO": "2026-07-30T02:00Z",
@@ -1065,7 +1064,7 @@
     {
       "id": "sfg-401816381",
       "teamId": "sfg",
-      "dateISO": "2026-08-04T00:05Z",
+      "dateISO": "2026-08-04T00:00Z",
       "isHome": false,
       "opponentShort": "Rangers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
