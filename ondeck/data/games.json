@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T15:32:53.867Z",
+  "generatedAt": "2026-07-30T15:19:41.250Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,22 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "wc26-760515",
-      "teamId": "wc26",
-      "dateISO": "2026-07-15T19:00Z",
-      "homeShort": "England",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "awayShort": "Argentina",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "note": null,
-      "venue": "Mercedes-Benz Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "gsv-401857070",
       "teamId": "gsv",
@@ -3577,6 +3561,41 @@
       "venue": "Lumen Field",
       "broadcasts": [
         "FOX"
+      ]
+    },
+    {
+      "id": "gsw-401898718",
+      "teamId": "gsw",
+      "dateISO": "2026-10-13T04:00Z",
+      "isHome": false,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "venue": "T-Mobile Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "engw-401878154",
+      "teamId": "engw",
+      "dateISO": "2026-10-13T18:00Z",
+      "isHome": true,
+      "opponentShort": "Greece",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+      "venue": null,
+      "broadcasts": []
+    },
+    {
+      "id": "uswnt-401890784",
+      "teamId": "uswnt",
+      "dateISO": "2026-10-13T23:00Z",
+      "isHome": true,
+      "opponentShort": "Spain",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "venue": "Subaru Park",
+      "broadcasts": [
+        "TNT",
+        "Universo",
+        "HBO Max",
+        "Peacock"
       ]
     }
   ],
