@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T15:19:41.250Z",
+  "generatedAt": "2026-07-31T15:26:03.090Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,19 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857070",
-      "teamId": "gsv",
-      "dateISO": "2026-07-16T00:00Z",
-      "isHome": false,
-      "opponentShort": "Fever",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
-      "venue": "Gainbridge Fieldhouse",
-      "broadcasts": [
-        "USA Net",
-        "WTHR Channel 13"
-      ]
-    },
     {
       "id": "atl-401816146",
       "teamId": "atl",
@@ -916,7 +903,7 @@
     {
       "id": "sfg-401816346",
       "teamId": "sfg",
-      "dateISO": "2026-08-01T01:40Z",
+      "dateISO": "2026-08-01T01:45Z",
       "isHome": false,
       "opponentShort": "Padres",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
@@ -1309,7 +1296,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15360.png",
       "venue": "Northwestern Medicine Field at Martin Stadium",
       "broadcasts": [
-        "Victory+"
+        "NWSL+"
       ]
     },
     {
@@ -1459,7 +1446,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19141.png",
       "venue": "America First Field",
       "broadcasts": [
-        "Victory+"
+        "NWSL+"
       ]
     },
     {
@@ -2170,8 +2157,7 @@
       "venue": "Audi Field",
       "broadcasts": [
         "ESPN2",
-        "ESPN Deportes",
-        "ESPN Unlmtd"
+        "ESPN Deportes"
       ]
     },
     {
@@ -2842,7 +2828,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131563.png",
       "venue": "Centennial Stadium",
       "broadcasts": [
-        "Victory+"
+        "NWSL+"
       ]
     },
     {
@@ -3056,7 +3042,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20905.png",
       "venue": "PayPal Park",
       "broadcasts": [
-        "Victory+"
+        "NWSL+"
       ]
     },
     {
@@ -3596,6 +3582,28 @@
         "Universo",
         "HBO Max",
         "Peacock"
+      ]
+    },
+    {
+      "id": "sjs-401892503",
+      "teamId": "sjs",
+      "dateISO": "2026-10-14T03:00Z",
+      "isHome": true,
+      "opponentShort": "Bruins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761861",
+      "teamId": "mia",
+      "dateISO": "2026-10-14T23:30Z",
+      "isHome": true,
+      "opponentShort": "NYCFC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
       ]
     }
   ],
