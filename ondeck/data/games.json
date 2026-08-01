@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T15:26:03.090Z",
+  "generatedAt": "2026-08-01T14:38:53.253Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,21 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816146",
-      "teamId": "atl",
-      "dateISO": "2026-07-17T23:15Z",
-      "isHome": true,
-      "opponentShort": "Rangers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "BravesVision",
-        "CW33"
-      ]
-    },
     {
       "id": "sfg-401816153",
       "teamId": "sfg",
@@ -3602,6 +3587,18 @@
       "opponentShort": "NYCFC",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
       "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761870",
+      "teamId": "sje",
+      "dateISO": "2026-10-15T01:30Z",
+      "isHome": false,
+      "opponentShort": "Salt Lake",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+      "venue": "America First Field",
       "broadcasts": [
         "Apple TV"
       ]
