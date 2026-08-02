@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T14:38:53.253Z",
+  "generatedAt": "2026-08-02T14:41:07.501Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,64 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816153",
-      "teamId": "sfg",
-      "dateISO": "2026-07-18T02:10Z",
-      "isHome": false,
-      "opponentShort": "Mariners",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "venue": "T-Mobile Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Mariners.TV",
-        "KING 5"
-      ]
-    },
-    {
-      "id": "bay-fc-401853943",
-      "teamId": "bay-fc",
-      "dateISO": "2026-07-18T20:00Z",
-      "isHome": true,
-      "opponentShort": "North Carolina",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15366.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "CBS",
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "atl-401816161",
-      "teamId": "atl",
-      "dateISO": "2026-07-18T20:10Z",
-      "isHome": true,
-      "opponentShort": "Rangers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Rangers Sports Network"
-      ]
-    },
-    {
-      "id": "wc26-760516",
-      "teamId": "wc26",
-      "dateISO": "2026-07-18T21:00Z",
-      "homeShort": "France",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "awayShort": "England",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "note": null,
-      "venue": "Hard Rock Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
     {
       "id": "sfg-401816168",
       "teamId": "sfg",
@@ -924,21 +866,9 @@
       ]
     },
     {
-      "id": "sje-761700",
-      "teamId": "sje",
-      "dateISO": "2026-08-01T23:30Z",
-      "isHome": false,
-      "opponentShort": "Cincinnati",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
-      "venue": "TQL Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
       "id": "mia-761701",
       "teamId": "mia",
-      "dateISO": "2026-08-01T23:30Z",
+      "dateISO": "2026-08-02T00:10Z",
       "isHome": true,
       "opponentShort": "Columbus",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
@@ -976,6 +906,18 @@
       ]
     },
     {
+      "id": "sje-761700",
+      "teamId": "sje",
+      "dateISO": "2026-08-02T01:46Z",
+      "isHome": false,
+      "opponentShort": "Cincinnati",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+      "venue": "TQL Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
       "id": "atl-401816368",
       "teamId": "atl",
       "dateISO": "2026-08-02T17:35Z",
@@ -1009,7 +951,7 @@
       "dateISO": "2026-08-03T00:30Z",
       "isHome": true,
       "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/tor.png",
       "venue": "Chase Center",
       "broadcasts": [
         "WNBA League Pass",
@@ -1064,7 +1006,7 @@
       "dateISO": "2026-08-05T02:00Z",
       "isHome": true,
       "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/tor.png",
       "venue": "Chase Center",
       "broadcasts": [
         "WNBA League Pass",
@@ -3602,6 +3544,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "sjs-401892513",
+      "teamId": "sjs",
+      "dateISO": "2026-10-16T00:00Z",
+      "isHome": false,
+      "opponentShort": "Predators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
+      "venue": "Bridgestone Arena",
+      "broadcasts": []
     }
   ],
   "errors": []
