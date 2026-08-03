@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T14:41:07.501Z",
+  "generatedAt": "2026-08-03T15:49:44.643Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,88 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816168",
-      "teamId": "sfg",
-      "dateISO": "2026-07-19T00:08Z",
-      "isHome": false,
-      "opponentShort": "Mariners",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "venue": "T-Mobile Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FOX"
-      ]
-    },
-    {
-      "id": "gsv-401857079",
-      "teamId": "gsv",
-      "dateISO": "2026-07-19T00:30Z",
-      "isHome": true,
-      "opponentShort": "Mystics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "MNMT",
-        "KPIX+"
-      ]
-    },
-    {
-      "id": "mbfc-401841997",
-      "teamId": "mbfc",
-      "dateISO": "2026-07-19T02:30Z",
-      "isHome": false,
-      "opponentShort": "Phoenix",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17850.png",
-      "venue": "Phoenix Rising Stadium at 38th St/Washington",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401816176",
-      "teamId": "atl",
-      "dateISO": "2026-07-19T17:35Z",
-      "isHome": true,
-      "opponentShort": "Rangers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Rangers Sports Network"
-      ]
-    },
-    {
-      "id": "wc26-760517",
-      "teamId": "wc26",
-      "dateISO": "2026-07-19T19:00Z",
-      "homeShort": "Spain",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "awayShort": "Argentina",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "note": null,
-      "venue": "MetLife Stadium",
-      "broadcasts": [
-        "FOX",
-        "Tele",
-        "FOX One"
-      ]
-    },
-    {
-      "id": "sfg-401816183",
-      "teamId": "sfg",
-      "dateISO": "2026-07-19T20:10Z",
-      "isHome": false,
-      "opponentShort": "Mariners",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "venue": "T-Mobile Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "Mariners.TV"
-      ]
-    },
     {
       "id": "atl-401816190",
       "teamId": "atl",
@@ -951,7 +869,7 @@
       "dateISO": "2026-08-03T00:30Z",
       "isHome": true,
       "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/tor.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
       "venue": "Chase Center",
       "broadcasts": [
         "WNBA League Pass",
@@ -1006,7 +924,7 @@
       "dateISO": "2026-08-05T02:00Z",
       "isHome": true,
       "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/tor.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
       "venue": "Chase Center",
       "broadcasts": [
         "WNBA League Pass",
@@ -1773,8 +1691,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
       "venue": "Fenway Park",
       "broadcasts": [
-        "NBC",
-        "Peacock"
+        "NBC"
       ]
     },
     {
@@ -1839,7 +1756,7 @@
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
-        "Sportsnet LA",
+        "SportsNet LA",
         "BravesVision",
         "Gray Media",
         "TBS"
@@ -1896,7 +1813,7 @@
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
-        "Sportsnet LA",
+        "SportsNet LA",
         "BravesVision",
         "MLB Net"
       ]
@@ -1912,7 +1829,7 @@
       "broadcasts": [
         "MLB.TV",
         "FS1",
-        "Sportsnet LA",
+        "SportsNet LA",
         "BravesVision"
       ]
     },
@@ -2368,8 +2285,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
       "venue": "Citizens Bank Park",
       "broadcasts": [
-        "NBC",
-        "Peacock"
+        "NBC"
       ]
     },
     {
@@ -2797,7 +2713,7 @@
         "MLB.TV",
         "NBC Sports BA",
         "KNTV",
-        "Sportsnet LA"
+        "SportsNet LA"
       ]
     },
     {
@@ -2882,7 +2798,7 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "Sportsnet LA"
+        "SportsNet LA"
       ]
     },
     {
@@ -2933,7 +2849,7 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "Sportsnet LA"
+        "SportsNet LA"
       ]
     },
     {
@@ -3128,7 +3044,7 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "Sportsnet LA"
+        "SportsNet LA"
       ]
     },
     {
@@ -3142,7 +3058,7 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "Sportsnet LA"
+        "SportsNet LA"
       ]
     },
     {
@@ -3214,7 +3130,7 @@
       "broadcasts": [
         "MLB.TV",
         "NBC Sports BA",
-        "Sportsnet LA"
+        "SportsNet LA"
       ]
     },
     {
@@ -3554,6 +3470,70 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
       "venue": "Bridgestone Arena",
       "broadcasts": []
+    },
+    {
+      "id": "gsw-401898409",
+      "teamId": "gsw",
+      "dateISO": "2026-10-17T02:00Z",
+      "isHome": true,
+      "opponentShort": "Trail Blazers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "gt-fb-401858264",
+      "teamId": "gt-fb",
+      "dateISO": "2026-10-17T04:00Z",
+      "isHome": false,
+      "opponentShort": "Virginia Tech",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
+      "venue": "Lane Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885657",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-17T18:00Z",
+      "isHome": true,
+      "opponentShort": "Lyonnes",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
+      "venue": "Campus PSG",
+      "broadcasts": []
+    },
+    {
+      "id": "juv-401874765",
+      "teamId": "juv",
+      "dateISO": "2026-10-17T18:00Z",
+      "isHome": true,
+      "opponentShort": "Lazio",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "sjs-401892525",
+      "teamId": "sjs",
+      "dateISO": "2026-10-17T23:00Z",
+      "isHome": false,
+      "opponentShort": "Red Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/det.png",
+      "venue": "Little Caesars Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761880",
+      "teamId": "mia",
+      "dateISO": "2026-10-17T23:30Z",
+      "isHome": false,
+      "opponentShort": "Atlanta",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     }
   ],
   "errors": []
