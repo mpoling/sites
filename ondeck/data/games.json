@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T15:49:44.643Z",
+  "generatedAt": "2026-08-04T15:31:39.831Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,35 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816190",
-      "teamId": "atl",
-      "dateISO": "2026-07-20T23:15Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Padres.TV",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "sfg-401816196",
-      "teamId": "sfg",
-      "dateISO": "2026-07-20T23:40Z",
-      "isHome": false,
-      "opponentShort": "Royals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/kc.png",
-      "venue": "Kauffman Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Royals.TV"
-      ]
-    },
     {
       "id": "gsv-401857084",
       "teamId": "gsv",
@@ -3533,6 +3504,41 @@
       "venue": "Mercedes-Benz Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "mbfc-401842294",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-18T02:00Z",
+      "isHome": true,
+      "opponentShort": "Switchbacks FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17830.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "sje-761886",
+      "teamId": "sje",
+      "dateISO": "2026-10-18T02:30Z",
+      "isHome": true,
+      "opponentShort": "Nashville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401854025",
+      "teamId": "bay-fc",
+      "dateISO": "2026-10-18T21:00Z",
+      "isHome": true,
+      "opponentShort": "Portland",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15362.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "ESPN",
+        "ESPN Deportes"
       ]
     }
   ],
