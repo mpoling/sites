@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T15:31:39.831Z",
+  "generatedAt": "2026-08-05T15:24:52.086Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,48 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857084",
-      "teamId": "gsv",
-      "dateISO": "2026-07-21T02:00Z",
-      "isHome": true,
-      "opponentShort": "Mystics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "MNMT"
-      ]
-    },
-    {
-      "id": "atl-401816205",
-      "teamId": "atl",
-      "dateISO": "2026-07-21T23:15Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "Padres.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816211",
-      "teamId": "sfg",
-      "dateISO": "2026-07-21T23:40Z",
-      "isHome": false,
-      "opponentShort": "Royals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/kc.png",
-      "venue": "Kauffman Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Royals.TV"
-      ]
-    },
     {
       "id": "sfg-401816226",
       "teamId": "sfg",
@@ -3540,6 +3498,16 @@
         "ESPN",
         "ESPN Deportes"
       ]
+    },
+    {
+      "id": "sjs-401892537",
+      "teamId": "sjs",
+      "dateISO": "2026-10-19T23:30Z",
+      "isHome": false,
+      "opponentShort": "Maple Leafs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/tor.png",
+      "venue": "Scotiabank Arena",
+      "broadcasts": []
     }
   ],
   "errors": []
