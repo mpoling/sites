@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T15:23:46.309Z",
+  "generatedAt": "2026-08-07T14:16:33.967Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,32 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761676",
-      "teamId": "sje",
-      "dateISO": "2026-07-23T02:30Z",
-      "isHome": true,
-      "opponentShort": "Orlando",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "atl-401816233",
-      "teamId": "atl",
-      "dateISO": "2026-07-23T16:15Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Padres.TV"
-      ]
-    },
     {
       "id": "atl-401816236",
       "teamId": "atl",
