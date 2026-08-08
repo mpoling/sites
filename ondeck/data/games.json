@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T14:16:33.967Z",
+  "generatedAt": "2026-08-08T13:52:00.384Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,20 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816236",
-      "teamId": "atl",
-      "dateISO": "2026-07-24T23:05Z",
-      "isHome": false,
-      "opponentShort": "Orioles",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bal.png",
-      "venue": "Oriole Park at Camden Yards",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "MASN"
-      ]
-    },
     {
       "id": "bay-fc-401853948",
       "teamId": "bay-fc",
@@ -3464,6 +3450,16 @@
       "opponentShort": "Canadiens",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
       "venue": "Bell Centre",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892554",
+      "teamId": "sjs",
+      "dateISO": "2026-10-22T23:00Z",
+      "isHome": false,
+      "opponentShort": "Senators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
+      "venue": "Canadian Tire Centre",
       "broadcasts": []
     }
   ],
