@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T13:52:00.384Z",
+  "generatedAt": "2026-08-09T13:54:39.959Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,74 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "bay-fc-401853948",
-      "teamId": "bay-fc",
-      "dateISO": "2026-07-25T00:00Z",
-      "isHome": false,
-      "opponentShort": "Houston",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17346.png",
-      "venue": "Shell Energy Stadium",
-      "broadcasts": [
-        "Victory+"
-      ]
-    },
-    {
-      "id": "sfg-401816249",
-      "teamId": "sfg",
-      "dateISO": "2026-07-25T02:15Z",
-      "isHome": true,
-      "opponentShort": "Angels",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "Angels.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816264",
-      "teamId": "sfg",
-      "dateISO": "2026-07-25T20:05Z",
-      "isHome": true,
-      "opponentShort": "Angels",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Angels.TV"
-      ]
-    },
-    {
-      "id": "atl-401816251",
-      "teamId": "atl",
-      "dateISO": "2026-07-25T23:05Z",
-      "isHome": false,
-      "opponentShort": "Orioles",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bal.png",
-      "venue": "Oriole Park at Camden Yards",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "MASN"
-      ]
-    },
-    {
-      "id": "mia-761687",
-      "teamId": "mia",
-      "dateISO": "2026-07-25T23:30Z",
-      "isHome": false,
-      "opponentShort": "CF Montréal",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
-      "venue": "Stade Saputo",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "mbfc-401842029",
       "teamId": "mbfc",
