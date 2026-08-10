@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T13:54:39.959Z",
+  "generatedAt": "2026-08-10T14:22:44.772Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,58 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mbfc-401842029",
-      "teamId": "mbfc",
-      "dateISO": "2026-07-26T02:00Z",
-      "isHome": true,
-      "opponentShort": "Orange County",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "sje-761693",
-      "teamId": "sje",
-      "dateISO": "2026-07-26T02:30Z",
-      "isHome": true,
-      "opponentShort": "LA Galaxy",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
-      "venue": "Stanford Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "atl-401816266",
-      "teamId": "atl",
-      "dateISO": "2026-07-26T17:35Z",
-      "isHome": false,
-      "opponentShort": "Orioles",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bal.png",
-      "venue": "Oriole Park at Camden Yards",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "MASN"
-      ]
-    },
-    {
-      "id": "sfg-401816279",
-      "teamId": "sfg",
-      "dateISO": "2026-07-26T20:05Z",
-      "isHome": true,
-      "opponentShort": "Angels",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Angels.TV"
-      ]
-    },
     {
       "id": "atl-401816281",
       "teamId": "atl",
@@ -3392,6 +3340,48 @@
       "opponentShort": "Senators",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
       "venue": "Canadian Tire Centre",
+      "broadcasts": []
+    },
+    {
+      "id": "gt-fb-401858273",
+      "teamId": "gt-fb",
+      "dateISO": "2026-10-24T04:00Z",
+      "isHome": true,
+      "opponentShort": "Boston College",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
+      "venue": "Bobby Dodd Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885655",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-24T18:00Z",
+      "isHome": true,
+      "opponentShort": "Montpellier",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21638.png",
+      "venue": "Campus PSG",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761891",
+      "teamId": "mia",
+      "dateISO": "2026-10-24T21:30Z",
+      "isHome": false,
+      "opponentShort": "Red Bull NY",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
+      "venue": "Red Bull Arena",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sjs-401892568",
+      "teamId": "sjs",
+      "dateISO": "2026-10-24T23:00Z",
+      "isHome": false,
+      "opponentShort": "Bruins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
+      "venue": "TD Garden",
       "broadcasts": []
     }
   ],
