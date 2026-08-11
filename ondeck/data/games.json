@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T14:22:44.772Z",
+  "generatedAt": "2026-08-11T14:23:08.505Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,20 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816281",
-      "teamId": "atl",
-      "dateISO": "2026-07-27T23:10Z",
-      "isHome": false,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Citi Field",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "SNY"
-      ]
-    },
     {
       "id": "sfg-401816291",
       "teamId": "sfg",
@@ -1061,7 +1047,8 @@
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
-        "FOX"
+        "FOX",
+        "ERADM"
       ]
     },
     {
@@ -2176,9 +2163,7 @@
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "Padres.TV"
+        "Apple TV"
       ]
     },
     {
@@ -2440,9 +2425,7 @@
       "venue": "Dodger Stadium",
       "broadcasts": [
         "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "SportsNet LA"
+        "Apple TV"
       ]
     },
     {
@@ -3333,6 +3316,18 @@
       "broadcasts": []
     },
     {
+      "id": "gsw-401909092",
+      "teamId": "gsw",
+      "dateISO": "2026-10-22T02:00Z",
+      "isHome": false,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "venue": "crypto.com Arena",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
       "id": "sjs-401892554",
       "teamId": "sjs",
       "dateISO": "2026-10-22T23:00Z",
@@ -3383,6 +3378,64 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
       "venue": "TD Garden",
       "broadcasts": []
+    },
+    {
+      "id": "sje-761900",
+      "teamId": "sje",
+      "dateISO": "2026-10-25T00:30Z",
+      "isHome": false,
+      "opponentShort": "Dallas",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+      "venue": "Toyota Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401854030",
+      "teamId": "bay-fc",
+      "dateISO": "2026-10-25T00:45Z",
+      "isHome": false,
+      "opponentShort": "Angel City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21422.png",
+      "venue": "BMO Stadium",
+      "broadcasts": [
+        "ION"
+      ]
+    },
+    {
+      "id": "mbfc-401842306",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-25T02:00Z",
+      "isHome": true,
+      "opponentShort": "Las Vegas",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18987.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "sf49-401873017",
+      "teamId": "sf49",
+      "dateISO": "2026-10-25T17:00Z",
+      "isHome": false,
+      "opponentShort": "Falcons",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
+    },
+    {
+      "id": "juv-401874772",
+      "teamId": "juv",
+      "dateISO": "2026-10-25T18:00Z",
+      "isHome": false,
+      "opponentShort": "Lecce",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+      "venue": "Via Del Mare",
+      "broadcasts": [
+        "Paramount+"
+      ]
     }
   ],
   "errors": []
