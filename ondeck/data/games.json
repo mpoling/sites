@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T14:23:08.505Z",
+  "generatedAt": "2026-08-12T14:23:15.622Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,35 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816291",
-      "teamId": "sfg",
-      "dateISO": "2026-07-28T01:45Z",
-      "isHome": true,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Brewers.TV"
-      ]
-    },
-    {
-      "id": "atl-401816293",
-      "teamId": "atl",
-      "dateISO": "2026-07-28T23:10Z",
-      "isHome": false,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Citi Field",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "SNY",
-        "Gray Media"
-      ]
-    },
     {
       "id": "sfg-401816305",
       "teamId": "sfg",
@@ -1320,7 +1291,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
       "venue": "Wintrust Arena",
       "broadcasts": [
-        "ION"
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
