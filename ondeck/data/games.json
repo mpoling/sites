@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T14:24:55.207Z",
+  "generatedAt": "2026-08-14T14:18:19.998Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,46 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857098",
-      "teamId": "gsv",
-      "dateISO": "2026-07-30T02:00Z",
-      "isHome": false,
-      "opponentShort": "Mercury",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-      "venue": "Mortgage Matchup Center",
-      "broadcasts": [
-        "USA Net",
-        "CNBC",
-        "KPIX+",
-        "AZ Family Sports Net",
-        "Merc+"
-      ]
-    },
-    {
-      "id": "bay-fc-401853955",
-      "teamId": "bay-fc",
-      "dateISO": "2026-07-30T02:00Z",
-      "isHome": true,
-      "opponentShort": "Gotham",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15364.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "CBSSN"
-      ]
-    },
-    {
-      "id": "atl-401816325",
-      "teamId": "atl",
-      "dateISO": "2026-07-30T23:00Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
     {
       "id": "sfg-401816331",
       "teamId": "sfg",
@@ -3253,6 +3213,16 @@
       "broadcasts": []
     },
     {
+      "id": "gsw-401909850",
+      "teamId": "gsw",
+      "dateISO": "2026-10-24T02:00Z",
+      "isHome": true,
+      "opponentShort": "Grizzlies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
       "id": "gt-fb-401858273",
       "teamId": "gt-fb",
       "dateISO": "2026-10-24T04:00Z",
@@ -3319,6 +3289,16 @@
       ]
     },
     {
+      "id": "gsw-401909860",
+      "teamId": "gsw",
+      "dateISO": "2026-10-25T02:00Z",
+      "isHome": false,
+      "opponentShort": "Suns",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "venue": "Mortgage Matchup Center",
+      "broadcasts": []
+    },
+    {
       "id": "mbfc-401842306",
       "teamId": "mbfc",
       "dateISO": "2026-10-25T02:00Z",
@@ -3350,6 +3330,52 @@
       "venue": "Via Del Mare",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401909876",
+      "teamId": "gsw",
+      "dateISO": "2026-10-27T02:00Z",
+      "isHome": false,
+      "opponentShort": "Nuggets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+      "venue": "Ball Arena",
+      "broadcasts": [
+        "NBCSN"
+      ]
+    },
+    {
+      "id": "sjs-401892595",
+      "teamId": "sjs",
+      "dateISO": "2026-10-28T02:30Z",
+      "isHome": true,
+      "opponentShort": "Sabres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "juv-401874988",
+      "teamId": "juv",
+      "dateISO": "2026-10-28T18:00Z",
+      "isHome": false,
+      "opponentShort": "Genoa",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+      "venue": "Stadio Luigi Ferraris",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "mia-761908",
+      "teamId": "mia",
+      "dateISO": "2026-10-28T23:30Z",
+      "isHome": true,
+      "opponentShort": "Cincinnati",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
       ]
     }
   ],
