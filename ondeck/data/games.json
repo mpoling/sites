@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T14:18:19.998Z",
+  "generatedAt": "2026-08-15T13:37:18.854Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,36 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816331",
-      "teamId": "sfg",
-      "dateISO": "2026-07-31T01:40Z",
-      "isHome": false,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Petco Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV"
-      ]
-    },
-    {
-      "id": "atl-401816338",
-      "teamId": "atl",
-      "dateISO": "2026-07-31T23:15Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV",
-        "Fox 5 WTTG",
-        "Gray Media"
-      ]
-    },
     {
       "id": "sfg-401816346",
       "teamId": "sfg",
@@ -1153,7 +1123,9 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
       "venue": "SoFi Stadium",
       "broadcasts": [
-        "NFL Net"
+        "NFL Net",
+        "CBS LA",
+        "KPIX"
       ]
     },
     {
@@ -1433,7 +1405,9 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
       "venue": "Allegiant Stadium",
       "broadcasts": [
-        "ESPN Unlmtd"
+        "ESPN Unlmtd",
+        "Fox 5 Vegas",
+        "KPIX"
       ]
     },
     {
@@ -3374,6 +3348,28 @@
       "opponentShort": "Cincinnati",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
       "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "gsw-401909888",
+      "teamId": "gsw",
+      "dateISO": "2026-10-29T00:00Z",
+      "isHome": false,
+      "opponentShort": "Timberwolves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "venue": "Target Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sje-761917",
+      "teamId": "sje",
+      "dateISO": "2026-10-29T02:30Z",
+      "isHome": true,
+      "opponentShort": "Colorado",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+      "venue": "PayPal Park",
       "broadcasts": [
         "Apple TV"
       ]
