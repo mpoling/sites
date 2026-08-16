@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T13:37:18.854Z",
+  "generatedAt": "2026-08-16T13:38:58.080Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,44 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816346",
-      "teamId": "sfg",
-      "dateISO": "2026-08-01T01:45Z",
-      "isHome": false,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Petco Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401842045",
-      "teamId": "mbfc",
-      "dateISO": "2026-08-01T23:00Z",
-      "isHome": false,
-      "opponentShort": "Lexington",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
-      "venue": "Lexington Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "atl-401816353",
-      "teamId": "atl",
-      "dateISO": "2026-08-01T23:15Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
     {
       "id": "mia-761701",
       "teamId": "mia",
@@ -3373,6 +3335,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "sjs-401892610",
+      "teamId": "sjs",
+      "dateISO": "2026-10-30T02:00Z",
+      "isHome": true,
+      "opponentShort": "Canucks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
     }
   ],
   "errors": []
