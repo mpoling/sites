@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T13:38:58.080Z",
+  "generatedAt": "2026-08-17T13:48:15.988Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,86 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mia-761701",
-      "teamId": "mia",
-      "dateISO": "2026-08-02T00:10Z",
-      "isHome": true,
-      "opponentShort": "Columbus",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sfg-401816361",
-      "teamId": "sfg",
-      "dateISO": "2026-08-02T00:40Z",
-      "isHome": false,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Petco Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV",
-        "KFMB 8.1 (CBS)",
-        "TV Azteca"
-      ]
-    },
-    {
-      "id": "bay-fc-401853960",
-      "teamId": "bay-fc",
-      "dateISO": "2026-08-02T00:45Z",
-      "isHome": true,
-      "opponentShort": "Seattle",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15363.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "ION"
-      ]
-    },
-    {
-      "id": "sje-761700",
-      "teamId": "sje",
-      "dateISO": "2026-08-02T01:46Z",
-      "isHome": false,
-      "opponentShort": "Cincinnati",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
-      "venue": "TQL Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "atl-401816368",
-      "teamId": "atl",
-      "dateISO": "2026-08-02T17:35Z",
-      "isHome": true,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816376",
-      "teamId": "sfg",
-      "dateISO": "2026-08-02T20:10Z",
-      "isHome": false,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Petco Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV"
-      ]
-    },
     {
       "id": "gsv-401857110",
       "teamId": "gsv",
@@ -3343,6 +3263,48 @@
       "isHome": true,
       "opponentShort": "Canucks",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909285",
+      "teamId": "gsw",
+      "dateISO": "2026-10-31T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "gt-fb-401858281",
+      "teamId": "gt-fb",
+      "dateISO": "2026-10-31T04:00Z",
+      "isHome": false,
+      "opponentShort": "Pitt",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
+      "venue": "Acrisure Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885650",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-31T18:00Z",
+      "isHome": false,
+      "opponentShort": "Paris FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
+      "venue": "Stade Sébastien Charléty",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892619",
+      "teamId": "sjs",
+      "dateISO": "2026-10-31T20:00Z",
+      "isHome": true,
+      "opponentShort": "Senators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
     }
