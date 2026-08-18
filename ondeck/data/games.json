@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T13:48:15.988Z",
+  "generatedAt": "2026-08-18T13:51:12.614Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,20 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857110",
-      "teamId": "gsv",
-      "dateISO": "2026-08-03T00:30Z",
-      "isHome": true,
-      "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "TSN"
-      ]
-    },
     {
       "id": "sfg-401816381",
       "teamId": "sfg",
@@ -1130,7 +1116,7 @@
     {
       "id": "sfg-401816640",
       "teamId": "sfg",
-      "dateISO": "2026-08-23T19:10Z",
+      "dateISO": "2026-08-23T19:15Z",
       "isHome": false,
       "opponentShort": "Red Sox",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
@@ -1160,7 +1146,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
       "venue": "Journey Bank Ballpark at Historic Bowman Field",
       "broadcasts": [
-        "ESPN"
+        "ESPN",
+        "ERADM"
       ]
     },
     {
@@ -1244,6 +1231,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
       "venue": "Mohegan Sun Arena",
       "broadcasts": [
+        "WNBA League Pass",
         "KPIX+",
         "NBC Sports BO"
       ]
@@ -1474,6 +1462,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
       "venue": "Moda Center",
       "broadcasts": [
+        "WNBA League Pass",
         "KPIX+",
         "Fox 12 Plus"
       ]
@@ -3307,6 +3296,52 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
+    },
+    {
+      "id": "sje-761929",
+      "teamId": "sje",
+      "dateISO": "2026-11-01T20:00Z",
+      "isHome": true,
+      "opponentShort": "Salt Lake",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "juv-401874949",
+      "teamId": "juv",
+      "dateISO": "2026-11-01T20:00Z",
+      "isHome": true,
+      "opponentShort": "Napoli",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "bay-fc-401854033",
+      "teamId": "bay-fc",
+      "dateISO": "2026-11-01T22:00Z",
+      "isHome": true,
+      "opponentShort": "San Diego",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21423.png",
+      "venue": "PayPal Park",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761932",
+      "teamId": "mia",
+      "dateISO": "2026-11-01T23:00Z",
+      "isHome": false,
+      "opponentShort": "New England",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     }
   ],
   "errors": []
