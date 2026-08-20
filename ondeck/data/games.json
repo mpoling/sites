@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T13:52:05.795Z",
+  "generatedAt": "2026-08-20T13:53:58.823Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,74 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816394",
-      "teamId": "sfg",
-      "dateISO": "2026-08-05T00:05Z",
-      "isHome": false,
-      "opponentShort": "Rangers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "venue": "Globe Life Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rangers Sports Network"
-      ]
-    },
-    {
-      "id": "gsv-401857114",
-      "teamId": "gsv",
-      "dateISO": "2026-08-05T02:00Z",
-      "isHome": true,
-      "opponentShort": "Tempo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "TSN"
-      ]
-    },
-    {
-      "id": "sfg-401816409",
-      "teamId": "sfg",
-      "dateISO": "2026-08-05T18:35Z",
-      "isHome": false,
-      "opponentShort": "Rangers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "venue": "Globe Life Field",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rangers Sports Network"
-      ]
-    },
-    {
-      "id": "atl-401816402",
-      "teamId": "atl",
-      "dateISO": "2026-08-05T23:15Z",
-      "isHome": true,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV"
-      ]
-    },
-    {
-      "id": "mia-401863561",
-      "teamId": "mia",
-      "dateISO": "2026-08-05T23:30Z",
-      "isHome": true,
-      "opponentShort": "Atl. San Luis",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15720.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "mbfc-401842063",
       "teamId": "mbfc",
@@ -2151,7 +2083,9 @@
       "opponentShort": "Charleston",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9729.png",
       "venue": "Ralph Lundy Field at Patriots Point",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "atl-401817003",
@@ -2498,7 +2432,9 @@
       "opponentShort": "Lexington",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
       "venue": "Cardinale Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "sje-761843",
@@ -3323,6 +3259,26 @@
       "isHome": true,
       "opponentShort": "Clippers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892632",
+      "teamId": "sjs",
+      "dateISO": "2026-11-03T02:00Z",
+      "isHome": true,
+      "opponentShort": "Flames",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909919",
+      "teamId": "gsw",
+      "dateISO": "2026-11-03T03:00Z",
+      "isHome": true,
+      "opponentShort": "Suns",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
       "venue": "Chase Center",
       "broadcasts": []
     }
