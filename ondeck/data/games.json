@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T13:53:58.823Z",
+  "generatedAt": "2026-08-21T13:53:18.468Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,32 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mbfc-401842063",
-      "teamId": "mbfc",
-      "dateISO": "2026-08-06T01:00Z",
-      "isHome": false,
-      "opponentShort": "El Paso",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19407.png",
-      "venue": "Southwest University Park",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "atl-401816417",
-      "teamId": "atl",
-      "dateISO": "2026-08-06T23:15Z",
-      "isHome": true,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV"
-      ]
-    },
     {
       "id": "atl-401816426",
       "teamId": "atl",
@@ -2734,16 +2708,6 @@
       ]
     },
     {
-      "id": "gsw-401898718",
-      "teamId": "gsw",
-      "dateISO": "2026-10-13T04:00Z",
-      "isHome": false,
-      "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-      "venue": "T-Mobile Arena",
-      "broadcasts": []
-    },
-    {
       "id": "engw-401878154",
       "teamId": "engw",
       "dateISO": "2026-10-13T18:00Z",
@@ -2767,6 +2731,16 @@
         "HBO Max",
         "Peacock"
       ]
+    },
+    {
+      "id": "gsw-401898718",
+      "teamId": "gsw",
+      "dateISO": "2026-10-14T02:00Z",
+      "isHome": false,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "venue": "T-Mobile Arena",
+      "broadcasts": []
     },
     {
       "id": "sjs-401892503",
