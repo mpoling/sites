@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T13:53:18.468Z",
+  "generatedAt": "2026-08-22T13:38:55.759Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,21 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816426",
-      "teamId": "atl",
-      "dateISO": "2026-08-07T23:05Z",
-      "isHome": false,
-      "opponentShort": "Yankees",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
-      "venue": "Yankee Stadium",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "BravesVision",
-        "YES"
-      ]
-    },
     {
       "id": "gsv-401857124",
       "teamId": "gsv",
@@ -3254,6 +3239,16 @@
       "opponentShort": "Suns",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
       "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892646",
+      "teamId": "sjs",
+      "dateISO": "2026-11-05T03:00Z",
+      "isHome": false,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
+      "venue": "crypto.com Arena",
       "broadcasts": []
     }
   ],
