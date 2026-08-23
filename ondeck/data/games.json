@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T13:38:55.759Z",
+  "generatedAt": "2026-08-23T13:40:05.227Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,61 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857124",
-      "teamId": "gsv",
-      "dateISO": "2026-08-08T01:30Z",
-      "isHome": false,
-      "opponentShort": "Wings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-      "venue": "American Airlines Center",
-      "broadcasts": [
-        "ION",
-        "WNBA League Pass"
-      ]
-    },
-    {
-      "id": "sfg-401816435",
-      "teamId": "sfg",
-      "dateISO": "2026-08-08T02:15Z",
-      "isHome": true,
-      "opponentShort": "Tigers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "Tigers.TV"
-      ]
-    },
-    {
-      "id": "atl-401816441",
-      "teamId": "atl",
-      "dateISO": "2026-08-08T19:05Z",
-      "isHome": false,
-      "opponentShort": "Yankees",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
-      "venue": "Yankee Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "YES"
-      ]
-    },
-    {
-      "id": "sfg-401816450",
-      "teamId": "sfg",
-      "dateISO": "2026-08-08T23:15Z",
-      "isHome": true,
-      "opponentShort": "Tigers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FOX"
-      ]
-    },
     {
       "id": "mia-401863595",
       "teamId": "mia",
@@ -3249,6 +3194,16 @@
       "opponentShort": "Kings",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
       "venue": "crypto.com Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909937",
+      "teamId": "gsw",
+      "dateISO": "2026-11-06T03:00Z",
+      "isHome": true,
+      "opponentShort": "Heat",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "venue": "Chase Center",
       "broadcasts": []
     }
   ],
