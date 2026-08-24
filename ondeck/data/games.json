@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T13:40:05.227Z",
+  "generatedAt": "2026-08-24T13:57:23.075Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,82 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mia-401863595",
-      "teamId": "mia",
-      "dateISO": "2026-08-09T00:00Z",
-      "isHome": true,
-      "opponentShort": "Monterrey",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/220.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401842082",
-      "teamId": "mbfc",
-      "dateISO": "2026-08-09T02:00Z",
-      "isHome": true,
-      "opponentShort": "New Mexico",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19408.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401816456",
-      "teamId": "atl",
-      "dateISO": "2026-08-09T17:35Z",
-      "isHome": false,
-      "opponentShort": "Yankees",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
-      "venue": "Yankee Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "YES"
-      ]
-    },
-    {
-      "id": "sfg-401816465",
-      "teamId": "sfg",
-      "dateISO": "2026-08-09T20:05Z",
-      "isHome": true,
-      "opponentShort": "Tigers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "Tigers.TV"
-      ]
-    },
-    {
-      "id": "gsv-401857131",
-      "teamId": "gsv",
-      "dateISO": "2026-08-09T23:00Z",
-      "isHome": false,
-      "opponentShort": "Sparks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
-      "venue": "crypto.com Arena",
-      "broadcasts": [
-        "ESPN",
-        "Disney+"
-      ]
-    },
-    {
-      "id": "bay-fc-401853967",
-      "teamId": "bay-fc",
-      "dateISO": "2026-08-09T23:00Z",
-      "isHome": false,
-      "opponentShort": "Chicago",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15360.png",
-      "venue": "Northwestern Medicine Field at Martin Stadium",
-      "broadcasts": [
-        "NWSL+"
-      ]
-    },
     {
       "id": "atl-401816470",
       "teamId": "atl",
@@ -3205,6 +3129,48 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
       "venue": "Chase Center",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401892660",
+      "teamId": "sjs",
+      "dateISO": "2026-11-07T01:00Z",
+      "isHome": false,
+      "opponentShort": "Wild",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+      "venue": "Grand Casino Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "gt-fb-401858287",
+      "teamId": "gt-fb",
+      "dateISO": "2026-11-07T05:00Z",
+      "isHome": true,
+      "opponentShort": "Louisville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+      "venue": "Bobby Dodd Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885648",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-07T20:00Z",
+      "isHome": true,
+      "opponentShort": "Le Havre AC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21635.png",
+      "venue": "Campus PSG",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761938",
+      "teamId": "mia",
+      "dateISO": "2026-11-07T21:00Z",
+      "isHome": true,
+      "opponentShort": "Charlotte",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     }
   ],
   "errors": []
