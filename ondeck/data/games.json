@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T13:57:23.075Z",
+  "generatedAt": "2026-08-25T13:57:56.462Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,20 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816470",
-      "teamId": "atl",
-      "dateISO": "2026-08-10T23:15Z",
-      "isHome": true,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "SNY"
-      ]
-    },
     {
       "id": "sfg-401816474",
       "teamId": "sfg",
@@ -1620,18 +1606,6 @@
       ]
     },
     {
-      "id": "juv-401874750",
-      "teamId": "juv",
-      "dateISO": "2026-09-12T16:00Z",
-      "isHome": false,
-      "opponentShort": "Sassuolo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
-      "venue": "Mapei Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "psg-w-401885667",
       "teamId": "psg-w",
       "dateISO": "2026-09-12T18:00Z",
@@ -1640,6 +1614,18 @@
       "opponentLogo": "",
       "venue": "Campus PSG",
       "broadcasts": []
+    },
+    {
+      "id": "juv-401874750",
+      "teamId": "juv",
+      "dateISO": "2026-09-12T18:00Z",
+      "isHome": false,
+      "opponentShort": "Sassuolo",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+      "venue": "Mapei Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
     },
     {
       "id": "sfg-401816915",
@@ -3170,6 +3156,62 @@
       "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761945",
+      "teamId": "sje",
+      "dateISO": "2026-11-08T00:00Z",
+      "isHome": false,
+      "opponentShort": "Minnesota",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+      "venue": "Allianz Field",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sjs-401892669",
+      "teamId": "sjs",
+      "dateISO": "2026-11-08T01:00Z",
+      "isHome": false,
+      "opponentShort": "Stars",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+      "venue": "American Airlines Center",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909942",
+      "teamId": "gsw",
+      "dateISO": "2026-11-08T01:30Z",
+      "isHome": true,
+      "opponentShort": "Magic",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "juv-401875003",
+      "teamId": "juv",
+      "dateISO": "2026-11-08T20:00Z",
+      "isHome": false,
+      "opponentShort": "Fiorentina",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+      "venue": "Stadio Artemio Franchi",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "sf49-401873047",
+      "teamId": "sf49",
+      "dateISO": "2026-11-08T21:05Z",
+      "isHome": true,
+      "opponentShort": "Raiders",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "CBS"
       ]
     }
   ],
