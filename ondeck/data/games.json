@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T13:59:53.941Z",
+  "generatedAt": "2026-08-27T22:55:34.483Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,60 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816489",
-      "teamId": "sfg",
-      "dateISO": "2026-08-12T01:45Z",
-      "isHome": true,
-      "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Space City Home Network"
-      ]
-    },
-    {
-      "id": "sfg-401816504",
-      "teamId": "sfg",
-      "dateISO": "2026-08-12T19:45Z",
-      "isHome": true,
-      "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Space City Home Network"
-      ]
-    },
-    {
-      "id": "atl-401816497",
-      "teamId": "atl",
-      "dateISO": "2026-08-12T23:15Z",
-      "isHome": true,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "SNY"
-      ]
-    },
-    {
-      "id": "mia-401863614",
-      "teamId": "mia",
-      "dateISO": "2026-08-12T23:30Z",
-      "isHome": true,
-      "opponentShort": "León",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/228.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "gsv-401857138",
       "teamId": "gsv",
@@ -2416,7 +2362,11 @@
       "opponentShort": "Blues",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
       "venue": "Enterprise Center",
-      "broadcasts": []
+      "broadcasts": [
+        "Disney+",
+        "ESPN+",
+        "Hulu"
+      ]
     },
     {
       "id": "engw-401878170",
@@ -2575,7 +2525,9 @@
       "opponentShort": "Bruins",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
       "venue": "SAP Center at San Jose",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN"
+      ]
     },
     {
       "id": "mia-761861",
@@ -2905,7 +2857,9 @@
       "opponentShort": "Sabres",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
       "venue": "SAP Center at San Jose",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN"
+      ]
     },
     {
       "id": "juv-401874988",
@@ -3089,7 +3043,10 @@
       "opponentShort": "Kings",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
       "venue": "crypto.com Arena",
-      "broadcasts": []
+      "broadcasts": [
+        "TNT",
+        "truTV"
+      ]
     },
     {
       "id": "gsw-401909937",
@@ -3198,6 +3155,26 @@
       "broadcasts": [
         "CBS"
       ]
+    },
+    {
+      "id": "gsw-401909959",
+      "teamId": "gsw",
+      "dateISO": "2026-11-10T03:00Z",
+      "isHome": true,
+      "opponentShort": "Pelicans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892682",
+      "teamId": "sjs",
+      "dateISO": "2026-11-10T03:00Z",
+      "isHome": true,
+      "opponentShort": "Islanders",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
     }
   ],
   "errors": []
