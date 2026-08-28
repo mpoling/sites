@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T22:55:34.483Z",
+  "generatedAt": "2026-08-28T22:59:39.122Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,21 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857138",
-      "teamId": "gsv",
-      "dateISO": "2026-08-13T02:00Z",
-      "isHome": true,
-      "opponentShort": "Sky",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "USA Net",
-        "CNBC",
-        "KPIX+",
-        "CW26"
-      ]
-    },
     {
       "id": "sf49-401874392",
       "teamId": "sf49",
@@ -1691,7 +1676,8 @@
         "MLB.TV",
         "Marquee Sports Net",
         "BravesVision",
-        "Gray Media"
+        "Gray Media",
+        "TBS"
       ]
     },
     {
