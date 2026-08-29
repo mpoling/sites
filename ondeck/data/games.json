@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T22:59:39.122Z",
+  "generatedAt": "2026-08-29T17:05:04.134Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,32 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sf49-401874392",
-      "teamId": "sf49",
-      "dateISO": "2026-08-14T01:00Z",
-      "isHome": true,
-      "opponentShort": "Titans",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "NFL Net"
-      ]
-    },
-    {
-      "id": "atl-401816517",
-      "teamId": "atl",
-      "dateISO": "2026-08-14T23:15Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "DBACKS.TV"
-      ]
-    },
     {
       "id": "bay-fc-401853971",
       "teamId": "bay-fc",
@@ -3159,6 +3133,28 @@
       "isHome": true,
       "opponentShort": "Islanders",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909974",
+      "teamId": "gsw",
+      "dateISO": "2026-11-12T02:30Z",
+      "isHome": false,
+      "opponentShort": "Rockets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "venue": "Toyota Center (Houston)",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892695",
+      "teamId": "sjs",
+      "dateISO": "2026-11-12T03:00Z",
+      "isHome": true,
+      "opponentShort": "Penguins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/pit.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
     }
