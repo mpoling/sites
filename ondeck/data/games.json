@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T17:05:04.134Z",
+  "generatedAt": "2026-08-30T17:22:05.456Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,60 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "bay-fc-401853971",
-      "teamId": "bay-fc",
-      "dateISO": "2026-08-15T02:00Z",
-      "isHome": false,
-      "opponentShort": "Utah",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19141.png",
-      "venue": "America First Field",
-      "broadcasts": [
-        "NWSL+"
-      ]
-    },
-    {
-      "id": "sfg-401816528",
-      "teamId": "sfg",
-      "dateISO": "2026-08-15T02:15Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816543",
-      "teamId": "sfg",
-      "dateISO": "2026-08-15T20:05Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "atl-401816532",
-      "teamId": "atl",
-      "dateISO": "2026-08-15T23:15Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FOX",
-        "ERADM"
-      ]
-    },
     {
       "id": "mia-761716",
       "teamId": "mia",
