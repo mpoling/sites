@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T17:22:05.456Z",
+  "generatedAt": "2026-08-31T19:28:56.743Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,70 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mia-761716",
-      "teamId": "mia",
-      "dateISO": "2026-08-16T00:30Z",
-      "isHome": false,
-      "opponentShort": "Nashville",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
-      "venue": "GEODIS Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401842106",
-      "teamId": "mbfc",
-      "dateISO": "2026-08-16T02:00Z",
-      "isHome": false,
-      "opponentShort": "Oakland",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20687.png",
-      "venue": "Oakland-Alameda County Coliseum",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "sje-761721",
-      "teamId": "sje",
-      "dateISO": "2026-08-16T02:30Z",
-      "isHome": true,
-      "opponentShort": "St. Louis",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "atl-401816547",
-      "teamId": "atl",
-      "dateISO": "2026-08-16T17:35Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816558",
-      "teamId": "sfg",
-      "dateISO": "2026-08-16T20:05Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Rockies.TV"
-      ]
-    },
     {
       "id": "atl-401816581",
       "teamId": "atl",
@@ -1441,18 +1377,6 @@
       "broadcasts": []
     },
     {
-      "id": "juv-401874750",
-      "teamId": "juv",
-      "dateISO": "2026-09-12T18:00Z",
-      "isHome": false,
-      "opponentShort": "Sassuolo",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
-      "venue": "Mapei Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "sfg-401816915",
       "teamId": "sfg",
       "dateISO": "2026-09-12T20:05Z",
@@ -1541,6 +1465,18 @@
         "MLB.TV",
         "BravesVision",
         "NBC Sports Phil"
+      ]
+    },
+    {
+      "id": "juv-401874750",
+      "teamId": "juv",
+      "dateISO": "2026-09-13T18:45Z",
+      "isHome": false,
+      "opponentShort": "Sassuolo",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+      "venue": "Mapei Stadium",
+      "broadcasts": [
+        "Paramount+"
       ]
     },
     {
@@ -1865,7 +1801,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20905.png",
       "venue": "PayPal Park",
       "broadcasts": [
-        "NWSL+"
+        "Roku"
       ]
     },
     {
@@ -1931,7 +1867,9 @@
       "opponentShort": "Golden Knights",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
       "venue": "SAP Center at San Jose",
-      "broadcasts": []
+      "broadcasts": [
+        "Scripps Sports"
+      ]
     },
     {
       "id": "sfg-401817058",
@@ -2063,7 +2001,9 @@
       "opponentShort": "Golden Knights",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
       "venue": "T-Mobile Arena",
-      "broadcasts": []
+      "broadcasts": [
+        "Scripps Sports"
+      ]
     },
     {
       "id": "mbfc-401842253",
@@ -3102,6 +3042,38 @@
       "opponentShort": "Penguins",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/pit.png",
       "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909302",
+      "teamId": "gsw",
+      "dateISO": "2026-11-14T02:30Z",
+      "isHome": false,
+      "opponentShort": "Spurs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "venue": "Frost Bank Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "gt-fb-401858297",
+      "teamId": "gt-fb",
+      "dateISO": "2026-11-14T05:00Z",
+      "isHome": false,
+      "opponentShort": "Clemson",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
+      "venue": "Memorial Stadium (Clemson, SC)",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885644",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-14T20:00Z",
+      "isHome": false,
+      "opponentShort": "Marseille",
+      "opponentLogo": "",
+      "venue": "Stade Francis-Turcan",
       "broadcasts": []
     }
   ],
