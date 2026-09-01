@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T19:28:56.743Z",
+  "generatedAt": "2026-09-01T17:17:59.454Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,20 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816581",
-      "teamId": "atl",
-      "dateISO": "2026-08-17T23:40Z",
-      "isHome": false,
-      "opponentShort": "Twins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
-      "venue": "Target Field",
-      "broadcasts": [
-        "MLB.TV",
-        "Twins.TV",
-        "BravesVision"
-      ]
-    },
     {
       "id": "gsv-401857151",
       "teamId": "gsv",
@@ -3075,6 +3061,28 @@
       "opponentLogo": "",
       "venue": "Stade Francis-Turcan",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401892718",
+      "teamId": "sjs",
+      "dateISO": "2026-11-15T02:00Z",
+      "isHome": false,
+      "opponentShort": "Mammoth",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png",
+      "venue": "Delta Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sf49-401873063",
+      "teamId": "sf49",
+      "dateISO": "2026-11-15T21:25Z",
+      "isHome": false,
+      "opponentShort": "Cowboys",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
     }
   ],
   "errors": []
