@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T17:06:51.972Z",
+  "generatedAt": "2026-09-03T17:00:54.810Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,47 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816607",
-      "teamId": "atl",
-      "dateISO": "2026-08-19T17:40Z",
-      "isHome": false,
-      "opponentShort": "Twins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
-      "venue": "Target Field",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "Twins.TV",
-        "BravesVision"
-      ]
-    },
-    {
-      "id": "sfg-401816591",
-      "teamId": "sfg",
-      "dateISO": "2026-08-19T22:40Z",
-      "isHome": false,
-      "opponentShort": "Guardians",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
-      "venue": "Progressive Field",
-      "broadcasts": [
-        "MLB.TV",
-        "CLEGuardians.TV",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "mia-761727",
-      "teamId": "mia",
-      "dateISO": "2026-08-19T23:30Z",
-      "isHome": false,
-      "opponentShort": "Philadelphia",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png",
-      "venue": "Subaru Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "gsv-401857157",
       "teamId": "gsv",
@@ -1070,7 +1029,8 @@
       "broadcasts": [
         "MLB.TV",
         "BravesVision",
-        "NBC Sports Phil"
+        "NBC Sports Phil",
+        "ERADM"
       ]
     },
     {
@@ -1096,6 +1056,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "mbfc-401842179",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-06T02:00Z",
+      "isHome": true,
+      "opponentShort": "Phoenix",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17850.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
     },
     {
       "id": "atl-401816828",
@@ -1572,7 +1542,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": [
-        "ACC Network"
+        "ACC Network",
+        "ACCNX"
       ]
     },
     {
@@ -1584,6 +1555,18 @@
       "opponentLogo": "",
       "venue": "Campus PSG",
       "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842222",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-19T23:00Z",
+      "isHome": false,
+      "opponentShort": "Charleston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9729.png",
+      "venue": "Ralph Lundy Field at Patriots Point",
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "atl-401817003",
@@ -1927,6 +1910,18 @@
       ]
     },
     {
+      "id": "mbfc-401842253",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-27T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lexington",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": [
+        "ESPN+"
+      ]
+    },
+    {
       "id": "sje-761843",
       "teamId": "sje",
       "dateISO": "2026-09-27T02:30Z",
@@ -2058,6 +2053,16 @@
       "broadcasts": []
     },
     {
+      "id": "mbfc-401842264",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-04T02:00Z",
+      "isHome": false,
+      "opponentShort": "Orange County",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
+      "venue": "Championship Soccer Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "sf49-401872975",
       "teamId": "sf49",
       "dateISO": "2026-10-04T20:25Z",
@@ -2179,6 +2184,16 @@
       "opponentShort": "Kings",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
       "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842281",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-11T01:00Z",
+      "isHome": false,
+      "opponentShort": "New Mexico",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19408.png",
+      "venue": "Isotopes Park",
       "broadcasts": []
     },
     {
@@ -2363,6 +2378,16 @@
       ]
     },
     {
+      "id": "mbfc-401842294",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-18T02:00Z",
+      "isHome": true,
+      "opponentShort": "Switchbacks FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17830.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "sje-761886",
       "teamId": "sje",
       "dateISO": "2026-10-18T02:30Z",
@@ -2526,6 +2551,16 @@
       "opponentShort": "Suns",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
       "venue": "Mortgage Matchup Center",
+      "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842306",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-25T02:00Z",
+      "isHome": true,
+      "opponentShort": "Las Vegas",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18987.png",
+      "venue": "Cardinale Stadium",
       "broadcasts": []
     },
     {
@@ -2976,16 +3011,17 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
-    }
-  ],
-  "errors": [
-    {
-      "team": "Lionesses",
-      "error": "fifa.wworldq.uefa schedule: ESPN returned 502 Bad Gateway for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.wworldq.uefa/teams/5159/schedule"
     },
     {
-      "team": "Monterey Bay",
-      "error": "usa.open schedule: ESPN returned 502 Bad Gateway for https://site.api.espn.com/apis/site/v2/sports/soccer/usa.open/teams/21370/schedule"
+      "id": "gsw-401910000",
+      "teamId": "gsw",
+      "dateISO": "2026-11-17T01:00Z",
+      "isHome": false,
+      "opponentShort": "Pelicans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "venue": "Smoothie King Center",
+      "broadcasts": []
     }
-  ]
+  ],
+  "errors": []
 }
