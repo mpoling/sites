@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T17:00:54.810Z",
+  "generatedAt": "2026-09-04T16:49:24.449Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,62 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857157",
-      "teamId": "gsv",
-      "dateISO": "2026-08-20T02:00Z",
-      "isHome": true,
-      "opponentShort": "Lynx",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "USA Net",
-        "KPIX+",
-        "Victory+ MIN"
-      ]
-    },
-    {
-      "id": "sje-761738",
-      "teamId": "sje",
-      "dateISO": "2026-08-20T02:30Z",
-      "isHome": false,
-      "opponentShort": "LA Galaxy",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png",
-      "venue": "Dignity Health Sports Park",
-      "broadcasts": [
-        "FS1",
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sfg-401816602",
-      "teamId": "sfg",
-      "dateISO": "2026-08-20T17:10Z",
-      "isHome": false,
-      "opponentShort": "Guardians",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
-      "venue": "Progressive Field",
-      "broadcasts": [
-        "MLB.TV",
-        "CLEGuardians.TV",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "atl-401877087",
-      "teamId": "atl",
-      "dateISO": "2026-08-20T18:10Z",
-      "isHome": false,
-      "opponentShort": "White Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "venue": "Rate Field",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "CHSN",
-        "BravesVision"
-      ]
-    },
     {
       "id": "sf49-401873285",
       "teamId": "sf49",
@@ -2211,7 +2155,7 @@
     {
       "id": "juv-401874764",
       "teamId": "juv",
-      "dateISO": "2026-10-11T18:00Z",
+      "dateISO": "2026-10-11T18:45Z",
       "isHome": false,
       "opponentShort": "Cagliari",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
@@ -2344,18 +2288,6 @@
       "broadcasts": []
     },
     {
-      "id": "juv-401874765",
-      "teamId": "juv",
-      "dateISO": "2026-10-17T18:00Z",
-      "isHome": true,
-      "opponentShort": "Lazio",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "sjs-401892525",
       "teamId": "sjs",
       "dateISO": "2026-10-17T23:00Z",
@@ -2397,6 +2329,18 @@
       "venue": "PayPal Park",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "juv-401874765",
+      "teamId": "juv",
+      "dateISO": "2026-10-18T18:45Z",
+      "isHome": true,
+      "opponentShort": "Lazio",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
       ]
     },
     {
@@ -2551,7 +2495,9 @@
       "opponentShort": "Suns",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
       "venue": "Mortgage Matchup Center",
-      "broadcasts": []
+      "broadcasts": [
+        "NBA TV"
+      ]
     },
     {
       "id": "mbfc-401842306",
@@ -2578,7 +2524,7 @@
     {
       "id": "juv-401874772",
       "teamId": "juv",
-      "dateISO": "2026-10-25T18:00Z",
+      "dateISO": "2026-10-25T17:00Z",
       "isHome": false,
       "opponentShort": "Lecce",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
@@ -2614,7 +2560,7 @@
     {
       "id": "juv-401874988",
       "teamId": "juv",
-      "dateISO": "2026-10-28T18:00Z",
+      "dateISO": "2026-10-28T19:45Z",
       "isHome": false,
       "opponentShort": "Genoa",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
@@ -2710,6 +2656,18 @@
       "broadcasts": []
     },
     {
+      "id": "juv-401874949",
+      "teamId": "juv",
+      "dateISO": "2026-11-01T19:45Z",
+      "isHome": true,
+      "opponentShort": "Napoli",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "sje-761929",
       "teamId": "sje",
       "dateISO": "2026-11-01T20:00Z",
@@ -2719,18 +2677,6 @@
       "venue": "PayPal Park",
       "broadcasts": [
         "Apple TV"
-      ]
-    },
-    {
-      "id": "juv-401874949",
-      "teamId": "juv",
-      "dateISO": "2026-11-01T20:00Z",
-      "isHome": true,
-      "opponentShort": "Napoli",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
       ]
     },
     {
@@ -2806,7 +2752,9 @@
       "opponentShort": "Heat",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
       "venue": "Chase Center",
-      "broadcasts": []
+      "broadcasts": [
+        "NBA TV"
+      ]
     },
     {
       "id": "sjs-401892660",
@@ -2885,7 +2833,7 @@
     {
       "id": "juv-401875003",
       "teamId": "juv",
-      "dateISO": "2026-11-08T20:00Z",
+      "dateISO": "2026-11-08T19:45Z",
       "isHome": false,
       "opponentShort": "Fiorentina",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
@@ -2914,7 +2862,9 @@
       "opponentShort": "Pelicans",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
       "venue": "Chase Center",
-      "broadcasts": []
+      "broadcasts": [
+        "NBA TV"
+      ]
     },
     {
       "id": "sjs-401892682",
@@ -3020,6 +2970,16 @@
       "opponentShort": "Pelicans",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
       "venue": "Smoothie King Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892738",
+      "teamId": "sjs",
+      "dateISO": "2026-11-18T03:00Z",
+      "isHome": true,
+      "opponentShort": "Flames",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
+      "venue": "SAP Center at San Jose",
       "broadcasts": []
     }
   ],
