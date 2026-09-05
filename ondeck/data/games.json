@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T16:49:24.449Z",
+  "generatedAt": "2026-09-05T15:58:51.118Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,62 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sf49-401873285",
-      "teamId": "sf49",
-      "dateISO": "2026-08-21T02:00Z",
-      "isHome": false,
-      "opponentShort": "Chargers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
-      "venue": "SoFi Stadium",
-      "broadcasts": [
-        "NFL Net",
-        "CBS LA",
-        "KPIX"
-      ]
-    },
-    {
-      "id": "atl-401816617",
-      "teamId": "atl",
-      "dateISO": "2026-08-21T20:10Z",
-      "isHome": false,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "American Family Field",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "BravesVision",
-        "Brewers.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816610",
-      "teamId": "sfg",
-      "dateISO": "2026-08-21T23:10Z",
-      "isHome": false,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Fenway Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "NESN"
-      ]
-    },
-    {
-      "id": "gsv-401857162",
-      "teamId": "gsv",
-      "dateISO": "2026-08-21T23:30Z",
-      "isHome": false,
-      "opponentShort": "Sky",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-      "venue": "Wintrust Arena",
-      "broadcasts": [
-        "ION",
-        "WNBA League Pass"
-      ]
-    },
     {
       "id": "atl-401816632",
       "teamId": "atl",
@@ -940,7 +884,7 @@
     {
       "id": "psg-w-401888034",
       "teamId": "psg-w",
-      "dateISO": "2026-09-05T16:00Z",
+      "dateISO": "2026-09-05T18:00Z",
       "isHome": false,
       "opponentShort": "Lens",
       "opponentLogo": "",
@@ -1187,6 +1131,16 @@
       ]
     },
     {
+      "id": "psg-w-401885667",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-11T19:00Z",
+      "isHome": true,
+      "opponentShort": "Strasbourg",
+      "opponentLogo": "",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401816895",
       "teamId": "atl",
       "dateISO": "2026-09-11T23:15Z",
@@ -1212,16 +1166,6 @@
         "MLB.TV",
         "Apple TV"
       ]
-    },
-    {
-      "id": "psg-w-401885667",
-      "teamId": "psg-w",
-      "dateISO": "2026-09-12T18:00Z",
-      "isHome": true,
-      "opponentShort": "Strasbourg",
-      "opponentLogo": "",
-      "venue": "Campus PSG",
-      "broadcasts": []
     },
     {
       "id": "sfg-401816915",
@@ -1438,6 +1382,16 @@
       ]
     },
     {
+      "id": "psg-w-401885664",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-18T19:00Z",
+      "isHome": true,
+      "opponentShort": "Nantes",
+      "opponentLogo": "",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401816988",
       "teamId": "atl",
       "dateISO": "2026-09-19T00:10Z",
@@ -1489,16 +1443,6 @@
         "ACC Network",
         "ACCNX"
       ]
-    },
-    {
-      "id": "psg-w-401885664",
-      "teamId": "psg-w",
-      "dateISO": "2026-09-19T18:00Z",
-      "isHome": true,
-      "opponentShort": "Nantes",
-      "opponentLogo": "",
-      "venue": "Campus PSG",
-      "broadcasts": []
     },
     {
       "id": "mbfc-401842222",
@@ -1664,6 +1608,18 @@
         "MLB.TV",
         "Twins.TV",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "psg-w-401917014",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-22T19:00Z",
+      "isHome": false,
+      "opponentShort": "Real Madrid",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21128.png",
+      "venue": null,
+      "broadcasts": [
+        "Paramount+"
       ]
     },
     {
@@ -1955,6 +1911,18 @@
       ]
     },
     {
+      "id": "psg-w-401917001",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-01T19:00Z",
+      "isHome": true,
+      "opponentShort": "OH Leuven",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131423.png",
+      "venue": null,
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "sjs-401891823",
       "teamId": "sjs",
       "dateISO": "2026-10-02T02:00Z",
@@ -1967,7 +1935,7 @@
     {
       "id": "psg-w-401885662",
       "teamId": "psg-w",
-      "dateISO": "2026-10-03T18:00Z",
+      "dateISO": "2026-10-03T15:00Z",
       "isHome": false,
       "opponentShort": "Fleury",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21637.png",
@@ -2280,11 +2248,11 @@
     {
       "id": "psg-w-401885657",
       "teamId": "psg-w",
-      "dateISO": "2026-10-17T18:00Z",
+      "dateISO": "2026-10-17T15:00Z",
       "isHome": true,
       "opponentShort": "Lyonnes",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
-      "venue": "Campus PSG",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
     {
@@ -2434,11 +2402,11 @@
     {
       "id": "psg-w-401885655",
       "teamId": "psg-w",
-      "dateISO": "2026-10-24T18:00Z",
+      "dateISO": "2026-10-24T15:00Z",
       "isHome": true,
       "opponentShort": "Montpellier",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21638.png",
-      "venue": "Campus PSG",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
     {
@@ -2604,6 +2572,18 @@
       ]
     },
     {
+      "id": "psg-w-401916992",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-29T20:00Z",
+      "isHome": false,
+      "opponentShort": "Man City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19257.png",
+      "venue": null,
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "sjs-401892610",
       "teamId": "sjs",
       "dateISO": "2026-10-30T02:00Z",
@@ -2638,7 +2618,7 @@
     {
       "id": "psg-w-401885650",
       "teamId": "psg-w",
-      "dateISO": "2026-10-31T18:00Z",
+      "dateISO": "2026-10-31T16:00Z",
       "isHome": false,
       "opponentShort": "Paris FC",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
@@ -2779,11 +2759,11 @@
     {
       "id": "psg-w-401885648",
       "teamId": "psg-w",
-      "dateISO": "2026-11-07T20:00Z",
+      "dateISO": "2026-11-07T16:00Z",
       "isHome": true,
       "opponentShort": "Le Havre AC",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21635.png",
-      "venue": "Campus PSG",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
     {
@@ -2877,6 +2857,18 @@
       "broadcasts": []
     },
     {
+      "id": "psg-w-401916987",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-10T20:00Z",
+      "isHome": true,
+      "opponentShort": "Bayern",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20103.png",
+      "venue": null,
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "gsw-401909974",
       "teamId": "gsw",
       "dateISO": "2026-11-12T02:30Z",
@@ -2923,7 +2915,7 @@
     {
       "id": "psg-w-401885644",
       "teamId": "psg-w",
-      "dateISO": "2026-11-14T20:00Z",
+      "dateISO": "2026-11-14T16:00Z",
       "isHome": false,
       "opponentShort": "Marseille",
       "opponentLogo": "",
@@ -2981,6 +2973,30 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
+    },
+    {
+      "id": "psg-w-401916980",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-18T20:00Z",
+      "isHome": false,
+      "opponentShort": "Chelsea ",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19970.png",
+      "venue": null,
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910016",
+      "teamId": "gsw",
+      "dateISO": "2026-11-19T02:30Z",
+      "isHome": false,
+      "opponentShort": "Mavericks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "venue": "American Airlines Center",
+      "broadcasts": [
+        "ESPN"
+      ]
     }
   ],
   "errors": []
