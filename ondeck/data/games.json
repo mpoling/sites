@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T15:58:51.118Z",
+  "generatedAt": "2026-09-06T16:10:10.601Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -305,57 +305,6 @@
   ],
   "games": [
     {
-      "id": "atl-401816632",
-      "teamId": "atl",
-      "dateISO": "2026-08-22T18:10Z",
-      "isHome": false,
-      "opponentShort": "Brewers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "venue": "American Family Field",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Brewers.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816625",
-      "teamId": "sfg",
-      "dateISO": "2026-08-22T23:15Z",
-      "isHome": false,
-      "opponentShort": "Red Sox",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "venue": "Fenway Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FOX"
-      ]
-    },
-    {
-      "id": "mia-761742",
-      "teamId": "mia",
-      "dateISO": "2026-08-22T23:30Z",
-      "isHome": true,
-      "opponentShort": "Toronto",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401842129",
-      "teamId": "mbfc",
-      "dateISO": "2026-08-22T23:30Z",
-      "isHome": false,
-      "opponentShort": "Rhode Island",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/22164.png",
-      "venue": "Centreville Bank Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
       "id": "sje-761752",
       "teamId": "sje",
       "dateISO": "2026-08-23T02:30Z",
@@ -530,20 +479,6 @@
         "FS1",
         "SportsNet LA",
         "BravesVision"
-      ]
-    },
-    {
-      "id": "sf49-401873641",
-      "teamId": "sf49",
-      "dateISO": "2026-08-28T00:00Z",
-      "isHome": false,
-      "opponentShort": "Raiders",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
-      "venue": "Allegiant Stadium",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "Fox 5 Vegas",
-        "KPIX"
       ]
     },
     {
@@ -887,7 +822,7 @@
       "dateISO": "2026-09-05T18:00Z",
       "isHome": false,
       "opponentShort": "Lens",
-      "opponentLogo": "",
+      "opponentLogo": null,
       "venue": "Stade François-Blin",
       "broadcasts": []
     },
@@ -922,18 +857,6 @@
       ]
     },
     {
-      "id": "mia-761777",
-      "teamId": "mia",
-      "dateISO": "2026-09-05T23:30Z",
-      "isHome": true,
-      "opponentShort": "Atlanta",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
       "id": "sje-761778",
       "teamId": "sje",
       "dateISO": "2026-09-06T00:30Z",
@@ -941,6 +864,18 @@
       "opponentShort": "Austin",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
       "venue": "Q2 Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "mia-761777",
+      "teamId": "mia",
+      "dateISO": "2026-09-06T01:05Z",
+      "isHome": true,
+      "opponentShort": "Atlanta",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+      "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
       ]
@@ -1124,7 +1059,7 @@
       "dateISO": "2026-09-11T00:35Z",
       "isHome": false,
       "opponentShort": "Rams",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
       "venue": "Melbourne Cricket Ground",
       "broadcasts": [
         "Netflix"
@@ -1440,8 +1375,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": [
-        "ACC Network",
-        "ACCNX"
+        "ACC Network"
       ]
     },
     {
@@ -1566,7 +1500,7 @@
       "dateISO": "2026-09-20T20:25Z",
       "isHome": true,
       "opponentShort": "Dolphins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
       "venue": "Levi's Stadium",
       "broadcasts": [
         "FOX"
@@ -1880,7 +1814,7 @@
       "dateISO": "2026-09-27T20:05Z",
       "isHome": true,
       "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
       "venue": "Levi's Stadium",
       "broadcasts": [
         "FOX"
@@ -1980,7 +1914,7 @@
       "dateISO": "2026-10-04T20:25Z",
       "isHome": true,
       "opponentShort": "Broncos",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
       "venue": "Levi's Stadium",
       "broadcasts": [
         "CBS"
@@ -2138,7 +2072,7 @@
       "dateISO": "2026-10-11T20:25Z",
       "isHome": false,
       "opponentShort": "Seahawks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
       "venue": "Lumen Field",
       "broadcasts": [
         "FOX"
@@ -2340,7 +2274,7 @@
       "dateISO": "2026-10-20T00:15Z",
       "isHome": true,
       "opponentShort": "Commanders",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
       "venue": "Levi's Stadium",
       "broadcasts": [
         "ESPN",
@@ -2483,7 +2417,7 @@
       "dateISO": "2026-10-25T17:00Z",
       "isHome": false,
       "opponentShort": "Falcons",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
       "venue": "Mercedes-Benz Stadium",
       "broadcasts": [
         "FOX"
@@ -2828,7 +2762,7 @@
       "dateISO": "2026-11-08T21:05Z",
       "isHome": true,
       "opponentShort": "Raiders",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
       "venue": "Levi's Stadium",
       "broadcasts": [
         "CBS"
@@ -2938,7 +2872,7 @@
       "dateISO": "2026-11-15T21:25Z",
       "isHome": false,
       "opponentShort": "Cowboys",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
       "venue": "AT&T Stadium",
       "broadcasts": [
         "FOX"
@@ -2997,6 +2931,16 @@
       "broadcasts": [
         "ESPN"
       ]
+    },
+    {
+      "id": "gsw-401910019",
+      "teamId": "gsw",
+      "dateISO": "2026-11-20T01:00Z",
+      "isHome": false,
+      "opponentShort": "Grizzlies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "venue": "FedExForum",
+      "broadcasts": []
     }
   ],
   "errors": []
