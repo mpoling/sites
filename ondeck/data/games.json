@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T18:13:29.773Z",
+  "generatedAt": "2026-09-08T17:12:59.219Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -1289,7 +1289,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "ION"
+        "ION",
+        "WNBA League Pass"
       ]
     },
     {
@@ -1533,6 +1534,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
       "venue": "Moda Center",
       "broadcasts": [
+        "WNBA League Pass",
         "Fox 12 Plus"
       ]
     },
@@ -2899,6 +2901,16 @@
       "opponentShort": "Saint-Malo",
       "opponentLogo": "",
       "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892767",
+      "teamId": "sjs",
+      "dateISO": "2026-11-22T03:00Z",
+      "isHome": true,
+      "opponentShort": "Kraken",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
+      "venue": "SAP Center at San Jose",
       "broadcasts": []
     }
   ],
