@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T17:12:59.219Z",
+  "generatedAt": "2026-09-09T17:07:33.597Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,50 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857171",
-      "teamId": "gsv",
-      "dateISO": "2026-08-25T00:00Z",
-      "isHome": false,
-      "opponentShort": "Lynx",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-      "venue": "Target Center",
-      "broadcasts": [
-        "USA Net",
-        "Victory+ MIN"
-      ]
-    },
-    {
-      "id": "sfg-401816660",
-      "teamId": "sfg",
-      "dateISO": "2026-08-25T01:45Z",
-      "isHome": true,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FS1",
-        "NBC Sports BA",
-        "Reds.TV"
-      ]
-    },
-    {
-      "id": "atl-401816669",
-      "teamId": "atl",
-      "dateISO": "2026-08-25T23:15Z",
-      "isHome": true,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "SportsNet LA",
-        "BravesVision",
-        "Gray Media",
-        "TBS"
-      ]
-    },
     {
       "id": "sfg-401816675",
       "teamId": "sfg",
@@ -1153,7 +1109,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
       "venue": "Oracle Park",
       "broadcasts": [
-        "Peacock"
+        "Peacock",
+        "ERADM"
       ]
     },
     {
@@ -1491,7 +1448,7 @@
       "isHome": false,
       "opponentShort": "Real Madrid",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21128.png",
-      "venue": null,
+      "venue": "Alfredo Di Stéfano Stadium",
       "broadcasts": [
         "Paramount+"
       ]
@@ -1860,6 +1817,16 @@
       "broadcasts": [
         "CBS"
       ]
+    },
+    {
+      "id": "gsw-401918010",
+      "teamId": "gsw",
+      "dateISO": "2026-10-04T23:00Z",
+      "isHome": false,
+      "opponentShort": "Clippers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "venue": "Intuit Dome",
+      "broadcasts": []
     },
     {
       "id": "sjs-401892448",
@@ -2453,7 +2420,7 @@
       "isHome": false,
       "opponentShort": "Man City",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19257.png",
-      "venue": null,
+      "venue": "Joie Stadium",
       "broadcasts": [
         "Paramount+"
       ]
@@ -2738,7 +2705,7 @@
       "isHome": true,
       "opponentShort": "Bayern",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20103.png",
-      "venue": null,
+      "venue": "Parc des Princes",
       "broadcasts": [
         "Paramount+"
       ]
@@ -2856,7 +2823,7 @@
       "isHome": false,
       "opponentShort": "Chelsea ",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19970.png",
-      "venue": null,
+      "venue": "The Cherry Red Records Stadium",
       "broadcasts": [
         "Paramount+"
       ]
@@ -2912,6 +2879,40 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": []
+    },
+    {
+      "id": "sf49-401873077",
+      "teamId": "sf49",
+      "dateISO": "2026-11-23T01:20Z",
+      "isHome": true,
+      "opponentShort": "Vikings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+      "venue": "Estadio Banorte",
+      "broadcasts": [
+        "NBC"
+      ]
+    },
+    {
+      "id": "gsw-401910035",
+      "teamId": "gsw",
+      "dateISO": "2026-11-23T01:30Z",
+      "isHome": true,
+      "opponentShort": "Celtics",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "juv-401875008",
+      "teamId": "juv",
+      "dateISO": "2026-11-23T19:45Z",
+      "isHome": true,
+      "opponentShort": "Venezia",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
     }
   ],
   "errors": []
