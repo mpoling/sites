@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T17:07:33.597Z",
+  "generatedAt": "2026-09-10T16:59:04.024Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,63 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816675",
-      "teamId": "sfg",
-      "dateISO": "2026-08-26T01:45Z",
-      "isHome": true,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Reds.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816690",
-      "teamId": "sfg",
-      "dateISO": "2026-08-26T19:45Z",
-      "isHome": true,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Reds.TV"
-      ]
-    },
-    {
-      "id": "gsv-401857176",
-      "teamId": "gsv",
-      "dateISO": "2026-08-26T23:00Z",
-      "isHome": false,
-      "opponentShort": "Sun",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
-      "venue": "Mohegan Sun Arena",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "NBC Sports BO"
-      ]
-    },
-    {
-      "id": "atl-401816684",
-      "teamId": "atl",
-      "dateISO": "2026-08-26T23:15Z",
-      "isHome": true,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "SportsNet LA",
-        "BravesVision",
-        "MLB Net"
-      ]
-    },
     {
       "id": "atl-401816698",
       "teamId": "atl",
@@ -2913,6 +2856,16 @@
       "broadcasts": [
         "Paramount+"
       ]
+    },
+    {
+      "id": "sjs-401892779",
+      "teamId": "sjs",
+      "dateISO": "2026-11-24T03:00Z",
+      "isHome": true,
+      "opponentShort": "Wild",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": []
     }
   ],
   "errors": []
