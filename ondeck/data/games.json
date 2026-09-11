@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T16:59:04.024Z",
+  "generatedAt": "2026-09-11T17:00:04.618Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,21 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816698",
-      "teamId": "atl",
-      "dateISO": "2026-08-27T23:15Z",
-      "isHome": true,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FS1",
-        "SportsNet LA",
-        "BravesVision"
-      ]
-    },
     {
       "id": "gsv-401857178",
       "teamId": "gsv",
