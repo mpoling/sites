@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T17:00:04.618Z",
+  "generatedAt": "2026-09-12T16:13:07.598Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,49 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401857178",
-      "teamId": "gsv",
-      "dateISO": "2026-08-28T00:00Z",
-      "isHome": false,
-      "opponentShort": "Liberty",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-      "venue": "Barclays Center",
-      "broadcasts": [
-        "Prime Video",
-        "WWOR-TV",
-        "KPIX+",
-        "Liberty Live"
-      ]
-    },
-    {
-      "id": "sfg-401816701",
-      "teamId": "sfg",
-      "dateISO": "2026-08-28T01:45Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "atl-401816703",
-      "teamId": "atl",
-      "dateISO": "2026-08-28T23:15Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Rockies.TV"
-      ]
-    },
     {
       "id": "sfg-401816714",
       "teamId": "sfg",
@@ -894,7 +851,7 @@
       "dateISO": "2026-09-11T19:00Z",
       "isHome": true,
       "opponentShort": "Strasbourg",
-      "opponentLogo": "",
+      "opponentLogo": null,
       "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
@@ -1187,7 +1144,6 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
       "venue": "Dodger Stadium",
       "broadcasts": [
-        "MLB.TV",
         "Apple TV"
       ]
     },
@@ -1693,16 +1649,6 @@
       "broadcasts": []
     },
     {
-      "id": "psg-w-401885662",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-03T15:00Z",
-      "isHome": false,
-      "opponentShort": "Fleury",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21637.png",
-      "venue": "Stade Robert Bobin",
-      "broadcasts": []
-    },
-    {
       "id": "bay-fc-401854018",
       "teamId": "bay-fc",
       "dateISO": "2026-10-03T22:30Z",
@@ -1732,6 +1678,16 @@
       "opponentShort": "Orange County",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
       "venue": "Championship Soccer Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885662",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-04T13:00Z",
+      "isHome": false,
+      "opponentShort": "Fleury",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21637.png",
+      "venue": "Stade Robert Bobin",
       "broadcasts": []
     },
     {
@@ -2016,16 +1972,6 @@
       "broadcasts": []
     },
     {
-      "id": "psg-w-401885657",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-17T15:00Z",
-      "isHome": true,
-      "opponentShort": "Lyonnes",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
-      "broadcasts": []
-    },
-    {
       "id": "sjs-401892525",
       "teamId": "sjs",
       "dateISO": "2026-10-17T23:00Z",
@@ -2080,6 +2026,16 @@
       "broadcasts": [
         "Paramount+"
       ]
+    },
+    {
+      "id": "psg-w-401885657",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-18T19:00Z",
+      "isHome": true,
+      "opponentShort": "Lyonnes",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
     },
     {
       "id": "bay-fc-401854025",
@@ -2150,6 +2106,16 @@
       "broadcasts": []
     },
     {
+      "id": "psg-w-401885655",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-23T19:05Z",
+      "isHome": true,
+      "opponentShort": "Montpellier",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21638.png",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "gsw-401909850",
       "teamId": "gsw",
       "dateISO": "2026-10-24T02:00Z",
@@ -2167,16 +2133,6 @@
       "opponentShort": "Boston College",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "venue": "Bobby Dodd Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "psg-w-401885655",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-24T15:00Z",
-      "isHome": true,
-      "opponentShort": "Montpellier",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21638.png",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
     {
@@ -2850,6 +2806,26 @@
       "opponentShort": "Wild",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909324",
+      "teamId": "gsw",
+      "dateISO": "2026-11-26T03:00Z",
+      "isHome": true,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892793",
+      "teamId": "sjs",
+      "dateISO": "2026-11-26T03:00Z",
+      "isHome": false,
+      "opponentShort": "Ducks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
+      "venue": "Honda Center",
       "broadcasts": []
     }
   ],
