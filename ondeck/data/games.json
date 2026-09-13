@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T16:13:07.598Z",
+  "generatedAt": "2026-09-13T16:56:25.557Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,73 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816714",
-      "teamId": "sfg",
-      "dateISO": "2026-08-29T02:15Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "KNTV",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "juv-401874746",
-      "teamId": "juv",
-      "dateISO": "2026-08-29T18:45Z",
-      "isHome": true,
-      "opponentShort": "Parma",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "sfg-401816744",
-      "teamId": "sfg",
-      "dateISO": "2026-08-29T20:05Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "atl-401816718",
-      "teamId": "atl",
-      "dateISO": "2026-08-29T20:10Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "mia-761757",
-      "teamId": "mia",
-      "dateISO": "2026-08-29T23:30Z",
-      "isHome": true,
-      "opponentShort": "CF Montréal",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "sje-761765",
       "teamId": "sje",
@@ -2826,6 +2759,16 @@
       "opponentShort": "Ducks",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
       "venue": "Honda Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892805",
+      "teamId": "sjs",
+      "dateISO": "2026-11-27T21:00Z",
+      "isHome": true,
+      "opponentShort": "Golden Knights",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
+      "venue": "SAP Center at San Jose",
       "broadcasts": []
     }
   ],
