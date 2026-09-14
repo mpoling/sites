@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T16:56:25.557Z",
+  "generatedAt": "2026-09-14T18:32:51.457Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,83 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761765",
-      "teamId": "sje",
-      "dateISO": "2026-08-30T00:30Z",
-      "isHome": false,
-      "opponentShort": "Houston",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
-      "venue": "Shell Energy Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401842163",
-      "teamId": "mbfc",
-      "dateISO": "2026-08-30T02:00Z",
-      "isHome": true,
-      "opponentShort": "Sacramento",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17828.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "sfg-401816729",
-      "teamId": "sfg",
-      "dateISO": "2026-08-30T02:05Z",
-      "isHome": true,
-      "opponentShort": "Diamondbacks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "DBACKS.TV"
-      ]
-    },
-    {
-      "id": "bay-fc-401853988",
-      "teamId": "bay-fc",
-      "dateISO": "2026-08-30T16:30Z",
-      "isHome": false,
-      "opponentShort": "Washington",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15365.png",
-      "venue": "Audi Field",
-      "broadcasts": [
-        "ESPN2",
-        "ESPN Deportes"
-      ]
-    },
-    {
-      "id": "atl-401816733",
-      "teamId": "atl",
-      "dateISO": "2026-08-30T17:35Z",
-      "isHome": true,
-      "opponentShort": "Rockies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Rockies.TV"
-      ]
-    },
-    {
-      "id": "gsv-401857188",
-      "teamId": "gsv",
-      "dateISO": "2026-08-30T23:00Z",
-      "isHome": false,
-      "opponentShort": "Fire",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
-      "venue": "Moda Center",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "Fox 12 Plus"
-      ]
-    },
     {
       "id": "sfg-401878657",
       "teamId": "sfg",
@@ -1544,7 +1467,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18206.png",
       "venue": "PayPal Park",
       "broadcasts": [
-        "ESPN"
+        "ESPN",
+        "ESPN Deportes"
       ]
     },
     {
@@ -1566,7 +1490,7 @@
       "isHome": true,
       "opponentShort": "OH Leuven",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131423.png",
-      "venue": null,
+      "venue": "Parc des Princes",
       "broadcasts": [
         "Paramount+"
       ]
@@ -2769,6 +2693,36 @@
       "opponentShort": "Golden Knights",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
       "venue": "SAP Center at San Jose",
+      "broadcasts": []
+    },
+    {
+      "id": "uswnt-401870040",
+      "teamId": "uswnt",
+      "dateISO": "2026-11-28T01:30Z",
+      "isHome": true,
+      "opponentShort": "El Salvador",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/slv.png",
+      "venue": "Texas Health Mansfield Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909336",
+      "teamId": "gsw",
+      "dateISO": "2026-11-28T02:30Z",
+      "isHome": false,
+      "opponentShort": "Trail Blazers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "venue": "Moda Center",
+      "broadcasts": []
+    },
+    {
+      "id": "gt-fb-401856760",
+      "teamId": "gt-fb",
+      "dateISO": "2026-11-28T05:00Z",
+      "isHome": false,
+      "opponentShort": "Georgia",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+      "venue": "Sanford Stadium",
       "broadcasts": []
     }
   ],
