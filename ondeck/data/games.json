@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T17:38:34.822Z",
+  "generatedAt": "2026-09-16T17:35:48.937Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,33 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816762",
-      "teamId": "sfg",
-      "dateISO": "2026-09-01T22:40Z",
-      "isHome": false,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "PNC Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "atl-401816758",
-      "teamId": "atl",
-      "dateISO": "2026-09-01T22:45Z",
-      "isHome": false,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Nationals Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
     {
       "id": "atl-401816773",
       "teamId": "atl",
@@ -925,7 +898,8 @@
         "MLB.TV",
         "BravesVision",
         "Space City Home Network",
-        "Space City Home (Alt.)"
+        "Space City Home (Alt.)",
+        "ERADM"
       ]
     },
     {
@@ -977,7 +951,8 @@
         "MLB.TV",
         "BravesVision",
         "Space City Home Network",
-        "Space City Home (Alt.)"
+        "Space City Home (Alt.)",
+        "ERADM"
       ]
     },
     {
@@ -1004,18 +979,6 @@
         "MLB.TV",
         "NBC Sports BA",
         "SportsNet LA"
-      ]
-    },
-    {
-      "id": "juv-401874757",
-      "teamId": "juv",
-      "dateISO": "2026-09-20T16:00Z",
-      "isHome": true,
-      "opponentShort": "Atalanta",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
       ]
     },
     {
@@ -1388,18 +1351,6 @@
       "broadcasts": []
     },
     {
-      "id": "juv-401874764",
-      "teamId": "juv",
-      "dateISO": "2026-10-11T18:45Z",
-      "isHome": false,
-      "opponentShort": "Cagliari",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
-      "venue": "Unipol Domus",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "sf49-401872992",
       "teamId": "sf49",
       "dateISO": "2026-10-11T20:25Z",
@@ -1442,18 +1393,6 @@
       "broadcasts": []
     },
     {
-      "id": "juv-401874765",
-      "teamId": "juv",
-      "dateISO": "2026-10-18T18:45Z",
-      "isHome": true,
-      "opponentShort": "Lazio",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "sf49-401873008",
       "teamId": "sf49",
       "dateISO": "2026-10-20T00:15Z",
@@ -1489,30 +1428,6 @@
       ]
     },
     {
-      "id": "juv-401874772",
-      "teamId": "juv",
-      "dateISO": "2026-10-25T17:00Z",
-      "isHome": false,
-      "opponentShort": "Lecce",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
-      "venue": "Via Del Mare",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "juv-401874988",
-      "teamId": "juv",
-      "dateISO": "2026-10-28T19:45Z",
-      "isHome": false,
-      "opponentShort": "Genoa",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
-      "venue": "Stadio Luigi Ferraris",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "gt-fb-401858281",
       "teamId": "gt-fb",
       "dateISO": "2026-10-31T04:00Z",
@@ -1523,18 +1438,6 @@
       "broadcasts": []
     },
     {
-      "id": "juv-401874949",
-      "teamId": "juv",
-      "dateISO": "2026-11-01T19:45Z",
-      "isHome": true,
-      "opponentShort": "Napoli",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "gt-fb-401858287",
       "teamId": "gt-fb",
       "dateISO": "2026-11-07T05:00Z",
@@ -1543,18 +1446,6 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": []
-    },
-    {
-      "id": "juv-401875003",
-      "teamId": "juv",
-      "dateISO": "2026-11-08T19:45Z",
-      "isHome": false,
-      "opponentShort": "Fiorentina",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
-      "venue": "Stadio Artemio Franchi",
-      "broadcasts": [
-        "Paramount+"
-      ]
     },
     {
       "id": "sf49-401873047",
@@ -1613,18 +1504,6 @@
       ]
     },
     {
-      "id": "juv-401875008",
-      "teamId": "juv",
-      "dateISO": "2026-11-23T19:45Z",
-      "isHome": true,
-      "opponentShort": "Venezia",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
       "id": "gt-fb-401856760",
       "teamId": "gt-fb",
       "dateISO": "2026-11-28T05:00Z",
@@ -1633,18 +1512,6 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
       "venue": "Sanford Stadium",
       "broadcasts": []
-    },
-    {
-      "id": "juv-401874994",
-      "teamId": "juv",
-      "dateISO": "2026-11-29T20:00Z",
-      "isHome": false,
-      "opponentShort": "Como",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
-      "venue": "Giuseppe Sinigaglia",
-      "broadcasts": [
-        "Paramount+"
-      ]
     },
     {
       "id": "sf49-401873091",
@@ -1662,7 +1529,7 @@
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260901-20261129&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260902-20261130&limit=1000"
     }
   ]
 }
