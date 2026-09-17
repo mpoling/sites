@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T17:35:48.937Z",
+  "generatedAt": "2026-09-17T17:35:49.866Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,33 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816773",
-      "teamId": "atl",
-      "dateISO": "2026-09-02T17:05Z",
-      "isHome": false,
-      "opponentShort": "Nationals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "venue": "Nationals Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Nationals.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816777",
-      "teamId": "sfg",
-      "dateISO": "2026-09-02T22:40Z",
-      "isHome": false,
-      "opponentShort": "Pirates",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "venue": "PNC Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA"
-      ]
-    },
     {
       "id": "sfg-401816789",
       "teamId": "sfg",
@@ -884,6 +857,18 @@
         "MLB.TV",
         "Marquee Sports Net",
         "BravesVision"
+      ]
+    },
+    {
+      "id": "bay-fc-401854084",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-17T01:30Z",
+      "isHome": false,
+      "opponentShort": "Denver",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131563.png",
+      "venue": "Centennial Stadium",
+      "broadcasts": [
+        "NWSL+"
       ]
     },
     {
@@ -1529,7 +1514,7 @@
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260902-20261130&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260903-20261201&limit=1000"
     }
   ]
 }
