@@ -23,6 +23,13 @@ can do from a browser without learning the underlying schema.
 The non-goal is "general-purpose CMS for everything." Most sites in the
 repo (`re`, `dc-2026`) will never use the CMS. It's opt-in per site.
 
+One site, `wine`, deliberately uses a **bespoke in-page editor** instead
+of Sveltia: same architecture (browser → GitHub REST API → commit on
+`main`, PAT-gated, no server), but built into the page because the data
+is a single small list and the core interaction is re-tiering a wine.
+See [`wine/README.md`](./wine/README.md). Sveltia remains the default
+for anything with per-entry files, images, or long-form prose.
+
 ---
 
 ## 2. Tool choice: Sveltia CMS

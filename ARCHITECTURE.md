@@ -131,6 +131,7 @@ flowchart TD
     Root --> Site2["dc-2026/"]
     Root --> Site3["re/"]
     Root --> Site4["vacationhub/"]
+    Root --> Site5["wine/"]
     Root --> FutureSite["&lt;future-site&gt;/"]
 
     Site4 --> S4Idx["index.html, *.html<br/>app.js, *.js<br/>styles.css"]
@@ -359,6 +360,7 @@ and to avoid the cron-tide herd of jobs that fire on the hour.
 | `orlando-2026`| `orlando-2026.<owner-tld>` | Static itinerary                  | No                   |
 | `re`         | `re.<owner-tld>`          | Brand direction explorations       | No                   |
 | `vacationhub`| `vacationhub.<owner-tld>` | Theme-park content hub             | Not yet              |
+| `wine`       | `wine.<owner-tld>`        | Wine list with in-page editor      | No                   |
 
 `dc-2026` and `re` predate the conventions codified here and may not
 follow every rule — match each one's existing patterns when editing it.

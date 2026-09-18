@@ -25,6 +25,7 @@ repo need to follow.
 | `orlando-2026`| `orlando-2026.<owner-tld>` | Itinerary for the June 2026 Orlando / St. Pete trip |
 | `re`         | `re.<owner-tld>`          | Brand direction explorations for Natalie Nagel Poling |
 | `vacationhub`| `vacationhub.<owner-tld>` | Disney+-styled hub for hard-to-find vacation info (theme parks first) |
+| `wine`       | `wine.<owner-tld>`        | Family wine list with tiers + an in-page editor that commits to `main` |
 
 See each site's `README.md` for full details on purpose, data sources, and
 operational quirks. (Note: `dc-2026` and `re` predate the conventions

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="The Poling family wine list. What we'd buy again, what we wouldn't.">
+  <meta name="robots" content="noindex">
+  <title>Uncorked</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header" class="header"></header>
+  <main id="main" class="main"></main>
+  <footer id="footer" class="footer"></footer>
+  <div id="savebar" class="savebar" hidden></div>
+
+  <!-- Wine editor. Opened by tapping a card or the + button. Applies
+       changes locally; the save bar commits them to GitHub. -->
+  <dialog id="editor" class="dialog">
+    <form id="editor-form" method="dialog" novalidate>
+      <div class="dialog-head">
+        <span class="mono caps muted-2" id="editor-kicker">Edit wine</span>
+        <button type="button" class="icon-btn" data-action="close-editor" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <label class="field">
+        <span class="field-label">Producer</span>
+        <input name="producer" type="text" autocomplete="off" autocapitalize="words" required placeholder="La Crema">
+      </label>
+
+      <label class="field">
+        <span class="field-label">Bottling <span class="muted-3">· optional</span></span>
+        <input name="bottling" type="text" autocomplete="off" autocapitalize="words" placeholder="Sonoma, Grand Reserve, Morning Fog…">
+      </label>
+
+      <label class="field">
+        <span class="field-label">Varietal</span>
+        <input name="varietal" type="text" list="varietal-options" autocomplete="off" autocapitalize="words" required placeholder="Chardonnay">
+        <datalist id="varietal-options"></datalist>
+      </label>
+
+      <fieldset class="field">
+        <legend class="field-label">Verdict</legend>
+        <div class="segmented" id="editor-tiers"></div>
+      </fieldset>
+
+      <label class="field field-toggle">
+        <input name="revisit" type="checkbox">
+        <span class="toggle" aria-hidden="true"></span>
+        <span>
+          <span class="field-label">Revisit</span>
+          <span class="field-help">Worth another pour before we commit to a verdict</span>
+        </span>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Notes <span class="muted-3">· optional</span></span>
+        <textarea name="notes" rows="2" placeholder="Vanilla bomb. Great with crab. $14 at Costco."></textarea>
+      </label>
+
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-danger" data-action="delete-wine" id="editor-delete">Delete</button>
+        <span class="spacer"></span>
+        <button type="button" class="btn" data-action="close-editor">Cancel</button>
+        <button type="submit" class="btn btn-primary">Done</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- GitHub token prompt. Shown the first time you save on a device. -->
+  <dialog id="token-dialog" class="dialog">
+    <form id="token-form" method="dialog" novalidate>
+      <div class="dialog-head">
+        <span class="mono caps muted-2">Sign in to save</span>
+        <button type="button" class="icon-btn" data-action="close-token" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <p class="dialog-copy">
+        Saving commits <code>wine/data/wines.json</code> to GitHub. Paste a
+        <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained personal access token</a>
+        scoped to <code>mpoling/sites</code> with <strong>Contents: Read and write</strong>.
+      </p>
+      <p class="dialog-copy muted">The token is stored only in this browser. You'll need to do this once per device.</p>
+      <label class="field">
+        <span class="field-label">Token</span>
+        <input name="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…" required>
+      </label>
+      <div class="dialog-actions">
+        <span class="spacer"></span>
+        <button type="button" class="btn" data-action="close-token">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save token</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

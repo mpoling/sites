@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Same concept as OnDeck's favicon: a filled dot on near-black with an
+       italic serif letter knocked out. Claret instead of amber. Georgia is
+       listed first because favicons render outside the page's @font-face
+       context, so Instrument Serif won't be available. -->
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="180" fill="#fb7185"/>
+  <text x="256" y="345"
+        font-family="Georgia, 'Instrument Serif', serif"
+        font-size="320"
+        font-style="italic"
+        font-weight="400"
+        text-anchor="middle"
+        fill="#0a0a0a">U</text>
+</svg>

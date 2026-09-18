@@ -1,0 +1,46 @@
+{
+  "updatedAt": "2026-09-18T00:00:00.000Z",
+  "tiers": [
+    { "id": "yes", "label": "Yes",         "blurb": "Buy again without thinking",  "accent": "#4ade80" },
+    { "id": "mid", "label": "Mid",         "blurb": "Fine. Wouldn't seek it out.", "accent": "#fcd34d" },
+    { "id": "meh", "label": "Meh",         "blurb": "Only if it's what's open",    "accent": "#a8a29e" },
+    { "id": "nah", "label": "Nah",         "blurb": "Pass",                        "accent": "#fb923c" },
+    { "id": "no",  "label": "Absolute No", "blurb": "Never again",                 "accent": "#f87171" }
+  ],
+  "wines": [
+    { "id": "bernardus",              "producer": "Bernardus",         "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+    { "id": "rombauer",               "producer": "Rombauer",          "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+    { "id": "ridge",                  "producer": "Ridge",             "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+    { "id": "testarossa",             "producer": "Testarossa",        "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+    { "id": "j-lohr",                 "producer": "J. Lohr",           "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+    { "id": "estancia",               "producer": "Estancia",          "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+    { "id": "frank-family",           "producer": "Frank Family",      "bottling": "",               "varietal": "Chardonnay", "tier": null,  "revisit": true,  "notes": "" },
+
+    { "id": "la-crema-sonoma",        "producer": "La Crema",          "bottling": "Sonoma",         "varietal": "Chardonnay", "tier": "yes", "revisit": false, "notes": "" },
+    { "id": "la-crema-monterey",      "producer": "La Crema",          "bottling": "Monterey",       "varietal": "Chardonnay", "tier": "yes", "revisit": false, "notes": "" },
+    { "id": "sonoma-cutrer",          "producer": "Sonoma-Cutrer",     "bottling": "",               "varietal": "Chardonnay", "tier": "yes", "revisit": false, "notes": "" },
+
+    { "id": "bogle",                  "producer": "Bogle",             "bottling": "",               "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "decoy",                  "producer": "Decoy",             "bottling": "",               "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "j-lohr-riverstone",      "producer": "J. Lohr",           "bottling": "Riverstone",     "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "Arroyo Seco, Monterey" },
+    { "id": "kali-hart",              "producer": "Kali Hart",         "bottling": "",               "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "kendall-jackson-grand-reserve", "producer": "Kendall-Jackson", "bottling": "Grand Reserve", "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "rebuttel",               "producer": "Rebuttel",          "bottling": "",               "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "trader-joes-sonoma",     "producer": "Trader Joe's",      "bottling": "Sonoma",         "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "wente-riva-ranch",       "producer": "Wente",             "bottling": "Riva Ranch",     "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "wente-morning-fog",      "producer": "Wente",             "bottling": "Morning Fog",    "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+
+    { "id": "josh",                   "producer": "Josh",              "bottling": "",               "varietal": "Chardonnay", "tier": "meh", "revisit": true,  "notes": "" },
+    { "id": "kendall-jackson",        "producer": "Kendall-Jackson",   "bottling": "",               "varietal": "Chardonnay", "tier": "meh", "revisit": false, "notes": "" },
+    { "id": "carmel-road",            "producer": "Carmel Road",       "bottling": "",               "varietal": "Chardonnay", "tier": "meh", "revisit": false, "notes": "" },
+
+    { "id": "alexander-valley",       "producer": "Alexander Valley",  "bottling": "",               "varietal": "Chardonnay", "tier": "nah", "revisit": false, "notes": "" },
+    { "id": "hess-select",            "producer": "Hess",              "bottling": "Select",         "varietal": "Chardonnay", "tier": "nah", "revisit": false, "notes": "" },
+    { "id": "meiomi",                 "producer": "Meiomi",            "bottling": "",               "varietal": "Chardonnay", "tier": "nah", "revisit": false, "notes": "Vanilla" },
+
+    { "id": "butter",                 "producer": "Butter",            "bottling": "",               "varietal": "Chardonnay", "tier": "no",  "revisit": false, "notes": "" },
+    { "id": "hahn",                   "producer": "Hahn",              "bottling": "",               "varietal": "Chardonnay", "tier": "no",  "revisit": false, "notes": "" },
+    { "id": "bread-and-butter",       "producer": "Bread & Butter",    "bottling": "",               "varietal": "Chardonnay", "tier": "no",  "revisit": false, "notes": "" },
+    { "id": "boen",                   "producer": "Boen",              "bottling": "",               "varietal": "Chardonnay", "tier": "no",  "revisit": false, "notes": "" }
+  ]
+}
