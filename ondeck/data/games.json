@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T17:02:31.736Z",
+  "generatedAt": "2026-09-19T16:23:15.655Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,47 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gt-fb-401856776",
-      "teamId": "gt-fb",
-      "dateISO": "2026-09-04T00:00Z",
-      "isHome": true,
-      "opponentShort": "Colorado",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
-      "venue": "Bobby Dodd Stadium",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "atl-401816798",
-      "teamId": "atl",
-      "dateISO": "2026-09-04T22:40Z",
-      "isHome": false,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Citizens Bank Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "BravesVision",
-        "NBC Sports Phil"
-      ]
-    },
-    {
-      "id": "sfg-401816803",
-      "teamId": "sfg",
-      "dateISO": "2026-09-04T23:10Z",
-      "isHome": false,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Citi Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "WPIX"
-      ]
-    },
     {
       "id": "bay-fc-401853990",
       "teamId": "bay-fc",
@@ -859,6 +818,16 @@
       ]
     },
     {
+      "id": "psg-w-401885664",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-18T19:00Z",
+      "isHome": true,
+      "opponentShort": "Nantes",
+      "opponentLogo": null,
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "atl-401816988",
       "teamId": "atl",
       "dateISO": "2026-09-19T00:10Z",
@@ -1069,7 +1038,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
-        "Scripps Sports"
+        "Scripps Sports",
+        "NHL Net"
       ]
     },
     {
@@ -1502,7 +1472,7 @@
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260904-20261202&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260905-20261203&limit=1000"
     }
   ]
 }
