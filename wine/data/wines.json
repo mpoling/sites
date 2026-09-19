@@ -1,8 +1,9 @@
 {
   "updatedAt": "2026-09-18T00:00:00.000Z",
   "tiers": [
-    { "id": "yes", "label": "Yes",         "blurb": "Buy again without thinking",  "accent": "#4ade80" },
-    { "id": "mid", "label": "Mid",         "blurb": "Fine. Wouldn't seek it out.", "accent": "#fcd34d" },
+    { "id": "yes",   "label": "Yes",         "blurb": "Buy again without thinking",   "accent": "#4ade80" },
+    { "id": "solid", "label": "Solid",       "blurb": "Reliable. Happy to grab it.",  "accent": "#a3e635" },
+    { "id": "mid",   "label": "Mid",         "blurb": "Fine. Wouldn't seek it out.", "accent": "#fcd34d" },
     { "id": "meh", "label": "Meh",         "blurb": "Only if it's what's open",    "accent": "#a8a29e" },
     { "id": "nah", "label": "Nah",         "blurb": "Pass",                        "accent": "#fb923c" },
     { "id": "no",  "label": "Absolute No", "blurb": "Never again",                 "accent": "#f87171" }
@@ -26,9 +27,9 @@
     { "id": "kali-hart",              "producer": "Kali Hart",         "bottling": "",               "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
     { "id": "kendall-jackson-grand-reserve", "producer": "Kendall-Jackson", "bottling": "Grand Reserve", "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
     { "id": "rebuttel",               "producer": "Rebuttel",          "bottling": "",               "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
-    { "id": "trader-joes-sonoma",     "producer": "Trader Joe's",      "bottling": "Sonoma",         "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
-    { "id": "wente-riva-ranch",       "producer": "Wente",             "bottling": "Riva Ranch",     "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
-    { "id": "wente-morning-fog",      "producer": "Wente",             "bottling": "Morning Fog",    "varietal": "Chardonnay", "tier": "mid", "revisit": false, "notes": "" },
+    { "id": "trader-joes-sonoma",     "producer": "Trader Joe's",      "bottling": "Sonoma",         "varietal": "Chardonnay", "tier": "solid", "revisit": false, "notes": "" },
+    { "id": "wente-riva-ranch",       "producer": "Wente",             "bottling": "Riva Ranch",     "varietal": "Chardonnay", "tier": "solid", "revisit": false, "notes": "" },
+    { "id": "wente-morning-fog",      "producer": "Wente",             "bottling": "Morning Fog",    "varietal": "Chardonnay", "tier": "solid", "revisit": false, "notes": "" },
 
     { "id": "josh",                   "producer": "Josh",              "bottling": "",               "varietal": "Chardonnay", "tier": "meh", "revisit": true,  "notes": "" },
     { "id": "kendall-jackson",        "producer": "Kendall-Jackson",   "bottling": "",               "varietal": "Chardonnay", "tier": "meh", "revisit": false, "notes": "" },

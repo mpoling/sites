@@ -63,8 +63,9 @@ wine/
 {
   "updatedAt": "2026-09-18T00:00:00.000Z",   // set on every save
   "tiers": [                                   // verdicts, in display order
-    { "id": "yes", "label": "Yes", "blurb": "Buy again without thinking", "accent": "#4ade80" },
-    { "id": "mid", "label": "Mid", "blurb": "…", "accent": "#fcd34d" },
+    { "id": "yes",   "label": "Yes",   "blurb": "Buy again without thinking", "accent": "#4ade80" },
+    { "id": "solid", "label": "Solid", "blurb": "…", "accent": "#a3e635" },
+    { "id": "mid",   "label": "Mid",   "blurb": "…", "accent": "#fcd34d" },
     { "id": "meh", "label": "Meh", "blurb": "…", "accent": "#a8a29e" },
     { "id": "nah", "label": "Nah", "blurb": "…", "accent": "#fb923c" },
     { "id": "no",  "label": "Absolute No", "blurb": "…", "accent": "#f87171" }
