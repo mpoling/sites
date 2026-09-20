@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T16:23:15.655Z",
+  "generatedAt": "2026-09-20T16:45:22.873Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,58 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "bay-fc-401853990",
-      "teamId": "bay-fc",
-      "dateISO": "2026-09-05T02:00Z",
-      "isHome": true,
-      "opponentShort": "Kansas City",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20907.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "psg-w-401888034",
-      "teamId": "psg-w",
-      "dateISO": "2026-09-05T18:00Z",
-      "isHome": false,
-      "opponentShort": "Lens",
-      "opponentLogo": null,
-      "venue": "Stade François-Blin",
-      "broadcasts": []
-    },
-    {
-      "id": "sfg-401816818",
-      "teamId": "sfg",
-      "dateISO": "2026-09-05T20:10Z",
-      "isHome": false,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Citi Field",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "NBC Sports BA",
-        "SNY"
-      ]
-    },
-    {
-      "id": "atl-401816813",
-      "teamId": "atl",
-      "dateISO": "2026-09-05T22:05Z",
-      "isHome": false,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Citizens Bank Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NBC Sports Phil",
-        "ERADM"
-      ]
-    },
     {
       "id": "sje-761778",
       "teamId": "sje",
@@ -881,6 +829,18 @@
       ]
     },
     {
+      "id": "mbfc-401842222",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-19T23:00Z",
+      "isHome": false,
+      "opponentShort": "Charleston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9729.png",
+      "venue": "Ralph Lundy Field at Patriots Point",
+      "broadcasts": [
+        "ESPN+"
+      ]
+    },
+    {
       "id": "atl-401817003",
       "teamId": "atl",
       "dateISO": "2026-09-19T23:10Z",
@@ -894,6 +854,18 @@
         "Space City Home Network",
         "Space City Home (Alt.)",
         "ERADM"
+      ]
+    },
+    {
+      "id": "sje-761817",
+      "teamId": "sje",
+      "dateISO": "2026-09-19T23:30Z",
+      "isHome": true,
+      "opponentShort": "LAFC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "Apple TV"
       ]
     },
     {
@@ -1472,7 +1444,7 @@
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260905-20261203&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260906-20261204&limit=1000"
     }
   ]
 }
