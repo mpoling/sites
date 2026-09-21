@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T16:45:22.873Z",
+  "generatedAt": "2026-09-21T18:37:18.833Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,78 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761778",
-      "teamId": "sje",
-      "dateISO": "2026-09-06T00:30Z",
-      "isHome": false,
-      "opponentShort": "Austin",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
-      "venue": "Q2 Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mia-761777",
-      "teamId": "mia",
-      "dateISO": "2026-09-06T01:05Z",
-      "isHome": true,
-      "opponentShort": "Atlanta",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "mbfc-401842179",
-      "teamId": "mbfc",
-      "dateISO": "2026-09-06T02:00Z",
-      "isHome": true,
-      "opponentShort": "Phoenix",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17850.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401816828",
-      "teamId": "atl",
-      "dateISO": "2026-09-06T17:10Z",
-      "isHome": false,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Citizens Bank Park",
-      "broadcasts": [
-        "NBC"
-      ]
-    },
-    {
-      "id": "sfg-401816833",
-      "teamId": "sfg",
-      "dateISO": "2026-09-06T17:40Z",
-      "isHome": false,
-      "opponentShort": "Mets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "venue": "Citi Field",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "SNY"
-      ]
-    },
-    {
-      "id": "juv-401874954",
-      "teamId": "juv",
-      "dateISO": "2026-09-06T18:45Z",
-      "isHome": true,
-      "opponentShort": "Milan",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
     {
       "id": "atl-401816843",
       "teamId": "atl",
@@ -895,6 +823,18 @@
       ]
     },
     {
+      "id": "juv-401874757",
+      "teamId": "juv",
+      "dateISO": "2026-09-20T16:00Z",
+      "isHome": true,
+      "opponentShort": "Atalanta",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "atl-401817018",
       "teamId": "atl",
       "dateISO": "2026-09-20T18:10Z",
@@ -943,6 +883,30 @@
       "venue": "Levi's Stadium",
       "broadcasts": [
         "FOX"
+      ]
+    },
+    {
+      "id": "mia-761829",
+      "teamId": "mia",
+      "dateISO": "2026-09-20T23:00Z",
+      "isHome": true,
+      "opponentShort": "San Diego",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401854007",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-20T23:00Z",
+      "isHome": true,
+      "opponentShort": "Louisville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20905.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Roku"
       ]
     },
     {
@@ -1444,7 +1408,7 @@
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260906-20261204&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260907-20261205&limit=1000"
     }
   ]
 }
