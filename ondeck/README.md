@@ -143,15 +143,63 @@ ones involving a tracked team.
 }
 ```
 
-A tournament costs one league-scoreboard call covering the whole
-past+future window. Its games are neutral matchups (`homeShort` vs
-`awayShort`, home listed first) rather than us-vs-them, and the UI renders
-them with both sides' logos from the data. Knockout slots whose teams
-aren't decided yet render as ESPN's placeholders ("2A", "SF W1") with no
-logo. Tournament entries share the chip / filter / off-season-dimming
-machinery with teams — when the competition ends and its games age out of
-the window, the chip dims like an off-season team. Delete the entry from
-`teams.json` whenever you're done with it.
+A tournament costs one league-scoreboard call per calendar month the
+past+future window touches (three or four). Its games are neutral matchups
+(`homeShort` vs `awayShort`, home listed first) rather than us-vs-them, and
+the UI renders them with both sides' logos from the data. Knockout slots
+whose teams aren't decided yet render as ESPN's placeholders ("2A", "SF W1")
+with no logo. Tournament entries share the chip / filter / off-season-dimming
+machinery with teams — when the competition ends and its games age out of the
+window, the chip dims like an off-season team.
+
+**You don't have to delete an entry when the competition ends.** A
+competition ESPN still recognises but has nothing scheduled for is recorded
+in `notices[]`, not `errors[]`, so a dormant World Cup dims its chip (with
+the reason as the chip's tooltip) instead of raising the issues pill. That's
+deliberate: leave `wc26` in place and it lights back up on its own in 2030.
+Only a slug ESPN rejects outright counts as an error — see "Telling
+out-of-season from broken" below.
+
+### Tracking part of a league's schedule
+
+A tournament entry can carry a `filter`, which keeps only the events falling
+on given weekdays at or after a given hour, evaluated in a named timezone.
+That's how every Monday and Thursday night NFL game lands on the board
+regardless of who's playing:
+
+```jsonc
+{
+  "id":        "nfl-primetime",
+  "shortName": "MNF / TNF",
+  "fullName":  "Monday & Thursday Night Football",
+  "league":    "NFL",
+  "sport":     "Football",
+  "espn":   { "sport": "football", "league": "nfl" },
+  "filter": {
+    "timeZone": "America/New_York",     // where "Monday night" is defined
+    "weekdays": ["Mon", "Thu"],         // en-US short weekday names
+    "minHour":  17,                     // 24h; also accepts maxHour
+    "labels":   { "Mon": "Monday Night", "Thu": "Thursday Night" }
+  }
+}
+```
+
+`timeZone` is load-bearing: an 8:15pm ET Monday kickoff is already Tuesday
+in UTC, so filtering on UTC weekdays would miss every Monday night game.
+`minHour: 17` is what keeps Thanksgiving's afternoon games off the board
+while keeping its night game on. Matching on kickoff slot rather than
+broadcast network is also deliberate — the networks move around (the 2026
+opener was a Thursday game on Netflix) and a network list would miss games.
+
+`labels` is optional and, when present, annotates each card with the
+weekday's label in the card meta row (`NFL · Monday Night · 5:15 PM PDT`).
+
+**Overlap with your own teams is handled.** When a filtered tournament
+covers a game one of your tracked teams is already playing, the fetcher tags
+that team's existing card with `extraTeamIds` instead of emitting a second
+card. So a 49ers Monday nighter shows up once in the combined list, and
+appears under both the 49ers chip and the MNF/TNF chip. The same applies to
+a USWNT match at the Women's World Cup.
 
 League logos live at `https://a.espncdn.com/i/leaguelogos/{sport}/500/{id}.png`;
 the easiest way to find one is the `leagues[0].logos` block of the
@@ -171,7 +219,7 @@ SE Play investigation so we don't have to redo it.
 `fetch-games.js` locally), look at the per-team line in the output:
 
 ```
-→ Quakes          5 in window  (schedule=18, scoreboard-future=3) across 3 leagues  [✓ ESPN: San Jose Earthquakes]
+→ Quakes          5 in window  (schedule=18, scoreboard=3) across 3 leagues  [✓ ESPN: San Jose Earthquakes]
 ```
 
 The bracketed bit shows the name ESPN actually returned for that ID. A `✓`
@@ -247,20 +295,34 @@ that you'll save time by knowing up-front:
   (past + future), but for MLS, NWSL, USL Championship, and college
   softball it returns only events up to today — essentially a "recent
   results" endpoint despite the name. The fetcher works around this by
-  *additionally* hitting the league-wide scoreboard with a future date
-  range and merging the results, deduped by `event.id`. So `fetch-games.js`
-  makes two requests per (team, league) pair, scoreboards cached per
-  `(sport, league)` across teams. If you ever see "no future games" for
-  an in-season team, suspect a scoreboard fetch failure first.
+  *additionally* hitting the league-wide scoreboard month by month and
+  merging the results, deduped by `event.id`. Scoreboard calls are cached
+  per `(sport, league, month)` across teams and tournaments. If you ever
+  see "no future games" for an in-season team, suspect a scoreboard fetch
+  failure first.
+- **ESPN dropped date-RANGE support around 2026-09-15.** `?dates=YYYYMMDD-YYYYMMDD`
+  had been the fetcher's way of pulling a whole window in one call. It now
+  returns 400 for every sport, every league, every range length and every
+  `limit` value. The failure was quiet — a scoreboard miss is non-fatal —
+  so future MLS/NWSL/USL/college-softball games just stopped appearing and
+  `games.json` fell from ~200 games to ~90 overnight, with only the World Cup
+  (a tournament, whose scoreboard is its *only* source) loud enough to raise
+  an error. `?dates=YYYYMM` and `?dates=YYYYMMDD` both still work, so the
+  fetcher now asks per month. Don't go back to ranges without re-probing.
 - **Two competitor logo shapes.** The team `/schedule` endpoint returns
   `competitor.team.logos` (array of `{href}`); the `/scoreboard`
   endpoint returns `competitor.team.logo` (singular string). The
   fetcher reads both — without the fallback, all future MLS/NWSL/USL
   opponents (sourced from the scoreboard) silently render with no logo.
 - **The scoreboard defaults to 100 events per response** and silently
-  truncates beyond that — no pagination hint, no error. A 75-day MLS
-  window or a full World Cup (104 games) both blow past it. The fetcher
-  passes `limit=1000` on every scoreboard call.
+  truncates beyond that — no pagination hint, no error. A busy league's
+  month can approach it. The fetcher passes `limit=1000` on every
+  scoreboard call.
+- **A 400 means "ESPN doesn't know this slug", not "nothing scheduled".**
+  Probed 2026-09-22: a bogus slug 400s on *every* form of the request,
+  while a valid but idle competition (`fifa.world` out of season,
+  `fifa.wwc` between tournaments) answers 200 with an empty `events[]`.
+  That's what lets the fetcher separate `errors[]` from `notices[]`.
 - **Transient 5xx errors happen.** ESPN's edge occasionally throws a
   one-off 502/503 on an endpoint that's perfectly healthy a second later
   (observed 2026-06-11 on the NWSL Summer Cup schedule endpoint). The
@@ -326,8 +388,8 @@ python3 -m http.server               # then open http://localhost:8000
 Each per-team line looks like one of:
 
 ```
-→ Giants          75 in window  (schedule=163, scoreboard-future=7)  [✓ ESPN: San Francisco Giants]
-→ USWNT           2 in window  (schedule=24, scoreboard-future=2) across 6 leagues  [✓ ESPN: United States]
+→ Giants          75 in window  (schedule=163, scoreboard=7)  [✓ ESPN: San Francisco Giants]
+→ USWNT           2 in window  (schedule=24, scoreboard=2) across 6 leagues  [✓ ESPN: United States]
 → Sirens          9 in window  (static=10, 9 in window) [verified 2026-05-31]
 ```
 
@@ -336,8 +398,8 @@ Each per-team line looks like one of:
 - **`schedule=N`** — events the team's `/schedule` endpoint returned
   (covers past and, for MLB, future too). For multi-league teams this
   is the sum across every league the team subscribes to.
-- **`scoreboard-future=N`** — events the league `/scoreboard` endpoint
-  returned for the future window. For MLS/NWSL/USL/college-softball
+- **`scoreboard=N`** — events the league `/scoreboard` endpoint returned
+  for this team across the window's months. For MLS/NWSL/USL/college-softball
   this is the *only* source of future games; for MLB it's mostly
   redundant with what `/schedule` already had, then deduped.
 - **`across N leagues`** — appears only for teams with more than one
@@ -348,9 +410,9 @@ Each per-team line looks like one of:
   how many fell inside the window.
 - **`[verified YYYY-MM-DD]`** — for static teams, the `lastVerified`
   date from the fixtures file. Bump it when you re-check the schedule.
-- **`schedule=0, scoreboard-future=0`** — true off-season; ESPN has no
+- **`schedule=0, scoreboard=0`** — true off-season; ESPN has no
   events at all for this team right now.
-- **`schedule=N, scoreboard-future=0`** with `0 in window` — events
+- **`schedule=N, scoreboard=0`** with `0 in window` — events
   exist but all sit outside the window (deep off-season, e.g. NFL in
   May).
 - **`[✓ ESPN: …]`** — cross-check passed, the team ID resolves to the
@@ -376,4 +438,34 @@ Each per-team line looks like one of:
 - **Tournament lines** look like
   `→ World Cup       104 in window  (scoreboard=104)  [ESPN: FIFA World Cup]` —
   the bracketed name is the competition ESPN resolved for the slug, the
-  same wrong-config tripwire as the team cross-check.
+  same wrong-config tripwire as the team cross-check. A filtered tournament
+  adds how many events survived the filter and how many were folded into an
+  existing team card:
+  `→ MNF / TNF       9 in window  (scoreboard=214, 11 matched filter, 2 linked to a team card)`.
+
+### Telling out-of-season from broken
+
+`games.json` carries two separate blocks, and the distinction is the whole
+point of the month-granular fetch:
+
+- **`errors[]`** — something is wrong and you should look: ESPN rejected a
+  league slug outright (every month 400'd), or a team's `/schedule` fetch
+  failed after retries. These raise the issues pill in the UI.
+- **`notices[]`** — a competition ESPN recognises that simply has nothing
+  scheduled in the window. Carries the competition's ESPN name and latest
+  season year. These do *not* raise the issues pill; the entry's chip dims
+  like an off-season team and the notice becomes the chip's tooltip.
+
+So an out-of-season World Cup reads
+
+```
+→ World Cup       0 in window  (scoreboard=0)  [ESPN: FIFA World Cup]
+· 1 competition(s) idle — see notices[] in games.json
+```
+
+while a typo'd slug reads
+
+```
+→ World Cup       ✗ ESPN returned 400 Bad Request for …/soccer/fifa.wrld/scoreboard?dates=202609&limit=1000
+⚠ 1 team(s) failed — see errors[] in games.json
+```

@@ -52,6 +52,14 @@
     return [...(state.data?.teams ?? []), ...(state.data?.tournaments ?? [])];
   }
 
+  // A game belongs to its own team, plus any tournament that also covers it
+  // (a 49ers Monday nighter is both a 49ers game and an MNF game). The fetch
+  // script tags those with extraTeamIds rather than emitting a second card,
+  // so the unfiltered list stays free of duplicates.
+  function gameBelongsTo(game, id) {
+    return game.teamId === id || (game.extraTeamIds ?? []).includes(id);
+  }
+
   function groupByDay(games) {
     const groups = new Map();
     for (const g of games) {
@@ -182,7 +190,13 @@
     // so they don't compete for attention with teams actually playing now.
     const teams = roster();
     const games = state.data?.games ?? [];
-    const hasGames = (id) => games.some(g => g.teamId === id);
+    const hasGames = (id) => games.some(g => gameBelongsTo(g, id));
+    // Competitions that answered fine but have nothing on (an out-of-season
+    // World Cup). Shown as the chip's tooltip so a dimmed chip explains itself
+    // instead of looking broken.
+    const noticeFor = Object.fromEntries(
+      (state.data?.notices ?? []).map(n => [n.team, n.notice])
+    );
     const orderedTeams = [
       ...teams.filter(t => hasGames(t.id)),
       ...teams.filter(t => !hasGames(t.id)),
@@ -190,10 +204,11 @@
 
     const chipsHtml = orderedTeams.map(t => {
       const off = !hasGames(t.id);
+      const offTitle = noticeFor[t.shortName] ?? 'Off-season — no games in window';
       return `
         <button class="chip ${off ? 'chip--off' : ''}"
                 data-action="select-team" data-team-id="${esc(t.id)}"
-                ${off ? 'title="Off-season — no games in window"' : ''}>
+                ${off ? `title="${esc(offTitle)}"` : ''}>
           <span class="chip-dot" style="background:${esc(t.accent)}"></span>
           <img src="${esc(t.logo)}" class="chip-logo" alt="" loading="lazy">
           <span>${esc(t.shortName)}</span>
@@ -289,7 +304,7 @@
     if (!state.data) return '';
 
     const games = state.selectedTeamId
-      ? state.data.games.filter(g => g.teamId === state.selectedTeamId)
+      ? state.data.games.filter(g => gameBelongsTo(g, state.selectedTeamId))
       : state.data.games;
 
     if (games.length === 0) {
