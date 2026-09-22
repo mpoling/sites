@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T18:37:18.833Z",
+  "generatedAt": "2026-09-22T17:36:36.003Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,21 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816843",
-      "teamId": "atl",
-      "dateISO": "2026-09-07T17:05Z",
-      "isHome": false,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Citizens Bank Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NBC 10",
-        "ERADM"
-      ]
-    },
     {
       "id": "sfg-401816850",
       "teamId": "sfg",
@@ -1403,12 +1388,24 @@
       "broadcasts": [
         "FOX"
       ]
+    },
+    {
+      "id": "sf49-401873095",
+      "teamId": "sf49",
+      "dateISO": "2026-12-06T18:00Z",
+      "isHome": false,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
     }
   ],
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260907-20261205&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260908-20261206&limit=1000"
     }
   ]
 }
