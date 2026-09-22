@@ -15,10 +15,28 @@
  *       future events; for MLS/NWSL/USL/college-softball it only returns
  *       events up to today (the original "schedule" endpoint is more like
  *       "recent results" for those leagues).
- *   /apis/site/v2/sports/{sport}/{league}/scoreboard?dates=YYYYMMDD-YYYYMMDD
- *     — league-wide events in a date range. We use this to pick up the
- *       FUTURE events the team endpoint omits. Cached per league within
- *       a run since teams in the same league share the same scoreboard.
+ *   /apis/site/v2/sports/{sport}/{league}/scoreboard?dates=YYYYMM
+ *     — every league-wide event in that calendar month. We fetch one call per
+ *       month the window touches and merge. Cached per (sport, league, month)
+ *       within a run, since teams in the same league share the scoreboard.
+ *
+ * ON THE `dates` PARAMETER — READ BEFORE "SIMPLIFYING" THIS:
+ * We used to ask for the whole window in one call with a date RANGE
+ * (`?dates=YYYYMMDD-YYYYMMDD`). ESPN dropped support for ranges around
+ * 2026-09-15: every league, every sport, every range length and every `limit`
+ * value started returning 400 Bad Request. The symptom was quiet — a ranged
+ * scoreboard miss is non-fatal — so future MLS/NWSL/USL/college-softball games
+ * (whose team endpoint is past-only) simply stopped appearing, and games.json
+ * fell from ~200 games to ~90 overnight. Month-granular `?dates=YYYYMM` and
+ * single-day `?dates=YYYYMMDD` both still work. Don't go back to ranges without
+ * re-probing first.
+ *
+ * A useful consequence: with month queries, a 400 no longer means "nothing
+ * scheduled then". ESPN 400s a bad league slug on EVERY form of the request,
+ * but answers 200 with `events: []` for a valid slug that simply has nothing
+ * in that month. So 400 ⇒ broken config / broken ESPN, and 200-with-no-events
+ * ⇒ genuinely out of season. That's how we tell a dead World Cup slug from a
+ * World Cup that just isn't on right now (see `notices` in the output).
  *
  * For each team we merge events from both endpoints and dedupe by event.id,
  * which gives us correct coverage regardless of which league behaves which
@@ -38,9 +56,14 @@
  * instead point `static` at a hand-entered fixtures file (see data/*-fixtures.json).
  *
  * Besides `teams`, the config can declare `tournaments` — whole competitions
- * tracked without a team filter (e.g. the FIFA World Cup). Each one is a
- * single league-scoreboard call over the full window; every event is kept,
- * transformed into a neutral home-vs-away shape (see transformTournamentEvent).
+ * tracked without a team filter (e.g. the FIFA World Cup). Each one reads the
+ * league scoreboard over the full window; every event is kept, transformed
+ * into a neutral home-vs-away shape (see transformTournamentEvent).
+ *
+ * A tournament may also carry a `filter`, which keeps only the events falling
+ * on given weekdays at or after a given hour, evaluated in a named timezone.
+ * That's how the Monday/Thursday Night Football entry slices the NFL's
+ * league-wide schedule down to the primetime games without naming any teams.
  */
 
 import fs from 'node:fs/promises';
@@ -66,6 +89,7 @@ async function fetchJSON(url, attempts = 3) {
       });
       if (!res.ok) {
         const err = new Error(`ESPN returned ${res.status} ${res.statusText} for ${url}`);
+        err.status = res.status;
         err.retryable = RETRYABLE_STATUS.has(res.status);
         throw err;
       }
@@ -93,66 +117,6 @@ async function fetchTeamSchedule(team, league) {
   };
 }
 
-// Format a Date as YYYYMMDD in UTC. ESPN's scoreboard `dates` parameter is
-// date-only; UTC vs local timezone slop here is at most one day, which is
-// fine given our window is ±14 / +30 days.
-function yyyymmdd(d) {
-  return d.toISOString().slice(0, 10).replace(/-/g, '');
-}
-
-// Build the league-scoreboard URL covering the future portion of our window.
-// We don't bother going into the past — the /teams/{id}/schedule endpoint
-// already covers past games well for every league we use.
-// `limit=1000` matters: the scoreboard defaults to 100 events per response,
-// which silently truncates busy leagues over a 75-day window (MLS league-wide
-// easily exceeds 100 games in that span).
-function buildScoreboardURL(sport, league, futureDays) {
-  const now = new Date();
-  const start = yyyymmdd(now);
-  const end = new Date(now);
-  end.setDate(now.getDate() + futureDays);
-  return `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${start}-${yyyymmdd(end)}&limit=1000`;
-}
-
-// Tournament scoreboards cover the full window (past + future) in one call —
-// there's no team /schedule endpoint backing them up for past games.
-function buildTournamentScoreboardURL(sport, league, window) {
-  const now = new Date();
-  const start = new Date(now);
-  start.setDate(now.getDate() - window.pastDays);
-  const end = new Date(now);
-  end.setDate(now.getDate() + window.futureDays);
-  return `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${yyyymmdd(start)}-${yyyymmdd(end)}&limit=1000`;
-}
-
-// Cache scoreboards per (sport, league) key so leagues with multiple teams
-// (e.g. MLS has both Quakes and Inter Miami) make one network call instead
-// of N. Returns either the scoreboard's events[] or [] on failure (logged
-// to stderr but non-fatal — we still have whatever the team endpoint gave us).
-const scoreboardCache = new Map();
-async function fetchLeagueScoreboard(sport, league, futureDays) {
-  const key = `${sport}/${league}`;
-  if (!scoreboardCache.has(key)) {
-    scoreboardCache.set(key, (async () => {
-      const url = buildScoreboardURL(sport, league, futureDays);
-      try {
-        const data = await fetchJSON(url);
-        return data.events ?? [];
-      } catch (err) {
-        process.stderr.write(`  (scoreboard miss for ${key}: ${err.message})\n`);
-        return [];
-      }
-    })());
-  }
-  return scoreboardCache.get(key);
-}
-
-function eventInvolvesTeam(event, teamId) {
-  const competitors = event.competitions?.[0]?.competitors ?? [];
-  const tid = String(teamId);
-  return competitors.some(c => String(c.id) === tid || String(c.team?.id) === tid);
-}
-
 // Snap the window edges to calendar-day boundaries (UTC) so an event on
 // the boundary day isn't excluded just because its kickoff time is earlier
 // than the script's run-time-of-day. Without this, e.g. a game on
@@ -163,6 +127,110 @@ function windowBounds(window) {
   const min = new Date(now); min.setUTCDate(now.getUTCDate() - window.pastDays); min.setUTCHours(0, 0, 0, 0);
   const max = new Date(now); max.setUTCDate(now.getUTCDate() + window.futureDays); max.setUTCHours(23, 59, 59, 999);
   return { min, max };
+}
+
+// Every calendar month (YYYYMM) the window touches, inclusive of the months
+// containing both edges. A ±14/+75-day window spans three or four of them.
+function monthsInWindow({ min, max }) {
+  const months = [];
+  const cursor = new Date(Date.UTC(min.getUTCFullYear(), min.getUTCMonth(), 1));
+  const lastKey = max.getUTCFullYear() * 12 + max.getUTCMonth();
+  while (cursor.getUTCFullYear() * 12 + cursor.getUTCMonth() <= lastKey) {
+    months.push(`${cursor.getUTCFullYear()}${String(cursor.getUTCMonth() + 1).padStart(2, '0')}`);
+    cursor.setUTCMonth(cursor.getUTCMonth() + 1);
+  }
+  return months;
+}
+
+// `limit=1000` matters: the scoreboard defaults to 100 events per response,
+// which would silently truncate a busy league's month.
+function buildScoreboardURL(sport, league, yyyymm) {
+  return `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${yyyymm}&limit=1000`;
+}
+
+// One (sport, league, month) fetch, cached for the run. Teams sharing a league
+// — and a tournament sharing a league with a team — all reuse the same call.
+const monthCache = new Map();
+function fetchLeagueMonth(sport, league, yyyymm) {
+  const key = `${sport}/${league}/${yyyymm}`;
+  if (!monthCache.has(key)) {
+    monthCache.set(key, (async () => {
+      try {
+        const data = await fetchJSON(buildScoreboardURL(sport, league, yyyymm));
+        return { ok: true, events: data.events ?? [], leagueMeta: data.leagues?.[0] ?? null };
+      } catch (err) {
+        return { ok: false, events: [], leagueMeta: null, error: err };
+      }
+    })());
+  }
+  return monthCache.get(key);
+}
+
+// League-wide events across the whole window, month by month, deduped by id.
+// Returns the per-month outcome too, so callers can tell "ESPN rejected this
+// slug outright" (every month failed) from "this competition has nothing on"
+// (every month answered, with no events).
+async function fetchLeagueScoreboard(sport, league, bounds) {
+  const months = monthsInWindow(bounds);
+  const results = await Promise.all(months.map(m => fetchLeagueMonth(sport, league, m)));
+
+  const byId = new Map();
+  let leagueMeta = null;
+  const failures = [];
+  for (const r of results) {
+    if (!r.ok) { failures.push(r.error); continue; }
+    leagueMeta ??= r.leagueMeta;
+    for (const e of r.events) byId.set(String(e.id), e);
+  }
+  return {
+    events: [...byId.values()],
+    leagueMeta,
+    monthsRequested: months.length,
+    monthsFailed: failures.length,
+    // Every month rejected ⇒ the slug itself is bad (or ESPN is down). ESPN
+    // answers 200 with an empty events[] for a valid-but-idle competition.
+    allFailed: failures.length > 0 && failures.length === months.length,
+    error: failures[0] ?? null,
+  };
+}
+
+// Day-of-week / kickoff-hour filter, evaluated in a named timezone. Lets a
+// tournament entry track a recurring slot in a league's schedule (MNF/TNF)
+// rather than the whole league. Timezone matters: an 8:15pm ET Monday kickoff
+// is already Tuesday in UTC, so filtering on UTC weekdays would miss every
+// single Monday night game.
+function makeEventFilter(filter) {
+  if (!filter) return () => true;
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: filter.timeZone ?? 'America/New_York',
+    weekday: 'short',
+    hour: 'numeric',
+    hourCycle: 'h23',
+  });
+  const weekdays = new Set(filter.weekdays ?? []);
+  return (event) => {
+    const d = new Date(event.date);
+    if (Number.isNaN(d.getTime())) return false;
+    const { weekday, hour } = describeInZone(fmt, d);
+    if (weekdays.size && !weekdays.has(weekday)) return false;
+    if (filter.minHour != null && hour < filter.minHour) return false;
+    if (filter.maxHour != null && hour > filter.maxHour) return false;
+    return true;
+  };
+}
+
+function describeInZone(fmt, date) {
+  const parts = fmt.formatToParts(date);
+  return {
+    weekday: parts.find(p => p.type === 'weekday')?.value ?? '',
+    hour: Number(parts.find(p => p.type === 'hour')?.value ?? NaN),
+  };
+}
+
+function eventInvolvesTeam(event, teamId) {
+  const competitors = event.competitions?.[0]?.competitors ?? [];
+  const tid = String(teamId);
+  return competitors.some(c => String(c.id) === tid || String(c.team?.id) === tid);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -246,6 +314,19 @@ function transformTournamentEvent(event, tournament, window) {
   };
 }
 
+// Weekday label for a filtered tournament ("Monday Night" / "Thursday Night"),
+// resolved in the filter's own timezone so it agrees with what the filter matched.
+function labelFor(labels, event, filter) {
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: filter?.timeZone ?? 'America/New_York',
+    weekday: 'short',
+    hour: 'numeric',
+    hourCycle: 'h23',
+  });
+  const { weekday } = describeInZone(fmt, new Date(event.date));
+  return labels[weekday] ?? null;
+}
+
 // ESPN returns broadcast info in a few different shapes across endpoints/leagues.
 // Normalize them all into a flat array of network names.
 function extractBroadcasts(comp) {
@@ -270,9 +351,17 @@ async function main() {
   const raw = await fs.readFile(TEAMS_PATH, 'utf-8');
   const config = JSON.parse(raw);
   const window = config.window ?? { pastDays: 14, futureDays: 30 };
+  const bounds = windowBounds(window);
 
   const allGames = [];
   const errors = [];
+  // Competitions that answered cleanly but have nothing scheduled right now.
+  // Deliberately NOT errors — see the `dates` note at the top of this file.
+  const notices = [];
+  // ESPN event id -> the team game(s) we already kept for it, so a tournament
+  // covering the same fixture can tag the existing card instead of adding a
+  // duplicate one to the same day.
+  const gamesByEspnId = new Map();
 
   for (const team of config.teams) {
     process.stdout.write(`→ ${team.shortName.padEnd(14)}`);
@@ -317,13 +406,13 @@ async function main() {
       const leagues = team.espn.leagues;
       // For each league this team plays in, pull both sources in parallel:
       //   - team /schedule:  authoritative for past games; sometimes future too (MLB)
-      //   - league /scoreboard for the future window: fills the gap for leagues whose
+      //   - league /scoreboard over the window: fills the gap for leagues whose
       //     team endpoint is past-only (MLS/NWSL/USL/college-softball).
-      // Parallelize all (league × source) calls for this team. Scoreboards are
-      // de-duped across teams by the per-(sport,league) cache, so multi-league
-      // teams only pay the schedule-call cost once per league they're in.
+      // Parallelize all (league × source) calls for this team. Scoreboard months
+      // are de-duped across teams by the per-(sport,league,month) cache, so
+      // multi-league teams only pay the schedule-call cost once per league.
       const perLeague = await Promise.all(leagues.map(async league => {
-        const [scheduleRes, scoreboardEvents] = await Promise.all([
+        const [scheduleRes, scoreboard] = await Promise.all([
           // A schedule failure in ONE league must not drop the whole team:
           // a transient 502 on usa.nwsl.summer.cup once wiped every Bay FC
           // game (including all the NWSL ones) from games.json for a day.
@@ -334,10 +423,16 @@ async function main() {
             process.stderr.write(`  (schedule miss for ${league}: ${err.message})\n`);
             return { league, events: [], espnTeamName: null };
           }),
-          fetchLeagueScoreboard(team.espn.sport, league, window.futureDays),
+          fetchLeagueScoreboard(team.espn.sport, league, bounds),
         ]);
-        const futureForUs = scoreboardEvents.filter(e => eventInvolvesTeam(e, team.espn.teamId));
-        return { ...scheduleRes, futureForUs };
+        // Only a wholesale rejection is worth reporting — a valid slug with
+        // nothing scheduled this month is the normal off-season case.
+        if (scoreboard.allFailed) {
+          errors.push({ team: team.shortName, error: `${league} scoreboard: ${scoreboard.error.message}` });
+          process.stderr.write(`  (scoreboard miss for ${league}: ${scoreboard.error.message})\n`);
+        }
+        const fromScoreboard = scoreboard.events.filter(e => eventInvolvesTeam(e, team.espn.teamId));
+        return { ...scheduleRes, fromScoreboard };
       }));
 
       // Dedupe across all (league × source) results by event id. ESPN gives the
@@ -346,11 +441,11 @@ async function main() {
       let fromTeam = 0, fromSb = 0;
       let espnTeamName = null;
       let crossCheckOk = true;
-      for (const { league, events: teamEvents, espnTeamName: nm, futureForUs } of perLeague) {
+      for (const { league, events: teamEvents, espnTeamName: nm, fromScoreboard } of perLeague) {
         fromTeam += teamEvents.length;
-        fromSb += futureForUs.length;
-        for (const e of teamEvents)  merged.set(String(e.id), e);
-        for (const e of futureForUs) if (!merged.has(String(e.id))) merged.set(String(e.id), e);
+        fromSb += fromScoreboard.length;
+        for (const e of teamEvents)     merged.set(String(e.id), e);
+        for (const e of fromScoreboard) if (!merged.has(String(e.id))) merged.set(String(e.id), e);
         // First non-null name wins for the summary; check every league's name
         // against the configured fullName so a wrong teamId in any one league
         // is visible.
@@ -368,14 +463,18 @@ async function main() {
         }
       }
 
-      for (const event of merged.values()) {
+      for (const [espnId, event] of merged) {
         const game = transformEvent(event, team, window);
-        if (game) { allGames.push(game); kept++; }
+        if (game) {
+          allGames.push(game);
+          gamesByEspnId.set(espnId, [...(gamesByEspnId.get(espnId) ?? []), game]);
+          kept++;
+        }
       }
 
       const crossCheck = espnTeamName ? `  [${crossCheckOk ? '✓' : '⚠'} ESPN: ${espnTeamName}]` : '';
       const leagueSuffix = leagues.length > 1 ? ` across ${leagues.length} leagues` : '';
-      console.log(`  ${kept} in window  (schedule=${fromTeam}, scoreboard-future=${fromSb})${leagueSuffix}${crossCheck}`);
+      console.log(`  ${kept} in window  (schedule=${fromTeam}, scoreboard=${fromSb})${leagueSuffix}${crossCheck}`);
     } catch (err) {
       console.log(`  ✗ ${err.message}`);
       errors.push({ team: team.shortName, error: err.message });
@@ -384,27 +483,71 @@ async function main() {
     await new Promise(r => setTimeout(r, 250));
   }
 
-  // Tournaments: whole-competition entries (every game, no team filter).
-  // One scoreboard call each, covering the full past+future window.
+  // Tournaments: whole-competition entries (no team filter), optionally
+  // narrowed to a recurring slot by `filter` (see makeEventFilter).
   for (const tournament of config.tournaments ?? []) {
     process.stdout.write(`→ ${tournament.shortName.padEnd(14)}`);
-    try {
-      const { sport, league } = tournament.espn;
-      const data = await fetchJSON(buildTournamentScoreboardURL(sport, league, window));
-      const events = data.events ?? [];
-      let kept = 0;
-      for (const event of events) {
-        const game = transformTournamentEvent(event, tournament, window);
-        if (game) { allGames.push(game); kept++; }
-      }
-      // Same spirit as the team-name cross-check: surface what competition
-      // ESPN thinks this slug is, so a wrong slug is visible on first run.
-      const espnName = data.leagues?.[0]?.name ?? null;
-      console.log(`  ${kept} in window  (scoreboard=${events.length})${espnName ? `  [ESPN: ${espnName}]` : ''}`);
-    } catch (err) {
-      console.log(`  ✗ ${err.message}`);
-      errors.push({ team: tournament.shortName, error: err.message });
+    const { sport, league } = tournament.espn;
+    const scoreboard = await fetchLeagueScoreboard(sport, league, bounds);
+
+    // Every month rejected means ESPN doesn't recognise the slug at all (or is
+    // down) — that's a real error. A competition that's simply not on right now
+    // answers 200 with an empty events[], and lands in notices[] instead.
+    if (scoreboard.allFailed) {
+      console.log(`  ✗ ${scoreboard.error.message}`);
+      errors.push({ team: tournament.shortName, error: scoreboard.error.message });
+      await new Promise(r => setTimeout(r, 250));
+      continue;
     }
+
+    const matches = makeEventFilter(tournament.filter);
+    const labels = tournament.filter?.labels ?? null;
+    let kept = 0, linked = 0, considered = 0;
+    for (const event of scoreboard.events) {
+      if (!matches(event)) continue;
+      considered++;
+      // Already on the schedule as one of our teams' games? Tag that card with
+      // this tournament instead of adding a second one for the same fixture —
+      // otherwise a 49ers Monday nighter, or a USWNT World Cup match, would
+      // show up twice on the same day.
+      const existing = gamesByEspnId.get(String(event.id));
+      if (existing?.length) {
+        for (const g of existing) {
+          g.extraTeamIds = [...new Set([...(g.extraTeamIds ?? []), tournament.id])];
+          if (labels && !g.note) g.note = labelFor(labels, event, tournament.filter);
+        }
+        linked++;
+        continue;
+      }
+      const game = transformTournamentEvent(event, tournament, window);
+      if (game) {
+        if (labels) game.note ??= labelFor(labels, event, tournament.filter);
+        allGames.push(game);
+        kept++;
+      }
+    }
+
+    // Same spirit as the team-name cross-check: surface what competition
+    // ESPN thinks this slug is, so a wrong slug is visible on first run.
+    const espnName = scoreboard.leagueMeta?.name ?? null;
+    const season = scoreboard.leagueMeta?.season?.year ?? null;
+    if (kept === 0 && linked === 0) {
+      // Valid slug, no fixtures in the window. Record why, so the UI can say
+      // "not on right now" rather than flagging an issue.
+      notices.push({
+        team: tournament.shortName,
+        notice: `No fixtures in the window — ESPN knows ${espnName ?? league}`
+              + (season ? ` (latest season ${season})` : '')
+              + ` but has nothing scheduled between now and +${window.futureDays} days.`,
+      });
+    }
+    if (scoreboard.monthsFailed) {
+      process.stderr.write(`  (${scoreboard.monthsFailed}/${scoreboard.monthsRequested} months failed for ${league})\n`);
+    }
+    const filterNote = tournament.filter ? `, ${considered} matched filter` : '';
+    console.log(`  ${kept} in window  (scoreboard=${scoreboard.events.length}${filterNote}`
+              + `${linked ? `, ${linked} linked to a team card` : ''})`
+              + `${espnName ? `  [ESPN: ${espnName}]` : ''}`);
     await new Promise(r => setTimeout(r, 250));
   }
 
@@ -417,6 +560,7 @@ async function main() {
     tournaments: config.tournaments ?? [],
     games: allGames,
     errors,
+    notices,
   };
 
   await fs.mkdir(path.dirname(OUTPUT_PATH), { recursive: true });
@@ -425,6 +569,9 @@ async function main() {
   console.log(`\n✓ Wrote ${allGames.length} games to ${OUTPUT_PATH}`);
   if (errors.length) {
     console.log(`⚠ ${errors.length} team(s) failed — see errors[] in games.json`);
+  }
+  if (notices.length) {
+    console.log(`· ${notices.length} competition(s) idle — see notices[] in games.json`);
   }
 }
 

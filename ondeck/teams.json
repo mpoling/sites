@@ -202,6 +202,33 @@
       "espn": { "sport": "soccer", "league": "fifa.world" },
       "accent": "#C8102E",
       "logo": "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png"
+    },
+    {
+      "id": "wwc27",
+      "shortName": "Women's WC",
+      "fullName": "FIFA Women's World Cup 2027",
+      "league": "FIFA WWC",
+      "sport": "Soccer",
+      "espn": { "sport": "soccer", "league": "fifa.wwc" },
+      "accent": "#009B3A",
+      "logo": "https://a.espncdn.com/i/leaguelogos/soccer/500/60.png"
+    },
+    {
+      "_comment": "Every Monday and Thursday night NFL game, whoever's playing. Filtered out of the league-wide scoreboard by kickoff weekday + hour in US Eastern (where 'Monday night' is defined), NOT by broadcast network — the networks move around (the 2026 opener was a Thursday on Netflix) and would miss games. minHour 17 keeps Thanksgiving's afternoon games out while keeping its night game in. A game one of our own teams is playing gets tagged onto that team's card rather than duplicated here.",
+      "id": "nfl-primetime",
+      "shortName": "MNF / TNF",
+      "fullName": "Monday & Thursday Night Football",
+      "league": "NFL",
+      "sport": "Football",
+      "espn": { "sport": "football", "league": "nfl" },
+      "filter": {
+        "timeZone": "America/New_York",
+        "weekdays": ["Mon", "Thu"],
+        "minHour": 17,
+        "labels": { "Mon": "Monday Night", "Thu": "Thursday Night" }
+      },
+      "accent": "#013369",
+      "logo": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
     }
   ],
   "window": {
