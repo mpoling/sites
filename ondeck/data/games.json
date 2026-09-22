@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T18:37:18.833Z",
+  "generatedAt": "2026-09-22T01:49:47.317Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -301,24 +301,48 @@
       },
       "accent": "#C8102E",
       "logo": "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png"
+    },
+    {
+      "id": "wwc27",
+      "shortName": "Women's WC",
+      "fullName": "FIFA Women's World Cup 2027",
+      "league": "FIFA WWC",
+      "sport": "Soccer",
+      "espn": {
+        "sport": "soccer",
+        "league": "fifa.wwc"
+      },
+      "accent": "#009B3A",
+      "logo": "https://a.espncdn.com/i/leaguelogos/soccer/500/60.png"
+    },
+    {
+      "_comment": "Every Monday and Thursday night NFL game, whoever's playing. Filtered out of the league-wide scoreboard by kickoff weekday + hour in US Eastern (where 'Monday night' is defined), NOT by broadcast network — the networks move around (the 2026 opener was a Thursday on Netflix) and would miss games. minHour 17 keeps Thanksgiving's afternoon games out while keeping its night game in. A game one of our own teams is playing gets tagged onto that team's card rather than duplicated here.",
+      "id": "nfl-primetime",
+      "shortName": "MNF / TNF",
+      "fullName": "Monday & Thursday Night Football",
+      "league": "NFL",
+      "sport": "Football",
+      "espn": {
+        "sport": "football",
+        "league": "nfl"
+      },
+      "filter": {
+        "timeZone": "America/New_York",
+        "weekdays": [
+          "Mon",
+          "Thu"
+        ],
+        "minHour": 17,
+        "labels": {
+          "Mon": "Monday Night",
+          "Thu": "Thursday Night"
+        }
+      },
+      "accent": "#013369",
+      "logo": "https://a.espncdn.com/i/teamlogos/leagues/500/nfl.png"
     }
   ],
   "games": [
-    {
-      "id": "atl-401816843",
-      "teamId": "atl",
-      "dateISO": "2026-09-07T17:05Z",
-      "isHome": false,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Citizens Bank Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NBC 10",
-        "ERADM"
-      ]
-    },
     {
       "id": "sfg-401816850",
       "teamId": "sfg",
@@ -439,7 +463,11 @@
       "venue": "Melbourne Cricket Ground",
       "broadcasts": [
         "Netflix"
-      ]
+      ],
+      "extraTeamIds": [
+        "nfl-primetime"
+      ],
+      "note": "Thursday Night"
     },
     {
       "id": "psg-w-401885667",
@@ -624,6 +652,21 @@
       ]
     },
     {
+      "id": "nfl-primetime-401872931",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-09-15T00:15Z",
+      "homeShort": "Chiefs",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "awayShort": "Broncos",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "note": "Monday Night",
+      "venue": "Arrowhead Stadium",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ]
+    },
+    {
       "id": "atl-401816950",
       "teamId": "atl",
       "dateISO": "2026-09-15T23:40Z",
@@ -691,6 +734,20 @@
       "venue": "Centennial Stadium",
       "broadcasts": [
         "NWSL+"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401872932",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-09-18T00:15Z",
+      "homeShort": "Bills",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "awayShort": "Lions",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+      "note": "Thursday Night",
+      "venue": "Highmark Stadium",
+      "broadcasts": [
+        "Prime Video"
       ]
     },
     {
@@ -910,6 +967,21 @@
       ]
     },
     {
+      "id": "nfl-primetime-401872947",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-09-22T00:15Z",
+      "homeShort": "Rams",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "awayShort": "Giants",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+      "note": "Monday Night",
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ]
+    },
+    {
       "id": "sfg-401817029",
       "teamId": "sfg",
       "dateISO": "2026-09-22T01:45Z",
@@ -921,6 +993,19 @@
         "MLB.TV",
         "Twins.TV",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "psg-w-401917014",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-22T19:00Z",
+      "isHome": false,
+      "opponentShort": "Real Madrid",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21128.png",
+      "venue": "Alfredo Di Stéfano Stadium",
+      "broadcasts": [
+        "ESPN+",
+        "Paramount+"
       ]
     },
     {
@@ -1022,6 +1107,20 @@
       ]
     },
     {
+      "id": "nfl-primetime-401872948",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-09-25T00:15Z",
+      "homeShort": "Packers",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+      "awayShort": "Falcons",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+      "note": "Thursday Night",
+      "venue": "Lambeau Field",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
       "id": "gsv-401857218",
       "teamId": "gsv",
       "dateISO": "2026-09-25T02:00Z",
@@ -1115,6 +1214,30 @@
       ]
     },
     {
+      "id": "mbfc-401842253",
+      "teamId": "mbfc",
+      "dateISO": "2026-09-27T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lexington",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21822.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": [
+        "ESPN+"
+      ]
+    },
+    {
+      "id": "sje-761843",
+      "teamId": "sje",
+      "dateISO": "2026-09-27T02:30Z",
+      "isHome": true,
+      "opponentShort": "Portland",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
       "id": "gt-fb-401858240",
       "teamId": "gt-fb",
       "dateISO": "2026-09-27T02:30Z",
@@ -1168,6 +1291,131 @@
       ]
     },
     {
+      "id": "bay-fc-401854013",
+      "teamId": "bay-fc",
+      "dateISO": "2026-09-27T21:00Z",
+      "isHome": true,
+      "opponentShort": "Orlando",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18206.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "ESPN",
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "id": "mia-761844",
+      "teamId": "mia",
+      "dateISO": "2026-09-27T23:00Z",
+      "isHome": false,
+      "opponentShort": "Columbus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+      "venue": "ScottsMiracle-Gro Field",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401872963",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-09-29T00:15Z",
+      "homeShort": "Bears",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "awayShort": "Eagles",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+      "note": "Monday Night",
+      "venue": "Soldier Field",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ]
+    },
+    {
+      "id": "psg-w-401917001",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-01T19:00Z",
+      "isHome": true,
+      "opponentShort": "OH Leuven",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131423.png",
+      "venue": "Campus PSG",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401872964",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-02T00:15Z",
+      "homeShort": "Browns",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+      "awayShort": "Steelers",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+      "note": "Thursday Night",
+      "venue": "Huntington Bank Field",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "sjs-401891823",
+      "teamId": "sjs",
+      "dateISO": "2026-10-02T02:00Z",
+      "isHome": true,
+      "opponentShort": "Panthers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "Scripps Sports",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "bay-fc-401854018",
+      "teamId": "bay-fc",
+      "dateISO": "2026-10-03T22:30Z",
+      "isHome": false,
+      "opponentShort": "Kansas City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20907.png",
+      "venue": "CPKC Stadium",
+      "broadcasts": [
+        "ION"
+      ]
+    },
+    {
+      "id": "sjs-401892441",
+      "teamId": "sjs",
+      "dateISO": "2026-10-04T02:00Z",
+      "isHome": true,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "mbfc-401842264",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-04T02:00Z",
+      "isHome": false,
+      "opponentShort": "Orange County",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
+      "venue": "Championship Soccer Stadium",
+      "broadcasts": [
+        "ESPN+"
+      ]
+    },
+    {
+      "id": "psg-w-401885662",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-04T13:00Z",
+      "isHome": false,
+      "opponentShort": "Fleury",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21637.png",
+      "venue": "Stade Robert Bobin",
+      "broadcasts": []
+    },
+    {
       "id": "sf49-401872975",
       "teamId": "sf49",
       "dateISO": "2026-10-04T20:25Z",
@@ -1190,6 +1438,32 @@
       "broadcasts": []
     },
     {
+      "id": "sjs-401892448",
+      "teamId": "sjs",
+      "dateISO": "2026-10-06T00:00Z",
+      "isHome": false,
+      "opponentShort": "Stars",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+      "venue": "American Airlines Center",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401872979",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-06T00:15Z",
+      "homeShort": "Saints",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png",
+      "awayShort": "Falcons",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+      "note": "Monday Night",
+      "venue": "Caesars Superdome",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
       "id": "gsw-401898390",
       "teamId": "gsw",
       "dateISO": "2026-10-07T02:00Z",
@@ -1210,6 +1484,44 @@
       "broadcasts": []
     },
     {
+      "id": "sjs-401891825",
+      "teamId": "sjs",
+      "dateISO": "2026-10-09T00:00Z",
+      "isHome": false,
+      "opponentShort": "Blues",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+      "venue": "Enterprise Center",
+      "broadcasts": [
+        "Disney+",
+        "ESPN+",
+        "Hulu"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401872980",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-09T00:15Z",
+      "homeShort": "Cowboys",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "awayShort": "Buccaneers",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+      "note": "Thursday Night",
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "engw-401878170",
+      "teamId": "engw",
+      "dateISO": "2026-10-09T16:30Z",
+      "isHome": false,
+      "opponentShort": "Greece",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+      "venue": "Pankritio Stadium",
+      "broadcasts": []
+    },
+    {
       "id": "gt-fb-401858255",
       "teamId": "gt-fb",
       "dateISO": "2026-10-10T04:00Z",
@@ -1220,6 +1532,46 @@
       "broadcasts": []
     },
     {
+      "id": "uswnt-401890785",
+      "teamId": "uswnt",
+      "dateISO": "2026-10-10T18:30Z",
+      "isHome": true,
+      "opponentShort": "Spain",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "venue": "Audi Field",
+      "broadcasts": [
+        "TBS",
+        "Tele",
+        "Universo",
+        "HBO Max",
+        "Peacock"
+      ]
+    },
+    {
+      "id": "sjs-401892471",
+      "teamId": "sjs",
+      "dateISO": "2026-10-10T20:00Z",
+      "isHome": true,
+      "opponentShort": "Oilers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "mia-761847",
+      "teamId": "mia",
+      "dateISO": "2026-10-10T23:30Z",
+      "isHome": true,
+      "opponentShort": "D.C. United",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
       "id": "gsw-401898399",
       "teamId": "gsw",
       "dateISO": "2026-10-11T00:30Z",
@@ -1228,6 +1580,42 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
       "venue": "Chase Center",
       "broadcasts": []
+    },
+    {
+      "id": "mbfc-401842281",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-11T01:00Z",
+      "isHome": false,
+      "opponentShort": "New Mexico",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19408.png",
+      "venue": "Isotopes Park",
+      "broadcasts": [
+        "ESPN+"
+      ]
+    },
+    {
+      "id": "sje-761857",
+      "teamId": "sje",
+      "dateISO": "2026-10-11T01:30Z",
+      "isHome": false,
+      "opponentShort": "Colorado",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+      "venue": "Dick's Sporting Goods Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "juv-401874764",
+      "teamId": "juv",
+      "dateISO": "2026-10-11T18:45Z",
+      "isHome": false,
+      "opponentShort": "Cagliari",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+      "venue": "Unipol Domus",
+      "broadcasts": [
+        "Paramount+"
+      ]
     },
     {
       "id": "sf49-401872992",
@@ -1242,6 +1630,46 @@
       ]
     },
     {
+      "id": "nfl-primetime-401872994",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-13T00:15Z",
+      "homeShort": "Rams",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "awayShort": "Bills",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "note": "Monday Night",
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ]
+    },
+    {
+      "id": "engw-401878154",
+      "teamId": "engw",
+      "dateISO": "2026-10-13T18:30Z",
+      "isHome": true,
+      "opponentShort": "Greece",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+      "venue": "King Power Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "uswnt-401890784",
+      "teamId": "uswnt",
+      "dateISO": "2026-10-13T23:00Z",
+      "isHome": true,
+      "opponentShort": "Spain",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "venue": "Subaru Park",
+      "broadcasts": [
+        "TNT",
+        "Universo",
+        "HBO Max",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsw-401898718",
       "teamId": "gsw",
       "dateISO": "2026-10-14T02:00Z",
@@ -1250,6 +1678,69 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "venue": "T-Mobile Arena",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401892503",
+      "teamId": "sjs",
+      "dateISO": "2026-10-14T03:00Z",
+      "isHome": true,
+      "opponentShort": "Bruins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "mia-761861",
+      "teamId": "mia",
+      "dateISO": "2026-10-14T23:30Z",
+      "isHome": true,
+      "opponentShort": "NYCFC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761870",
+      "teamId": "sje",
+      "dateISO": "2026-10-15T01:30Z",
+      "isHome": false,
+      "opponentShort": "Salt Lake",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+      "venue": "America First Field",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sjs-401892513",
+      "teamId": "sjs",
+      "dateISO": "2026-10-16T00:00Z",
+      "isHome": false,
+      "opponentShort": "Predators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+      "venue": "Bridgestone Arena",
+      "broadcasts": [
+        "NBC Sports BA",
+        "Scripps Sports"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401872995",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-16T00:15Z",
+      "homeShort": "Broncos",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+      "awayShort": "Seahawks",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+      "note": "Thursday Night",
+      "venue": "Empower Field at Mile High",
+      "broadcasts": [
+        "Prime Video"
+      ]
     },
     {
       "id": "gsw-401898409",
@@ -1272,6 +1763,101 @@
       "broadcasts": []
     },
     {
+      "id": "psg-w-401885657",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-17T19:00Z",
+      "isHome": true,
+      "opponentShort": "Lyonnes",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
+      "venue": "Parc des Princes",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892525",
+      "teamId": "sjs",
+      "dateISO": "2026-10-17T23:00Z",
+      "isHome": false,
+      "opponentShort": "Red Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+      "venue": "Little Caesars Arena",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "mia-761880",
+      "teamId": "mia",
+      "dateISO": "2026-10-17T23:30Z",
+      "isHome": false,
+      "opponentShort": "Atlanta",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+      "venue": "Mercedes-Benz Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "mbfc-401842294",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-18T02:00Z",
+      "isHome": true,
+      "opponentShort": "Switchbacks FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17830.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": [
+        "ESPN+"
+      ]
+    },
+    {
+      "id": "sje-761886",
+      "teamId": "sje",
+      "dateISO": "2026-10-18T02:30Z",
+      "isHome": true,
+      "opponentShort": "Nashville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "juv-401874765",
+      "teamId": "juv",
+      "dateISO": "2026-10-18T18:45Z",
+      "isHome": true,
+      "opponentShort": "Lazio",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "bay-fc-401854025",
+      "teamId": "bay-fc",
+      "dateISO": "2026-10-18T21:00Z",
+      "isHome": true,
+      "opponentShort": "Portland",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15362.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "ESPN",
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "id": "sjs-401892537",
+      "teamId": "sjs",
+      "dateISO": "2026-10-19T23:30Z",
+      "isHome": false,
+      "opponentShort": "Maple Leafs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+      "venue": "Scotiabank Arena",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
       "id": "sf49-401873008",
       "teamId": "sf49",
       "dateISO": "2026-10-20T00:15Z",
@@ -1282,7 +1868,81 @@
       "broadcasts": [
         "ESPN",
         "ABC"
+      ],
+      "extraTeamIds": [
+        "nfl-primetime"
+      ],
+      "note": "Monday Night"
+    },
+    {
+      "id": "sjs-401892539",
+      "teamId": "sjs",
+      "dateISO": "2026-10-20T23:00Z",
+      "isHome": false,
+      "opponentShort": "Canadiens",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+      "venue": "Bell Centre",
+      "broadcasts": [
+        "NBC Sports BA"
       ]
+    },
+    {
+      "id": "gsw-401909092",
+      "teamId": "gsw",
+      "dateISO": "2026-10-22T02:00Z",
+      "isHome": false,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "venue": "crypto.com Arena",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892554",
+      "teamId": "sjs",
+      "dateISO": "2026-10-22T23:00Z",
+      "isHome": false,
+      "opponentShort": "Senators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+      "venue": "Canadian Tire Centre",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873010",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-23T00:15Z",
+      "homeShort": "Bears",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "awayShort": "Patriots",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+      "note": "Thursday Night",
+      "venue": "Soldier Field",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "psg-w-401885655",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-23T19:05Z",
+      "isHome": true,
+      "opponentShort": "Montpellier",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21638.png",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909850",
+      "teamId": "gsw",
+      "dateISO": "2026-10-24T02:00Z",
+      "isHome": true,
+      "opponentShort": "Grizzlies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "venue": "Chase Center",
+      "broadcasts": []
     },
     {
       "id": "gt-fb-401858273",
@@ -1293,6 +1953,78 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "mia-761891",
+      "teamId": "mia",
+      "dateISO": "2026-10-24T21:30Z",
+      "isHome": false,
+      "opponentShort": "Red Bull NY",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
+      "venue": "Red Bull Arena",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sjs-401892568",
+      "teamId": "sjs",
+      "dateISO": "2026-10-24T23:00Z",
+      "isHome": false,
+      "opponentShort": "Bruins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+      "venue": "TD Garden",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "sje-761900",
+      "teamId": "sje",
+      "dateISO": "2026-10-25T00:30Z",
+      "isHome": false,
+      "opponentShort": "Dallas",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
+      "venue": "Toyota Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401854030",
+      "teamId": "bay-fc",
+      "dateISO": "2026-10-25T00:45Z",
+      "isHome": false,
+      "opponentShort": "Angel City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21422.png",
+      "venue": "BMO Stadium",
+      "broadcasts": [
+        "ION"
+      ]
+    },
+    {
+      "id": "gsw-401909860",
+      "teamId": "gsw",
+      "dateISO": "2026-10-25T02:00Z",
+      "isHome": false,
+      "opponentShort": "Suns",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "venue": "Mortgage Matchup Center",
+      "broadcasts": [
+        "NBA TV"
+      ]
+    },
+    {
+      "id": "mbfc-401842306",
+      "teamId": "mbfc",
+      "dateISO": "2026-10-25T02:00Z",
+      "isHome": true,
+      "opponentShort": "Las Vegas",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18987.png",
+      "venue": "Cardinale Stadium",
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "id": "sf49-401873017",
@@ -1307,6 +2039,153 @@
       ]
     },
     {
+      "id": "juv-401874772",
+      "teamId": "juv",
+      "dateISO": "2026-10-25T17:00Z",
+      "isHome": false,
+      "opponentShort": "Lecce",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+      "venue": "Via Del Mare",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873009",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-27T00:15Z",
+      "homeShort": "Eagles",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+      "awayShort": "Cowboys",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "note": "Monday Night",
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ]
+    },
+    {
+      "id": "gsw-401909876",
+      "teamId": "gsw",
+      "dateISO": "2026-10-27T02:00Z",
+      "isHome": false,
+      "opponentShort": "Nuggets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+      "venue": "Ball Arena",
+      "broadcasts": [
+        "NBCSN"
+      ]
+    },
+    {
+      "id": "sjs-401892595",
+      "teamId": "sjs",
+      "dateISO": "2026-10-28T02:30Z",
+      "isHome": true,
+      "opponentShort": "Sabres",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "juv-401874988",
+      "teamId": "juv",
+      "dateISO": "2026-10-28T19:45Z",
+      "isHome": false,
+      "opponentShort": "Genoa",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+      "venue": "Stadio Luigi Ferraris",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "mia-761908",
+      "teamId": "mia",
+      "dateISO": "2026-10-28T23:30Z",
+      "isHome": true,
+      "opponentShort": "Cincinnati",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "gsw-401909888",
+      "teamId": "gsw",
+      "dateISO": "2026-10-29T00:00Z",
+      "isHome": false,
+      "opponentShort": "Timberwolves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "venue": "Target Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sje-761917",
+      "teamId": "sje",
+      "dateISO": "2026-10-29T02:30Z",
+      "isHome": true,
+      "opponentShort": "Colorado",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "psg-w-401916992",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-29T20:00Z",
+      "isHome": false,
+      "opponentShort": "Man City",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19257.png",
+      "venue": "Joie Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873023",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-10-30T00:15Z",
+      "homeShort": "Packers",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+      "awayShort": "Panthers",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+      "note": "Thursday Night",
+      "venue": "Lambeau Field",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "sjs-401892610",
+      "teamId": "sjs",
+      "dateISO": "2026-10-30T02:00Z",
+      "isHome": true,
+      "opponentShort": "Canucks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401909285",
+      "teamId": "gsw",
+      "dateISO": "2026-10-31T02:00Z",
+      "isHome": true,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
       "id": "gt-fb-401858281",
       "teamId": "gt-fb",
       "dateISO": "2026-10-31T04:00Z",
@@ -1317,6 +2196,171 @@
       "broadcasts": []
     },
     {
+      "id": "psg-w-401885650",
+      "teamId": "psg-w",
+      "dateISO": "2026-10-31T16:00Z",
+      "isHome": false,
+      "opponentShort": "Paris FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
+      "venue": "Stade Sébastien Charléty",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892619",
+      "teamId": "sjs",
+      "dateISO": "2026-10-31T20:00Z",
+      "isHome": true,
+      "opponentShort": "Senators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "juv-401874949",
+      "teamId": "juv",
+      "dateISO": "2026-11-01T19:45Z",
+      "isHome": true,
+      "opponentShort": "Napoli",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "sje-761929",
+      "teamId": "sje",
+      "dateISO": "2026-11-01T20:00Z",
+      "isHome": true,
+      "opponentShort": "Salt Lake",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "bay-fc-401854033",
+      "teamId": "bay-fc",
+      "dateISO": "2026-11-01T22:00Z",
+      "isHome": true,
+      "opponentShort": "San Diego",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21423.png",
+      "venue": "PayPal Park",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761932",
+      "teamId": "mia",
+      "dateISO": "2026-11-01T23:00Z",
+      "isHome": false,
+      "opponentShort": "New England",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "gsw-401909905",
+      "teamId": "gsw",
+      "dateISO": "2026-11-02T01:30Z",
+      "isHome": true,
+      "opponentShort": "Clippers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "nfl-primetime-401873036",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-03T01:15Z",
+      "homeShort": "Seahawks",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+      "awayShort": "Bears",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+      "note": "Monday Night",
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892632",
+      "teamId": "sjs",
+      "dateISO": "2026-11-03T02:00Z",
+      "isHome": true,
+      "opponentShort": "Flames",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401909919",
+      "teamId": "gsw",
+      "dateISO": "2026-11-03T03:00Z",
+      "isHome": true,
+      "opponentShort": "Suns",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892646",
+      "teamId": "sjs",
+      "dateISO": "2026-11-05T03:00Z",
+      "isHome": false,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
+      "venue": "crypto.com Arena",
+      "broadcasts": [
+        "TNT",
+        "truTV"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873037",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-06T01:15Z",
+      "homeShort": "Ravens",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+      "awayShort": "Jaguars",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+      "note": "Thursday Night",
+      "venue": "M&T Bank Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "gsw-401909937",
+      "teamId": "gsw",
+      "dateISO": "2026-11-06T03:00Z",
+      "isHome": true,
+      "opponentShort": "Heat",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBA TV"
+      ]
+    },
+    {
+      "id": "sjs-401892660",
+      "teamId": "sjs",
+      "dateISO": "2026-11-07T01:00Z",
+      "isHome": false,
+      "opponentShort": "Wild",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+      "venue": "Grand Casino Arena",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
       "id": "gt-fb-401858287",
       "teamId": "gt-fb",
       "dateISO": "2026-11-07T05:00Z",
@@ -1325,6 +2369,74 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885648",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-07T16:00Z",
+      "isHome": true,
+      "opponentShort": "Le Havre AC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21635.png",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
+      "id": "mia-761938",
+      "teamId": "mia",
+      "dateISO": "2026-11-07T21:00Z",
+      "isHome": true,
+      "opponentShort": "Charlotte",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sje-761945",
+      "teamId": "sje",
+      "dateISO": "2026-11-08T00:00Z",
+      "isHome": false,
+      "opponentShort": "Minnesota",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+      "venue": "Allianz Field",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "sjs-401892669",
+      "teamId": "sjs",
+      "dateISO": "2026-11-08T01:00Z",
+      "isHome": false,
+      "opponentShort": "Stars",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+      "venue": "American Airlines Center",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401909942",
+      "teamId": "gsw",
+      "dateISO": "2026-11-08T01:30Z",
+      "isHome": true,
+      "opponentShort": "Magic",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "juv-401875003",
+      "teamId": "juv",
+      "dateISO": "2026-11-08T19:45Z",
+      "isHome": false,
+      "opponentShort": "Fiorentina",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+      "venue": "Stadio Artemio Franchi",
+      "broadcasts": [
+        "Paramount+"
+      ]
     },
     {
       "id": "sf49-401873047",
@@ -1339,6 +2451,108 @@
       ]
     },
     {
+      "id": "nfl-primetime-401873051",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-10T01:15Z",
+      "homeShort": "Vikings",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+      "awayShort": "Bills",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "note": "Monday Night",
+      "venue": "U.S. Bank Stadium",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ]
+    },
+    {
+      "id": "gsw-401909959",
+      "teamId": "gsw",
+      "dateISO": "2026-11-10T03:00Z",
+      "isHome": true,
+      "opponentShort": "Pelicans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBA TV"
+      ]
+    },
+    {
+      "id": "sjs-401892682",
+      "teamId": "sjs",
+      "dateISO": "2026-11-10T03:00Z",
+      "isHome": true,
+      "opponentShort": "Islanders",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "MSGSN",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "psg-w-401916987",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-10T20:00Z",
+      "isHome": true,
+      "opponentShort": "Bayern",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20103.png",
+      "venue": "Parc des Princes",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401909974",
+      "teamId": "gsw",
+      "dateISO": "2026-11-12T02:30Z",
+      "isHome": false,
+      "opponentShort": "Rockets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "venue": "Toyota Center (Houston)",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892695",
+      "teamId": "sjs",
+      "dateISO": "2026-11-12T03:00Z",
+      "isHome": true,
+      "opponentShort": "Penguins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873052",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-13T01:15Z",
+      "homeShort": "Giants",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+      "awayShort": "Commanders",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+      "note": "Thursday Night",
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "gsw-401909302",
+      "teamId": "gsw",
+      "dateISO": "2026-11-14T02:30Z",
+      "isHome": false,
+      "opponentShort": "Spurs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "venue": "Frost Bank Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
       "id": "gt-fb-401858297",
       "teamId": "gt-fb",
       "dateISO": "2026-11-14T05:00Z",
@@ -1347,6 +2561,29 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
       "venue": "Memorial Stadium (Clemson, SC)",
       "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885644",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-14T16:00Z",
+      "isHome": false,
+      "opponentShort": "Marseille",
+      "opponentLogo": "",
+      "venue": "Stade Francis-Turcan",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892718",
+      "teamId": "sjs",
+      "dateISO": "2026-11-15T02:00Z",
+      "isHome": false,
+      "opponentShort": "Mammoth",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+      "venue": "Delta Center",
+      "broadcasts": [
+        "NBC Sports BA",
+        "Utah 16"
+      ]
     },
     {
       "id": "sf49-401873063",
@@ -1361,6 +2598,103 @@
       ]
     },
     {
+      "id": "sjs-401892725",
+      "teamId": "sjs",
+      "dateISO": "2026-11-16T02:00Z",
+      "isHome": true,
+      "opponentShort": "Predators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "Scripps Sports",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401910000",
+      "teamId": "gsw",
+      "dateISO": "2026-11-17T01:00Z",
+      "isHome": false,
+      "opponentShort": "Pelicans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "venue": "Smoothie King Center",
+      "broadcasts": []
+    },
+    {
+      "id": "nfl-primetime-401873065",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-17T01:15Z",
+      "homeShort": "Ravens",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+      "awayShort": "Chargers",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png",
+      "note": "Monday Night",
+      "venue": "M&T Bank Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892738",
+      "teamId": "sjs",
+      "dateISO": "2026-11-18T03:00Z",
+      "isHome": true,
+      "opponentShort": "Flames",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "psg-w-401916980",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-18T20:00Z",
+      "isHome": false,
+      "opponentShort": "Chelsea ",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19970.png",
+      "venue": "The Cherry Red Records Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910016",
+      "teamId": "gsw",
+      "dateISO": "2026-11-19T02:30Z",
+      "isHome": false,
+      "opponentShort": "Mavericks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "venue": "American Airlines Center",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "gsw-401910019",
+      "teamId": "gsw",
+      "dateISO": "2026-11-20T01:00Z",
+      "isHome": false,
+      "opponentShort": "Grizzlies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "venue": "FedExForum",
+      "broadcasts": []
+    },
+    {
+      "id": "nfl-primetime-401873066",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-20T01:15Z",
+      "homeShort": "Texans",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+      "awayShort": "Colts",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
+      "note": "Thursday Night",
+      "venue": "Reliant Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
       "id": "gt-fb-401858310",
       "teamId": "gt-fb",
       "dateISO": "2026-11-21T05:00Z",
@@ -1369,6 +2703,28 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "psg-w-401885692",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-21T16:00Z",
+      "isHome": true,
+      "opponentShort": "Saint-Malo",
+      "opponentLogo": "",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892767",
+      "teamId": "sjs",
+      "dateISO": "2026-11-22T03:00Z",
+      "isHome": true,
+      "opponentShort": "Kraken",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
     },
     {
       "id": "sf49-401873077",
@@ -1383,6 +2739,123 @@
       ]
     },
     {
+      "id": "gsw-401910035",
+      "teamId": "gsw",
+      "dateISO": "2026-11-23T01:30Z",
+      "isHome": true,
+      "opponentShort": "Celtics",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "juv-401875008",
+      "teamId": "juv",
+      "dateISO": "2026-11-23T19:45Z",
+      "isHome": true,
+      "opponentShort": "Venezia",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873078",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-24T01:15Z",
+      "homeShort": "Commanders",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+      "awayShort": "Bengals",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+      "note": "Monday Night",
+      "venue": "Northwest Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892779",
+      "teamId": "sjs",
+      "dateISO": "2026-11-24T03:00Z",
+      "isHome": true,
+      "opponentShort": "Wild",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401909324",
+      "teamId": "gsw",
+      "dateISO": "2026-11-26T03:00Z",
+      "isHome": true,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892793",
+      "teamId": "sjs",
+      "dateISO": "2026-11-26T03:00Z",
+      "isHome": false,
+      "opponentShort": "Ducks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
+      "venue": "Honda Center",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873082",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-11-27T01:20Z",
+      "homeShort": "Bills",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+      "awayShort": "Chiefs",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "note": "Thursday Night",
+      "venue": "Highmark Stadium",
+      "broadcasts": [
+        "NBC"
+      ]
+    },
+    {
+      "id": "sjs-401892805",
+      "teamId": "sjs",
+      "dateISO": "2026-11-27T21:00Z",
+      "isHome": true,
+      "opponentShort": "Golden Knights",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA",
+        "Scripps Sports"
+      ]
+    },
+    {
+      "id": "uswnt-401870040",
+      "teamId": "uswnt",
+      "dateISO": "2026-11-28T01:30Z",
+      "isHome": true,
+      "opponentShort": "El Salvador",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/slv.png",
+      "venue": "Texas Health Mansfield Stadium",
+      "broadcasts": []
+    },
+    {
+      "id": "gsw-401909336",
+      "teamId": "gsw",
+      "dateISO": "2026-11-28T02:30Z",
+      "isHome": false,
+      "opponentShort": "Trail Blazers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "venue": "Moda Center",
+      "broadcasts": []
+    },
+    {
       "id": "gt-fb-401856760",
       "teamId": "gt-fb",
       "dateISO": "2026-11-28T05:00Z",
@@ -1391,6 +2864,30 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
       "venue": "Sanford Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401892820",
+      "teamId": "sjs",
+      "dateISO": "2026-11-29T02:00Z",
+      "isHome": false,
+      "opponentShort": "Avalanche",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+      "venue": "Ball Arena",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "juv-401874994",
+      "teamId": "juv",
+      "dateISO": "2026-11-29T20:00Z",
+      "isHome": false,
+      "opponentShort": "Como",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+      "venue": "Giuseppe Sinigaglia",
+      "broadcasts": [
+        "Paramount+"
+      ]
     },
     {
       "id": "sf49-401873091",
@@ -1403,12 +2900,143 @@
       "broadcasts": [
         "FOX"
       ]
+    },
+    {
+      "id": "gsw-401910059",
+      "teamId": "gsw",
+      "dateISO": "2026-11-30T01:30Z",
+      "isHome": true,
+      "opponentShort": "Clippers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "nfl-primetime-401873094",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-12-01T01:15Z",
+      "homeShort": "Buccaneers",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+      "awayShort": "Panthers",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+      "note": "Monday Night",
+      "venue": "Raymond James Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892832",
+      "teamId": "sjs",
+      "dateISO": "2026-12-02T00:30Z",
+      "isHome": false,
+      "opponentShort": "Devils",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+      "venue": "Prudential Center",
+      "broadcasts": [
+        "Disney+",
+        "ESPN+",
+        "Hulu"
+      ]
+    },
+    {
+      "id": "gsw-401910075",
+      "teamId": "gsw",
+      "dateISO": "2026-12-02T04:00Z",
+      "isHome": true,
+      "opponentShort": "Jazz",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC"
+      ]
+    },
+    {
+      "id": "sjs-401892846",
+      "teamId": "sjs",
+      "dateISO": "2026-12-04T00:00Z",
+      "isHome": false,
+      "opponentShort": "Rangers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+      "venue": "Madison Square Garden",
+      "broadcasts": [
+        "NBC Sports BA",
+        "MSG"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873096",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-12-04T01:15Z",
+      "homeShort": "Rams",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+      "awayShort": "Chiefs",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
+      "note": "Thursday Night",
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "sjs-401892855",
+      "teamId": "sjs",
+      "dateISO": "2026-12-05T00:00Z",
+      "isHome": false,
+      "opponentShort": "Islanders",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+      "venue": "UBS Arena",
+      "broadcasts": [
+        "NBC Sports BA",
+        "MSGSN"
+      ]
+    },
+    {
+      "id": "sf49-401873095",
+      "teamId": "sf49",
+      "dateISO": "2026-12-06T18:00Z",
+      "isHome": false,
+      "opponentShort": "Giants",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+      "venue": "MetLife Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
+    },
+    {
+      "id": "sjs-401892871",
+      "teamId": "sjs",
+      "dateISO": "2026-12-06T20:00Z",
+      "isHome": false,
+      "opponentShort": "Penguins",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+      "venue": "PPG Paints Arena",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "juv-401875006",
+      "teamId": "juv",
+      "dateISO": "2026-12-06T20:00Z",
+      "isHome": true,
+      "opponentShort": "Udinese",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
     }
   ],
-  "errors": [
+  "errors": [],
+  "notices": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260907-20261205&limit=1000"
+      "notice": "No fixtures in the window — ESPN knows FIFA World Cup (latest season 2026) but has nothing scheduled between now and +75 days."
+    },
+    {
+      "team": "Women's WC",
+      "notice": "No fixtures in the window — ESPN knows FIFA Women's World Cup (latest season 2023) but has nothing scheduled between now and +75 days."
     }
   ]
 }
