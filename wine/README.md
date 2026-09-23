@@ -78,7 +78,9 @@ wine/
       "varietal": "Chardonnay",        // free text; drives the filter chips
       "tier":     "yes",               // a tier id, or null for no verdict
       "revisit":  false,               // "worth another pour" flag
-      "notes":    ""                   // optional, shown on the card
+      "notes":    "",                  // optional, shown on the card
+      "price":    22,                  // typical price in dollars, or null
+      "traderJoes": false              // TJ label: price search targets TJ
     }
   ]
 }
@@ -89,6 +91,20 @@ flagged for another look (Josh is Meh + Revisit, for example). The page
 shows a *Revisit* section at the top listing every flagged wine with its
 current verdict as a badge, then the verdict tiers in order, then an
 *Unrated* section for anything with neither.
+
+**Prices are a ballpark, not a quote.** `price` is a rough typical retail
+price shown as "~$22" on the card. The initial values were estimates, and
+some wines were left blank on purpose. Correct them in the editor whenever
+you see a shelf tag. Nothing fetches prices automatically: every retailer
+tried (Safeway, Trader Joe's, Total Wine, Google Shopping, Wine-Searcher)
+either blocks scripts or needs an account-level API, and wine prices move
+too slowly to justify a pipeline.
+
+The price pill is also a link. It opens a Google search restricted to
+`totalwine.com` and `safeway.com`, whose product pages usually show the
+current price in the result. Wines flagged `traderJoes` search the open
+web for the wine plus "Trader Joe's" instead, since TJ labels aren't sold
+elsewhere and traderjoes.com doesn't list wine.
 
 **Tiers are edited by hand.** The editor lets you pick from the tiers in
 the file but doesn't add or rename them — change `tiers` in

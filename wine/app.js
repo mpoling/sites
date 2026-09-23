@@ -38,6 +38,7 @@
     search:  '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
     x:       '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>',
     alert:   '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>',
+    external: '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>',
     cloud:   '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13v8"/><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="m8 17 4-4 4 4"/></svg>',
   };
 
@@ -128,6 +129,31 @@
   }
 
   // ─── Data model ─────────────────────────────────────────────────────────
+  // Typical price is a rough "what does this usually cost" number, not a
+  // live quote. Accepts 20, "20", "$19.99"; anything else becomes null.
+  function parsePrice(v) {
+    if (v == null || v === '') return null;
+    const n = typeof v === 'number' ? v : parseFloat(String(v).replace(/[$,\s]/g, ''));
+    return Number.isFinite(n) && n > 0 ? Math.round(n * 100) / 100 : null;
+  }
+
+  function formatPrice(p) {
+    return Number.isInteger(p) ? `~$${p}` : `~$${p.toFixed(2)}`;
+  }
+
+  // Google search that answers "roughly what does this cost?". Branded wines
+  // are restricted to Total Wine and Safeway, whose product pages usually
+  // show the price right in the result. Trader Joe's labels aren't sold
+  // there, so those search the open web for the wine plus "Trader Joe's".
+  function priceSearchUrl(w) {
+    const name = [w.producer, w.bottling, w.varietal].filter(Boolean).join(' ');
+    const mentionsTJ = /trader joe/i.test(name);
+    const q = (w.traderJoes || mentionsTJ)
+      ? (mentionsTJ ? name : `${name} Trader Joe's`)
+      : `${name} (site:totalwine.com OR site:safeway.com)`;
+    return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+  }
+
   function normalizeWine(w) {
     return {
       id:       String(w.id ?? ''),
@@ -137,6 +163,8 @@
       tier:     w.tier ? String(w.tier) : null,
       revisit:  Boolean(w.revisit),
       notes:    String(w.notes ?? '').trim(),
+      price:    parsePrice(w.price),
+      traderJoes: Boolean(w.traderJoes),
     };
   }
 
@@ -544,20 +572,25 @@
     if (dirty) badges.push(`<span class="badge badge-new">${isNew(w.id) ? 'New' : 'Edited'}</span>`);
 
     return `
-      <button class="card ${dirty ? 'is-dirty' : ''}" data-action="edit" data-id="${esc(w.id)}" type="button">
+      <div class="card ${dirty ? 'is-dirty' : ''}" data-action="edit" data-id="${esc(w.id)}" role="button" tabindex="0"
+           aria-label="Edit ${esc([w.producer, w.bottling].filter(Boolean).join(' '))}">
         <span class="card-stripe" style="background:${esc(stripe)}"></span>
         <div class="card-meta mono">
           <div class="card-meta-left">
             <span class="card-varietal">${esc(w.varietal || 'Unknown')}</span>
           </div>
-          <div class="card-meta-left">${badges.join('')}</div>
+          <div class="card-meta-left">
+            ${badges.join('')}
+            <a class="card-price" href="${esc(priceSearchUrl(w))}" target="_blank" rel="noopener"
+               title="Search prices">${w.price != null ? esc(formatPrice(w.price)) : 'Price'}${ICONS.external}</a>
+          </div>
         </div>
         <div class="card-name">
           <span class="serif card-producer">${esc(w.producer)}</span>
           ${w.bottling ? `<span class="serif card-bottling">${esc(w.bottling)}</span>` : ''}
         </div>
         ${w.notes ? `<p class="card-notes">${esc(w.notes)}</p>` : ''}
-      </button>
+      </div>
     `;
   }
 
@@ -650,6 +683,8 @@
     f.varietal.value = wine?.varietal ?? (state.varietal || varietals()[0]?.label || 'Chardonnay');
     f.revisit.checked = wine?.revisit ?? false;
     f.notes.value = wine?.notes ?? '';
+    f.price.value = wine?.price != null ? String(wine.price) : '';
+    f.traderJoes.checked = wine?.traderJoes ?? false;
 
     // Verdict radios: one per tier from the data file, plus "none".
     const tierHtml = tiers().map(t => `
@@ -696,6 +731,8 @@
       tier: f.tier.value || null,
       revisit: f.revisit.checked,
       notes: f.notes.value,
+      price: f.price.value,
+      traderJoes: f.traderJoes.checked,
     });
 
     upsertWine(wine);
@@ -735,6 +772,7 @@
 
   // ─── Events ─────────────────────────────────────────────────────────────
   document.addEventListener('click', (e) => {
+    if (e.target.closest('a[href]')) return;   // price link opens in a new tab
     const target = e.target.closest('[data-action]');
     if (!target) return;
     switch (target.dataset.action) {
@@ -775,6 +813,16 @@
         headerEl.innerHTML = renderHeader();
         break;
     }
+  });
+
+  // Cards are div[role=button] (a <button> can't contain the price link),
+  // so give them the keyboard behavior a button gets for free.
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const card = e.target.closest?.('.card[data-action="edit"]');
+    if (!card || e.target !== card) return;
+    e.preventDefault();
+    openEditor(card.dataset.id);
   });
 
   document.addEventListener('input', (e) => {
