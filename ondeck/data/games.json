@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T17:36:36.003Z",
+  "generatedAt": "2026-09-23T17:49:20.593Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -304,34 +304,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816850",
-      "teamId": "sfg",
-      "dateISO": "2026-09-08T00:10Z",
-      "isHome": true,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "NBC",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "atl-401816859",
-      "teamId": "atl",
-      "dateISO": "2026-09-08T23:15Z",
-      "isHome": true,
-      "opponentShort": "Rays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "Rays.TV"
-      ]
-    },
     {
       "id": "sfg-401816864",
       "teamId": "sfg",
@@ -909,6 +881,19 @@
       ]
     },
     {
+      "id": "psg-w-401917014",
+      "teamId": "psg-w",
+      "dateISO": "2026-09-22T19:00Z",
+      "isHome": false,
+      "opponentShort": "Real Madrid",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21128.png",
+      "venue": "Alfredo Di Stéfano Stadium",
+      "broadcasts": [
+        "ESPN+",
+        "Paramount+"
+      ]
+    },
+    {
       "id": "atl-401817030",
       "teamId": "atl",
       "dateISO": "2026-09-22T23:15Z",
@@ -1405,7 +1390,7 @@
   "errors": [
     {
       "team": "World Cup",
-      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260908-20261206&limit=1000"
+      "error": "ESPN returned 400 Bad Request for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260909-20261207&limit=1000"
     }
   ]
 }
