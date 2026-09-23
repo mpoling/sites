@@ -23,6 +23,13 @@
   --danger-bg:     rgba(220, 38, 38, 0.12);
   --danger-border: rgba(220, 38, 38, 0.35);
 
+  /* Price bands, cool → warm as price rises. Soft enough not to compete
+     with the saturated verdict colors on the card stripes. */
+  --price-1:       #a3aee6;   /* under $15   periwinkle  */
+  --price-2:       #9fc7b6;   /* $15–24      sage        */
+  --price-3:       #dfc28f;   /* $25–39      champagne   */
+  --price-4:       #e9a3b1;   /* $40+        rosé        */
+
   --font-display:  'Instrument Serif', Georgia, 'Times New Roman', serif;
   --font-body:     'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-mono:     'Geist Mono', 'SF Mono', ui-monospace, monospace;
@@ -355,6 +362,21 @@ code {
   text-decoration: none;
 }
 .card-price svg { opacity: 0.7; }
+
+.card-price[data-band="1"] { --pc: var(--price-1); }
+.card-price[data-band="2"] { --pc: var(--price-2); }
+.card-price[data-band="3"] { --pc: var(--price-3); }
+.card-price[data-band="4"] { --pc: var(--price-4); }
+.card-price:not([data-band="0"]) {
+  color: var(--pc);
+  border-color: color-mix(in srgb, var(--pc) 45%, transparent);
+  background: color-mix(in srgb, var(--pc) 12%, transparent);
+}
+.card-price:not([data-band="0"]):hover {
+  color: var(--pc);
+  border-color: color-mix(in srgb, var(--pc) 70%, transparent);
+  background: color-mix(in srgb, var(--pc) 22%, transparent);
+}
 
 .card-stripe {
   position: absolute;

@@ -100,6 +100,11 @@ tried (Safeway, Trader Joe's, Total Wine, Google Shopping, Wine-Searcher)
 either blocks scripts or needs an account-level API, and wine prices move
 too slowly to justify a pipeline.
 
+The pill is color-coded by price band so the list can be skimmed without
+reading numbers: periwinkle under $15, sage $15–24, champagne $25–39, rosé
+$40 and up. Wines with no price stay neutral gray. The thresholds live in
+`PRICE_BANDS` in `app.js` and the colors in `--price-1..4` in `styles.css`.
+
 The price pill is also a link. It opens a Google search restricted to
 `totalwine.com` and `safeway.com`, whose product pages usually show the
 current price in the result. Wines flagged `traderJoes` search the open

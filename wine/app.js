@@ -137,6 +137,15 @@
     return Number.isFinite(n) && n > 0 ? Math.round(n * 100) / 100 : null;
   }
 
+  // Price bands drive the pill color (see --price-1..4 in styles.css).
+  // Upper bounds are exclusive: $15 lands in band 2.
+  const PRICE_BANDS = [15, 25, 40];
+  function priceBand(p) {
+    if (p == null) return 0;
+    const i = PRICE_BANDS.findIndex(max => p < max);
+    return i === -1 ? PRICE_BANDS.length + 1 : i + 1;
+  }
+
   function formatPrice(p) {
     return Number.isInteger(p) ? `~$${p}` : `~$${p.toFixed(2)}`;
   }
@@ -581,7 +590,7 @@
           </div>
           <div class="card-meta-left">
             ${badges.join('')}
-            <a class="card-price" href="${esc(priceSearchUrl(w))}" target="_blank" rel="noopener"
+            <a class="card-price" data-band="${priceBand(w.price)}" href="${esc(priceSearchUrl(w))}" target="_blank" rel="noopener"
                title="Search prices">${w.price != null ? esc(formatPrice(w.price)) : 'Price'}${ICONS.external}</a>
           </div>
         </div>
