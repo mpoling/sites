@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T01:49:47.317Z",
+  "generatedAt": "2026-09-24T02:18:16.085Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,77 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816850",
-      "teamId": "sfg",
-      "dateISO": "2026-09-08T00:10Z",
-      "isHome": true,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "NBC",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "atl-401816859",
-      "teamId": "atl",
-      "dateISO": "2026-09-08T23:15Z",
-      "isHome": true,
-      "opponentShort": "Rays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "Rays.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816864",
-      "teamId": "sfg",
-      "dateISO": "2026-09-09T01:45Z",
-      "isHome": true,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Cardinals.TV"
-      ]
-    },
-    {
-      "id": "sfg-401816879",
-      "teamId": "sfg",
-      "dateISO": "2026-09-09T19:45Z",
-      "isHome": true,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Cardinals.TV"
-      ]
-    },
-    {
-      "id": "atl-401816874",
-      "teamId": "atl",
-      "dateISO": "2026-09-09T23:15Z",
-      "isHome": true,
-      "opponentShort": "Rays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Rays.TV",
-        "MLB Net"
-      ]
-    },
     {
       "id": "mia-761792",
       "teamId": "mia",
@@ -1390,7 +1319,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "ABTV"
       ]
     },
     {
@@ -2218,6 +2148,18 @@
       ]
     },
     {
+      "id": "sje-761929",
+      "teamId": "sje",
+      "dateISO": "2026-10-31T21:00Z",
+      "isHome": true,
+      "opponentShort": "Salt Lake",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
       "id": "juv-401874949",
       "teamId": "juv",
       "dateISO": "2026-11-01T19:45Z",
@@ -2227,18 +2169,6 @@
       "venue": "Allianz Stadium",
       "broadcasts": [
         "Paramount+"
-      ]
-    },
-    {
-      "id": "sje-761929",
-      "teamId": "sje",
-      "dateISO": "2026-11-01T20:00Z",
-      "isHome": true,
-      "opponentShort": "Salt Lake",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
       ]
     },
     {
@@ -2357,7 +2287,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
       "venue": "Grand Casino Arena",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "MINNHL"
       ]
     },
     {
@@ -2723,7 +2654,9 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "KONG",
+        "KHN"
       ]
     },
     {
@@ -2783,7 +2716,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "MINNHL"
       ]
     },
     {
@@ -2805,7 +2739,9 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
       "venue": "Honda Center",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "KCOP",
+        "Prime Video"
       ]
     },
     {
@@ -2874,7 +2810,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
       "venue": "Ball Arena",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "Altitude Sports"
       ]
     },
     {
@@ -3025,6 +2962,21 @@
       "venue": "Allianz Stadium",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873108",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-12-08T01:15Z",
+      "homeShort": "Seahawks",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
+      "awayShort": "Cowboys",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+      "note": "Monday Night",
+      "venue": "Lumen Field",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
       ]
     }
   ],
