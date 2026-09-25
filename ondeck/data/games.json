@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T02:18:16.085Z",
+  "generatedAt": "2026-09-25T17:54:48.899Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,45 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mia-761792",
-      "teamId": "mia",
-      "dateISO": "2026-09-10T00:30Z",
-      "isHome": false,
-      "opponentShort": "Chicago",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png",
-      "venue": "Soldier Field",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sje-761797",
-      "teamId": "sje",
-      "dateISO": "2026-09-10T02:30Z",
-      "isHome": false,
-      "opponentShort": "San Diego",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png",
-      "venue": "Snapdragon Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "atl-401816885",
-      "teamId": "atl",
-      "dateISO": "2026-09-10T16:15Z",
-      "isHome": true,
-      "opponentShort": "Rays",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "ESPN Unlmtd",
-        "MLB.TV",
-        "BravesVision",
-        "Rays.TV"
-      ]
-    },
     {
       "id": "sf49-401872657",
       "teamId": "sf49",
@@ -1245,6 +1206,19 @@
       ]
     },
     {
+      "id": "gsv-401918016",
+      "teamId": "gsv",
+      "dateISO": "2026-09-28T01:00Z",
+      "isHome": true,
+      "opponentShort": "Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "USA Net",
+        "CNBC"
+      ]
+    },
+    {
       "id": "nfl-primetime-401872963",
       "teamId": "nfl-primetime",
       "dateISO": "2026-09-29T00:15Z",
@@ -1257,6 +1231,59 @@
       "broadcasts": [
         "ESPN",
         "ABC"
+      ]
+    },
+    {
+      "id": "atl-401907965",
+      "teamId": "atl",
+      "dateISO": "2026-09-29T04:00Z",
+      "isHome": true,
+      "opponentShort": "TBD",
+      "opponentLogo": null,
+      "venue": "Truist Park",
+      "broadcasts": [
+        "NBC",
+        "NBCSN",
+        "Universo"
+      ]
+    },
+    {
+      "id": "atl-401907972",
+      "teamId": "atl",
+      "dateISO": "2026-09-30T04:00Z",
+      "isHome": true,
+      "opponentShort": "TBD",
+      "opponentLogo": null,
+      "venue": "Truist Park",
+      "broadcasts": [
+        "NBC",
+        "NBCSN",
+        "Universo"
+      ]
+    },
+    {
+      "id": "gsv-401918020",
+      "teamId": "gsv",
+      "dateISO": "2026-10-01T01:00Z",
+      "isHome": false,
+      "opponentShort": "Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+      "venue": "College Park Center",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "atl-401907973",
+      "teamId": "atl",
+      "dateISO": "2026-10-01T04:00Z",
+      "isHome": true,
+      "opponentShort": "TBD",
+      "opponentLogo": null,
+      "venue": "Truist Park",
+      "broadcasts": [
+        "NBC",
+        "NBCSN"
       ]
     },
     {
@@ -1297,6 +1324,16 @@
         "Scripps Sports",
         "NBC Sports BA"
       ]
+    },
+    {
+      "id": "gsv-401918294",
+      "teamId": "gsv",
+      "dateISO": "2026-10-02T04:00Z",
+      "isHome": true,
+      "opponentShort": "Wings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+      "venue": "Chase Center",
+      "broadcasts": []
     },
     {
       "id": "bay-fc-401854018",
@@ -2184,7 +2221,7 @@
     {
       "id": "mia-761932",
       "teamId": "mia",
-      "dateISO": "2026-11-01T23:00Z",
+      "dateISO": "2026-11-02T00:00Z",
       "isHome": false,
       "opponentShort": "New England",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
@@ -2977,6 +3014,20 @@
       "broadcasts": [
         "ESPN",
         "ABC"
+      ]
+    },
+    {
+      "id": "sjs-401892890",
+      "teamId": "sjs",
+      "dateISO": "2026-12-09T03:00Z",
+      "isHome": true,
+      "opponentShort": "Kraken",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA",
+        "KONG",
+        "KHN"
       ]
     }
   ],
