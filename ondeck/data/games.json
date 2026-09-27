@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:05:08.497Z",
+  "generatedAt": "2026-09-27T17:40:47.304Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,71 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816900",
-      "teamId": "sfg",
-      "dateISO": "2026-09-12T02:15Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sfg-401816915",
-      "teamId": "sfg",
-      "dateISO": "2026-09-12T20:05Z",
-      "isHome": true,
-      "opponentShort": "Padres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Padres.TV"
-      ]
-    },
-    {
-      "id": "gt-fb-401856681",
-      "teamId": "gt-fb",
-      "dateISO": "2026-09-12T23:00Z",
-      "isHome": true,
-      "opponentShort": "Tennessee",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
-      "venue": "Bobby Dodd Stadium",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "atl-401816910",
-      "teamId": "atl",
-      "dateISO": "2026-09-12T23:15Z",
-      "isHome": true,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "NBC Sports Phil"
-      ]
-    },
-    {
-      "id": "mia-761800",
-      "teamId": "mia",
-      "dateISO": "2026-09-12T23:30Z",
-      "isHome": true,
-      "opponentShort": "Nashville",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "bay-fc-401853998",
       "teamId": "bay-fc",
@@ -1196,29 +1131,25 @@
     {
       "id": "atl-401907965",
       "teamId": "atl",
-      "dateISO": "2026-09-29T04:00Z",
+      "dateISO": "2026-09-29T18:00Z",
       "isHome": true,
-      "opponentShort": "TBD",
+      "opponentShort": "Diamondbacks/Phillies",
       "opponentLogo": null,
       "venue": "Truist Park",
       "broadcasts": [
-        "NBC",
-        "NBCSN",
-        "Universo"
+        "NBC"
       ]
     },
     {
       "id": "atl-401907972",
       "teamId": "atl",
-      "dateISO": "2026-09-30T04:00Z",
+      "dateISO": "2026-09-30T18:00Z",
       "isHome": true,
-      "opponentShort": "TBD",
+      "opponentShort": "Diamondbacks/Phillies",
       "opponentLogo": null,
       "venue": "Truist Park",
       "broadcasts": [
-        "NBC",
-        "NBCSN",
-        "Universo"
+        "NBC"
       ]
     },
     {
@@ -1236,15 +1167,13 @@
     {
       "id": "atl-401907973",
       "teamId": "atl",
-      "dateISO": "2026-10-01T04:00Z",
+      "dateISO": "2026-10-01T18:00Z",
       "isHome": true,
-      "opponentShort": "TBD",
+      "opponentShort": "Diamondbacks/Phillies",
       "opponentLogo": null,
       "venue": "Truist Park",
       "broadcasts": [
-        "NBC",
-        "NBCSN",
-        "Universo"
+        "NBC"
       ]
     },
     {
@@ -3016,6 +2945,20 @@
       "broadcasts": [
         "TNT",
         "truTV"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873109",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-12-11T01:15Z",
+      "homeShort": "Patriots",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+      "awayShort": "Vikings",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+      "note": "Thursday Night",
+      "venue": "Gillette Stadium",
+      "broadcasts": [
+        "Prime Video"
       ]
     }
   ],
