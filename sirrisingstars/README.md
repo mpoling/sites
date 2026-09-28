@@ -32,6 +32,12 @@ The bookmark is tall and skinny (2.5 × 7 in), so the layout is re-flowed:
 - **Desktop / tablet landscape** (≥ 900px): split in two — the painting and
   brand block as a sticky left panel, the agents on the right.
 
+Below the fold is the **bookmark's back**, on a cream "card stock"
+section: the Clint Eastwood quote, the nine Monterey Peninsula
+communities with their icons (one column on phones, a 3 × 3 grid on
+desktop), and the closing note to referring agents with a link back up
+to the contacts.
+
 Each agent has tap-to-call, tap-to-email, website, and a **Save contact**
 button that downloads a vCard from `contacts/`.
 
@@ -43,7 +49,8 @@ sirrisingstars/
 ├── styles.css
 ├── favicon.svg                # gold star on navy
 ├── assets/
-│   └── cypress-coast.jpg      # the bookmark's painting, text removed
+│   ├── cypress-coast.jpg      # the bookmark's painting, text removed
+│   └── icons/                 # community icons + ornaments from the bookmark back
 ├── contacts/                  # vCards behind the "Save contact" buttons
 │   ├── natalie-nagel-poling.vcf
 │   ├── ryan-keenan.vcf
@@ -61,3 +68,6 @@ sirrisingstars/
   original of the artwork turns up, drop it in at the same path — the CSS
   crops with `object-fit: cover` anchored bottom-left, so any portrait
   crop with the cypress on the left will work.
+- **`assets/icons/*.svg`** were traced (potrace) from the bookmark back's
+  raster artwork, so they're vector and stay sharp at any size. The fill
+  color (`#a8783f`) is baked into each file.
