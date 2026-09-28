@@ -13,6 +13,13 @@
   --ink-2: rgba(244, 241, 234, 0.78);
   --ink-3: rgba(244, 241, 234, 0.55);
 
+  /* Bookmark back: cream card stock, navy ink, deeper gold. */
+  --cream: #f4ece0;
+  --cream-2: #ebe0cf;
+  --ink-navy: #13263a;
+  --ink-navy-2: #3b4a5a;
+  --gold-deep: #a8783f;
+
   --serif: "Libre Caslon Text", "Baskerville", Georgia, serif;
   --sans: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
 
@@ -164,7 +171,7 @@ a { color: inherit; text-decoration: none; }
 /* ------------------------------------------------------------------ */
 
 .content {
-  padding: 8px 24px calc(env(safe-area-inset-bottom) + 40px);
+  padding: 8px 24px 56px;
   max-width: 560px;
   margin: 0 auto;
 }
@@ -266,13 +273,143 @@ a:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
   text-wrap: balance;
 }
 
+/* ------------------------------------------------------------------ */
+/* Bookmark back: cream "card stock" section below the fold — the     */
+/* quote, the communities, and a note to referring agents.            */
+/* ------------------------------------------------------------------ */
+
+.back {
+  background: var(--cream);
+  color: var(--ink-navy);
+  padding: 64px 24px 72px;
+}
+
+.back-inner { max-width: 560px; margin: 0 auto; }
+
+.quote { margin: 0; text-align: center; }
+.quote-mark { width: 30px; height: auto; display: block; margin: 0 auto 14px; }
+.quote blockquote { margin: 0; }
+.quote blockquote p {
+  font-family: var(--serif);
+  font-size: clamp(25px, 7vw, 32px);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.quote figcaption {
+  margin-top: 14px;
+  color: var(--gold-deep);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.quote-reply {
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--ink-navy-2);
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 36px 0;
+}
+.ornament::before,
+.ornament::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--gold-deep);
+  opacity: 0.6;
+}
+.ornament img { width: 34px; height: auto; }
+.ornament-star { width: 20px; height: 20px; fill: var(--gold-deep); }
+
+.move-to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.move-to-lead { font-size: 13.5px; letter-spacing: 0.12em; }
+.move-to-main { margin-top: 4px; font-size: 21px; letter-spacing: 0.1em; font-weight: 600; }
+
+.places {
+  margin-top: 30px;
+  display: grid;
+  gap: 22px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 18px;
+  align-items: center;
+}
+.place-icon { justify-self: center; max-width: 60px; height: auto; }
+.place-name {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.place-desc {
+  margin-top: 2px;
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ink-navy-2);
+}
+
+.back-closing { text-align: center; }
+.back-closing-line {
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+.back-closing-sign {
+  margin-top: 12px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--gold-deep);
+  text-wrap: balance;
+}
+.back-cta {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 12px 22px;
+  border: 1px solid var(--ink-navy);
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.back-cta:hover,
+.back-cta:focus-visible { background: var(--ink-navy); color: var(--cream); }
+.back a:focus-visible { outline-color: var(--ink-navy); }
+
+#agents { scroll-margin-top: 24px; }
+html { scroll-behavior: smooth; }
+
 .legal {
-  margin-top: 44px;
+  padding: 28px 24px calc(env(safe-area-inset-bottom) + 28px);
   font-size: 11px;
   line-height: 1.6;
   color: var(--ink-3);
   text-align: center;
 }
+.legal p { max-width: 640px; margin: 0 auto; }
 
 /* ------------------------------------------------------------------ */
 /* Desktop: split the bookmark into two panels side by side — the     */
@@ -323,9 +460,25 @@ a:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
 
   .eyebrow { text-align: left; }
   .closing { text-align: left; }
-  .legal { text-align: left; }
+
+  .back { padding: 96px 56px 104px; }
+  .back-inner { max-width: 1080px; }
+  .quote blockquote p { font-size: 38px; }
+  .quote-reply { font-size: 22px; }
+  .ornament { max-width: 560px; margin: 48px auto; }
+
+  .places {
+    margin-top: 44px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 48px;
+  }
+  .place { align-items: start; }
+  .place-icon { margin-top: 2px; }
+
+  .back-closing-line, .back-closing-sign { font-size: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+  html { scroll-behavior: auto; }
 }

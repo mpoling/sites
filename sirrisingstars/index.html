@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page front">
 
     <header class="hero">
       <img class="hero-art" src="assets/cypress-coast.jpg" alt="A Monterey cypress on the bluffs above the Pacific at dusk." width="878" height="1368">
@@ -65,7 +65,7 @@
     </header>
 
     <main class="content">
-      <h2 class="eyebrow">Meet your Rising Stars</h2>
+      <h2 class="eyebrow" id="agents">Meet your Rising Stars</h2>
 
       <ul class="agents">
         <li class="agent">
@@ -113,11 +113,108 @@
         <p class="closing-line">We’re honored to be your referral partners.</p>
       </section>
 
-      <footer class="legal">
-        <p>Sotheby’s International Realty® and the Sotheby’s International Realty Logo are service marks licensed to Sotheby’s International Realty Affiliates LLC and used with permission. Each office is independently owned and operated. Equal Housing Opportunity.</p>
-      </footer>
     </main>
 
   </div>
+
+  <section class="back" aria-labelledby="move-to">
+    <div class="back-inner">
+      <figure class="quote">
+        <img class="quote-mark" src="assets/icons/quote.svg" alt="" width="38" height="31">
+        <blockquote><p>“The Monterey Peninsula gets in your&nbsp;blood.”</p></blockquote>
+        <figcaption>— Clint Eastwood</figcaption>
+        <p class="quote-reply">We couldn’t agree more.</p>
+      </figure>
+
+      <div class="ornament" aria-hidden="true">
+        <img src="assets/icons/cypress.svg" alt="" width="48" height="57">
+      </div>
+
+      <h2 class="move-to" id="move-to">
+        <span class="move-to-lead">So, your client says they want to</span>
+        <span class="move-to-main">Move to…</span>
+      </h2>
+
+      <ul class="places">
+        <li class="place">
+          <img class="place-icon" src="assets/icons/carmel-by-the-sea.svg" alt="" width="58" height="51">
+          <div>
+            <h3 class="place-name">Carmel-by-the-Sea</h3>
+            <p class="place-desc">Charm, walkability &amp; white-sand beaches</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/pebble-beach.svg" alt="" width="58" height="51">
+          <div>
+            <h3 class="place-name">Pebble Beach</h3>
+            <p class="place-desc">Iconic golf, prestige &amp; coastal elegance</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/carmel-valley.svg" alt="" width="58" height="41">
+          <div>
+            <h3 class="place-name">Carmel Valley</h3>
+            <p class="place-desc">Sunshine, vineyards &amp; relaxed luxury</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/pacific-grove.svg" alt="" width="46" height="60">
+          <div>
+            <h3 class="place-name">Pacific Grove</h3>
+            <p class="place-desc">Historic homes, trails &amp; small-town charm</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/monterey.svg" alt="" width="58" height="44">
+          <div>
+            <h3 class="place-name">Monterey</h3>
+            <p class="place-desc">Waterfront living, history &amp; culture</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/big-sur.svg" alt="" width="48" height="45">
+          <div>
+            <h3 class="place-name">Big Sur</h3>
+            <p class="place-desc">Dramatic coastline &amp; natural beauty</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/carmel-highlands.svg" alt="" width="58" height="43">
+          <div>
+            <h3 class="place-name">Carmel Highlands</h3>
+            <p class="place-desc">Ocean views, architectural homes &amp; privacy</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/marina.svg" alt="" width="58" height="28">
+          <div>
+            <h3 class="place-name">Marina</h3>
+            <p class="place-desc">Coastal access, newer communities &amp; room to grow</p>
+          </div>
+        </li>
+        <li class="place">
+          <img class="place-icon" src="assets/icons/seaside.svg" alt="" width="58" height="45">
+          <div>
+            <h3 class="place-name">Seaside</h3>
+            <p class="place-desc">Bay views, central location &amp; opportunity</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="ornament" aria-hidden="true">
+        <svg class="ornament-star" viewBox="-12 -12 24 24"><path d="M0-11 3.2-3.4 11-3.4 4.8 1.4 7 9.4 0 4.6-7 9.4-4.8 1.4-11-3.4-3.2-3.4Z"/></svg>
+      </div>
+
+      <div class="back-closing">
+        <p class="back-closing-line">When your clients are dreaming of the Monterey Peninsula, think of&nbsp;us.</p>
+        <p class="back-closing-sign">From one Rising Star to another, we’ll take great care of&nbsp;them.</p>
+        <a class="back-cta" href="#agents">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="legal">
+    <p>Sotheby’s International Realty® and the Sotheby’s International Realty Logo are service marks licensed to Sotheby’s International Realty Affiliates LLC and used with permission. Each office is independently owned and operated. Equal Housing Opportunity.</p>
+  </footer>
 </body>
 </html>
