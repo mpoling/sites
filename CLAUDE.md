@@ -24,6 +24,7 @@ repo need to follow.
 | `dc-2026`    | `dc-2026.<owner-tld>`     | Itinerary page for an April 2026 DC trip      |
 | `orlando-2026`| `orlando-2026.<owner-tld>` | Itinerary for the June 2026 Orlando / St. Pete trip |
 | `re`         | `re.<owner-tld>`          | Brand direction explorations for Natalie Nagel Poling |
+| `sirrisingstars`| `sirrisingstars.<owner-tld>` | Sotheby's Rising Stars landing page (QR target via `sirrisingstars.com`) |
 | `vacationhub`| `vacationhub.<owner-tld>` | Disney+-styled hub for hard-to-find vacation info (theme parks first) |
 | `wine`       | `wine.<owner-tld>`        | Family wine list with tiers + an in-page editor that commits to `main` |
 

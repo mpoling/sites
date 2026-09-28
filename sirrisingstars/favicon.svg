@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Gold faceted star on Sotheby's navy, matching the page's award mark. -->
+  <rect width="64" height="64" rx="12" fill="#0c2233"/>
+  <g transform="translate(32 34)">
+    <path fill="#e9c98f" d="M0 0L0 -26L-6.2 -8.4ZM0 0L24.7 -8L6.2 -8.4ZM0 0L15.3 21L9.9 3.2ZM0 0L-15.3 21L0 10.4ZM0 0L-24.7 -8L-9.9 3.2Z"/>
+    <path fill="#a8783f" d="M0 0L0 -26L6.2 -8.4ZM0 0L24.7 -8L9.9 3.2ZM0 0L15.3 21L0 10.4ZM0 0L-15.3 21L-9.9 3.2ZM0 0L-24.7 -8L-6.2 -8.4Z"/>
+  </g>
+</svg>
