@@ -60,6 +60,12 @@ sirrisingstars/
 
 ## Editing
 
+- **After changing `styles.css`, bump the `?v=` on its `<link>` in
+  `index.html`.** Cloudflare sends `.css` with a 4-hour browser cache but
+  HTML with 10 minutes, so without the bump returning visitors get the new
+  page with the old stylesheet (which is how the cream section once showed
+  up unstyled, with a giant black star).
+
 - **Contact details** live in two places: the agent list in `index.html`
   and the matching `.vcf` in `contacts/`. Change both.
 - **`assets/cypress-coast.jpg`** was extracted from the bookmark PDF (a
