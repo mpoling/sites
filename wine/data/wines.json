@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T01:07:01.035Z",
+  "updatedAt": "2026-09-29T00:36:59.108Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -40,6 +40,7 @@
     {"id":"rombauer","producer":"Rombauer","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":40,"traderJoes":false},
     {"id":"sonoma-cutrer","producer":"Sonoma-Cutrer","bottling":"","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":25,"traderJoes":false},
     {"id":"testarossa","producer":"Testarossa","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":35,"traderJoes":false},
+    {"id":"trader-joe-s-reserve","producer":"Trader Joe’s","bottling":"Reserve","varietal":"Grenache Blanc","tier":"no","revisit":false,"notes":"","price":null,"traderJoes":true},
     {"id":"trader-joes-sonoma","producer":"Trader Joe's","bottling":"Sonoma","varietal":"Chardonnay","tier":"solid","revisit":false,"notes":"","price":10,"traderJoes":true},
     {"id":"wente-morning-fog","producer":"Wente","bottling":"Morning Fog","varietal":"Chardonnay","tier":"solid","revisit":false,"notes":"","price":15,"traderJoes":false},
     {"id":"wente-riva-ranch","producer":"Wente","bottling":"Riva Ranch","varietal":"Chardonnay","tier":"solid","revisit":false,"notes":"","price":22,"traderJoes":false}
