@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T20:05:22.244Z",
+  "generatedAt": "2026-09-29T18:34:23.677Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -344,35 +344,6 @@
   ],
   "games": [
     {
-      "id": "atl-401816937",
-      "teamId": "atl",
-      "dateISO": "2026-09-14T23:40Z",
-      "isHome": false,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "venue": "Wrigley Field",
-      "broadcasts": [
-        "MLB.TV",
-        "Marquee Sports Net",
-        "BravesVision",
-        "MLB Net"
-      ]
-    },
-    {
-      "id": "sfg-401816939",
-      "teamId": "sfg",
-      "dateISO": "2026-09-14T23:45Z",
-      "isHome": false,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "venue": "Busch Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Cardinals.TV"
-      ]
-    },
-    {
       "id": "nfl-primetime-401872931",
       "teamId": "nfl-primetime",
       "dateISO": "2026-09-15T00:15Z",
@@ -393,14 +364,14 @@
       "dateISO": "2026-09-15T23:40Z",
       "isHome": false,
       "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png",
       "venue": "Wrigley Field",
       "broadcasts": [
         "MLB.TV",
+        "TBS",
         "Marquee Sports Net",
         "BravesVision",
-        "Gray Media",
-        "TBS"
+        "Gray Media"
       ]
     },
     {
@@ -409,7 +380,7 @@
       "dateISO": "2026-09-15T23:45Z",
       "isHome": false,
       "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png",
       "venue": "Busch Stadium",
       "broadcasts": [
         "MLB.TV",
@@ -423,7 +394,7 @@
       "dateISO": "2026-09-16T17:15Z",
       "isHome": false,
       "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png",
       "venue": "Busch Stadium",
       "broadcasts": [
         "MLB.TV",
@@ -437,7 +408,7 @@
       "dateISO": "2026-09-16T23:40Z",
       "isHome": false,
       "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png",
       "venue": "Wrigley Field",
       "broadcasts": [
         "MLB.TV",
@@ -487,7 +458,7 @@
       "dateISO": "2026-09-19T00:10Z",
       "isHome": false,
       "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png",
       "venue": "Daikin Park",
       "broadcasts": [
         "MLB.TV",
@@ -516,7 +487,7 @@
       "dateISO": "2026-09-19T02:15Z",
       "isHome": false,
       "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
       "venue": "Dodger Stadium",
       "broadcasts": [
         "Apple TV"
@@ -552,7 +523,7 @@
       "dateISO": "2026-09-19T23:10Z",
       "isHome": false,
       "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png",
       "venue": "Daikin Park",
       "broadcasts": [
         "MLB.TV",
@@ -592,7 +563,7 @@
       "dateISO": "2026-09-20T01:10Z",
       "isHome": false,
       "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
       "venue": "Dodger Stadium",
       "broadcasts": [
         "MLB.TV",
@@ -618,7 +589,7 @@
       "dateISO": "2026-09-20T18:10Z",
       "isHome": false,
       "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png",
       "venue": "Daikin Park",
       "broadcasts": [
         "MLB.TV",
@@ -643,7 +614,7 @@
       "dateISO": "2026-09-20T20:10Z",
       "isHome": false,
       "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
       "venue": "Dodger Stadium",
       "broadcasts": [
         "MLB.TV",
@@ -708,7 +679,7 @@
       "dateISO": "2026-09-22T01:45Z",
       "isHome": true,
       "opponentShort": "Twins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png",
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
@@ -735,7 +706,7 @@
       "dateISO": "2026-09-22T23:15Z",
       "isHome": true,
       "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png",
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
@@ -750,7 +721,7 @@
       "dateISO": "2026-09-23T01:45Z",
       "isHome": true,
       "opponentShort": "Twins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png",
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
@@ -790,7 +761,7 @@
       "dateISO": "2026-09-23T19:45Z",
       "isHome": true,
       "opponentShort": "Twins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png",
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
@@ -804,7 +775,7 @@
       "dateISO": "2026-09-23T23:15Z",
       "isHome": true,
       "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png",
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
@@ -818,7 +789,7 @@
       "dateISO": "2026-09-24T23:15Z",
       "isHome": true,
       "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png",
       "venue": "Truist Park",
       "broadcasts": [
         "MLB.TV",
@@ -871,7 +842,7 @@
       "dateISO": "2026-09-25T23:10Z",
       "isHome": false,
       "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png",
       "venue": "loanDepot park",
       "broadcasts": [
         "MLB.TV",
@@ -885,7 +856,7 @@
       "dateISO": "2026-09-26T02:15Z",
       "isHome": true,
       "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
@@ -899,7 +870,7 @@
       "dateISO": "2026-09-26T20:05Z",
       "isHome": true,
       "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
@@ -913,7 +884,7 @@
       "dateISO": "2026-09-26T20:10Z",
       "isHome": false,
       "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png",
       "venue": "loanDepot park",
       "broadcasts": [
         "MLB.TV",
@@ -976,7 +947,7 @@
       "dateISO": "2026-09-27T19:05Z",
       "isHome": true,
       "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
       "venue": "Oracle Park",
       "broadcasts": [
         "MLB.TV",
@@ -990,7 +961,7 @@
       "dateISO": "2026-09-27T19:10Z",
       "isHome": false,
       "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png",
       "venue": "loanDepot park",
       "broadcasts": [
         "MLB.TV",
@@ -1070,10 +1041,11 @@
       "dateISO": "2026-09-29T18:00Z",
       "isHome": true,
       "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/phi.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
       "venue": "Truist Park",
       "broadcasts": [
-        "NBC"
+        "NBC",
+        "ERADM"
       ]
     },
     {
@@ -1082,10 +1054,11 @@
       "dateISO": "2026-09-30T18:00Z",
       "isHome": true,
       "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/phi.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
       "venue": "Truist Park",
       "broadcasts": [
-        "NBC"
+        "NBC",
+        "ERADM"
       ]
     },
     {
@@ -1106,10 +1079,11 @@
       "dateISO": "2026-10-01T18:00Z",
       "isHome": true,
       "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/phi.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
       "venue": "Truist Park",
       "broadcasts": [
-        "NBC"
+        "NBC",
+        "ERADM"
       ]
     },
     {
@@ -1160,7 +1134,9 @@
       "opponentShort": "Wings",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
       "venue": "Chase Center",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN2"
+      ]
     },
     {
       "id": "bay-fc-401854018",
@@ -1242,7 +1218,8 @@
       "venue": "American Airlines Center",
       "broadcasts": [
         "ESPN+",
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "Prime Video (Local)"
       ]
     },
     {
@@ -1581,7 +1558,8 @@
       "venue": "Little Caesars Arena",
       "broadcasts": [
         "ESPN+",
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "DSN"
       ]
     },
     {
@@ -2221,7 +2199,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
       "venue": "American Airlines Center",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "Prime Video (Local)"
       ]
     },
     {
@@ -2532,7 +2511,8 @@
       "venue": "SAP Center at San Jose",
       "broadcasts": [
         "NBC Sports BA",
-        "KONG"
+        "KONG",
+        "Prime Video (Local)"
       ]
     },
     {
@@ -2616,7 +2596,8 @@
       "venue": "Honda Center",
       "broadcasts": [
         "NBC Sports BA",
-        "KCOP"
+        "KCOP",
+        "Prime Video (Local)"
       ]
     },
     {
@@ -2864,7 +2845,8 @@
       "venue": "SAP Center at San Jose",
       "broadcasts": [
         "NBC Sports BA",
-        "KONG"
+        "KONG",
+        "Prime Video (Local)"
       ]
     },
     {
@@ -2916,6 +2898,28 @@
       "opponentLogo": "",
       "venue": "Parc des Sports Stadium A1",
       "broadcasts": []
+    },
+    {
+      "id": "gsw-401910093",
+      "teamId": "gsw",
+      "dateISO": "2026-12-13T01:00Z",
+      "isHome": false,
+      "opponentShort": "Cavaliers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+      "venue": "Rocket Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "sf49-401873120",
+      "teamId": "sf49",
+      "dateISO": "2026-12-13T21:25Z",
+      "isHome": true,
+      "opponentShort": "Rams",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
     }
   ],
   "errors": [],
