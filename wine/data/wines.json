@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T00:36:59.108Z",
+  "updatedAt": "2026-09-30T01:47:14.913Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -17,6 +17,7 @@
     {"id":"bread-and-butter","producer":"Bread & Butter","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":13,"traderJoes":false},
     {"id":"butter","producer":"Butter","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":15,"traderJoes":false},
     {"id":"carmel-road","producer":"Carmel Road","bottling":"","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":15,"traderJoes":false},
+    {"id":"cline-family-cellars-mendocino-county","producer":"Cline Family Cellars","bottling":"Mendocino County","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"decoy","producer":"Decoy","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":22,"traderJoes":false},
     {"id":"edna-valley-buttery-chardonnay","producer":"Edna Valley","bottling":"Buttery Chardonnay","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":14,"traderJoes":false},
     {"id":"estancia","producer":"Estancia","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":12,"traderJoes":false},
