@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T01:47:14.913Z",
+  "updatedAt": "2026-09-30T01:48:19.712Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -14,6 +14,7 @@
     {"id":"big-churn","producer":"Big Churn","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"boen","producer":"Boen","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":20,"traderJoes":false},
     {"id":"bogle","producer":"Bogle","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":10,"traderJoes":false},
+    {"id":"bonterra","producer":"Bonterra","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"Organic","price":null,"traderJoes":false},
     {"id":"bread-and-butter","producer":"Bread & Butter","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":13,"traderJoes":false},
     {"id":"butter","producer":"Butter","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":15,"traderJoes":false},
     {"id":"carmel-road","producer":"Carmel Road","bottling":"","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":15,"traderJoes":false},
