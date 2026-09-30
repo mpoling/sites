@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T18:34:23.677Z",
+  "generatedAt": "2026-09-30T18:24:14.127Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,51 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401872931",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-09-15T00:15Z",
-      "homeShort": "Chiefs",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
-      "awayShort": "Broncos",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
-      "note": "Monday Night",
-      "venue": "Arrowhead Stadium",
-      "broadcasts": [
-        "ESPN",
-        "ABC"
-      ]
-    },
-    {
-      "id": "atl-401816950",
-      "teamId": "atl",
-      "dateISO": "2026-09-15T23:40Z",
-      "isHome": false,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png",
-      "venue": "Wrigley Field",
-      "broadcasts": [
-        "MLB.TV",
-        "TBS",
-        "Marquee Sports Net",
-        "BravesVision",
-        "Gray Media"
-      ]
-    },
-    {
-      "id": "sfg-401816954",
-      "teamId": "sfg",
-      "dateISO": "2026-09-15T23:45Z",
-      "isHome": false,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png",
-      "venue": "Busch Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Cardinals.TV"
-      ]
-    },
     {
       "id": "sfg-401816969",
       "teamId": "sfg",
@@ -1363,9 +1318,7 @@
       "opponentShort": "New Mexico",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19408.png",
       "venue": "Isotopes Park",
-      "broadcasts": [
-        "ESPN+"
-      ]
+      "broadcasts": []
     },
     {
       "id": "sje-761857",
@@ -1742,7 +1695,7 @@
       "isHome": false,
       "opponentShort": "Red Bull NY",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
-      "venue": "Red Bull Arena",
+      "venue": "Sports Illustrated Stadium",
       "broadcasts": [
         "Apple TV"
       ]
@@ -2919,6 +2872,18 @@
       "venue": "Levi's Stadium",
       "broadcasts": [
         "FOX"
+      ]
+    },
+    {
+      "id": "juv-401874783",
+      "teamId": "juv",
+      "dateISO": "2026-12-14T19:45Z",
+      "isHome": true,
+      "opponentShort": "Monza",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
       ]
     }
   ],
