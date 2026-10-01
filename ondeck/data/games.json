@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:24:14.127Z",
+  "generatedAt": "2026-10-01T18:48:35.271Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,34 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sfg-401816969",
-      "teamId": "sfg",
-      "dateISO": "2026-09-16T17:15Z",
-      "isHome": false,
-      "opponentShort": "Cardinals",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png",
-      "venue": "Busch Stadium",
-      "broadcasts": [
-        "MLB.TV",
-        "NBC Sports BA",
-        "Cardinals.TV"
-      ]
-    },
-    {
-      "id": "atl-401816965",
-      "teamId": "atl",
-      "dateISO": "2026-09-16T23:40Z",
-      "isHome": false,
-      "opponentShort": "Cubs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png",
-      "venue": "Wrigley Field",
-      "broadcasts": [
-        "MLB.TV",
-        "Marquee Sports Net",
-        "BravesVision"
-      ]
-    },
     {
       "id": "bay-fc-401854084",
       "teamId": "bay-fc",
@@ -1029,19 +1001,6 @@
       ]
     },
     {
-      "id": "atl-401907973",
-      "teamId": "atl",
-      "dateISO": "2026-10-01T18:00Z",
-      "isHome": true,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "NBC",
-        "ERADM"
-      ]
-    },
-    {
       "id": "psg-w-401917001",
       "teamId": "psg-w",
       "dateISO": "2026-10-01T19:00Z",
@@ -1051,6 +1010,20 @@
       "venue": "Campus PSG",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "atl-401907973",
+      "teamId": "atl",
+      "dateISO": "2026-10-02T00:00Z",
+      "isHome": true,
+      "opponentShort": "Phillies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "NBC",
+        "Peacock",
+        "ERADM"
       ]
     },
     {
@@ -1084,7 +1057,7 @@
     {
       "id": "gsv-401918294",
       "teamId": "gsv",
-      "dateISO": "2026-10-02T04:00Z",
+      "dateISO": "2026-10-03T01:00Z",
       "isHome": true,
       "opponentShort": "Wings",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
@@ -1199,7 +1172,9 @@
       "opponentShort": "Lakers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "venue": "Chase Center",
-      "broadcasts": []
+      "broadcasts": [
+        "NBA TV"
+      ]
     },
     {
       "id": "gsw-401914129",
@@ -1209,7 +1184,9 @@
       "opponentShort": "Trail Blazers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
       "venue": "Moda Center",
-      "broadcasts": []
+      "broadcasts": [
+        "NBA TV"
+      ]
     },
     {
       "id": "sjs-401891825",
@@ -1404,7 +1381,9 @@
       "opponentShort": "Lakers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "venue": "T-Mobile Arena",
-      "broadcasts": []
+      "broadcasts": [
+        "NBA TV"
+      ]
     },
     {
       "id": "sjs-401892503",
@@ -2884,6 +2863,42 @@
       "venue": "Allianz Stadium",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910110",
+      "teamId": "gsw",
+      "dateISO": "2026-12-15T01:00Z",
+      "isHome": false,
+      "opponentShort": "Grizzlies",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "venue": "FedExForum",
+      "broadcasts": []
+    },
+    {
+      "id": "nfl-primetime-401873123",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-12-15T01:15Z",
+      "homeShort": "Jaguars",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+      "awayShort": "Steelers",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+      "note": "Monday Night",
+      "venue": "EverBank Stadium",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401892930",
+      "teamId": "sjs",
+      "dateISO": "2026-12-15T03:00Z",
+      "isHome": true,
+      "opponentShort": "Canucks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
       ]
     }
   ],
