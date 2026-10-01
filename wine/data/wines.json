@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T02:03:43.961Z",
+  "updatedAt": "2026-10-01T02:05:46.162Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -35,7 +35,7 @@
     {"id":"kosmic-kitty","producer":"Kosmic Kitty","bottling":"","varietal":"Sauvignon Blanc","tier":"mid","revisit":false,"notes":"Very light. Dry.","price":null,"traderJoes":false},
     {"id":"la-crema-monterey","producer":"La Crema","bottling":"Monterey","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":17,"traderJoes":false},
     {"id":"la-crema-sonoma","producer":"La Crema","bottling":"Sonoma","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":22,"traderJoes":false},
-    {"id":"le-burgondie-bourgogne","producer":"Le Burgondie","bottling":"Bourgogne","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":null,"traderJoes":false},
+    {"id":"le-burgondie-bourgogne","producer":"Le Burgondie","bottling":"Bourgogne","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"lustrous","producer":"Lustrous","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"meiomi","producer":"Meiomi","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"Vanilla","price":20,"traderJoes":false},
     {"id":"rebuttel","producer":"Rebuttel","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":true},
