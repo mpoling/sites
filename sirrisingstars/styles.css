@@ -1,12 +1,16 @@
 /* Rising Stars — Sotheby's International Realty landing page.
    Palette and type follow the printed bookmark: deep Sotheby's navy,
    brushed-gold accents, a Caslon-style serif for the wordmark and prose,
-   tracked caps in a gothic sans for labels. */
+   tracked caps in a gothic sans for labels.
+
+   One layout, no breakpoints. Everything is composed on a fixed 980px
+   canvas (see the viewport meta in index.html): phones show it scaled to
+   ~40%, desktops show it at full size centered on full-bleed bands. Type
+   is sized so the scaled-down phone view stays readable — roughly
+   "large print" on desktop, normal print on a phone. */
 
 :root {
   --navy: #0c2233;
-  --navy-2: #102a3f;
-  --navy-edge: rgba(12, 34, 51, 0);
   --gold: #cf9f5e;
   --gold-soft: rgba(207, 159, 94, 0.55);
   --ink: #f4f1ea;
@@ -15,7 +19,6 @@
 
   /* Bookmark back: cream card stock, navy ink, deeper gold. */
   --cream: #f4ece0;
-  --cream-2: #ebe0cf;
   --ink-navy: #13263a;
   --ink-navy-2: #3b4a5a;
   --gold-deep: #a8783f;
@@ -23,48 +26,54 @@
   --serif: "Libre Caslon Text", "Baskerville", Georgia, serif;
   --sans: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
 
+  --canvas: 980px;
+  --gutter: 56px;
+
   color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  min-width: var(--canvas);
   background: var(--navy);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, p, ul { margin: 0; padding: 0; }
+h1, h2, h3, p, ul, figure, blockquote { margin: 0; padding: 0; }
 ul { list-style: none; }
 a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
 
-.caps,
-.award-title, .award-sub, .wordmark-sub, .kicker,
-.eyebrow, .agent-name, .dre, .save, .closing-kicker {
+.canvas {
+  width: var(--canvas);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.award-title, .award-sub, .wordmark-sub, .kicker, .eyebrow, .agent-name,
+.dre, .save, .closing-kicker, .quote figcaption, .move-to, .place-name,
+.back-cta {
   text-transform: uppercase;
-  letter-spacing: 0.14em;
 }
 
 /* ------------------------------------------------------------------ */
-/* Hero: the bookmark's upper half — brand block floating in the sky  */
-/* over the cypress and coastline.                                     */
+/* Hero: brand block in the sky over the cypress and coastline.       */
 /* ------------------------------------------------------------------ */
 
-.hero {
+.hero-canvas {
   position: relative;
-  overflow: hidden;
   isolation: isolate;
-  /* Reserve the painting's landscape below the copy. The artwork is
-     ~1.56× taller than wide; the bluffs occupy its lower ~40%. */
-  min-height: min(156vw, 980px);
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
+  height: 640px;
+  padding: 0;
 }
 
 .hero-art {
@@ -73,151 +82,145 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left bottom;
+  object-position: 0 64%;
   z-index: -2;
 }
 
-/* Deepen the top of the sky behind the text, and melt the bottom edge
-   into the page navy so the agent list continues the painting. */
-.hero::after {
+/* Darken the sky behind the text and melt every edge into the navy so
+   the painting sits seamlessly on wider desktop screens. */
+.hero-canvas::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(to bottom, rgba(12, 34, 51, 0.55) 0%, rgba(12, 34, 51, 0) 38%),
-    linear-gradient(to top, var(--navy) 0%, rgba(12, 34, 51, 0.6) 12%, var(--navy-edge) 30%);
+    linear-gradient(to bottom, rgba(12, 34, 51, 0.6) 0%, rgba(12, 34, 51, 0.15) 60%, rgba(12, 34, 51, 0) 75%),
+    linear-gradient(to top, var(--navy) 0%, rgba(12, 34, 51, 0) 24%),
+    linear-gradient(to right, var(--navy) 0%, rgba(12, 34, 51, 0) 3%),
+    linear-gradient(to left, var(--navy) 0%, rgba(12, 34, 51, 0) 3%);
 }
 
 .hero-copy {
-  /* Offset right like the bookmark so the cypress stays in view. */
-  margin-left: auto;
-  width: min(74%, 30rem);
-  padding: calc(env(safe-area-inset-top) + clamp(28px, 8vw, 56px)) clamp(12px, 4vw, 24px) 0 0;
-  text-align: center;
+  position: absolute;
+  top: 56px;
+  right: 40px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-shadow: 0 1px 12px rgba(6, 18, 28, 0.45);
+  text-align: center;
+  text-shadow: 0 1px 14px rgba(6, 18, 28, 0.5);
 }
 
-.award {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-align: left;
-}
-
+.award { display: flex; align-items: center; gap: 18px; text-align: left; }
 .star {
-  width: clamp(40px, 11vw, 54px);
-  height: auto;
+  width: 72px;
+  height: 72px;
   flex: none;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
 }
-
-.award-text { display: flex; flex-direction: column; line-height: 1.2; }
-.award-title { font-weight: 500; font-size: clamp(17px, 4.6vw, 22px); letter-spacing: 0.12em; }
-.award-sub { color: var(--gold); font-size: clamp(11px, 3vw, 13px); letter-spacing: 0.18em; margin-top: 3px; }
+.award-text { display: flex; flex-direction: column; line-height: 1.15; }
+.award-title { font-size: 34px; font-weight: 500; letter-spacing: 0.12em; }
+.award-sub { margin-top: 4px; font-size: 20px; letter-spacing: 0.2em; color: var(--gold); }
 
 .wordmark {
-  margin-top: clamp(22px, 6vw, 34px);
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 400;
 }
-
-.wordmark-name {
-  font-family: var(--serif);
-  font-size: clamp(44px, 13vw, 64px);
-  line-height: 1;
-  letter-spacing: -0.005em;
-}
-
-.wordmark-sub {
-  margin-top: 10px;
-  font-family: var(--sans);
-  font-size: clamp(11.5px, 3.3vw, 14px);
-  letter-spacing: 0.2em;
-  color: var(--ink);
-}
+.wordmark-name { font-family: var(--serif); font-size: 112px; line-height: 1; }
+.wordmark-sub { margin-top: 14px; font-size: 24px; letter-spacing: 0.22em; }
 
 .kicker {
-  margin-top: clamp(30px, 9vw, 48px);
-  color: var(--gold);
-  font-size: clamp(14px, 4vw, 17px);
-  line-height: 1.6;
+  margin-top: 44px;
+  font-size: 28px;
+  line-height: 1.5;
   letter-spacing: 0.2em;
+  color: var(--gold);
+  text-shadow: 0 1px 10px rgba(6, 18, 28, 0.8);
 }
 
 .rule {
   display: block;
-  width: 44px;
-  height: 1px;
-  margin: clamp(14px, 4vw, 20px) auto;
+  width: 64px;
+  height: 2px;
+  margin: 22px auto;
   background: var(--gold);
 }
 
 .lede {
   font-family: var(--serif);
-  font-size: clamp(17px, 4.8vw, 21px);
-  line-height: 1.45;
-  max-width: 15em;
+  font-size: 34px;
+  line-height: 1.35;
+  max-width: 17em;
   text-wrap: balance;
 }
 
 /* ------------------------------------------------------------------ */
-/* Agents: the bookmark's lower half.                                  */
+/* Agents: three columns side by side under the hero.                 */
 /* ------------------------------------------------------------------ */
 
-.content {
-  padding: 8px 24px 56px;
-  max-width: 560px;
-  margin: 0 auto;
-}
+.front { padding-top: 8px; padding-bottom: 72px; }
 
 .eyebrow {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--ink-3);
-  letter-spacing: 0.24em;
   text-align: center;
-  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  color: var(--ink-3);
+}
+
+.agents {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Name, phone, email, web, save, DRE — shared rows so a two-line name
+     doesn't knock its column out of alignment. */
+  grid-template-rows: repeat(6, auto);
+  column-gap: 0;
 }
 
 .agent {
-  padding: 26px 0;
-  border-bottom: 1px solid var(--gold-soft);
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+  justify-items: start;
+  align-items: center;
+  row-gap: 10px;
+  padding: 0 28px;
+  border-left: 1px solid var(--gold-soft);
 }
-.agent:last-child { border-bottom: 0; }
+.agent:first-child { border-left: 0; padding-left: 0; }
+.agent:last-child { padding-right: 0; }
 
 .agent-name {
-  font-family: var(--sans);
+  align-self: end;
+  font-size: 28px;
   font-weight: 500;
-  font-size: 19px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
   color: var(--gold);
-  letter-spacing: 0.1em;
-  line-height: 1.3;
+  margin-bottom: 8px;
 }
 
-.agent-links { margin-top: 12px; display: grid; gap: 2px; }
-
-.agent-links a {
+.agent-phone,
+.agent-link {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 6px 0;
-  font-size: 16.5px;
-  color: var(--ink);
-  overflow-wrap: anywhere;
+  gap: 14px;
+  padding: 4px 0;
   transition: color 0.15s ease;
 }
-.agent-links a:hover,
-.agent-links a:focus-visible { color: var(--gold); }
+.agent-phone { font-size: 30px; }
+.agent-link { font-size: 24px; color: var(--ink-2); }
+.agent-phone:hover, .agent-link:hover,
+.agent-phone:focus-visible, .agent-link:focus-visible { color: var(--gold); }
 
 .icon {
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
   flex: none;
   fill: none;
   stroke: var(--gold);
@@ -226,96 +229,74 @@ a { color: inherit; text-decoration: none; }
   stroke-linejoin: round;
 }
 
-.agent-foot {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.dre { font-size: 12.5px; color: var(--ink-3); letter-spacing: 0.12em; }
-
 .save {
-  font-size: 11.5px;
+  margin-top: 10px;
+  padding: 14px 22px;
+  border: 1px solid var(--gold-soft);
+  border-radius: 3px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.16em;
   color: var(--gold);
-  border: 1px solid var(--gold-soft);
-  padding: 9px 14px;
-  border-radius: 2px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
-.save:hover,
-.save:focus-visible { background: var(--gold); color: var(--navy); }
+.save:hover, .save:focus-visible { background: var(--gold); color: var(--navy); }
 
-a:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+.dre { font-size: 18px; letter-spacing: 0.14em; color: var(--ink-3); }
 
 .closing {
-  margin-top: 30px;
-  padding-top: 34px;
+  margin-top: 64px;
+  padding-top: 44px;
   border-top: 1px solid var(--gold-soft);
   text-align: center;
 }
 .closing-kicker {
-  color: var(--gold);
-  font-size: 12.5px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.16em;
-  line-height: 1.7;
+  color: var(--gold);
 }
-.closing-kicker span { display: inline-block; }
-.closing-line {
-  margin-top: 8px;
-  font-family: var(--serif);
-  font-size: 19px;
-  text-wrap: balance;
-}
+.closing-line { margin-top: 10px; font-family: var(--serif); font-size: 32px; }
 
 /* ------------------------------------------------------------------ */
-/* Bookmark back: cream "card stock" section below the fold — the     */
-/* quote, the communities, and a note to referring agents.            */
+/* Bookmark back: cream "card stock" band below the fold.             */
 /* ------------------------------------------------------------------ */
 
 .back {
   background: var(--cream);
   color: var(--ink-navy);
-  padding: 64px 24px 72px;
+  padding: 96px 0 104px;
 }
 
-.back-inner { max-width: 560px; margin: 0 auto; }
-
-.quote { margin: 0; text-align: center; }
-.quote-mark { width: 30px; height: auto; display: block; margin: 0 auto 14px; }
-.quote blockquote { margin: 0; }
+.quote { text-align: center; }
+.quote-mark { display: block; width: 48px; height: auto; margin: 0 auto 20px; }
 .quote blockquote p {
   font-family: var(--serif);
-  font-size: clamp(25px, 7vw, 32px);
-  line-height: 1.25;
+  font-size: 54px;
+  line-height: 1.2;
   text-wrap: balance;
 }
 .quote figcaption {
-  margin-top: 14px;
-  color: var(--gold-deep);
-  font-size: 13px;
+  margin-top: 20px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
+  color: var(--gold-deep);
 }
 .quote-reply {
-  margin-top: 14px;
+  margin-top: 18px;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 20px;
+  font-size: 34px;
   color: var(--ink-navy-2);
 }
 
 .ornament {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin: 36px 0;
+  gap: 24px;
+  width: 620px;
+  margin: 56px auto;
 }
 .ornament::before,
 .ornament::after {
@@ -325,157 +306,82 @@ a:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
   background: var(--gold-deep);
   opacity: 0.6;
 }
-.ornament img { width: 34px; height: auto; }
-.ornament-star { width: 20px; height: 20px; fill: var(--gold-deep); }
+.ornament img { width: 52px; height: auto; }
+.ornament-star { width: 28px; height: 28px; }
 
 .move-to {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-weight: 500;
-  text-transform: uppercase;
 }
-.move-to-lead { font-size: 13.5px; letter-spacing: 0.12em; }
-.move-to-main { margin-top: 4px; font-size: 21px; letter-spacing: 0.1em; font-weight: 600; }
+.move-to-lead { font-size: 22px; font-weight: 500; letter-spacing: 0.12em; }
+.move-to-main { margin-top: 6px; font-size: 38px; font-weight: 600; letter-spacing: 0.1em; }
 
 .places {
-  margin-top: 30px;
+  margin-top: 56px;
   display: grid;
-  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px 28px;
 }
 
-.place {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 18px;
-  align-items: center;
+/* Icon above its name, like a small emblem, so the long names
+   (Carmel-by-the-Sea, Carmel Highlands) fit a third of the canvas. */
+.place { text-align: center; }
+.place-icon {
+  display: block;
+  width: auto;
+  height: 64px;
+  margin: 0 auto 18px;
 }
-.place-icon { justify-self: center; max-width: 60px; height: auto; }
 .place-name {
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
   line-height: 1.3;
+  white-space: nowrap;
 }
 .place-desc {
-  margin-top: 2px;
+  margin-top: 6px;
   font-family: var(--serif);
-  font-size: 16px;
+  font-size: 23px;
   line-height: 1.4;
   color: var(--ink-navy-2);
+  text-wrap: balance;
 }
 
 .back-closing { text-align: center; }
-.back-closing-line {
-  font-family: var(--serif);
-  font-size: 20px;
-  line-height: 1.4;
-  text-wrap: balance;
-}
+.back-closing-line,
 .back-closing-sign {
-  margin-top: 12px;
   font-family: var(--serif);
-  font-style: italic;
-  font-size: 20px;
-  line-height: 1.4;
-  color: var(--gold-deep);
+  font-size: 34px;
+  line-height: 1.35;
   text-wrap: balance;
 }
+.back-closing-sign { margin-top: 16px; font-style: italic; color: var(--gold-deep); }
+
 .back-cta {
   display: inline-block;
-  margin-top: 28px;
-  padding: 12px 22px;
+  margin-top: 40px;
+  padding: 18px 32px;
   border: 1px solid var(--ink-navy);
-  border-radius: 2px;
-  font-size: 12px;
+  border-radius: 3px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
-.back-cta:hover,
-.back-cta:focus-visible { background: var(--ink-navy); color: var(--cream); }
+.back-cta:hover, .back-cta:focus-visible { background: var(--ink-navy); color: var(--cream); }
 .back a:focus-visible { outline-color: var(--ink-navy); }
 
-#agents { scroll-margin-top: 24px; }
-html { scroll-behavior: smooth; }
+#agents { scroll-margin-top: 32px; }
 
 .legal {
-  padding: 28px 24px calc(env(safe-area-inset-bottom) + 28px);
-  font-size: 11px;
+  padding: 40px 0 48px;
+  font-size: 16px;
   line-height: 1.6;
-  color: var(--ink-3);
   text-align: center;
-}
-.legal p { max-width: 640px; margin: 0 auto; }
-
-/* ------------------------------------------------------------------ */
-/* Desktop: split the bookmark into two panels side by side — the     */
-/* painting and brand block on the left, the agents on the right.     */
-/* ------------------------------------------------------------------ */
-
-@media (min-width: 900px) {
-  .page {
-    display: grid;
-    grid-template-columns: minmax(420px, 46%) 1fr;
-    min-height: 100vh;
-  }
-
-  .hero {
-    align-self: start;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    min-height: 640px;
-  }
-
-  .hero::after {
-    background:
-      linear-gradient(to bottom, rgba(12, 34, 51, 0.5) 0%, rgba(12, 34, 51, 0) 40%),
-      linear-gradient(to left, var(--navy) 0%, rgba(12, 34, 51, 0.7) 12%, var(--navy-edge) 34%);
-  }
-
-  .hero-copy {
-    width: min(76%, 30rem);
-    padding: clamp(40px, 8vh, 80px) 32px 0 0;
-  }
-
-  .star { width: 54px; }
-  .award-title { font-size: 22px; }
-  .award-sub { font-size: 13px; }
-  .wordmark { margin-top: clamp(24px, 4.5vh, 40px); }
-  .wordmark-name { font-size: clamp(52px, 4.6vw, 68px); }
-  .wordmark-sub { font-size: 14px; }
-  .kicker { margin-top: clamp(28px, 6vh, 56px); font-size: 17px; }
-  .lede { font-size: 21px; }
-
-  .content {
-    align-self: center;
-    width: 100%;
-    max-width: 620px;
-    padding: 72px 56px;
-  }
-
-  .eyebrow { text-align: left; }
-  .closing { text-align: left; }
-
-  .back { padding: 96px 56px 104px; }
-  .back-inner { max-width: 1080px; }
-  .quote blockquote p { font-size: 38px; }
-  .quote-reply { font-size: 22px; }
-  .ornament { max-width: 560px; margin: 48px auto; }
-
-  .places {
-    margin-top: 44px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 48px;
-  }
-  .place { align-items: start; }
-  .place-icon { margin-top: 2px; }
-
-  .back-closing-line, .back-closing-sign { font-size: 22px; }
+  color: var(--ink-3);
 }
 
 @media (prefers-reduced-motion: reduce) {
