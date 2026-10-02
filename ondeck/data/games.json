@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T18:48:35.271Z",
+  "generatedAt": "2026-10-02T18:21:03.880Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,18 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "bay-fc-401854084",
-      "teamId": "bay-fc",
-      "dateISO": "2026-09-17T01:30Z",
-      "isHome": false,
-      "opponentShort": "Denver",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131563.png",
-      "venue": "Centennial Stadium",
-      "broadcasts": [
-        "NWSL+"
-      ]
-    },
     {
       "id": "nfl-primetime-401872932",
       "teamId": "nfl-primetime",
@@ -1067,6 +1055,19 @@
       ]
     },
     {
+      "id": "atl-401908007",
+      "teamId": "atl",
+      "dateISO": "2026-10-03T20:00Z",
+      "isHome": false,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Dodger Stadium",
+      "broadcasts": [
+        "FOX",
+        "ERADM"
+      ]
+    },
+    {
       "id": "bay-fc-401854018",
       "teamId": "bay-fc",
       "dateISO": "2026-10-03T22:30Z",
@@ -1137,6 +1138,19 @@
       "broadcasts": []
     },
     {
+      "id": "atl-401908014",
+      "teamId": "atl",
+      "dateISO": "2026-10-05T00:00Z",
+      "isHome": false,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Dodger Stadium",
+      "broadcasts": [
+        "FS1",
+        "ERADM"
+      ]
+    },
+    {
       "id": "sjs-401892448",
       "teamId": "sjs",
       "dateISO": "2026-10-06T00:00Z",
@@ -1165,6 +1179,18 @@
       ]
     },
     {
+      "id": "atl-401908015",
+      "teamId": "atl",
+      "dateISO": "2026-10-06T22:00Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "FS1"
+      ]
+    },
+    {
       "id": "gsw-401898390",
       "teamId": "gsw",
       "dateISO": "2026-10-07T02:00Z",
@@ -1174,6 +1200,18 @@
       "venue": "Chase Center",
       "broadcasts": [
         "NBA TV"
+      ]
+    },
+    {
+      "id": "atl-401908016",
+      "teamId": "atl",
+      "dateISO": "2026-10-07T22:00Z",
+      "isHome": true,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Truist Park",
+      "broadcasts": [
+        "FS1"
       ]
     },
     {
@@ -1225,6 +1263,18 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
       "venue": "Pankritio Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "atl-401908017",
+      "teamId": "atl",
+      "dateISO": "2026-10-10T00:00Z",
+      "isHome": false,
+      "opponentShort": "Dodgers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
+      "venue": "Dodger Stadium",
+      "broadcasts": [
+        "FOX"
+      ]
     },
     {
       "id": "uswnt-401890785",
@@ -1912,16 +1962,6 @@
       "broadcasts": []
     },
     {
-      "id": "psg-w-401885650",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-31T16:00Z",
-      "isHome": false,
-      "opponentShort": "Paris FC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
-      "venue": "Stade Sébastien Charléty",
-      "broadcasts": []
-    },
-    {
       "id": "sjs-401892619",
       "teamId": "sjs",
       "dateISO": "2026-10-31T20:00Z",
@@ -1945,6 +1985,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "psg-w-401885650",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-01T13:30Z",
+      "isHome": false,
+      "opponentShort": "Paris FC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
+      "venue": "Stade Sébastien Charléty",
+      "broadcasts": []
     },
     {
       "id": "juv-401874949",
@@ -2899,6 +2949,18 @@
       "venue": "SAP Center at San Jose",
       "broadcasts": [
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "psg-w-401916966",
+      "teamId": "psg-w",
+      "dateISO": "2026-12-16T20:00Z",
+      "isHome": true,
+      "opponentShort": "Juventus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20092.png",
+      "venue": "Parc des Princes",
+      "broadcasts": [
+        "Paramount+"
       ]
     }
   ],
