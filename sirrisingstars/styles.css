@@ -64,6 +64,18 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
   text-transform: uppercase;
 }
 
+/* The bookmark front (hero + agents) fills at least one screen; any
+   spare height goes to the hero painting, so the cream section always
+   starts below the fold. svh = the screen with the browser toolbars
+   showing, so phones never get a cream sliver at the bottom. */
+.first {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+.hero { flex: 1 0 auto; display: flex; flex-direction: column; }
+
 /* ------------------------------------------------------------------ */
 /* Hero: brand block in the sky over the cypress and coastline.       */
 /* ------------------------------------------------------------------ */
@@ -72,7 +84,8 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  height: 640px;
+  flex: 1 0 auto;
+  min-height: 640px;
   padding: 0;
 }
 

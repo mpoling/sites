@@ -29,9 +29,13 @@
   <!-- Bump ?v= whenever styles.css changes: Cloudflare tells browsers to
        cache .css for 4 hours but HTML for only 10 minutes, so without it
        returning visitors get the new page with the old stylesheet. -->
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
+  <main>
+    <!-- Hero + agents: the bookmark front. At least one screen tall so the
+         cream "back" always starts below the fold. -->
+    <div class="first">
   <header class="hero">
     <div class="canvas hero-canvas">
       <img class="hero-art" src="assets/cypress-coast.jpg" alt="A Monterey cypress on the bluffs above the Pacific at dusk." width="878" height="1368">
@@ -68,7 +72,6 @@
     </div>
   </header>
 
-  <main>
     <section class="front canvas" aria-labelledby="agents">
       <h2 class="eyebrow" id="agents">Meet your Rising Stars</h2>
       <ul class="agents">
@@ -102,6 +105,7 @@
         <p class="closing-line">We’re honored to be your referral partners.</p>
       </div>
     </section>
+    </div>
 
     <section class="back" aria-labelledby="move-to">
       <div class="canvas">
