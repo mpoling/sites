@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T18:21:03.880Z",
+  "generatedAt": "2026-10-03T17:11:52.030Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,30 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401872932",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-09-18T00:15Z",
-      "homeShort": "Bills",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
-      "awayShort": "Lions",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
-      "note": "Thursday Night",
-      "venue": "Highmark Stadium",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "psg-w-401885664",
-      "teamId": "psg-w",
-      "dateISO": "2026-09-18T19:00Z",
-      "isHome": true,
-      "opponentShort": "Nantes",
-      "opponentLogo": null,
-      "venue": "Training Center Paris Saint Germain Terrain 5",
-      "broadcasts": []
-    },
     {
       "id": "atl-401816988",
       "teamId": "atl",
@@ -1116,6 +1092,18 @@
       "broadcasts": []
     },
     {
+      "id": "gsv-401918296",
+      "teamId": "gsv",
+      "dateISO": "2026-10-04T20:00Z",
+      "isHome": true,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC"
+      ]
+    },
+    {
       "id": "sf49-401872975",
       "teamId": "sf49",
       "dateISO": "2026-10-04T20:25Z",
@@ -1215,6 +1203,19 @@
       ]
     },
     {
+      "id": "gsv-401918298",
+      "teamId": "gsv",
+      "dateISO": "2026-10-08T01:30Z",
+      "isHome": true,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Peacock",
+        "NBCSN"
+      ]
+    },
+    {
       "id": "gsw-401914129",
       "teamId": "gsw",
       "dateISO": "2026-10-08T02:00Z",
@@ -1274,6 +1275,19 @@
       "venue": "Dodger Stadium",
       "broadcasts": [
         "FOX"
+      ]
+    },
+    {
+      "id": "gsv-401918300",
+      "teamId": "gsv",
+      "dateISO": "2026-10-10T01:30Z",
+      "isHome": false,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Michelob ULTRA Arena",
+      "broadcasts": [
+        "Peacock",
+        "NBCSN"
       ]
     },
     {
@@ -1357,6 +1371,19 @@
       "venue": "Dick's Sporting Goods Park",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsv-401918302",
+      "teamId": "gsv",
+      "dateISO": "2026-10-11T04:00Z",
+      "isHome": false,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Michelob ULTRA Arena",
+      "broadcasts": [
+        "NBC",
+        "Peacock"
       ]
     },
     {
@@ -1446,6 +1473,19 @@
       "broadcasts": [
         "ESPN",
         "NESN"
+      ]
+    },
+    {
+      "id": "gsv-401918304",
+      "teamId": "gsv",
+      "dateISO": "2026-10-14T04:00Z",
+      "isHome": true,
+      "opponentShort": "Aces",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Peacock",
+        "NBCSN"
       ]
     },
     {
@@ -2617,7 +2657,9 @@
       "opponentShort": "El Salvador",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/slv.png",
       "venue": "Texas Health Mansfield Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "Paramount+"
+      ]
     },
     {
       "id": "gsw-401909336",
@@ -2961,6 +3003,29 @@
       "venue": "Parc des Princes",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910120",
+      "teamId": "gsw",
+      "dateISO": "2026-12-17T00:00Z",
+      "isHome": false,
+      "opponentShort": "Pacers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "venue": "Gainbridge Fieldhouse",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401892945",
+      "teamId": "sjs",
+      "dateISO": "2026-12-17T03:00Z",
+      "isHome": false,
+      "opponentShort": "Golden Knights",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
+      "venue": "T-Mobile Arena",
+      "broadcasts": [
+        "TNT",
+        "truTV"
       ]
     }
   ],
