@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T17:11:52.030Z",
+  "generatedAt": "2026-10-04T17:27:02.690Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,99 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401816988",
-      "teamId": "atl",
-      "dateISO": "2026-09-19T00:10Z",
-      "isHome": false,
-      "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png",
-      "venue": "Daikin Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Space City Home Network",
-        "Space City Home (Alt.)",
-        "ERADM"
-      ]
-    },
-    {
-      "id": "gsv-401857197",
-      "teamId": "gsv",
-      "dateISO": "2026-09-19T02:00Z",
-      "isHome": true,
-      "opponentShort": "Fire",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "ION",
-        "WNBA League Pass"
-      ]
-    },
-    {
-      "id": "sfg-401816996",
-      "teamId": "sfg",
-      "dateISO": "2026-09-19T02:15Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "gt-fb-401858228",
-      "teamId": "gt-fb",
-      "dateISO": "2026-09-19T16:00Z",
-      "isHome": true,
-      "opponentShort": "Mercer",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png",
-      "venue": "Bobby Dodd Stadium",
-      "broadcasts": [
-        "ACC Network"
-      ]
-    },
-    {
-      "id": "mbfc-401842222",
-      "teamId": "mbfc",
-      "dateISO": "2026-09-19T23:00Z",
-      "isHome": false,
-      "opponentShort": "Charleston",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/9729.png",
-      "venue": "Ralph Lundy Field at Patriots Point",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "atl-401817003",
-      "teamId": "atl",
-      "dateISO": "2026-09-19T23:10Z",
-      "isHome": false,
-      "opponentShort": "Astros",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/hou.png",
-      "venue": "Daikin Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Space City Home Network",
-        "Space City Home (Alt.)",
-        "ERADM"
-      ]
-    },
-    {
-      "id": "sje-761817",
-      "teamId": "sje",
-      "dateISO": "2026-09-19T23:30Z",
-      "isHome": true,
-      "opponentShort": "LAFC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png",
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "gsv-401857200",
       "teamId": "gsv",
@@ -1100,7 +1007,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "NBC"
+        "NBC",
+        "Peacock"
       ]
     },
     {
@@ -1314,7 +1222,9 @@
       "opponentShort": "Duke",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
       "venue": "Bobby Dodd Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN2"
+      ]
     },
     {
       "id": "sjs-401892471",
@@ -3027,6 +2937,22 @@
         "TNT",
         "truTV"
       ]
+    },
+    {
+      "id": "sf49-401873124",
+      "teamId": "sf49",
+      "dateISO": "2026-12-18T01:15Z",
+      "isHome": false,
+      "opponentShort": "Chargers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ],
+      "extraTeamIds": [
+        "nfl-primetime"
+      ],
+      "note": "Thursday Night"
     }
   ],
   "errors": [],
