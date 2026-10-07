@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T18:52:50.791Z",
+  "generatedAt": "2026-10-07T19:18:03.052Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,63 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401872947",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-09-22T00:15Z",
-      "homeShort": "Rams",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
-      "awayShort": "Giants",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
-      "note": "Monday Night",
-      "venue": "SoFi Stadium",
-      "broadcasts": [
-        "ESPN",
-        "ABC"
-      ]
-    },
-    {
-      "id": "sfg-401817029",
-      "teamId": "sfg",
-      "dateISO": "2026-09-22T01:45Z",
-      "isHome": true,
-      "opponentShort": "Twins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/min.png",
-      "venue": "Oracle Park",
-      "broadcasts": [
-        "MLB.TV",
-        "Twins.TV",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "psg-w-401917014",
-      "teamId": "psg-w",
-      "dateISO": "2026-09-22T19:00Z",
-      "isHome": false,
-      "opponentShort": "Real Madrid",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21128.png",
-      "venue": "Alfredo Di Stéfano Stadium",
-      "broadcasts": [
-        "ESPN+",
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "atl-401817030",
-      "teamId": "atl",
-      "dateISO": "2026-09-22T23:15Z",
-      "isHome": true,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Gray Media",
-        "Reds.TV"
-      ]
-    },
     {
       "id": "sfg-401817043",
       "teamId": "sfg",
@@ -2888,6 +2831,16 @@
       "broadcasts": [
         "NBC Sports BA"
       ]
+    },
+    {
+      "id": "gsw-401910157",
+      "teamId": "gsw",
+      "dateISO": "2026-12-21T01:00Z",
+      "isHome": false,
+      "opponentShort": "Bucks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+      "venue": "Fiserv Forum",
+      "broadcasts": []
     }
   ],
   "errors": [],
