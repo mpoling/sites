@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T19:14:36.885Z",
+  "generatedAt": "2026-10-09T18:45:32.876Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,21 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401817060",
-      "teamId": "atl",
-      "dateISO": "2026-09-24T23:15Z",
-      "isHome": true,
-      "opponentShort": "Reds",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cin.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "MLB.TV",
-        "FS1",
-        "BravesVision",
-        "Reds.TV"
-      ]
-    },
     {
       "id": "nfl-primetime-401872948",
       "teamId": "nfl-primetime",
@@ -1530,7 +1515,8 @@
       "venue": "Lincoln Financial Field",
       "broadcasts": [
         "ESPN",
-        "ABC"
+        "ABC",
+        "Disney+"
       ]
     },
     {
@@ -2775,6 +2761,32 @@
       "broadcasts": [
         "ESPN",
         "ABC"
+      ]
+    },
+    {
+      "id": "sjs-401892992",
+      "teamId": "sjs",
+      "dateISO": "2026-12-23T02:40Z",
+      "isHome": false,
+      "opponentShort": "Kraken",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
+      "venue": "Climate Pledge Arena",
+      "broadcasts": [
+        "NBC Sports BA",
+        "KONG",
+        "Prime Video (Local)"
+      ]
+    },
+    {
+      "id": "gsw-401910171",
+      "teamId": "gsw",
+      "dateISO": "2026-12-23T03:30Z",
+      "isHome": true,
+      "opponentShort": "Mavericks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC"
       ]
     }
   ],
