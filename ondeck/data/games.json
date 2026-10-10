@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:45:32.876Z",
+  "generatedAt": "2026-10-10T17:47:29.472Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,58 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401872948",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-09-25T00:15Z",
-      "homeShort": "Packers",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
-      "awayShort": "Falcons",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
-      "note": "Thursday Night",
-      "venue": "Lambeau Field",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "gsv-401857218",
-      "teamId": "gsv",
-      "dateISO": "2026-09-25T02:00Z",
-      "isHome": false,
-      "opponentShort": "Sparks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
-      "venue": "crypto.com Arena",
-      "broadcasts": [
-        "WNBA League Pass",
-        "KPIX+",
-        "Spectrum Sports Net"
-      ]
-    },
-    {
-      "id": "sjs-401879370",
-      "teamId": "sjs",
-      "dateISO": "2026-09-25T02:00Z",
-      "isHome": true,
-      "opponentShort": "Ducks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": []
-    },
-    {
-      "id": "atl-401817072",
-      "teamId": "atl",
-      "dateISO": "2026-09-25T23:10Z",
-      "isHome": false,
-      "opponentShort": "Marlins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png",
-      "venue": "loanDepot park",
-      "broadcasts": [
-        "MLB.TV",
-        "BravesVision",
-        "Marlins.TV"
-      ]
-    },
     {
       "id": "sfg-401817086",
       "teamId": "sfg",
@@ -1020,19 +968,6 @@
       ]
     },
     {
-      "id": "gsv-401918302",
-      "teamId": "gsv",
-      "dateISO": "2026-10-11T04:00Z",
-      "isHome": false,
-      "opponentShort": "Aces",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-      "venue": "Michelob ULTRA Arena",
-      "broadcasts": [
-        "NBC",
-        "Peacock"
-      ]
-    },
-    {
       "id": "juv-401874764",
       "teamId": "juv",
       "dateISO": "2026-10-11T18:45Z",
@@ -1122,19 +1057,6 @@
       ]
     },
     {
-      "id": "gsv-401918304",
-      "teamId": "gsv",
-      "dateISO": "2026-10-14T04:00Z",
-      "isHome": true,
-      "opponentShort": "Aces",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "Peacock",
-        "NBCSN"
-      ]
-    },
-    {
       "id": "mia-761861",
       "teamId": "mia",
       "dateISO": "2026-10-14T23:30Z",
@@ -1205,6 +1127,18 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
       "venue": "Parc des Princes",
       "broadcasts": []
+    },
+    {
+      "id": "gsv-401918305",
+      "teamId": "gsv",
+      "dateISO": "2026-10-17T19:30Z",
+      "isHome": true,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC"
+      ]
     },
     {
       "id": "gt-fb-401858264",
@@ -1307,6 +1241,19 @@
       ]
     },
     {
+      "id": "gsv-401918306",
+      "teamId": "gsv",
+      "dateISO": "2026-10-20T00:00Z",
+      "isHome": true,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "USA Net",
+        "CNBC"
+      ]
+    },
+    {
       "id": "sf49-401873008",
       "teamId": "sf49",
       "dateISO": "2026-10-20T00:15Z",
@@ -1362,6 +1309,20 @@
       ]
     },
     {
+      "id": "gsv-401918307",
+      "teamId": "gsv",
+      "dateISO": "2026-10-23T00:00Z",
+      "isHome": false,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Gateway Center",
+      "broadcasts": [
+        "USA Net",
+        "CNBC",
+        "Peacock"
+      ]
+    },
+    {
       "id": "nfl-primetime-401873010",
       "teamId": "nfl-primetime",
       "dateISO": "2026-10-23T00:15Z",
@@ -1404,6 +1365,19 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
       "venue": "Bobby Dodd Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "gsv-401918308",
+      "teamId": "gsv",
+      "dateISO": "2026-10-24T19:30Z",
+      "isHome": false,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Gateway Center",
+      "broadcasts": [
+        "NBC",
+        "Peacock"
+      ]
     },
     {
       "id": "mia-761891",
@@ -1501,6 +1475,19 @@
       "venue": "Via Del Mare",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsv-401918309",
+      "teamId": "gsv",
+      "dateISO": "2026-10-27T00:00Z",
+      "isHome": true,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "USA Net",
+        "CNBC"
       ]
     },
     {
@@ -1602,6 +1589,20 @@
       ]
     },
     {
+      "id": "gsv-401918310",
+      "teamId": "gsv",
+      "dateISO": "2026-10-30T00:00Z",
+      "isHome": false,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Gateway Center",
+      "broadcasts": [
+        "USA Net",
+        "CNBC",
+        "Peacock"
+      ]
+    },
+    {
       "id": "nfl-primetime-401873023",
       "teamId": "nfl-primetime",
       "dateISO": "2026-10-30T00:15Z",
@@ -1673,6 +1674,19 @@
       "venue": "PayPal Park",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gsv-401918311",
+      "teamId": "gsv",
+      "dateISO": "2026-11-01T00:00Z",
+      "isHome": true,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "USA Net",
+        "CNBC"
       ]
     },
     {
@@ -2788,6 +2802,16 @@
       "broadcasts": [
         "NBC"
       ]
+    },
+    {
+      "id": "gsw-401910186",
+      "teamId": "gsw",
+      "dateISO": "2026-12-24T03:30Z",
+      "isHome": false,
+      "opponentShort": "Clippers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "venue": "Intuit Dome",
+      "broadcasts": []
     }
   ],
   "errors": [],
