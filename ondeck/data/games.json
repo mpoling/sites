@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T21:41:58.022Z",
+  "generatedAt": "2026-10-13T19:49:49.257Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,19 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401918016",
-      "teamId": "gsv",
-      "dateISO": "2026-09-28T01:00Z",
-      "isHome": true,
-      "opponentShort": "Wings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "USA Net",
-        "CNBC"
-      ]
-    },
     {
       "id": "nfl-primetime-401872963",
       "teamId": "nfl-primetime",
@@ -1129,6 +1116,20 @@
       ]
     },
     {
+      "id": "gsv-401918307",
+      "teamId": "gsv",
+      "dateISO": "2026-10-22T00:00Z",
+      "isHome": false,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "State Farm Arena",
+      "broadcasts": [
+        "USA Net",
+        "CNBC",
+        "Peacock"
+      ]
+    },
+    {
       "id": "gsw-401909092",
       "teamId": "gsw",
       "dateISO": "2026-10-22T02:00Z",
@@ -1151,20 +1152,6 @@
       "broadcasts": [
         "ESPN+",
         "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "gsv-401918307",
-      "teamId": "gsv",
-      "dateISO": "2026-10-23T00:00Z",
-      "isHome": false,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": null,
-      "broadcasts": [
-        "USA Net",
-        "CNBC",
-        "Peacock"
       ]
     },
     {
@@ -1204,11 +1191,11 @@
     {
       "id": "gsv-401918308",
       "teamId": "gsv",
-      "dateISO": "2026-10-24T19:30Z",
+      "dateISO": "2026-10-24T17:00Z",
       "isHome": false,
       "opponentShort": "Dream",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": null,
+      "venue": "State Farm Arena",
       "broadcasts": [
         "NBC",
         "Peacock"
@@ -2687,6 +2674,31 @@
       "broadcasts": [
         "ABC",
         "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401893004",
+      "teamId": "sjs",
+      "dateISO": "2026-12-27T03:00Z",
+      "isHome": true,
+      "opponentShort": "Golden Knights",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA",
+        "Scripps Sports"
+      ]
+    },
+    {
+      "id": "sf49-401873153",
+      "teamId": "sf49",
+      "dateISO": "2026-12-27T21:25Z",
+      "isHome": false,
+      "opponentShort": "Chiefs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "venue": "Arrowhead Stadium",
+      "broadcasts": [
+        "CBS"
       ]
     }
   ],
