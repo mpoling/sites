@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T19:49:49.257Z",
+  "generatedAt": "2026-10-14T17:57:06.924Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,34 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401872963",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-09-29T00:15Z",
-      "homeShort": "Bears",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
-      "awayShort": "Eagles",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
-      "note": "Monday Night",
-      "venue": "Soldier Field",
-      "broadcasts": [
-        "ESPN",
-        "ABC"
-      ]
-    },
-    {
-      "id": "atl-401907965",
-      "teamId": "atl",
-      "dateISO": "2026-09-29T18:00Z",
-      "isHome": true,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "NBC",
-        "ERADM"
-      ]
-    },
     {
       "id": "atl-401907972",
       "teamId": "atl",
@@ -876,7 +848,7 @@
     {
       "id": "sjs-401892503",
       "teamId": "sjs",
-      "dateISO": "2026-10-14T03:00Z",
+      "dateISO": "2026-10-14T03:15Z",
       "isHome": true,
       "opponentShort": "Bruins",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
@@ -2123,6 +2095,16 @@
       ]
     },
     {
+      "id": "engw-401916358",
+      "teamId": "engw",
+      "dateISO": "2026-11-26T20:00Z",
+      "isHome": false,
+      "opponentShort": "Ukraine",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
+      "venue": null,
+      "broadcasts": []
+    },
+    {
       "id": "nfl-primetime-401873082",
       "teamId": "nfl-primetime",
       "dateISO": "2026-11-27T01:20Z",
@@ -2307,6 +2289,16 @@
         "NBC Sports BA",
         "MSGSN"
       ]
+    },
+    {
+      "id": "engw-401916355",
+      "teamId": "engw",
+      "dateISO": "2026-12-05T20:00Z",
+      "isHome": true,
+      "opponentShort": "Ukraine",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
+      "venue": null,
+      "broadcasts": []
     },
     {
       "id": "juv-401875006",
@@ -2700,6 +2692,16 @@
       "broadcasts": [
         "CBS"
       ]
+    },
+    {
+      "id": "gsw-401910204",
+      "teamId": "gsw",
+      "dateISO": "2026-12-28T01:30Z",
+      "isHome": true,
+      "opponentShort": "Timberwolves",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "venue": "Chase Center",
+      "broadcasts": []
     }
   ],
   "errors": [],
