@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T17:57:06.924Z",
+  "generatedAt": "2026-10-15T17:43:14.427Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,19 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "atl-401907972",
-      "teamId": "atl",
-      "dateISO": "2026-09-30T18:00Z",
-      "isHome": true,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "NBC",
-        "ERADM"
-      ]
-    },
     {
       "id": "gsv-401918020",
       "teamId": "gsv",
@@ -2701,6 +2688,42 @@
       "opponentShort": "Timberwolves",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
       "venue": "Chase Center",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401893017",
+      "teamId": "sjs",
+      "dateISO": "2026-12-29T00:30Z",
+      "isHome": false,
+      "opponentShort": "Jets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
+      "venue": "Canada Life Centre",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873155",
+      "teamId": "nfl-primetime",
+      "dateISO": "2026-12-29T01:15Z",
+      "homeShort": "Lions",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+      "awayShort": "Giants",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+      "note": "Monday Night",
+      "venue": "Ford Field",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "gsw-401910209",
+      "teamId": "gsw",
+      "dateISO": "2026-12-29T02:00Z",
+      "isHome": false,
+      "opponentShort": "Suns",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "venue": "Mortgage Matchup Center",
       "broadcasts": []
     }
   ],
