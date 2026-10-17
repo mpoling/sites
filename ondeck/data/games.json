@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:20:25.550Z",
+  "generatedAt": "2026-10-17T16:18:54.269Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -344,48 +344,6 @@
   ],
   "games": [
     {
-      "id": "atl-401907973",
-      "teamId": "atl",
-      "dateISO": "2026-10-02T00:00Z",
-      "isHome": true,
-      "opponentShort": "Phillies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "NBC",
-        "Peacock",
-        "ERADM"
-      ]
-    },
-    {
-      "id": "nfl-primetime-401872964",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-10-02T00:15Z",
-      "homeShort": "Browns",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
-      "awayShort": "Steelers",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
-      "note": "Thursday Night",
-      "venue": "Huntington Bank Field",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "sjs-401891823",
-      "teamId": "sjs",
-      "dateISO": "2026-10-02T02:00Z",
-      "isHome": true,
-      "opponentShort": "Panthers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "Scripps Sports",
-        "NBC Sports BA"
-      ]
-    },
-    {
       "id": "gsv-401918294",
       "teamId": "gsv",
       "dateISO": "2026-10-03T01:00Z",
@@ -489,7 +447,7 @@
       "dateISO": "2026-10-04T23:00Z",
       "isHome": false,
       "opponentShort": "Clippers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
       "venue": "Stan Sheriff Center",
       "broadcasts": []
     },
@@ -553,7 +511,7 @@
       "dateISO": "2026-10-07T02:00Z",
       "isHome": true,
       "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
       "venue": "Chase Center",
       "broadcasts": [
         "NBA TV"
@@ -590,7 +548,7 @@
       "dateISO": "2026-10-08T02:00Z",
       "isHome": false,
       "opponentShort": "Trail Blazers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
       "venue": "Moda Center",
       "broadcasts": [
         "NBA TV"
@@ -706,7 +664,7 @@
       "dateISO": "2026-10-11T00:30Z",
       "isHome": true,
       "opponentShort": "Kings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -802,7 +760,7 @@
       "dateISO": "2026-10-14T02:00Z",
       "isHome": false,
       "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
       "venue": "T-Mobile Arena",
       "broadcasts": [
         "NBA TV"
@@ -879,7 +837,7 @@
       "dateISO": "2026-10-17T02:00Z",
       "isHome": true,
       "opponentShort": "Trail Blazers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -1017,7 +975,8 @@
       "broadcasts": [
         "USA Net",
         "CNBC",
-        "Peacock"
+        "Peacock",
+        "E!"
       ]
     },
     {
@@ -1070,7 +1029,7 @@
       "dateISO": "2026-10-22T02:00Z",
       "isHome": false,
       "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "venue": "crypto.com Arena",
       "broadcasts": [
         "ESPN"
@@ -1119,7 +1078,7 @@
       "dateISO": "2026-10-24T02:00Z",
       "isHome": true,
       "opponentShort": "Grizzlies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -1204,7 +1163,7 @@
       "dateISO": "2026-10-25T02:00Z",
       "isHome": false,
       "opponentShort": "Suns",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
       "venue": "Mortgage Matchup Center",
       "broadcasts": [
         "NBA TV"
@@ -1282,7 +1241,7 @@
       "dateISO": "2026-10-27T02:00Z",
       "isHome": false,
       "opponentShort": "Nuggets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
       "venue": "Ball Arena",
       "broadcasts": [
         "NBCSN"
@@ -1330,7 +1289,7 @@
       "dateISO": "2026-10-29T00:00Z",
       "isHome": false,
       "opponentShort": "Timberwolves",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "venue": "Target Center",
       "broadcasts": []
     },
@@ -1405,7 +1364,7 @@
       "dateISO": "2026-10-31T02:00Z",
       "isHome": true,
       "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "venue": "Chase Center",
       "broadcasts": [
         "Prime Video"
@@ -1510,7 +1469,7 @@
       "dateISO": "2026-11-02T01:30Z",
       "isHome": true,
       "opponentShort": "Clippers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -1546,7 +1505,7 @@
       "dateISO": "2026-11-03T03:00Z",
       "isHome": true,
       "opponentShort": "Suns",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -1583,7 +1542,7 @@
       "dateISO": "2026-11-06T03:00Z",
       "isHome": true,
       "opponentShort": "Heat",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
       "venue": "Chase Center",
       "broadcasts": [
         "NBA TV"
@@ -1666,7 +1625,7 @@
       "dateISO": "2026-11-08T01:30Z",
       "isHome": true,
       "opponentShort": "Magic",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -1715,7 +1674,7 @@
       "dateISO": "2026-11-10T03:00Z",
       "isHome": true,
       "opponentShort": "Pelicans",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
       "venue": "Chase Center",
       "broadcasts": [
         "NBA TV"
@@ -1752,7 +1711,7 @@
       "dateISO": "2026-11-12T02:30Z",
       "isHome": false,
       "opponentShort": "Rockets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
       "venue": "Toyota Center (Houston)",
       "broadcasts": [
         "ESPN"
@@ -1790,7 +1749,7 @@
       "dateISO": "2026-11-14T02:30Z",
       "isHome": false,
       "opponentShort": "Spurs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
       "venue": "Frost Bank Center",
       "broadcasts": [
         "Prime Video"
@@ -1860,7 +1819,7 @@
       "dateISO": "2026-11-17T01:00Z",
       "isHome": false,
       "opponentShort": "Pelicans",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
       "venue": "Smoothie King Center",
       "broadcasts": []
     },
@@ -1908,7 +1867,7 @@
       "dateISO": "2026-11-19T02:30Z",
       "isHome": false,
       "opponentShort": "Mavericks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
       "venue": "American Airlines Center",
       "broadcasts": [
         "ESPN"
@@ -1920,7 +1879,7 @@
       "dateISO": "2026-11-20T01:00Z",
       "isHome": false,
       "opponentShort": "Grizzlies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
       "venue": "FedExForum",
       "broadcasts": []
     },
@@ -2002,7 +1961,7 @@
       "dateISO": "2026-11-23T01:30Z",
       "isHome": true,
       "opponentShort": "Celtics",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -2039,7 +1998,7 @@
       "dateISO": "2026-11-26T03:00Z",
       "isHome": true,
       "opponentShort": "Kings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -2112,7 +2071,7 @@
       "dateISO": "2026-11-28T02:30Z",
       "isHome": false,
       "opponentShort": "Trail Blazers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
       "venue": "Moda Center",
       "broadcasts": []
     },
@@ -2169,7 +2128,7 @@
       "dateISO": "2026-11-30T01:30Z",
       "isHome": true,
       "opponentShort": "Clippers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -2207,7 +2166,7 @@
       "dateISO": "2026-12-02T04:00Z",
       "isHome": true,
       "opponentShort": "Jazz",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
       "venue": "Chase Center",
       "broadcasts": [
         "NBC"
@@ -2384,7 +2343,7 @@
       "dateISO": "2026-12-13T01:00Z",
       "isHome": false,
       "opponentShort": "Cavaliers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
       "venue": "Rocket Arena",
       "broadcasts": []
     },
@@ -2418,7 +2377,7 @@
       "dateISO": "2026-12-15T01:00Z",
       "isHome": false,
       "opponentShort": "Grizzlies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
       "venue": "FedExForum",
       "broadcasts": []
     },
@@ -2466,7 +2425,7 @@
       "dateISO": "2026-12-17T00:00Z",
       "isHome": false,
       "opponentShort": "Pacers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
       "venue": "Gainbridge Fieldhouse",
       "broadcasts": []
     },
@@ -2505,7 +2464,7 @@
       "dateISO": "2026-12-19T00:30Z",
       "isHome": false,
       "opponentShort": "Raptors",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
       "venue": "Scotiabank Arena",
       "broadcasts": []
     },
@@ -2549,7 +2508,7 @@
       "dateISO": "2026-12-21T01:00Z",
       "isHome": false,
       "opponentShort": "Bucks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
       "venue": "Fiserv Forum",
       "broadcasts": []
     },
@@ -2588,7 +2547,7 @@
       "dateISO": "2026-12-23T03:30Z",
       "isHome": true,
       "opponentShort": "Mavericks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
       "venue": "Chase Center",
       "broadcasts": [
         "NBC"
@@ -2600,7 +2559,7 @@
       "dateISO": "2026-12-24T03:30Z",
       "isHome": false,
       "opponentShort": "Clippers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
       "venue": "Intuit Dome",
       "broadcasts": []
     },
@@ -2624,7 +2583,7 @@
       "dateISO": "2026-12-26T03:30Z",
       "isHome": true,
       "opponentShort": "Nuggets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
       "venue": "Chase Center",
       "broadcasts": [
         "ABC",
@@ -2662,7 +2621,7 @@
       "dateISO": "2026-12-28T01:30Z",
       "isHome": true,
       "opponentShort": "Timberwolves",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
       "venue": "Chase Center",
       "broadcasts": []
     },
@@ -2698,7 +2657,7 @@
       "dateISO": "2026-12-29T02:00Z",
       "isHome": false,
       "opponentShort": "Suns",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
       "venue": "Mortgage Matchup Center",
       "broadcasts": []
     },
@@ -2712,6 +2671,18 @@
       "venue": "Scotiabank Saddledome",
       "broadcasts": [
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401910225",
+      "teamId": "gsw",
+      "dateISO": "2026-12-31T03:00Z",
+      "isHome": true,
+      "opponentShort": "Rockets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBA TV"
       ]
     }
   ],
