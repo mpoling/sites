@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:18:54.269Z",
+  "generatedAt": "2026-10-18T16:27:56.120Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,43 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401918294",
-      "teamId": "gsv",
-      "dateISO": "2026-10-03T01:00Z",
-      "isHome": true,
-      "opponentShort": "Wings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "ESPN2"
-      ]
-    },
-    {
-      "id": "atl-401908007",
-      "teamId": "atl",
-      "dateISO": "2026-10-03T20:00Z",
-      "isHome": false,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Dodger Stadium",
-      "broadcasts": [
-        "Fox",
-        "ERADM"
-      ]
-    },
-    {
-      "id": "bay-fc-401854018",
-      "teamId": "bay-fc",
-      "dateISO": "2026-10-03T22:30Z",
-      "isHome": false,
-      "opponentShort": "Kansas City",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20907.png",
-      "venue": "CPKC Stadium",
-      "broadcasts": [
-        "ION"
-      ]
-    },
     {
       "id": "sjs-401892441",
       "teamId": "sjs",
@@ -2683,6 +2646,33 @@
       "venue": "Chase Center",
       "broadcasts": [
         "NBA TV"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873156",
+      "teamId": "nfl-primetime",
+      "dateISO": "2027-01-01T01:15Z",
+      "homeShort": "Bengals",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+      "awayShort": "Ravens",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+      "note": "Thursday Night",
+      "venue": "Paycor Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ]
+    },
+    {
+      "id": "sjs-401893045",
+      "teamId": "sjs",
+      "dateISO": "2027-01-01T21:00Z",
+      "isHome": true,
+      "opponentShort": "Flyers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/phi.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports Phil",
+        "NBC Sports BA"
       ]
     }
   ],
