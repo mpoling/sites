@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:27:56.120Z",
+  "generatedAt": "2026-10-19T19:14:55.304Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,77 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401892441",
-      "teamId": "sjs",
-      "dateISO": "2026-10-04T02:00Z",
-      "isHome": true,
-      "opponentShort": "Kings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA",
-        "ABTV"
-      ]
-    },
-    {
-      "id": "mbfc-401842264",
-      "teamId": "mbfc",
-      "dateISO": "2026-10-04T02:00Z",
-      "isHome": false,
-      "opponentShort": "Orange County",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18455.png",
-      "venue": "Championship Soccer Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "psg-w-401885662",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-04T13:00Z",
-      "isHome": false,
-      "opponentShort": "Fleury",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21637.png",
-      "venue": "Stade Robert Bobin",
-      "broadcasts": []
-    },
-    {
-      "id": "gsv-401918296",
-      "teamId": "gsv",
-      "dateISO": "2026-10-04T20:00Z",
-      "isHome": true,
-      "opponentShort": "Aces",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBC",
-        "Peacock"
-      ]
-    },
-    {
-      "id": "sf49-401872975",
-      "teamId": "sf49",
-      "dateISO": "2026-10-04T20:25Z",
-      "isHome": true,
-      "opponentShort": "Broncos",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "CBS"
-      ]
-    },
-    {
-      "id": "gsw-401918010",
-      "teamId": "gsw",
-      "dateISO": "2026-10-04T23:00Z",
-      "isHome": false,
-      "opponentShort": "Clippers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
-      "venue": "Stan Sheriff Center",
-      "broadcasts": []
-    },
     {
       "id": "atl-401908014",
       "teamId": "atl",
@@ -1334,16 +1263,6 @@
       ]
     },
     {
-      "id": "gt-fb-401858281",
-      "teamId": "gt-fb",
-      "dateISO": "2026-10-31T04:00Z",
-      "isHome": false,
-      "opponentShort": "Pitt",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
-      "venue": "Acrisure Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "sjs-401892619",
       "teamId": "sjs",
       "dateISO": "2026-10-31T20:00Z",
@@ -1366,6 +1285,18 @@
       "venue": "PayPal Park",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gt-fb-401858281",
+      "teamId": "gt-fb",
+      "dateISO": "2026-10-31T23:30Z",
+      "isHome": false,
+      "opponentShort": "Pitt",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
+      "venue": "Acrisure Stadium",
+      "broadcasts": [
+        "ESPN2"
       ]
     },
     {
@@ -1459,6 +1390,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -1512,6 +1444,16 @@
       ]
     },
     {
+      "id": "psg-w-401885648",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-06T20:00Z",
+      "isHome": true,
+      "opponentShort": "Le Havre AC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21635.png",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "sjs-401892660",
       "teamId": "sjs",
       "dateISO": "2026-11-07T01:00Z",
@@ -1520,6 +1462,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "venue": "Grand Casino Arena",
       "broadcasts": [
+        "NHL Net",
         "NBC Sports BA",
         "MINNHL",
         "KSTP"
@@ -1533,16 +1476,6 @@
       "opponentShort": "Louisville",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
       "venue": "Bobby Dodd Stadium",
-      "broadcasts": []
-    },
-    {
-      "id": "psg-w-401885648",
-      "teamId": "psg-w",
-      "dateISO": "2026-11-07T16:00Z",
-      "isHome": true,
-      "opponentShort": "Le Havre AC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21635.png",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
     {
@@ -1652,6 +1585,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "MSGSN",
         "NBC Sports BA"
       ]
@@ -1689,6 +1623,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/pit.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -1747,6 +1682,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png",
       "venue": "Delta Center",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "Utah 16"
       ]
@@ -1772,6 +1708,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "Scripps Sports",
         "NBC Sports BA"
       ]
@@ -1809,6 +1746,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -1951,6 +1889,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "MINNHL"
       ]
@@ -1974,20 +1913,11 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
       "venue": "Honda Center",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "KCOP",
         "Prime Video (Local)"
       ]
-    },
-    {
-      "id": "engw-401916358",
-      "teamId": "engw",
-      "dateISO": "2026-11-26T20:00Z",
-      "isHome": false,
-      "opponentShort": "Ukraine",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
-      "venue": null,
-      "broadcasts": []
     },
     {
       "id": "nfl-primetime-401873082",
@@ -2110,6 +2040,16 @@
       ]
     },
     {
+      "id": "engw-401916358",
+      "teamId": "engw",
+      "dateISO": "2026-12-01T20:00Z",
+      "isHome": false,
+      "opponentShort": "Ukraine",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
+      "venue": null,
+      "broadcasts": []
+    },
+    {
       "id": "sjs-401892832",
       "teamId": "sjs",
       "dateISO": "2026-12-02T00:30Z",
@@ -2178,11 +2118,11 @@
     {
       "id": "engw-401916355",
       "teamId": "engw",
-      "dateISO": "2026-12-05T20:00Z",
+      "dateISO": "2026-12-05T17:30Z",
       "isHome": true,
       "opponentShort": "Ukraine",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
-      "venue": null,
+      "venue": "Wembley Stadium",
       "broadcasts": []
     },
     {
