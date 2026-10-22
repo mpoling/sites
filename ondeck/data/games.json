@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:58:53.724Z",
+  "generatedAt": "2026-10-22T17:56:07.231Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -344,30 +344,6 @@
   ],
   "games": [
     {
-      "id": "gsw-401898390",
-      "teamId": "gsw",
-      "dateISO": "2026-10-07T02:00Z",
-      "isHome": true,
-      "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBA TV"
-      ]
-    },
-    {
-      "id": "atl-401908016",
-      "teamId": "atl",
-      "dateISO": "2026-10-07T22:00Z",
-      "isHome": true,
-      "opponentShort": "Dodgers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "venue": "Truist Park",
-      "broadcasts": [
-        "FS1"
-      ]
-    },
-    {
       "id": "gsv-401918298",
       "teamId": "gsv",
       "dateISO": "2026-10-08T01:30Z",
@@ -389,7 +365,9 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
       "venue": "Moda Center",
       "broadcasts": [
-        "NBA TV"
+        "NBA TV",
+        "KUNP 16",
+        "BlazerVision"
       ]
     },
     {
@@ -504,7 +482,9 @@
       "opponentShort": "Kings",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
       "venue": "Chase Center",
-      "broadcasts": []
+      "broadcasts": [
+        "Kings +"
+      ]
     },
     {
       "id": "mbfc-401842281",
@@ -601,7 +581,9 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
       "venue": "T-Mobile Arena",
       "broadcasts": [
-        "NBA TV"
+        "NBA TV",
+        "Spectrum Sports Net",
+        "Spectrum Sports Net +"
       ]
     },
     {
@@ -677,7 +659,10 @@
       "opponentShort": "Trail Blazers",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
       "venue": "Chase Center",
-      "broadcasts": []
+      "broadcasts": [
+        "KUNP 16",
+        "BlazerVision"
+      ]
     },
     {
       "id": "psg-w-401885657",
@@ -1004,7 +989,7 @@
       "broadcasts": [
         "NBA TV",
         "Suns Live",
-        "NBC Sports BA"
+        "Arizona's Family CBS5"
       ]
     },
     {
@@ -1311,7 +1296,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "ClipperVision"
       ]
     },
     {
@@ -1352,7 +1338,7 @@
       "broadcasts": [
         "NBA League Pass",
         "Suns Live",
-        "NBC Sports BA"
+        "Arizona's Family 3TV"
       ]
     },
     {
@@ -1826,10 +1812,7 @@
       "opponentShort": "Celtics",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "venue": "Chase Center",
-      "broadcasts": [
-        "NBC Sports BA",
-        "NBC Sports BO"
-      ]
+      "broadcasts": []
     },
     {
       "id": "nfl-primetime-401873078",
@@ -1994,7 +1977,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "NBC Sports BA"
+        "ClipperVision"
       ]
     },
     {
@@ -2446,7 +2429,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
       "venue": "Intuit Dome",
       "broadcasts": [
-        "NBC Sports BA"
+        "ClipperVision"
       ]
     },
     {
@@ -2548,8 +2531,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
       "venue": "Mortgage Matchup Center",
       "broadcasts": [
-        "Suns Live",
-        "NBC Sports BA"
+        "Arizona's Family CBS5",
+        "Suns Live"
       ]
     },
     {
@@ -2624,8 +2607,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "DAZN (YES)",
-        "NBC Sports BA"
+        "DAZN (YES)"
       ]
     },
     {
@@ -2650,6 +2632,33 @@
       "venue": "Levi's Stadium",
       "broadcasts": [
         "NBC"
+      ]
+    },
+    {
+      "id": "nfl-primetime-401873171",
+      "teamId": "nfl-primetime",
+      "dateISO": "2027-01-05T01:15Z",
+      "homeShort": "Packers",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+      "awayShort": "Texans",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+      "note": "Monday Night",
+      "venue": "Lambeau Field",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401893072",
+      "teamId": "sjs",
+      "dateISO": "2027-01-05T03:00Z",
+      "isHome": true,
+      "opponentShort": "Devils",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nj.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "MSGSN",
+        "NBC Sports BA"
       ]
     }
   ],
