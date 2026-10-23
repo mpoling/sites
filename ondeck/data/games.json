@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T17:56:07.231Z",
+  "generatedAt": "2026-10-23T17:50:14.565Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -344,33 +344,6 @@
   ],
   "games": [
     {
-      "id": "gsv-401918298",
-      "teamId": "gsv",
-      "dateISO": "2026-10-08T01:30Z",
-      "isHome": true,
-      "opponentShort": "Aces",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "Peacock",
-        "NBCSN"
-      ]
-    },
-    {
-      "id": "gsw-401914129",
-      "teamId": "gsw",
-      "dateISO": "2026-10-08T02:00Z",
-      "isHome": false,
-      "opponentShort": "Trail Blazers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-      "venue": "Moda Center",
-      "broadcasts": [
-        "NBA TV",
-        "KUNP 16",
-        "BlazerVision"
-      ]
-    },
-    {
       "id": "sjs-401891825",
       "teamId": "sjs",
       "dateISO": "2026-10-09T00:00Z",
@@ -483,7 +456,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "Kings +"
+        "Kings+"
       ]
     },
     {
@@ -709,7 +682,7 @@
       "broadcasts": [
         "ESPN+",
         "NBC Sports BA",
-        "DSN"
+        "Delmarva Sports Network"
       ]
     },
     {
@@ -2532,7 +2505,9 @@
       "venue": "Mortgage Matchup Center",
       "broadcasts": [
         "Arizona's Family CBS5",
-        "Suns Live"
+        "Suns Live",
+        "KPHE",
+        "KPHO"
       ]
     },
     {
@@ -2659,6 +2634,18 @@
       "broadcasts": [
         "MSGSN",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "juv-401875070",
+      "teamId": "juv",
+      "dateISO": "2027-01-06T11:30Z",
+      "isHome": true,
+      "opponentShort": "Torino",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
       ]
     }
   ],
