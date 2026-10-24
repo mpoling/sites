@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T17:50:14.565Z",
+  "generatedAt": "2026-10-24T16:32:10.376Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,44 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401891825",
-      "teamId": "sjs",
-      "dateISO": "2026-10-09T00:00Z",
-      "isHome": false,
-      "opponentShort": "Blues",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
-      "venue": "Enterprise Center",
-      "broadcasts": [
-        "Disney+",
-        "ESPN+",
-        "Hulu"
-      ]
-    },
-    {
-      "id": "nfl-primetime-401872980",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-10-09T00:15Z",
-      "homeShort": "Cowboys",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
-      "awayShort": "Buccaneers",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
-      "note": "Thursday Night",
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "engw-401878170",
-      "teamId": "engw",
-      "dateISO": "2026-10-09T16:30Z",
-      "isHome": false,
-      "opponentShort": "Greece",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
-      "venue": "Pankritio Stadium",
-      "broadcasts": []
-    },
     {
       "id": "gsv-401918300",
       "teamId": "gsv",
@@ -2646,6 +2608,31 @@
       "venue": "Allianz Stadium",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910278",
+      "teamId": "gsw",
+      "dateISO": "2027-01-07T03:00Z",
+      "isHome": true,
+      "opponentShort": "Knicks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401893085",
+      "teamId": "sjs",
+      "dateISO": "2027-01-07T03:00Z",
+      "isHome": true,
+      "opponentShort": "Stars",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA",
+        "Prime Video (Local)"
       ]
     }
   ],
