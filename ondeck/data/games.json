@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T17:01:16.931Z",
+  "generatedAt": "2026-10-26T19:11:01.199Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,64 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401898399",
-      "teamId": "gsw",
-      "dateISO": "2026-10-11T00:30Z",
-      "isHome": true,
-      "opponentShort": "Kings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "Kings+"
-      ]
-    },
-    {
-      "id": "mbfc-401842281",
-      "teamId": "mbfc",
-      "dateISO": "2026-10-11T01:00Z",
-      "isHome": false,
-      "opponentShort": "New Mexico",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19408.png",
-      "venue": "Isotopes Park",
-      "broadcasts": []
-    },
-    {
-      "id": "sje-761857",
-      "teamId": "sje",
-      "dateISO": "2026-10-11T01:30Z",
-      "isHome": false,
-      "opponentShort": "Colorado",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
-      "venue": "Dick's Sporting Goods Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "juv-401874764",
-      "teamId": "juv",
-      "dateISO": "2026-10-11T18:45Z",
-      "isHome": false,
-      "opponentShort": "Cagliari",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
-      "venue": "Unipol Domus",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "sf49-401872992",
-      "teamId": "sf49",
-      "dateISO": "2026-10-11T20:25Z",
-      "isHome": false,
-      "opponentShort": "Seahawks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "Fox"
-      ]
-    },
     {
       "id": "nfl-primetime-401872994",
       "teamId": "nfl-primetime",
@@ -999,6 +941,19 @@
       ]
     },
     {
+      "id": "gsv-401918310",
+      "teamId": "gsv",
+      "dateISO": "2026-10-29T16:30Z",
+      "isHome": false,
+      "opponentShort": "Dream",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+      "venue": "State Farm Arena",
+      "broadcasts": [
+        "USA Net",
+        "Peacock"
+      ]
+    },
+    {
       "id": "psg-w-401916992",
       "teamId": "psg-w",
       "dateISO": "2026-10-29T20:00Z",
@@ -1007,20 +962,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19257.png",
       "venue": "Joie Stadium",
       "broadcasts": [
+        "ESPN+",
         "Paramount+"
-      ]
-    },
-    {
-      "id": "gsv-401918310",
-      "teamId": "gsv",
-      "dateISO": "2026-10-30T00:00Z",
-      "isHome": false,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": null,
-      "broadcasts": [
-        "USA Net",
-        "CNBC"
       ]
     },
     {
@@ -1275,16 +1218,6 @@
       ]
     },
     {
-      "id": "gt-fb-401858287",
-      "teamId": "gt-fb",
-      "dateISO": "2026-11-07T05:00Z",
-      "isHome": true,
-      "opponentShort": "Louisville",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
-      "venue": "Bobby Dodd Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "mia-761938",
       "teamId": "mia",
       "dateISO": "2026-11-07T21:00Z",
@@ -1307,6 +1240,16 @@
       "broadcasts": [
         "Apple TV"
       ]
+    },
+    {
+      "id": "gt-fb-401858287",
+      "teamId": "gt-fb",
+      "dateISO": "2026-11-08T00:30Z",
+      "isHome": true,
+      "opponentShort": "Louisville",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+      "venue": "Bobby Dodd Stadium",
+      "broadcasts": []
     },
     {
       "id": "sjs-401892669",
@@ -2578,6 +2521,19 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
       "venue": "Chase Center",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401893100",
+      "teamId": "sjs",
+      "dateISO": "2027-01-09T03:00Z",
+      "isHome": true,
+      "opponentShort": "Capitals",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "MNMT2",
+        "NBC Sports BA"
+      ]
     }
   ],
   "errors": [],
