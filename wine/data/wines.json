@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T00:34:36.381Z",
+  "updatedAt": "2026-10-26T03:08:40.706Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -40,6 +40,7 @@
     {"id":"le-burgondie-bourgogne","producer":"Le Burgondie","bottling":"Bourgogne","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"lustrous","producer":"Lustrous","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"meiomi","producer":"Meiomi","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"Vanilla","price":20,"traderJoes":false},
+    {"id":"murphy-goode","producer":"Murphy Goode","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"rebuttel","producer":"Rebuttel","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":true},
     {"id":"ridge","producer":"Ridge","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":50,"traderJoes":false},
     {"id":"rombauer","producer":"Rombauer","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":40,"traderJoes":false},
