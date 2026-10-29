@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T18:47:21.269Z",
+  "generatedAt": "2026-10-29T18:55:18.860Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,45 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401898718",
-      "teamId": "gsw",
-      "dateISO": "2026-10-14T02:00Z",
-      "isHome": false,
-      "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-      "venue": "T-Mobile Arena",
-      "broadcasts": [
-        "NBA TV",
-        "Spectrum Sports Net",
-        "Spectrum Sports Net +"
-      ]
-    },
-    {
-      "id": "sjs-401892503",
-      "teamId": "sjs",
-      "dateISO": "2026-10-14T03:15Z",
-      "isHome": true,
-      "opponentShort": "Bruins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN",
-        "NESN"
-      ]
-    },
-    {
-      "id": "mia-761861",
-      "teamId": "mia",
-      "dateISO": "2026-10-14T23:30Z",
-      "isHome": true,
-      "opponentShort": "NYCFC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "sje-761870",
       "teamId": "sje",
