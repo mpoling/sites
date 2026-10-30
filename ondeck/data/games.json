@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T18:55:18.860Z",
+  "generatedAt": "2026-10-30T18:32:40.634Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,18 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761870",
-      "teamId": "sje",
-      "dateISO": "2026-10-15T01:30Z",
-      "isHome": false,
-      "opponentShort": "Salt Lake",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
-      "venue": "America First Field",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "sjs-401892513",
       "teamId": "sjs",
@@ -1934,7 +1922,7 @@
       "isHome": false,
       "opponentShort": "Toulouse",
       "opponentLogo": "",
-      "venue": "Parc des Sports Stadium A1",
+      "venue": "Stadium Municipal de Toulouse",
       "broadcasts": []
     },
     {
@@ -2508,6 +2496,18 @@
       "venue": "San Siro",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910326",
+      "teamId": "gsw",
+      "dateISO": "2027-01-13T04:00Z",
+      "isHome": true,
+      "opponentShort": "Kings",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC"
       ]
     }
   ],
