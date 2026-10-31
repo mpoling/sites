@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T18:32:40.634Z",
+  "generatedAt": "2026-10-31T17:39:17.608Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,34 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401892513",
-      "teamId": "sjs",
-      "dateISO": "2026-10-16T00:00Z",
-      "isHome": false,
-      "opponentShort": "Predators",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
-      "venue": "Bridgestone Arena",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA",
-        "Scripps Sports"
-      ]
-    },
-    {
-      "id": "nfl-primetime-401872995",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-10-16T00:15Z",
-      "homeShort": "Broncos",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
-      "awayShort": "Seahawks",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
-      "note": "Thursday Night",
-      "venue": "Empower Field at Mile High",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
     {
       "id": "gsw-401898409",
       "teamId": "gsw",
@@ -964,8 +936,7 @@
       "venue": "Chase Center",
       "broadcasts": [
         "USA Net",
-        "CNBC",
-        "Peacock"
+        "CNBC"
       ]
     },
     {
@@ -2508,6 +2479,30 @@
       "venue": "Chase Center",
       "broadcasts": [
         "NBC"
+      ]
+    },
+    {
+      "id": "sjs-401893133",
+      "teamId": "sjs",
+      "dateISO": "2027-01-14T02:00Z",
+      "isHome": false,
+      "opponentShort": "Oilers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+      "venue": "Rogers Place",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401910332",
+      "teamId": "gsw",
+      "dateISO": "2027-01-14T03:00Z",
+      "isHome": true,
+      "opponentShort": "Hornets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "DAZN CHA"
       ]
     }
   ],
