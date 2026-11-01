@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:39:17.608Z",
+  "generatedAt": "2026-11-01T18:23:22.882Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,79 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401898409",
-      "teamId": "gsw",
-      "dateISO": "2026-10-17T02:00Z",
-      "isHome": true,
-      "opponentShort": "Trail Blazers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "KUNP 16",
-        "BlazerVision"
-      ]
-    },
-    {
-      "id": "psg-w-401885657",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-17T19:05Z",
-      "isHome": true,
-      "opponentShort": "Lyonnes",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19256.png",
-      "venue": "Parc des Princes",
-      "broadcasts": []
-    },
-    {
-      "id": "gsv-401918305",
-      "teamId": "gsv",
-      "dateISO": "2026-10-17T19:30Z",
-      "isHome": true,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBC"
-      ]
-    },
-    {
-      "id": "gt-fb-401858264",
-      "teamId": "gt-fb",
-      "dateISO": "2026-10-17T19:30Z",
-      "isHome": false,
-      "opponentShort": "Virginia Tech",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
-      "venue": "Lane Stadium",
-      "broadcasts": [
-        "ACC Network"
-      ]
-    },
-    {
-      "id": "sjs-401892525",
-      "teamId": "sjs",
-      "dateISO": "2026-10-17T23:00Z",
-      "isHome": false,
-      "opponentShort": "Red Wings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/det.png",
-      "venue": "Little Caesars Arena",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA",
-        "Delmarva Sports Network"
-      ]
-    },
-    {
-      "id": "mia-761880",
-      "teamId": "mia",
-      "dateISO": "2026-10-17T23:30Z",
-      "isHome": false,
-      "opponentShort": "Atlanta",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
-      "venue": "Mercedes-Benz Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "mbfc-401842294",
       "teamId": "mbfc",
@@ -2503,6 +2430,18 @@
       "venue": "Chase Center",
       "broadcasts": [
         "DAZN CHA"
+      ]
+    },
+    {
+      "id": "sjs-401893142",
+      "teamId": "sjs",
+      "dateISO": "2027-01-15T01:00Z",
+      "isHome": false,
+      "opponentShort": "Flames",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
+      "venue": "Scotiabank Saddledome",
+      "broadcasts": [
+        "NBC Sports BA"
       ]
     }
   ],
