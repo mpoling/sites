@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T03:08:40.706Z",
+  "updatedAt": "2026-11-02T01:14:40.438Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -34,6 +34,7 @@
     {"id":"kali-hart","producer":"Kali Hart","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":22,"traderJoes":false},
     {"id":"kendall-jackson","producer":"Kendall-Jackson","bottling":"","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":13,"traderJoes":false},
     {"id":"kendall-jackson-grand-reserve","producer":"Kendall-Jackson","bottling":"Grand Reserve","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":20,"traderJoes":false},
+    {"id":"kirkland-sonoma-county","producer":"Kirkland","bottling":"Sonoma County","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"kosmic-kitty","producer":"Kosmic Kitty","bottling":"","varietal":"Sauvignon Blanc","tier":"mid","revisit":false,"notes":"Very light. Dry.","price":null,"traderJoes":false},
     {"id":"la-crema-monterey","producer":"La Crema","bottling":"Monterey","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":17,"traderJoes":false},
     {"id":"la-crema-sonoma","producer":"La Crema","bottling":"Sonoma","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":22,"traderJoes":false},
