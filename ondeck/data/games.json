@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:23:22.882Z",
+  "generatedAt": "2026-11-02T22:16:27.256Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,55 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mbfc-401842294",
-      "teamId": "mbfc",
-      "dateISO": "2026-10-18T02:00Z",
-      "isHome": true,
-      "opponentShort": "Switchbacks FC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17830.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "sje-761886",
-      "teamId": "sje",
-      "dateISO": "2026-10-18T02:30Z",
-      "isHome": true,
-      "opponentShort": "Nashville",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "juv-401874765",
-      "teamId": "juv",
-      "dateISO": "2026-10-18T18:45Z",
-      "isHome": true,
-      "opponentShort": "Lazio",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "bay-fc-401854025",
-      "teamId": "bay-fc",
-      "dateISO": "2026-10-18T21:00Z",
-      "isHome": true,
-      "opponentShort": "Portland",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/15362.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "ESPN",
-        "ESPN Deportes"
-      ]
-    },
     {
       "id": "sjs-401892537",
       "teamId": "sjs",
@@ -1224,12 +1175,14 @@
     {
       "id": "gt-fb-401858297",
       "teamId": "gt-fb",
-      "dateISO": "2026-11-14T05:00Z",
+      "dateISO": "2026-11-14T17:30Z",
       "isHome": false,
       "opponentShort": "Clemson",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
       "venue": "Memorial Stadium (Clemson, SC)",
-      "broadcasts": []
+      "broadcasts": [
+        "CW"
+      ]
     },
     {
       "id": "psg-w-401885644",
@@ -1384,6 +1337,16 @@
       "broadcasts": []
     },
     {
+      "id": "psg-w-401885692",
+      "teamId": "psg-w",
+      "dateISO": "2026-11-21T20:00Z",
+      "isHome": true,
+      "opponentShort": "Saint-Malo",
+      "opponentLogo": "",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "sjs-401892767",
       "teamId": "sjs",
       "dateISO": "2026-11-22T03:00Z",
@@ -1409,16 +1372,6 @@
       "broadcasts": [
         "Paramount+"
       ]
-    },
-    {
-      "id": "psg-w-401885692",
-      "teamId": "psg-w",
-      "dateISO": "2026-11-22T14:00Z",
-      "isHome": true,
-      "opponentShort": "Saint-Malo",
-      "opponentLogo": "",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
-      "broadcasts": []
     },
     {
       "id": "sf49-401873077",
@@ -2443,6 +2396,26 @@
       "broadcasts": [
         "NBC Sports BA"
       ]
+    },
+    {
+      "id": "gsw-401910343",
+      "teamId": "gsw",
+      "dateISO": "2027-01-16T00:00Z",
+      "isHome": false,
+      "opponentShort": "Hawks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+      "venue": "State Farm Arena",
+      "broadcasts": []
+    },
+    {
+      "id": "psg-w-401888022",
+      "teamId": "psg-w",
+      "dateISO": "2027-01-16T16:00Z",
+      "isHome": true,
+      "opponentShort": "Lens",
+      "opponentLogo": "",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
     }
   ],
   "errors": [],
