@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T22:16:27.256Z",
+  "generatedAt": "2026-11-03T20:03:13.358Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,19 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401892537",
-      "teamId": "sjs",
-      "dateISO": "2026-10-19T23:30Z",
-      "isHome": false,
-      "opponentShort": "Maple Leafs",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/tor.png",
-      "venue": "Scotiabank Arena",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
     {
       "id": "gsv-401918306",
       "teamId": "gsv",
@@ -2415,6 +2402,42 @@
       "opponentShort": "Lens",
       "opponentLogo": "",
       "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
+      "id": "sjs-401893163",
+      "teamId": "sjs",
+      "dateISO": "2027-01-17T03:00Z",
+      "isHome": false,
+      "opponentShort": "Kraken",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
+      "venue": "Climate Pledge Arena",
+      "broadcasts": [
+        "NBC Sports BA",
+        "KONG",
+        "Prime Video (Local)"
+      ]
+    },
+    {
+      "id": "juv-401875059",
+      "teamId": "juv",
+      "dateISO": "2027-01-17T20:00Z",
+      "isHome": true,
+      "opponentShort": "Genoa",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910362",
+      "teamId": "gsw",
+      "dateISO": "2027-01-17T23:00Z",
+      "isHome": false,
+      "opponentShort": "Heat",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+      "venue": "Kaseya Center",
       "broadcasts": []
     }
   ],
