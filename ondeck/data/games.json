@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T20:03:13.358Z",
+  "generatedAt": "2026-11-04T20:23:18.414Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,50 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401918306",
-      "teamId": "gsv",
-      "dateISO": "2026-10-20T00:00Z",
-      "isHome": true,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "USA Net",
-        "CNBC",
-        "E!"
-      ]
-    },
-    {
-      "id": "sf49-401873008",
-      "teamId": "sf49",
-      "dateISO": "2026-10-20T00:15Z",
-      "isHome": true,
-      "opponentShort": "Commanders",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
-      "venue": "Levi's Stadium",
-      "broadcasts": [
-        "ESPN",
-        "ABC"
-      ],
-      "extraTeamIds": [
-        "nfl-primetime"
-      ],
-      "note": "Monday Night"
-    },
-    {
-      "id": "sjs-401892539",
-      "teamId": "sjs",
-      "dateISO": "2026-10-20T23:00Z",
-      "isHome": false,
-      "opponentShort": "Canadiens",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
-      "venue": "Bell Centre",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
     {
       "id": "gsv-401918307",
       "teamId": "gsv",
@@ -1569,7 +1525,7 @@
       "isHome": false,
       "opponentShort": "Ukraine",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
-      "venue": null,
+      "venue": "Pinatar Arena",
       "broadcasts": []
     },
     {
@@ -2439,6 +2395,19 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
       "venue": "Kaseya Center",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401893173",
+      "teamId": "sjs",
+      "dateISO": "2027-01-18T21:00Z",
+      "isHome": true,
+      "opponentShort": "Mammoth",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/uta.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA",
+        "Utah 16"
+      ]
     }
   ],
   "errors": [],
