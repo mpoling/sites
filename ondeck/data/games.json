@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T20:36:16.005Z",
+  "generatedAt": "2026-11-06T19:55:24.842Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,44 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401918307",
-      "teamId": "gsv",
-      "dateISO": "2026-10-22T00:00Z",
-      "isHome": false,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "State Farm Arena",
-      "broadcasts": [
-        "USA Net",
-        "CNBC"
-      ]
-    },
-    {
-      "id": "gsw-401909092",
-      "teamId": "gsw",
-      "dateISO": "2026-10-22T02:00Z",
-      "isHome": false,
-      "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-      "venue": "crypto.com Arena",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "sjs-401892554",
-      "teamId": "sjs",
-      "dateISO": "2026-10-22T23:00Z",
-      "isHome": false,
-      "opponentShort": "Senators",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
-      "venue": "Canadian Tire Centre",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
     {
       "id": "nfl-primetime-401873010",
       "teamId": "nfl-primetime",
@@ -2408,6 +2370,16 @@
         "NBC Sports BA",
         "Utah 16"
       ]
+    },
+    {
+      "id": "gsw-401910368",
+      "teamId": "gsw",
+      "dateISO": "2027-01-20T00:00Z",
+      "isHome": false,
+      "opponentShort": "Magic",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "venue": "Kia Center",
+      "broadcasts": []
     }
   ],
   "errors": [],
