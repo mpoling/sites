@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:55:24.842Z",
+  "generatedAt": "2026-11-07T17:59:34.753Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,30 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401873010",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-10-23T00:15Z",
-      "homeShort": "Bears",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
-      "awayShort": "Patriots",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
-      "note": "Thursday Night",
-      "venue": "Soldier Field",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "psg-w-401885655",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-23T19:05Z",
-      "isHome": true,
-      "opponentShort": "Montpellier",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21638.png",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
-      "broadcasts": []
-    },
     {
       "id": "gsw-401909850",
       "teamId": "gsw",
