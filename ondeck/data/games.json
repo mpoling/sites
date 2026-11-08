@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T17:59:34.753Z",
+  "generatedAt": "2026-11-08T18:18:28.111Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,68 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401909850",
-      "teamId": "gsw",
-      "dateISO": "2026-10-24T02:00Z",
-      "isHome": true,
-      "opponentShort": "Grizzlies",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBA League Pass"
-      ]
-    },
-    {
-      "id": "gsv-401918308",
-      "teamId": "gsv",
-      "dateISO": "2026-10-24T17:00Z",
-      "isHome": false,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "State Farm Arena",
-      "broadcasts": [
-        "NBC"
-      ]
-    },
-    {
-      "id": "gt-fb-401858273",
-      "teamId": "gt-fb",
-      "dateISO": "2026-10-24T19:30Z",
-      "isHome": true,
-      "opponentShort": "Boston College",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
-      "venue": "Bobby Dodd Stadium",
-      "broadcasts": [
-        "ACC Network"
-      ]
-    },
-    {
-      "id": "mia-761891",
-      "teamId": "mia",
-      "dateISO": "2026-10-24T21:30Z",
-      "isHome": false,
-      "opponentShort": "Red Bull NY",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png",
-      "venue": "Sports Illustrated Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "sjs-401892568",
-      "teamId": "sjs",
-      "dateISO": "2026-10-24T23:00Z",
-      "isHome": false,
-      "opponentShort": "Bruins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/bos.png",
-      "venue": "TD Garden",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA",
-        "NESN"
-      ]
-    },
     {
       "id": "sje-761900",
       "teamId": "sje",
@@ -2356,6 +2294,18 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
       "venue": "Kia Center",
       "broadcasts": []
+    },
+    {
+      "id": "gsw-401910388",
+      "teamId": "gsw",
+      "dateISO": "2027-01-22T03:00Z",
+      "isHome": true,
+      "opponentShort": "Lakers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "Prime Video"
+      ]
     }
   ],
   "errors": [],
