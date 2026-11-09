@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T18:18:28.111Z",
+  "generatedAt": "2026-11-09T22:57:15.341Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,80 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sje-761900",
-      "teamId": "sje",
-      "dateISO": "2026-10-25T00:30Z",
-      "isHome": false,
-      "opponentShort": "Dallas",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png",
-      "venue": "Toyota Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "bay-fc-401854030",
-      "teamId": "bay-fc",
-      "dateISO": "2026-10-25T00:45Z",
-      "isHome": false,
-      "opponentShort": "Angel City",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21422.png",
-      "venue": "BMO Stadium",
-      "broadcasts": [
-        "ION"
-      ]
-    },
-    {
-      "id": "gsw-401909860",
-      "teamId": "gsw",
-      "dateISO": "2026-10-25T02:00Z",
-      "isHome": false,
-      "opponentShort": "Suns",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-      "venue": "Mortgage Matchup Center",
-      "broadcasts": [
-        "NBA TV",
-        "Suns Live",
-        "Arizona's Family CBS5"
-      ]
-    },
-    {
-      "id": "mbfc-401842306",
-      "teamId": "mbfc",
-      "dateISO": "2026-10-25T02:00Z",
-      "isHome": true,
-      "opponentShort": "Las Vegas",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18987.png",
-      "venue": "Cardinale Stadium",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
-    {
-      "id": "sf49-401873017",
-      "teamId": "sf49",
-      "dateISO": "2026-10-25T17:00Z",
-      "isHome": false,
-      "opponentShort": "Falcons",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
-      "venue": "Mercedes-Benz Stadium",
-      "broadcasts": [
-        "Fox"
-      ]
-    },
-    {
-      "id": "juv-401874772",
-      "teamId": "juv",
-      "dateISO": "2026-10-25T17:00Z",
-      "isHome": false,
-      "opponentShort": "Lecce",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
-      "venue": "Via Del Mare",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
     {
       "id": "gsv-401918309",
       "teamId": "gsv",
@@ -1102,6 +1028,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19970.png",
       "venue": "The Cherry Red Records Stadium",
       "broadcasts": [
+        "ESPN Deportes",
         "Paramount+"
       ]
     },
@@ -1164,6 +1091,18 @@
       "opponentLogo": "",
       "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
+    },
+    {
+      "id": "mia-401933739",
+      "teamId": "mia",
+      "dateISO": "2026-11-21T23:00Z",
+      "isHome": true,
+      "opponentShort": "Columbus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     },
     {
       "id": "sjs-401892767",
@@ -1243,6 +1182,19 @@
       ]
     },
     {
+      "id": "sje-401933738",
+      "teamId": "sje",
+      "dateISO": "2026-11-25T03:00Z",
+      "isHome": true,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "FS1",
+        "Apple TV"
+      ]
+    },
+    {
       "id": "gsw-401909324",
       "teamId": "gsw",
       "dateISO": "2026-11-26T03:00Z",
@@ -1296,6 +1248,19 @@
       ]
     },
     {
+      "id": "mia-401933727",
+      "teamId": "mia",
+      "dateISO": "2026-11-28T01:00Z",
+      "isHome": false,
+      "opponentShort": "Columbus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+      "venue": "ScottsMiracle-Gro Field",
+      "broadcasts": [
+        "FS1",
+        "Apple TV"
+      ]
+    },
+    {
       "id": "uswnt-401870040",
       "teamId": "uswnt",
       "dateISO": "2026-11-28T01:30Z",
@@ -1329,6 +1294,18 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
       "venue": "Sanford Stadium",
       "broadcasts": []
+    },
+    {
+      "id": "sje-401933724",
+      "teamId": "sje",
+      "dateISO": "2026-11-28T19:30Z",
+      "isHome": false,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+      "venue": "Shell Energy Stadium",
+      "broadcasts": [
+        "Apple TV"
+      ]
     },
     {
       "id": "sjs-401892820",
@@ -1428,6 +1405,30 @@
       "venue": "Chase Center",
       "broadcasts": [
         "NBC"
+      ]
+    },
+    {
+      "id": "sje-401933715",
+      "teamId": "sje",
+      "dateISO": "2026-12-02T20:00Z",
+      "isHome": true,
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+      "venue": "PayPal Park",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "id": "mia-401933720",
+      "teamId": "mia",
+      "dateISO": "2026-12-02T20:00Z",
+      "isHome": true,
+      "opponentShort": "Columbus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+      "venue": "Nu Stadium",
+      "broadcasts": [
+        "Apple TV"
       ]
     },
     {
@@ -2306,6 +2307,29 @@
       "broadcasts": [
         "Prime Video"
       ]
+    },
+    {
+      "id": "gsw-401910397",
+      "teamId": "gsw",
+      "dateISO": "2027-01-23T03:00Z",
+      "isHome": true,
+      "opponentShort": "Bucks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "MyMi",
+        "Bucks App"
+      ]
+    },
+    {
+      "id": "psg-w-401885588",
+      "teamId": "psg-w",
+      "dateISO": "2027-01-23T16:00Z",
+      "isHome": false,
+      "opponentShort": "Nantes",
+      "opponentLogo": "",
+      "venue": "Stade Marcel-Saupin",
+      "broadcasts": []
     }
   ],
   "errors": [],
