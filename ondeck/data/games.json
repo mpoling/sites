@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T22:57:15.341Z",
+  "generatedAt": "2026-11-10T20:25:22.840Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -914,7 +914,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
       "venue": "Frost Bank Center",
       "broadcasts": [
-        "Prime Video"
+        "Prime Video",
+        "ERADM"
       ]
     },
     {
@@ -2330,6 +2331,30 @@
       "opponentLogo": "",
       "venue": "Stade Marcel-Saupin",
       "broadcasts": []
+    },
+    {
+      "id": "sjs-401893215",
+      "teamId": "sjs",
+      "dateISO": "2027-01-24T03:00Z",
+      "isHome": true,
+      "opponentShort": "Oilers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "juv-401875012",
+      "teamId": "juv",
+      "dateISO": "2027-01-24T20:00Z",
+      "isHome": true,
+      "opponentShort": "Cagliari",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+      "venue": "Allianz Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
     }
   ],
   "errors": [],
