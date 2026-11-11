@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T20:25:22.840Z",
+  "generatedAt": "2026-11-11T20:08:10.821Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,48 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401918309",
-      "teamId": "gsv",
-      "dateISO": "2026-10-27T00:00Z",
-      "isHome": true,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "USA Net",
-        "Peacock",
-        "CNBC"
-      ]
-    },
-    {
-      "id": "nfl-primetime-401873009",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-10-27T00:15Z",
-      "homeShort": "Eagles",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
-      "awayShort": "Cowboys",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
-      "note": "Monday Night",
-      "venue": "Lincoln Financial Field",
-      "broadcasts": [
-        "ESPN",
-        "ABC",
-        "Disney+"
-      ]
-    },
-    {
-      "id": "gsw-401909876",
-      "teamId": "gsw",
-      "dateISO": "2026-10-27T02:00Z",
-      "isHome": false,
-      "opponentShort": "Nuggets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-      "venue": "Ball Arena",
-      "broadcasts": [
-        "NBCSN"
-      ]
-    },
     {
       "id": "sjs-401892595",
       "teamId": "sjs",
@@ -951,7 +909,8 @@
       "broadcasts": [
         "ESPN+",
         "NBC Sports BA",
-        "Utah 16"
+        "Utah 16",
+        "Mammoth+"
       ]
     },
     {
@@ -2284,7 +2243,8 @@
       "venue": "SAP Center at San Jose",
       "broadcasts": [
         "NBC Sports BA",
-        "Utah 16"
+        "Utah 16",
+        "Mammoth+"
       ]
     },
     {
@@ -2354,6 +2314,18 @@
       "venue": "Allianz Stadium",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910412",
+      "teamId": "gsw",
+      "dateISO": "2027-01-25T01:30Z",
+      "isHome": true,
+      "opponentShort": "Thunder",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBC"
       ]
     }
   ],
