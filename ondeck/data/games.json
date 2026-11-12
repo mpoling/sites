@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T20:08:10.821Z",
+  "generatedAt": "2026-11-12T20:45:05.815Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,42 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401892595",
-      "teamId": "sjs",
-      "dateISO": "2026-10-28T02:30Z",
-      "isHome": true,
-      "opponentShort": "Sabres",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/buf.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "juv-401874988",
-      "teamId": "juv",
-      "dateISO": "2026-10-28T19:45Z",
-      "isHome": false,
-      "opponentShort": "Genoa",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
-      "venue": "Stadio Luigi Ferraris",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "mia-761908",
-      "teamId": "mia",
-      "dateISO": "2026-10-28T23:30Z",
-      "isHome": true,
-      "opponentShort": "Cincinnati",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "gsw-401909888",
       "teamId": "gsw",
