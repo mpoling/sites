@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T20:45:05.815Z",
+  "generatedAt": "2026-11-13T20:26:43.418Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,58 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401909888",
-      "teamId": "gsw",
-      "dateISO": "2026-10-29T00:00Z",
-      "isHome": false,
-      "opponentShort": "Timberwolves",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-      "venue": "Target Center",
-      "broadcasts": [
-        "NBA League Pass"
-      ]
-    },
-    {
-      "id": "sje-761917",
-      "teamId": "sje",
-      "dateISO": "2026-10-29T02:30Z",
-      "isHome": true,
-      "opponentShort": "Colorado",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "gsv-401918310",
-      "teamId": "gsv",
-      "dateISO": "2026-10-29T16:30Z",
-      "isHome": false,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "State Farm Arena",
-      "broadcasts": [
-        "USA Net",
-        "Peacock",
-        "E!",
-        "SYFY"
-      ]
-    },
-    {
-      "id": "psg-w-401916992",
-      "teamId": "psg-w",
-      "dateISO": "2026-10-29T20:00Z",
-      "isHome": false,
-      "opponentShort": "Man City",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/19257.png",
-      "venue": "Joie Stadium",
-      "broadcasts": [
-        "ESPN+",
-        "Paramount+"
-      ]
-    },
     {
       "id": "nfl-primetime-401873023",
       "teamId": "nfl-primetime",
@@ -1824,7 +1772,7 @@
     {
       "id": "sjs-401893017",
       "teamId": "sjs",
-      "dateISO": "2026-12-29T00:30Z",
+      "dateISO": "2026-12-29T01:00Z",
       "isHome": false,
       "opponentShort": "Jets",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
@@ -2045,7 +1993,8 @@
       "venue": "SAP Center at San Jose",
       "broadcasts": [
         "MNMT2",
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "MNMT"
       ]
     },
     {
