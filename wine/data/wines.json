@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T04:14:22.900Z",
+  "updatedAt": "2026-11-13T01:05:18.726Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -25,6 +25,7 @@
     {"id":"edna-valley-buttery-chardonnay","producer":"Edna Valley","bottling":"Buttery Chardonnay","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":14,"traderJoes":false},
     {"id":"estancia","producer":"Estancia","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":12,"traderJoes":false},
     {"id":"estancia-2","producer":"Estancia","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":null,"traderJoes":false},
+    {"id":"fetzer-sundial","producer":"Fetzer","bottling":"Sundial","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"frank-family","producer":"Frank Family","bottling":"","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":35,"traderJoes":false},
     {"id":"hahn","producer":"Hahn","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":13,"traderJoes":false},
     {"id":"hess-select","producer":"Hess","bottling":"Select","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":12,"traderJoes":false},
