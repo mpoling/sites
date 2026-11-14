@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T20:26:43.418Z",
+  "generatedAt": "2026-11-14T18:42:26.988Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,33 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401873023",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-10-30T00:15Z",
-      "homeShort": "Packers",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
-      "awayShort": "Panthers",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
-      "note": "Thursday Night",
-      "venue": "Lambeau Field",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "sjs-401892610",
-      "teamId": "sjs",
-      "dateISO": "2026-10-30T02:00Z",
-      "isHome": true,
-      "opponentShort": "Canucks",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
     {
       "id": "gsw-401909285",
       "teamId": "gsw",
@@ -907,7 +880,7 @@
     {
       "id": "gsw-401910016",
       "teamId": "gsw",
-      "dateISO": "2026-11-19T02:30Z",
+      "dateISO": "2026-11-19T01:00Z",
       "isHome": false,
       "opponentShort": "Mavericks",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
@@ -2239,6 +2212,19 @@
       "venue": "Chase Center",
       "broadcasts": [
         "NBC"
+      ]
+    },
+    {
+      "id": "gsw-401910436",
+      "teamId": "gsw",
+      "dateISO": "2027-01-28T03:00Z",
+      "isHome": false,
+      "opponentShort": "Trail Blazers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "venue": "Moda Center",
+      "broadcasts": [
+        "KUNP 16",
+        "BlazerVision"
       ]
     }
   ],
