@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:42:26.988Z",
+  "generatedAt": "2026-11-15T19:19:49.889Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,55 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401909285",
-      "teamId": "gsw",
-      "dateISO": "2026-10-31T02:00Z",
-      "isHome": true,
-      "opponentShort": "Lakers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "sjs-401892619",
-      "teamId": "sjs",
-      "dateISO": "2026-10-31T20:00Z",
-      "isHome": true,
-      "opponentShort": "Senators",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "sje-761929",
-      "teamId": "sje",
-      "dateISO": "2026-10-31T21:00Z",
-      "isHome": true,
-      "opponentShort": "Salt Lake",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "gt-fb-401858281",
-      "teamId": "gt-fb",
-      "dateISO": "2026-10-31T23:30Z",
-      "isHome": false,
-      "opponentShort": "Pitt",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
-      "venue": "Acrisure Stadium",
-      "broadcasts": [
-        "ESPN2"
-      ]
-    },
     {
       "id": "gsv-401918311",
       "teamId": "gsv",
@@ -779,7 +730,7 @@
       "dateISO": "2026-11-14T20:00Z",
       "isHome": false,
       "opponentShort": "Marseille",
-      "opponentLogo": "",
+      "opponentLogo": null,
       "venue": "Stade Francis-Turcan",
       "broadcasts": []
     },
@@ -886,7 +837,6 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
       "venue": "American Airlines Center",
       "broadcasts": [
-        "ESPN",
         "KFAA-TV",
         "MavsTV"
       ]
@@ -1061,7 +1011,8 @@
         "ESPN+",
         "NBC Sports BA",
         "KCOP",
-        "Prime Video (Local)"
+        "Prime Video (Local)",
+        "Fox 11 Plus"
       ]
     },
     {
@@ -2225,6 +2176,32 @@
       "broadcasts": [
         "KUNP 16",
         "BlazerVision"
+      ]
+    },
+    {
+      "id": "gsw-401910443",
+      "teamId": "gsw",
+      "dateISO": "2027-01-29T02:00Z",
+      "isHome": false,
+      "opponentShort": "Jazz",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+      "venue": "Delta Center",
+      "broadcasts": [
+        "KJZZ-TV",
+        "Jazz+"
+      ]
+    },
+    {
+      "id": "sjs-401893252",
+      "teamId": "sjs",
+      "dateISO": "2027-01-29T03:00Z",
+      "isHome": true,
+      "opponentShort": "Predators",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "Scripps Sports",
+        "NBC Sports BA"
       ]
     }
   ],
