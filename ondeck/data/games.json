@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T19:19:49.889Z",
+  "generatedAt": "2026-11-16T22:50:24.530Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,53 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsv-401918311",
-      "teamId": "gsv",
-      "dateISO": "2026-11-01T00:00Z",
-      "isHome": true,
-      "opponentShort": "Dream",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "USA Net",
-        "CNBC"
-      ]
-    },
-    {
-      "id": "psg-w-401885650",
-      "teamId": "psg-w",
-      "dateISO": "2026-11-01T13:30Z",
-      "isHome": false,
-      "opponentShort": "Paris FC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21640.png",
-      "venue": "Stade Sébastien Charléty",
-      "broadcasts": []
-    },
-    {
-      "id": "juv-401874949",
-      "teamId": "juv",
-      "dateISO": "2026-11-01T19:45Z",
-      "isHome": true,
-      "opponentShort": "Napoli",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
-      "venue": "Allianz Stadium",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "id": "bay-fc-401854033",
-      "teamId": "bay-fc",
-      "dateISO": "2026-11-01T22:00Z",
-      "isHome": true,
-      "opponentShort": "San Diego",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21423.png",
-      "venue": "PayPal Park",
-      "broadcasts": [
-        "ESPN+"
-      ]
-    },
     {
       "id": "mia-761932",
       "teamId": "mia",
@@ -870,12 +823,14 @@
     {
       "id": "gt-fb-401858310",
       "teamId": "gt-fb",
-      "dateISO": "2026-11-21T05:00Z",
+      "dateISO": "2026-11-21T17:00Z",
       "isHome": true,
       "opponentShort": "Wake Forest",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
       "venue": "Bobby Dodd Stadium",
-      "broadcasts": []
+      "broadcasts": [
+        "ESPN"
+      ]
     },
     {
       "id": "psg-w-401885692",
@@ -1967,6 +1922,21 @@
       ]
     },
     {
+      "id": "uswnt-401934658",
+      "teamId": "uswnt",
+      "dateISO": "2027-01-13T03:00Z",
+      "isHome": true,
+      "opponentShort": "Panama",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "venue": "Dignity Health Sports Park",
+      "broadcasts": [
+        "TNT",
+        "truTV",
+        "HBO Max",
+        "Universo"
+      ]
+    },
+    {
       "id": "gsw-401910326",
       "teamId": "gsw",
       "dateISO": "2027-01-13T04:00Z",
@@ -2202,6 +2172,31 @@
       "broadcasts": [
         "Scripps Sports",
         "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "sjs-401893259",
+      "teamId": "sjs",
+      "dateISO": "2027-01-30T21:00Z",
+      "isHome": true,
+      "opponentShort": "Blackhawks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "CHSN",
+        "NBC Sports BA"
+      ]
+    },
+    {
+      "id": "gsw-401910453",
+      "teamId": "gsw",
+      "dateISO": "2027-01-30T22:30Z",
+      "isHome": true,
+      "opponentShort": "Spurs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "ABC"
       ]
     }
   ],
