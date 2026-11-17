@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T22:50:24.530Z",
+  "generatedAt": "2026-11-17T21:41:55.009Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,31 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "mia-761932",
-      "teamId": "mia",
-      "dateISO": "2026-11-02T00:00Z",
-      "isHome": false,
-      "opponentShort": "New England",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
-      "venue": "Gillette Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
-    {
-      "id": "gsw-401909905",
-      "teamId": "gsw",
-      "dateISO": "2026-11-02T01:30Z",
-      "isHome": true,
-      "opponentShort": "Clippers",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBA League Pass",
-        "ClipperVision"
-      ]
-    },
     {
       "id": "nfl-primetime-401873036",
       "teamId": "nfl-primetime",
@@ -1159,25 +1134,25 @@
       ]
     },
     {
-      "id": "sje-401933715",
-      "teamId": "sje",
-      "dateISO": "2026-12-02T20:00Z",
+      "id": "mia-401933720",
+      "teamId": "mia",
+      "dateISO": "2026-12-03T00:30Z",
       "isHome": true,
-      "opponentShort": "Houston",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
-      "venue": "PayPal Park",
+      "opponentShort": "Columbus",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+      "venue": "Nu Stadium",
       "broadcasts": [
         "Apple TV"
       ]
     },
     {
-      "id": "mia-401933720",
-      "teamId": "mia",
-      "dateISO": "2026-12-02T20:00Z",
+      "id": "sje-401933715",
+      "teamId": "sje",
+      "dateISO": "2026-12-03T03:00Z",
       "isHome": true,
-      "opponentShort": "Columbus",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
-      "venue": "Nu Stadium",
+      "opponentShort": "Houston",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+      "venue": "PayPal Park",
       "broadcasts": [
         "Apple TV"
       ]
@@ -2197,6 +2172,18 @@
       "venue": "Chase Center",
       "broadcasts": [
         "ABC"
+      ]
+    },
+    {
+      "id": "juv-401875078",
+      "teamId": "juv",
+      "dateISO": "2027-01-31T20:00Z",
+      "isHome": false,
+      "opponentShort": "Milan",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+      "venue": "San Siro",
+      "broadcasts": [
+        "Paramount+"
       ]
     }
   ],
