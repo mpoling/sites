@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T21:41:55.009Z",
+  "generatedAt": "2026-11-18T21:20:40.710Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,47 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401873036",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-11-03T01:15Z",
-      "homeShort": "Seahawks",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png",
-      "awayShort": "Bears",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
-      "note": "Monday Night",
-      "venue": "Lumen Field",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "sjs-401892632",
-      "teamId": "sjs",
-      "dateISO": "2026-11-03T02:00Z",
-      "isHome": true,
-      "opponentShort": "Flames",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "gsw-401909919",
-      "teamId": "gsw",
-      "dateISO": "2026-11-03T03:00Z",
-      "isHome": true,
-      "opponentShort": "Suns",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBA League Pass",
-        "Suns Live",
-        "Arizona's Family 3TV"
-      ]
-    },
     {
       "id": "sjs-401892646",
       "teamId": "sjs",
