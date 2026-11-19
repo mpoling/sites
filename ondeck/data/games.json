@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T21:20:40.710Z",
+  "generatedAt": "2026-11-19T21:24:19.401Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -1125,6 +1125,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyr.png",
       "venue": "Madison Square Garden",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "MSG"
       ]
@@ -1152,6 +1153,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
       "venue": "UBS Arena",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "MSGSN"
       ]
@@ -1199,7 +1201,8 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/pit.png",
       "venue": "PPG Paints Arena",
       "broadcasts": [
-        "NBC Sports BA"
+        "NBC Sports BA",
+        "NHL Net"
       ]
     },
     {
@@ -1226,6 +1229,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "KONG",
         "Prime Video (Local)"
@@ -1267,6 +1271,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "ABTV"
       ]
@@ -1350,6 +1355,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -1447,6 +1453,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
       "venue": "Rogers Arena",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -1487,6 +1494,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sea.png",
       "venue": "Climate Pledge Arena",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "KONG",
         "Prime Video (Local)"
@@ -1554,6 +1562,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
       "venue": "SAP Center at San Jose",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA",
         "Scripps Sports"
       ]
@@ -1591,6 +1600,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
       "venue": "Canada Life Centre",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -1632,6 +1642,7 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
       "venue": "Scotiabank Saddledome",
       "broadcasts": [
+        "ESPN+",
         "NBC Sports BA"
       ]
     },
@@ -2143,6 +2154,18 @@
       "venue": "San Siro",
       "broadcasts": [
         "Paramount+"
+      ]
+    },
+    {
+      "id": "gsw-401910473",
+      "teamId": "gsw",
+      "dateISO": "2027-02-02T03:00Z",
+      "isHome": true,
+      "opponentShort": "Spurs",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBCSN"
       ]
     }
   ],
