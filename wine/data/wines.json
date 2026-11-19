@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T01:05:18.726Z",
+  "updatedAt": "2026-11-19T03:18:18.591Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -42,6 +42,7 @@
     {"id":"la-crema-sonoma","producer":"La Crema","bottling":"Sonoma","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":22,"traderJoes":false},
     {"id":"le-burgondie-bourgogne","producer":"Le Burgondie","bottling":"Bourgogne","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"lustrous","producer":"Lustrous","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
+    {"id":"martin-ray-sonoma-coast","producer":"Martin Ray","bottling":"Sonoma Coast","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"meiomi","producer":"Meiomi","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"Vanilla","price":20,"traderJoes":false},
     {"id":"murphy-goode","producer":"Murphy Goode","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"rebuttel","producer":"Rebuttel","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":true},
