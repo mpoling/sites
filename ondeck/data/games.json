@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T21:24:19.401Z",
+  "generatedAt": "2026-11-20T21:00:16.548Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,19 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401892646",
-      "teamId": "sjs",
-      "dateISO": "2026-11-05T03:00Z",
-      "isHome": false,
-      "opponentShort": "Kings",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
-      "venue": "crypto.com Arena",
-      "broadcasts": [
-        "TNT",
-        "truTV"
-      ]
-    },
     {
       "id": "nfl-primetime-401873037",
       "teamId": "nfl-primetime",
@@ -1083,13 +1070,14 @@
     {
       "id": "gsw-401910075",
       "teamId": "gsw",
-      "dateISO": "2026-12-02T04:00Z",
+      "dateISO": "2026-12-02T03:00Z",
       "isHome": true,
       "opponentShort": "Jazz",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
       "venue": "Chase Center",
       "broadcasts": [
-        "NBC"
+        "KJZZ-TV",
+        "Jazz+"
       ]
     },
     {
