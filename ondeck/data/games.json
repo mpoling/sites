@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T21:00:16.548Z",
+  "generatedAt": "2026-11-21T20:01:26.494Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,42 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401873037",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-11-06T01:15Z",
-      "homeShort": "Ravens",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
-      "awayShort": "Jaguars",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
-      "note": "Thursday Night",
-      "venue": "M&T Bank Stadium",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
-    {
-      "id": "gsw-401909937",
-      "teamId": "gsw",
-      "dateISO": "2026-11-06T03:00Z",
-      "isHome": true,
-      "opponentShort": "Heat",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBA TV"
-      ]
-    },
-    {
-      "id": "psg-w-401885648",
-      "teamId": "psg-w",
-      "dateISO": "2026-11-06T20:00Z",
-      "isHome": true,
-      "opponentShort": "Le Havre AC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21635.png",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
-      "broadcasts": []
-    },
     {
       "id": "sjs-401892660",
       "teamId": "sjs",
@@ -2154,6 +2118,18 @@
       "venue": "Chase Center",
       "broadcasts": [
         "NBCSN"
+      ]
+    },
+    {
+      "id": "gsw-401910487",
+      "teamId": "gsw",
+      "dateISO": "2027-02-04T03:30Z",
+      "isHome": false,
+      "opponentShort": "Clippers",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "venue": "Intuit Dome",
+      "broadcasts": [
+        "ClipperVision"
       ]
     }
   ],
