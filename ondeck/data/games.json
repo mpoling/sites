@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T20:01:26.494Z",
+  "generatedAt": "2026-11-22T20:16:49.043Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,33 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "sjs-401892660",
-      "teamId": "sjs",
-      "dateISO": "2026-11-07T01:00Z",
-      "isHome": false,
-      "opponentShort": "Wild",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
-      "venue": "Grand Casino Arena",
-      "broadcasts": [
-        "NHL Net",
-        "NBC Sports BA",
-        "MINNHL",
-        "KSTP"
-      ]
-    },
-    {
-      "id": "mia-761938",
-      "teamId": "mia",
-      "dateISO": "2026-11-07T21:00Z",
-      "isHome": true,
-      "opponentShort": "Charlotte",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
-      "venue": "Nu Stadium",
-      "broadcasts": [
-        "Apple TV"
-      ]
-    },
     {
       "id": "sje-761945",
       "teamId": "sje",
@@ -723,7 +696,7 @@
       "dateISO": "2026-11-21T20:00Z",
       "isHome": true,
       "opponentShort": "Saint-Malo",
-      "opponentLogo": "",
+      "opponentLogo": null,
       "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
@@ -922,16 +895,6 @@
       ]
     },
     {
-      "id": "gt-fb-401856760",
-      "teamId": "gt-fb",
-      "dateISO": "2026-11-28T05:00Z",
-      "isHome": false,
-      "opponentShort": "Georgia",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
-      "venue": "Sanford Stadium",
-      "broadcasts": []
-    },
-    {
       "id": "sje-401933724",
       "teamId": "sje",
       "dateISO": "2026-11-28T19:30Z",
@@ -941,6 +904,18 @@
       "venue": "Shell Energy Stadium",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "id": "gt-fb-401856760",
+      "teamId": "gt-fb",
+      "dateISO": "2026-11-28T20:30Z",
+      "isHome": false,
+      "opponentShort": "Georgia",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+      "venue": "Sanford Stadium",
+      "broadcasts": [
+        "ABC"
       ]
     },
     {
