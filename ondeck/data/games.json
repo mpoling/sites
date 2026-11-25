@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T22:58:49.958Z",
+  "generatedAt": "2026-11-25T22:25:11.455Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,62 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401873051",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-11-10T01:15Z",
-      "homeShort": "Vikings",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
-      "awayShort": "Bills",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
-      "note": "Monday Night",
-      "venue": "U.S. Bank Stadium",
-      "broadcasts": [
-        "ESPN",
-        "ABC"
-      ]
-    },
-    {
-      "id": "gsw-401909959",
-      "teamId": "gsw",
-      "dateISO": "2026-11-10T03:00Z",
-      "isHome": true,
-      "opponentShort": "Pelicans",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
-      "venue": "Chase Center",
-      "broadcasts": [
-        "NBA TV",
-        "GCSEN",
-        "Pelicans.com"
-      ]
-    },
-    {
-      "id": "sjs-401892682",
-      "teamId": "sjs",
-      "dateISO": "2026-11-10T03:00Z",
-      "isHome": true,
-      "opponentShort": "Islanders",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "MSGSN",
-        "NBC Sports BA"
-      ]
-    },
-    {
-      "id": "psg-w-401916987",
-      "teamId": "psg-w",
-      "dateISO": "2026-11-10T20:00Z",
-      "isHome": true,
-      "opponentShort": "Bayern",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20103.png",
-      "venue": "Parc des Princes",
-      "broadcasts": [
-        "ESPN Deportes",
-        "Paramount+"
-      ]
-    },
     {
       "id": "gsw-401909974",
       "teamId": "gsw",
@@ -1785,6 +1729,16 @@
       ]
     },
     {
+      "id": "psg-w-401888022",
+      "teamId": "psg-w",
+      "dateISO": "2027-01-15T20:00Z",
+      "isHome": true,
+      "opponentShort": "Lens",
+      "opponentLogo": "",
+      "venue": "Training Center Paris Saint Germain Terrain 5",
+      "broadcasts": []
+    },
+    {
       "id": "gsw-401910343",
       "teamId": "gsw",
       "dateISO": "2027-01-16T00:00Z",
@@ -1792,16 +1746,6 @@
       "opponentShort": "Hawks",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
       "venue": "State Farm Arena",
-      "broadcasts": []
-    },
-    {
-      "id": "psg-w-401888022",
-      "teamId": "psg-w",
-      "dateISO": "2027-01-16T16:00Z",
-      "isHome": true,
-      "opponentShort": "Lens",
-      "opponentLogo": "",
-      "venue": "Training Center Paris Saint Germain Terrain 5",
       "broadcasts": []
     },
     {
@@ -1892,7 +1836,7 @@
     {
       "id": "psg-w-401885588",
       "teamId": "psg-w",
-      "dateISO": "2027-01-23T16:00Z",
+      "dateISO": "2027-01-23T17:00Z",
       "isHome": false,
       "opponentShort": "Nantes",
       "opponentLogo": "",
