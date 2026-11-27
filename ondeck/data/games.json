@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T22:14:31.459Z",
+  "generatedAt": "2026-11-27T21:54:31.871Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,31 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "gsw-401909974",
-      "teamId": "gsw",
-      "dateISO": "2026-11-12T02:30Z",
-      "isHome": false,
-      "opponentShort": "Rockets",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-      "venue": "Toyota Center (Houston)",
-      "broadcasts": [
-        "ESPN"
-      ]
-    },
-    {
-      "id": "sjs-401892695",
-      "teamId": "sjs",
-      "dateISO": "2026-11-12T03:00Z",
-      "isHome": true,
-      "opponentShort": "Penguins",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/pit.png",
-      "venue": "SAP Center at San Jose",
-      "broadcasts": [
-        "ESPN+",
-        "NBC Sports BA"
-      ]
-    },
     {
       "id": "nfl-primetime-401873052",
       "teamId": "nfl-primetime",
@@ -2025,6 +2000,16 @@
       "broadcasts": [
         "Paramount+"
       ]
+    },
+    {
+      "id": "gsw-401910532",
+      "teamId": "gsw",
+      "dateISO": "2027-02-10T01:00Z",
+      "isHome": false,
+      "opponentShort": "Bulls",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+      "venue": "United Center",
+      "broadcasts": []
     }
   ],
   "errors": [],
