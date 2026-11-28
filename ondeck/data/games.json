@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T21:54:31.871Z",
+  "generatedAt": "2026-11-28T20:51:15.748Z",
   "window": {
     "pastDays": 14,
     "futureDays": 75
@@ -343,20 +343,6 @@
     }
   ],
   "games": [
-    {
-      "id": "nfl-primetime-401873052",
-      "teamId": "nfl-primetime",
-      "dateISO": "2026-11-13T01:15Z",
-      "homeShort": "Giants",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
-      "awayShort": "Commanders",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
-      "note": "Thursday Night",
-      "venue": "MetLife Stadium",
-      "broadcasts": [
-        "Prime Video"
-      ]
-    },
     {
       "id": "gsw-401909302",
       "teamId": "gsw",
@@ -854,6 +840,18 @@
       ]
     },
     {
+      "id": "uswnt-401917924",
+      "teamId": "uswnt",
+      "dateISO": "2026-12-02T01:30Z",
+      "isHome": true,
+      "opponentShort": "Jamaica",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jam.png",
+      "venue": "Texas Health Mansfield Stadium",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
       "id": "gsw-401910075",
       "teamId": "gsw",
       "dateISO": "2026-12-02T03:00Z",
@@ -980,6 +978,16 @@
       ]
     },
     {
+      "id": "gsw-401937106",
+      "teamId": "gsw",
+      "dateISO": "2026-12-08T01:00Z",
+      "isHome": false,
+      "opponentShort": "Pelicans",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+      "venue": "Smoothie King Center",
+      "broadcasts": []
+    },
+    {
       "id": "nfl-primetime-401873108",
       "teamId": "nfl-primetime",
       "dateISO": "2026-12-08T01:15Z",
@@ -1035,6 +1043,16 @@
       "broadcasts": [
         "Prime Video"
       ]
+    },
+    {
+      "id": "gsw-401937114",
+      "teamId": "gsw",
+      "dateISO": "2026-12-11T03:00Z",
+      "isHome": true,
+      "opponentShort": "Nuggets",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "venue": "Chase Center",
+      "broadcasts": []
     },
     {
       "id": "sjs-401892908",
@@ -2010,6 +2028,31 @@
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
       "venue": "United Center",
       "broadcasts": []
+    },
+    {
+      "id": "gsw-401910541",
+      "teamId": "gsw",
+      "dateISO": "2027-02-11T00:30Z",
+      "isHome": false,
+      "opponentShort": "Celtics",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+      "venue": "TD Garden",
+      "broadcasts": [
+        "ESPN"
+      ]
+    },
+    {
+      "id": "sjs-401893294",
+      "teamId": "sjs",
+      "dateISO": "2027-02-11T03:00Z",
+      "isHome": true,
+      "opponentShort": "Blackhawks",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
+      "venue": "SAP Center at San Jose",
+      "broadcasts": [
+        "TNT",
+        "truTV"
+      ]
     }
   ],
   "errors": [],
