@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T03:18:18.591Z",
+  "updatedAt": "2026-11-28T00:55:09.410Z",
   "tiers": [
     {"id":"yes","label":"Yes","blurb":"Buy again without thinking","accent":"#4ade80"},
     {"id":"solid","label":"Solid","blurb":"Reliable. Happy to grab it.","accent":"#a3e635"},
@@ -10,7 +10,7 @@
   ],
   "wines": [
     {"id":"alexander-valley","producer":"Alexander Valley","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":18,"traderJoes":false},
-    {"id":"bernardus","producer":"Bernardus","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":25,"traderJoes":false},
+    {"id":"bernardus","producer":"Bernardus","bottling":"","varietal":"Chardonnay","tier":"solid","revisit":false,"notes":"","price":25,"traderJoes":false},
     {"id":"big-churn","producer":"Big Churn","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"boen","producer":"Boen","bottling":"","varietal":"Chardonnay","tier":"no","revisit":false,"notes":"","price":20,"traderJoes":false},
     {"id":"bogle","producer":"Bogle","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":10,"traderJoes":false},
@@ -20,10 +20,11 @@
     {"id":"carmel-road","producer":"Carmel Road","bottling":"","varietal":"Chardonnay","tier":"meh","revisit":true,"notes":"","price":15,"traderJoes":false},
     {"id":"chateaux-ste-michelle-columbia-valley","producer":"Chateaux Ste Michelle","bottling":"Columbia Valley","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"cline-family-cellars-mendocino-county","producer":"Cline Family Cellars","bottling":"Mendocino County","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
+    {"id":"daou-paso-robles","producer":"Daou","bottling":"Paso Robles","varietal":"Sauvignon Blanc","tier":"no","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"dark-horse","producer":"Dark Horse","bottling":"","varietal":"Chardonnay","tier":"meh","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"decoy","producer":"Decoy","bottling":"","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":22,"traderJoes":false},
     {"id":"edna-valley-buttery-chardonnay","producer":"Edna Valley","bottling":"Buttery Chardonnay","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":14,"traderJoes":false},
-    {"id":"estancia","producer":"Estancia","bottling":"","varietal":"Chardonnay","tier":null,"revisit":true,"notes":"","price":12,"traderJoes":false},
+    {"id":"estancia","producer":"Estancia","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":12,"traderJoes":false},
     {"id":"estancia-2","producer":"Estancia","bottling":"","varietal":"Chardonnay","tier":"nah","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"fetzer-sundial","producer":"Fetzer","bottling":"Sundial","varietal":"Chardonnay","tier":"mid","revisit":false,"notes":"","price":null,"traderJoes":false},
     {"id":"frank-family","producer":"Frank Family","bottling":"","varietal":"Chardonnay","tier":"yes","revisit":false,"notes":"","price":35,"traderJoes":false},
